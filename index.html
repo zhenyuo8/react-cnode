@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>根据中文字收索城市</title>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="data/data.js"></script>
+    <script src="js/index.js"></script>
+    <style media="screen">
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-size: 14px /* 14/75 */
+        }
+        .container{
+            width: 160px;
+            height: 100%;
+            margin: 100px auto;
+        }
+        input{
+            width: 136px;
+            height: 36px;
+            border: 1px solid #dadada;
+            padding-left: 12px;
+            padding-right: 12px;
+            line-height: 36px;
+            margin-bottom: 4px;
+        }
+        ul{
+            width: 160px;
+        }
+        li{
+            height: 32px;
+            width: 160px;
+            font-size: 14px;
+            text-align: center;
+            line-height: 32px;
+            border: 1px solid #333;
+            margin-bottom: 2px;
+            /*border-bottom: none;*/
+        }
+        li.select{
+            background: #389be4;
+            color: #fff;
+        }
+        li.message{
+            color: #e43a3a;
+            font-size: 12px;
+            border-color: #e43a3a;
+        }
+        li:hover{
+            background: #389be4;
+            color: #fff;
+            cursor: pointer;
+        }
+        .search{
+            position: relative;
+            width: 230px;
+        }
+        .search .button{
+            position: absolute;
+            display: block;top: 0;
+            width: 60px;
+            height: 38px;
+            line-height: 38px;
+            text-align: center;
+            background: #ffa903;
+            color: #fff;
+            font-family: sans-serif;
+            font-size: 18px;
+            right: 0;
+            cursor: pointer;
+            user-select:none;
+            -webkit-user-select:none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="search">
+            <input type="text" name="" value="" id="input-name">
+            <span class="button" id="search-btn">搜索</span>
+        </div>
+        <ul id="show-name">
+            <!-- <li>1</li>
+            <li>2</li>
+            <li>3</li> -->
+        </ul>
+    </div>
+
+
+</body>
+</html>
