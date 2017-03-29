@@ -1,0 +1,92 @@
+/*****
+ *@author: jianingning
+ *@from: Global style wenda_putong  别人看普通
+ *@description: 
+ *@date: name (2017.03.10)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_headerTitle.less";
+@import "mod/mod_headerLogo.less";
+@import "mod/mod_headerMenu.less";
+@import "mod/mod_wendaPub.less";
+@import "mod/mod_pagination.less";
+@import "mod/mod_footer.less";
+@import "mod/mod_preview_image";
+
+.pt_content {
+	width: 990px;
+	margin: 0 auto;
+
+	/*个人信息*/
+	.pt_personal_news {
+		margin-top: 10px;
+		width: 988px;
+		height: 182px;
+		border: 1px solid #dadada;
+
+		.pt_per {
+			float: left;
+			margin-top: 25px;
+			width: 422px;
+			height: 115px;
+			border-right: 1px dashed #eee;
+
+			dt {
+				position: relative;
+				float: left;
+				margin: 0 39px 0 40px;
+				width: 100px;
+				height: 100px;
+
+				.pt_photo {
+					display: inline-block;
+					width: 100px;
+					height: 100px;
+				}
+
+				.q_photo_mask {
+					position: absolute;
+					top: 0;
+					left: 0;
+					z-index: 2;
+					display: inline-block;
+					width: 100px;
+					height: 100px;
+					background: url(../img/zhj_photo_mask.png);
+					background-size: 100%;
+				}
+			}
+			.pt_name {
+				margin-top: 41px;
+				font-size: 24px;
+				font-weight: 700;
+				overflow: hidden;
+				max-width: 231px;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+			p {
+				display: inline-block;
+				font-size: 18px;
+				margin: 46px 0 0 78px;
+
+				span {
+					font-weight: 700;
+				}
+			}
+			.pt_num2 {
+				margin-left: 113px;
+			}
+		}
+		.pt_noborder {
+			border-right: none;
+			width: 563px;
+		}
+	}
+}
+.footer {
+	margin-top: 48px;
+}

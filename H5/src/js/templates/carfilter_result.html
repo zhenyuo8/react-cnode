@@ -1,0 +1,49 @@
+<div class="choice_result_page">
+
+		<!-- 排序头部 -->
+		<div class="sort_bar clearfix">
+			<a class="total_type">共{{total}}个车型</a>
+			<div class="sort_btn">
+				<span v-on:click="s=2" v-bind:class="{hot_current:s==2}" class="hot_sort"><i></i>热度排序</span>
+				<span v-on:click="s=s == 3 ? 4 : 3" v-bind:class="{price_current:s==3,price_current2:s==4}" class="price_sort"><i></i>价格排序</span>
+			</div>
+		</div>
+
+		<!-- 占位 -->
+		<div class="occupy_seat"></div>
+
+		<!-- 结果列表 -->
+		<div class="result_list clearfix">
+			<!-- 广告 -->
+			<a v-if="adData.length" v-for="el in adData" v-bind:href="el.Link" target="_blank">
+				<dl>
+					<dt><img v-bind:src="el.ImageUrl"></dt>
+					<dd>
+						<p class="type_name">{{el.Text}}</p>
+						<p class="type_price">{{el.Price}}</p>
+					</dd>
+				</dl>
+			</a>
+
+			<router-link :to="{name:'carserial',query:{serialId:row.id}}" v-for="(row,i) in rows" reload>
+				<dl>
+					<dt><img v-bind:src="row.imgurl?row.imgurl:'http://static.qcdqcdn.com/img/noImg.png'"></dt>
+					<dd>
+						<p class="type_name">{{row.showname}}</p>
+						<p class="type_price" v-if="row.dealerminprice">{{row.dealerminprice}}-{{row.dealermaxprice}}万</p>
+						<p class="type_price" v-else>暂无报价</p>
+					</dd>
+				</dl>
+			</router-link>
+		</div>
+
+		<div class="load_more">
+			<span class="loading" v-show="state==1">正在加载中…</span>
+			<!--
+			<span class="nextload" v-on:click="nextPage()" v-show="state==2">点击加载更多</span>
+			-->
+			<span class="nextload" v-show="state==2">上滑加载更多</span>
+			<span class="nomore" v-show="state==3">没有更多了</span>
+		</div>
+		<br>
+	</div>

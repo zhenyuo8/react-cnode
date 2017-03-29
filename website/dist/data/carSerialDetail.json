@@ -1,0 +1,1001 @@
+[
+  {
+    "id": "9",
+    "allList": [
+      {
+        "gid": "10000",
+        "gname": "一汽奥迪",
+        "gspell": "yiqiaodi",
+        "child": [
+          {
+            "id": "3999",
+            "name": "A3",
+            "urlSpell": "aodia3-3999",
+            "showName": "奥迪A3",
+            "saleState": "在销"
+          },
+          {
+            "id": "2593",
+            "name": "A4L",
+            "urlSpell": "quanxinaodia4l",
+            "showName": "奥迪A4L",
+            "saleState": "在销"
+          },
+          {
+            "id": "2573",
+            "name": "A6L",
+            "urlSpell": "xinaodia6l",
+            "showName": "奥迪A6L",
+            "saleState": "在销"
+          },
+          {
+            "id": "3395",
+            "name": "Q3",
+            "urlSpell": "aodiq3haiwai",
+            "showName": "奥迪Q3",
+            "saleState": "在销"
+          },
+          {
+            "id": "2855",
+            "name": "Q5",
+            "urlSpell": "aodiq5-2855",
+            "showName": "奥迪Q5",
+            "saleState": "在销"
+          },
+          {
+            "id": "1906",
+            "name": "A4",
+            "urlSpell": "aodia4",
+            "showName": "奥迪A4",
+            "saleState": "停销"
+          },
+          {
+            "id": "2555",
+            "name": "100",
+            "urlSpell": "aodi100",
+            "showName": "奥迪100",
+            "saleState": "停销"
+          },
+          {
+            "id": "2556",
+            "name": "200",
+            "urlSpell": "aodi200",
+            "showName": "奥迪200",
+            "saleState": "停销"
+          }
+        ]
+      },
+      {
+        "gid": "20004",
+        "gname": "进口奥迪",
+        "gspell": "aodi",
+        "child": [
+          {
+            "id": "2921",
+            "name": "A1",
+            "urlSpell": "aodia1",
+            "showName": "奥迪A1(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "2715",
+            "name": "A3",
+            "urlSpell": "aodia3",
+            "showName": "奥迪A3(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "4385",
+            "name": "A3 e-tron",
+            "urlSpell": "a3etron",
+            "showName": "A3 e-tron",
+            "saleState": "在销"
+          },
+          {
+            "id": "4732",
+            "name": "A4 allroad",
+            "urlSpell": "aodia4allroad",
+            "showName": "奥迪A4 allroad",
+            "saleState": "在销"
+          },
+          {
+            "id": "2382",
+            "name": "A5",
+            "urlSpell": "aodia5",
+            "showName": "奥迪A5(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "2071",
+            "name": "A6",
+            "urlSpell": "aodia6",
+            "showName": "奥迪A6(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "4735",
+            "name": "A6 allroad",
+            "urlSpell": "aodia6allroad",
+            "showName": "奥迪A6 allroad",
+            "saleState": "在销"
+          },
+          {
+            "id": "2837",
+            "name": "A7",
+            "urlSpell": "aodia7",
+            "showName": "奥迪A7(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "2070",
+            "name": "A8L",
+            "urlSpell": "aodia8l",
+            "showName": "奥迪A8L(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "2591",
+            "name": "S8",
+            "urlSpell": "aodis8",
+            "showName": "奥迪S8(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "3547",
+            "name": "Q3",
+            "urlSpell": "aodiq3",
+            "showName": "奥迪Q3(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "2632",
+            "name": "Q5",
+            "urlSpell": "aodiq5",
+            "showName": "奥迪Q5(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "1994",
+            "name": "Q7",
+            "urlSpell": "aodiq7",
+            "showName": "奥迪Q7(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "2347",
+            "name": "R8",
+            "urlSpell": "aodir8",
+            "showName": "奥迪R8(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "3781",
+            "name": "S3",
+            "urlSpell": "s3",
+            "showName": "奥迪S3",
+            "saleState": "在销"
+          },
+          {
+            "id": "2623",
+            "name": "S5",
+            "urlSpell": "aodis5",
+            "showName": "奥迪S5(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "3634",
+            "name": "S6",
+            "urlSpell": "aodis6haiwai",
+            "showName": "奥迪S6(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "3633",
+            "name": "S7",
+            "urlSpell": "aodis7haiwai",
+            "showName": "奥迪S7(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "3829",
+            "name": "SQ5",
+            "urlSpell": "aodisq5",
+            "showName": "奥迪SQ5(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "2068",
+            "name": "TT",
+            "urlSpell": "aoditt",
+            "showName": "奥迪TT(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "2075",
+            "name": "A4",
+            "urlSpell": "aodia4-2075",
+            "showName": "奥迪A4(进口)",
+            "saleState": "待销"
+          },
+          {
+            "id": "4103",
+            "name": "Q1",
+            "urlSpell": "q1",
+            "showName": "奥迪Q1(进口)",
+            "saleState": "待销"
+          },
+          {
+            "id": "3736",
+            "name": "Q2",
+            "urlSpell": "aodiq2haiwai",
+            "showName": "奥迪Q2",
+            "saleState": "待销"
+          },
+          {
+            "id": "3750",
+            "name": "Q8",
+            "urlSpell": "aodiq8",
+            "showName": "奥迪Q8",
+            "saleState": "待销"
+          },
+          {
+            "id": "4111",
+            "name": "S1",
+            "urlSpell": "aodis1jinkou",
+            "showName": "奥迪S1(进口)",
+            "saleState": "待销"
+          },
+          {
+            "id": "2582",
+            "name": "S4",
+            "urlSpell": "s4",
+            "showName": "奥迪S4",
+            "saleState": "停销"
+          }
+        ]
+      },
+      {
+        "gid": "20219",
+        "gname": "进口奥迪RS",
+        "gspell": "aodirs",
+        "child": [
+          {
+            "id": "2847",
+            "name": "RS5",
+            "urlSpell": "rs5",
+            "showName": "奥迪RS5(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "3824",
+            "name": "RS6",
+            "urlSpell": "rs6",
+            "showName": "奥迪RS6(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "3841",
+            "name": "RS7",
+            "urlSpell": "aodirs7",
+            "showName": "奥迪RS7(进口)",
+            "saleState": "在销"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "allList": [
+      {
+        "gid": "20066",
+        "gname": "华晨宝马",
+        "gspell": "huachenbaoma",
+        "child": [
+          {
+            "id": "4750",
+            "name": "2系旅行车",
+            "urlSpell": "2xilvxingche",
+            "showName": "宝马2系旅行车",
+            "saleState": "在销"
+          },
+          {
+            "id": "1729",
+            "name": "3系",
+            "urlSpell": "baoma3xi",
+            "showName": "宝马3系",
+            "saleState": "在销"
+          },
+          {
+            "id": "2412",
+            "name": "5系",
+            "urlSpell": "baoma5xichangzhoujuban",
+            "showName": "宝马5系",
+            "saleState": "在销"
+          },
+          {
+            "id": "3544",
+            "name": "X1",
+            "urlSpell": "huachenbaomax1",
+            "showName": "宝马X1",
+            "saleState": "在销"
+          },
+          {
+            "id": "4853",
+            "name": "1系",
+            "urlSpell": "baoma1xi-4853",
+            "showName": "宝马1系",
+            "saleState": "待销"
+          }
+        ]
+      },
+      {
+        "gid": "20005",
+        "gname": "进口宝马",
+        "gspell": "baoma",
+        "child": [
+          {
+            "id": "2348",
+            "name": "1系",
+            "urlSpell": "baoma1xi",
+            "showName": "宝马1系(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "3943",
+            "name": "2系",
+            "urlSpell": "baoma2xi",
+            "showName": "宝马2系(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "4446",
+            "name": "2系多功能旅行车",
+            "urlSpell": "baoma2xigrantourer",
+            "showName": "宝马2系多功能旅行车(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "3921",
+            "name": "2系运动旅行车",
+            "urlSpell": "activetourer",
+            "showName": "宝马2系运动旅行车(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "2035",
+            "name": "3系",
+            "urlSpell": "baoma3xi-2035",
+            "showName": "宝马3系(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "3784",
+            "name": "3系GT",
+            "urlSpell": "3xigt",
+            "showName": "宝马3系GT(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "4667",
+            "name": "3系旅行轿车",
+            "urlSpell": "baoma3xilvxingjiaochejinkou",
+            "showName": "宝马3系旅行轿车(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "3486",
+            "name": "4系",
+            "urlSpell": "4xi",
+            "showName": "宝马4系(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "2034",
+            "name": "5系",
+            "urlSpell": "baoma5xi-2034",
+            "showName": "宝马5系(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "2755",
+            "name": "5系GT",
+            "urlSpell": "baoma5xigt",
+            "showName": "宝马5系GT(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "4668",
+            "name": "5系旅行轿车",
+            "urlSpell": "baoma5xilvxingjiaoche",
+            "showName": "宝马5系旅行轿车(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "2040",
+            "name": "6系",
+            "urlSpell": "baoma6xi",
+            "showName": "宝马6系(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "2033",
+            "name": "7系",
+            "urlSpell": "baoma7xi",
+            "showName": "宝马7系(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "3580",
+            "name": "i3",
+            "urlSpell": "baomai3",
+            "showName": "宝马i3(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "3581",
+            "name": "i8",
+            "urlSpell": "baomai8",
+            "showName": "宝马i8(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "2037",
+            "name": "X3",
+            "urlSpell": "baomax3",
+            "showName": "宝马X3(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "3274",
+            "name": "X4",
+            "urlSpell": "x4",
+            "showName": "宝马X4(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "2032",
+            "name": "X5",
+            "urlSpell": "baomax5",
+            "showName": "宝马X5(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "2390",
+            "name": "X6",
+            "urlSpell": "baomax6",
+            "showName": "宝马X6(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "2751",
+            "name": "Z4",
+            "urlSpell": "baomaxinz4",
+            "showName": "宝马Z4(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "4891",
+            "name": "8系",
+            "urlSpell": "baoma8xijinkou",
+            "showName": "宝马8系(进口)",
+            "saleState": "待销"
+          },
+          {
+            "id": "2762",
+            "name": "X1",
+            "urlSpell": "baomax1",
+            "showName": "宝马X1(进口)",
+            "saleState": "停销"
+          },
+          {
+            "id": "2804",
+            "name": "Z3",
+            "urlSpell": "z3",
+            "showName": "Z3",
+            "saleState": "停销"
+          },
+          {
+            "id": "2805",
+            "name": "Z8",
+            "urlSpell": "z8",
+            "showName": "Z8",
+            "saleState": "停销"
+          }
+        ]
+      },
+      {
+        "gid": "20218",
+        "gname": "进口宝马M系",
+        "gspell": "baomamxi-20218",
+        "child": [
+          {
+            "id": "3996",
+            "name": "宝马1系M",
+            "urlSpell": "baoma1xim",
+            "showName": "宝马1系M(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "4059",
+            "name": "宝马M2",
+            "urlSpell": "baomam2",
+            "showName": "宝马M2(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "3991",
+            "name": "宝马M3",
+            "urlSpell": "baomam3",
+            "showName": "宝马M3(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "3998",
+            "name": "宝马M4",
+            "urlSpell": "baomam4",
+            "showName": "宝马M4(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "3992",
+            "name": "宝马M5",
+            "urlSpell": "baomam5",
+            "showName": "宝马M5(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "3993",
+            "name": "宝马M6",
+            "urlSpell": "baomam6",
+            "showName": "宝马M6(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "3994",
+            "name": "宝马X5 M",
+            "urlSpell": "baomax5m",
+            "showName": "宝马X5 M(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "3995",
+            "name": "宝马X6 M",
+            "urlSpell": "baomax6m",
+            "showName": "宝马X6 M(进口)",
+            "saleState": "在销"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "82",
+    "allList": [
+      {
+        "gid": "20006",
+        "gname": "进口保时捷",
+        "gspell": "baoshijie",
+        "child": [
+          {
+            "id": "4820",
+            "name": "718",
+            "urlSpell": "baoshijie718",
+            "showName": "保时捷718",
+            "saleState": "在销"
+          },
+          {
+            "id": "2045",
+            "name": "911",
+            "urlSpell": "baoshijie911",
+            "showName": "保时捷911",
+            "saleState": "在销"
+          },
+          {
+            "id": "3045",
+            "name": "918",
+            "urlSpell": "baoshijie918",
+            "showName": "保时捷918",
+            "saleState": "在销"
+          },
+          {
+            "id": "2044",
+            "name": "Boxster",
+            "urlSpell": "baoshijieboxster",
+            "showName": "保时捷Boxster",
+            "saleState": "在销"
+          },
+          {
+            "id": "2046",
+            "name": "Cayenne",
+            "urlSpell": "baoshijiecayenne",
+            "showName": "保时捷Cayenne",
+            "saleState": "在销"
+          },
+          {
+            "id": "2267",
+            "name": "Cayman",
+            "urlSpell": "baoshijiecayman",
+            "showName": "保时捷Cayman",
+            "saleState": "在销"
+          },
+          {
+            "id": "3787",
+            "name": "Macan",
+            "urlSpell": "macan",
+            "showName": "保时捷Macan",
+            "saleState": "在销"
+          },
+          {
+            "id": "2629",
+            "name": "Panamera",
+            "urlSpell": "panamera",
+            "showName": "保时捷Panamera",
+            "saleState": "在销"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "97",
+    "allList": [
+      {
+        "gid": "20003",
+        "gname": "进口阿斯顿·马丁",
+        "gspell": "asidunmading",
+        "child": [
+          {
+            "id": "4765",
+            "name": "DB11",
+            "urlSpell": "asidunmadingdb11",
+            "showName": "阿斯顿马丁DB11",
+            "saleState": "在销"
+          },
+          {
+            "id": "2621",
+            "name": "DB9",
+            "urlSpell": "asidunmadingdb9",
+            "showName": "阿斯顿马丁DB9",
+            "saleState": "在销"
+          },
+          {
+            "id": "2620",
+            "name": "DBS",
+            "urlSpell": "asidunmadingdbs",
+            "showName": "阿斯顿马丁DBS",
+            "saleState": "在销"
+          },
+          {
+            "id": "3555",
+            "name": "Lagonda",
+            "urlSpell": "lagonda",
+            "showName": "阿斯顿马丁Lagonda",
+            "saleState": "在销"
+          },
+          {
+            "id": "2974",
+            "name": "Rapide",
+            "urlSpell": "rapide",
+            "showName": "阿斯顿马丁Rapide",
+            "saleState": "在销"
+          },
+          {
+            "id": "2720",
+            "name": "V12 Vantage",
+            "urlSpell": "v12vantage",
+            "showName": "V12 Vantage",
+            "saleState": "在销"
+          },
+          {
+            "id": "2140",
+            "name": "V8 Vantage",
+            "urlSpell": "v8vantage",
+            "showName": "V8 Vantage",
+            "saleState": "在销"
+          },
+          {
+            "id": "3811",
+            "name": "Vanquish",
+            "urlSpell": "vanquish",
+            "showName": "阿斯顿马丁Vanquish",
+            "saleState": "在销"
+          },
+          {
+            "id": "3558",
+            "name": "Zagato",
+            "urlSpell": "zagato",
+            "showName": "阿斯顿马丁Zagato",
+            "saleState": "待销"
+          },
+          {
+            "id": "3538",
+            "name": "DB7",
+            "urlSpell": "db7",
+            "showName": "阿斯顿马丁DB7",
+            "saleState": "停销"
+          },
+          {
+            "id": "2736",
+            "name": "ONE-77",
+            "urlSpell": "asidunmadingone77",
+            "showName": "阿斯顿马丁ONE-77",
+            "saleState": "停销"
+          },
+          {
+            "id": "3415",
+            "name": "Virage",
+            "urlSpell": "virage",
+            "showName": "阿斯顿马丁Virage",
+            "saleState": "停销"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "26",
+    "allList": [
+      {
+        "gid": "20063",
+        "gname": "东风本田",
+        "gspell": "dongfengbentian",
+        "child": [
+          {
+            "id": "3701",
+            "name": "艾力绅",
+            "urlSpell": "ailishen",
+            "showName": "艾力绅",
+            "saleState": "在销"
+          },
+          {
+            "id": "1660",
+            "name": "CR-V",
+            "urlSpell": "dongfengbentiancrv",
+            "showName": "本田CR-V",
+            "saleState": "在销"
+          },
+          {
+            "id": "4648",
+            "name": "哥瑞",
+            "urlSpell": "gerui",
+            "showName": "哥瑞",
+            "saleState": "在销"
+          },
+          {
+            "id": "3721",
+            "name": "杰德",
+            "urlSpell": "concepts",
+            "showName": "杰德",
+            "saleState": "在销"
+          },
+          {
+            "id": "4870",
+            "name": "竞瑞",
+            "urlSpell": "bentiangienia",
+            "showName": "竞瑞",
+            "saleState": "在销"
+          },
+          {
+            "id": "2780",
+            "name": "思铂睿",
+            "urlSpell": "siborui",
+            "showName": "思铂睿",
+            "saleState": "在销"
+          },
+          {
+            "id": "3532",
+            "name": "思铭",
+            "urlSpell": "siming",
+            "showName": "思铭",
+            "saleState": "在销"
+          },
+          {
+            "id": "1661",
+            "name": "思域",
+            "urlSpell": "siyucivic",
+            "showName": "思域",
+            "saleState": "在销"
+          },
+          {
+            "id": "4279",
+            "name": "XR-V",
+            "urlSpell": "bentian2xw",
+            "showName": "本田XR-V",
+            "saleState": "在销"
+          },
+          {
+            "id": "4792",
+            "name": "UR-V",
+            "urlSpell": "bentianurv",
+            "showName": "本田UR-V",
+            "saleState": "待销"
+          }
+        ]
+      },
+      {
+        "gid": "10006",
+        "gname": "广汽本田",
+        "gspell": "guangqibentian",
+        "child": [
+          {
+            "id": "2750",
+            "name": "奥德赛",
+            "urlSpell": "xinaodesai",
+            "showName": "奥德赛",
+            "saleState": "在销"
+          },
+          {
+            "id": "4117",
+            "name": "缤智",
+            "urlSpell": "vezeljinkou",
+            "showName": "缤智",
+            "saleState": "在销"
+          },
+          {
+            "id": "2408",
+            "name": "飞度",
+            "urlSpell": "xinfeidu",
+            "showName": "飞度",
+            "saleState": "在销"
+          },
+          {
+            "id": "4610",
+            "name": "锋范",
+            "urlSpell": "fengfan-4610",
+            "showName": "锋范",
+            "saleState": "在销"
+          },
+          {
+            "id": "2606",
+            "name": "锋范经典",
+            "urlSpell": "fengfan",
+            "showName": "锋范经典",
+            "saleState": "在销"
+          },
+          {
+            "id": "4794",
+            "name": "冠道",
+            "urlSpell": "guandao",
+            "showName": "冠道",
+            "saleState": "在销"
+          },
+          {
+            "id": "2993",
+            "name": "歌诗图",
+            "urlSpell": "yagecrosstour",
+            "showName": "歌诗图",
+            "saleState": "在销"
+          },
+          {
+            "id": "3720",
+            "name": "凌派",
+            "urlSpell": "conceptc",
+            "showName": "凌派",
+            "saleState": "在销"
+          },
+          {
+            "id": "2406",
+            "name": "雅阁",
+            "urlSpell": "dibadaiyage",
+            "showName": "雅阁",
+            "saleState": "在销"
+          },
+          {
+            "id": "1708",
+            "name": "思迪",
+            "urlSpell": "sidi",
+            "showName": "思迪",
+            "saleState": "停销"
+          }
+        ]
+      },
+      {
+        "gid": "20008",
+        "gname": "进口本田",
+        "gspell": "bentian",
+        "child": [
+          {
+            "id": "2931",
+            "name": "CR-Z",
+            "urlSpell": "bentiancrzhaiwai",
+            "showName": "本田CR-Z(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "4295",
+            "name": "飞度(进口)",
+            "urlSpell": "bentianfeidu",
+            "showName": "飞度(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "2722",
+            "name": "音赛特",
+            "urlSpell": "bentianinsight",
+            "showName": "音赛特(进口)",
+            "saleState": "在销"
+          },
+          {
+            "id": "4660",
+            "name": "本田S660",
+            "urlSpell": "bentians660",
+            "showName": "本田S660",
+            "saleState": "待销"
+          },
+          {
+            "id": "4448",
+            "name": "Pilot",
+            "urlSpell": "bentianpilot",
+            "showName": "本田Pilot",
+            "saleState": "待销"
+          },
+          {
+            "id": "2520",
+            "name": "奥德赛",
+            "urlSpell": "bentianaodesai",
+            "showName": "本田奥德赛(进口)",
+            "saleState": "停销"
+          },
+          {
+            "id": "2519",
+            "name": "阿柯德",
+            "urlSpell": "bentianakede",
+            "showName": "本田阿柯德(进口)",
+            "saleState": "停销"
+          },
+          {
+            "id": "2049",
+            "name": "时韵",
+            "urlSpell": "bentianshiyun",
+            "showName": "本田时韵(进口)",
+            "saleState": "停销"
+          },
+          {
+            "id": "2521",
+            "name": "雅阁",
+            "urlSpell": "bentianyage",
+            "showName": "本田雅阁(进口)",
+            "saleState": "停销"
+          },
+          {
+            "id": "1999",
+            "name": "元素",
+            "urlSpell": "bentianyuansu",
+            "showName": "本田元素(进口)",
+            "saleState": "停销"
+          },
+          {
+            "id": "1997",
+            "name": "CR-V",
+            "urlSpell": "bentiancrv",
+            "showName": "本田CR-V(进口)",
+            "saleState": "停销"
+          },
+          {
+            "id": "2050",
+            "name": "里程",
+            "urlSpell": "bentianlicheng",
+            "showName": "里程(海外)",
+            "saleState": "停销"
+          },
+          {
+            "id": "2051",
+            "name": "思域",
+            "urlSpell": "bentiansiyu",
+            "showName": "思域(进口)",
+            "saleState": "停销"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "allList": [{"gid":"10075","gname":"北京奔驰","gspell":"beijingbenchi","child":[{"id":"2364","name":"C级","urlSpell":"benchicji-2364","showName":"奔驰C级","saleState":"在销"},{"id":"1987","name":"E级","urlSpell":"benchieji","showName":"奔驰E级","saleState":"在销"},{"id":"4477","name":"GLA级","urlSpell":"benchiglaji","showName":"奔驰GLA级","saleState":"在销"},{"id":"4597","name":"GLC级","urlSpell":"benchiglcji","showName":"奔驰GLC级","saleState":"在销"},{"id":"3528","name":"GLK级","urlSpell":"beijingbenchiglkji","showName":"奔驰GLK级","saleState":"在销"}]},{"gid":"20163","gname":"福建奔驰","gspell":"fujianbenchi","child":[{"id":"3038","name":"福建奔驰威霆","urlSpell":"weiting-3038","showName":"福建奔驰威霆","saleState":"在销"},{"id":"3542","name":"凌特","urlSpell":"lingte","showName":"凌特","saleState":"在销"},{"id":"4138","name":"V级","urlSpell":"vclass","showName":"奔驰V级","saleState":"在销"},{"id":"2970","name":"唯雅诺","urlSpell":"weiyanuo","showName":"唯雅诺","saleState":"停销"}]},{"gid":"20007","gname":"进口奔驰","gspell":"benchi","child":[{"id":"2564","name":"A级","urlSpell":"benchiaji","showName":"奔驰A级(进口)","saleState":"在销"},{"id":"2616","name":"B级","urlSpell":"bji","showName":"奔驰B级(进口)","saleState":"在销"},{"id":"2257","name":"C级","urlSpell":"benchicji","showName":"奔驰C级(进口)","saleState":"在销"},{"id":"4669","name":"C级旅行轿车","urlSpell":"benchicjilvxingjiaochejinkou","showName":"奔驰C级旅行轿车(进口)","saleState":"在销"},{"id":"3673","name":"CLA级","urlSpell":"benchicla","showName":"奔驰CLA级(进口)","saleState":"在销"},{"id":"2261","name":"CLS级","urlSpell":"clsji","showName":"奔驰CLS级(进口)","saleState":"在销"},{"id":"2765","name":"E级轿车","urlSpell":"xinejijiaoche","showName":"奔驰E级(进口)","saleState":"在销"},{"id":"2737","name":"E级双门轿跑车","urlSpell":"xinejishuangmenjiaopaoche","showName":"E级双门轿跑车(进口)","saleState":"在销"},{"id":"2356","name":"G级","urlSpell":"benchigji","showName":"奔驰G级(进口)","saleState":"在销"},{"id":"3891","name":"GLA级","urlSpell":"gla","showName":"奔驰GLA级(进口)","saleState":"在销"},{"id":"4496","name":"GLC Coupe","urlSpell":"benchiglccoupe","showName":"奔驰GLC Coupe","saleState":"在销"},{"id":"4401","name":"GLE级","urlSpell":"benchiglecoupe","showName":"奔驰GLE级(进口)","saleState":"在销"},{"id":"4689","name":"GLE级运动SUV","urlSpell":"benchiglejiyundongsuvjinkou","showName":"奔驰GLE级运动SUV(进口)","saleState":"在销"},{"id":"1995","name":"GL级","urlSpell":"benchiglji","showName":"奔驰GL级(进口)","saleState":"在销"},{"id":"2600","name":"GLK级","urlSpell":"benchiglk","showName":"奔驰GLK级(进口)","saleState":"在销"},{"id":"4662","name":"GLS级","urlSpell":"benchiglsjijinkou","showName":"奔驰GLS级(进口)","saleState":"在销"},{"id":"1953","name":"M级","urlSpell":"benchimlji","showName":"奔驰M级(进口)","saleState":"在销"},{"id":"1877","name":"R级","urlSpell":"benchirji","showName":"奔驰R级(进口)","saleState":"在销"},{"id":"2101","name":"斯宾特(进口)","urlSpell":"benchilingte","showName":"斯宾特(进口)","saleState":"在销"},{"id":"2259","name":"S级","urlSpell":"benchisji","showName":"奔驰S级(进口)","saleState":"在销"},{"id":"4770","name":"SLC级","urlSpell":"benchislcji","showName":"奔驰SLC级","saleState":"在销"},{"id":"2262","name":"SL级","urlSpell":"benchislji","showName":"奔驰SL级(进口)","saleState":"在销"},{"id":"2263","name":"SLK级","urlSpell":"slkji","showName":"奔驰SLK级(进口)","saleState":"在销"},{"id":"2972","name":"威霆","urlSpell":"weiting","showName":"威霆(进口)","saleState":"在销"},{"id":"2102","name":"唯雅诺","urlSpell":"benchiviano","showName":"唯雅诺(进口)","saleState":"在销"},{"id":"2517","name":"CL级","urlSpell":"benchiclxilie","showName":"奔驰CL系列(进口)","saleState":"停销"},{"id":"2626","name":"奔驰SEL","urlSpell":"benchisel","showName":"奔驰SEL","saleState":"停销"},{"id":"2489","name":"VITO","urlSpell":"benchivito","showName":"奔驰VITO(进口)","saleState":"停销"},{"id":"2260","name":"CLK","urlSpell":"benchiclk","showName":"奔驰CLK(进口)","saleState":"停销"},{"id":"3282","name":"马可波罗","urlSpell":"makeboluo","showName":"马可波罗","saleState":"停销"},{"id":"2939","name":"SLR","urlSpell":"slr","showName":"SLR","saleState":"停销"}]},{"gid":"20217","gname":"进口奔驰AMG","gspell":"benchiamg","child":[{"id":"3984","name":"A级AMG","urlSpell":"benchiajiamg","showName":"奔驰A级AMG","saleState":"在销"},{"id":"4319","name":"AMG GT","urlSpell":"benchiamggt","showName":"奔驰AMG GT","saleState":"在销"},{"id":"3975","name":"C级AMG","urlSpell":"benchicjiamg","showName":"奔驰C级AMG(进口)","saleState":"在销"},{"id":"3985","name":"CLA级AMG","urlSpell":"benchiclajiamg","showName":"奔驰CLA级AMG","saleState":"在销"},{"id":"3974","name":"CLS级AMG","urlSpell":"clsjiamg","showName":"奔驰CLS级AMG(进口)","saleState":"在销"},{"id":"3976","name":"G级AMG","urlSpell":"benchigjiamg","showName":"奔驰G级AMG(进口)","saleState":"在销"},{"id":"4104","name":"GLA级AMG","urlSpell":"benchiglajiamg","showName":"奔驰GLA级AMG","saleState":"在销"},{"id":"4426","name":"GLE级AMG","urlSpell":"benchiglejiamg","showName":"奔驰GLE级AMG","saleState":"在销"},{"id":"4690","name":"GLE级AMG运动SUV","urlSpell":"benchiglejiamgyundongsuvjinkou","showName":"奔驰GLE级AMG运动SUV(进口)","saleState":"在销"},{"id":"3982","name":"GL级AMG","urlSpell":"gljiamg","showName":"奔驰GL级AMG(进口)","saleState":"在销"},{"id":"4663","name":"GLS级AMG","urlSpell":"benchiglsjiamg","showName":"奔驰GLS级AMG","saleState":"在销"},{"id":"3977","name":"M级AMG","urlSpell":"benchimjiamg","showName":"奔驰M级AMG(进口)","saleState":"在销"},{"id":"3981","name":"S级AMG","urlSpell":"sjiamg","showName":"奔驰S级AMG","saleState":"在销"},{"id":"3980","name":"SL级AMG","urlSpell":"sljiamg","showName":"奔驰SL级AMG(进口)","saleState":"在销"},{"id":"3978","name":"SLK级AMG","urlSpell":"slkjiamg","showName":"奔驰SLK级AMG(进口)","saleState":"在销"},{"id":"3979","name":"SLS级AMG","urlSpell":"slsjiamg","showName":"奔驰SLS级AMG(进口)","saleState":"在销"},{"id":"3983","name":"E级AMG","urlSpell":"benchiejiamg","showName":"奔驰E级AMG","saleState":"待销"},{"id":"4755","name":"GLC级AMG","urlSpell":"benchiglcjiamg","showName":"奔驰GLC级AMG","saleState":"待销"}]},{"gid":"20256","gname":"进口奔驰迈巴赫","gspell":"benchimaibahe","child":[{"id":"4373","name":"迈巴赫S级","urlSpell":"maibahesji","showName":"迈巴赫S级","saleState":"在销"}]}]
+  },
+  {
+    "id": "5",
+    "allList": [{"gid":"10008","gname":"东风标致","gspell":"dongfengbiaozhi","child":[{"id":"4066","name":"2008","urlSpell":"2008","showName":"标致2008","saleState":"在销"},{"id":"3805","name":"3008","urlSpell":"biaozhi3008","showName":"标致3008","saleState":"在销"},{"id":"3603","name":"301","urlSpell":"biaozhi301haiwai","showName":"标致301","saleState":"在销"},{"id":"3495","name":"308","urlSpell":"308sanxiang","showName":"标致308","saleState":"在销"},{"id":"4434","name":"308S","urlSpell":"biaozhi308s","showName":"标致308S","saleState":"在销"},{"id":"4866","name":"4008","urlSpell":"biaozhi4008-4866","showName":"标致4008","saleState":"在销"},{"id":"2859","name":"408","urlSpell":"408sanxiang","showName":"标致408","saleState":"在销"},{"id":"3269","name":"508","urlSpell":"biaozhi508","showName":"标致508","saleState":"在销"},{"id":"1663","name":"206","urlSpell":"biaozhi206","showName":"标致206","saleState":"停销"},{"id":"2676","name":"207两厢","urlSpell":"dongfengbiaozhi207liangxiang","showName":"标致207两厢","saleState":"停销"},{"id":"2589","name":"207三厢","urlSpell":"biaozhi207","showName":"标致207三厢","saleState":"停销"},{"id":"2288","name":"307两厢","urlSpell":"biaozhi307liangxiang","showName":"标致307两厢","saleState":"停销"},{"id":"2057","name":"307三厢","urlSpell":"biaozhi307sanxiang","showName":"标致307三厢","saleState":"停销"}]},{"gid":"20117","gname":"广州标致","gspell":"guangzhoubiaozhi","child":[{"id":"2427","name":"广州标致","urlSpell":"guangzhoubiaozhi-2427","showName":"广州标致","saleState":"停销"}]},{"gid":"20009","gname":"进口标致","gspell":"biaozhi","child":[{"id":"2419","name":"207 CC","urlSpell":"biaozhi207cc","showName":"标致207 CC(进口)","saleState":"在销"},{"id":"2757","name":"308 CC","urlSpell":"biaozhi308cc","showName":"标致308 CC(进口)","saleState":"在销"},{"id":"2781","name":"308 SW","urlSpell":"biaozhi308sw","showName":"标致308 SW(进口)","saleState":"在销"},{"id":"3620","name":"4008","urlSpell":"biaozhi4008","showName":"标致4008(进口)","saleState":"在销"},{"id":"2936","name":"RCZ","urlSpell":"biaozhi308rczhaiwai","showName":"标致RCZ(进口)","saleState":"在销"},{"id":"4114","name":"108","urlSpell":"biaozhi108","showName":"标致108","saleState":"待销"},{"id":"3792","name":"2008","urlSpell":"biaozhi2008","showName":"标致2008（进口）","saleState":"待销"},{"id":"2935","name":"3008","urlSpell":"biaozhi3008haiwai","showName":"标致3008(进口)","saleState":"待销"},{"id":"3396","name":"308","urlSpell":"biaozhi308","showName":"标致308（进口）","saleState":"待销"},{"id":"3253","name":"308S GTi","urlSpell":"308gti","showName":"308S GTi","saleState":"待销"},{"id":"3488","name":"5008","urlSpell":"biaozhi5008","showName":"标致5008","saleState":"待销"},{"id":"4265","name":"508","urlSpell":"biaozhi508jinkou","showName":"标致508(进口)","saleState":"待销"},{"id":"2985","name":"206(进口)","urlSpell":"biaozhi206-2985","showName":"标致206(进口)","saleState":"停销"},{"id":"2053","name":"407","urlSpell":"biaozhi407","showName":"标致407(进口)","saleState":"停销"},{"id":"2280","name":"407 Coupe","urlSpell":"biaozhicoupe407","showName":"标致407 Coupe(进口)","saleState":"停销"},{"id":"2278","name":"407 SW","urlSpell":"biaozhi407sw","showName":"标致407 SW(进口)","saleState":"停销"},{"id":"2274","name":"206 CC","urlSpell":"biaozhi206cc","showName":"标致206 CC(进口)","saleState":"停销"},{"id":"2986","name":"206 SW","urlSpell":"206sw","showName":"标致206 SW","saleState":"停销"},{"id":"2987","name":"307","urlSpell":"biaozhi307","showName":"标致307","saleState":"停销"},{"id":"2275","name":"307 CC","urlSpell":"biaozhi307cc","showName":"标致307 CC(进口)","saleState":"停销"},{"id":"2276","name":"307 SW","urlSpell":"biaozhi307sw","showName":"标致307 SW(进口)","saleState":"停销"},{"id":"2988","name":"406 Coupe","urlSpell":"coupe406","showName":"标致406 Coupe","saleState":"停销"},{"id":"1904","name":"406","urlSpell":"biaozhi406","showName":"标致406(进口)","saleState":"停销"},{"id":"2055","name":"607","urlSpell":"biaozhi607","showName":"标致607(进口)","saleState":"停销"},{"id":"2054","name":"807","urlSpell":"biaozhi807","showName":"标致807(进口)","saleState":"停销"}]}]
+  }
+]

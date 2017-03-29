@@ -1,0 +1,293 @@
+/*****
+ *@author: zhangbs
+ *@from: Global style paramConfig
+ *@description: 陈璐
+ *@date: name (2017.02.18)
+*/
+.param_config_page .params_type {
+  height: 3rem;
+}
+.param_config_page .occupy_seat {
+  height: 2.88rem;
+}
+.param_config_page .param_type_list {
+  position: fixed;
+  left: 0;
+  top: 1.173rem;
+  background: #fff;
+  z-index: 10;
+  /*overflow-x: scroll;
+        &::-webkit-scrollbar{
+            height: 0;
+        }*/
+}
+.param_config_page .param_type_list ul {
+  padding: 0.4rem /* 30/75 */ 0;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.param_config_page .param_type_list ul li {
+  height: 2.2rem /* 133/75 */;
+  border: 1px solid #dcdcdc;
+  border-radius: 0.04rem /* 3/75 */;
+  position: relative;
+}
+.param_config_page .param_type_list ul li .type_name {
+  line-height: 0.4rem /* 30/75 */;
+  margin-bottom: 0.187rem /* 14/75 */;
+}
+.param_config_page .param_type_list ul li .type_price {
+  color: #ff3131;
+}
+.param_config_page .param_type_list ul li em {
+  background-image: url("../img/delete.png");
+  background-size: 100% 100%;
+  width: 0.48rem;
+  height: 0.48rem;
+  position: absolute;
+  top: -0.24rem /* 18/75 */;
+  right: -0.24rem /* 18/75 */;
+}
+.param_config_page .param_type_list ul li:active {
+  border-color: #2896fe;
+}
+.param_config_page .hide_alike {
+  color: #828282;
+  background: #fff;
+  text-align: center;
+  padding-top: 0.72rem /* 54/75 */;
+  width: 2.773333rem;
+  padding-right: 0.2rem;
+  margin: 0;
+  border: 0;
+}
+.param_config_page .hide_alike i {
+  background-image: url("../img/eye.png");
+  background-size: 100% 100%;
+  width: 0.867rem;
+  height: 0.6rem;
+  display: inline-block;
+}
+.param_config_page .hide_alike p {
+  text-align: center;
+  line-height: 0.88rem /* 66/75 */;
+}
+.param_config_page .hide_alike.active i {
+  background-image: url("../img/eye_open.png");
+  background-size: 100% 100%;
+  width: 0.867rem;
+  height: 0.6rem;
+}
+.param_config_page .hide_alike.active p {
+  color: #2896fe;
+}
+.param_config_page .param_catalog ul {
+  -webkit-box-shadow: 3px 3px 20px 3px #c1c5c8;
+  -moz-box-shadow: 3px 3px 20px 3px #c1c5c8;
+  box-shadow: 3px 3px 20px 3px #c1c5c8;
+  width: 5.893rem /* 442/75 */;
+  background-color: #fff;
+  border: 1px solid #c1c5c8;
+  border-radius: 0.093rem /* 7/75 */;
+  padding: 0.24rem /* 18/75 */ 0.453rem /* 34/75 */ 0.293rem /* 22/75 */;
+}
+.param_config_page .param_catalog ul li {
+  float: left;
+  width: 50%;
+  line-height: 0.96rem /* 72/75 */;
+}
+.param_config_page .param_catalog span {
+  color: #fff;
+  background: -webkit-linear-gradient(top left, #099ffa, #217bfa);
+  background: -moz-linear-gradient(top left, #099ffa, #217bfa);
+  background: -o-linear-gradient(top left, #099ffa, #217bfa);
+  background: linear-gradient(to bottom right, #099ffa, #217bfa);
+  -webkit-box-shadow: 0 5px 20px 0 #217bfa;
+  -moz-box-shadow: 0 5px 20px 0 #217bfa;
+  box-shadow: 0 5px 20px 0 #217bfa;
+  border-radius: 50%;
+  width: 1.307rem /* 98/75 */;
+  height: 1.307rem /* 98/75 */;
+  line-height: 1.307rem /* 98/75 */;
+  text-align: center;
+  display: inline-block;
+}
+.param_title {
+  padding: 0 .3rem;
+  background-color: #f3f3f3;
+  height: .8rem;
+}
+.param_title .title {
+  color: #555;
+  line-height: .8rem;
+  float: left;
+}
+.param_title .item {
+  color: #848484;
+  float: right;
+}
+.param_title .item i {
+  line-height: 0.827rem /* 62/75 */;
+  display: inline-block;
+}
+.param_title .item i em {
+  color: #b7b7b7;
+  border-radius: 50%;
+  width: 0.24rem /* 18/75 */;
+  height: 0.24rem /* 18/75 */;
+  margin: 0 0.16rem /* 12/75 */ 0 0.373rem /* 28/75 */;
+  display: inline-block;
+}
+.param_title .item i:first-child em {
+  background-color: #b7b7b7;
+}
+.param_title .item i:nth-of-type(2) em {
+  border: 1px solid #b7b7b7;
+}
+.param_config_page * {
+  font-size: 0.35rem;
+}
+.params_type,
+.param_table {
+  display: table;
+  width: 100%;
+  overflow: hidden;
+}
+.params_type .h73 span,
+.param_table .h73 span {
+  display: inline-block;
+  width: 0.266667rem;
+  height: 0.106667rem;
+}
+.params_type .null_icon,
+.param_table .null_icon {
+  display: inline-block;
+  width: 0.267rem /* 20/75 */;
+  height: 1px;
+  border-top: 2px solid #b7b7b7;
+  vertical-align: middle;
+  color: #b7b7b7;
+  border-radius: 50%;
+}
+.params_type .bp_icon,
+.param_table .bp_icon {
+  display: inline-block;
+  border-radius: 50%;
+  width: 0.267rem /* 20/75 */;
+  height: 0.267rem /* 20/75 */;
+  background-color: #b7b7b7;
+  color: #b7b7b7;
+}
+.params_type .xp_icon,
+.param_table .xp_icon {
+  display: inline-block;
+  border-radius: 50%;
+  width: 0.187rem /* 14/75 */;
+  height: 0.187rem /* 14/75 */;
+  border: 0.04rem /* 3/75 */ solid #b7b7b7;
+  border: 1px solid #b7b7b7;
+  color: #b7b7b7;
+}
+.hide_alike,
+.param_table_head {
+  /* display: table-cell;*/
+}
+#wrapper-header,
+.param_table_cont {
+  display: table-cell;
+  position: relative;
+}
+#wrapper-header,
+#wrapper-body {
+  width: 100%;
+  overflow: hidden;
+}
+#scroller-header,
+#scroller-body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  background: #fff;
+}
+.param_table .title_box th {
+  background: #f3f3f3;
+  text-align: left;
+  padding-left: .3rem;
+  height: .8rem;
+}
+.param_table_head th {
+  height: 1.2rem;
+  background: #fff;
+  color: #828282;
+  font-size: .3rem;
+  font-weight: normal;
+}
+.param_table_cont table td {
+  padding: 0 0.2rem;
+  border-right: 1px solid #f3f3f3;
+}
+.param_table_head {
+  border-right: 1px solid #f3f3f3;
+  width: 2.773333rem;
+}
+.color_div {
+  padding: 0 .28rem;
+}
+.color_span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 2px;
+  border: 1px solid #ccc;
+}
+.icon_none,
+.icon_has,
+.icon_choose {
+  color: #b7b7b7;
+  border-radius: 50%;
+  width: .24rem;
+  height: .24rem;
+  display: inline-block;
+}
+.icon_has {
+  background-color: #b7b7b7;
+}
+.icon_choose {
+  border: 1px solid #b7b7b7;
+}
+.same {
+  background: #f4faff;
+}
+.content_wid {
+  width: 2.773333rem;
+}
+.content_wid2 {
+  width: 3.333333rem;
+}
+.pad_bx {
+  padding-left: 0.2rem;
+  display: table-cell;
+  vertical-align: middle;
+  width: 2.773333rem;
+}
+.find_loc_price_btn {
+  color: #fff;
+  display: inline-block;
+  width: 1.266667rem;
+  line-height: 0.64rem;
+  text-align: center;
+  background-color: #2799fe;
+  border-radius: 0.053rem /* 4/75 */;
+  vertical-align: middle;
+  margin-left: 0.267rem /* 20/75 */;
+  padding: 0 3px;
+}
+.trSome {
+  background: #f4faff;
+}
+.table_gt {
+  height: 1.8rem;
+  display: table-cell;
+  vertical-align: middle;
+}

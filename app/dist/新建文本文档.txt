@@ -1,0 +1,550 @@
+<div class="car_name" id="car_name">
+                    <!--车品牌名称及id绑定-->
+                    <div class="brand_car_name" id="brand_car_name">
+
+                        <dl id="letters_A">
+
+                            <dd class=""><a href="#" data-char="9">A 奥迪</a></dd>
+
+                            <dd class=""><a href="#" data-char="97">A 阿斯顿·马丁</a></dd>
+
+                            <dd class=""><a href="#" data-char="92">A 阿尔法·罗密欧</a></dd>
+
+                            <dd class=""><a href="#" data-char="151">A 阿尔特</a></dd>
+
+                            <dd class=""><a href="#" data-char="180">A AC Schnitzer</a>
+                            </dd>
+
+                            <dd class=""><a href="#" data-char="228">A Artega</a></dd>
+
+                            <dd class=""><a href="#" data-char="12">A 奥克斯</a></dd>
+
+                        </dl>
+
+                        <dl id="letters_B">
+
+                            <dd class=""><a href="#" data-char="26">B 本田</a></dd>
+
+                            <dd class=""><a href="#" data-char="2">B 奔驰</a></dd>
+
+                            <dd class=""><a href="#" data-char="127">B 别克</a></dd>
+
+                            <dd class=""><a href="#" data-char="3">B 宝马</a></dd>
+
+                            <dd class=""><a href="#" data-char="157">B 宝骏</a></dd>
+
+                            <dd class=""><a href="#" data-char="5">B 标致</a></dd>
+
+                            <dd class=""><a href="#" data-char="15">B 比亚迪</a></dd>
+
+                            <dd class=""><a href="#" data-char="82">B 保时捷</a></dd>
+
+                            <dd class=""><a href="#" data-char="211">B 北汽幻速</a></dd>
+
+                            <dd class=""><a href="#" data-char="163">B 北京</a></dd>
+
+                            <dd class=""><a href="#" data-char="195">B 北汽绅宝</a></dd>
+
+                            <dd class=""><a href="#" data-char="59">B 奔腾</a></dd>
+
+                            <dd class=""><a href="#" data-char="236">B 宝沃</a></dd>
+
+                            <dd class=""><a href="#" data-char="85">B 宾利</a></dd>
+
+                            <dd class=""><a href="#" data-char="14">B 北汽制造</a></dd>
+
+                            <dd class=""><a href="#" data-char="168">B 北汽威旺</a></dd>
+
+                            <dd class=""><a href="#" data-char="135">B 布加迪</a></dd>
+
+                            <dd class=""><a href="#" data-char="172">B 巴博斯</a></dd>
+
+                            <dd class=""><a href="#" data-char="216">B 北汽新能源</a></dd>
+
+                            <dd class=""><a href="#" data-char="263">B 比速汽车</a></dd>
+
+                            <dd class=""><a href="#" data-char="184">B 保斐利</a></dd>
+
+                            <dd class=""><a href="#" data-char="261">B 北汽瑞丽</a></dd>
+
+                            <dd class=""><a href="#" data-char="68">B 宝龙</a></dd>
+
+                        </dl>
+
+                        <dl id="letters_C">
+
+                            <dd class=""><a href="#" data-char="136">C 长安轿车</a></dd>
+
+                            <dd class=""><a href="#" data-char="159">C 长安商用</a></dd>
+
+                            <dd class=""><a href="#" data-char="21">C 长城</a></dd>
+
+                            <dd class=""><a href="#" data-char="129">C 昌河</a></dd>
+
+                            <dd class=""><a href="#" data-char="230">C 长安跨越</a></dd>
+
+                            <dd class=""><a href="#" data-char="231">C 长城华冠</a></dd>
+
+                            <dd class=""><a href="#" data-char="221">C 成功</a></dd>
+
+                            <dd class=""><a href="#" data-char="250">C 长久汽车</a></dd>
+
+                        </dl>
+
+                        <dl id="letters_D">
+
+                            <dd class=""><a href="#" data-char="8">D 大众</a></dd>
+
+                            <dd class=""><a href="#" data-char="115">D 东风风行</a></dd>
+
+                            <dd class=""><a href="#" data-char="141">D 东风风神</a></dd>
+
+                            <dd class=""><a href="#" data-char="29">D 东南</a></dd>
+
+                            <dd class=""><a href="#" data-char="253">D 东风风光</a></dd>
+
+                            <dd class=""><a href="#" data-char="113">D 道奇</a></dd>
+
+                            <dd class=""><a href="#" data-char="179">D DS</a></dd>
+
+                            <dd class=""><a href="#" data-char="197">D 东风风度</a></dd>
+
+                            <dd class=""><a href="#" data-char="205">D 东风小康</a></dd>
+
+                            <dd class=""><a href="#" data-char="235">D 东风·郑州日产</a></dd>
+
+                            <dd class=""><a href="#" data-char="215">D 东风御风</a></dd>
+
+                            <dd class=""><a href="#" data-char="27">D 东风</a></dd>
+
+                            <dd class=""><a href="#" data-char="256">D 东风风诺</a></dd>
+
+                            <dd class=""><a href="#" data-char="192">D 底特律电动车</a></dd>
+
+                            <dd class=""><a href="#" data-char="106">D 大宇</a></dd>
+
+                            <dd class=""><a href="#" data-char="66">D 大迪</a></dd>
+
+                        </dl>
+
+                        <dl id="letters_F">
+
+                            <dd class=""><a href="#" data-char="7">F 丰田</a></dd>
+
+                            <dd class=""><a href="#" data-char="17">F 福特</a></dd>
+
+                            <dd class=""><a href="#" data-char="128">F 福田</a></dd>
+
+                            <dd class=""><a href="#" data-char="91">F 法拉利</a></dd>
+
+                            <dd class=""><a href="#" data-char="40">F 菲亚特</a></dd>
+
+                            <dd class=""><a href="#" data-char="67">F 福迪</a></dd>
+
+                            <dd class=""><a href="#" data-char="208">F 福汽启腾</a></dd>
+
+                            <dd class=""><a href="#" data-char="199">F 飞驰商务车</a></dd>
+
+                            <dd class=""><a href="#" data-char="187">F Faralli
+                                Mazzanti</a></dd>
+
+                            <dd class=""><a href="#" data-char="164">F 菲斯克</a></dd>
+
+                            <dd class=""><a href="#" data-char="61">F 富奇</a></dd>
+
+                        </dl>
+
+                        <dl id="letters_G">
+
+                            <dd class=""><a href="#" data-char="147">G 广汽传祺</a></dd>
+
+                            <dd class=""><a href="#" data-char="182">G 观致汽车</a></dd>
+
+                            <dd class=""><a href="#" data-char="109">G GMC</a></dd>
+
+                            <dd class=""><a href="#" data-char="63">G 广汽吉奥</a></dd>
+
+                            <dd class=""><a href="#" data-char="252">G 广汽中兴</a></dd>
+
+                            <dd class=""><a href="#" data-char="110">G 光冈</a></dd>
+
+                            <dd class=""><a href="#" data-char="237">G GTA</a></dd>
+
+                            <dd class=""><a href="#" data-char="133">G 广汽日野</a></dd>
+
+                        </dl>
+
+                        <dl id="letters_H">
+
+                            <dd class=""><a href="#" data-char="196">H 哈弗</a></dd>
+
+                            <dd class=""><a href="#" data-char="32">H 海马</a></dd>
+
+                            <dd class=""><a href="#" data-char="58">H 红旗</a></dd>
+
+                            <dd class=""><a href="#" data-char="259">H 汉腾</a></dd>
+
+                            <dd class=""><a href="#" data-char="112">H 华泰</a></dd>
+
+                            <dd class=""><a href="#" data-char="108">H 悍马</a></dd>
+
+                            <dd class=""><a href="#" data-char="52">H 黄海</a></dd>
+
+                            <dd class=""><a href="#" data-char="31">H 哈飞</a></dd>
+
+                            <dd class=""><a href="#" data-char="225">H 华颂</a></dd>
+
+                            <dd class=""><a href="#" data-char="251">H 华泰新能源</a></dd>
+
+                            <dd class=""><a href="#" data-char="149">H 海马商用车</a></dd>
+
+                            <dd class=""><a href="#" data-char="170">H 海格</a></dd>
+
+                            <dd class=""><a href="#" data-char="44">H 华普</a></dd>
+
+                            <dd class=""><a href="#" data-char="45">H 汇众</a></dd>
+
+                            <dd class=""><a href="#" data-char="181">H 恒天汽车</a></dd>
+
+                            <dd class=""><a href="#" data-char="124">H 黑豹</a></dd>
+
+                            <dd class=""><a href="#" data-char="262">H 华凯</a></dd>
+
+                            <dd class=""><a href="#" data-char="119">H 汉江</a></dd>
+
+                            <dd class=""><a href="#" data-char="70">H 航天圆通</a></dd>
+
+                        </dl>
+
+                        <dl id="letters_J">
+
+                            <dd class=""><a href="#" data-char="34">J 吉利汽车</a></dd>
+
+                            <dd class=""><a href="#" data-char="4">J Jeep</a></dd>
+
+                            <dd class=""><a href="#" data-char="35">J 江淮</a></dd>
+
+                            <dd class=""><a href="#" data-char="98">J 捷豹</a></dd>
+
+                            <dd class=""><a href="#" data-char="39">J 金杯</a></dd>
+
+                            <dd class=""><a href="#" data-char="37">J 江铃</a></dd>
+
+                            <dd class=""><a href="#" data-char="57">J 金龙</a></dd>
+
+                            <dd class=""><a href="#" data-char="38">J 江南</a></dd>
+
+                            <dd class=""><a href="#" data-char="152">J 九龙</a></dd>
+
+                            <dd class=""><a href="#" data-char="224">J 江铃集团轻汽</a></dd>
+
+                            <dd class=""><a href="#" data-char="161">J 金旅客车</a></dd>
+
+                            <dd class=""><a href="#" data-char="74">J 金程</a></dd>
+
+                            <dd class=""><a href="#" data-char="121">J 吉林江北</a></dd>
+
+                        </dl>
+
+                        <dl id="letters_K">
+
+                            <dd class=""><a href="#" data-char="107">K 凯迪拉克</a></dd>
+
+                            <dd class=""><a href="#" data-char="150">K 开瑞</a></dd>
+
+                            <dd class=""><a href="#" data-char="220">K 凯翼</a></dd>
+
+                            <dd class=""><a href="#" data-char="51">K 克莱斯勒</a></dd>
+
+                            <dd class=""><a href="#" data-char="241">K 康迪全球鹰电动汽车</a></dd>
+
+                            <dd class=""><a href="#" data-char="218">K 科瑞斯的</a></dd>
+
+                            <dd class=""><a href="#" data-char="213">K 卡威</a></dd>
+
+                            <dd class=""><a href="#" data-char="145">K 科尼赛克</a></dd>
+
+                            <dd class=""><a href="#" data-char="188">K 卡尔森</a></dd>
+
+                            <dd class=""><a href="#" data-char="212">K KTM</a></dd>
+
+                        </dl>
+
+                        <dl id="letters_L">
+
+                            <dd class=""><a href="#" data-char="96">L 路虎</a></dd>
+
+                            <dd class=""><a href="#" data-char="94">L 雷克萨斯</a></dd>
+
+                            <dd class=""><a href="#" data-char="36">L 陆风</a></dd>
+
+                            <dd class=""><a href="#" data-char="16">L 铃木</a></dd>
+
+                            <dd class=""><a href="#" data-char="95">L 林肯</a></dd>
+
+                            <dd class=""><a href="#" data-char="153">L 猎豹汽车</a></dd>
+
+                            <dd class=""><a href="#" data-char="99">L 雷诺</a></dd>
+
+                            <dd class=""><a href="#" data-char="76">L 力帆</a></dd>
+
+                            <dd class=""><a href="#" data-char="86">L 兰博基尼</a></dd>
+
+                            <dd class=""><a href="#" data-char="80">L 劳斯莱斯</a></dd>
+
+                            <dd class=""><a href="#" data-char="229">L 雷丁电动</a></dd>
+
+                            <dd class=""><a href="#" data-char="146">L 莲花</a></dd>
+
+                            <dd class=""><a href="#" data-char="83">L 路特斯</a></dd>
+
+                            <dd class=""><a href="#" data-char="200">L 蓝海房车</a></dd>
+
+                            <dd class=""><a href="#" data-char="166">L 理念</a></dd>
+
+                            <dd class=""><a href="#" data-char="249">L 陆地方舟</a></dd>
+
+                            <dd class=""><a href="#" data-char="255">L LeSEE</a></dd>
+
+                            <dd class=""><a href="#" data-char="223">L 领志</a></dd>
+
+                            <dd class=""><a href="#" data-char="227">L 朗世</a></dd>
+
+                            <dd class=""><a href="#" data-char="101">L 罗孚</a></dd>
+
+                        </dl>
+
+                        <dl id="letters_M">
+
+                            <dd class=""><a href="#" data-char="18">M 马自达</a></dd>
+
+                            <dd class=""><a href="#" data-char="79">M MG</a></dd>
+
+                            <dd class=""><a href="#" data-char="93">M 玛莎拉蒂</a></dd>
+
+                            <dd class=""><a href="#" data-char="81">M MINI</a></dd>
+
+                            <dd class=""><a href="#" data-char="183">M 迈凯伦</a></dd>
+
+                            <dd class=""><a href="#" data-char="88">M 迈巴赫</a></dd>
+
+                            <dd class=""><a href="#" data-char="201">M 摩根</a></dd>
+
+                            <dd class=""><a href="#" data-char="55">M 美亚</a></dd>
+
+                        </dl>
+
+                        <dl id="letters_N">
+
+                            <dd class=""><a href="#" data-char="155">N 纳智捷</a></dd>
+
+                            <dd class=""><a href="#" data-char="234">N Noble</a></dd>
+
+                        </dl>
+
+                        <dl id="letters_O">
+
+                            <dd class=""><a href="#" data-char="84">O 讴歌</a></dd>
+
+                            <dd class=""><a href="#" data-char="104">O 欧宝</a></dd>
+
+                            <dd class=""><a href="#" data-char="171">O 欧朗</a></dd>
+
+                            <dd class=""><a href="#" data-char="243">O 欧联</a></dd>
+
+                        </dl>
+
+                        <dl id="letters_P">
+
+                            <dd class=""><a href="#" data-char="185">P 帕加尼</a></dd>
+
+                            <dd class=""><a href="#" data-char="210">P 皮特比尔特卡车</a></dd>
+
+                            <dd class=""><a href="#" data-char="191">P PGO</a></dd>
+
+                            <dd class=""><a href="#" data-char="105">P 旁蒂克</a></dd>
+
+                        </dl>
+
+                        <dl id="letters_Q">
+
+                            <dd class=""><a href="#" data-char="28">Q 起亚</a></dd>
+
+                            <dd class=""><a href="#" data-char="42">Q 奇瑞</a></dd>
+
+                            <dd class=""><a href="#" data-char="156">Q 启辰</a></dd>
+
+                            <dd class=""><a href="#" data-char="43">Q 庆铃</a></dd>
+
+                            <dd class=""><a href="#" data-char="226">Q 乔治·巴顿</a></dd>
+
+                        </dl>
+
+                        <dl id="letters_R">
+
+                            <dd class=""><a href="#" data-char="30">R 日产</a></dd>
+
+                            <dd class=""><a href="#" data-char="78">R 荣威</a></dd>
+
+                            <dd class=""><a href="#" data-char="142">R 瑞麒</a></dd>
+
+                        </dl>
+
+                        <dl id="letters_S">
+
+                            <dd class=""><a href="#" data-char="10">S 斯柯达</a></dd>
+
+                            <dd class=""><a href="#" data-char="25">S 三菱</a></dd>
+
+                            <dd class=""><a href="#" data-char="111">S 斯巴鲁</a></dd>
+
+                            <dd class=""><a href="#" data-char="165">S 上汽大通MAXUS</a></dd>
+
+                            <dd class=""><a href="#" data-char="89">S smart</a></dd>
+
+                            <dd class=""><a href="#" data-char="102">S 双龙</a></dd>
+
+                            <dd class=""><a href="#" data-char="260">S 斯威</a></dd>
+
+                            <dd class=""><a href="#" data-char="209">S 山姆</a></dd>
+
+                            <dd class=""><a href="#" data-char="50">S 双环</a></dd>
+
+                            <dd class=""><a href="#" data-char="242">S STARTECH</a></dd>
+
+                            <dd class=""><a href="#" data-char="239">S 赛麟SALEEN</a></dd>
+
+                            <dd class=""><a href="#" data-char="137">S 世爵</a></dd>
+
+                            <dd class=""><a href="#" data-char="169">S 陕汽通家</a></dd>
+
+                            <dd class=""><a href="#" data-char="103">S 萨博</a></dd>
+
+                            <dd class=""><a href="#" data-char="117">S 三星</a></dd>
+
+                            <dd class=""><a href="#" data-char="244">S 上喆汽车</a></dd>
+
+                            <dd class=""><a href="#" data-char="73">S 顺旅</a></dd>
+
+                        </dl>
+
+                        <dl id="letters_T">
+
+                            <dd class=""><a href="#" data-char="189">T 特斯拉</a></dd>
+
+                            <dd class=""><a href="#" data-char="202">T 泰卡特</a></dd>
+
+                            <dd class=""><a href="#" data-char="175">T 腾势</a></dd>
+
+                            <dd class=""><a href="#" data-char="54">T 天马</a></dd>
+
+                            <dd class=""><a href="#" data-char="56">T 通田</a></dd>
+
+                        </dl>
+
+                        <dl id="letters_W">
+
+                            <dd class=""><a href="#" data-char="48">W 五菱</a></dd>
+
+                            <dd class=""><a href="#" data-char="19">W 沃尔沃</a></dd>
+
+                            <dd class=""><a href="#" data-char="132">W 五十铃</a></dd>
+
+                            <dd class=""><a href="#" data-char="207">W 潍柴英致</a></dd>
+
+                            <dd class=""><a href="#" data-char="270">W WEY</a></dd>
+
+                            <dd class=""><a href="#" data-char="266">W 蔚来</a></dd>
+
+                            <dd class=""><a href="#" data-char="140">W 威麟</a></dd>
+
+                            <dd class=""><a href="#" data-char="247">W 潍柴欧睿</a></dd>
+
+                            <dd class=""><a href="#" data-char="186">W 威兹曼</a></dd>
+
+                            <dd class=""><a href="#" data-char="46">W 万丰</a></dd>
+
+                        </dl>
+
+                        <dl id="letters_X">
+
+                            <dd class=""><a href="#" data-char="13">X 现代</a></dd>
+
+                            <dd class=""><a href="#" data-char="49">X 雪佛兰</a></dd>
+
+                            <dd class=""><a href="#" data-char="6">X 雪铁龙</a></dd>
+
+                            <dd class=""><a href="#" data-char="174">X 星客特</a></dd>
+
+                            <dd class=""><a href="#" data-char="71">X 新凯</a></dd>
+
+                            <dd class=""><a href="#" data-char="87">X 西雅特</a></dd>
+
+                            <dd class=""><a href="#" data-char="264">X 小鹏汽车</a></dd>
+
+                            <dd class=""><a href="#" data-char="62">X 新雅途</a></dd>
+
+                            <dd class=""><a href="#" data-char="65">X 新大地</a></dd>
+
+                        </dl>
+
+                        <dl id="letters_Y">
+
+                            <dd class=""><a href="#" data-char="53">Y 一汽</a></dd>
+
+                            <dd class=""><a href="#" data-char="100">Y 英菲尼迪</a></dd>
+
+                            <dd class=""><a href="#" data-char="258">Y 驭胜</a></dd>
+
+                            <dd class=""><a href="#" data-char="138">Y 野马汽车</a></dd>
+
+                            <dd class=""><a href="#" data-char="41">Y 依维柯</a></dd>
+
+                            <dd class=""><a href="#" data-char="178">Y 宇通</a></dd>
+
+                            <dd class=""><a href="#" data-char="75">Y 永源</a></dd>
+
+                            <dd class=""><a href="#" data-char="238">Y 御捷</a></dd>
+
+                            <dd class=""><a href="#" data-char="245">Y 游侠汽车</a></dd>
+
+                            <dd class=""><a href="#" data-char="268">Y 雅宾纳</a></dd>
+
+                            <dd class=""><a href="#" data-char="194">Y 扬州亚星客车</a></dd>
+
+                            <dd class=""><a href="#" data-char="118">Y 云豹</a></dd>
+
+                            <dd class=""><a href="#" data-char="126">Y 云雀</a></dd>
+
+                            <dd class=""><a href="#" data-char="47">Y 仪征</a></dd>
+
+                        </dl>
+
+                        <dl id="letters_Z">
+
+                            <dd class=""><a href="#" data-char="77">Z 众泰</a></dd>
+
+                            <dd class=""><a href="#" data-char="60">Z 中华</a></dd>
+
+                            <dd class=""><a href="#" data-char="233">Z 知豆</a></dd>
+
+                            <dd class=""><a href="#" data-char="33">Z 中兴</a></dd>
+
+                            <dd class=""><a href="#" data-char="167">Z 中欧奔驰房车</a></dd>
+
+                            <dd class=""><a href="#" data-char="203">Z 之诺</a></dd>
+
+                            <dd class=""><a href="#" data-char="214">Z 浙江卡尔森</a></dd>
+
+                            <dd class=""><a href="#" data-char="204">Z 中通客车</a></dd>
+
+                            <dd class=""><a href="#" data-char="246">Z 重汽王牌</a></dd>
+
+                            <dd class=""><a href="#" data-char="72">Z 中顺</a></dd>
+
+                            <dd class=""><a href="#" data-char="64">Z 中客华北</a></dd>
+
+                        </dl>
+
+                    </div>
+                </div>

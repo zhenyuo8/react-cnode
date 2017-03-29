@@ -1,0 +1,1267 @@
+/*****
+ *@author: linyh
+ *@from: Global style index(首页)
+ *@description: 陈璐
+ *@date: name (2017.02.21)
+*/
+/*****
+ *@author: jianingning
+ *@from: Global style mod_nav
+ *@description:
+ *@date: name (2017.02.20)
+*/
+.nav {
+  width: 100%;
+  height: 2.147rem;
+  background: -webkit-linear-gradient(left, #23aeff, #2f77ff);
+}
+.nav .nav_demo {
+  float: left;
+  width: 20%;
+  height: 1.067rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+}
+.nav .nav_demo a {
+  display: inline-block;
+  width: 100%;
+  height: 1.067rem;
+  text-align: center;
+  line-height: 1.067rem;
+  color: #fff;
+  font-size: 16px;
+}
+.nav .no_r {
+  border-right: none;
+}
+.nav .no_b {
+  border-bottom: none;
+}
+[data-dpr="2"] .nav a {
+  font-size: 32px;
+}
+[data-dpr="3"] .nav a {
+  font-size: 48px;
+}
+/*****
+ *@author: linyh
+ *@from: Global style goTop
+ *@description: 陈璐
+ *@date: name (2017.02.22)
+*/
+.go_top {
+  display: none;
+  width: 1.333rem /* 100/75 */;
+  height: 1.333rem /* 100/75 */;
+  position: fixed;
+  bottom: 0.987rem /* 74/75 */;
+  right: 0.267rem /* 20/75 */;
+  z-index: 99;
+}
+.go_top span {
+  background: #000;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  filter: alpha(opacity=60);
+  opacity: .6;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.go_top i {
+  background-image: url("../img/goTop.png");
+  background-size: 100% 100%;
+  width: 0.4rem;
+  height: 0.48rem;
+  display: inline-block;
+  position: absolute;
+  top: 0.427rem /* 32/75 */;
+  left: 0.467rem /* 35/75 */;
+}
+.index_page .ad_bar {
+  width: 100%;
+  background-color: #f4f5f7;
+}
+.index_page .ad_bar img {
+  display: block;
+  width: 100%;
+}
+.index_page .bg_bar {
+  width: 100%;
+  height: 0.4rem /* 30/75 */;
+  background-color: #f4f5f7;
+}
+.index_page header {
+  font-size: 16px;
+  width: 92%;
+  height: 1.173rem /* 88/75 */;
+  padding: 0 4%;
+}
+.index_page header .logo {
+  float: left;
+  width: 2.8rem /* 210/75 */;
+  height: 0.707rem /* 53/75 */;
+  margin-top: 0.24rem /* 18/75 */;
+}
+.index_page header .logo img {
+  display: inline-block;
+  width: 100%;
+}
+.index_page header .login_in {
+  float: right;
+  color: #2799fe;
+  line-height: 1.173rem /* 88/75 */;
+}
+.index_page header .login_in span {
+  display: inline-block;
+}
+.index_page header .login_in span img {
+  display: inline-block;
+  width: 0.747rem /* 56/75 */;
+  height: 0.747rem /* 56/75 */;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.index_page header .login_in .user_in {
+  display: none;
+}
+.index_page .search_bar {
+  font-size: 14px;
+  width: 89.333%;
+  margin: 0.4rem /* 30/75 */ 5.333% 0.16rem /* 12/75 */;
+  border-radius: 0.507rem /* 38/75 */;
+  border: 1px solid #2799fe;
+}
+.index_page .search_bar input {
+  background-color: transparent;
+  width: 80%;
+  height: 1.04rem /* 78/75 */;
+  line-height: 1.04rem;
+  border-radius: 0.507rem /* 38/75 */;
+  padding-left: 0.373rem /* 28/75 */;
+}
+.index_page .search_bar input::-webkit-input-placeholder {
+  color: #999;
+}
+.index_page .search_bar input:-moz-placeholder {
+  color: #999;
+}
+.index_page .search_bar input::-moz-placeholder {
+  color: #999;
+}
+.index_page .search_bar input::-ms-input-placeholder {
+  color: #999;
+}
+.index_page .search_bar i {
+  background-image: url("../img/search_fdj.png");
+  background-size: 100% 100%;
+  width: 0.56rem;
+  height: 0.573rem;
+  float: right;
+  margin: .25rem .4rem 0 0 ;
+}
+.index_page .tab_title {
+  font-size: 15px;
+  width: 92%;
+  padding: 0 4%;
+  border-bottom: 2px solid #ebedef;
+}
+.index_page .tab_title li {
+  float: left;
+  width: 25%;
+  line-height: 1.053rem /* 79/75 */;
+}
+.index_page .tab_title li a {
+  color: #848484;
+  height: 100%;
+  text-align: center;
+  margin: 0 19%;
+  display: block;
+}
+.index_page .tab_title li .current {
+  color: #2799fe;
+  border-bottom: 2px solid #2799fe;
+  margin-bottom: -2px;
+}
+.index_page .tab_sort {
+  overflow: hidden;
+}
+.index_page .tab_sort .sort_module {
+  width: 400%;
+  position: relative;
+}
+.index_page .tab_sort .sort_module .sort_swiper_box {
+  width: 25%;
+  float: left;
+}
+.index_page .tab_sort .sort_module .sort_swiper_box .same_sort_module {
+  font-size: 14px;
+  width: 82%;
+  padding: 0.32rem /* 24/75 */ 9% 0.347rem /* 26/75 */;
+}
+.index_page .tab_sort .sort_module .sort_swiper_box .same_sort_module li {
+  float: left;
+  width: 33.333%;
+  text-align: center;
+}
+.index_page .tab_sort .sort_module .sort_swiper_box .same_sort_module li:nth-of-type(3n-2) {
+  text-align: left;
+}
+.index_page .tab_sort .sort_module .sort_swiper_box .same_sort_module li:nth-of-type(3n) {
+  text-align: right;
+}
+.index_page .tab_sort .sort_module .sort_swiper_box .same_sort_module li a {
+  display: block;
+  line-height: 1.173rem /* 88/75 */;
+}
+.index_page .tab_sort .sort_module .sort_swiper_box .same_sort_module li a img {
+  display: inline-block;
+  width: 0.16rem /* 12/75 */;
+  height: 0.293rem /* 22/75 */;
+  vertical-align: middle;
+  margin-left: 0.133rem /* 10/75 */;
+}
+.index_page .tab_sort .sort_module .sort_swiper_box .brand_sort {
+  width: 100%;
+  padding-bottom: 0.267rem /* 20/75 */;
+}
+.index_page .tab_sort .sort_module .sort_swiper_box .brand_sort li {
+  float: left;
+  width: 20%;
+  margin-bottom: 0.267rem /* 20/75 */;
+  text-align: center;
+}
+.index_page .tab_sort .sort_module .sort_swiper_box .brand_sort li a {
+  display: block;
+}
+.index_page .tab_sort .sort_module .sort_swiper_box .brand_sort li a img {
+  display: inline-block;
+  width: 1rem /* 75/75 */;
+  height: 1rem /* 75/75 */;
+  margin: 0.3rem /* 22.5/75 */ 0 0.1rem;
+}
+.index_page .tab_sort .sort_module .sort_swiper_box .brand_sort li a span {
+  display: block;
+  width: 87%;
+  text-align: center;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.index_page .tab_sort .sort_module .sort_swiper_box .price_sort {
+  font-size: 14px;
+  width: 82%;
+  padding: 0.32rem /* 24/75 */ 9% 0.347rem /* 26/75 */;
+}
+.index_page .tab_sort .sort_module .sort_swiper_box .price_sort li {
+  float: left;
+  width: 33.333%;
+  text-align: center;
+}
+.index_page .tab_sort .sort_module .sort_swiper_box .price_sort li:nth-of-type(3n-2) {
+  text-align: left;
+}
+.index_page .tab_sort .sort_module .sort_swiper_box .price_sort li:nth-of-type(3n) {
+  text-align: right;
+}
+.index_page .tab_sort .sort_module .sort_swiper_box .price_sort li a {
+  display: block;
+  line-height: 1.173rem /* 88/75 */;
+}
+.index_page .tab_sort .sort_module .sort_swiper_box .price_sort li a img {
+  display: inline-block;
+  width: 0.16rem /* 12/75 */;
+  height: 0.293rem /* 22/75 */;
+  vertical-align: middle;
+  margin-left: 0.133rem /* 10/75 */;
+}
+.index_page .tab_sort .sort_module .sort_swiper_box .level_sort {
+  font-size: 14px;
+  width: 82%;
+  padding: 0.32rem /* 24/75 */ 9% 0.347rem /* 26/75 */;
+}
+.index_page .tab_sort .sort_module .sort_swiper_box .level_sort li {
+  float: left;
+  width: 33.333%;
+  text-align: center;
+}
+.index_page .tab_sort .sort_module .sort_swiper_box .level_sort li:nth-of-type(3n-2) {
+  text-align: left;
+}
+.index_page .tab_sort .sort_module .sort_swiper_box .level_sort li:nth-of-type(3n) {
+  text-align: right;
+}
+.index_page .tab_sort .sort_module .sort_swiper_box .level_sort li a {
+  display: block;
+  line-height: 1.173rem /* 88/75 */;
+}
+.index_page .tab_sort .sort_module .sort_swiper_box .level_sort li a img {
+  display: inline-block;
+  width: 0.16rem /* 12/75 */;
+  height: 0.293rem /* 22/75 */;
+  vertical-align: middle;
+  margin-left: 0.133rem /* 10/75 */;
+}
+.index_page .tab_sort .sort_module .sort_swiper_box .hot_sort {
+  width: 100%;
+  padding: 0.24rem /* 18/75 */ 0 0.107rem /* 8/75 */;
+}
+.index_page .tab_sort .sort_module .sort_swiper_box .hot_sort li {
+  float: left;
+  width: 33.333%;
+  margin-bottom: 0.373rem /* 28/75 */;
+  text-align: center;
+}
+.index_page .tab_sort .sort_module .sort_swiper_box .hot_sort li a {
+  display: block;
+}
+.index_page .tab_sort .sort_module .sort_swiper_box .hot_sort li a img {
+  display: inline-block;
+  width: 1.827rem /* 137/75 */;
+  height: 1.227rem /* 92/75 */;
+}
+.index_page .tab_sort .sort_module .sort_swiper_box .hot_sort li a span {
+  display: block;
+  width: 63%;
+  text-align: center;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.index_page .ad_banner {
+  font-size: 14px;
+  width: 100%;
+  height: 4.533rem /* 340/75 */;
+  position: relative;
+}
+.index_page .ad_banner .banner_box {
+  width: 100%;
+  height: 100%;
+}
+.index_page .ad_banner .banner_box ul li {
+  width: 100%;
+  position: relative;
+}
+.index_page .ad_banner .banner_box ul li a {
+  display: block;
+}
+.index_page .ad_banner .banner_box ul li a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.index_page .ad_banner .banner_box ul li a .mask_bar {
+  width: 100%;
+  height: 30%;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), #000000);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0), #000000);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0), #000000);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000);
+  filter: alpha(opacity=50);
+  opacity: .5;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.index_page .ad_banner .banner_box ul li a .text_bar {
+  color: #fff;
+  width: 75%;
+  line-height: 1.067rem /* 80/75 */;
+  padding-left: 0.4rem /* 30/75 */;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.index_page .ad_banner .swiper-pagination-fraction {
+  color: #999;
+  text-align: right;
+  position: absolute;
+  bottom: 0.267rem /* 20/75 */;
+  right: 0.4rem /* 30/75 */;
+  z-index: 2;
+}
+.index_page .ad_banner .swiper-pagination-fraction .swiper-pagination-current {
+  color: #fff;
+}
+.index_page .ad_banner .swiper-pagination-fraction .swiper-pagination-total {
+  padding-right: 0.4rem /* 30/75 */;
+}
+.index_page .news_module {
+  overflow: hidden;
+}
+.index_page .news_module .news_content {
+  width: 400%;
+  overflow: hidden;
+  position: relative;
+}
+.index_page .news_module .news_content .news_swiper_box {
+  width: 25%;
+  float: left;
+}
+.index_page .news_module .news_content .news_swiper_box .swiper_news .news_list dl a {
+  display: block;
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
+  height: 2.4rem;
+  border-bottom: 1px solid #f3f3f3;
+}
+.index_page .news_module .news_content .news_swiper_box .swiper_news .news_list dl a dt {
+  float: left;
+  width: 2.4rem;
+  height: 1.6rem;
+  margin-top: 0.4rem;
+}
+.index_page .news_module .news_content .news_swiper_box .swiper_news .news_list dl a dt img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.index_page .news_module .news_content .news_swiper_box .swiper_news .news_list dl a dd {
+  width: 69%;
+  float: right;
+  margin-left: 0.4rem;
+}
+.index_page .news_module .news_content .news_swiper_box .swiper_news .news_list dl a .synopsis {
+  font-size: 15px;
+  margin-top: 0.4rem;
+  height: 1.067rem;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.index_page .news_module .news_content .news_swiper_box .swiper_news .news_list dl a .minor {
+  margin-top: 0.16rem;
+  font-size: 12px;
+  color: #a4a4a4;
+}
+.index_page .news_module .news_content .news_swiper_box .swiper_news .news_list dl a .minor .ad_logo {
+  display: inline-block;
+  width: 0.8rem /* 60/75 */;
+  line-height: 0.373rem /* 28/75 */;
+  text-align: center;
+  border: 1px solid #a4a4a4;
+}
+.index_page .news_module .news_content .news_swiper_box .swiper_news .news_list dl a .minor .pinlun {
+  float: right;
+}
+.index_page .news_module .news_content .news_swiper_box .swiper_news .news_list dl:active {
+  background-color: #f4f5f7;
+}
+.index_page .news_module .news_content .news_swiper_box .swiper_news .news_list dl:last-child a {
+  border: 0;
+}
+.index_page .news_module .news_content .news_swiper_box .swiper_news .load_more_module {
+  width: 92%;
+  margin: 0 4% 0.267rem /* 20/75 */;
+}
+.index_page .news_module .news_content .news_swiper_box .swiper_news .load_more_module .load_more {
+  font-size: 13px;
+  color: #52adfe;
+  display: inline-block;
+  width: 100%;
+  height: 0.96rem /* 72/75 */;
+  line-height: 0.96rem /* 72/75 */;
+  text-align: center;
+  background-color: #edf7ff;
+  border-radius: 0.107rem /* 8/75 */;
+}
+.index_page .news_module .news_content .news_swiper_box .swiper_news .load_more_module .load_more img {
+  display: inline-block;
+  width: 0.24rem /* 18/75 */;
+  height: 0.16rem /* 12/75 */;
+  vertical-align: middle;
+  margin-left: .16rem;
+}
+.index_page .news_module .news_content .news_swiper_box .swiper_news .load_more_module .loading {
+  display: inline-block;
+  width: 100%;
+  line-height: .96rem;
+  text-align: center;
+  background: #edf7ff;
+  border-radius: 8px;
+  display: none;
+}
+@-moz-keyframes circleChange {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-o-keyframes circleChange {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes circleChange {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes circleChange {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.index_page .news_module .news_content .news_swiper_box .swiper_news .load_more_module .loading img {
+  display: inline-block;
+  width: 0.413rem /* 31/75 */;
+  height: 0.44rem /* 33/75 */;
+  vertical-align: middle;
+  -webkit-animation: circleChange 2s linear infinite;
+}
+.index_page .news_module .news_content .news_swiper_box .swiper_news .load_more_module .more {
+  display: inline-block;
+  width: 100%;
+  height: .96rem;
+  line-height: .96rem;
+  text-align: center;
+  background: #edf7ff;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  margin: 0 auto;
+  font-size: 13px;
+  color: #52adfe;
+  display: none;
+}
+.index_page .news_module .news_content .news_swiper_box .swiper_news .load_more_module .more img {
+  display: inline-block;
+  width: .12rem;
+  height: .213rem;
+  margin-left: .16rem;
+  vertical-align: middle;
+}
+.index_page .module_title {
+  width: 92%;
+  height: 0.747rem /* 56/75 */;
+  margin: 0 4%;
+  padding-top: 0.32rem /* 24/75 */;
+}
+.index_page .module_title span {
+  font-size: 15px;
+  font-weight: 700;
+  height: .4rem;
+  line-height: .4rem;
+  border-left: 0.107rem /* 8/75 */ solid #2899ff;
+  padding-left: .16rem;
+  display: inline-block;
+}
+.index_page .video_module .video_list {
+  width: 96%;
+  margin: 0 2%;
+}
+.index_page .video_module .video_list dl {
+  float: left;
+  width: 45.833%;
+  margin: 0 0.2rem /* 15/75 */;
+}
+.index_page .video_module .video_list dl dt {
+  width: 100%;
+  height: 2.933rem /* 220/75 */;
+  position: relative;
+}
+.index_page .video_module .video_list dl dt img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.index_page .video_module .video_list dl dt span {
+  background-image: url("../img/play_btn.png");
+  background-size: cover;
+  width: 0.8rem /* 60/75 */;
+  height: 0.8rem /* 60/75 */;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -0.4rem /* 30/75 */ 0 0 -0.4rem /* 30/75 */;
+}
+.index_page .video_module .video_list dl dt i {
+  color: #fff;
+  width: 1.093rem /* 82/75 */;
+  line-height: 0.467rem /* 35/75 */;
+  text-align: center;
+  background-color: #000;
+  border-radius: 0.08rem /* 6/75 */;
+  filter: alpha(opacity=60);
+  opacity: .6;
+  position: absolute;
+  bottom: 0.08rem /* 6/75 */;
+  right: 0.08rem /* 6/75 */;
+}
+.index_page .video_module .video_list dl dd {
+  font-size: 15px;
+  line-height: 0.533rem /* 40/75 */;
+  height: 1.067rem /* 80/75 */;
+  margin: 0.16rem /* 12/75 */ 0 0.48rem /* 36/75 */;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.index_page .video_module .video_list dl:active dd {
+  color: #2799fe;
+}
+.index_page .video_module .load_more_module {
+  width: 92%;
+  margin: 0 4% 0.267rem /* 20/75 */;
+}
+.index_page .video_module .load_more_module .more {
+  display: inline-block;
+  width: 100%;
+  height: .96rem;
+  line-height: .96rem;
+  text-align: center;
+  background: #edf7ff;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  margin: 0 auto;
+  font-size: 13px;
+  color: #52adfe;
+}
+.index_page .video_module .load_more_module .more img {
+  display: inline-block;
+  width: .12rem;
+  height: .213rem;
+  margin-left: .16rem;
+  vertical-align: middle;
+}
+.index_page .guess_like .guess_like_title {
+  font-size: 14px;
+}
+.index_page .guess_like .guess_like_title a {
+  color: #848484;
+  float: right;
+}
+.index_page .guess_like .guess_like_title a em {
+  background-image: url('../img/change.png');
+  background-size: 100% 100%;
+  width: 0.4rem;
+  height: 0.4rem;
+  display: inline-block;
+  margin-right: 0.107rem /* 8/75 */;
+  vertical-align: -0.05rem;
+}
+.index_page .guess_like .guess_like_title a:active {
+  color: #666;
+}
+.index_page .guess_like .guess_like_list {
+  width: 96%;
+  margin: 0 2% 0.133rem /* 10/75 */;
+}
+.index_page .guess_like .guess_like_list dl {
+  float: left;
+  width: 41.667%;
+  margin: 0 0.4rem /* 30/75 */ 0.4rem /* 30/75 */;
+  position: relative;
+}
+.index_page .guess_like .guess_like_list dl a {
+  display: block;
+}
+.index_page .guess_like .guess_like_list dl a dt {
+  width: 100%;
+  height: 2.667rem /* 200/75 */;
+}
+.index_page .guess_like .guess_like_list dl a dt img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.index_page .guess_like .guess_like_list dl a dd p {
+  text-align: center;
+  margin-bottom: 0.213rem /* 16/75 */;
+}
+.index_page .guess_like .guess_like_list dl a dd .type_name {
+  font-size: 15px;
+}
+.index_page .guess_like .guess_like_list dl a dd .type_price .start_pri {
+  color: #ff3131;
+}
+.index_page .guess_like .guess_like_list dl a dd .type_price .down_pri {
+  color: #06b313;
+}
+.index_page .guess_like .guess_like_list dl a dd .type_price .down_pri i {
+  background-image: url("../img/down_price.png");
+  background-size: 100% 100%;
+  width: 0.213rem;
+  height: 0.267rem;
+  display: inline-block;
+  margin-left: 0.32rem /* 24/75 */;
+}
+.index_page .guess_like .guess_like_list dl a dd .type_price .down_pri i img {
+  display: inline-block;
+  width: 100%;
+}
+.index_page .guess_like .guess_like_list dl .question_price_link {
+  font-size: 13px;
+  color: #fff;
+  width: 73.333%;
+  line-height: 0.8rem /* 60/75 */;
+  text-align: center;
+  background-color: #52adfe;
+  border-radius: 0.053rem /* 4/75 */;
+  margin: 0 auto;
+}
+.index_page .guess_like .guess_like_list dl .question_price_link:active {
+  background-color: #2799fe;
+}
+.index_page .market_newcar .market_title {
+  font-size: 14px;
+}
+.index_page .market_newcar .market_title a {
+  color: #848484;
+  float: right;
+}
+.index_page .market_newcar .market_title a em {
+  background-image: url('../img/rightjt.png');
+  background-size: 100% 100%;
+  width: 0.16rem;
+  height: 0.293rem;
+  display: inline-block;
+  margin-left: 0.107rem /* 8/75 */;
+  vertical-align: -0.04rem;
+}
+.index_page .market_newcar .market_title a:active {
+  color: #666;
+}
+.index_page .market_newcar .newcar_list {
+  width: 92%;
+  padding: 0 4%;
+  overflow-x: scroll;
+}
+.index_page .market_newcar .newcar_list::-webkit-scrollbar {
+  height: 0;
+}
+.index_page .market_newcar .newcar_list ul {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.index_page .market_newcar .newcar_list ul li {
+  width: 3.467rem /* 260/75 */;
+  padding: 0 0.267rem /* 20/75 */ 0.64rem /* 48/75 */;
+  border-bottom: 1px solid #f3f3f3;
+}
+.index_page .market_newcar .newcar_list ul li:first-child {
+  padding-left: 0;
+}
+.index_page .market_newcar .newcar_list ul li img {
+  display: block;
+  width: 100%;
+  height: 2.32rem /* 174/75 */;
+}
+.index_page .market_newcar .newcar_list ul li p {
+  width: 100%;
+  text-align: center;
+  padding-top: 0.227rem /* 17/75 */;
+}
+.index_page .market_newcar .newcar_list ul li .type_name {
+  font-size: 15px;
+}
+.index_page .market_newcar .newcar_list ul li .type_price {
+  color: #ff3131;
+}
+.index_page .market_newcar .newcar_list ul li .type_time {
+  color: #a4a4a4;
+}
+.index_page .market_newcar .market_news {
+  font-size: 14px;
+  width: 86.666%;
+  padding: 0.213rem /* 16/75 */ 0;
+  margin: 0 6.667%;
+  border-left: 1px solid #f3f3f3;
+}
+.index_page .market_newcar .market_news a {
+  display: block;
+  width: 100%;
+  line-height: 1.013rem /* 76/75 */;
+}
+.index_page .market_newcar .market_news a span {
+  display: inline-block;
+  width: 70%;
+  vertical-align: bottom;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.index_page .market_newcar .market_news a i {
+  color: #ff3131;
+  padding: 0 0.533rem /* 40/75 */ 0 0.32rem /* 24/75 */;
+  display: inline-block;
+}
+.index_page .market_newcar .market_news a em {
+  display: inline-block;
+  width: 0.12rem /* 9/75 */;
+  height: 0.12rem /* 9/75 */;
+  background-color: #ff3131;
+  border-radius: 50%;
+  vertical-align: 0.093rem /* 7/75 */;
+  margin-left: -0.06rem /* 4.5/75 */;
+}
+.index_page .market_newcar .market_news a:nth-of-type(2) i {
+  color: #ff5003;
+}
+.index_page .market_newcar .market_news a:nth-of-type(2) em {
+  background-color: #ff5003;
+}
+.index_page .market_newcar .market_news a:nth-of-type(3) i {
+  color: #ff7a03;
+}
+.index_page .market_newcar .market_news a:nth-of-type(3) em {
+  background-color: #ff7a03;
+}
+.index_page .market_newcar .market_news a:nth-of-type(4) i {
+  color: #ffa903;
+}
+.index_page .market_newcar .market_news a:nth-of-type(4) em {
+  background-color: #ffa903;
+}
+.index_page .market_newcar .market_news a:active span {
+  color: #2799fe;
+}
+.index_page .car_city .city_title {
+  font-size: 14px;
+}
+.index_page .car_city .city_title a {
+  color: #848484;
+  float: right;
+}
+.index_page .car_city .city_title a em {
+  background-image: url('../img/rightjt.png');
+  background-size: 100% 100%;
+  width: 0.16rem;
+  height: 0.293rem;
+  display: inline-block;
+  margin-left: 0.107rem /* 8/75 */;
+  vertical-align: middle;
+}
+.index_page .car_city .city_title a:active {
+  color: #666;
+}
+.index_page .car_city .city_tab_title_box {
+  width: 92%;
+  margin: 0 4%;
+  border-bottom: 2px solid #ebedef;
+  overflow-x: scroll;
+}
+.index_page .car_city .city_tab_title_box::-webkit-scrollbar {
+  height: 0;
+}
+.index_page .car_city .city_tab_title_box .city_tab_title {
+  width: 100%;
+  padding: 0;
+  border: 0;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.index_page .car_city .city_tab_title_box .city_tab_title li {
+  float: none;
+}
+.index_page .car_city .city_tab_title_box .city_tab_title li a {
+  margin: 0 7%;
+}
+.index_page .car_city .city_main_box {
+  width: 100%;
+  overflow: hidden;
+}
+.index_page .car_city .city_main_box .city_main {
+  width: 700%;
+  position: relative;
+}
+.index_page .car_city .city_main_box .city_main .city_swiper_box {
+  width: 14.285%;
+  float: left;
+}
+.index_page .car_city .city_main_box .city_main .city_swiper_box ul {
+  width: 92%;
+  margin: 0 4%;
+}
+.index_page .car_city .city_main_box .city_main .city_swiper_box ul li {
+  border-bottom: 1px solid #f3f3f3;
+}
+.index_page .car_city .city_main_box .city_main .city_swiper_box ul li .car_msg {
+  float: left;
+  width: 79.7%;
+  padding: 0.4rem /* 30/75 */ 0;
+}
+.index_page .car_city .city_main_box .city_main .city_swiper_box ul li .car_msg img {
+  display: inline-block;
+  width: 1.92rem /* 144/75 */;
+  height: 1.307rem /* 98/75 */;
+  float: left;
+}
+.index_page .car_city .city_main_box .city_main .city_swiper_box ul li .car_msg span {
+  font-size: 14px;
+  float: left;
+}
+.index_page .car_city .city_main_box .city_main .city_swiper_box ul li .car_msg span i {
+  display: block;
+  line-height: 0.613rem /* 46/75 */;
+}
+.index_page .car_city .city_main_box .city_main .city_swiper_box ul li .car_msg span .type_name {
+  font-size: 15px;
+}
+.index_page .car_city .city_main_box .city_main .city_swiper_box ul li .car_msg span .type_price {
+  color: #ff3131;
+  line-height: 0.56rem /* 42/75 */;
+  margin-top: 0.133rem /* 10/75 */;
+}
+.index_page .car_city .city_main_box .city_main .city_swiper_box ul li .car_msg .main_msg {
+  margin-left: 0.2rem;
+}
+.index_page .car_city .city_main_box .city_main .city_swiper_box ul li .car_msg .down_price {
+  color: #06b313;
+  line-height: 1.307rem /* 98/75 */;
+  margin-right: 0.2rem;
+  float: right;
+}
+.index_page .car_city .city_main_box .city_main .city_swiper_box ul li .car_msg .down_price em {
+  background-image: url("../img/down_price.png");
+  background-size: 100% 100%;
+  width: 0.213rem;
+  height: 0.267rem;
+  display: inline-block;
+  margin-right: 0.107rem /* 8/75 */;
+}
+.index_page .car_city .city_main_box .city_main .city_swiper_box ul li .que_price {
+  color: #fff;
+  font-size: 13px;
+  float: right;
+  width: 20.3%;
+  line-height: 0.8rem /* 60/75 */;
+  text-align: center;
+  background-color: #52adfe;
+  border-radius: 0.107rem /* 8/75 */;
+  margin-top: 0.667rem /* 50/75 */;
+}
+.index_page .car_city .city_main_box .city_main .city_swiper_box ul li .que_price:active {
+  background-color: #2799fe;
+}
+.index_page footer {
+  padding: 0.387rem /* 29/75 */ 0;
+}
+.index_page footer p {
+  color: #999;
+  line-height: 0.613rem /* 46/75 */;
+  text-align: center;
+}
+.index_page footer p i {
+  background-image: url("../img/pc.png");
+  background-size: 100% 100%;
+  width: 0.427rem;
+  height: 0.347rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.133rem /* 10/75 */;
+}
+.index_page footer .link_pc {
+  font-size: 14px;
+  line-height: 0.667rem /* 50/75 */;
+}
+.index_page footer .link_pc a {
+  color: #666;
+}
+.index_page footer .link_pc a:active {
+  color: #4c4c4c;
+}
+.mask_area {
+  display: none;
+}
+.mask_area .mask {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  filter: alpha(opacity=50);
+  opacity: .5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.mask_area .mask_jt {
+  background-image: url("../img/double_jt.png");
+  background-size: cover;
+  width: 0.693rem /* 52/75 */;
+  height: 0.64rem /* 48/75 */;
+  position: fixed;
+  top: 48%;
+  left: 10.93%;
+  z-index: 999;
+}
+.right_module_province {
+  width: 76.667%;
+  height: 100%;
+  background-color: #fff;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 999;
+}
+.right_module_province::-webkit-scrollbar {
+  width: 0;
+}
+.right_module_province .province_scroll_module dl dt {
+  font-size: 14px;
+  color: #828282;
+  line-height: 0.667rem /* 50/75 */;
+  background-color: #f4f5f7;
+  padding: 0 0.4rem /* 30/75 */;
+}
+.right_module_province .province_scroll_module dl dd {
+  font-size: 16px;
+  line-height: 1.173rem /* 88/75 */;
+  padding-right: 0.4rem /* 30/75 */;
+  margin-left: 0.4rem /* 30/75 */;
+}
+.right_module_province .province_scroll_module .zxs_province span {
+  margin-right: 0.6rem;
+}
+.right_module_province .province_scroll_module .other_province dd {
+  border-bottom: 1px solid #f3f3f3;
+}
+.right_module_province .province_scroll_module .other_province dd i {
+  background-image: url("../img/rightjt.png");
+  background-size: 100% 100%;
+  width: 0.16rem;
+  height: 0.293rem;
+  margin-top: 0.44rem /* 33/75 */;
+  float: right;
+}
+.right_module_city {
+  width: 73.867%;
+  height: 100%;
+  background-color: #fff;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 1000;
+}
+.right_module_city::-webkit-scrollbar {
+  width: 0;
+}
+.right_module_city ul li {
+  font-size: 16px;
+  line-height: 1.173rem /* 88/75 */;
+  padding-right: 0.4rem /* 30/75 */;
+  margin-left: 0.4rem /* 30/75 */;
+  border-bottom: 1px solid #f3f3f3;
+}
+.right_module_city ul li a {
+  display: block;
+}
+.right_module_city ul .checked_province {
+  background-color: #f4f5f7;
+  padding-left: 0.4rem /* 30/75 */;
+  margin: 0;
+}
+.right_module_city ul .checked_province i {
+  background-image: url("../img/leftjt.png");
+  background-size: 100% 100%;
+  width: 0.213rem;
+  height: 0.4rem;
+  vertical-align: -0.04rem /* 3/75 */;
+  margin-right: 0.133rem /* 10/75 */;
+  display: inline-block;
+}
+/* 字体大小适配 */
+[data-dpr="2"] .index_page header {
+  font-size: 32px;
+}
+[data-dpr="2"] .index_page .search_bar {
+  font-size: 28px;
+}
+[data-dpr="2"] .index_page .tab_title {
+  font-size: 30px;
+}
+[data-dpr="2"] .index_page .tab_sort .sort_module .price_sort {
+  font-size: 28px;
+}
+[data-dpr="2"] .index_page .tab_sort .sort_module .level_sort {
+  font-size: 28px;
+}
+[data-dpr="2"] .index_page .ad_banner {
+  font-size: 28px;
+}
+[data-dpr="2"] .index_page .news_module .news_swiper_box .swiper_news .news_list .article_list .synopsis {
+  font-size: 30px;
+}
+[data-dpr="2"] .index_page .news_module .news_swiper_box .swiper_news .news_list .article_list .minor {
+  font-size: 24px;
+}
+[data-dpr="2"] .index_page .news_module .news_swiper_box .swiper_news .load_more_module .load_more {
+  font-size: 26px;
+}
+[data-dpr="2"] .index_page .news_module .news_swiper_box .swiper_news .load_more_module .more {
+  font-size: 26px;
+}
+[data-dpr="2"] .index_page .module_title span {
+  font-size: 30px;
+}
+[data-dpr="2"] .index_page .video_module .video_list dd {
+  font-size: 30px;
+}
+[data-dpr="2"] .index_page .video_module .load_more_module .more {
+  font-size: 26px;
+}
+[data-dpr="2"] .index_page .guess_like .guess_like_title {
+  font-size: 28px;
+}
+[data-dpr="2"] .index_page .guess_like .guess_like_list .type_name {
+  font-size: 30px;
+}
+[data-dpr="2"] .index_page .guess_like .guess_like_list .question_price_link {
+  font-size: 26px;
+}
+[data-dpr="2"] .index_page .market_newcar .market_title {
+  font-size: 28px;
+}
+[data-dpr="2"] .index_page .market_newcar .newcar_list .type_name {
+  font-size: 30px;
+}
+[data-dpr="2"] .index_page .market_newcar .market_news {
+  font-size: 28px;
+}
+[data-dpr="2"] .index_page .car_city .city_title {
+  font-size: 28px;
+}
+[data-dpr="2"] .index_page .car_city .city_main_box .city_main .city_swiper_box .car_msg span {
+  font-size: 28px;
+}
+[data-dpr="2"] .index_page .car_city .city_main_box .city_main .city_swiper_box .car_msg span .type_name {
+  font-size: 30px;
+}
+[data-dpr="2"] .index_page .car_city .city_main_box .city_main .city_swiper_box .que_price {
+  font-size: 26px;
+}
+[data-dpr="2"] .index_page footer .link_pc {
+  font-size: 28px;
+}
+[data-dpr="2"] .right_module_province .province_scroll_module dt {
+  font-size: 28px;
+}
+[data-dpr="2"] .right_module_province .province_scroll_module dd {
+  font-size: 32px;
+}
+[data-dpr="2"] .right_module_city li {
+  font-size: 32px;
+}
+[data-dpr="3"] .index_page header {
+  font-size: 48px;
+}
+[data-dpr="3"] .index_page .search_bar {
+  font-size: 42px;
+}
+[data-dpr="3"] .index_page .tab_title {
+  font-size: 45px;
+}
+[data-dpr="3"] .index_page .tab_sort .sort_module .price_sort {
+  font-size: 42px;
+}
+[data-dpr="3"] .index_page .tab_sort .sort_module .level_sort {
+  font-size: 42px;
+}
+[data-dpr="3"] .index_page .ad_banner {
+  font-size: 42px;
+}
+[data-dpr="3"] .index_page .news_module .news_swiper_box .swiper_news .news_list .article_list .synopsis {
+  font-size: 45px;
+}
+[data-dpr="3"] .index_page .news_module .news_swiper_box .swiper_news .news_list .article_list .minor {
+  font-size: 36px;
+}
+[data-dpr="3"] .index_page .news_module .news_swiper_box .swiper_news .load_more_module .load_more {
+  font-size: 39px;
+}
+[data-dpr="3"] .index_page .news_module .news_swiper_box .swiper_news .load_more_module .more {
+  font-size: 39px;
+}
+[data-dpr="3"] .index_page .module_title span {
+  font-size: 45px;
+}
+[data-dpr="3"] .index_page .video_module .video_list dd {
+  font-size: 45px;
+}
+[data-dpr="3"] .index_page .video_module .load_more_module .more {
+  font-size: 39px;
+}
+[data-dpr="3"] .index_page .guess_like .guess_like_title {
+  font-size: 42px;
+}
+[data-dpr="3"] .index_page .guess_like .guess_like_list .type_name {
+  font-size: 45px;
+}
+[data-dpr="3"] .index_page .guess_like .guess_like_list .question_price_link {
+  font-size: 39px;
+}
+[data-dpr="3"] .index_page .market_newcar .market_title {
+  font-size: 42px;
+}
+[data-dpr="3"] .index_page .market_newcar .newcar_list .type_name {
+  font-size: 45px;
+}
+[data-dpr="3"] .index_page .market_newcar .market_news {
+  font-size: 42px;
+}
+[data-dpr="3"] .index_page .car_city .city_title {
+  font-size: 42px;
+}
+[data-dpr="3"] .index_page .car_city .city_main_box .city_main .city_swiper_box .car_msg span {
+  font-size: 42px;
+}
+[data-dpr="3"] .index_page .car_city .city_main_box .city_main .city_swiper_box .car_msg span .type_name {
+  font-size: 45px;
+}
+[data-dpr="3"] .index_page .car_city .city_main_box .city_main .city_swiper_box .que_price {
+  font-size: 39px;
+}
+[data-dpr="3"] .index_page footer .link_pc {
+  font-size: 42px;
+}
+[data-dpr="3"] .right_module_province .province_scroll_module dt {
+  font-size: 42px;
+}
+[data-dpr="3"] .right_module_province .province_scroll_module dd {
+  font-size: 48px;
+}
+[data-dpr="3"] .right_module_city li {
+  font-size: 48px;
+}

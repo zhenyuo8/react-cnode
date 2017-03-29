@@ -1,0 +1,1148 @@
+/*****
+ *@author: linyh
+ *@from: Global style index(首页)
+ *@description: 陈璐
+ *@date: name (2017.02.21)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_nav.less";
+@import "mod/mod_goTop.less";
+// @import "mod/mod_swiper.less";
+
+.index_page{
+    // 通栏广告位
+    .ad_bar{
+        width: 100%;
+        background-color: @bg-bar;
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+
+    // 灰色间隔条
+    .bg_bar{
+        width: 100%;
+        height: .4rem /* 30/75 */;
+        background-color: @bg-bar;
+    }
+
+    // 头部
+    header{
+        font-size: 16px;
+        width: 92%;
+        height: 1.173rem /* 88/75 */;
+        padding: 0 4%;
+        .logo{
+            float: left;
+            width: 2.8rem /* 210/75 */;
+            height: .707rem /* 53/75 */;
+            margin-top: .24rem /* 18/75 */;
+            img{
+                .img-size;
+            }
+        }
+        .login_in{
+            float: right;
+            color: @color-main-blue;
+            line-height: 1.173rem /* 88/75 */;
+            span{
+                display: inline-block;
+                img{
+                    display: inline-block;
+                    width: .747rem /* 56/75 */;
+                    height: .747rem /* 56/75 */;
+                    border-radius: 50%;
+                    vertical-align: middle;
+                }
+            }
+            .user_in{
+                display: none;
+            }
+        }
+    }
+
+    // 搜索框
+    .search_bar{
+        font-size: 14px;
+        width: 89.333%;
+        margin: .4rem /* 30/75 */ 5.333% .16rem /* 12/75 */;
+        border-radius: .507rem /* 38/75 */;
+        border: 1px solid @color-main-blue;
+        input{
+            .placeholder-color(@color-999);
+            background-color: transparent;
+            width: 80%;
+            height: 1.04rem /* 78/75 */;
+            line-height: 1.04rem;
+            border-radius: .507rem /* 38/75 */;
+            padding-left: .373rem /* 28/75 */;
+        }
+        i{
+            .icon_bg( url("../img/search_fdj.png"), .56rem /* 42/75 */, .573rem /* 43/75 */);
+            float: right;
+            margin: .25rem .4rem 0 0 ;
+        }
+    }
+
+    // tab标题公共样式
+    .tab_title{
+        font-size: 15px;
+        width: 92%;
+        padding: 0 4%;
+        border-bottom: 2px solid @color-tab-border;
+        li{
+            float: left;
+            width: 25%;
+            line-height: 1.053rem /* 79/75 */;
+            a{
+                color: @color-tab-color;
+                height: 100%;
+                text-align: center;
+                margin: 0 19%;
+                display: block;
+            }
+            .current{
+                color: @color-main-blue;
+                border-bottom: 2px solid @color-main-blue;
+                margin-bottom: -2px;
+            }
+        }
+    }
+
+    // tab切换排序
+    .tab_sort{
+        overflow: hidden;
+        .sort_module{
+            width: 400%;
+            position: relative;
+            .sort_swiper_box{
+                width: 25%;
+                float: left;
+                // 价格及级别样式
+                .same_sort_module{
+                    font-size: 14px;
+                    width: 82%;
+                    padding: .32rem /* 24/75 */ 9% .347rem /* 26/75 */;
+                    li{
+                        float: left;
+                        width: 33.333%;
+                        text-align: center;
+                        &:nth-of-type(3n-2){
+                          text-align: left;
+                        }
+                        &:nth-of-type(3n){
+                          text-align: right;
+                        }
+                        a{
+                            display: block;
+                            line-height: 1.173rem /* 88/75 */;
+                            img{
+                                display: inline-block;
+                                width: .16rem /* 12/75 */;
+                                height: .293rem /* 22/75 */;
+                                vertical-align: middle;
+                                margin-left: .133rem /* 10/75 */;
+                            }
+                        }
+                    }
+                }
+                // 按品牌
+                .brand_sort{
+                    width: 100%;
+                    padding-bottom: .267rem /* 20/75 */;
+                    li{
+                        float: left;
+                        width: 20%;
+                        margin-bottom: .267rem /* 20/75 */;
+                        text-align: center;
+                        a{
+                            display: block;
+                            img{
+                                display: inline-block;
+                                width: 1rem /* 75/75 */;
+                                height: 1rem /* 75/75 */;
+                                margin: .3rem /* 22.5/75 */ 0 .1rem;
+                            }
+                            span{
+                                display: block;
+                                width: 87%;
+                                text-align: center;
+                                margin: 0 auto;
+                                .ellipsis;
+                            }
+                        }
+                    }
+                }
+                // 按价格
+                .price_sort{
+                    .same_sort_module;
+                }
+                // 按级别
+                .level_sort{
+                    .same_sort_module;
+                }
+                // 按热门
+                .hot_sort{
+                    width: 100%;
+                    padding: .24rem /* 18/75 */ 0 .107rem /* 8/75 */;
+                    li{
+                        float: left;
+                        width: 33.333%;
+                        margin-bottom: .373rem /* 28/75 */;
+                        text-align: center;
+                        a{
+                            display: block;
+                            img{
+                                display: inline-block;
+                                width: 1.827rem /* 137/75 */;
+                                height: 1.227rem /* 92/75 */;
+                            }
+                            span{
+                                display: block;
+                                width: 63%;
+                                text-align: center;
+                                margin: 0 auto;
+                                .ellipsis;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 广告banner
+    .ad_banner{
+        font-size: 14px;
+        width: 100%;
+        height: 4.533rem /* 340/75 */;
+        position: relative;
+        .banner_box{
+            width: 100%;
+            height: 100%;
+            ul{
+                li{
+                    width: 100%;
+                    position: relative;
+                    a{
+                        display: block;
+                        img{
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                        }
+                        .mask_bar{
+                            width: 100%;
+                            height: 30%;
+                            .bg-jianbian(top,bottom,rgba(0,0,0,0),rgba(0,0,0,1));
+                            filter: alpha(opacity=50);
+                            opacity: .5;
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                        }
+                        .text_bar{
+                            color: @color-fff;
+                            width: 75%;
+                            line-height: 1.067rem /* 80/75 */;
+                            padding-left: .4rem /* 30/75 */;
+                            .ellipsis;
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .swiper-pagination-fraction{
+            color: @color-999;
+            text-align: right;
+            position: absolute;
+            bottom: .267rem /* 20/75 */;
+            right: .4rem /* 30/75 */;
+            z-index: 2;
+            .swiper-pagination-current{
+                color: @color-fff;
+            }
+            .swiper-pagination-total{
+                padding-right: 0.4rem /* 30/75 */;
+            }
+        }
+    }
+
+    // 新闻模块
+    .news_module{
+        overflow: hidden;
+        .news_content{
+            width: 400%;
+            overflow: hidden;
+            position: relative;
+            .news_swiper_box{
+                width: 25%;
+                float: left;
+                .swiper_news{
+                    .news_list{
+                        dl{
+                            .article_list;
+                            &:last-child{
+                              a{
+                                border: 0;
+                              }
+                            }
+                        }
+                    }
+                    .load_more_module{
+                        width: 92%;
+                        margin: 0 4% .267rem /* 20/75 */;
+                        .load_more{
+                            .load_more;
+                        }
+                        .loading{
+                            .loading;
+                            display: none;
+                        }
+                        .more{
+                            .more;
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //模块标题公共样式
+    .module_title{
+        .demo_title;
+    }
+
+    // 视频模块
+    .video_module{
+        .video_list{
+            width: 96%;
+            margin: 0 2%;
+            dl{
+                float: left;
+                width: 45.833%;
+                margin: 0 .2rem /* 15/75 */;
+                dt{
+                    width: 100%;
+                    height: 2.933rem /* 220/75 */;
+                    position: relative;
+                    img{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    span{
+                        background-image: url("../img/play_btn.png");
+                        background-size: cover;
+                        width: .8rem /* 60/75 */;
+                        height: .8rem /* 60/75 */;
+                        display: inline-block;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        margin: -.4rem /* 30/75 */ 0 0 -.4rem /* 30/75 */;
+                    }
+                    i{
+                        color: @color-fff;
+                        width: 1.093rem /* 82/75 */;
+                        line-height: .467rem /* 35/75 */;
+                        text-align: center;
+                        background-color: @color-000;
+                        border-radius: .08rem /* 6/75 */;
+                        filter: alpha(opacity=60);
+                        opacity: .6;
+                        position: absolute;
+                        bottom: .08rem /* 6/75 */;
+                        right: .08rem /* 6/75 */;
+                    }
+                }
+                dd{
+                    font-size: 15px;
+                    line-height: .533rem /* 40/75 */;
+                    height: 1.067rem /* 80/75 */;
+                    margin: .16rem /* 12/75 */ 0 .48rem /* 36/75 */;
+                    .rows-ellipsis(2);
+                }
+                &:active{
+                    dd{
+                        color: @color-main-blue;
+                    }
+                }
+            }
+        }
+        .load_more_module{
+            width: 92%;
+            margin: 0 4% .267rem /* 20/75 */;
+            .more{
+                .more;
+            }
+        }
+    }
+
+    // 猜你喜欢
+    .guess_like{
+        .guess_like_title{
+            font-size: 14px;
+            a{
+                color: @color-tab-color;
+                float: right;
+                em{
+                    .icon_bg(url('../img/change.png'),.4rem /* 30/75 */,.4rem /* 30/75 */);
+                    display: inline-block;
+                    margin-right: .107rem /* 8/75 */;
+                    vertical-align: -.05rem;
+                }
+                &:active{
+                    color: @color-666;
+                }
+            }
+        }
+        .guess_like_list{
+            width: 96%;
+            margin: 0 2% .133rem /* 10/75 */;
+            dl{
+                float: left;
+                width: 41.667%;
+                margin: 0 .4rem /* 30/75 */ .4rem /* 30/75 */;
+                position: relative;
+                a{
+                    display: block;
+                    dt{
+                        width: 100%;
+                        height: 2.667rem /* 200/75 */;
+                        img{
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    dd{
+                        p{
+                            text-align: center;
+                            margin-bottom: .213rem /* 16/75 */;
+                        }
+                        .type_name{
+                            font-size: 15px;
+                        }
+                        .type_price{
+                            .start_pri{
+                                color: @red-price;
+                            }
+                            .down_pri{
+                                color: @down-price;
+                                i{
+                                    .icon_bg(url("../img/down_price.png"),.213rem /* 16/75 */,.267rem /* 20/75 */);
+                                    display: inline-block;
+                                    margin-left: .32rem /* 24/75 */;
+                                    img{
+                                        .img-size;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .question_price_link{
+                    font-size: 13px;
+                    color: @color-fff;
+                    width: 73.333%;
+                    line-height: .8rem /* 60/75 */;
+                    text-align: center;
+                    background-color: @blue-btn-color;
+                    border-radius: .053rem /* 4/75 */;
+                    margin: 0 auto;
+                    &:active{
+                        background-color: @color-main-blue;
+                    }
+                }
+            }
+        }
+    }
+
+    // 上市新车
+    .market_newcar{
+        .market_title{
+            font-size: 14px;
+            a{
+                color: @color-tab-color;
+                float: right;
+                em{
+                    .icon_bg(url('../img/rightjt.png'),.16rem /* 12/75 */,.293rem /* 22/75 */);
+                    display: inline-block;
+                    margin-left: .107rem /* 8/75 */;
+                    vertical-align: -.04rem;
+                }
+                &:active{
+                    color: @color-666;
+                }
+            }
+        }
+        .newcar_list{
+            width: 92%;
+            padding: 0 4%;
+            overflow-x: scroll;
+            &::-webkit-scrollbar{
+                height: 0;
+            }
+            ul{
+                display: -webkit-box;
+                -webkit-box-orient: horizontal;
+                li{
+                    width: 3.467rem /* 260/75 */;
+                    padding: 0 .267rem /* 20/75 */ .64rem /* 48/75 */;
+                    border-bottom: 1px solid @list-border;
+                    &:first-child{
+                        padding-left: 0;
+                    }
+                    img{
+                        display: block;
+                        width: 100%;
+                        height: 2.32rem /* 174/75 */;
+                    }
+                    p{
+                        width: 100%;
+                        text-align: center;
+                        padding-top: .227rem /* 17/75 */;
+                    }
+                    .type_name{
+                        font-size: 15px;
+                    }
+                    .type_price{
+                        color: @red-price;
+                    }
+                    .type_time{
+                        color: @time-color;
+                    }
+                }
+            }
+        }
+        .market_news{
+            font-size: 14px;
+            width: 86.666%;
+            padding: .213rem /* 16/75 */ 0;
+            margin: 0 6.667%;
+            border-left: 1px solid @list-border;
+            a{
+                display: block;
+                width: 100%;
+                line-height: 1.013rem /* 76/75 */;
+                span{
+                    display: inline-block;
+                    width: 70%;
+                    vertical-align: bottom;
+                    .ellipsis;
+                }
+                i{
+                    color: @red-price;
+                    padding: 0 .533rem /* 40/75 */ 0 .32rem /* 24/75 */;
+                    display: inline-block;
+                }
+                em{
+                    display: inline-block;
+                    width: .12rem /* 9/75 */;
+                    height: .12rem /* 9/75 */;
+                    background-color: @red-price;
+                    border-radius: 50%;
+                    vertical-align: .093rem /* 7/75 */;
+                    margin-left: -.06rem /* 4.5/75 */;
+                }
+                &:nth-of-type(2){
+                    i{
+                        color: @market-item-two-color;
+                    }
+                    em{
+                        background-color: @market-item-two-color;
+                    }
+                }
+                &:nth-of-type(3){
+                    i{
+                        color: @market-item-three-color;
+                    }
+                    em{
+                        background-color: @market-item-three-color;
+                    }
+                }
+                &:nth-of-type(4){
+                    i{
+                        color: @market-item-four-color;
+                    }
+                    em{
+                        background-color: @market-item-four-color;
+                    }
+                }
+                &:active{
+                    span{
+                        color: @color-main-blue;
+                    }
+                }
+            }
+        }
+    }
+
+    // 车市
+    .car_city{
+        .city_title{
+            font-size: 14px;
+            a{
+                color: @color-tab-color;
+                float: right;
+                em{
+                    .icon_bg(url('../img/rightjt.png'),.16rem /* 12/75 */,.293rem /* 22/75 */);
+                    display: inline-block;
+                    margin-left: .107rem /* 8/75 */;
+                    vertical-align: middle;
+                }
+                &:active{
+                    color: @color-666;
+                }
+            }
+        }
+        .city_tab_title_box{
+            width: 92%;
+            margin: 0 4%;
+            border-bottom: 2px solid @color-tab-border;
+            overflow-x: scroll;
+            &::-webkit-scrollbar{
+                height: 0;
+            }
+            .city_tab_title{
+                width: 100%;
+                padding: 0;
+                border: 0;
+                display: -webkit-box;
+                -webkit-box-orient: horizontal;
+                li{
+                    float: none;
+                    a{
+                        margin: 0 7%;
+                    }
+                }
+            }
+        }
+        .city_main_box{
+            width: 100%;
+            overflow: hidden;
+            .city_main{
+                width: 700%;
+                position: relative;
+                .city_swiper_box{
+                    width: 14.285%;
+                    float: left;
+                    ul{
+                        width: 92%;
+                        margin: 0 4%;
+                        li{
+                            border-bottom: 1px solid @list-border;
+                            .car_msg{
+                                float: left;
+                                width: 79.7%;
+                                padding: .4rem /* 30/75 */ 0;
+                                img{
+                                    display: inline-block;
+                                    width: 1.92rem /* 144/75 */;
+                                    height: 1.307rem /* 98/75 */;
+                                    float: left;
+                                }
+                                span{
+                                    font-size: 14px;
+                                    float: left;
+                                    i{
+                                        display: block;
+                                        line-height: .613rem /* 46/75 */;
+                                    }
+                                    .type_name{
+                                        font-size: 15px;
+                                    }
+                                    .type_price{
+                                        color: @red-price;
+                                        line-height: .56rem /* 42/75 */;
+                                        margin-top: .133rem /* 10/75 */;
+                                    }
+                                }
+                                .main_msg{
+                                    margin-left: 0.2rem;
+                                }
+                                .down_price{
+                                    color: @down-price;
+                                    line-height: 1.307rem /* 98/75 */;
+                                    margin-right: 0.2rem;
+                                    float: right;
+                                    em{
+                                        .icon_bg(url("../img/down_price.png"),.213rem /* 16/75 */,.267rem /* 20/75 */);
+                                        display: inline-block;
+                                        margin-right: .107rem /* 8/75 */;
+                                    }
+                                }
+                            }
+                            .que_price{
+                                color:@color-fff;
+                                font-size: 13px;
+                                float: right;
+                                width: 20.3%;
+                                line-height: .8rem /* 60/75 */;
+                                text-align: center;
+                                background-color: @blue-btn-color;
+                                border-radius: .107rem /* 8/75 */;
+                                margin-top: .667rem /* 50/75 */;
+                                &:active{
+                                    background-color: @color-main-blue;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 底部
+    footer{
+        padding: .387rem /* 29/75 */ 0;
+        p{
+            color: @color-999;
+            line-height: .613rem /* 46/75 */;
+            text-align: center;
+            i{
+                .icon_bg(url("../img/pc.png"),.427rem /* 32/75 */,.347rem /* 26/75 */);
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: .133rem /* 10/75 */;
+            }
+        }
+        .link_pc{
+            font-size: 14px;
+            line-height: .667rem /* 50/75 */;
+            a{
+                color: @color-666;
+                &:active{
+                    color: @pc-h;
+                }
+            }
+        }
+    }
+}
+
+//遮罩层
+.mask_area{
+    display: none;
+    .mask{
+        width: 100%;
+        height: 100%;
+        background-color: @mask-bg;
+        filter:alpha(opacity=50);
+        opacity: .5;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .mask_jt{
+        background-image: url("../img/double_jt.png");
+        background-size: cover;
+        width: .693rem /* 52/75 */;
+        height: .64rem /* 48/75 */;
+        position: fixed;
+        top: 48%;
+        left: 10.93%;
+        z-index: 999;
+    }
+}
+
+// 右侧省份模块
+.right_module_province{
+    width: 76.667%;
+    height: 100%;
+    background-color: @color-fff;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 999;
+    &::-webkit-scrollbar{
+        width: 0;
+    }
+    .province_scroll_module{
+        dl{
+            dt{
+                font-size: 14px;
+                color: @city-scroll-title-color;
+                line-height: .667rem /* 50/75 */;
+                background-color: @bg-bar;
+                padding: 0 .4rem /* 30/75 */;
+            }
+            dd{
+                font-size: 16px;
+                line-height: 1.173rem /* 88/75 */;
+                padding-right: .4rem /* 30/75 */;
+                margin-left: .4rem /* 30/75 */;
+            }
+        }
+        .zxs_province{
+            span{
+                margin-right: 0.6rem;
+            }
+        }
+        .other_province{
+            dd{
+                border-bottom: 1px solid @list-border;
+                i{
+                    .icon_bg( url("../img/rightjt.png"), .16rem /* 12/75 */, .293rem /* 22/75 */);
+                    margin-top: .44rem /* 33/75 */;
+                    float: right;
+                }
+            }
+        }
+    }
+}
+
+// 右侧市层
+.right_module_city{
+    width: 73.867%;
+    height: 100%;
+    background-color: @color-fff;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 1000;
+    &::-webkit-scrollbar{
+        width: 0;
+    }
+    ul{
+        li{
+            font-size: 16px;
+            line-height: 1.173rem /* 88/75 */;
+            padding-right: .4rem /* 30/75 */;
+            margin-left: .4rem /* 30/75 */;
+            border-bottom: 1px solid @list-border;
+            a{
+                display: block;
+            }
+        }
+        .checked_province{
+            background-color: @bg-bar;
+            padding-left: .4rem /* 30/75 */;
+            margin: 0;
+            i{
+                .icon_bg( url("../img/leftjt.png"), .213rem /* 16/75 */, .4rem /* 30/75 */);
+                vertical-align: -.04rem /* 3/75 */;
+                margin-right: .133rem /* 10/75 */;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+
+/* 字体大小适配 */
+//dpr=2字体大小
+[data-dpr="2"] .index_page{
+    // 头部
+    header{
+        font-size: 32px;
+    }
+    // 搜索框
+    .search_bar{
+        font-size: 28px;
+    }
+    // tab标题公共样式
+    .tab_title{
+        font-size: 30px;
+    }
+    // tab切换排序
+    .tab_sort{
+        .sort_module{
+            // 按价格
+            .price_sort{
+                font-size: 28px;
+            }
+            // 按级别
+            .level_sort{
+                font-size: 28px;
+            }
+        }
+    }
+    // 广告banner
+    .ad_banner{
+        font-size: 28px;
+    }
+    // 新闻模块
+    .news_module{
+        .news_swiper_box{
+            .swiper_news{
+                .news_list{
+                    .article_list{
+                        .synopsis {
+                            font-size: 30px;
+                        }
+                        .minor {
+                            font-size: 24px;
+                        }
+                    }
+                }
+                .load_more_module{
+                    .load_more{
+                        font-size: 26px;
+                    }
+                    .more{
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+    }
+    //模块标题公共样式
+    .module_title{
+        span{
+            font-size: 30px;
+        }
+    }
+    // 视频模块
+    .video_module{
+        .video_list{
+            dd{
+                font-size: 30px;
+            }
+        }
+        .load_more_module{
+            .more{
+                font-size: 26px;
+            }
+        }
+    }
+    // 猜你喜欢
+    .guess_like{
+        .guess_like_title{
+            font-size: 28px;
+        }
+        .guess_like_list{
+            .type_name{
+                font-size: 30px;
+            }
+            .question_price_link{
+                font-size: 26px;
+            }
+        }
+    }
+    // 上市新车
+    .market_newcar{
+        .market_title{
+            font-size: 28px;
+        }
+        .newcar_list{
+            .type_name{
+                font-size: 30px;
+            }
+        }
+        .market_news{
+            font-size: 28px;
+        }
+    }
+    // 车市
+    .car_city{
+        .city_title{
+            font-size: 28px;
+        }
+        .city_main_box{
+            .city_main{
+                .city_swiper_box{
+                    .car_msg{
+                        span{
+                            font-size: 28px;
+                            .type_name{
+                                font-size: 30px;
+                            }
+                        }
+                    }
+                    .que_price{
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+    }
+    // 底部
+    footer{
+        .link_pc{
+            font-size: 28px;
+        }
+    }
+}
+//dpr=2字体大小
+[data-dpr="2"] .right_module_province{
+    .province_scroll_module{
+        dt{
+            font-size: 28px;
+        }
+        dd{
+            font-size: 32px;
+        }
+    }
+}
+//dpr=2字体大小
+[data-dpr="2"] .right_module_city{
+    li{
+        font-size: 32px;
+    }
+}
+
+//dpr=3字体大小
+[data-dpr="3"] .index_page{
+    // 头部
+    header{
+        font-size: 48px;
+    }
+    // 搜索框
+    .search_bar{
+        font-size: 42px;
+    }
+    // tab标题公共样式
+    .tab_title{
+        font-size: 45px;
+    }
+    // tab切换排序
+    .tab_sort{
+        .sort_module{
+            // 按价格
+            .price_sort{
+                font-size: 42px;
+            }
+            // 按级别
+            .level_sort{
+                font-size: 42px;
+            }
+        }
+    }
+    // 广告banner
+    .ad_banner{
+        font-size: 42px;
+    }
+    // 新闻模块
+    .news_module{
+        .news_swiper_box{
+            .swiper_news{
+                .news_list{
+                    .article_list{
+                        .synopsis {
+                            font-size: 45px;
+                        }
+                        .minor {
+                            font-size: 36px;
+                        }
+                    }
+                }
+                .load_more_module{
+                    .load_more{
+                        font-size: 39px;
+                    }
+                    .more{
+                        font-size: 39px;
+                    }
+                }
+            }
+        }
+    }
+    //模块标题公共样式
+    .module_title{
+        span{
+            font-size: 45px;
+        }
+    }
+    // 视频模块
+    .video_module{
+        .video_list{
+            dd{
+                font-size: 45px;
+            }
+        }
+        .load_more_module{
+            .more{
+                font-size: 39px;
+            }
+        }
+    }
+    // 猜你喜欢
+    .guess_like{
+        .guess_like_title{
+            font-size: 42px;
+        }
+        .guess_like_list{
+            .type_name{
+                font-size: 45px;
+            }
+            .question_price_link{
+                font-size: 39px;
+            }
+        }
+    }
+    // 上市新车
+    .market_newcar{
+        .market_title{
+            font-size: 42px;
+        }
+        .newcar_list{
+            .type_name{
+                font-size: 45px;
+            }
+        }
+        .market_news{
+            font-size: 42px;
+        }
+    }
+    // 车市
+    .car_city{
+        .city_title{
+            font-size: 42px;
+        }
+        .city_main_box{
+            .city_main{
+                .city_swiper_box{
+                    .car_msg{
+                        span{
+                            font-size: 42px;
+                            .type_name{
+                                font-size: 45px;
+                            }
+                        }
+                    }
+                    .que_price{
+                        font-size: 39px;
+                    }
+                }
+            }
+        }
+    }
+    // 底部
+    footer{
+        .link_pc{
+            font-size: 42px;
+        }
+    }
+}
+//dpr=3字体大小
+[data-dpr="3"] .right_module_province{
+    .province_scroll_module{
+        dt{
+            font-size: 42px;
+        }
+        dd{
+            font-size: 48px;
+        }
+    }
+}
+//dpr=3字体大小
+[data-dpr="3"] .right_module_city{
+    li{
+        font-size: 48px;
+    }
+}

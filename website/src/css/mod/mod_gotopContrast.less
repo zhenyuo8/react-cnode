@@ -1,0 +1,475 @@
+/*****
+ *@author: linyh
+ *@from: Global style gotopContrast module
+ *@description: 何在朋
+ *@date: name (2017.02.06)
+*/
+
+
+
+@import (reference) "../public";
+
+//对比按钮、回到顶部
+.position_fixed{
+    position:fixed;
+    z-index: 91;
+    left:50%;
+    margin-left:520px;
+    bottom: 160px;
+    .display_n{
+        display: none;
+    }
+    .type_constract{
+        margin-bottom: 8px;
+        position: relative;
+        .type_constract_btn{
+            width:68px;
+            height:68px;
+            border:1px solid @color-ba;
+            background-color: @color-eee;
+            color: @color-999;
+            position:relative;
+            cursor: pointer;
+            .pk{
+                display: block;
+                width:26px;
+                height:26px;
+                margin:12px auto 0;
+                background-image: url("../img/constract.png");
+            }
+            .pk_text{
+                line-height:32px;
+                display: block;
+                font-weight: 700;
+                text-align: center;
+            }
+            i{
+                color:@color-fff;
+                width:20px;
+                line-height:20px;
+                text-align: center;
+                display: inline-block;
+                border-radius: 10px;
+                background-color: @color-orange;
+                position: absolute;
+                top:-11px;
+                right:-11px;
+            }
+            &:hover{
+                background:@color-a-hover;
+                .pk{
+                    background-image: url("../img/constract_h.png");
+                }
+                .pk_text{
+                    color:@color-fff;
+                }
+            }
+        }
+        .type_constract_list{
+            position: absolute;
+            bottom:-80px;
+            left:-296px;
+            .display_n{
+                display: none;
+            }
+            .t_c_title{
+                color:@color-fff;
+                line-height: 32px;
+                // width:278px;
+                background-color: @color-333;
+                overflow: hidden;
+                h5{
+                    float: left;
+                    display: inline-block;
+                    padding-left:13px;
+                    font-weight: bold;
+                }
+                span{
+                    float: right;
+                    display: inline-block;
+                    padding-right: 9px;
+                    cursor: pointer;
+                }
+            }
+            .t_c_content{
+                padding-bottom:10px;
+                border:1px solid @color-333;
+                border-bottom:4px solid @color-333;
+                background-color: @color-fff;
+                position: relative;
+                .search_history{
+                    margin-bottom: 14px;
+                    height:270px;
+                    overflow-y: scroll;
+                    li{
+                        padding:8px 11px 8px 12px;
+                        border-bottom: 1px solid @color-eee;
+                        a{
+                            display: inline-block;
+                            line-height:18px;
+                            width:228px;
+                            margin-right: 14px;
+                            .a-udline-state;
+                        }
+                        .delete_icon{
+                            background-image: url("../img/sprite.png");
+                            background-position: -3px -430px;
+                            width: 10px;
+                            height: 10px;
+                            display: inline-block;
+                            vertical-align: top;
+                            margin-top:5px;
+                            text-align: right;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .search_input{
+                    .display_n{
+                        display: none;
+                    }
+                    .p_style{
+                        width:252px;
+                        line-height:26px;
+                        overflow: hidden;
+                        border:1px solid @color-da;
+                        margin-bottom:8px;
+                        margin-left: 10px;
+                        cursor: pointer;
+                        span{
+                            color:@color-999;
+                            display: inline-block;
+                            padding-left: 9px;
+                            float:left;
+                        }
+                        .down_icon{
+                            width:10px;
+                            height:8px;
+                            display: inline-block;
+                            margin:10px 11px 0 0;
+                            float:right;
+                            background-image: url("../img/sprite.png");
+                            background-position: 0px -2370px;
+                        }
+                        .display_n{
+                            display:none;
+                        }
+                        &:hover{
+                            border-color: @color-a-hover;
+                            .down_icon{
+                                background-position: 0px -2419px;
+                            }
+                        }
+                    }
+
+            		.scroll-box-style{
+            			color:@color-333;
+            			border:1px solid @color-333;
+            			border-bottom: 5px solid @color-333;
+            			background-color: @color-fff;
+            			position: absolute;
+            			bottom:30px;
+            			left:10px;
+            			z-index: 1000;
+            		}
+                    //选择品牌
+                    .choice_brand{
+                		position: relative;
+                        .choice_input{
+                            .p_style;
+                        }
+                        //input框滑过状态
+                        .choice_input_hover{
+                            border-color: @color-a-hover;
+                            .down_icon{
+                                background-position: 0px -2419px;
+                            }
+                        }
+                        .brand_scroll_area{
+                            .scroll-box-style;
+                            .choice_route{
+                                line-height:31px;
+                                border-bottom: 1px solid @color-333;
+                                .blue_border{
+                                    border-bottom:2px solid @color-398be4;
+                                }
+                                span{
+                                    display: inline-block;
+                                    padding:0 10px;
+                                }
+                            }
+                            .brand-scroll-list-box{
+                                width: 252px;
+                    			height:470px;
+                    			.brand-letter-index{
+                    				float:left;
+                    				width:31px;
+                    				border-right:1px solid @color-eee;
+                    				span{
+                    					display: inline-block;
+                    					width:31px;
+                    					text-align: center;
+                    					line-height:18px;
+                    					&:hover{
+                    						a{
+                    							color:@color-scroll-list-hover;
+                    						}
+                    					}
+                    					&:first-child{
+                    						a{
+                    							color:@color-scroll-list-hover;
+                    						}
+                    					}
+                    				}
+                    			}
+                    			.brand-scroll-list{
+                    				float:right;
+                    				height:470px;
+                    				overflow: auto;
+                    				ul{
+                    					border-top: 1px solid @color-eee;
+                    					li{
+                    						padding-left:12px;
+                    						width:206px;
+                    						line-height: 28px;
+                    						cursor: pointer;
+                    						a{
+                    							span{
+                    								padding-left: 14px;
+                    							}
+                    						}
+                    						&:hover{
+                    							a{
+                    								color:@color-fff;
+                    							}
+                    							background-color:@color-scroll-list-hover;
+                    						}
+                    					}
+                    				}
+                    			}
+                    		}
+                        }
+                	}
+                    //选择车型
+                    .choice_car_type{
+                		position: relative;
+                        .choice_input{
+                            .p_style;
+                        }
+                        //input框滑过状态
+                        .choice_input_hover{
+                            border-color: @color-a-hover;
+                            .down_icon{
+                                background-position: 0px -2419px;
+                            }
+                        }
+                        .car_type_scroll_area{
+                            .scroll-box-style;
+                            .choice_route{
+                                line-height:31px;
+                                border-bottom: 1px solid @color-333;
+                                .blue_border{
+                                    border-bottom:2px solid @color-398be4;
+                                }
+                                span{
+                                    display: inline-block;
+                                    padding:0 10px;
+                                }
+                            }
+                            .car-type-scroll-list{
+                    			height:470px;
+                    			overflow: auto;
+                                .all_item{
+                                    font-weight:bold;
+                                    line-height: 28px;
+                                    padding-left: 12px;
+                                }
+                    			dl{
+                    				width:252px;
+                    				line-height:28px;
+                                    padding:6px 0;
+                                    border-top: 1px solid @color-eee;
+                    				dt{
+                    					font-weight:bold;
+                                        line-height:32px;
+                                        padding-left:14px;
+                    				}
+                    				dd{
+                    					padding-left:14px;
+                    					cursor: pointer;
+                    					&:hover{
+                    						a{
+                    							color:@color-fff;
+                    						}
+                    						background-color:@color-scroll-list-hover;
+                    					}
+                    				}
+                    			}
+                    		}
+                        }
+                	}
+                    //选择车款
+                    .choice_car_style{
+                        position: relative;
+                        .choice_input{
+                            .p_style;
+                        }
+                        //input框滑过状态
+                        .choice_input_hover{
+                            border-color: @color-a-hover;
+                            .down_icon{
+                                background-position: 0px -2419px;
+                            }
+                        }
+                        .car_style_scroll_area{
+                            .scroll-box-style;
+                            .choice_route{
+                                line-height:31px;
+                                border-bottom: 1px solid @color-333;
+                                .blue_border{
+                                    border-bottom:2px solid @color-398be4;
+                                }
+                                span{
+                                    display: inline-block;
+                                    padding:0 10px;
+                                }
+                            }
+                            .car-style-scroll-list{
+                                height:470px;
+                    			overflow: auto;
+                                .all_item{
+                                    font-weight:bold;
+                                    line-height: 28px;
+                                    padding-left: 12px;
+                                }
+                    			dl{
+                    				width:252px;
+                    				line-height:28px;
+                                    padding:6px 0;
+                                    border-top: 1px solid @color-eee;
+                    				dt{
+                    					font-weight:bold;
+                                        line-height:32px;
+                                        padding-left:14px;
+                    				}
+                    				dd{
+                    					padding-left:14px;
+                    					cursor: pointer;
+                                        overflow: hidden;
+                                        span{
+                                            float:left;
+                                                display: block;
+                                                white-space: nowrap;
+                                                overflow: hidden;
+                                                text-overflow: ellipsis;
+                                                width: 160px;
+                                        }
+                                        i{
+                                            float:right;
+                                            color:@color-red-price;
+                                            padding-right: 14px;
+                                        }
+                    					&:hover{
+                    						span{
+                    							color:@color-fff;
+                    						}
+                                            i{
+                                                color:@color-fff;
+                                            }
+                    						background-color:@color-scroll-list-hover;
+                    					}
+                    				}
+                    			}
+                    		}
+                        }
+                    }
+                    //开始对比
+                    .start_contrast{
+                        .btn_sty{
+                            font-size: @fontSize-14;
+                            width:252px;
+                            line-height:36px;
+                            text-align: center;
+                            margin-left: 10px;
+                            display: inline-block;
+                        }
+                        .dis_click{
+                            .btn_sty;
+                            color:@color-999;
+                            background-color: @color-eee;
+                            border:1px solid @color-da;
+                        }
+                        .sure_click{
+                            .btn_sty;
+                            color:@color-fff;
+                            background-color: @color-scroll-list-hover;
+                            border:1px solid @color-scroll-list-hover;
+                        }
+                        .display_n{
+                            display: none;
+                        }
+                    }
+                }
+
+                .tip_bar{
+                    padding: 13px 10px 0;
+                    overflow: hidden;
+                    .tip{
+                        float:left;
+                    }
+                    .clear_all{
+                        float:right;
+                        cursor: pointer;
+                        color:@color-666;
+                        .a-state;
+                    }
+                }
+                .jt{
+                    background-image: url("../img/summar_sprite.png");
+                    background-position: 0 -129px;
+                    width: 8px;
+                    height: 14px;
+                    display: inline-block;
+                    position:absolute;
+                    bottom:100px;
+                    right:-8px;
+                    z-index: 10;
+                }
+            }
+        }
+    }
+    .go_top {
+        width: 68px;
+        height: 68px;
+        border: 1px solid #bababa;
+        background: @color-eee;
+        cursor: pointer;
+        .display_n{
+        display: none;
+    }
+        .goTop_icon {
+            margin: 12px auto 0 auto;
+            display: block;
+            width: 26px;
+            height: 26px;
+            background-image: url(../img/gotop.png);
+        }
+        .goTop_text {
+            font-weight: 700;
+            color: @color-999;
+            display: block;
+            height: 32px;
+            line-height:32px;
+            text-align: center;
+        }
+    }
+    .go_top:hover {
+        background: #3a8be4;
+        .goTop_icon {
+            background-image: url(../img/gotop_hover.png);
+        }
+        .goTop_text {
+            color: @color-fff;
+        }
+    }
+}

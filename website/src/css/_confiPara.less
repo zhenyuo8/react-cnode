@@ -1,0 +1,795 @@
+@import (reference) "public";
+@import (reference) "mod/mod_carMenu";
+@import (reference) "mod/mod_goTop";
+@import (reference) "mod/mod_carHot";
+@import (reference) "mod/mod_headerTitle";
+@import (reference) "mod/mod_headerLogo";
+@import (reference) "mod/mod_footer";
+@import (reference) "mod/mod_gotopContrast";
+.position_fixed{
+  .position_fixed;
+}
+.logo{
+  .logo;
+}
+.header{
+  .header;
+}
+.footer{
+  .footer;
+}
+.goTop{
+  .goTop;
+}
+.imgs_c_top{
+  width: 990px;
+  margin: 0 auto;
+  .imgs_c_top;
+}
+.config_para{
+  margin-top: 20px;
+  .peizhi_filter{
+    width: 990px;
+    height: 40px;
+    border: 1px solid #999999;
+    line-height: 40px;
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    .click { cursor: pointer; }
+    .pub{
+      ul{
+        li{
+          margin-right: 16px;
+          .bg_icon{
+            vertical-align: middle;
+            display:inline-block;
+            width: 10px;
+            height: 10px;
+            border: 1px solid #999999;
+            margin-right: 6px;
+            margin-top: -3px;
+            border-radius: 2px;
+            background-color: #FFFFFF;
+          }
+        }
+        li.active {
+          span {
+            width: 12px;
+            height: 12px;
+            background: url('../img/right_icon.png')center;
+            border:none;
+          }
+        }
+      }
+    }
+    .year{
+      margin-left: 20px;
+      ul{
+        li:first-child{
+          color: #666666;
+        }
+      }
+    }
+    .speed_box{
+      margin-left: 40px;
+      ul{
+        li:first-child{
+          color: #666666;
+        }
+      }
+    }
+    .engine{
+      margin-left: 50px;
+      ul{
+        li:first-child{
+          color: #666666;
+        }
+      }
+    }
+  }
+}
+
+.w197 {}
+.carLaryerBox { background-color: #fff; border-top: 1px solid #dadada;}
+body, tbody { margin: 0px; padding: 0px; }
+#carInfoP, #carInfoT { width: 100%; background-color: #fff; }
+#carInfoP table, #carInfoT table { width: 100%; }
+.main_box .trSome td { background-color: #d8eaff; }
+
+
+.signBox {
+  div:first-child{
+    margin-top: 12px;
+  }
+
+  label {
+
+  }
+  label.active {
+      span {
+          width: 12px;
+          height: 12px;
+          background: url('../img/right_icon.png')center;
+          border:none;
+      }
+  }
+  div{
+    line-height: 32px;
+  }
+  p{
+    margin-top: 10px;
+    margin-bottom: 28px;
+  }
+  .bg_icon{
+    vertical-align: middle;
+    display:inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #999999;
+    margin-right: 6px;
+    margin-top: -3px;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+  }
+  .bp_icon{
+    width: 12px;
+    height: 12px;
+    background: url('../img/biaopei_icon.png') no-repeat center;
+    border:none;
+  }
+  .xp_icon{
+    width: 12px;
+    height: 12px;
+    background: url('../img/xuanpei_icon.png') no-repeat center;
+    border:none;
+  }
+  .null_icon{
+    width: 12px;
+    height: 4px;
+    background: url('../img/null_icon.png') no-repeat center;
+    border:none;
+  }
+}
+
+.main_box{
+  width: 990px;
+  margin: 0 auto;
+  position: relative;
+  zoom: 1;
+  zoom: 1;
+  .car_compare_con{
+    border-left:1px solid #dadada ;
+    width: 100%;
+    table{
+      border-collapse: separate;
+      border-right: 1px solid #dadada;
+      .op0{
+        th{
+          border-bottom: 0px;
+
+        }
+        td{
+          border-bottom: 0px;
+        }
+      }
+      .f_price{
+          td{
+            text-align: center;
+          }
+      }
+      .first_tr{
+        background-color: #FFFFFF;
+        th{
+          div{
+            cursor: pointer;
+          }
+        }
+        td{
+          margin: 0px;
+          padding: 0px;
+        }
+      }
+      .m_price{
+          .f_w{
+            font-weight: 600;
+          }
+          td{
+            text-align: center;
+            color:#e43a3a;
+            a {
+              color:#ffffff ;
+              display: inline-block;
+              width: 52px;
+              height: 22px;
+              line-height: 22px;
+              background-color:#ffa903;
+              cursor: pointer;
+              margin-left: 11px;
+              font-weight: normal;
+            }
+          }
+      }
+      .line_hi_31{
+        height: 31px;
+      }
+      .v_top{
+        vertical-align: top;
+      }
+
+      td{
+        .close_btn{
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          cursor: pointer;
+          background: url("../img/close_icon.png") no-repeat center;
+          top: 0px;
+          right: 0px;
+        }
+        .img_box{
+          text-align: center;
+          img{
+            margin: 0 auto;
+          }
+        }
+        .car_des{
+          /*padding: 0px 28px;
+          text-align: center;
+          margin-top: 11px;
+          line-height: 18px;
+          width: 141px;
+          height: 30px;*/
+          padding: 31px 28px 0;
+          text-align: center;
+          line-height: 24px;
+          width: 141px;
+          height: 80px;
+          font-size: 14px;
+        }
+        .duibi_btn {
+          text-align: center;
+          margin: 0 auto;
+          margin: 13px 0 10px;
+          div{
+              margin: 0 auto;
+          }
+          span {
+            display: inline-block;
+            border: 1px solid #dadada;
+            vertical-align: middle;
+            cursor: pointer;
+            text-align: center;
+            line-height: 24px;
+          }
+          .icon_left{
+            width: 50px;
+            height: 24px;
+            //background: url("../img/duibi_left_icon.png")no-repeat center;
+          }
+          .icon_right{
+            width: 50px;
+            height: 24px;
+
+            //background: url("../img/duibi_right_icon.png")no-repeat center;
+          }
+          .title{
+            width: 50px;
+            padding-left: 20px;
+            height: 24px;
+            line-height: 24px;
+            color: #398be4;
+            background: url("../img/jia_bule.png")no-repeat 15px center;
+            margin: 0px  2px;
+          }
+          .titleCarbi {
+              width: 31px;
+              height: 24px;
+              line-height: 24px;
+              text-align: center;
+              margin: 0 6px;
+              background: url(../img/delete_bule.png) no-repeat center;
+          }
+          
+          .dsl {
+            color: #666; background: #eee url("../img/jia_icon.png")no-repeat 15px center; cursor: pointer; }
+
+        }
+      }
+      td:last-child{
+        border-right:none;
+      }
+      .h73{
+        td{
+          line-height: 20px;
+          span{
+            display: inline-block;
+            width: 18px;
+            height: 8px;
+            border: 1px solid #dadada;
+            margin-left: 8px;
+          }
+        }
+      }
+        td{
+          .bg_icon{
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border: none;
+          }
+          .bp_icon{
+            background: url(../img/biaopei_icon.png) no-repeat center;
+          }
+          .xuanpei_icon{
+            background: url(../img/xuanpei_icon.png) no-repeat center;
+          }
+          .null_icon{
+            background: url(../img/null_icon.png) no-repeat center;
+          }
+        }
+      .h36{
+        height: 36px;
+        .color_999{
+          color: #999999;
+        }
+      }
+      .op0{
+        opacity: 0;
+      filter:alpha(opacity=0); /*IE滤镜，透明度50%*/
+      -moz-opacity:0; /*Firefox私有，透明度50%*/
+        td,td{
+          border-bottom: none;
+
+        }
+      }
+      .title_box{
+        background-color: #f7f7f7;
+        th{
+          border-right: none;
+          height: 40px;
+          font-weight: 600;
+          font-size: 16px;
+
+        }
+      }
+    }
+  }
+
+
+
+
+
+  .hint_mes_box{
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 66px;
+    .c_999{
+      color: #999999;
+    }
+    .bg_icon{
+      display: inline-block;
+      height: 18px;
+      width: 18px;
+      vertical-align: middle;
+      margin: 0 9px;
+    }
+    .hint_icon{
+      background: url("../img/hint_icon.png") no-repeat center;
+    }
+  }
+  .top200{
+    top: 220px;
+
+  }
+ }
+
+.po_left_nav{
+    position: absolute;
+    display: block;
+    height: auto;
+    left: -118px;
+    ul{
+      padding-right: 8px;
+      border-right: 2px solid #dadada;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      .top_icon{
+        width: 10px;
+        height: 10px;
+        background: url("../img/status_icon_top.png") no-repeat center;
+        right: -4px;
+        top: -7px;
+      }
+      .bot_icon{
+        width: 10px;
+        height: 10px;
+        background: url("../img/status_icon_top.png") no-repeat center;
+        right: -4px;
+        bottom: -7px;
+      }
+      li{
+        line-height: 20px;
+        font-size: 0px;
+        text-align: right;
+        a{
+          display: inline-block;
+          height: 20px;
+          padding-left: 12px;
+          padding-right: 8px;
+          line-height: 20px;
+          vertical-align: middle;
+          font-size: 12px;
+          background-color: #ffffff;
+          color: #666666;
+        }
+
+        .bg_icon{
+          display: inline-block;
+          width: 12px;
+          height: 20px;
+          background-color: #ffffff;
+          vertical-align: middle;
+        }
+        .status_n_icon {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          background: url("../img/status_n_icon.png") no-repeat center;
+          right: -14px;
+          top: 50%;
+          margin-top: -5px;
+        }
+        .status_icon{
+          background: url("../img/status_icon.png") no-repeat center;
+        }
+      }
+     li.active{
+        background: url("../img/point_to_icon.png") no-repeat center;
+        a {
+          background-color:#398be4;
+          color: #f3f8fd;
+        }
+        span.bg_icon { background: url("../img/point_to_icon.png") no-repeat center; }
+      }
+    }
+  }
+
+
+.floatLeft{
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 89;
+  background-color: #fff;
+  display: none;
+  th {
+        border-right: 1px solid #dadada;
+      }
+  table{
+    border-collapse: separate;
+    /*border-right: 1px solid #dadada;*/
+    table-layout: fixed;
+    .f_price{
+      td{
+        text-align: center;
+      }
+    }
+    .signBox{
+      p{
+        margin-bottom: 29px;
+      }
+    }
+
+    .op0{
+      opacity: 0;
+      filter:alpha(opacity=0); /*IE滤镜，透明度50%*/
+      -moz-opacity:0; /*Firefox私有，透明度50%*/
+    }
+    .first_tr{
+      background-color: #FFFFFF;
+      th{
+        div{
+          cursor: pointer;
+        }
+      }
+      td{
+        .dragg_car_box{
+          height: 90px;
+          .img_box{
+            width: 197px;
+          }
+          .car_des{
+            width: 141px;
+          }
+        }
+      }
+    }
+    .line_hi_31{
+      height: 31px;
+    }
+    .v_top{
+      vertical-align: top;
+      width: 197px;
+    }
+    td{
+      .close_btn{
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+        background: url("../img/close_icon.png") no-repeat center;
+        top: 0px;
+        right: 0px;
+      }
+      .img_box{
+        text-align: center;
+        margin-top: 14px;
+        img{
+          margin: 0 auto;
+        }
+      }
+      .car_des{
+        padding: 0px 28px;
+        text-align: center;
+        margin-top: 11px;
+        line-height: 18px;
+        width: 141px;
+      }
+    }
+    .h73{
+      td{
+        padding-top: 18px;
+        padding-bottom: 18px;
+        line-height: 26px;
+        span{
+          display: inline-block;
+          width:18px ;
+          height: 8px;
+          border: 1px solid #dadada;
+          margin-right: 8px;
+        }
+      }
+    }
+    .safety_con_tr{
+      td{
+        .bg_icon{
+          display: inline-block;
+          width: 12px;
+          height: 12px;
+          border: none;
+        }
+        .bp_icon{
+          background: url(../img/biaopei_icon.png) no-repeat center;
+        }
+        .xuanpei_icon{
+          background: url(../img/xuanpei_icon.png) no-repeat center;
+        }
+        .null_icon{
+          background: url(../img/null_icon.png) no-repeat center;
+        }
+      }
+    }
+    .h36{
+      height: 36px;
+      td{
+        padding-left: 20px;
+        width: 184px; 
+      }
+      .color_999{
+        color: #999999;
+      }
+    }
+    .title_box{
+      background-color: #f7f7f7;
+      th{
+        border-right: none;
+        height: 40px;
+        font-weight: 600;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.h36:hover{
+  background: #a5d0ff;
+}
+.car_name:hover{
+  background: #a5d0ff;
+}
+.f_price:hover{
+  background: #a5d0ff;
+}
+.m_price:hover{
+  background: #a5d0ff;
+}
+.h73:hover{
+  background: #a5d0ff;
+}
+#_config_setbox{
+  display: none;
+  width: 198px;
+  border-top: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+  background-color: #FFFFFF;
+  z-index: 200;
+  .wrap{
+    width: 175px;
+    padding-left: 22px;
+    border-bottom: 1px solid #dadada;
+    .div1{
+      margin-top: 12px;
+    }
+    div{
+      cursor: pointer;
+      line-height: 32px;
+      width: 175px;
+      .active{
+        width: 12px;
+        height: 12px;
+        background: url(../img/right_icon.png) center;
+        border: none;
+      }
+      .bg{
+        vertical-align: middle;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border: 1px solid #999999;
+        margin-right: 6px;
+        margin-top: -3px;
+        border-radius: 2px;
+        background-color: #FFFFFF;
+      };
+    };
+    .bg_icon {
+      vertical-align: middle;
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border: 1px solid #999999;
+      margin-right: 6px;
+      margin-top: -3px;
+      border-radius: 2px;
+      background-color: #FFFFFF;
+    }
+    p{
+      margin-top: 10px;
+      padding-bottom: 28px;
+      .bp_icon{
+        width: 12px;
+        height: 12px;
+        background: url(../img/biaopei_icon.png) no-repeat center;
+        border: none;
+      };
+      .xp_icon{
+        width: 12px;
+        height: 12px;
+        background: url(../img/xuanpei_icon.png) no-repeat center;
+        border: none;
+      };
+      .null_icon{
+        width: 12px;
+        height: 4px;
+        background: url(../img/null_icon.png) no-repeat center;
+        border: none;
+      }
+    }
+  }
+  .p{
+      width: 175px;
+      margin: 0 ;
+      padding-left: 22px;
+      font-weight: normal;
+      border-bottom: 1px solid #dadada;
+     text-align: left;
+     line-height: 31px;
+   }
+  .bor_no{
+    border-bottom: none;
+  }
+}
+.carBi {
+  .dragg_car_box {
+    padding: 20px 24px 0 27px;
+    width: 146px;
+    height: 90px;
+    .carbi_des{
+      color: #333;
+      line-height: 18px;
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      padding-bottom: 20px;
+    }
+  }
+
+  .duibi_btn {
+    .add_car{
+      display: inline-block;
+      width: 155px;
+      height: 24px;
+      line-height: 24px;
+      border: 1px solid #398be4;
+      color: #398be4;
+      cursor: pointer;
+      background: url(../img/addcar.png) no-repeat 37px center;
+    }
+  }
+  #titBox2 {
+    .carbiTop {
+      width: 197px;
+      height: 208px;
+    }
+  }
+  .car_select_input_box span.tit {
+      overflow: hidden;
+      width: 140px;
+      height: 25px;
+      display: block;
+  }
+  .car_select_input_box dd:hover{
+    background-color: #3a8be4;
+    color: #fffeff;
+  }
+  .car_barnd_box,
+  .car_type_box,
+  .car_year_box {
+    display: block;
+  }
+}
+
+.h73 {
+    height: 73px;
+}
+
+.main_box .car_compare_con table td .modTop18 {
+    margin: 8px 0 10px 0;
+}
+.c_cd {
+    color: #ccc;
+}
+.main {
+    min-height: 600px;
+}
+
+th {
+    width: 185px;
+    font-weight: normal;
+    padding-left: 12px;
+    text-align: left;
+    border-right: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    position: relative;
+}
+td {
+    width: 185px;
+    padding-left: 12px;
+    border-right: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+}
+
+#carLaryerBox {
+    th { 
+        width: 185px;
+    }
+    td { 
+        width: 197px;
+    }
+    .addCar {
+      img {
+        margin: 20px auto;
+        display: block;
+      }
+    }  
+}
+.configParainfo {
+    margin-top: 6px;
+}
+.signBox p {
+    line-height: 18px;
+}
+
+

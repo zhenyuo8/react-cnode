@@ -1,0 +1,285 @@
+html,
+body {
+  height: 100%;
+  color: #fff;
+}
+.title {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+.title img {
+  width: 10%;
+}
+.sec1 {
+  display: none;
+  background-image: url("../img/wenda_bg.jpg");
+  background-size: 100%;
+}
+.sec1 .header {
+  padding-top: 20%;
+}
+.sec1 .header .logo {
+  left: 0;
+  top: 2%;
+  width: 30%;
+}
+.sec1 .header div {
+  text-align: center;
+}
+.sec1 .header div .theme {
+  width: 100%;
+  position: relative;
+}
+.sec1 .header div .banner {
+  width: 65%;
+  margin-top: 10%;
+}
+.sec1 .header div .absolute {
+  right: -1000px;
+  top: -10%;
+  width: 20%;
+}
+.sec1 .content {
+  text-align: center;
+  margin-top: 20%;
+  font-size: 14px;
+  opacity: 0;
+}
+.sec1 .content p {
+  margin: 0.1rem 0;
+}
+.sec1 .content .p1 {
+  margin: 0 0 0.5rem;
+}
+.sec1 .content .p4 {
+  margin: 0 0 0.5rem;
+}
+.sec2 {
+  display: none;
+  background-image: url("../img/second_bg.jpg");
+  background-size: 100%;
+  background-position: bottom;
+  color: #ffffff;
+}
+.sec2 .header {
+  padding-top: 5%;
+  width: 90%;
+  margin: 0 auto;
+}
+.sec2 .header p {
+  margin-top: 5%;
+  font-size: 14px;
+  line-height: 150%;
+}
+.sec2 .header p span {
+  font-size: 16px;
+  color: #ffd50f;
+}
+.sec2 .content {
+  margin-top: 10%;
+  text-align: center;
+}
+.sec2 .content img {
+  width: 0;
+}
+.sec2 .content p {
+  margin-top: 10%;
+  font-size: 14px;
+}
+.sec3 {
+  background-image: url("../img/thied_bg.jpg");
+  background-size: 100%;
+  background-position: bottom;
+}
+.sec3 .header {
+  padding-top: 4%;
+  width: 94%;
+  margin: 0 auto;
+}
+.sec3 .header p {
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.5;
+  margin-top: 2.5%;
+}
+.sec3 .header div {
+  margin-top: 4%;
+}
+.sec3 .header div div {
+  float: left;
+  width: 50%;
+  text-align: center;
+  position: relative;
+}
+.sec3 .header div div img {
+  width: 94%;
+  border-radius: 0.2rem;
+}
+.sec3 .header div div div {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  left: 5%;
+  height: 40%;
+}
+.sec3 .header div div div h2 {
+  font-size: 15px;
+  font-weight: 500;
+}
+.sec3 .header div div div p {
+  margin-top: 5%;
+  font-size: 12px;
+  text-align: left;
+}
+.sec3 .content {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 8% ;
+}
+.sec3 .content h2 {
+  margin-bottom: 4%;
+}
+.sec3 .content p {
+  line-height: 0.6rem;
+  font-size: 14px;
+}
+.section {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.section.current {
+  display: inline-block;
+}
+.section.next {
+  display: inline-block;
+  z-index: 2;
+}
+.section.prev {
+  display: inline-block;
+  z-index: 2;
+}
+/*字体适配设置*/
+[data-dpr="2"] .sec1 .content {
+  font-size: 28px;
+}
+[data-dpr="2"] .title {
+  font-size: 36px;
+}
+[data-dpr="2"] .sec2 .header p {
+  font-size: 28px;
+}
+[data-dpr="2"] .sec2 .header p span {
+  font-size: 32px;
+}
+[data-dpr="2"] .sec2 .content p {
+  font-size: 28px;
+}
+[data-dpr="2"] .sec3 .header p {
+  font-size: 24px;
+}
+[data-dpr="2"] .sec3 .header div div div h2 {
+  font-size: 30px;
+}
+[data-dpr="2"] .sec3 .header div div div p {
+  font-size: 24px;
+}
+[data-dpr="2"] .sec3 .content p {
+  font-size: 28px;
+}
+[data-dpr="3"] .sec1 .content {
+  font-size: 42px;
+}
+[data-dpr="3"] .title {
+  font-size: 54px;
+}
+[data-dpr="3"] .sec2 .header p {
+  font-size: 42px;
+}
+[data-dpr="3"] .sec2 .header p span {
+  font-size: 48px;
+}
+[data-dpr="3"] .sec2 .content p {
+  font-size: 42px;
+}
+[data-dpr="3"] .sec3 .header p {
+  font-size: 36px;
+}
+[data-dpr="3"] .sec3 .header div div div h2 {
+  font-size: 45px;
+}
+[data-dpr="3"] .sec3 .header div div div p {
+  font-size: 36px;
+}
+[data-dpr="3"] .sec3 .content p {
+  font-size: 42px;
+}
+/*动画部分*/
+.ani_header {
+  animation-name: ani_header;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+.ani_yellow {
+  animation-name: ani_yellow;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+.opacity {
+  animation-name: opacity;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 2s;
+}
+.example {
+  animation-name: example;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+@keyframes ani_header {
+  0% {
+    top: -1000px;
+  }
+  50% {
+    top: 50px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes ani_yellow {
+  0% {
+    right: -1000px;
+  }
+  50% {
+    right: -100px;
+  }
+  100% {
+    right: 21%;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes example {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 90%;
+  }
+}

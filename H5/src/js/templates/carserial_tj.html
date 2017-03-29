@@ -1,0 +1,33 @@
+
+<!-- 推荐车型主页面 -->
+<div class="recommend_page">
+
+	<carserial-header title="看了又看" page="tj"></carserial-header>
+
+	<!-- 推荐车型列表 -->
+	<div class="recommend_main">
+		<swiper :options="swiperOption">
+		<swiper-slide v-for="row in list">
+			<div class="recommend_car">
+				<dl class="clearfix">
+					<dd v-bind:class="{first:i===0}"  v-for="(el,i) in row">
+						<a v-bind:href="el.Link" target="_blank"  v-if="el.isAd">
+							<img v-bind:src="el.ImageUrl">
+							<p class="type_name">{{el.Text}}</p>
+							<p class="type_price">{{el.Price}}</p>
+						</a>
+						<a :href="'${url_base}/carserial?serialId='+ el.serialId" v-else>
+							<img v-bind:src="el.bottomPicUrl">
+							<p class="type_name">{{el.serialName}}</p>
+							<p class="type_price">{{el.minPrice}}-{{el.maxPrice}}万</p>
+						</a>
+					</dd>
+				</dl>
+				<div class="bottom_bg"></div>
+			</div>
+		</swiper-slide>
+		<div class="swiper-pagination"  slot="pagination" v-show="list.length>1"></div>
+	</swiper>
+	</div>
+	<div class="next_page"></div>
+</div>

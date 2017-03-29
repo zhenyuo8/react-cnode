@@ -1,0 +1,39 @@
+/*****
+ *@author: linyh
+ *@from: Global style goTop
+ *@description: 陈璐
+ *@date: name (2017.02.22)
+*/
+
+
+@import (reference) "../public";
+
+// 回到顶部
+.go_top{
+    display: none;
+    width: 1.333rem /* 100/75 */;
+    height: 1.333rem /* 100/75 */;
+    position: fixed;
+    bottom: 2.133rem /* 160/75 */;
+    right: .267rem /* 20/75 */;
+    z-index: 99;
+    span{
+        background: @color-000;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        filter: alpha(opacity=60);
+        opacity: .6;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    i{
+        .icon_bg( url("../img/goTop.png"), .4rem /* 30/75 */, .48rem /* 36/75 */);
+        display: inline-block;
+        position: absolute;
+        top: .427rem /* 32/75 */;
+        left: .467rem /* 35/75 */;
+    }
+}

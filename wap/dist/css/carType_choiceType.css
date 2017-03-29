@@ -1,0 +1,438 @@
+/*****
+ *@author: linyh
+ *@from: Global style cartype_choiceType(车型-选择车款)
+ *@description: 陈璐
+ *@date: name (2017.02.24)
+*/
+/*****
+ *@author: jianingning
+ *@from: Global style mod_footer
+ *@description:
+ *@date: name (2017.02.20)
+*/
+.video_fte {
+  background-color: #ffffff;
+  height: 1.36rem;
+  text-align: center;
+  line-height: 1.36rem;
+  font-size: 12px;
+}
+.video_fte .colora4 {
+  color: #a4a4a4;
+}
+[data-dpr="2"] .video_fte {
+  font-size: 24px;
+}
+[data-dpr="3"] .video_fte {
+  font-size: 36px;
+}
+/*****
+ *@author: linyh
+ *@from: Global style goTop
+ *@description: 陈璐
+ *@date: name (2017.02.22)
+*/
+.go_top {
+  display: none;
+  width: 1.333rem /* 100/75 */;
+  height: 1.333rem /* 100/75 */;
+  position: fixed;
+  bottom: 0.987rem /* 74/75 */;
+  right: 0.267rem /* 20/75 */;
+  z-index: 99;
+}
+.go_top span {
+  background: #000;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  filter: alpha(opacity=60);
+  opacity: .6;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.go_top i {
+  background-image: url("../img/goTop.png");
+  background-size: 100% 100%;
+  width: 0.4rem;
+  height: 0.48rem;
+  display: inline-block;
+  position: absolute;
+  top: 0.427rem /* 32/75 */;
+  left: 0.467rem /* 35/75 */;
+}
+/* 选择车款主页面 */
+.choice_car_page .bg_bar {
+  width: 100%;
+  height: 0.4rem /* 30/75 */;
+  background-color: #f4f5f7;
+}
+.choice_car_page .module_title {
+  font-size: 13px;
+  line-height: 0.747rem /* 56/75 */;
+  background-color: #f3f3f3;
+  padding-left: 0.4rem /* 30/75 */;
+}
+.choice_car_page header {
+  height: 1.173rem;
+  line-height: 1.173rem;
+  text-align: center;
+  background: -webkit-linear-gradient(left, #23a6fe, #2484fa);
+}
+.choice_car_page header .goback_btn {
+  float: left;
+  margin: .4rem 0 0 .4rem;
+  display: inline-block;
+  background-image: url(../img/goback_btn.png);
+  background-size: 100% 100%;
+  width: 0.227rem;
+  height: 0.4rem;
+}
+.choice_car_page header .title_extra {
+  font-size: 16px;
+  color: #fff;
+}
+.choice_car_page .hot_brand {
+  width: 100%;
+}
+.choice_car_page .hot_brand .hot_title {
+  font-size: 13px;
+  line-height: 0.747rem /* 56/75 */;
+  background-color: #f3f3f3;
+  padding-left: 0.4rem /* 30/75 */;
+}
+.choice_car_page .hot_brand .hot_list ul {
+  margin: 0 4% 0.267rem /* 20/75 */;
+}
+.choice_car_page .hot_brand .hot_list ul li {
+  float: left;
+  width: 20%;
+  text-align: center;
+  margin-bottom: 0.267rem /* 20/75 */;
+}
+.choice_car_page .hot_brand .hot_list ul li a {
+  display: block;
+}
+.choice_car_page .hot_brand .hot_list ul li a img {
+  display: inline-block;
+  width: 0.987rem /* 74/75 */;
+  height: 0.987rem /* 74/75 */;
+  margin: 0.173rem /* 13/75 */;
+}
+.choice_car_page .hot_brand .hot_list ul li a span {
+  display: block;
+}
+.choice_car_page .brand_type {
+  position: relative;
+}
+.choice_car_page .brand_type .brand_list .letter_title {
+  font-size: 13px;
+  line-height: 0.747rem /* 56/75 */;
+  background-color: #f3f3f3;
+  padding-left: 0.4rem /* 30/75 */;
+  font-size: 14px;
+  padding-left: 0.667rem /* 50/75 */;
+}
+.choice_car_page .brand_type .brand_list .brand_box {
+  font-size: 15px;
+}
+.choice_car_page .brand_type .brand_list .brand_box li {
+  overflow: hidden;
+}
+.choice_car_page .brand_type .brand_list .brand_box li a {
+  line-height: 1.427rem /* 107/75 */;
+  display: block;
+  overflow: hidden;
+}
+.choice_car_page .brand_type .brand_list .brand_box li a i {
+  float: left;
+  padding: 0 0.507rem /* 38/75 */;
+}
+.choice_car_page .brand_type .brand_list .brand_box li a i img {
+  width: 0.987rem /* 74/75 */;
+  height: 0.987rem /* 74/75 */;
+  margin: 0.173rem /* 13/75 */;
+  vertical-align: middle;
+  display: inline-block;
+}
+.choice_car_page .brand_type .brand_list .brand_box li a .brand_name {
+  width: 76%;
+  border-bottom: 1px solid #f3f3f3;
+  float: left;
+}
+.choice_car_page .brand_type .letter_list {
+  position: absolute;
+  top: 0.747rem /* 56/75 */;
+  right: 0;
+  z-index: 1;
+}
+.choice_car_page .brand_type .letter_list li {
+  width: 0.8rem /* 60/75 */;
+  line-height: 0.48rem /* 36/75 */;
+  text-align: center;
+}
+.choice_car_page .brand_type .letter_list li .checked {
+  color: #2799fe;
+}
+.choice_car_page .brand_type .letter_list_fix {
+  position: fixed;
+  top: 1.76rem /* 132/75 */;
+  right: 0;
+  z-index: 99;
+}
+.choice_car_page .brand_type .letter_alert {
+  font-size: 50px;
+  width: 1.867rem /* 140/75 */;
+  height: 1.867rem /* 140/75 */;
+  border: 1px solid #d3d3d3;
+  background-color: #fafafa;
+  border-radius: 0.133rem /* 10/75 */;
+  text-align: center;
+  margin-top: -0.933rem /* 70/75 */;
+  margin-left: -0.933rem /* 70/75 */;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  display: none;
+}
+.choice_car_page .brand_type .letter_alert span {
+  color: #888;
+  line-height: 1.867rem /* 140/75 */;
+}
+.mask_area {
+  display: none;
+}
+.mask_area .mask {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  filter: alpha(opacity=50);
+  opacity: .5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.mask_area .mask_jt {
+  background-image: url("../img/double_jt.png");
+  background-size: cover;
+  width: 0.693rem /* 52/75 */;
+  height: 0.64rem /* 48/75 */;
+  position: fixed;
+  top: 48%;
+  left: 10.93%;
+  z-index: 999;
+}
+.right_type_module {
+  width: 76.667%;
+  height: 100%;
+  background-color: #fff;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 999;
+}
+.right_type_module .car_type_module .type_brand {
+  font-size: 16px;
+  line-height: 1.413rem /* 106/75 */;
+}
+.right_type_module .car_type_module .type_brand .type_brand_logo {
+  width: 0.96rem /* 72/75 */;
+  height: 0.96rem /* 72/75 */;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0.4rem /* 30/75 */;
+}
+.right_type_module .car_type_module .type_brand .type_brand_logo img {
+  width: 100%;
+  height: 100%;
+}
+.right_type_module .car_type_module .type_msg_list .sub_brand_name {
+  font-size: 13px;
+  color: #6a6a6a;
+  line-height: 0.72rem /* 54/75 */;
+  background-color: #f4f5f7;
+  padding: 0 0.32rem /* 24/75 */;
+}
+.right_type_module .car_type_module .type_msg_list dl {
+  padding: 0.213rem /* 16/75 */ 0 0.267rem /* 20/75 */;
+  margin-left: 0.4rem /* 30/75 */;
+  border-bottom: 1px solid #f3f3f3;
+}
+.right_type_module .car_type_module .type_msg_list dl a {
+  display: block;
+  overflow: hidden;
+}
+.right_type_module .car_type_module .type_msg_list dl dt {
+  float: left;
+  width: 1.88rem /* 141/75 */;
+  height: 1.253rem /* 94/75 */;
+  margin: 0.347rem /* 26/75 */ 0.267rem /* 20/75 */ 0.293rem /* 22/75 */ 0;
+}
+.right_type_module .car_type_module .type_msg_list dl dt img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.right_type_module .car_type_module .type_msg_list dl dd {
+  float: left;
+}
+.right_type_module .car_type_module .type_msg_list dl dd .type_name {
+  font-size: 15px;
+  line-height: 0.693rem /* 52/75 */;
+}
+.right_type_module .car_type_module .type_msg_list dl dd .type_price {
+  font-size: 15px;
+  color: #ff3131;
+  line-height: 0.667rem /* 50/75 */;
+}
+.right_type_module .car_type_module .type_msg_list dl dd .type_zd_price {
+  color: #a4a4a4;
+  line-height: 0.533rem /* 40/75 */;
+}
+.right_style_module {
+  width: 76.667%;
+  height: 100%;
+  background-color: #fff;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 999;
+}
+.right_style_module .car_style_module .style_brand {
+  font-size: 16px;
+  line-height: 1.2rem /* 90/75 */;
+  margin-left: 0.4rem /* 30/75 */;
+  border-bottom: 1px solid #f3f3f3;
+}
+.right_style_module .car_style_module .style_brand i {
+  background-image: url("../img/leftjt.png");
+  background-size: 100% 100%;
+  width: 0.187rem;
+  height: 0.347rem;
+  vertical-align: middle;
+  margin-right: 0.213rem /* 16/75 */;
+  display: inline-block;
+}
+.right_style_module .car_style_module .year_style {
+  font-size: 16px;
+  line-height: 1.2rem /* 90/75 */;
+  padding-left: 0.4rem /* 30/75 */;
+}
+.right_style_module .car_style_module .style_msg_list .sub_brand_name {
+  font-size: 13px;
+  color: #6a6a6a;
+  line-height: 0.72rem /* 54/75 */;
+  background-color: #f4f5f7;
+  padding: 0 0.32rem /* 24/75 */;
+}
+.right_style_module .car_style_module .style_msg_list ul li {
+  font-size: 15px;
+  width: 92%;
+  margin: 0 auto;
+  padding: 0.187rem /* 14/75 */ 0;
+  border-bottom: 1px solid #f3f3f3;
+}
+.right_style_module .car_style_module .style_msg_list ul li p {
+  line-height: 0.693rem /* 52/75 */;
+}
+.right_style_module .car_style_module .style_msg_list ul li .style_price .style_start_price {
+  color: #ff3131;
+  float: left;
+}
+.right_style_module .car_style_module .style_msg_list ul li .style_price .style_zd_price {
+  font-size: 12px;
+  color: #a4a4a4;
+  float: right;
+}
+[data-dpr="2"] .choice_car_page header .title_extra {
+  font-size: 32px;
+}
+[data-dpr="2"] .choice_car_page .hot_brand .hot_title {
+  font-size: 26px;
+}
+[data-dpr="2"] .choice_car_page .brand_type .brand_list .letter_title {
+  font-size: 28px;
+}
+[data-dpr="2"] .choice_car_page .brand_type .brand_list .brand_box {
+  font-size: 30px;
+}
+[data-dpr="2"] .choice_car_page .brand_type .letter_alert {
+  font-size: 100px;
+}
+[data-dpr="3"] .choice_car_page header .title_extra {
+  font-size: 48px;
+}
+[data-dpr="3"] .choice_car_page .hot_brand .hot_title {
+  font-size: 39px;
+}
+[data-dpr="3"] .choice_car_page .brand_type .brand_list .letter_title {
+  font-size: 42px;
+}
+[data-dpr="3"] .choice_car_page .brand_type .brand_list .brand_box {
+  font-size: 45px;
+}
+[data-dpr="3"] .choice_car_page .brand_type .letter_alert {
+  font-size: 150px;
+}
+[data-dpr="2"] .right_type_module .car_type_module .type_brand {
+  font-size: 32px;
+}
+[data-dpr="2"] .right_type_module .car_type_module .type_msg_list .sub_brand_name {
+  font-size: 26px;
+}
+[data-dpr="2"] .right_type_module .car_type_module .type_msg_list dl .type_name {
+  font-size: 30px;
+}
+[data-dpr="2"] .right_type_module .car_type_module .type_msg_list dl .type_price {
+  font-size: 30px;
+}
+[data-dpr="3"] .right_type_module .car_type_module .type_brand {
+  font-size: 48px;
+}
+[data-dpr="3"] .right_type_module .car_type_module .type_msg_list .sub_brand_name {
+  font-size: 39px;
+}
+[data-dpr="3"] .right_type_module .car_type_module .type_msg_list dl .type_name {
+  font-size: 45px;
+}
+[data-dpr="3"] .right_type_module .car_type_module .type_msg_list dl .type_price {
+  font-size: 45px;
+}
+[data-dpr="2"] .right_style_module .car_style_module .style_brand {
+  font-size: 32px;
+}
+[data-dpr="2"] .right_style_module .car_style_module .year_style {
+  font-size: 32px;
+}
+[data-dpr="2"] .right_style_module .car_style_module .style_msg_list .sub_brand_name {
+  font-size: 26px;
+}
+[data-dpr="2"] .right_style_module .car_style_module .style_msg_list li {
+  font-size: 30px;
+}
+[data-dpr="2"] .right_style_module .car_style_module .style_msg_list li .style_price .style_zd_price {
+  font-size: 24px;
+}
+[data-dpr="3"] .right_style_module .car_style_module .style_brand {
+  font-size: 48px;
+}
+[data-dpr="3"] .right_style_module .car_style_module .year_style {
+  font-size: 48px;
+}
+[data-dpr="3"] .right_style_module .car_style_module .style_msg_list .sub_brand_name {
+  font-size: 39px;
+}
+[data-dpr="3"] .right_style_module .car_style_module .style_msg_list li {
+  font-size: 45px;
+}
+[data-dpr="3"] .right_style_module .car_style_module .style_msg_list li .style_price .style_zd_price {
+  font-size: 36px;
+}

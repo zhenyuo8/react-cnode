@@ -1,0 +1,310 @@
+/*****
+ *@author: linyh
+ *@from: Global style wenda_index(问答首页)
+ *@description: 陈璐
+ *@date: name (2017.03.02)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_pubHeadNav";
+@import "mod/mod_pubHead";
+@import "mod/mod_issue";
+@import "mod/mod_smallnav";
+@import "mod/mod_footer";
+@import "mod/mod_goTop";
+
+// 灰色间隔条
+.bg_bar{
+    width: 100%;
+    height: .4rem /* 30/75 */;
+    background-color: @bg-bar;
+}
+
+// 问答主页面
+.wenda_page{
+    // 轮播图
+    .swiper_banner{
+        font-size: 13px;
+        position: relative;
+        .swiper_box{
+            width: 100%;
+            height: 4.533rem /* 340/75 */;
+            overflow:hidden;
+            ul{
+                height: 4.533rem /* 340/75 */;
+                li{
+                    float: left;
+                    width: 100%;
+                    position: relative;
+                    img{
+                        display: block;
+                        width: 100%;
+                    }
+                    p{
+                        color: @color-fff;
+                        width: 48%;
+                        line-height: .88rem /* 66/75 */;
+                        .clip;
+                        position: absolute;
+                        left: .4rem /* 30/75 */;
+                        bottom: 0;
+                        z-index: 2;
+                    }
+                    .banner_mask{
+                        .bg-jianbian(top,bottom,rgba(0,0,0,0),rgba(0,0,0,1));
+                        width: 100%;
+                        height: 30%;
+                        filter: alpha(opacity=50);
+                        opacity: .5;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+        .index_dian{
+            display: inline-block;
+            line-height: .853rem /* 64/75 */;
+            position: absolute;
+            bottom: 0;
+            right: .4rem /* 30/75 */;
+            z-index: 2;
+            i{
+                display: inline-block;
+                width: .187rem /* 14/75 */;
+                height: .187rem /* 14/75 */;
+                background-color: @color-fff;
+                border-radius: 50%;
+                filter: alpha(opacity=50);
+                opacity: .5;
+                margin-left: .187rem /* 14/75 */;
+            }
+            .swiper-pagination-bullet-active{
+                width: .213rem /* 16/75 */;
+                height: .213rem /* 16/75 */;
+                filter: alpha(opacity=1);
+                opacity: 1;
+            }
+        }
+    }
+
+    // 各模块标题
+    .module_title{
+        .demo_title;
+        .more{
+            font-size: 14px;
+            color: @color-tab-color;
+            float: right;
+            img{
+                display: inline-block;
+                width: .16rem /* 12/75 */;
+                height: .293rem /* 22/75 */;
+                vertical-align: middle;
+                margin-left: .133rem /* 10/75 */;
+            }
+        }
+    }
+
+    // 专家团
+    .expert_team{
+        .expert_box{
+            width: 100%;
+            border-top: .027rem /* 2/75 */ solid @list-border;
+            overflow-x: scroll;
+            &::-webkit-scrollbar{
+                height: 0;
+            }
+            .expert_list{
+                padding: .133rem /* 10/75 */ 0;
+                display: -webkit-box;
+                -webkit-box-orient: horizontal;
+                li{
+                    width: 3.067rem /* 230/75 */;
+                    padding-bottom: .267rem /* 20/75 */;
+                    border-right: .027rem /* 2/75 */ solid @list-border;
+                    .expert_msg{
+                        display: block;
+                        img{
+                            display: block;
+                            width: 1.2rem /* 90/75 */;
+                            height: 1.2rem /* 90/75 */;
+                            border: 1px solid @list-border;
+                            border-radius: 50%;
+                            margin: .187rem /* 14/75 */ auto .267rem /* 20/75 */;
+                        }
+                        p{
+                            text-align: center;
+                        }
+                        .expert_name{
+                            font-size: 14px;
+                        }
+                        .expert_title{
+                            font-size: 10px;
+                            color: @color-666;
+                            width: 78%;
+                            margin: .213rem /* 16/75 */ auto .267rem /* 20/75 */;
+                            .ellipsis;
+                        }
+                    }
+                    .ask_expert{
+                        font-size: 13px;
+                        color: @color-fff;
+                        width: 1.6rem /* 120/75 */;
+                        line-height: .64rem /* 48/75 */;
+                        text-align: center;
+                        background-color: @blue-btn-color;
+                        border-radius: .053rem /* 4/75 */;
+                        margin: 0 auto;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    // 推荐内容
+    .recommend_content{
+        .load_more_module{
+            width: 92%;
+            margin: 0 4% .267rem /* 20/75 */;
+            .load_more{
+                .load_more;
+            }
+            .loading{
+                .loading;
+                display: none;
+            }
+            .more{
+                .more;
+                display: none;
+            }
+        }
+    }
+
+    // 提问按钮
+    .ask_btn{
+        font-size: 15px;
+        .bg-jianbian(top left,bottom right,@ml-start,@ml-end);
+        .border-jianbian(0,5px,20px,0,@ml-end);
+        border-radius: 50%;
+        width: 1.333rem /* 100/75 */;
+        height: 1.333rem /* 100/75 */;
+        line-height: 1.333rem /* 100/75 */;
+        text-align: center;
+        position: fixed;
+        bottom: 2.853rem /* 214/75 */;
+        right: .267rem /* 20/75 */;
+        z-index: 99;
+        a{
+            display: block;
+            color: @color-fff;
+            text-decoration: none;
+            outline: none;
+        }
+    }
+
+}
+
+/* 字体大小适配 */
+//dpr=2字体大小
+[data-dpr="2"] .wenda_page{
+    // 轮播图
+    .swiper_banner{
+        font-size: 26px;
+    }
+    // 各模块标题
+    .module_title{
+        span{
+            font-size: 30px;
+        }
+        .more{
+            font-size: 28px;
+        }
+    }
+    // 专家团
+    .expert_team{
+        .expert_box{
+            .expert_list{
+                .expert_msg{
+                    .expert_name{
+                        font-size: 28px;
+                    }
+                    .expert_title{
+                        font-size: 20px;
+                    }
+                }
+                .ask_expert{
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+    // 推荐内容
+    .recommend_content{
+        .load_more_module{
+            .load_more{
+                font-size: 26px;
+            }
+            .more{
+                font-size: 26px;
+            }
+        }
+    }
+    // 提问按钮
+    .ask_btn{
+        font-size: 30px;
+    }
+}
+//dpr=3字体大小
+[data-dpr="3"] .wenda_page{
+    // 轮播图
+    .swiper_banner{
+        font-size: 39px;
+    }
+    // 各模块标题
+    .module_title{
+        span{
+            font-size: 45px;
+        }
+        .more{
+            font-size: 42px;
+        }
+    }
+    // 专家团
+    .expert_team{
+        .expert_box{
+            .expert_list{
+                .expert_msg{
+                    .expert_name{
+                        font-size: 42px;
+                    }
+                    .expert_title{
+                        font-size: 30px;
+                    }
+                }
+                .ask_expert{
+                    font-size: 39px;
+                }
+            }
+        }
+    }
+    // 推荐内容
+    .recommend_content{
+        .load_more_module{
+            .load_more{
+                font-size: 39px;
+            }
+            .more{
+                font-size: 39px;
+            }
+        }
+    }
+    // 提问按钮
+    .ask_btn{
+        font-size: 45px;
+    }
+}

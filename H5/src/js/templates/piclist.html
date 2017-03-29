@@ -1,0 +1,92 @@
+<div id="content" class="cf">
+    <div class="img_listwrap">
+        
+        <page-header page="pic">
+            <ul class="fl" slot="btns">
+                <li v-on:click="showLayer('car')" v-show="isCarIconVisible" v-bind:class="{active:carId}">
+                    <span class="s1"></span>
+                    <strong>车款</strong>
+                </li>
+                <li v-on:click="showLayer('color')" v-show="isColorIconVisible" v-bind:class="{active:wgId||nsId}">
+                    <span class="s2"></span>
+                    <strong>颜色</strong>
+                </li>
+            </ul>
+        </page-header>
+
+        <ul class="nav_ul cf" v-if="categorys.length>1">
+                <li v-for="c in categorys" 
+                    v-bind:class="{active:categoryId==c.categoryId}"
+                    v-on:click="categoryId=c.categoryId">
+                    {{c.categoryName}}<span></span>
+                </li>
+        </ul>
+        
+        <ul class="img_listul cf" v-bind:class="{notab:categorys.length===1}">
+            <li v-for="row in rows">
+                <router-link :to="{
+                    name:'picview',
+                    query: {
+                        carId: carId,
+                        carYear: carYear,
+                        wgId: wgId,
+                        nsId: nsId,
+                        categoryType: categoryType,
+                        categoryId: categoryId,
+                        serialId: serialId,
+                        imgId: row.imgId
+                    }
+                }" reload>
+                    <img v-bind:src="row.imgUrl">
+                </router-link>
+            </li>
+        </ul>
+
+        <div class="load_more">
+			<span class="loading" v-show="state==1">正在加载中…</span>
+			<!-- <span class="nextload" v-on:click="nextPage()" v-show="state==2">点击加载更多</span> -->
+            <span class="nextload" v-show="state==2">上滑加载更多</span>
+			<span class="nomore" v-show="state==3">没有更多了</span>
+		</div>
+    </div>
+    <!-- 图片列表-筛选车款 -->
+    <div class="mask_area" v-on:touchend="hideLayer()">
+        <div class="mask"></div>
+        <div class="mask_jt"></div>
+    </div>
+    <div class="filter_car">
+        <img src="../../img/drawer.png" class="drawer">
+        <strong class="allcar" v-on:click="changeCar('','')">全部车款</strong>
+        <template v-for="row in carStyles">
+            <strong class="year">{{row.caryear}}款</strong>
+            <template v-for="list in row.data">
+            <h5>{{list.level}}</h5>
+            <ul class="filter_ul">
+                <li v-for="el in list.data" v-on:click="changeCar(el.id,el.caryear)" v-bind:class="{active:carId==el.id}">
+                    {{el.name}}<strong></strong>
+                </li>
+            </ul>
+            </template>
+        </template>
+    </div>
+    <!-- 图片列表-筛选颜色 -->
+    <div class="filter_color">
+        <img src="../../img/drawer.png" class="drawer">
+        <strong class="allcar" v-on:click="changeColor()">全部颜色</strong>
+        <template v-for="row in carColors">
+            <strong class="year" v-if="row.wgColors.length || row.nsColors.length">{{row.carYear}}款</strong>
+            <h5 v-if="row.wgColors.length">外观颜色</h5>
+            <ul class="filter_ul">
+                <li v-for="el in row.wgColors" v-on:click="changeColor('wg',el.id,row.carYear)" v-bind:class="{active:wgId==el.id&&carYear==row.carYear}">
+                    <span v-bind:style="{background:el.colorRgb}" v-bind:class="{hb:el.colorRgb.indexOf(',')>=0}"></span>{{el.name}}<strong></strong>
+                </li>
+            </ul>
+            <h5 v-if="row.nsColors.length">内饰颜色</h5>
+            <ul class="filter_ul">
+                <li v-for="el in row.nsColors" v-on:click="changeColor('ns',el.id,row.carYear)" v-bind:class="{active:nsId==el.id&&carYear==row.carYear}">
+                    <span v-bind:style="{background:el.colorRgb}" v-bind:class="{hb:el.colorRgb.indexOf(',')>=0}"></span>{{el.name}}<strong></strong>
+                </li>
+            </ul>
+        </template>
+    </div>
+</div>

@@ -1,0 +1,112 @@
+/*****
+ *@author: linyh
+ *@from: Global style hotCarContrast module
+ *@description: 何在朋
+ *@date: name (2017.02.05)
+*/
+
+
+
+@import (reference) "../public";
+
+.car_type_contrast{
+    margin-bottom: 36px;
+    .display_n{
+        display: none;
+    }
+    h1{
+        font-size: @font-16;
+        color:@color-333;
+        font-weight: bold;
+        line-height:40px;
+    }
+    dl{
+        border: 1px solid @color-eee;
+        dt{
+            padding-bottom: 4px;
+            p{
+                font-size:@font-14;
+                font-weight: 600;
+                line-height:20px;
+                text-align: center;
+                &:first-child{
+                    text-align: left;
+                    padding: 10px 20px 0;
+                }
+                &:first-child+p{
+                    font-size: @font-size-12;
+                    color:@color-red-price;
+                    line-height:22px;
+                }
+            }
+        }
+        dd{
+            overflow: hidden;
+            padding:9px 0 10px;
+            border-top: 1px dashed @color-eee;
+            background-color: @color-f7;
+            span{
+                a{
+                    &:hover{
+                        color: #398be4;
+                    }
+                }
+                display: inline-block;
+                float:left;
+                i{
+                    display: inline-block;
+                    width:12px;
+                    height:12px;
+                    border:1px solid @color-333;
+                    vertical-align: middle;
+                    margin-left: 3px;
+                    cursor: pointer;
+                    &:hover{
+                        border-color: @color-a-hover;
+                    }
+                }
+                .checked{
+                    border:0;
+                    background-image: url("../img/summar_sprite.png");
+                    background-position: -75px -56px;
+                    width:14px;
+                    height:14px;
+                }
+                &:first-child+span{
+                    width:169px;
+                    padding-left:10px;
+                    line-height: 18px;
+                }
+            }
+        }
+        .center{
+            span{
+                i{
+                    vertical-align: -12px;
+                }
+            }
+        }
+        .start_contrast_btn{
+            padding:12px 60px;
+            .btn_style{
+                color: @color-fff;
+                font-size: @font-14;
+                padding:0 14px;
+                line-height: 24px;
+                display: inline-block;
+            }
+            span{
+                .btn_style;
+                background-color: @color-aaa;
+            }
+            a{
+                .btn_style;
+                background-color:@color-ffa903;
+                .orange_btn;
+            }
+            .display_n{
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>汽车大全-个人中心</title>
+	<meta charset="UTF-8">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="telephone=no,spanail=no" name="format-detection">
+	<script src="js/flexible_css.js"></script>
+	<script src="js/flexible.js"></script>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/personalCenter_index.css">
+</head>
+
+<body>
+
+<div class="index_page">
+	<!-- 头部logo -->
+	{{#include ./mod/mod_pubHead.html?m=个人中心}}
+
+	<!--头像名称-->
+	<div class="header_img">
+		<div class="img_container">
+			<a href="personalCenter_settings.html">
+				<span class="img_wrap"><img src="img/photo.png" alt=""></span>
+				<span class="zhuanjia"><img src="img/qa_zhuanjia.png" alt=""></span>
+			</a>
+		</div>
+		<p>汽车小白</p>
+	</div>
+
+	<!--content-->
+	<div class="body">
+		<div class="content_list" id="js_content_list">
+			<ul>
+				<li>
+					<a href="personalCenter_wendaMessage.html"  class="message">
+						<span class="left"><img src="img/icon_message_03.png" alt=""></span>消息
+						<span class="right"><i class="red"></i><span class="jiant"><img src="img/icon_right_03.png" alt=""></span></span>
+					</a>
+				</li>
+				<li>
+					<a href="personalCenter_collectionCarModel.html"  class="collection">
+						<span class="left"><img src="img/icon_collect_03.png" alt=""></span>收藏夹
+						<span class="right"><span class="jiant"><img src="img/icon_right_03.png" alt=""></span></span>
+					</a>
+				</li>
+				<li>
+					<a href="personalCenter_priceOrder.html"  class="order">
+						<span class="left"><img src="img/icon_order_03.png" alt=""></span>询价订单
+						<span class="right"><span class="jiant"><img src="img/icon_right_03.png" alt=""></span></span>
+					</a>
+				</li>
+				<li>
+					<a href="" class="que_ans" >
+						<span class="left"><img src="img/icon_collect_03.png" alt=""></span>我的问答
+						<span class="right"><i class="red"></i></i><span class="jiant"><img src="img/icon_right_03.png" alt=""></span></span>
+					</a>
+				</li>
+
+				<li>
+					<a href="personalCenter_comment.html"  class="comment">
+						<span class="left"><img src="img/icon_comment_03.png" alt=""></span>我的评论
+						<span class="right"><i class="red"></i><span class="jiant"><img src="img/icon_right_03.png" alt=""></span></span>
+					</a>
+				</li>
+				<li>
+					<a href="personalCenter_settings.html"  class="settings">
+						<span class="left"><img src="img/icon_personal_03.png" alt=""></span>个人资料设置
+						<span class="right"><span class="jiant"><img src="img/icon_right_03.png" alt=""></span></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 间隔条 -->
+
+	<div class="bg_bar"></div>
+
+	<!--footer-->
+	{{#include ./mod/mod_footer.html}}
+
+	<!-- 回到顶部 -->
+	{{#include mod/mod_goTop.html}}
+
+	<!-- 遮罩层 -->
+	<div class="mask_area">
+		<div class="mask"></div>
+		<div class="mask_jt"></div>
+	</div>
+
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+</div>
+<!--顶部导航-->
+{{#include ./mod/mod_pubHeadNav.html}}
+
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/pubNav.js"></script>
+<script src="js/personaCenter_index.js"></script>
+</html>

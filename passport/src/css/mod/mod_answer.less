@@ -1,0 +1,140 @@
+/*****
+ *@author: jiann
+ *@from: Global style mod_answer  
+ *@description: 
+ *@date: name (2017.03.14)
+*/
+
+
+.zhj_con {
+		.zhj_con_list {
+			position: relative;
+			padding-top: 12px;
+			border-bottom: 1px solid #eee;
+
+			.zhj_con_text {
+				line-height: 23px;
+				line-height: 23px\9;
+				font-size: 14px;
+			}
+			.zhj_down {
+				display: inline-block;
+				width:80px;
+				height:20px;
+				background: #fff;
+				//position: absolute;
+				right: 0px;
+				top: 58px;
+				color: #398be4;
+				cursor: pointer;
+				display: none;
+
+				img {
+					margin-top: 8px;
+					margin-left: 3px;
+				}
+			}
+		}
+		.zhj_con_quote {
+			width: 710px;
+			margin-top: 20px;
+			padding: 15px;
+			background: #f7f7f7;
+			font-size: 14px; 
+			line-height: 23px;
+			line-height: 23px\9;
+
+			p {
+				i {
+					color: #bcbcbc;
+				}
+				span {
+					display: block;
+				}
+			}
+		}
+	.q_image{
+		//width: 440px;
+		overflow: hidden;
+		//height: 290px;
+		margin-top: 15px;
+		div{
+			width: 200px;
+			height: 200px;
+			overflow: hidden;
+			float: left;
+			line-height: 200px;
+			margin-bottom:10px ;
+			margin-left: 10px;
+			background:url("../img/default_a.png")  center center no-repeat;
+			background-size: cover;
+			&:hover{
+				cursor: pointer;
+			}
+			a{
+				width: 200px;
+				height: 200px;
+				display: block;
+			}
+		}
+	}
+		.zhj_con_img2 {
+			li {
+				width: 301px;
+				height: 199px;
+
+				img {
+					display: inline-block;
+					width: 301px;
+					height: 199px;
+				}
+			}
+		}
+		.zhj_con_sign {
+			height: 54px;
+			line-height: 54px;
+			line-height: 54px\9;
+
+			.zhj_time,
+			.zhj_reply {
+				font-size: 14px;
+				color: #bcbcbc;
+			}
+			.zhj_time {
+				float: left;
+			}
+			.zhj_reply,
+			.zhj_zan {
+				float: right;
+			}
+			.zhj_zan {
+				cursor: pointer;
+				.zhj_zan_icon {
+					float: left;
+					margin-top :17px;
+					margin-right: 5px;
+					display: inline-block;
+					width: 18px;
+					height: 16px;
+					background: url(../img/zan_kong.png);
+				}
+			}
+		}
+}
+
+/*内容为空显示*/
+.zhj_empty {
+	width: 740px;
+	min-height: 307px;
+	position: relative;
+	display: none;
+	img {
+		display: block;
+		width: 240px;
+		height: 202px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -17px 0 0 -120px;
+	}
+}

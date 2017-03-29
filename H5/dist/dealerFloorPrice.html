@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>询底价</title>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable"> 
+    <meta content="yes" name="apple-touch-fullscreen"> 
+    <meta content="telephone=no,email=no" name="format-detection"> 
+    <script src="js/flexible_css.js"></script>
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/fpSliderMenu.js"></script>
+    <script src="js/formValidation.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/dealerFloorPrice.css"/>
+</head>
+<body>
+<!--背景层-->
+<div class="bg"></div>
+<div class="wrap">
+    <!--content-->
+    <div class="content">
+        <div class="car_model">
+            <dl>
+                <dt><img src="img/pic/price1.png"></dt>
+                <dd>大众POLO 2016款 1.4L 手动风尚版</dd>
+            </dl>
+            <span class="right_btn"></span>
+        </div>
+        <p class="prompt">输入以下信息，商家会尽快与您电话联系</p>
+        <form class="carM_form" action="" method="post">
+            <p class="userNews">
+                <span class="condition">姓　名：</span>
+                <label for="userName"><input type="text" value="贾雨晴" id="userName" class="f_input" name="username"/></label>
+                <span class="warn">请输入正确的姓名（1-6个汉字）</span>
+                <span class="arrow_up"></span>
+            </p>
+            <p class="userNews">
+                <span class="condition">手机号：</span>
+                <label for="tel"><input type="text" value="18310592797" id="tel" class="f_input" name="phone"/></label>
+                <span class="warn">请输入有效的手机号</span>
+                <span class="arrow_up"></span>
+            </p>
+            <p class="userNews">
+                <span class="condition">验证码：</span>
+                <label for="yz"><input type="text" value="9279" id="yz" class="f_input" name="yzm"/></label>
+                <button type="button" class="yz_code">获取验证码</button>
+                <span class="warn">请输入正确的验证码</span>
+                <span class="arrow_up"></span>
+            </p>
+            <p class="userNews">
+                <span class="condition">购车城市：</span>
+                <label for="buyCity"><input type="text" value="北京" id="buyCity" class="buy_city" name="buycity"/></label>
+                <a href="#" class="change"><span>更换城市</span><img src="img/right.png"></a>
+            </p>
+            <p class="select_prompt">最多可选5家经销商（已选<span>1</span>家）</p>
+            <ul class="dealer_list">
+                <li class="clearfix">
+                        <span class="checkbox checkbox_selet"></span>
+                    <a href="#">
+                        <div class="dealer_news">
+                            <p class="dealer">[4S] 北京京申宝大众<span>售本市</span></p>
+                            <p class="address">朝阳区京藏高速（原八达岭高速）出京方向辅路清河收费站南50米路东
+                            </p>
+                        </div>
+                        <span class="d_price">12.28万</span>
+                    </a>
+                </li>
+                <li class="clearfix">
+                    <span class="checkbox"></span>
+                    <a href="#">
+                        <div class="dealer_news">
+                            <p class="dealer">[4S] 服信高德大众<span>售本市</span></p>
+                            <p class="address">
+                            北京市朝阳区管庄双桥东路8号
+                            </p>
+                        </div>
+                        <span class="d_price">8.8万</span>
+                    </a>
+                </li>
+            </ul>
+            <!--footer-->
+            <div class="footer">
+                <input type="submit" class="submit" value="提交"/>
+            </div>
+        </form>
+    </div>
+</div>
+<!--mask遮罩-->
+<div class="mask"></div>
+<div class="mask2"></div>
+<div class="fixbox">
+    <!--mod-nav-->
+     <div class="nav_menu">
+    <ul class="clearfix">
+        <li class="nav_active"><a href="#">车型</a></li>
+        <li><a href="#">报价</a></li>
+        <li><a href="#">图片</a></li>
+        <li><a href="#">配置</a></li>
+        <li><a href="#">问答</a></li>
+        <li><a href="#">文章</a></li>
+        <li><a href="#">经销商</a></li>
+        <li><a href="#">车型推荐</a></li>
+        <li><a href="#">关注</a></li>
+    </ul>
+</div>
+    <div class="floor_price">
+        <h2>询底价</h2>
+        <span href="#" class="price_nav"></span>
+        <span href="#" class="price_up"></span>
+    </div>
+</div>
+<!--车款抽屉-->
+<img src="img/slider_btn.png" class="slider_btn">
+<div class="cityDrawer clearfix">
+    <div class="carModels_box">
+        <div class="carModels">
+            <p class="year_car">2016款</p>
+            <p class="year_carType">1.4L/66kw 涡轮增压</p>
+            <ul class="carModels_list">
+                <li class="select"><a href="#">1.4L手动超值型</a><span></span></li>
+                <li><a href="#">1.4L手动风尚版</a><span></span></li>
+            </ul>
+
+            <p class="year_car">2015款</p>
+            <p class="year_carType">1.6L/81kw</p>
+            <ul class="carModels_list">
+                <li><a href="#">1.6L手动舒适版</a><span></span></li>
+                <li><a href="#">1.6L自动舒适版</a><span></span></li>
+                <li><a href="#">1.6L自动豪华版</a><span></span></li>
+            </ul>
+            <p class="year_carType">1.4L/66kw</p>
+            <ul class="carModels_list">
+                <li><a href="#">1.4L手动舒适版</a><span></span></li>
+                <li><a href="#">1.4L自动舒适版</a><span></span></li>
+            </ul>
+        </div>
+        <img src="img/drawer.png" class="drawer">
+    </div>  
+</div> 
+<!--横屏提示-->
+<div class="rotatoHint_mask"></div>
+<div class="rotatoHint"><img src="img/rotatoHint.png"></div>
+</body>
+</html>

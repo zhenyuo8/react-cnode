@@ -1,0 +1,175 @@
+/*****
+ *@author: jianingning
+ *@from: Global style mywenda_zhuanjia  我的问答-专家
+ *@description:
+ *@date: name (2017.03.04)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_pubHead.less";
+@import "mod/mod_pubHeadNav.less";
+@import "mod/mod_answer.less";
+@import "mod/mod_issue.less";
+@import "mod/mod_footer.less";
+@import "mod/mod_goTop.less";
+
+.wrap {
+	width: 100%;
+	background: #f4f5f7;
+
+	/*问答专家*/
+	.ans_Expert {
+		padding: .4rem;
+		background: #fff;
+
+		dl {
+			dt {
+				position: relative;
+				float: left;
+				margin-right: .4rem;
+				width: 1.867rem;
+				height: 1.867rem;
+
+				img {
+					display: block;
+					width: 100%;
+					height: 100%;
+					border-radius: 50%;
+				}
+				.ans_expert_sign {
+					position: absolute;
+					bottom: -.097rem;
+					left: -.067rem;
+					display: inline-block;
+					width: 2.0rem;
+					height: .48rem;
+					background: url(../img/wenda_expert.png);
+					background-size: cover;
+				}
+			}
+			dd {
+				float: left;
+				margin-bottom: .103rem;
+				width: 75%;
+			}
+			.ans_expert_news {
+				font-size: 13px;
+				color: #666;
+			}
+			.ans_first_dd {
+				margin-top: .113rem;
+				margin-bottom: .18rem;
+                height: .533rem;
+                line-height: .533rem;
+			}
+			.ans_expert_name {
+				font-size: 15px;
+				color: #333;
+			}
+			.ans_expert_city {
+				padding-left: .213rem;
+                margin: -.05rem 0 0 .213rem;
+                display: inline-block;
+                height: .343rem;
+                line-height: .333rem;
+                border-left: 1px solid #ebedef;
+                color: #999;
+			}
+			.ans_total {
+				margin-right: .407rem;
+			}
+		}
+		.ans_expert_introduce {
+			width: 100%;
+			margin-top: .147rem;
+			line-height: .573rem;
+			font-size: 13px;
+			color: #666;
+		}
+		.ans_over {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 2;
+		}
+	}
+	/*提问、回答、关注、待解决*/
+	.ans_expert_answer {
+		.mywenda_expert_type {
+			li {
+				width: 25%;
+			}
+		}
+		.recom_content_module {
+			background: #fff;
+		}
+	}
+	/*面包屑*/
+    .crumbs {
+        margin-top: .4rem;
+        padding: 0 .4rem;
+        height: 1.067rem;
+        line-height: 1.067rem;
+        border-bottom: 1px solid  #ebedef;
+        background: @color-fff;
+
+        a {
+           font-size: 14px;
+           color: #666;
+
+           &:last-child {
+            color: #999;
+           }
+        }
+        img {
+            margin: .44rem .133rem 0 .133rem;
+            display: inline-block;
+            width: .12rem;
+            height: .213rem;
+        }
+    }
+}
+/*字号大小适配*/
+[data-dpr="2"] .wrap {
+	.ans_Expert {
+		dl {
+			.ans_expert_name {
+				font-size: 30px;
+			}
+			.ans_expert_news {
+				font-size: 26px;
+			}
+		}
+		.ans_expert_introduce {
+			font-size: 26px;
+		}
+	}
+    .crumbs {
+        a {
+            font-size: 28px;
+        }
+    }
+}
+[data-dpr="3"] .wrap {
+	.ans_Expert {
+		dl {
+			.ans_expert_name {
+				font-size: 45px;
+			}
+			.ans_expert_news {
+				font-size: 39px;
+			}
+		}
+		.ans_expert_introduce {
+			font-size: 39px;
+		}
+	}
+    .crumbs {
+        a {
+            font-size: 42px;
+        }
+    }
+}

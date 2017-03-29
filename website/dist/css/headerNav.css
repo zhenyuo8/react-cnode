@@ -1,0 +1,27 @@
+.total_Nav {
+  width: 990px;
+  height: 44px;
+  background: #398be4;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.total_Nav ul {
+  height: 44px;
+}
+.total_Nav ul li {
+  float: left;
+  line-height: 43px;
+  padding: 0 24px;
+  cursor: pointer;
+}
+.total_Nav ul li a {
+  font-size: 16px;
+  color: #fff;
+  font-family: "Microsoft YaHei", "微软雅黑";
+}
+.total_Nav ul li:hover {
+  background: #126acc;
+}
+.total_Nav ul li.active {
+  background: #1064c1;
+}

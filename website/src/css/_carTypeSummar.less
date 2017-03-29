@@ -1,0 +1,994 @@
+/*****
+ *@author: linyh
+ *@from: Global style carTypeSummarize
+ *@description: 何在朋
+ *@date: name (2017.01.21)
+*/
+@import (reference) "public";
+@import "mod/mod_headerTitle";
+@import "mod/mod_headerLogo";
+@import "mod/mod_carMenu";
+@import "mod/mod_sumTurnPage";
+@import "mod/mod_carLike";
+@import "mod/mod_carOther";
+@import "mod/mod_hotCarContrast";
+@import "mod/mod_carHot";
+@import "mod/mod_pagination";
+@import "mod/mod_citySearch";
+@import "mod/mod_gotopContrast";
+@import "mod/mod_footer";
+
+.font-w{
+    font-weight: bold;
+}
+.display_n{
+    display: none;
+}
+.display_b{
+    display: block;
+}
+.wr{
+    background-color:@color-e72b2a;
+}
+.wo{
+    background-color:@color-e48d24;
+}
+.wp{
+    background-color:@color-f6e8f7;
+}
+.wg{
+    background-color:@color-2d5966;
+}
+.wblick{
+    background-color:@color-000;
+}
+.wpurp{
+    background-color:@color-c24070;
+}
+.wbrown{
+    background-color:@color-574227;
+}
+.ng{
+    background-color:@color-2d5966;
+}
+.nw{
+    background-color:@color-fff;
+}
+.nb{
+    background-color:@color-000;
+}
+//自定义滚动条样式
+#mCSB_1,#mCSB_2,#mCSB_3{
+	#mCSB_1_container,#mCSB_2_container,#mCSB_3_container{
+		margin-right:0;
+	}
+	#mCSB_1_scrollbar_vertical,#mCSB_2_scrollbar_vertical,#mCSB_3_scrollbar_vertical{
+		width:10px;
+		#mCSB_1_dragger_vertical,#mCSB_2_dragger_vertical,#mCSB_3_dragger_vertical{
+			.mCSB_dragger_bar{
+				width:6px;
+				background-color: @color-999;
+			}
+		}
+		.mCSB_draggerRail{
+			width:12px;
+			-webkit-border-radius:0;
+			-moz-border-radius:0;
+			border-radius:0;
+			background-color: @color-eee;
+		}
+	}
+}
+
+//页面title
+.summary_imgs_c_title{
+    width:@width-990;
+    margin: 22px auto 0;
+}
+
+//页面内容
+.summarize_main_area{
+    width:@width-990;
+    margin:20px auto 0;
+    .display_none{
+        display: none;
+    }
+    //左边内容
+    .summarize_show_module{
+        width:720px;
+        float:left;
+        border-right:1px solid @color-eee;
+        padding-right:31px;
+
+        //车型综述页报价模块
+        .car_type_summar{
+            .car_msg_title{
+                padding-bottom:8px;
+                line-height: 20px;
+                border-bottom: 4px solid @color-333;
+                .c_m_t_text{
+                    font-size:@font-20;
+                    font-weight: 600;
+                    float:left;
+                }
+                .car_type_checked{
+                    float:left;
+                    font-size: @font-16;
+                    line-height: 22px;
+                    padding-left: 13px;
+                    position: relative;
+                    cursor: pointer;
+                    span{
+                        display: inline-block;
+                        padding-right: 4px;
+                    }
+                    &:hover{
+                        span{
+                            color:@color-a-hover;
+                        }
+                        i{
+                            color:@color-a-hover;
+                        }
+                    }
+                    &:active{
+                        span{
+                            color:@color-a-active;
+                        }
+                        i{
+                            color:@color-a-active;
+                        }
+                    }
+                    .car_type_list{
+                        font-size: @font-14;
+                        position: absolute;
+                        top:32px;
+                        left:6px;
+                        z-index: 200;
+                        border:1px solid @color-333;
+                        border-bottom:4px solid @color-333;
+                        background-color: @color-fff;
+                        max-height: 315px;
+                        overflow-y: scroll;
+                        li{
+                            min-width: 300px;
+                            line-height: 30px;
+                            padding: 0 10px;
+                            border-bottom: 1px solid @color-eee;
+                            &:hover{
+                                color:@color-fff;
+                                background-color:@color-3189e9;
+                                border-color: @color-3189e9;
+                            }
+                            &:active{
+                                color:@color-fff;
+                                background-color:@color-126acc;
+                                border-color: @color-126acc;
+                            }
+                        }
+                    }
+                }
+                .contrast_btn{
+                    float: right;
+                    .cont_b{
+                        i{
+                            background-image: url("../img/sprite.png");
+                            background-position: -12px -2263px;
+                            width: 12px;
+                            height: 12px;
+                            display: inline-block;
+                            vertical-align: -1px;
+                            margin-right:4px;
+                        }
+                        display: inline-block;
+                        width:50px;
+                        line-height:22px;
+                        text-align: center;
+                        border:1px solid @color-da;
+                        background-color: @color-eee;
+                        &:hover{
+                            i{
+                                background-position: -12px -2276px;
+                            }
+                        }
+                        &:active{
+                            i{
+                                background-position: 0px -2276px;
+                            }
+                        }
+                    }
+                    .sure_cont{
+                        .a-state;
+                    }
+                    .dis_cont{
+                        color:@color-ab;
+                        display: none;
+                    }
+                }
+            }
+            .car_msg{
+                overflow: hidden;
+                margin-top:20px;
+                .car_msg_picture{
+                    width:285px;
+                    float:left;
+                    dl{
+                        dt{
+                            position: relative;
+                            a{
+                                display: inline-block;
+                                width:100%;
+                                img{
+                                    display: inline-block;
+                                    width:100%;
+                                }
+                            }
+                            .display_n{
+                                display:none;
+                            }
+                            p{
+                                position: absolute;
+                                bottom: 0;
+                                left: 10px;
+                                color: #fff;
+                                strong{
+                                    display: block;
+                                }
+                            }
+                        }
+                        dd{
+                            padding:8px 0 2px;
+                            .color_list{
+                                position: relative;
+                                .turn_btn{
+                                    background-image: url("../img/summar_sprite.png");
+                                    width:7px;
+                                    height:14px;
+                                    position: absolute;
+                                    top:12px;
+                                    cursor: pointer;
+                                    z-index: 200;
+                                }
+                                .pre_list{
+                                    .turn_btn;
+                                    background-position: -109px -34px;
+                                    left:1px;
+                                }
+                                .next_list{
+                                    .turn_btn;
+                                    background-position: -109px 0px;
+                                    right:5px;
+                                }
+                                .car_color_item{
+                                    height:38px;
+                                    margin:0 12px;
+                                    position:relative;
+                                    overflow: hidden;
+                                    .color_scroll{
+                                        position: absolute;
+                                        top:0;
+                                        left:0;
+                                        a{
+                                            display:block;
+                                            float:left;
+                                            width:18px;
+                                            height:8px;
+                                            border:1px solid @color-da;
+                                            margin:14px 6px 0;
+                                            &:hover{
+                                                width: 34px;
+                                                height: 10px;
+                                                margin: 13px -2px 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .car_msg_text{
+                    width:410px;
+                    margin-left:25px;
+                    float:right;
+                    h2{
+                        line-height:34px;
+                        padding-bottom: 2px;
+                        border-bottom: 1px solid @color-eee;
+                        .font14{
+                         font-size: 12px;
+                         a{
+                          font-size: 12px;
+                          color: #999;
+                          font-weight: 100;
+                         }
+                        }
+                        span{
+                            color:@color-999;
+                            font-size: 16px;
+                            display: inline-block;
+                            a{
+                                color:@color-red-price;
+                                font-size:16px;
+                                font-weight: 600;
+                                .red_price;
+                            }
+                            .bg{
+                                  background-image: url(../img/sprite.png);
+                                  background-position: -12px -2288px;
+                                  width: 12px;
+                                  height: 13px;
+                                  display: inline-block;
+                                  vertical-align: -1px;
+                                  margin-left: 5px;
+                            }
+                        }
+                    }
+                    .car_msg_price{
+                        margin-top:6px;
+                        p{
+                            font-size:@fontSize-14;
+                            line-height:26px;
+                            overflow: hidden;
+                            span{
+                                float:left;
+                                display: inline-block;
+                                i{
+                                    color:@color-999;
+                                    display: inline-block;
+                                    width: 76px;
+                                }
+                                &:first-child{
+                                    width:220px;
+                                }
+                                &:nth-of-type(2),&:first-child+span{
+                                    float:left;
+                                    i{
+                                        // width:56px;
+                                    }
+                                }
+                            }
+                            .all_price{
+                                .all_price_l{
+                                    width:106px;
+                                }
+                            }
+                        }
+                        .first_price{
+                            .w237{
+                                width:219px;
+                            }
+                            a{
+                                background-image: url("../img/sprite.png");
+                                background-position: -12px -2288px;
+                                width: 12px;
+                                height: 13px;
+                                display: inline-block;
+                                vertical-align: -1px;
+                                margin-left: 5px;
+                            }
+                        }
+                        dl{
+                            overflow: hidden;
+                            margin-top:6px;
+                            dt{
+                                float:left;
+                                width:70px;
+                                color:@color-999;
+                                font-size: @fontSize-14;
+                            }
+                            dd{
+                                float:left;
+                                width:330px;
+                                span{
+                                    font-size:14px;
+                                    width:96px;
+                                    line-height:22px;
+                                    text-align: center;
+                                    border:1px solid @color-da;
+                                    display: inline-block;
+                                    margin:0 0 12px 9px;
+                                    white-space:nowrap;
+                                    overflow: hidden;
+                                    text-overflow:ellipsis;
+                                }
+                            }
+                        }
+                        .car_msg_extends{
+                            margin-top:14px;
+                            a{
+                                font-size: @font-16;
+                                display: inline-block;
+                                width:128px;
+                                line-height:34px;
+                                text-align: center;
+                                border:1px solid @color-da;
+                                background-color:@color-eee;
+                                .hui_btn;
+                                &:first-child{
+                                    color:@color-fff;
+                                    width:130px;
+                                    line-height:36px;
+                                    background-color: @color-orange;
+                                    border:0;
+                                    .orange_btn;
+
+                                }
+                                &:first-child+a{
+                                    margin:0 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // 参数对比
+        .parameter_config{
+            .bp{
+                background-image: url("../img/summar_sprite.png");
+                background-position: -60px -93px;
+                width:10px;
+                height:10px;
+                display: inline-block;
+            }
+            .xp{
+                background-image: url("../img/summar_sprite.png");
+                background-position: -30px -93px;
+                width:10px;
+                height:10px;
+                display: inline-block;
+            }
+            .c_a{
+                color:@color-aaa;
+            }
+            .param_config_title{
+                margin-top:20px;
+                line-height:36px;
+                overflow: hidden;
+                .p_c_t_text{
+                    font-size: @font-16;
+                    font-weight: bold;
+                    float:left;
+                    margin-right: 4px;
+                }
+                .choice_config{
+                    float:left;
+                    span{
+                        i{
+                            display: inline-block;
+                            margin:0 5px 0 12px;
+                            color:@color-aaa;
+                        }
+                        .bp{
+                            .bp;
+                        }
+                        .xp{
+                            .xp;
+                        }
+                    }
+                }
+                a{
+                    font-size:@fontSize-14;
+                    float:right;
+                    .a-state;
+                }
+            }
+            .param_config_table{
+                border-top: 1px solid @color-c4;
+                table{
+                    width: 720px;
+                    table-layout: fixed;
+                    empty-cells: show;
+                    border: 1px solid @color-c4;
+                    border-bottom: 0;
+                    border-top: 0;
+                    tr{
+                        th{
+                            table-layout: fixed;
+                            word-break:break-all;
+                            color:@color-999;
+                            text-align: left;
+                            font-weight: 400;
+                            width:180px;
+                            height:36px;
+                            border: 1px solid @color-da;
+                            border-right: 0;
+                            padding-left:20px;
+                        }
+                        td{
+                            table-layout: fixed;
+                            width:180px;
+                            height:36px;
+                            border: 1px solid @color-da;
+                            border-left: 0;
+                            padding-left:20px;
+                            background-color: @color-table-bg;
+
+                        }
+                        .param_color_item{
+                            padding-left: 0;
+                            background-color: @color-fff;
+                            i{
+                                display:block;
+                                float: left;
+                                width:18px;
+                                height:8px;
+                                border:1px solid @color-da;
+                                margin:3px 5px 0;
+                                &:first-child{
+                                    margin-left: 0;
+                                }
+                            }
+                        }
+                    }
+                    .p_c_title{
+                        td{
+                            height:40px;
+                            font-size: @font-16;
+                            font-weight: bold;
+                            background-color: @color-f7;
+                            border-top: 0;
+                        }
+                    }
+                }
+                .prama_config_tip{
+                    color:@color-999;
+                    line-height:36px;
+                    .tip{
+                        display: inline-block;
+                        margin-right:9px;
+                        background-image: url("../img/summar_sprite.png");
+                        background-position: 0px -56px;
+                        width: 19px;
+                        height: 17px;
+                        vertical-align: -3px;
+                    }
+                }
+            }
+            .load_more_btn{
+                border-top: 1px solid @color-da;
+                span{
+                    display: block;
+                    width:146px;
+                    line-height:32px;
+                    text-align: center;
+                    border-left: 1px solid @color-da;
+                    border-right: 1px solid @color-da;
+                    border-bottom: 4px solid @color-da;
+                    background-color:@color-f7;
+                    cursor: pointer;
+                    margin: 0 auto;
+                    i{
+                        color:@color-aaa;
+                        margin-left: 6px;
+                        display: inline-block;
+                    }
+                    &:hover{
+                      color:@color-a-hover;
+                      i{
+                        color:@color-a-hover;
+                      }
+                    }
+                    &:active{
+                      color:@color-a-active;
+                      i{
+                        color:@color-a-active;
+                      }
+                    }
+                }
+            }
+        }
+
+        //授权经销
+        .authorized_dealer{
+            .brand_article_title{
+                margin-top:29px;
+                border-bottom: 4px solid @color-333;
+                position: relative;
+                .b_a_t{
+                    font-size:@fontSize-20;
+                    font-weight: 600;
+                    line-height:44px;
+                    float:left;
+                    display: inline-block;
+                }
+                .area_dealer_choice{
+                    float:left;
+                    padding-top:18px;
+                    li{
+                        font-size: @fontSize-14;
+                        float:left;
+                        margin-left:20px;
+                        .ch_btn{
+                            .dealer_num{
+                                color:@color-b3;
+
+                                .a-state;
+                            }
+                            i{
+                                background-image: url("../img/sprite.png");
+                                background-position: 0px -41px;
+                                width: 12px;
+                                height: 6px;
+                                display: inline-block;
+                                margin-left:4px;
+                            }
+                            &:hover{
+                                color:@color-a-hover;
+                                .dealer_num{
+                                    color:@color-a-hover;
+                                }
+                            }
+                            &:active{
+                                color:@color-a-active;
+                                .dealer_num{
+                                    color:@color-a-active;
+                                }
+                            }
+                        }
+                        .city_chose{
+                            top:44px;
+                        }
+                        .all_dealer{
+                            width:126px;
+                            border:1px solid @color-333;
+                            border-bottom:4px solid @color-333;
+                            background-color: @color-fff;
+                            position: absolute;
+                            top:44px;
+                            left:174px;
+                            a{
+                                display: inline-block;
+                                width:116px;
+                                line-height:28px;
+                                padding-left:10px;
+                                border-bottom: 1px solid @color-eee;
+                                &:hover{
+                                    color:@color-fff;
+                                    background-color:@color-3189e9;
+                                    border-color: @color-3189e9;
+                                    span{
+                                        color:@color-fff;
+                                    }
+                                }
+                                &:active{
+                                    color:@color-fff;
+                                    background-color:@color-126acc;
+                                    border-color: @color-126acc;
+                                    span{
+                                        color:@color-fff;
+                                    }
+                                }
+                            }
+                            .display_n{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .area_dealer_sort{
+                    color:@color-eee;
+                    font-size:14px;
+                    margin:15px 0 10px;
+                    display: inline-block;
+                    float:right;
+                    a{
+                        font-size:@fontSize-14;
+                        padding:0 12px;
+                        line-height:14px;
+                        display: inline-block;
+                        &:first-child+a{
+                            padding-right:4px;
+                            border-left: 1px solid @color-da;
+                        }
+                        .top_jt{
+                            background-image: url("../img/summar_sprite.png");
+                            background-position: 0px -93px;
+                            width: 10px;
+                            height: 10px;
+                            display: inline-block;
+                            margin-left: 4px;
+                        }
+                    }
+                }
+            }
+            .dealer_area{
+                dl{
+                    overflow: hidden;
+                    padding-bottom: 12px;
+                    border-bottom: 1px solid @color-eee;
+                    dt{
+                        float:left;
+                        width: 40px;
+                        margin-top:12px;
+                    }
+                    dd{
+                        float:left;
+                        width:676px;
+                        padding-left:4px;
+                        a{
+                            display: inline-block;
+                            line-height: 17px;
+                            padding:0 4px;
+                            margin:12px 0 0 16px;
+                            i{
+                                color:@color-999;
+                            }
+                            &:hover{
+                                .a-hover;
+                            }
+                        }
+                        .a-hover{
+                            color: @color-fff;
+                            background-color: @color-398be4;
+                            i{
+                                color: @color-fff;
+                            }
+                        }
+                    }
+                }
+                .dealer_list{
+                    a{
+                        .a-state;
+                    }
+                    .dealer_item{
+                        border-bottom: 1px solid @color-eee;
+                        .dealer_detail{
+                            float: left;
+                            width: 325px;
+                            h2{
+                                margin-top:10px;
+                                line-height: 40px;
+                                a{
+                                    font-size: @font-16;
+                                    font-weight: 600;
+                                    color:@color-e43a3a;
+                                    display: inline-block;
+                                    max-width: 230px;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    float: left;
+                                    em{
+                                        color:@color-999;
+                                        font-weight: 600;
+                                    }
+                                    span{
+                                        color:@color-333;
+                                        font-weight: 600;
+                                    }
+                                    &:hover{
+                                        span{
+                                            color:@color-a-hover;
+                                        }
+                                    }
+                                    &:active{
+                                        span{
+                                            color:@color-a-active;
+                                        }
+                                    }
+                                }
+                                i{
+                                    font-size: 12px;
+                                    width:53px;
+                                    line-height:18px;
+                                    display: inline-block;
+                                    text-align: center;
+                                    border: 1px solid @color-c4;
+                                    margin-left: 12px;
+                                }
+                            }
+                            p{
+                                line-height:30px;
+                                font-size: @font-14;
+                                span{
+                                    color:@color-999;
+                                }
+                                .cuxiao{
+                                    display: inline-block;
+                                    width:232px;
+                                    .text-ellipsis;
+                                    vertical-align: top;
+                                }
+                                .ad{
+                                    width:38px;
+                                    line-height:16px;
+                                    text-align: center;
+                                    color:@color-f2f2f2;
+                                    border:1px solid @color-f2f2f2;
+                                }
+                            }
+                            .address{
+                                i{
+                                    width:192px;
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                }
+                                .area_pic{
+                                    color:@color-a-hover;
+                                    .a-udline-state;
+
+                                }
+                            }
+                        }
+                        .car_msg_price{
+                            float:left;
+                            margin:0 108px 0 58px;
+                            p{
+                                font-size: @font-18;
+                                color:@color-red-price;
+                                font-weight: bold;
+                                padding:17px 0 0 5px;
+                                &:first-child+p{
+                                    color:@color-999;
+                                    font-size:@fontSize-14;
+                                    font-weight: 400;
+                                    padding:13px 0 0 5px;
+                                }
+                            }
+                            .all_price_detail{
+                                line-height:48px;
+                                position: relative;
+                                .show_detail{
+                                    cursor: pointer;
+                                    .a-state;
+                                    .detail_jt{
+                                        background-image: url("../img/summar_sprite.png");
+                                        width: 12px;
+                                        height: 6px;
+                                        display: inline-block;
+                                        vertical-align: middle;
+                                        margin-left: 4px;
+                                    }
+                                    .ori_down{
+                                        background-position: -136px 0px;
+                                    }
+                                    .ori_up{
+                                        background-position: -90px -93px;
+                                        vertical-align: 2px;
+                                    }
+                                }
+                                .price_table{
+                                    width:437px;
+                                    background-color: @color-fff;
+                                    border: 1px solid @color-333;
+                                    border-bottom: 4px solid @color-333;
+                                    position: absolute;
+                                    top:43px;
+                                    left:-176px;
+                                    z-index: 200;
+                                    .jt{
+                                        background-image: url("../img/summar_sprite.png");
+                                        background-position: 0 -113px;
+                                        width: 10px;
+                                        height: 6px;
+                                        display: inline-block;
+                                        position: absolute;
+                                        top:-6px;
+                                        left:50%;
+                                    }
+                                    .p_tab_til{
+                                        width:100%;
+                                        font-size: @font-14;
+                                        line-height:32px;
+                                        text-align: center;
+                                        padding-top:0;
+                                        i{
+                                            color:@color-333;
+                                            font-weight: bold;
+                                        }
+                                        span{
+                                            color:@color-red-price-hover;
+                                        }
+                                    }
+                                    table{
+                                        tr{
+                                            td{
+                                                width:71px;
+                                                text-align: center;
+                                                padding:5px 0;
+                                                border:1px solid @color-eee;
+                                                line-height:16px;
+                                                span{
+                                                    display: block;
+                                                }
+                                                i{
+                                                    color: @color-999;
+                                                    display: block;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .tips{
+                                        color:@color-999;
+                                        font-size: @font-12;
+                                        font-weight: 100;
+                                        line-height: 32px;
+                                        padding-left: 16px;
+                                        padding-top:0;
+                                    }
+                                }
+                            }
+                        }
+                        .car_msg_extends{
+                            float:right;
+                            padding:26px 0 13px;
+                            p{
+                                &:first-child{
+                                    a{
+                                        color:@color-fff;
+                                        font-size: @font-16;
+                                        display: inline-block;
+                                        width:112px;
+                                        line-height:38px;
+                                        text-align: center;
+                                        background-color: @color-orange;
+                                        .orange_btn;
+                                    }
+                                }
+                                &:first-child+p{
+                                    line-height:44px;
+                                    a{
+                                        font-size: @font-14;
+                                        display: inline-block;
+                                        &:first-child{
+                                            margin-right: 17px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //右边内容
+    .imgs_m_right{
+        width:206px;
+        height:auto;
+        float:right;
+        margin-top:40px;
+
+        h3 {
+            font-size: @font-16;
+            font-weight: 700;
+            height: 28px;
+            padding-top: 2px;
+            border-bottom: 1px solid @color-eee;
+        }
+    }
+}
+.duibi_constract{
+    a{
+        padding: 2px 5px;
+        color: #333;
+        border: 1px solid #dadada;
+        background-color: #eee;
+        &:hover{
+            color: #3a8be4;
+        }
+        i{
+            background-image: url(../img/sprite.png);
+            background-position: -12px -2263px;
+            width: 12px;
+            height: 12px;
+            display: inline-block;
+            vertical-align: -1px;
+            margin-right: 3px;
+        }
+    }
+    span{
+        color: #333;
+        border: 1px solid #dadada;
+        background-color: #eee;
+        padding: 2px 5px;
+        float: right;
+    }
+
+}

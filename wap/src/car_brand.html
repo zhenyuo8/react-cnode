@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>汽车大全移动站视频详情页</title>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="js/flexible_css.js"></script>
+    <script src="js/flexible.js"></script>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/videodetails.css"/>
+</head>
+<body>
+
+    <!--顶部导航-->
+    {{#include ./mod/mod_pubHeadNav.html}}
+
+    <!-- 头部 -->
+    {{#include ./mod/mod_pubHead.html?m=视频详情}}
+    <!-- 视频播放部分 包含分享 点赞 收藏部分 -->
+    <div class="play_box">
+        <div class="video" id="youkuplayer">
+
+        </div>
+        <script type="text/javascript" src='http://player.youku.com/jsapi'>
+            player = new YKU.Player("youkuplayer",{styleid: "1",client_id: "d169f939d50f1b35",vid: "XMjUzMzMyNjgyNA==",show_related: false,autoplay: false});
+        </script>
+        <div class="video_des">
+            <h2 class="title">曝奔驰新E级敞篷假想图或2017年3月发布</h2>
+            <div class="share_box clearfix">
+                <div class="weixin fl">
+                    <a href="javascript:void(0)">
+                        <img src="img/wx.png">
+                        <p>微信</p>
+                    </a>
+                </div>
+                <div class="friend fl">
+                    <a href="javascript:void(0)">
+                        <img src="img/pyq.png">
+                        <p>朋友圈</p>
+                    </a>
+                </div>
+                <div class="qq fl">
+                    <a href="javascript:void(0)">
+                        <img src="img/qq.png">
+                        <p>QQ</p>
+                    </a>
+                </div>
+                <div class="weibo fl">
+                    <a href="javascript:void(0)">
+                        <img src="img/wb.png">
+                        <p>微博</p>
+                    </a>
+                </div>
+                <div class="kj fl">
+                    <a href="javascript:void(0)">
+                        <img src="img/kj.png">
+                        <p>QQ空间</p>
+                    </a>
+                </div>
+            </div>
+            <div class="fine_box">
+                <div class="clearfix">
+                    <p class="zan fl ">
+                        <span class="i icon1">赞123</span>
+                    </p>
+                    <p class="sc fr">
+                        <span class="i icon2">收藏文本</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 相关车型 -->
+    <div class="relevance_cartype">
+        <h4 class="title po-r">
+            <span class="bor">相关车型</span>
+        </h4>
+        <div class="relevance_car clearfix">
+            <a href="javascript:void(0)">
+                <div class="img_box fl">
+                    <img src="img/ss.png">
+                </div>
+                <div class="car_info po-r">
+                    <p class="car_name po-a">捷达</p>
+                    <p class="car_price po-a">9.93-17.48万</p>
+                    <p class="car_pri po-a">指导价:&nbsp;19.89-40.15万</p>
+                    <div class="po-a see_pirce">询底价</div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+    <!-- 相关视频 -->
+    <div class="relevance_video">
+        <h4 class="title po-r">
+            <span class="bor">相关视频</span>
+        </h4>
+        <ul>
+            <li class="item_li">
+                <a href="javascript:void(0) po-r">
+                    <div class="fl po-r">
+                        <img src="img/ss.png">
+                        <div class="play_btn po-a">
+                            <img src="img/play_2.png" >
+                        </div>
+                    </div>
+                    <div class="mr24 po-r">
+                        <p class="des">开车打瞌睡怎么破？这个科技就能叫醒你开车打瞌睡怎么破这个科技就能叫醒你</p>
+                        <p class="clearfix time_comm_box po-a">
+                            <img src="img/time_icon.png">
+                            <span class="time">03:32</span>
+                        </p>
+                        <span class="comment_num po-a">185评论</span>
+                    </div>
+                </a>
+            </li>
+            <li class="item_li">
+                <a href="javascript:void(0) po-r">
+                    <div class="fl po-r">
+                        <img src="img/ss.png">
+                        <div class="play_btn po-a">
+                            <img src="img/play_2.png" >
+                        </div>
+                    </div>
+                    <div class="mr24 po-r">
+                        <p class="des">开车打瞌睡怎么破？这个科技就能叫醒你开车打瞌睡怎么破这个科技就能叫醒你</p>
+                        <p class="clearfix time_comm_box po-a">
+                            <img src="img/time_icon.png">
+                            <span class="time">03:32</span>
+                        </p>
+                        <span class="comment_num po-a">185评论</span>
+                    </div>
+                </a>
+            </li>
+            <li class="item_li">
+                <a href="javascript:void(0) po-r">
+                    <div class="fl po-r">
+                        <img src="img/ss.png">
+                        <div class="play_btn po-a">
+                            <img src="img/play_2.png" >
+                        </div>
+                    </div>
+                    <div class="mr24 po-r">
+                        <p class="des">开车打瞌睡怎么破？这个科技就能叫醒你开车打瞌睡怎么破这个科技就能叫醒你</p>
+                        <p class="clearfix time_comm_box po-a">
+                            <img src="img/time_icon.png">
+                            <span class="time">03:32</span>
+                        </p>
+                        <span class="comment_num po-a">185评论</span>
+                    </div>
+                </a>
+            </li>
+            <li class="item_li">
+                <a href="javascript:void(0) po-r">
+                    <div class="fl po-r">
+                        <img src="img/ss.png">
+                        <div class="play_btn po-a">
+                            <img src="img/play_2.png" >
+                        </div>
+                    </div>
+                    <div class="mr24 po-r">
+                        <p class="des">开车打瞌睡怎么破？这个科技就能叫醒你开车打瞌睡怎么破这个科技就能叫醒你</p>
+                        <p class="clearfix time_comm_box po-a">
+                            <img src="img/time_icon.png">
+                            <span class="time">03:32</span>
+                        </p>
+                        <span class="comment_num po-a">185评论</span>
+                    </div>
+                </a>
+            </li>
+            <li class="item_li">
+                <a href="javascript:void(0) po-r">
+                    <div class="fl po-r">
+                        <img src="img/ss.png">
+                        <div class="play_btn po-a">
+                            <img src="img/play_2.png" >
+                        </div>
+                    </div>
+                    <div class="mr24 po-r">
+                        <p class="des">开车打瞌睡怎么破？这个科技就能叫醒你开车打瞌睡怎么破这个科技就能叫醒你</p>
+                        <p class="clearfix time_comm_box po-a">
+                            <img src="img/time_icon.png">
+                            <span class="time">03:32</span>
+                        </p>
+                        <span class="comment_num po-a">185评论</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        {{#include ./mod/mod_videoloadmorebtn.html?m=加载更多}}
+    </div>
+    <!-- 最热评论 -->
+    <div class="hot_comm">
+        <h4 class="title po-r">
+            <span class="bor">最热评论</span>
+        </h4>
+        <ul class="comm_box">
+            <li class="comm_item clearfix">
+                <div class="user_img fl">
+                    <img src="img/video_car.png">
+                </div>
+                <div class="uer_comm">
+                    <div class="user_name_box">
+                        <span class="user_name">雨晴</span>
+                        <span class="floor_num fr">7楼</span>
+                    </div>
+                    <p class="comm_text">
+                        全新的Minicooper的前脸变化很大，中网的格栅面积又说加宽格栅面积有面积
+                    </p>
+                    <div class="comm_status">
+                        <span>刚刚</span>
+                        <span class="reply_btn fr i"></span>
+                        <span class="comm_mum fr i">6</span>
+                    </div>
+                </div>
+            </li>
+            <li class="comm_item clearfix">
+                <div class="user_img fl">
+                    <img src="img/video_car.png">
+                </div>
+                <div class="uer_comm">
+                    <div class="user_name_box">
+                        <span class="user_name">雨晴</span>
+                        <span class="floor_num fr">7楼</span>
+                    </div>
+                    <p class="comm_text">
+                        全新的Minicooper的前脸变化很大，中网的格栅面积又说加宽格栅面积有面积
+                    </p>
+                    <div class="reply_box">
+                        <p class="reply_user">
+                            <span class="reply_user_name">董力量</span>发表的评论
+                        </p>
+                        <p class="reply_comm">
+                            全新的Minicooper的前脸变化很大，中网的格栅面积又说加宽格栅面积有面积全新的Minicooper的前脸变化很大，中网的格栅面积又说加宽格栅面积有面积全新的Minicooper的前脸变化很大，中网的格栅面积又说加宽格栅面积有面积全新的Minicooper的前脸变化很大，中网的格栅面积又说加宽格栅面积有面积
+                        </p>
+                    </div>
+                    <div class="comm_status">
+                        <span>刚刚</span>
+                        <span class="reply_btn fr i"></span>
+                        <span class="comm_mum fr i">6</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        {{#include ./mod/mod_videoloadmorebtn.html?m=加载更多评论}}
+    </div>
+    <!-- 推荐视频 -->
+    <div class="relevance_video">
+        <h4 class="title po-r">
+            <span class="bor">推荐视频</span>
+        </h4>
+        <ul>
+            <li class="item_li">
+                <a href="javascript:void(0) po-r">
+                    <div class="fl po-r">
+                        <img src="img/ss.png">
+                        <div class="play_btn po-a">
+                            <img src="img/play_2.png" >
+                        </div>
+                    </div>
+                    <div class="mr24 po-r">
+                        <p class="des">开车打瞌睡怎么破？这个科技就能叫醒你开车打瞌睡怎么破这个科技就能叫醒你</p>
+                        <p class="clearfix time_comm_box po-a">
+                            <img src="img/time_icon.png">
+                            <span class="time">03:32</span>
+                        </p>
+                        <span class="comment_num po-a">185评论</span>
+                    </div>
+                </a>
+            </li>
+            <li class="item_li">
+                <a href="javascript:void(0) po-r">
+                    <div class="fl po-r">
+                        <img src="img/ss.png">
+                        <div class="play_btn po-a">
+                            <img src="img/play_2.png" >
+                        </div>
+                    </div>
+                    <div class="mr24 po-r">
+                        <p class="des">开车打瞌睡怎么破？这个科技就能叫醒你开车打瞌睡怎么破这个科技就能叫醒你</p>
+                        <p class="clearfix time_comm_box po-a">
+                            <img src="img/time_icon.png">
+                            <span class="time">03:32</span>
+                        </p>
+                        <span class="comment_num po-a">185评论</span>
+                    </div>
+                </a>
+            </li>
+            <li class="item_li">
+                <a href="javascript:void(0) po-r">
+                    <div class="fl po-r">
+                        <img src="img/ss.png">
+                        <div class="play_btn po-a">
+                            <img src="img/play_2.png" >
+                        </div>
+                    </div>
+                    <div class="mr24 po-r">
+                        <p class="des">开车打瞌睡怎么破？这个科技就能叫醒你开车打瞌睡怎么破这个科技就能叫醒你</p>
+                        <p class="clearfix time_comm_box po-a">
+                            <img src="img/time_icon.png">
+                            <span class="time">03:32</span>
+                        </p>
+                        <span class="comment_num po-a">185评论</span>
+                    </div>
+                </a>
+            </li>
+            <li class="item_li">
+                <a href="javascript:void(0) po-r">
+                    <div class="fl po-r">
+                        <img src="img/ss.png">
+                        <div class="play_btn po-a">
+                            <img src="img/play_2.png" >
+                        </div>
+                    </div>
+                    <div class="mr24 po-r">
+                        <p class="des">开车打瞌睡怎么破？这个科技就能叫醒你开车打瞌睡怎么破这个科技就能叫醒你</p>
+                        <p class="clearfix time_comm_box po-a">
+                            <img src="img/time_icon.png">
+                            <span class="time">03:32</span>
+                        </p>
+                        <span class="comment_num po-a">185评论</span>
+                    </div>
+                </a>
+            </li>
+            <li class="item_li">
+                <a href="javascript:void(0) po-r">
+                    <div class="fl po-r">
+                        <img src="img/ss.png">
+                        <div class="play_btn po-a">
+                            <img src="img/play_2.png" >
+                        </div>
+                    </div>
+                    <div class="mr24 po-r">
+                        <p class="des">开车打瞌睡怎么破？这个科技就能叫醒你开车打瞌睡怎么破这个科技就能叫醒你</p>
+                        <p class="clearfix time_comm_box po-a">
+                            <img src="img/time_icon.png">
+                            <span class="time">03:32</span>
+                        </p>
+                        <span class="comment_num po-a">185评论</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        {{#include ./mod/mod_videoloadmorebtn.html?m=加载更多}}
+    </div>
+    <!-- 底部页面索引  面包屑-->
+    <div class="bottom_page_index mt4">
+        <p>
+            <a href="javascript:void(0)" class="color666">首页</a>
+            <span class="p colora4"> &gt;</span>
+            <a href="javascript:void(0)" class="color666">视频</a>
+            <span class="p colora4"> &gt;</span>
+            <span class="current_page colora4">视频详情</span>
+        </p>
+    </div>
+    <!-- 底部悬浮平路框 -->
+    <div class="float_bottom_comm_panel">
+        <div class="we_s">
+            <p>我来说两句...双击评论</p>
+        </div>
+        <div class="icon_box po-a">
+            <div class="">
+                <span class="fl">666</span>
+            </div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- 评论输入框 -->
+    <div class="comm_mark">
+        <form method="post" action="http://">
+            <div class="comm_box po-a">
+            <div class="top clearfix">
+                <span class="fl cancel">取消</span>
+                <span class="fr submit">发布</span>
+            </div>
+            <div class="textarea_box">
+    <textarea placeholder="说点什么吧" rows="10" cols="20" style="resize:none" ></textarea>
+            </div>
+            <p class="user_name">张金月</p>
+        </div>
+
+        </form>
+    </div>
+
+    <!-- 底部 -->
+    {{#include ./mod/mod_footer.html}}
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/pubNav.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+/*****
+ *@author: linyh
+ *@from: Global style recommendType
+ *@description: 陈璐
+ *@date: name (2017.02.18)
+*/
+
+
+
+@import (reference) "public";
+
+// 推荐车型主页面
+.recommend_page{
+    .bg-jianbian(left,right,#24a7fe,#2992fe);
+    height: 100%;
+    position: relative;
+    z-index: 6;
+
+    // 标题
+    .page_title{
+        width: 100%;
+        color: @color-fff;
+        .title{
+            color: @color-fff;
+            font-size: 24px;
+            line-height: 2.213rem /* 166/75 */;
+            padding-left: 8.267%;
+            float: left;
+        }
+        ul{
+            margin: .493rem /* 37/75 */ 6.667% 0 0;
+            float: right;
+            li{
+                text-align: center;
+                margin: 0 .133rem /* 10/75 */;
+                float: left;
+                img{
+                    width: .827rem /* 62/75 */;
+                    height: .84rem /* 63/75 */;
+                    display: block;
+                }
+                span{
+                    line-height: .613rem /* 46/75 */;
+                }
+            }
+        }
+    }
+
+    // 推荐车型列表
+    .recommend_main{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 50%;
+        z-index: 2;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+
+        .swiper-slide{
+            overflow: visible;
+            .recommend_car{
+                font-size: 15px;
+                width: 85.6%;
+                height: 11rem /* 825/75 */;
+                margin: 0 7.2% -.027rem /* 2/75 */;
+                background-color: @color-fff;
+                position: relative;
+                .top-xiejiao(45deg,-45deg,0.147rem /* 11/75 */,@color-fff,50.5%,100%,bottom left,bottom right);
+                dl{
+                    padding: 0.4rem /* 30/75 */ .1rem .12rem;
+                    a{
+                        display: block;
+                        padding-bottom: .2rem;
+                        img{
+                            display: block;
+                            margin: 0 auto;
+                        }
+                        p{
+                            line-height: .48rem /* 36/75 */;
+                            text-align: center;
+                        }
+                        .type_price{
+                            color: @result-price;
+                            font-weight: 700;
+                        }
+                    }
+                    .first{
+                        width: 100%;
+                        float:none;
+                        margin-bottom: 0.267rem /* 20/75 */;
+                        a{
+                            width: auto;
+                        }
+                        img{
+                            width: 7.333rem /* 550/75 */;
+                            height: 4.88rem /* 366/75 */;
+                        }
+                    }
+                    dd{
+                        float: left;
+                        width: 50%;
+                        a{
+                            width: 100%;
+                            img{
+                                width: 4rem /* 300/75 */;
+                                height: 2.667rem /* 200/75 */;
+                            }
+                        }
+                    }
+                }
+                .bottom_bg{
+                    width: 100%;
+                    height: 1.333rem /* 100/75 */;
+                    background-color: @color-fff;
+                    .top-xiejiao(135deg,-135deg,0.147rem /* 11/75 */,@color-fff,50.5%,100%,top left,top right);
+                    position: absolute;
+                    bottom: -1.307rem /* 98/75 */;
+                    left: 0;
+                    z-index: 1;
+                }
+            }
+        }
+        .swiper-pagination{
+            position: absolute;
+            bottom: -0.8rem /* 60/75 */;
+            z-index: 2;
+        }
+    }
+
+    .next_page{
+        background-image: url("../img/double_down.png");
+        background-size: cover;
+        width:0.827rem /* 62/75 */;
+        height: 0.44rem /* 33/75 */;
+    }
+}
+//.recommend_main .swiper-slide-active{z-index: 99999}
+.recommend_main .swiper-slide-prev,.recommend_main .swiper-slide-next{opacity: .6}
+
+
+/* 字体大小适配 */
+//dpr=2字体大小
+[data-dpr="2"] .recommend_page{
+    // 标题
+    .page_title{
+        .title{
+            font-size: 48px;
+        }
+    }
+    // 推荐车型列表
+    .recommend_main{
+        .recommend_car{
+            font-size: 30px;
+        }
+    }
+}
+
+//dpr=3字体大小
+[data-dpr="3"] .recommend_page{
+    // 标题
+    .page_title{
+        .title{
+            font-size: 72px;
+        }
+    }
+    // 推荐车型列表
+    .recommend_main{
+        .recommend_car{
+            font-size: 45px;
+        }
+    }
+}
+
+/* 适配iphone4尺寸*/
+[data-dpr="2"] .recommend_page{
+    @media (max-width: 640px){
+        .recommend_main{
+            .swiper-slide{
+                .recommend_car{
+                    height: 9.8rem;
+                    dl{
+                        padding: 0;
+                        .first{
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,298 @@
+.car_select_input_box{
+  margin-top: 0;
+  &>div{
+    float:left;
+
+  }
+  .car_brand {
+    width:158px;
+    height:30px;
+    padding-right: 0;
+    margin-right: 12px;
+    line-height:30px;
+  }
+  .car_type {
+    width:158px;
+    height:30px;
+    padding-right: 0;
+    margin-right: 12px;
+    line-height:30px;
+  }
+  .car_year {
+    width:258px;
+    height:30px;
+    padding-right: 0;
+    margin-right: 12px;
+    line-height:30px;
+  }
+}
+
+//自定义滚动条样式
+#mCSB_1,#mCSB_2,#mCSB_3{
+  #mCSB_1_container,#mCSB_2_container,#mCSB_3_container{
+    margin-right:0;
+  }
+  #mCSB_1_scrollbar_vertical,#mCSB_2_scrollbar_vertical,#mCSB_3_scrollbar_vertical{
+    width:10px;
+    #mCSB_1_dragger_vertical,#mCSB_2_dragger_vertical,#mCSB_3_dragger_vertical{
+      .mCSB_dragger_bar{
+        width:6px;
+        background-color: @color-999;
+      }
+    }
+    .mCSB_draggerRail{
+      width:12px;
+      -webkit-border-radius:0;
+      -moz-border-radius:0;
+      border-radius:0;
+      background-color: @color-eee;
+    }
+  }
+}
+//右侧滚动选择区
+.search-input{
+  .display-none{
+    display: none;
+  }
+  .simulation-select{
+    border:1px solid @color-da;
+    margin-bottom: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    span{
+      color:@color-333;
+      //width:166px;
+      line-height:30px;
+      display: inline-block;
+      padding-left: 4px;
+      margin:1px;
+      float:left;
+    }
+    i{
+      display: inline-block;
+      width:32px;
+      height:30px;
+      float:right;
+      em{
+        display: inline-block;
+        width:16px;
+        height:8px;
+        margin:11px 0 0 11px;
+        background-image:url(../img/icon_all.png);
+        background-position:0 -18px;
+        background-repeat: no-repeat;
+      }
+      .search-input-hover{
+        background-position:0 -67px;
+      }
+    }
+
+    &:hover{
+      border-color:@color-scroll-list-hover;
+      em{
+        background-position:0 -67px;
+      }
+    }
+  }
+  .scroll-box-style{
+    color:@color-333;
+    height:470px;
+    border:1px solid @color-333;
+    border-bottom: 5px solid @color-333;
+    background-color: @color-fff;
+    position: absolute;
+    top:36px;
+    left:0;
+    z-index: 1000;
+  }
+  .choice-brand{
+    width:158px;
+    height:30px;
+    position: relative;
+    .choice-brand-input{
+      .simulation-select;
+    }
+    .color-input-border{
+      border-color:@color-scroll-list-hover;
+    }
+    .brand-scroll-list-box{
+      .scroll-box-style;
+      .brand-letter-index{
+        float:left;
+        width:31px;
+        border-right:1px solid @color-eee;
+        span{
+          display: inline-block;
+          width:31px;
+          text-align: center;
+          line-height:18px;
+          &:hover{
+            a{
+              color:@color-scroll-list-hover;
+            }
+          }
+          &:first-child{
+            a{
+              color:@color-scroll-list-hover;
+            }
+          }
+        }
+      }
+      .brand-scroll-list{
+        float:right;
+        height:470px;
+        overflow: auto;
+        ul{
+          border-top: 1px solid @color-eee;
+          li{
+            padding-left:8px;
+            width:116px;
+            line-height: 28px;
+            cursor: pointer;
+            a{
+              span{
+                padding-left: 8px;
+              }
+            }
+            &:hover{
+              a{
+                color:@color-fff;
+              }
+              background-color:@color-scroll-list-hover;
+            }
+          }
+        }
+
+      }
+    }
+  }
+  .choice-car-type{
+    position: relative;
+    width:158px;
+    height:30px;
+    .choice-car-type-input{
+      .simulation-select;
+      span{
+        color:@color-aaa;
+      }
+    }
+    .color-input-border{
+      border-color:@color-scroll-list-hover;
+    }
+    .car-type-scroll-list{
+      .scroll-box-style;
+      overflow: auto;
+      dl{
+        width:156px;
+        line-height:28px;
+        dt{
+          text-align: center;
+          background-color:@color-f7;
+        }
+        dd{
+          padding-left:8px;
+          cursor: pointer;
+          &:hover{
+            a{
+              color:@color-fff;
+            }
+            background-color:@color-scroll-list-hover;
+          }
+        }
+      }
+    }
+  }
+  .search-submit-btn{
+    font-size:@fontSize-16;
+    line-height: 36px;
+    text-align: center;
+    a{
+      width:206px;
+      color:@color-fff;
+      background:@color-submit-initial;
+      display: none;
+      &:hover{
+        background-color:@color-submit-hover;
+      }
+      &:active{
+        background-color:@color-submit-active;
+      }
+    }
+    span{
+      color:@color-fff;
+      width:206px;
+      display: inline-block;
+      background:@color-submit-initial;
+      filter: alpha(opacity=80);
+      opacity: 0.8;
+    }
+  }
+}
+//图片对比页三级联动
+.choice-input{
+  .choice-type{
+    width:168px;
+    height:30px;
+    border:1px solid @color-dadada;
+    overflow: hidden;
+    cursor: pointer;
+    span{
+      color:@color-333;
+      //width:166px;
+      line-height:30px;
+      display: inline-block;
+      padding-left: 4px;
+      margin:1px;
+      float:left;
+    }
+    i{
+      display: inline-block;
+      width:32px;
+      height:30px;
+      margin-right: 0px;
+      margin-right: 0px;
+      float:right;
+      em{
+        display: inline-block;
+        width:16px;
+        height:8px;
+        margin:11px 0 0 11px;
+        background-image:url(../img/icon_all.png);
+        background-position:0 -18px;
+        background-repeat: no-repeat;
+      }
+      .search-input-hover{
+        background-position:0 -67px;
+      }
+    }
+
+    &:hover{
+      border-color:@color-scroll-list-hover;
+      em{
+        background-position:0 -67px;
+      }
+    }
+  }
+  .choice-list{
+    display: none;
+    overflow: auto;
+    dl{
+      width:156px;
+      line-height:28px;
+      dt{
+        text-align: center;
+        background-color:@color-f7;
+      }
+      dd{
+        padding-left:8px;
+        cursor: pointer;
+        &:hover{
+          a{
+            color:@color-fff;
+          }
+          background-color:@color-scroll-list-hover;
+        }
+      }
+    }
+  }
+}

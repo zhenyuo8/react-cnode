@@ -1,0 +1,387 @@
+/*****
+ *@author: jianingning
+ *@from: Global style   TA的提问、回答模块样式
+ *@description:
+ *@date: name (2017.03.04)
+*/
+
+
+
+@import (reference) "../public";
+
+/*提问回答*/
+.ans_expert_answer {
+	background: #fff;
+	margin-top: .4rem;
+	position: relative;
+	width: 100%;
+
+	.ans_expert_type {
+		margin: 0 .4rem;
+		height: 1.057rem;
+		border-bottom: 1px solid #ebedef;
+
+		li {
+			float: left;
+			width: 50%;
+			text-align: center;
+
+			a {
+				display: inline-block;
+				width: 2.173rem;
+				height: 1.055rem;
+				line-height: 1.055rem;
+				font-size: 15px;
+				color: #848484;
+			}
+		}
+		.ans_active {
+			a {
+				color: #2799fe;
+				border-bottom: 1px solid #2799fe;
+			}
+		}
+	}
+	.ans_expert_content {
+		width: 100%;
+	}
+	.ans_expert_box {
+		background: #f4f5f7;
+	}
+	.ans_expert_list {
+		margin-top: .133rem;
+		padding: .507rem .4rem 0 .4rem;
+		background: #fff;
+		position: relative;
+		overflow: hidden;
+		.recom_img{
+			overflow: hidden;
+			a{
+				width: 2.5rem;
+				height:2.5rem;
+				display: block;
+				margin: 0 1.695% .4rem  0;
+				float: left;
+				background:url("../img/default_a.png")  center center no-repeat;
+				background-size: 100%;
+			}
+		}
+		.use_car {
+			display: block;
+		    width: 1.867rem /* 140/75 */;
+		    height: 0.533rem /* 40/75 */;
+		    position: absolute;
+		    left: 0.36rem;
+		    z-index: 2;
+		}
+		.recom_text {
+			font-size: 15px;
+			width: 100%;
+	        max-height: 1.92rem;
+	        line-height: .64rem;
+	        margin-bottom: .267rem;
+	        overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 3;
+	        position: relative;
+
+	        i{
+	            font-size: 11px;
+	            color: @color-fff;
+	            width: .4rem;
+	            line-height: .4rem;
+	            text-align: center;
+	            background-color: @jing-bg;
+	            border-radius: .053rem;
+	            vertical-align: .027rem;
+	            margin-right: .133rem;
+	            display: inline-block;
+	        }
+	        span{
+	            color: @color-main-blue;
+	        }
+		}
+		.recom_img{
+			overflow: hidden;
+	        a{
+				width: 2.5rem;
+				height: 2.5rem;
+				display: block;
+				margin: 0 1.695% .4rem 0;
+				float: left;
+				background: url(../img/default_a.png) center center no-repeat;
+				background-size: cover;
+	        }
+	    }
+	    .recom_type{
+	        a{
+	            color: @color-main-blue;
+	            height: .56rem;
+	            line-height: .56rem;
+	            padding: 0 .24rem;
+	            margin: 0 .187rem  .187rem  0;
+	            border: 1px  solid @color-main-blue;
+	            border-radius: 2px;
+	            display: inline-block;
+	            font-size: 13px;
+	        }
+	    }
+	    .recom_other{
+	        color: @dian-border;
+	        padding: .213rem  0 .533rem;
+	        font-size: 13px;
+	        .time_area{
+	            float: left;
+	            i{
+	                display: inline-block;
+	                margin-right: .267rem;
+	            }
+	        }
+	        .reply_num{
+	            float: right;
+
+	            i {
+	            	display: inline-block;
+	            	width: 0.4rem;
+	            	height: .373rem;
+	            	margin-top: .04rem;
+	            	background: url(../img/comment_zan.png);
+	            	background-size: cover;
+					vertical-align: -0.04rem /* 3/75 */;
+	            }
+	            span {
+	            	margin-top: 0.03rem;
+    				float: right;
+    				margin-left: 0.04rem;
+	            }
+	        }
+	    }
+	    .recom_con {
+	    	border-left: 2px solid #e2e2e2;
+	    	padding-left: .267rem;
+	    	line-height: .493rem;
+	    	font-size: 12px;
+	    	color: #666;
+
+	    	.ans_text {
+	    		display: block;
+	    		overflow: hidden;
+	    		text-overflow: ellipsis;
+	    		display: -webkit-box;
+	    		-webkit-box-orient: vertical;
+	    		-webkit-line-clamp: 2;
+	    	}
+	    }
+	    .recom_delete {
+	    	padding-left: .32rem;
+	    	height: .827rem;
+	    	line-height: .827rem;
+	    	background: #f3f3f3;
+	    	font-size: 12px;
+	    	color: #666;
+	    }
+	    .recom_text2 {
+	    	position: relative;
+	    	font-size: 15px;
+			width: 100%;
+	        line-height: .64rem;
+	        margin-bottom: .267rem;
+
+	        .ans_unfold {
+	        	position: absolute;
+	        	left: 0;
+	        	bottom: 0;
+	        	z-index: 2;
+	        	display: block;
+	        	width: 100%;
+	        	height: 1.067rem;
+	        	line-height: 1.067rem;
+	        	text-align: center;
+	        	border-top: 1px solid #f3f3f3;
+	        	background: #fff;
+	        	-webkit-box-shadow:0 -0.133rem 0.333rem #fff;
+	            -moz-box-shadow:0 -0.133rem 0.333rem #fff;
+	            box-shadow:0 -0.133rem 0.333rem #fff;
+	        	font-size: 13px;
+	        	color: #d5d4d4;
+	        	display: none;
+
+	        	img {
+	        		display: inline-block;
+	        		width: .213rem;
+	        		height: .12rem;
+	        		margin-top: 0.44rem;
+	        		margin-left: 0.2rem;
+	        	}
+	        }
+	    }
+	    .recon_over {
+	    	max-height: 3.3rem;
+	    	overflow: hidden;
+	    }
+	}
+	/*加载更多*/
+	.load_more_module{
+		margin-top: .133rem;
+	    height: 1.493rem;
+	    line-height: 1.493rem;
+	    padding: 0 4%;
+	    background: #fff;
+
+	    .load_more{
+	        .load_more;
+	    }
+	    .loading{
+	        .loading;
+	        display: none;
+	    }
+	    .more{
+	        .more;
+	        display: none;
+	    }
+	}
+	/*没有内容时显示*/
+	.ans_empty {
+		background: #fff;
+		height: 4.373rem;
+		position: relative;
+		display: none;
+
+		img {
+			display: inline-block;
+			width: 3.067rem;
+			height: 2.667rem;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			margin-top: -1.334rem;
+		}
+	}
+}
+/*向TA提问按钮*/
+.ans_ask {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	height: 1.613rem;
+	line-height: 1.613rem;
+	text-align: center;
+	background: #fff;
+	-webkit-box-shadow:0 -0.133rem 0.433rem #ededed;
+       -moz-box-shadow:0 -0.133rem 0.433rem #ededed;
+            box-shadow:0 -0.133rem 0.433rem #ededed;
+
+    button {
+    	width: 92%;
+    	height: 1.067rem;
+    	background: #2799fe;
+    	border: none;
+    	outline: none;
+    	border-radius: 8px;
+    	font-size: 16px;
+    	color: #fff;
+    }
+}
+/*字号大小适配*/
+[data-dpr="2"] .ans_expert_answer {
+	.ans_expert_type {
+		li {
+			a {
+				font-size: 30px;
+			}
+		}
+	}
+	.ans_expert_list {
+		.recom_text {
+			font-size: 30px;
+			i {
+				font-size: 22px;
+			}
+		}
+	}
+	.recom_type {
+		a {
+			font-size: 26px;
+		}
+	}
+	.recom_other {
+		font-size: 26px;
+	}
+	.recom_con,
+	.recom_delete {
+		font-size: 24px;
+	}
+	.recom_text2 {
+		font-size: 30px;
+		.ans_unfold {
+			font-size: 26px;
+		}
+	}
+	.load_more_module{
+        .load_more{
+            font-size: 26px;
+        }
+        .more{
+            font-size: 26px;
+        }
+    }
+}
+[data-dpr="2"] .ans_ask {
+	button {
+		font-size: 32px;
+	}
+}
+
+[data-dpr="3"] .ans_expert_answer {
+	.ans_expert_type {
+		li {
+			a {
+				font-size: 45px;
+			}
+		}
+	}
+	.ans_expert_list {
+		.recom_text {
+			font-size: 45px;
+			i {
+				font-size: 33px;
+			}
+		}
+	}
+	.recom_type {
+		a {
+			font-size: 39px;
+		}
+	}
+	.recom_other {
+		font-size: 39px;
+	}
+	.recom_con,
+	.recom_delete {
+		font-size: 36px;
+	}
+	.recom_text2 {
+		font-size: 45px;
+		.ans_unfold {
+			font-size: 39px;
+		}
+	}
+	.load_more_module{
+        .load_more{
+            font-size: 39px;
+        }
+        .more{
+            font-size: 39px;
+        }
+    }
+}
+[data-dpr="3"] .ans_ask {
+	button {
+		font-size: 48px;
+	}
+}

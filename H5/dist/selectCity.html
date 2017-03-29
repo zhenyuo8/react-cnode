@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>选择城市</title>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable"> 
+    <meta content="yes" name="apple-touch-fullscreen"> 
+    <meta content="telephone=no,email=no" name="format-detection"> 
+    <script src="js/flexible_css.js"></script>
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/sliderMenu.js"></script>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/selectCity.css"/>
+</head>
+<body>
+    <!--背景层-->
+    <div class="bg"></div>
+    <div class="wrap">
+        <!--content-->
+        <div class="content">
+            <div class="select">
+                <h3>选择城市</h3>
+                <a href="#" class="close"></a>
+            </div>
+            <p class="sign_text">当前定位城市</p>
+            <ul class="city">
+                <li>北京</li>
+            </ul>
+            <p class="c_sign_text">直辖市</p>
+            <ul class="city">
+                <li>
+                    <span>北京</span>
+                    <span class="current">天津</span>
+                    <span>上海</span>
+                    <span>重庆</span>
+                </li>
+            </ul>
+            <p class="letter">A</p>
+            <ul class="city">
+                <li>安徽</li>
+            </ul>
+            <p class="letter">B</p>
+            <ul class="city">
+                <li>北京</li>
+            </ul>
+            <p class="letter">F</p>
+            <ul class="city">
+                <li>福建</li>
+            </ul>
+            <p class="letter">G</p>
+            <ul class="city">
+                <li>甘肃</li>
+                <li>广东</li>
+                <li>广西</li>
+            </ul>
+        </div>
+    </div>
+    <!--mask遮罩-->
+    <div class="mask"></div>
+    <!--城市抽屉-->
+    <img src="img/slider_btn.png" class="slider_btn">
+    <div class="cityDrawer">
+        <div class="cityBox">
+            <ul class="citys">
+                <li class="select"><a href="#">合肥</a><span></span></li>
+                <li><a href="#">芜湖</a><span></span></li>
+                <li><a href="#">蚌埠</a><span></span></li>
+                <li><a href="#">淮南</a><span></span></li>
+                <li><a href="#">马鞍山</a><span></span></li>
+                <li><a href="#">淮北</a><span></span></li>
+                <li><a href="#">铜陵</a><span></span></li>
+                <li><a href="#">安庆</a><span></span></li>
+                <li><a href="#">黄山</a><span></span></li>
+                <li><a href="#">阜阳</a><span></span></li>
+                <li><a href="#">宿州</a><span></span></li>
+            </ul>
+            <img src="img/drawer.png" class="drawer">
+        </div>
+    </div>
+    <!--横屏提示-->
+    <div class="rotatoHint_mask"></div>
+<div class="rotatoHint"><img src="img/rotatoHint.png"></div>
+</body>
+</html>

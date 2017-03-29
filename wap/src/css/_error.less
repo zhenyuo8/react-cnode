@@ -1,0 +1,79 @@
+/*****
+ *@author: jianingning
+ *@from: Global style error.html   404页
+ *@description:
+ *@date: name (2017.03.18)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_pubHead.less";
+@import "mod/mod_pubHeadNav.less";
+
+.wrap {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+
+	.error_img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -3.447rem 0 0 -2.62rem;
+		display: block;
+		width: 5.24rem;
+		height: 4.893rem;
+	}
+	.error_text1,
+	.error_text2 {
+		font-size: 16px;
+		width: 100%;
+		text-align: center;
+		position: absolute;
+		z-index: 2;
+	}
+	.error_text1 {
+		top: 56%; 
+	}
+	.error_text2 {
+		top: 62%;
+	}
+	.error_return {
+		display: inline-block;
+		width: 5.067rem;
+		height: 1.067rem;
+		background: #398be4;
+		color: #fff;
+		font-size: 16px;
+		border-radius: 8px;
+		text-align: center;
+		line-height: 1.067rem;
+		position: absolute;
+		left: 50%;
+		margin-left: -2.53rem;
+		top: 68%;
+		cursor: pointer;
+	}
+}
+[data-dpr="2"] .wrap {
+	.error_text1,
+	.error_text2 {
+		font-size: 32px;
+	}
+	.error_return {
+		font-size: 32px;
+	}
+}
+[data-dpr="3"] .wrap {
+	.error_text1,
+	.error_text2 {
+		font-size: 48px;
+	}
+	.error_return {
+		font-size: 48px;
+	}
+}

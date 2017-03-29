@@ -1,0 +1,612 @@
+/*****
+ *@author: jianingning
+ *@from: Global style floorPrice
+ *@description:
+ *@date: name (2017.02.14)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_nav.less";
+@import "mod/mod_rotatoHint.less";
+
+.wrap {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+
+    .content {
+        padding-top: 1.333rem;
+        padding-bottom: 1.6rem;
+
+        .car_model {
+            position: relative;
+            width: 100%;
+            height: 2.4rem;
+            background: @color-fff;
+
+            dt {
+                float: left;
+                margin: 0.227rem 0 0 0.4rem;
+                width: 2.947rem;
+                height: 1.96rem;
+
+                img {
+                    width: 2.947rem;
+                    height: 1.96rem;
+                }
+            }
+            dd {
+               float: left;
+               margin:0.52rem 0 0 0.347rem;
+               width: 5.287rem;
+               line-height: 0.587rem;
+               font-size: 15px;
+               overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3; 
+            }
+            .right_btn {
+                position: absolute;
+                right: 0.387rem;
+                top: 1.013rem;
+                display: inline-block;
+                width: 0.213rem;
+                height: 0.36rem;
+                background: url(../img/right.png);
+                background-size: cover;
+            }
+        }
+        .prompt {
+            height: 0.747rem;
+                line-height: 0.747rem;
+                padding-left: 0.4rem;
+                font-size: 13px;
+                color: #6a6a6a;
+                background: #f3f3f3;
+        }
+        .carM_form {
+            width: 100%;
+            background: @color-fff;
+
+            .userNews {
+                position: relative;
+                height: 1.333rem;
+                line-height: 1.333rem;
+                border-bottom: 1px solid #f3f3f3;
+                padding-right:0.4rem;
+                margin-left: 0.4rem;
+                font-size: 15px;
+                input {
+                    margin-left: 0.5rem;
+                    width: 6rem;
+                    height: 1rem;
+                    font-size:.4rem;
+                    color: #333;
+                    font-family: "Microsoinputft Yahei";
+                }
+                .yzm_input{ 
+                    width: 3.5rem;
+                }
+                .buy_city {
+                    margin-left: 0.467rem;
+                }
+                .yz_code {
+                    position: absolute;
+                    top: 0.347rem;
+                    right: 0.387rem;
+                    display: inline-block;
+                    /*width: 2.16rem;*/
+                    height: 0.613rem;
+                    text-align: center;
+                    line-height: 0.613rem;
+                    border:1px solid #2896fe;
+                    border-radius: 8px;
+                    font-size: 13px;
+                    color: #2896fe;
+                    background: none;
+                }
+                .change {
+                    float: right;
+                    display: inline-block;
+                    font-size: 13px;
+                    color: #c7c7c7;
+
+                    .condition {
+                        float: left;
+                    }
+                    img {
+                        width: 0.213rem;
+                        height: 0.36rem;
+                        margin: 0.48rem 0 0 0.147rem;
+                    }
+                }
+                .warn {
+                    position: absolute;
+                    top: 1.18rem;
+                    left: 2.28rem;
+                    z-index: 9;
+                    height: 0.493rem;
+                    line-height: 0.493rem;
+                    padding: 0 0.307rem;
+                    background: #ff3131;
+                    font-size: 12px;
+                    color: @color-fff;
+                    border-radius: 10px;
+                }
+                .arrow_up {
+                    position: absolute;
+                    top: 1.015rem;
+                    left: 2.747rem;
+                    width: 0;
+                    height: 0;
+                    border-left: 0.173rem solid transparent;
+                    border-right: 0.173rem solid transparent;
+                    border-bottom: 0.173rem solid #ff3131;
+                }
+                .show {
+                    display:block;
+                }
+            }
+            .select_prompt {
+                height: 0.747rem;
+                line-height: 0.747rem;
+                padding-left: 0.4rem;
+                font-size: 13px;
+                color: #6a6a6a;
+                background: #f3f3f3;
+            }
+            .dealer_list {
+                width: 100%;
+                background: @color-fff;
+
+                li {
+                    margin-left: 0.4rem;
+                    border-bottom: 1px solid #f3f3f3;
+                    padding-top: 0.427rem;
+                    padding-bottom: 0.333rem;
+                    &:last-child{
+                        border-bottom: 0
+                    }
+
+                    .checkbox {
+                        float: left;
+                        margin-top: 0.56rem;
+                        width: 0.533rem;
+                        height: 0.533rem;
+                        background: url(../img/select_default.png);
+                        background-size: 100% 100%;
+                    }
+                    .checkbox_selet {
+                        float: left;
+                        margin-top: 0.56rem;
+                        width: 0.533rem;
+                        height: 0.533rem; 
+                        background: url(../img/select.png);
+                        background-size: 100% 100%;
+                    }
+                    .dealer_news {
+                        float: left;
+                        margin-left: 0.187rem;
+                        width: 6.2rem;
+
+                        .dealer {
+                            font-size: 16px;
+
+                            span {
+                                display: inline-block;
+                                margin-left: 0.267rem;
+                                width: 1.187rem;
+                                height: 0.413rem;
+                                border: 1px solid #b4b4b4;
+                                font-size: 11px;
+                                color: #b4b4b4;
+                                text-align: center;
+                                line-height: 0.413rem;
+                                vertical-align: middle;
+                            }
+                        }
+                        .address {
+                            margin-top: 0.2rem;
+                            font-size: 13px;
+                            color: @color-999;
+                            line-height: 0.52rem;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 2;
+                        }
+                    }
+                    .d_price {
+                        float: right;
+                        margin-right:0.2rem;
+                        color: #ff3131;
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+    .footer_price {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 20;
+        width: 100%;
+        height: 1.6rem;
+        background: #fff;
+        -webkit-box-shadow: 0 -5px 20px 5px #ededed;
+        -moz-box-shadow: 0 -5px 20px 5px #ededed;
+        box-shadow: 0 -5px 20px 5px #ededed;
+
+        .submit {
+            display: inline-block;
+            width: 95%;
+            height: 1.067rem;
+            background: #2896fe;
+            font-size: 16px;
+            color: @color-fff;
+            border-radius: 8px;
+            position: fixed;
+            left: 0.267rem;
+            bottom: 0.267rem;
+            text-align: center;
+            line-height: 1.067rem;
+            border: none;
+        }
+    }
+}
+// 提交成功
+.mask_p{
+    display: none;
+    background-color: @color-000;
+    background-color: cover;
+    filter: alpha(opacity=60);
+    opacity: .6;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.submit_success{
+    display: none;
+    width: 75%;
+    height: 3.867rem /* 290/75 */;
+    background-color: @color-fff;
+    border-radius: 0.16rem /* 12/75 */;
+    margin: -1.933rem /* 145/75 */ -37.5%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    img{
+        display: block;
+        width: 3.373rem /* 253/75 */;
+        height: 3.227rem /* 242/75 */;
+        margin-left: -1.68rem /* 126/75 */;
+        position: absolute;
+        top: -1.613rem /* 121/75 */;
+        left: 50%;
+    }
+    i{
+        display: block;
+        .icon_bg(url("../img/delete.png"), 0.48rem /* 36/75 */, 0.48rem /* 36/75 */);
+        position: absolute;
+        top: -0.24rem /* 18/75 */;
+        right: -0.24rem /* 18/75 */;
+    }
+    p{
+        font-size: 19px;
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
+        padding-top: 1.867rem /* 140/75 */;
+        &:last-child{
+            font-size: 16px;
+            font-weight: 100;
+            padding-top: 0.2rem;
+        }
+    }
+}
+.no_dealerlist{text-align: center;padding-top:1rem;color:#ccc}
+
+/*抽屉*/
+.slider_btn {
+    position: fixed;
+    top: 50%;
+    left: 1.093rem;
+    margin-top: -0.82rem;
+    z-index: 7;
+    width: 0.693rem;
+    height: 0.64rem;
+    display: none;
+}
+.cityDrawer {
+    width: 7.667rem;
+    height: 100%;
+    position: fixed;
+    top: 1.333rem;
+    right: -80%;
+    transition: right .5s;
+    z-index: 6;
+    border-left: 1px solid #d2d2d2;
+    background: @color-fff;
+    -moz-box-shadow: -10px 0 10px #6e6e6e;
+ -webkit-box-shadow: -10px 0 10px #6e6e6e;
+         box-shadow: -10px 0 10px #6e6e6e;
+    
+
+    .carModels_box {
+        width: 7.667rem;
+        background: @color-fff;
+        height: 100%;
+        overflow-y: scroll;
+
+        .carModels {
+           padding-bottom: 1.333rem;
+            .year_car {
+                height: 1.2rem;
+                line-height: 1.2rem;
+                text-align: center;
+                font-size: 18px;
+            }
+            .year_carType {
+                padding:.1rem 0.4rem;
+                /*height: 0.747rem;
+                line-height: 0.747rem;*/
+                background: #f3f3f3;
+                color: #6a6a6a;
+                font-size: 13px;
+            }
+            .carModels_list {
+                li {
+                   margin-left: 0.4rem;
+                   height: 1.32rem;
+                   line-height: 1.32rem;
+                   border-bottom: 1px solid #f3f3f3;
+                   font-size: 15px;
+                   padding-right: 1rem;
+                   position: relative;
+                   a{
+                       display: block;
+                       white-space: nowrap;
+                       overflow: hidden;
+                       text-overflow: ellipsis;
+                   }
+                   &:last-child{
+                       border: 0;
+                   }
+                }
+                .select span{
+                    position: absolute;
+                    top:0.387rem;
+                    right: 0.373rem;
+                    width: 0.533rem;
+                    height: 0.533rem;
+                    background: url(../img/select.png);
+                    background-size: cover;
+                }
+            }
+        }
+        .drawer {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            margin-top: -2.41rem;
+            z-index: 7;
+            width: 0.093rem;
+            height: 2.16rem;
+        }
+    }
+
+}
+[data-dpr="2"] .wrap{
+    .content {
+        .car_model {
+            dd {
+                font-size: 30px;
+            }
+        }
+        .prompt {
+            font-size: 26px;
+        }
+        .carM_form {
+            .userNews {
+                font-size: 30px;
+
+                .yz_code {
+                    font-size: 26px;
+                }
+                .change {
+                    font-size: 26px;
+                }
+                .warn {
+                    font-size: 24px;
+                }
+            }
+            .select_prompt {
+                font-size: 26px;
+            }
+            .dealer_list {
+                .dealer_news {
+                    .dealer {
+                        font-size: 32px;
+                        span {
+                            font-size: 22px;
+                        }
+                    }
+                    .address {
+                        font-size: 26px;
+                    }
+                }
+                .d_price {
+                    font-size: 34px;
+                }
+            }
+        }
+    }
+    .footer_price {
+        .submit {
+            font-size: 32px;
+        }
+    }
+}
+
+.p_dl{
+    color:#fff;
+    float: right;
+    font-size: .4rem;
+    line-height: 1.333rem;
+    background:url(../img/p_dl.png) no-repeat left center;
+    background-size: .33rem;
+    padding-left: .48rem;
+}
+.submit_success2{
+    display: none;
+    padding-top: 1.33rem;
+    text-align: center;
+    .tit{
+        padding-top:1.2rem;
+        font-size:.67rem;
+        color:#2896fe;
+
+    }
+    .sub_tit{
+        display: block;
+        font-size: .37rem;
+        color: #999999;
+    }
+    .img{
+        padding-top:1.2rem;
+        margin-bottom: .8rem;
+        img{width:86%}
+    }
+    .more{
+        display: block;
+        width: 94%;
+        background:#2896fe;
+        height: 1.067rem;
+        margin: 0 auto;
+        font-size:.427rem;
+        text-align: center;
+        color:#fff;
+        line-height: 1.067rem;
+        border-radius: 6px;
+    }
+}
+
+// 提交成功
+[data-dpr="2"] .submit_success{
+    p{
+        font-size: 38px;
+        &:last-child{
+            font-size: 32px;
+        }
+    }
+}
+[data-dpr="2"] .floor_price{
+    h2{
+        font-size: 36px;
+    }
+}
+[data-dpr="2"] .carModels_box {
+    .carModels {
+        .year_car {
+            font-size: 36px;
+        }
+        .year_carType {
+            font-size: 26px;
+        }
+        .carModels_list {
+            li {
+               font-size: 30px;
+            }
+        }
+    }
+}
+[data-dpr="3"] .wrap{
+    .content {
+        .car_model {
+            dd {
+                font-size: 45px;
+            }
+        }
+        .prompt {
+            font-size: 39px;
+        }
+        .carM_form {
+            .userNews {
+                font-size: 45px;
+
+                .yz_code {
+                    font-size: 39px;
+                }
+                .change {
+                    font-size: 39px;
+                }
+                .warn {
+                    font-size: 36px;
+                }
+            }
+            .select_prompt {
+                font-size: 39px;
+            }
+            .dealer_list {
+                .dealer_news {
+                    .dealer {
+                        font-size: 48px;
+                        span {
+                            font-size: 33px;
+                        }
+                    }
+                    .address {
+                        font-size: 39px;
+                    }
+                }
+                .d_price {
+                    font-size: 51px;
+                }
+            }
+        }
+    }
+    .footer_price {
+        .submit {
+            font-size: 48px;
+        }
+    }
+}
+// 提交成功
+[data-dpr="3"] .submit_success{
+    p{
+        font-size: 57px;
+        &:last-child{
+            font-size: 48px;
+        }
+    }
+}
+[data-dpr="3"] .floor_price{
+    h2{
+        font-size: 54px;
+    }
+}
+[data-dpr="3"] .carModels_box {
+    .carModels {
+        .year_car {
+            font-size: 54px;
+        }
+        .year_carType {
+            font-size: 39px;
+        }
+        .carModels_list {
+            li {
+               font-size: 45px;
+            }
+        }
+    }
+}

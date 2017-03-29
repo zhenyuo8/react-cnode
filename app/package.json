@@ -1,0 +1,36 @@
+{
+  "name": "allCar",
+  "version": "1.0.0",
+  "description": "汽车大全开发依赖库",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://172.16.0.141/xyfront/web.git"
+  },
+  "keywords": [
+    "allCar"
+  ],
+  "author": "wenshan",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.11.2",
+    "dot": "^1.1.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-htmlclean": "^2.7.6",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-less": "^3.0.5",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0",
+    "stream-combiner2": "^1.1.1",
+    "through2": "^2.0.1"
+  },
+  "devDependencies": {
+    "js-beautify": "^1.6.9"
+  }
+}

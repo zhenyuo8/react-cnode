@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>车系选车</title>
+    <link rel="stylesheet" href="http://172.16.0.135:8888/website/css/base.css"/>
+    <link rel="stylesheet" href="http://172.16.0.135:8888/website/css/carModel.css"/>
+</head>
+<body>
+<!--header模块-->
+<div class="header">
+    <!--nav model -->
+    <!-- 顶部导航模块 -->
+<div class="header_nav">
+    <div class="header_nav_content">
+        <ul class="header_nav_left">
+            <li class="car_all"> <span class="car_all_s"> <a href="index.html" target="_blank" class="bg">汽车大全</a> </span> </li>
+            <li class="address_li"> <span class="default_address"><a href="#">北京</a></span> </li>
+            <li class="city_position" id="city_position"> <span class="changeAdd" id="city_position_qie">切换</span> <span class="triangle" id="city_position_triangle"></span>
+                <div class="city_chose" id="city_chose" style="display: none">
+                    <div class="city_search">
+                        <div class="city_search_input"> <span class="search_btn"> <img src="http://172.16.0.135:8888/website/img/search-btn.png" alt=""> </span> <span> <input type="text" value="请输入城市" class="input" id="input_letters"> <div class="input_letters_search" id="input_letters_search" style="display: none"> <ul id="input_city_search"> <li class="click_to_destiny"> <span><img src="http://172.16.0.135:8888/website/img/city_down_select.png" alt=""></span>                            <span>点击直达</span> </li>
+            <li class="city_search_result"> <span class="city_text">北京</span> <span class="city_letters">beijing</span> </li>
+            <li class="city_search_result"> <span class="city_text">上海</span> <span class="city_letters">shanghai</span> </li>
+            <li class="city_search_result"> <span class="city_text">南昌</span> <span class="city_letters">nanchang</span> </li>
+            <li class="city_search_result"> <span class="city_text">深圳</span> <span class="city_letters">shenzhen</span> </li>
+        </ul>
+        </div>
+        </span> <span class="city_hot_search"> <a href="#">北京</a> <a href="#">上海</a> <a href="#">广州</a> <a href="#">深圳</a> <a href="#">武汉</a> <a href="#">杭州</a> </span> <span class="delete_city"> <img src="http://172.16.0.135:8888/website/img/delete-btn.png" alt=""> </span> </div>
+        </div>
+        <div class="hot_city_num"> <a href="#">A</a> <a href="#">B</a> <a href="#">C</a> <a href="#">N</a> <a href="#">H</a> <a href="#">J</a> <a href="#">X</a> <a href="#">Z</a> </div>
+        <div class="city_chose_region" id="city_chose_region">
+            <!--城市选择模块位置-->
+            <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                    <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+            </dl>
+            <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                    <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+            </dl>
+            <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                    <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+            </dl>
+            <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                    <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+            </dl>
+            <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                    <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+            </dl>
+            <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                    <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+            </dl>
+            <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                    <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+            </dl>
+        </div>
+    </div>
+    </li>
+    <li class="nav_line"> <span></span> </li>
+    <li> <span class="others"><a href="#">查看其他地方车市</a></span> </li>
+    </ul>
+    <ul class="header_nav_right">
+        <li class="header_hover" id="app_id"> <span class="app" id="app"> <a href="#">移动应用</a> </span> <span class="triangle"></span> </li>
+        <li class="nav_line nav_line2" id="nav_line"><span></span></li>
+        <li class="header_hover message_notice" style="display: none"> <em></em> <i></i> <span class="message_drop"> <a href="#"><span>我的询价</span> ><i></i></a> <a href="#"><span>我的问答</span> ><i></i></a> <a href="#"><span>我的评论</span> ><i></i></a> <a href="#"><span>消息中心</span> ><i></i></a> </span>
+        </li>
+        <li class=" header_hover login_third" id="login_third"> <span><a href="#">第三方登录</a></span> <span class="triangle1"></span> <span class="login_third_container"> <a href="#" class="wx"><i></i>微信</a> <a href="#" class="wb"><i></i>微博</a> <a href="#" class="tx_qq"><i></i>QQ</a> </span> </li>
+        <li class="nav_line "
+            id="nav_line2"><span></span></li>
+        <li class="header_hover user_name" style="display: none"> <span><a href="#">conan</a></span> <span class="triangle2"></span> <span class="user_drop"> <span class="latest_view"> <a href="#" class="view_res">最近看过的</a> <a href="#">宝马6系</a> <a href="#">奥迪7系</a> <a href="#">英菲尼迪Q70L</a> </span> <span class="sign_out"> <a href="#">我的收藏</a> <a href="#">退出登录</a> </span>            </span>
+        </li>
+        <li class="header_hover" id="register_id"> <span class="register" id="register"><a href="#">注册</a></span> </li>
+        <li class="bg header_hover" id="login_id"> <span class="login bg"><a href="#">登录</a></span> </li>
+    </ul>
+</div>
+</div>
+
+    <!--logo model -->
+    <!-- 顶部 banner -->
+<div class="hearer_advertisement">
+    <div class="hearer_advertisement_container">
+        <!-- <img src="http://172.16.0.135:8888/website/img/pic/brandPage_nav_images.jpg" alt="广告图片"> -->
+        <XYins id="div_34266ad0-0749-4ef7-8175-b9a27c0d16c0" data-type="ad_play" data-adplay_IP="" data-adplay_AreaName="" data-adplay_CityName="" data-adplay_BrandID="" data-adplay_BrandName="" data-adplay_BrandType="" data-adplay_BlockCode="34266ad0-0749-4ef7-8175-b9a27c0d16c0">
+        </XYins>
+    </div>
+</div>
+</div>
+
+<!--内容区-->
+<div class="content_wrap">
+    <!--汽车大全 • 产品库-->
+    <!--carMenu model -->
+    <!--汽车大全 • 产品库-->
+<div id="pro_type" class="cf">
+    <h2 class="fl">汽车大全 • 产品库</h2>
+    <ul class="fr">
+        <li><a href="carTypeindex.html" class="active">车型</a></li>
+        <li><a href="imgHome.html">图片</a></li>
+        <li><a href="video.html">视频</a></li>
+        <li><a href="javascript:;">报价</a></li>
+        <li><a href="javascript:;">降价</a></li>
+        <li><a href="javascript:;">经销商</a></li>
+    </ul>
+</div>
+
+    <div class="cf relative">
+        <!--左侧树形-->
+        <div id="leftNav" class="fl">
+        </div>
+
+        <!--树形右侧-->
+        <div class="treeMainv1 fr">
+            <!--面包屑-->
+            <div class="content_nav">
+                <strong>当前位置：</strong>
+                <span><a href="javascript:;">汽车大全</a> > <a href="javascript:;">车型</a> > <a href="javascript:;">奥迪</a> > <a href="javascript:;">奥迪A3</a></span>
+            </div>
+
+            <!--车型频道参考图片报价视频-->
+            <div class="hot_title cf hot_tit">
+                <h3 class="fl"><a href="javascript:;">奥迪A3</a></h3>
+                <!--<i class="fl">共405.2万张图片 12月15日更新</i>-->
+                <ul class="fr hot_right">
+                    <li><a href="javascript:;" class="active">车型频道</a></li>
+                    <li><a href="javascript:;" class="">参数</a></li>
+                    <li class="no_click"><a href="javascript:;" class="">图片</a></li>
+                    <li><a href="javascript:;">报价</a></li>
+                    <li class="no_click"><a href="javascript:;">视频</a></li>
+                </ul>
+            </div>
+
+            <!--产品展示询底价，试驾，置换-->
+            <div class="cf" id="car_series">
+                <div class="fl left_img">
+                    <img src="http://172.16.0.135:8888/website/img/pic/jdb.jpg" alt=""/>
+                </div>
+                <div class="fl right_mod">
+                    <p style="display: none">经销商报价：<a href="javascript:;"><strong>18.49-29.67万</strong></a></p>
+                    <p class="status">停售</p>
+                    <ul class="cf" >
+                        <li><span>发动机：</span><i>1.2T  1.4T  1.6T</i></li>
+                        <li><span>油耗：</span><i>  5.9-9.1L</i></li>
+                        <li><span>变速箱：</span><i>自动 / 手动 / 双离合</i></li>
+                        <li><span>车身架构：</span><i>三厢</i></li>
+                    </ul>
+                    <div class="btn_list cf dis_no">
+                        <a href="javascript:;" class="active">询底价</a>
+                        <a href="javascript:;" class="blue">试驾</a>
+                        <a href="javascript:;" class="blue last-child">置换</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--全部在售title-->
+            <div class="cf select_div">
+                <div class="fl">
+                    <strong>全部在售</strong>
+                </div>
+            </div>
+
+            <!--全部在售，列表展示-->
+            <table class="car_table">
+                <thead>
+                    <tr>
+                        <th width="320">1.2升<span>1100马力</span></th>
+                        <th width="54" class="thead_color">关注度</th>
+                        <th width="90" class="thead_color">指导价</th>
+                        <th width="136" class="thead_color">经销商报价</th>
+                        <th width="120"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="javascript:;"><h2>2015款 Sportback 35 TFSI 纪念智领版纪念智领版</h2></a>
+                            <span class="label blue">减税</span>
+                            <span class="label gray">停产在售</span>
+                            <strong class="about">前置前驱  5挡手动</strong>
+
+                        </td>
+                        <td>
+                            <div class="ow">
+                                <div class="iw" style="width: 23%"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="counter"><i></i>43.56万</span>
+                        </td>
+                        <td>
+                            <a href="javascript:;"><strong class="guide_price">34.17万起</strong></a>
+                            <a href="javascript:;" class="inquiry">询底价</a>
+                        </td>
+                        <td class="cf">
+                            <a href="javascript:;" class="p1">图片</a>
+                            <a href="javascript:;" class="p1">配置</a>
+                            <a href="javascript:;" class="compare" data-cid="123333"><b></b>对比</a>
+                            <span href="javascript:;" class="compare_y">已对比</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="javascript:;"><h2>2015款 Sportback 35 TFSI 纪念智领版纪念智领版</h2></a>
+                            <strong class="about">前置前驱  5挡手动</strong>
+                        </td>
+                        <td>
+                            <div class="ow">
+                                <div class="iw" style="width: 53%"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="counter"><i></i>43.56万</span>
+                        </td>
+                        <td>
+                            <a href="javascript:;"><strong class="guide_price">34.17万起</strong></a>
+                            <a href="javascript:;" class="inquiry">询底价</a>
+                        </td>
+                        <td class="cf">
+                            <a href="javascript:;" class="p1">图片</a>
+                            <a href="javascript:;" class="p1">配置</a>
+                            <a href="javascript:;" class="compare" data-cid="12333366"><b></b>对比</a>
+                            <span href="javascript:;" class="compare_y">已对比</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="javascript:;"><h2>2015款 Sportback 35 TFSI 纪念智领版纪念智领版</h2></a>
+                            <strong class="about">前置前驱  5挡手动</strong>
+                        </td>
+                        <td>
+                            <div class="ow">
+                                <div class="iw" style="width: 93%"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="counter"><i></i>43.56万</span>
+                        </td>
+                        <td>
+                            <a href="javascript:;"><strong class="guide_price">34.17万起</strong></a>
+                            <a href="javascript:;" class="inquiry">询底价</a>
+                        </td>
+                        <td class="cf">
+                            <a href="javascript:;" class="p1">图片</a>
+                            <a href="javascript:;" class="p1">配置</a>
+                            <a href="javascript:;" class="compare" data-cid="123333"><b></b>对比</a>
+                            <span href="javascript:;" class="compare_y">已对比</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="javascript:;"><h2>2015款 Sportback 35 TFSI 纪念智领版纪念智领版</h2></a>
+                            <strong class="about">前置前驱  5挡手动</strong>
+                        </td>
+                        <td>
+                            <div class="ow">
+                                <div class="iw" style="width: 100%"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="counter"><i></i>43.56万</span>
+                        </td>
+                        <td>
+                            <a href="javascript:;"><strong class="guide_price">34.17万起</strong></a>
+                            <a href="javascript:;" class="inquiry">询底价</a>
+                        </td>
+                        <td class="cf">
+                            <a href="javascript:;" class="p1">图片</a>
+                            <a href="javascript:;" class="p1">配置</a>
+                            <a href="javascript:;" class="compare" data-cid="123333"><b></b>对比</a>
+                            <span href="javascript:;" class="compare_y">已对比</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="car_table">
+                <thead>
+                <tr>
+                    <th width="320">1.2升<span>1100马力</span></th>
+                    <th width="54" class="thead_color">关注度</th>
+                    <th width="90" class="thead_color">指导价</th>
+                    <th width="136" class="thead_color">经销商报价</th>
+                    <th width="120"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <a href="javascript:;"><h2>2015款 Sportback 35 TFSI 纪念智领版纪念智领版</h2></a>
+                        <span class="label blue">减税</span>
+                        <span class="label gray">停产在售</span>
+                        <strong class="about">前置前驱  5挡手动</strong>
+
+                    </td>
+                    <td>
+                        <div class="ow">
+                            <div class="iw" style="width: 23%"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="counter"><i></i>43.56万</span>
+                    </td>
+                    <td>
+                        <a href="javascript:;"><strong class="guide_price">34.17万起</strong></a>
+                        <a href="javascript:;" class="inquiry">询底价</a>
+                    </td>
+                    <td class="cf">
+                        <a href="javascript:;" class="p1">图片</a>
+                        <a href="javascript:;" class="p1">配置</a>
+                        <a href="javascript:;" class="compare" data-cid="123333"><b></b>对比</a>
+                        <span href="javascript:;" class="compare_y">已对比</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="javascript:;"><h2>2015款 Sportback 35 TFSI 纪念智领版纪念智领版</h2></a>
+                        <strong class="about">前置前驱  5挡手动</strong>
+                    </td>
+                    <td>
+                        <div class="ow">
+                            <div class="iw" style="width: 23%"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="counter"><i></i>43.56万</span>
+                    </td>
+                    <td>
+                        <a href="javascript:;"><strong class="guide_price">34.17万起</strong></a>
+                        <a href="javascript:;" class="inquiry">询底价</a>
+                    </td>
+                    <td class="cf">
+                        <a href="javascript:;" class="p1">图片</a>
+                        <a href="javascript:;" class="p1">配置</a>
+                        <a href="javascript:;" class="compare" data-cid="123333"><b></b>对比</a>
+                        <span href="javascript:;" class="compare_y">已对比</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="javascript:;"><h2>2015款 Sportback 35 TFSI 纪念智领版纪念智领版</h2></a>
+                        <strong class="about">前置前驱  5挡手动</strong>
+                    </td>
+                    <td>
+                        <div class="ow">
+                            <div class="iw" style="width: 23%"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="counter"><i></i>43.56万</span>
+                    </td>
+                    <td>
+                        <a href="javascript:;"><strong class="guide_price">34.17万起</strong></a>
+                        <a href="javascript:;" class="inquiry">询底价</a>
+                    </td>
+                    <td class="cf">
+                        <a href="javascript:;" class="p1">图片</a>
+                        <a href="javascript:;" class="p1">配置</a>
+                        <a href="javascript:;" class="compare" data-cid="123333"><b></b>对比</a>
+                        <span href="javascript:;" class="compare_y">已对比</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="javascript:;"><h2>2015款 Sportback 35 TFSI 纪念智领版纪念智领版</h2></a>
+                        <strong class="about">前置前驱  5挡手动</strong>
+                    </td>
+                    <td>
+                        <div class="ow">
+                            <div class="iw" style="width: 23%"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="counter"><i></i>43.56万</span>
+                    </td>
+                    <td>
+                        <a href="javascript:;"><strong class="guide_price">34.17万起</strong></a>
+                        <a href="javascript:;" class="inquiry">询底价</a>
+                    </td>
+                    <td class="cf">
+                        <a href="javascript:;" class="p1">图片</a>
+                        <a href="javascript:;" class="p1">配置</a>
+                        <a href="javascript:;" class="compare" data-cid="123333"><b></b>对比</a>
+                        <span href="javascript:;" class="compare_y">已对比</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="car_table">
+                <thead>
+                <tr>
+                    <th width="320">1.2升<span>1100马力</span></th>
+                    <th width="54" class="thead_color">关注度</th>
+                    <th width="90" class="thead_color">指导价</th>
+                    <th width="136" class="thead_color">经销商报价</th>
+                    <th width="120"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <a href="javascript:;"><h2>2015款 Sportback 35 TFSI 纪念智领版纪念智领版</h2></a>
+                        <span class="label blue">减税</span>
+                        <span class="label gray">停产在售</span>
+                        <strong class="about">前置前驱  5挡手动</strong>
+
+                    </td>
+                    <td>
+                        <div class="ow">
+                            <div class="iw" style="width: 23%"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="counter"><i></i>43.56万</span>
+                    </td>
+                    <td>
+                        <a href="javascript:;"><strong class="guide_price">34.17万起</strong></a>
+                        <a href="javascript:;" class="inquiry">询底价</a>
+                    </td>
+                    <td class="cf">
+                        <a href="javascript:;" class="p1">图片</a>
+                        <a href="javascript:;" class="p1">配置</a>
+                        <a href="javascript:;" class="compare" data-cid="123333"><b></b>对比</a>
+                        <span href="javascript:;" class="compare_y">已对比</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="javascript:;"><h2>2015款 Sportback 35 TFSI 纪念智领版纪念智领版</h2></a>
+                        <strong class="about">前置前驱  5挡手动</strong>
+                    </td>
+                    <td>
+                        <div class="ow">
+                            <div class="iw" style="width: 23%"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="counter"><i></i>43.56万</span>
+                    </td>
+                    <td>
+                        <a href="javascript:;"><strong class="guide_price">34.17万起</strong></a>
+                        <a href="javascript:;" class="inquiry">询底价</a>
+                    </td>
+                    <td class="cf">
+                        <a href="javascript:;" class="p1">图片</a>
+                        <a href="javascript:;" class="p1">配置</a>
+                        <a href="javascript:;" class="compare" data-cid="123333"><b></b>对比</a>
+                        <span href="javascript:;" class="compare_y">已对比</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="javascript:;"><h2>2015款 Sportback 35 TFSI 纪念智领版纪念智领版</h2></a>
+                        <strong class="about">前置前驱  5挡手动</strong>
+                    </td>
+                    <td>
+                        <div class="ow">
+                            <div class="iw" style="width: 23%"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="counter"><i></i>43.56万</span>
+                    </td>
+                    <td>
+                        <a href="javascript:;"><strong class="guide_price">34.17万起</strong></a>
+                        <a href="javascript:;" class="inquiry">询底价</a>
+                    </td>
+                    <td class="cf">
+                        <a href="javascript:;" class="p1">图片</a>
+                        <a href="javascript:;" class="p1">配置</a>
+                        <a href="javascript:;" class="compare" data-cid="123333"><b></b>对比</a>
+                        <span href="javascript:;" class="compare_y">已对比</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="javascript:;"><h2>2015款 Sportback 35 TFSI 纪念智领版纪念智领版</h2></a>
+                        <strong class="about">前置前驱  5挡手动</strong>
+                    </td>
+                    <td>
+                        <div class="ow">
+                            <div class="iw" style="width: 23%"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="counter"><i></i>43.56万</span>
+                    </td>
+                    <td>
+                        <a href="javascript:;"><strong class="guide_price">34.17万起</strong></a>
+                        <a href="javascript:;" class="inquiry">询底价</a>
+                    </td>
+                    <td class="cf">
+                        <a href="javascript:;" class="p1">图片</a>
+                        <a href="javascript:;" class="p1">配置</a>
+                        <a href="javascript:;" class="compare" data-cid="123333"><b></b>对比</a>
+                        <span href="javascript:;" class="compare_y">已对比</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!--footer model -->
+<!-- 底部 -->
+<div class="footer">
+    <div class="footer_content">
+        <ul>
+            <li class="footer_message"><a href="http://www.xingyuanauto.com/" target="_blank">关于我们</a></li>
+            <li class="footer_message"><a href="http://www.xingyuanauto.com/" target="_blank">联系我们</a></li>
+            <li class="footer_message"><a href="http://www.xingyuanauto.com/html/recruitment.html?newtarget=technology" target="_blank">招贤纳士</a></li>
+            <li class="footer_message"><a href="dealer.xingyuanauto.com" target="_blank">行圆智慧云</a></li>
+            <li class="website"><a href="javascript:void (0)">@2016-2017 www .qichedaquan .com All Rights Reserved. 北京行圆汽车信息技术有限公司所有</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--对比回到顶部-->
+<!--对比回到顶部-->
+<div class="position_fixed" id="position_fixed">
+    <!--constract model -->
+    <div class="type_constract">
+        <div class="type_constract_btn js_constract"><em class="pk"></em><span class="pk_text">车型对比</span><i>0</i></div>
+        <div class="type_constract_list js_con_list display_n">
+            <div class="t_c_title">
+                <h5>车型对比</h5><span class="js_hide">隐藏></span></div>
+            <div class="t_c_content js_tc_content">
+                <ul class="search_history js_search_his">
+                    <!--<li><a href="#">奔驰 2017款 A3 Sportback-35TFSUI 进取型</a><i class="delete_icon"></i></li>-->
+                    <!--<li><a href="#">奔驰 2017款 A3 TESI 进取型</a><i class="delete_icon"></i></li>-->
+                </ul>
+                <div class="search_input">
+                    <div class="choice_brand">
+                        <p class="choice_input js_brand"><span class="js_ct">请选择车款</span><span class="js_bra display_n">请选择品牌</span><i class="down_icon"></i></p>
+                        <div class="brand_scroll_area display_n">
+                            <p class="choice_route"><span class="blue_border">品牌</span></p>
+                            <div class="brand-scroll-list-box">
+                                <div class="brand-letter-index"><span><a href="javascript:void(0);">A</a></span><span><a href="javascript:void(0);">B</a></span><span><a href="javascript:void(0);">C</a></span><span><a href="javascript:void(0);">D</a></span><span><a href="javascript:void(0);">E</a></span><span><a href="javascript:void(0);">F</a></span><span><a href="javascript:void(0);">G</a></span><span><a href="javascript:void(0);">H</a></span><span><a href="javascript:void(0);">I</a></span><span><a href="javascript:void(0);">J</a></span><span><a href="javascript:void(0);">K</a></span><span><a href="javascript:void(0);">L</a></span><span><a href="javascript:void(0);">M</a></span><span><a href="javascript:void(0);">N</a></span><span><a href="javascript:void(0);">O</a></span><span><a href="javascript:void(0);">P</a></span><span><a href="javascript:void(0);">Q</a></span><span><a href="javascript:void(0);">R</a></span><span><a href="javascript:void(0);">S</a></span><span><a href="javascript:void(0);">T</a></span><span><a href="javascript:void(0);">U</a></span><span><a href="javascript:void(0);">V</a></span><span><a href="javascript:void(0);">W</a></span><span><a href="javascript:void(0);">X</a></span><span><a href="javascript:void(0);">Y</a></span><span><a href="javascript:void(0);">Z</a></span></div>
+                                <div
+                                    class="brand-scroll-list show-scroll-bar">
+                                    <!--<ul class="brand-list-a"><li><a href="javascript:void(0);">A<span>奥迪</span></a></li><li><a href="javascript:void(0);">A<span>阿拉斯▪马丁</span></a></li><li><a href="javascript:void(0);">A<span>阿尔法▪罗密欧</span></a></li><li><a href="javascript:void(0);">A<span>阿尔特</span></a></li><li><a href="javascript:void(0);">A<span>AC Schnitzer</span></a></li><li><a href="javascript:void(0);">A<span>Arteda</span></a></li></ul><ul><li><a href="javascript:void(0);">B<span>本田</span></a></li><li><a href="javascript:void(0);">B<span>奔驰</span></a></li><li><a href="javascript:void(0);">B<span>宝马</span></a></li><li><a href="javascript:void(0);">B<span>别克</span></a></li><li><a href="javascript:void(0);">B<span>宝骏</span></a></li><li><a href="javascript:void(0);">B<span>标致</span></a></li><li><a href="javascript:void(0);">B<span>比亚迪</span></a></li><li><a href="javascript:void(0);">B<span>保时捷</span></a></li></ul><ul><li><a href="javascript:void(0);">C<span>长安轿车</span></a></li><li><a href="javascript:void(0);">C<span>长安商用</span></a></li><li><a href="javascript:void(0);">C<span>长城</span></a></li><li><a href="javascript:void(0);">C<span>昌河</span></a></li><li><a href="javascript:void(0);">C<span>长安跨越</span></a></li><li><a href="javascript:void(0);">C<span>长久汽车</span></a></li></ul><ul><li><a href="javascript:void(0);">D<span>长安轿车</span></a></li><li><a href="javascript:void(0);">D<span>长安商用</span></a></li><li><a href="javascript:void(0);">D<span>长城</span></a></li><li><a href="javasDript:void(0);">D<span>昌河</span></a></li><li><a href="javasDript:void(0);">D<span>长安跨越</span></a></li><li><a href="javascript:void(0);">D<span>长久汽车</span></a></li></ul><ul><li><a href="javasDript:void(0);">E<span>长安轿车</span></a></li><li><a href="javasEript:void(0);">E<span>长安商用</span></a></li><li><a href="javascript:void(0);">E<span>长城</span></a></li><li><a href="javascript:void(0);">E<span>昌河</span></a></li><li><a href="javascript:void(0);">E<span>长安跨越</span></a></li><li><a href="javascript:void(0);">E<span>长久汽车</span></a></li></ul><ul><li><a href="javasDript:void(0);">F<span>长安轿车</span></a></li><li><a href="javasEript:void(0);">F<span>长安商用</span></a></li><li><a href="javascript:void(0);">F<span>长城</span></a></li><li><a href="javascript:void(0);">F<span>昌河</span></a></li><li><a href="javascript:void(0);">F<span>长安跨越</span></a></li><li><a href="javascript:void(0);">F<span>长久汽车</span></a></li></ul><ul><li><a href="javasDript:void(0);">G<span>长安轿车</span></a></li><li><a href="javasEript:void(0);">G<span>长安商用</span></a></li><li><a href="javascript:void(0);">G<span>长城</span></a></li><li><a href="javascript:void(0);">G<span>昌河</span></a></li><li><a href="javascript:void(0);">G<span>长安跨越</span></a></li><li><a href="javascript:void(0);">G<span>长久汽车</span></a></li></ul><ul><li><a href="javasDript:void(0);">H<span>长安轿车</span></a></li><li><a href="javasEript:void(0);">H<span>长安商用</span></a></li><li><a href="javascript:void(0);">H<span>长城</span></a></li><li><a href="javascript:void(0);">H<span>昌河</span></a></li><li><a href="javascript:void(0);">H<span>长安跨越</span></a></li><li><a href="javascript:void(0);">H<span>长久汽车</span></a></li></ul><ul><li><a href="javasDript:void(0);">I<span>长安轿车</span></a></li><li><a href="javasEript:void(0);">I<span>长安商用</span></a></li><li><a href="javascript:void(0);">I<span>长城</span></a></li><li><a href="javascript:void(0);">I<span>昌河</span></a></li><li><a href="javascript:void(0);">I<span>长安跨越</span></a></li><li><a href="javascript:void(0);">I<span>长久汽车</span></a></li></ul><ul><li><a href="javasDript:void(0);">J<span>长安轿车</span></a></li><li><a href="javasEript:void(0);">J<span>长安商用</span></a></li><li><a href="javascript:void(0);">J<span>长城</span></a></li><li><a href="javascript:void(0);">J<span>昌河</span></a></li><li><a href="javascript:void(0);">J<span>长安跨越</span></a></li><li><a href="javascript:void(0);">J<span>长久汽车</span></a></li></ul><ul><li><a href="javasDript:void(0);">K<span>长安轿车</span></a></li><li><a href="javasEript:void(0);">K<span>长安商用</span></a></li><li><a href="javascript:void(0);">K<span>长城</span></a></li><li><a href="javascript:void(0);">K<span>昌河</span></a></li><li><a href="javascript:void(0);">K<span>长安跨越</span></a></li><li><a href="javascript:void(0);">K<span>长久汽车</span></a></li></ul><ul><li><a href="javasDript:void(0);">L<span>长安轿车</span></a></li><li><a href="javasEript:void(0);">L<span>长安商用</span></a></li><li><a href="javascript:void(0);">L<span>长城</span></a></li><li><a href="javascript:void(0);">L<span>昌河</span></a></li><li><a href="javascript:void(0);">L<span>长安跨越</span></a></li><li><a href="javascript:void(0);">L<span>长久汽车</span></a></li></ul><ul><li><a href="javasDript:void(0);">M<span>长安轿车</span></a></li><li><a href="javasEript:void(0);">M<span>长安商用</span></a></li><li><a href="javascript:void(0);">M<span>长城</span></a></li><li><a href="javascript:void(0);">M<span>昌河</span></a></li><li><a href="javascript:void(0);">M<span>长安跨越</span></a></li><li><a href="javascript:void(0);">M<span>长久汽车</span></a></li></ul>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="choice_car_type js_car_type display_n">
+                    <p class="choice_input js_type"><span>请选择车型</span><i class="down_icon"></i></p>
+                    <div class="car_type_scroll_area">
+                        <p class="choice_route"><span class="js_b_tit">奥迪</span><i>></i><span class="blue_border">型号</span></p>
+                        <div class="car-type-scroll-list display-n show-scroll-bar">
+                            <p class="all_item">全部</p>
+                            <!--<dl><dt>北京奔驰</dt><dd><a href="javascript:void(0);">C 级</a></dd><dd><a href="javascript:void(0);">E 级</a></dd><dd><a href="javascript:void(0);">GLC 级</a></dd><dd><a href="javascript:void(0);">CLA 级</a></dd><dd><a href="javascript:void(0);">GLD 级</a></dd></dl><dl><dt>福建奔驰</dt><dd><a href="javascript:void(0);">凌特</a></dd><dd><a href="javascript:void(0);">V 级</a></dd><dd><a href="javascript:void(0);">C 级</a></dd></dl><dl><dt>北京奔驰</dt><dd><a href="javascript:void(0);">C 级</a></dd><dd><a href="javascript:void(0);">E 级</a></dd><dd><a href="javascript:void(0);">V 级</a></dd><dd><a href="javascript:void(0);">F 级</a></dd><dd><a href="javascript:void(0);">S 级</a></dd></dl><dl><dt>北京奔驰</dt><dd><a href="javascript:void(0);">C 级</a></dd><dd><a href="javascript:void(0);">E 级</a></dd><dd><a href="javascript:void(0);">V 级</a></dd><dd><a href="javascript:void(0);">F 级</a></dd><dd><a href="javascript:void(0);">S 级</a></dd></dl><dl><dt>北京奔驰</dt><dd><a href="javascript:void(0);">C 级</a></dd><dd><a href="javascript:void(0);">E 级</a></dd><dd><a href="javascript:void(0);">V 级</a></dd><dd><a href="javascript:void(0);">F 级</a></dd><dd><a href="javascript:void(0);">S 级</a></dd></dl>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="choice_car_style js_car_style display_n">
+                    <p class="choice_input js_style"><span>请选择车款</span><i class="down_icon"></i></p>
+                    <div class="car_style_scroll_area">
+                        <p class="choice_route"><span>奥迪</span><i>></i><span>A3</span><i>></i><span class="js_style_tit blue_border">车款</span></p>
+                        <div class="car-style-scroll-list show-scroll-bar">
+                            <p class="all_item">全部</p>
+                            <dl><dt>2016款</dt>
+                                <dd><span>Sportback35TFSUI 进取型</span><i>12.8万起</i></dd>
+                                <dd><span>Sportback35TFSUI 进取型</span><i>12.8万起</i></dd>
+                                <dd><span>Sportback35TFSUI 进取型</span><i>12.8万起</i></dd>
+                                <dd><span>Sportback35TFSUI 进取型</span><i>12.8万起</i></dd>
+                                <dd><span>Sportback35TFSUI 进取型</span><i>12.8万起</i></dd>
+                            </dl>
+                            <dl><dt>2015款</dt>
+                                <dd><span>Sportback35TFSUI 进取型</span><i>12.8万起</i></dd>
+                                <dd><span>Sportback35TFSUI 进取型</span><i>12.8万起</i></dd>
+                                <dd><span>Sportback35TFSUI 进取型</span><i>12.8万起</i></dd>
+                                <dd><span>Sportback35TFSUI 进取型</span><i>12.8万起</i></dd>
+                                <dd><span>Sportback35TFSUI 进取型</span><i>12.8万起</i></dd>
+                            </dl>
+                            <dl><dt>2014款</dt>
+                                <dd><span>Sportback35TFSUI 进取型</span><i>12.8万起</i></dd>
+                                <dd><span>Sportback35TFSUI 进取型</span><i>12.8万起</i></dd>
+                                <dd><span>Sportback35TFSUI 进取型</span><i>12.8万起</i></dd>
+                                <dd><span>Sportback35TFSUI 进取型</span><i>12.8万起</i></dd>
+                                <dd><span>Sportback35TFSUI 进取型</span><i>12.8万起</i></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <p class="start_contrast"><span class="dis_click">开始对比</span><a class="sure_click display_n" href="javascript:void(0)">开始对比</a></p>
+            </div>
+            <div class="tip_bar"><span class="tip">最多对比10个车款</span><span class="clear_all">清空</span></div><i class="jt"></i></div>
+    </div>
+</div>
+<!--goTop model -->
+<div class="go_top display_n" id="back_to_top"><span class="goTop_icon"></span><span class="goTop_text">返回顶部</span></div>
+</div>
+</body>
+<script src="data/lefttree.js"></script>
+<script src="js/jquery-1.12.3.js"></script>
+<script src="js/jquery.mousewheel.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.min.js"></script>
+
+<script src="js/leftnav.js"></script>
+<script src="js/index.js"></script>
+
+
+<script src="data/carTypeJson.js"></script>
+<script src="js/gotopContrast.js"></script>
+<script src="js/carModel.js"></script>
+<script>
+    $(function(){
+        if (navigator.appName === 'Microsoft Internet Explorer') { //判断是否是IE浏览器
+            if (navigator.userAgent.match(/Trident/i) && navigator.userAgent.match(/MSIE 8.0/i)) { //判断浏览器内核是否为Trident内核IE8.0
+                $(".btn_list a:last-child").css({
+                    'margin-right':'0'
+                });
+            }
+        }
+    });
+
+</script>
+</html>

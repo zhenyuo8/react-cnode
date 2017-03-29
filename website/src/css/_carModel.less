@@ -1,0 +1,861 @@
+/*****
+ *@author: zhangbs
+ *@from: 适用于第一期页面
+ *@description: 何在朋
+ *@date: name (2017.02.06)
+*/
+@import (reference) "public";
+@import "mod/mod_headerCarMenu";
+@import "mod/mod_goTop";
+@import "mod/mod_headerLogo";
+@import "mod/mod_headerTitle";
+@import "mod/mod_footer";
+@import "mod/mod_gotopContrast";
+@import "mod/mod_leftTree";
+@import "mod/mod_screenCar";
+@import "mod/mod_sumTurnPage";
+@import "mod/mod_pagination";
+@import "mod/mod_brandContrast";
+@import "mod/mod_advert";
+body{
+    background: #fff;
+}
+
+.content_wrap{
+    width:@width-990;
+
+    margin:10px auto 48px;
+}
+//热门品牌，热门车型等标题栏
+.hot_title{
+    border-bottom: 4px solid @color-333;
+    margin-top:25px;
+    margin-bottom: 20px;
+    &.hot_titlecal{
+        margin-bottom: 8px;
+    }
+    &.hot_tit{
+        margin-bottom: 19px;
+    }
+    &.cartype{
+        border-bottom: 2px solid @color-eee;
+        margin-bottom: 18px;
+        h3{
+            font-size: 16px;
+        }
+    }
+    h3{
+        font-size: @font-20;
+        font-weight: bold;
+        line-height: @line-height-44;
+        padding-right: 8px;
+        a{
+            color:@color-333;
+            &:hover{
+                color:@color-398be4;
+            }
+            &:active{
+                color:@color-126acc;
+            }
+        }
+        img{
+            width: 40px;
+            height: 40px;
+            vertical-align: middle;
+            margin-right: 8px;
+            position:relative;
+            top:-1px;
+            display: inline-block;
+        }
+    }
+    strong{
+        line-height: @line-height-44;
+        font-size: @font-16;
+        cursor: pointer;
+    }
+    i{
+        line-height: @line-height-44;
+        color:@color-999;
+    }
+    .hot_right li{
+        float:left;
+        a{
+            font-size: @font-14;
+            padding:0 12px;
+            border-left:1px solid @color-eee;
+            line-height: 44px;
+            position: relative;
+            top:4px;
+            &:hover{
+                color:@color-398be4;
+            }
+            &:active{
+                color:@color-126acc;
+            }
+        }
+        &:first-child a{
+            border:none;
+        }
+        &:last-child a{
+            padding-right: 0;
+        }
+    }
+    .hot_left li{
+        &.active,&.active strong{
+            font-weight: bold;
+        }
+        float:left;
+        a{
+            font-size: @font-16;
+            padding:0 12px;
+            border-left:1px solid @color-eee;
+            line-height: 44px;
+            &:hover{
+                color:@color-398be4;
+            }
+            &:active{
+                color:@color-126acc;
+            }
+        }
+        &:first-child a{
+            border:none;
+        }
+    }
+    .sort_ul li{
+        float:left;
+        line-height: @line-height-44;
+        b{
+            width:12px;
+            height:10px;
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            top:-1px;
+            margin-left: 2px;
+            &.b1{
+                background:url("../img/sprite.png") 0 -2288px;
+            }
+            &.b2{
+                background:url("../img/sprite.png") 0 -2298px;
+            }
+        }
+        &.active{
+            font-weight: bold;
+        }
+        a{
+            padding:0 12px;
+            border-right:1px solid @color-eee;
+            &:hover{
+                color: @color-398be4;
+            }
+            &:active{
+                color: @color-126acc;
+            }
+
+        }
+        &:last-child a{
+            border-right: none;
+        }
+    }
+}
+//热门品牌列表
+.hot_brand{
+    border-left:1px solid @color-f2f2f2;
+    border-top:1px solid @color-f2f2f2;
+    li{
+        a{
+            color:@color-333;
+            display: block;
+            width: 142px;
+            height: 110px;
+            text-align: center;
+            padding-top: 30px;
+            img{
+                width:55px;
+                height:55px;
+            }
+            strong{
+                display: block;
+                text-align: center;
+                line-height: 42px;
+            }
+            &:hover{
+                background:@color-eee;
+            }
+            &:active{
+                background:@color-dadada;
+            }
+            //&:hover strong{
+            //    color: #c00;
+            //    text-decoration: underline;
+            //}
+        }
+        float: left;
+        border-right:1px solid @color-f2f2f2;
+        border-bottom:1px solid @color-f2f2f2;
+        width:142px;
+        height:140px;
+
+    }
+}
+//热门车型列表
+.hot_type{
+    li{
+        float:left;
+        width:185px;
+        .hott_wrap{
+            margin-right: 20px;
+        }
+        img{
+            width:165px;
+            height:110px;
+            margin:20px 20px 9px 0;
+
+        }
+        &:nth-of-type(4n){
+            width:165px;
+            img{
+                margin:20px 0 9px 0;
+            }
+            .hott_wrap{
+                margin-right: 0;
+            }
+        }
+        strong{
+            display: block;
+            text-align: center;
+            line-height: 24px;
+            font-size: @font-14;
+            font-weight: bold;
+            &:hover{
+                color:@color-3189e9;
+            }
+            &:active{
+                color:@color-126acc;
+            }
+        }
+        b{
+            color:@color-e53939;
+            text-align: center;
+            display: block;
+            line-height: 20px;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+    }
+    span{
+        text-align: center;
+        color:@color-999;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+//车型关注排行榜
+.top_list{
+    dl{
+        float:left;
+        margin-bottom: 18px;
+        width:198px;
+        overflow: hidden;
+        &:nth-of-type(3n+1),&:nth-of-type(3n+2){
+            padding-right:30px;
+        }
+        &:nth-of-type(3n+2),&:nth-of-type(3n+3){
+            padding-left:32px;
+            border-left:1px solid @color-eee;
+        }
+        dt{
+            font-size: @font-16;
+            line-height: 24px;
+        }
+        dd{
+            width:198px;
+            padding:8px 0;
+            span{
+                width:16px;
+                height:16px;
+                border:1px solid @color-eee;
+                display: block;
+                text-align: center;
+                line-height: 16px;
+                margin-right: 6px;
+                &.active{
+                    background: @color-ffa903;
+                    border:1px solid @color-ffa903;
+                    color:@color-fff;
+                }
+            }
+            strong a{
+                &:hover{
+                    color:@color-3189e9;
+                }
+                &:active{
+                    color:@color-126acc;
+                }
+            }
+            i{
+                color:@color-999;
+
+            }
+        }
+
+    }
+}
+//车系经销商报价展示
+#car_series{
+    .left_img{
+        width:300px;
+        img{
+            width:264px;
+            height:164px;
+            margin:13px 0 0 18px;
+            padding-right: 27px;
+        }
+    }
+    .right_mod{
+        width:418px;
+        ul{
+            margin-top: 4px;
+        }
+
+        p{
+            font-size: @font-16;
+            color:@color-999;
+            strong{
+                color:@color-e43a3a;
+                font-weight: bold;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            line-height: 42px;
+            border-bottom: 1px solid @color-eee;
+        }
+        li{
+            float:left;
+            width:50%;
+            height: 28px;
+            line-height: 28px;
+            font-size: @font-14;
+            color:@color-999;
+
+            span{
+                display: inline-block;
+                width: 70px;
+                text-align: justify;
+                text-align-last: justify;
+            }
+            i{
+                color:@color-333;
+            }
+        }
+        .btn_list{
+            margin-top: 14px;
+            .last-child{
+                margin-right: 0;
+            }
+            a{
+                float: left;
+                width:128px;
+                height:34px;
+                background:@color-eee;
+                border:1px solid @color-dadada;
+                display: block;
+                line-height: 34px;
+                text-align: center;
+                margin-right: 14px;
+                font-size: @font-16;
+                &:last-child{
+                    margin-right: 0;
+                }
+                &.active{
+                    background: @color-ffa903;
+                    border:1px solid @color-ffa903;
+                    color:@color-fff;
+                    &:hover{
+                        background:@color-ff9027;
+                        color:@color-fff;
+                    }
+                    &:active{
+                        background:@color-fa802a;
+                        color:@color-fff;
+                    }
+                }
+                &.blue{
+                    &:hover{
+                        background:@color-3f8de0;
+                        color:@color-fff;
+                    }
+                    &:active{
+                        background:@color-1c6dc9;
+                        color:@color-fff;
+                    }
+                }
+            }
+        }
+    }
+}
+//全部在售及对比列表
+.car_table{
+    thead{
+        background:@color-eee;
+        border-bottom:1px solid @color-dadada;
+        line-height: 40px;
+        font-size: @font-14;
+        color:@color-333;
+        font-weight: bold;
+        text-align: left;
+    }
+    .thead_color{
+        color:@color-999;
+    }
+    .about {
+        color:@color-999;
+        line-height: 24px;
+        display: block;
+    }
+
+    h2{
+        line-height: 24px;
+        font-size:@font-12;
+        &:hover{
+            color:@color-3189e9;
+        }
+        &:active{
+            color:@color-126acc;
+        }
+    }
+    .ow{
+        width:30px;
+        height:4px;
+        background:@color-dadada;
+        .iw{
+            width:32%;
+            height:4px;
+            background:@color-398be4;
+        }
+    }
+    .counter i{
+        width:12px;
+        height:13px;
+        background: url("../img/sprite.png") no-repeat -12px -2288px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 4px;
+        position: relative;
+        top:-1px;
+    }
+    .guide_price{
+        color:@color-e43a3a;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    .inquiry{
+        width:52px;
+        height:24px;
+        display: inline-block;
+        line-height: 24px;
+        text-align: center;
+        background:@color-ffa903;
+        color:@color-fff;
+        margin-left: 6px;
+        &:hover{
+            background:@color-ff9027;
+        }
+        &:active{
+            background:@color-fa802a;
+        }
+    }
+    .p1{
+        line-height: 24px;
+        float: left;
+    }
+    .compare{
+        width:50px;
+        height:22px;
+        display: inline-block;
+        line-height: 22px;
+        text-align: center;
+        background:@color-eee;
+        margin-left: 4px;
+        border:1px solid @color-dadada;
+        b{
+            width:12px;
+            height:12px;
+            display: inline-block;
+            background:url("../img/sprite.png") -12px -2263px;
+            vertical-align: middle;
+            position: relative;
+            top:-1px;
+            margin-right: 4px;
+        }
+        &:hover{
+            color:@color-3189e9;
+            b{
+                background:url("../img/sprite.png") -12px -2276px;
+            }
+        }
+        &:active{
+            color:@color-126acc;
+            b{
+                background:url("../img/sprite.png") 0 -2276px;
+            }
+        }
+
+    }
+    .compare_y{
+        width:50px;
+        height:22px;
+        line-height: 22px;
+        text-align: center;
+        margin-right: 4px;
+        float: right;
+        background:@color-eee;
+        margin-left: 4px;
+        border:1px solid @color-dadada;
+        display: none;
+        color:@color-999;
+    }
+    th:first-child{
+        padding-left: 5px;
+    }
+    th{
+        span{
+            padding-left: 10px;
+        }
+    }
+    tbody tr td{
+        border-bottom: 1px solid @color-dadada;
+        padding-top:10px;
+        padding-bottom: 4px;
+        &:last-child a{
+            line-height: 24px;
+            padding: 0 3px;
+
+            &:hover{
+                color:@color-3189e9;
+            }
+            &:active{
+                color:@color-126acc;
+            }
+        }
+
+        h2 {
+            display:block;
+            margin-bottom: 5px;
+        }
+    }
+    .label{
+        color:@color-fff;
+        background:@color-aaa;
+        padding:2px 4px;
+        margin: 5px 5px 8px;
+        display: inline-block;
+        margin-left: 0px;
+        &.blue{
+            background: @color-398be4;
+        }
+    }
+    &.car_tab{
+        background:@color-fff;
+        tbody{
+            td{
+                padding-left: 4px;
+            }
+        }
+    }
+    .car_style{
+        a{
+            display: block;
+        }
+    }
+}
+//n个车款符合条件-弹窗ks
+.drop_box{
+    border:1px solid @color-333;
+    border-bottom: 5px solid @color-333;
+    display: none;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+    background: #fff;
+}
+.tab_wrap{
+
+    width:720px;
+    height:333px;
+    overflow-y: auto;
+    .car_style{
+        a{
+            &:hover{
+                color: #398be4;
+            }
+        }
+    }
+}
+//n个车款符合条件-弹窗js
+.drop_title{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 2;
+
+}
+//全部在售title
+.select_div{
+    margin:24px 0 0 0;
+    border-bottom: 2px solid @color-dadada;
+    strong{
+        font-size: @font-16;
+        padding-right: 12px;
+        font-weight: bold;
+        line-height: 40px;
+    }
+}
+//车型选车列表
+.cart_type{
+    li{
+        float:left;
+        width:185px;
+        margin-bottom: 18px;
+        img{
+            width:165px;
+            height:110px;
+            margin-right:20px;
+            margin-top: 8px;
+            margin-bottom: 10px;
+        }
+        strong{
+            display: block;
+            text-align: center;
+            line-height: 24px;
+            font-size: @font-14;
+            font-weight: bold;
+            &:hover{
+                color:@color-3189e9;
+            }
+            &:active{
+                color:@color-126acc;
+            }
+        }
+        b{
+            color:@color-e43a3a;
+            text-align: center;
+            display: block;
+            line-height: 20px;
+            &:hover{
+                color:@color-fe0000;
+                text-decoration: underline;
+            }
+            &:active{
+                color:@color-f00001;
+            }
+        }
+        &:nth-of-type(4n){
+            width:165px;
+            img{
+                margin-right: 0;
+            }
+            .str_bp{
+                margin-right:0;
+            }
+        }
+        .accord{
+            width:165px;
+            height:28px;
+            margin-bottom: 9px;
+            background: @color-eee;
+            border:1px solid @color-dadada;
+            display: block;
+            line-height: 26px;
+            text-align: center;
+            i{
+                color:@color-e53939;
+            }
+            &.active{
+                height:27px;
+                color:@color-fff;
+                background: @color-333;
+                border:1px solid @color-333;
+                border-bottom:11px solid @color-333;
+                margin-bottom: 0;
+                line-height: 28px;
+                i{
+                    color:@color-fff;
+                }
+                span{
+                    width:12px;
+                    height:6px;
+                    display: inline-block;
+                    background: url("../img/sprite.png") no-repeat 0 -2270px;
+                    position: relative;
+                    top: -2px;
+                }
+                &:hover{
+                    color:@color-f7f7f7;
+                    i{
+                        color:@color-f7f7f7;
+                    }
+                }
+            }
+            &:hover{
+                color:@color-3189e9;
+                i{
+                    color:@color-3189e9;
+                }
+            }
+        }
+        span{
+            width:12px;
+            height:6px;
+            display: inline-block;
+            background: url("../img/sprite.png") no-repeat 0 -2263px;
+            margin-left: 5px;
+            position: relative;
+            top: -2px;
+        }
+        p{
+            text-align: center;
+            color: #999;
+            display: block;
+            margin-bottom: 9px;
+            white-space: nowrap;
+        }
+        .str_bp{
+            margin-right: 20px;
+        }
+        a{
+            display: block;
+        }
+    }
+}
+/*筛选无结果*/
+.noResult {
+    width: 100%;
+    padding-top: 50px;
+
+    dt {
+        float: left;
+        margin-left: 61px;
+    }
+    dd {
+        float: left;
+        margin-left: 26px;
+    }
+
+    .b_hint {
+        width: 247px;
+        font-size: 26px;
+        margin-top:80px;
+    }
+    .s_hint {
+        font-size: 18px;
+        color: #b6b6b6;
+        margin-top:20px;
+    }
+}
+
+//面包屑
+.content_nav{
+    margin:18px 0 25px 0;
+    strong{
+        color: @color-999;
+    }
+    span a{
+        &:last-child{
+            color:@color-398be4;
+            cursor: text;
+        }
+    }
+}
+//品牌选车车型列表
+.brand_car{
+    li{
+        float:left;
+        width:165px;
+        margin-right: 20px;
+        margin-bottom: 18px;
+        &:nth-of-type(4n){
+            margin-right: 0;
+        }
+        img{
+            width:165px;
+            height:110px;
+        }
+        strong{
+            display: block;
+            text-align: center;
+            line-height: 24px;
+            font-size: @font-14;
+            font-weight: bold;
+            margin-top: 7px;
+            width: 165px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            &:hover{
+                color:@color-3189e9;
+            }
+            &:active{
+                color:@color-126acc;
+            }
+        }
+        b{
+            color:@color-e53939;
+            text-align: center;
+            display: block;
+            line-height: 20px;
+            &:hover{
+                color:@color-fe0000;
+                text-decoration: underline;
+            }
+            &:active{
+                color:@color-f00001;
+            }
+        }
+        span{
+            text-align: center;
+            color: #999;
+            display: block;
+        }
+    }
+}
+.dis_no{
+    display: none;
+}
+//车型列表小标题
+.car_logo{
+    font-size: @font-16;
+    line-height: 26px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+.minH788{
+    min-height: 788px;
+}
+.hot_title .hot_right .no_click{
+    a{
+        color: #ccc;
+        cursor: text;
+        &:hover{
+            color: #ccc;
+            text-decoration: none;
+        }
+    }
+
+}
+.brand-title .tab_car_type .no_click{
+    a{
+        color: #ccc;
+        cursor: text;
+        &:hover{
+            color: #ccc;
+            text-decoration: none;
+        }
+    }
+
+}

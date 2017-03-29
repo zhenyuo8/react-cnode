@@ -1,0 +1,76 @@
+/*****
+ *@author: jianingning
+ *@from: Global style mod_carHot
+ *@description: 何在朋
+ *@date: name (2017.02.04)
+*/
+.imgs_hot_title {
+  height: 30px;
+  padding-top: 16px;
+  font-size: 16px;
+  color: #333;
+  font-weight: 700;
+}
+.we-buy .bor-to-bo-ri {
+  border: 1px solid #eee;
+  border-left: none;
+}
+.we-buy .bor-to-bo-ri .fl-li {
+  height: 33px;
+  width: 59px;
+  border-left: 2px solid #f7f7f7;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  background-color: #f7f7f7;
+  text-align: center;
+  line-height: 33px;
+  cursor: pointer;
+  color: #666;
+}
+.we-buy .bor-to-bo-ri .active {
+  border-left: 2px solid #FFA904;
+  border-right: 1px solid #fff;
+  background-color: #fff;
+}
+.we-buy .bor-to-bo-ri .fl_li_nBoder {
+  border-bottom: none;
+}
+.we-buy .w189 {
+  width: 140px;
+}
+.we-buy .w189 ul {
+  display: none;
+}
+.we-buy .w189 ul li {
+  height: 33px;
+  width: 140px;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+  line-height: 33px;
+  cursor: pointer;
+}
+.we-buy .w189 ul li .num {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: #c4c4c4;
+  color: #FEFFFD;
+  text-align: center;
+  margin-left: 4px;
+  vertical-align: text-bottom;
+  line-height: 16px;
+  margin-right: 12px;
+}
+.we-buy .w189 ul li .bgtop {
+  background: #FFA904;
+}
+.we-buy .w189 ul li:hover a {
+  color: #398be4;
+  text-decoration: underline;
+}
+.we-buy .w189 ul .l-li-nBorder {
+  border-bottom: none;
+}
+.we-buy .w189 .js-show {
+  display: block;
+}

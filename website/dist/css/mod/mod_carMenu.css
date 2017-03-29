@@ -1,0 +1,146 @@
+/*****
+ *@author: jianingning
+ *@from: Global style mod_carMenu
+ *@description: 何在朋
+ *@date: name (2017.02.04)
+*/
+.imgs_c_top .imgs_c_crumbs {
+  height: 50px;
+  line-height: 50px;
+  color: #999;
+}
+.imgs_c_top .imgs_c_crumbs a {
+  display: inline-block;
+  margin: 0 8px;
+  color: #666;
+}
+.imgs_c_top .imgs_c_crumbs a:last-child {
+  color: #398be4;
+}
+.imgs_c_top .imgs_c_crumbs a:hover {
+  color: #398be4;
+}
+.imgs_c_top .imgs_c_list {
+  height: 42px;
+  padding-top: 20px;
+  border: 1px solid #c4c4c4;
+  border-bottom: none;
+  padding-left: 12px;
+  position: relative;
+}
+.imgs_c_top .imgs_c_list .imgs_car_sign {
+  margin-top: 8px;
+  display: inline-block;
+  float: left;
+}
+.imgs_c_top .imgs_c_list .imgs_car_name {
+  font-size: 20px;
+  color: #333;
+  font-weight: 700;
+  margin-left: 12px;
+  display: inline-block;
+  float: left;
+}
+.imgs_c_top .imgs_c_list .imgs_car_year {
+  float: left;
+  margin-top: 5px;
+}
+.imgs_c_top .imgs_c_list .imgs_car_year li {
+  float: left;
+  width: 67px;
+  text-align: center;
+  border-right: 1px solid #c4c4c4;
+  cursor: pointer;
+}
+.imgs_c_top .imgs_c_list .imgs_car_year li:first-child {
+  font-weight: 700;
+}
+.imgs_c_top .imgs_c_list .imgs_car_year li:hover a {
+  color: #398be4;
+  text-decoration: underline;
+}
+.imgs_c_top .imgs_c_list .imgs_car_year li .imgs_down {
+  float: right;
+  margin-top: 5px;
+  margin-right: 20px;
+  display: inline-block;
+  width: 9px;
+  height: 7px;
+  background-image: url("../img/sprite.png");
+  background-position: 0px -74px;
+}
+.imgs_c_top .imgs_c_list .imgs_car_year li .tsYear {
+  margin-left: 6px;
+}
+.imgs_c_top .imgs_c_list .imgs_car_year .imgs_no_border {
+  border-right: 0px;
+  width: 88px;
+  padding-left: 7px;
+}
+.imgs_c_top .imgs_c_list .imgs_car_year .imgs_year_b a {
+  font-weight: 700;
+}
+.imgs_c_top .imgs_c_list .stop_list_w {
+  position: absolute;
+  top: 25px;
+  left: 397px;
+  padding-top: 20px;
+  z-index: 10;
+}
+.imgs_c_top .imgs_c_list .stop_list_w .stop_list {
+  width: 80px;
+  height: auto;
+  border: 1px solid #333;
+  border-bottom-width: 4px;
+  background: #fff;
+  z-index: 200;
+  display: none;
+}
+.imgs_c_top .imgs_c_list .stop_list_w .stop_list li {
+  height: 32px;
+  line-height: 32px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+.imgs_c_top .imgs_c_list .stop_list_w .stop_list li:hover {
+  background: #398be4;
+}
+.imgs_c_top .imgs_c_list .stop_list_w .stop_list li:hover a {
+  color: #fff;
+}
+.imgs_c_top .imgs_c_list .stop_list_w .stop_list .s_no_border {
+  border-bottom: none;
+}
+.imgs_c_top .imgs_car_type {
+  height: 31px;
+  border-top: 4px solid #333;
+  border-bottom: 1px solid #c4c4c4;
+  background: #eee;
+  padding-left: 12px;
+}
+.imgs_c_top .imgs_car_type li {
+  float: left;
+  font-size: 16px;
+  color: #333;
+  height: 31px;
+  line-height: 31px;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+.imgs_c_top .imgs_car_type li a {
+  display: inline-block;
+  padding: 0 12px;
+}
+.imgs_c_top .imgs_car_type .no_h:hover a {
+  color: #398be4;
+}
+.imgs_c_top .imgs_car_type .imgs_current {
+  border-color: #c4c4c4;
+  background: #fff;
+  height: 32px;
+}
+.imgs_c_top .imgs_car_type .imgs_current a {
+  height: 32px;
+  border-top: 4px solid #1673d9;
+  margin-top: -4px;
+}

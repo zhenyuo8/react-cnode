@@ -1,0 +1,209 @@
+/*****
+ *@author: linyh
+ *@from: Global style carType_vedio(车型-视频)
+ *@description: 陈璐
+ *@date: name (2017.02.24)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_pubHeadNav";
+@import "mod/mod_pubHead";
+@import "mod/mod_carNav.less";
+@import "mod/mod_footer";
+@import "mod/mod_goTop";
+
+
+// 车型视频主页面
+.cartype_video{
+
+    // 灰色间隔条
+    .bg_bar{
+        width: 100%;
+        height: .4rem /* 30/75 */;
+        background-color: @bg-bar;
+    }
+
+    // 视频模块
+    .video_module{
+        .video_list{
+            width: 96%;
+            margin: .4rem /* 30/75 */ 2% 0;
+            dl{
+                float: left;
+                width: 45.833%;
+                margin: 0 .2rem /* 15/75 */;
+                dt{
+                    width: 100%;
+                    // height: 2.933rem /* 220/75 */;
+                    position: relative;
+                    img{
+                        display: block;
+                        width: 100%;
+                    }
+                    span{
+                        background-image: url("../img/play_btn.png");
+                        background-size: cover;
+                        width: .8rem /* 60/75 */;
+                        height: .8rem /* 60/75 */;
+                        display: inline-block;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        margin: -.4rem /* 30/75 */ 0 0 -.4rem /* 30/75 */;
+                    }
+                    i{
+                        color: @color-fff;
+                        width: 1.093rem /* 82/75 */;
+                        line-height: .467rem /* 35/75 */;
+                        text-align: center;
+                        background-color: @color-000;
+                        border-radius: .08rem /* 6/75 */;
+                        filter: alpha(opacity=60);
+                        opacity: .6;
+                        position: absolute;
+                        bottom: .08rem /* 6/75 */;
+                        right: .08rem /* 6/75 */;
+                    }
+                }
+                dd{
+                    font-size: 15px;
+                    line-height: .533rem /* 40/75 */;
+                    padding: .16rem /* 12/75 */ 0 .48rem /* 36/75 */;
+                }
+                &:active{
+                    dd{
+                        color: @color-main-blue;
+                    }
+                }
+            }
+        }
+        .load_more_module{
+            width: 92%;
+            margin: 0 4% .267rem /* 20/75 */;
+            .load_more{
+                .load_more;
+            }
+            .loading{
+                .loading;
+                display: none;
+            }
+            .more{
+                .more;
+                display: none;
+            }
+        }
+        /*没有视频时显示*/
+        .carstyle_img_empty {
+            width: 100%;
+            position: relative;
+            display: none;
+
+            img {
+                display: inline-block;
+                width: 4.257rem;
+                height: 4.257rem;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-top: -1.828rem;
+                margin-left: -3.828rem;
+            }
+            p {
+               font-size: 15px;
+               font-weight: 700;
+               position: absolute;
+            }
+            .e_text1 {
+                top: 50%;
+                left: 50%;
+                margin-top: -.8rem;
+                margin-left: .6rem;
+            }
+            .e_text2 {
+                top: 50%;
+                left: 50%;
+                margin-left: .6rem;
+            }
+        }
+    }
+
+    // 面包屑导航
+    .small_nav{
+        font-size: 14px;
+        width: 92%;
+        margin: 0 4%;
+        line-height: 1.067rem /* 80/75 */;
+        border-bottom: 1px solid @list-border;
+        a{
+            color: @color-666;
+        }
+        i{
+            .icon_bg(url(../img/small_rightjt.png), .12rem /* 9/75 */, .213rem /* 16/75 */);
+            margin: 0 .213rem /* 16/75 */;
+            display: inline-block;
+        }
+        span{
+            color: @color-999;
+        }
+    }
+
+}
+
+
+//dpr=2字体大小
+[data-dpr="2"] .cartype_video{
+    // 视频模块
+    .video_module{
+        .video_list{
+            dd{
+                font-size: 30px;
+            }
+        }
+        .load_more_module{
+            .load_more{
+                font-size: 26px;
+            }
+            .more{
+                font-size: 26px;
+            }
+        }
+        .carstyle_img_empty {
+            p {
+                font-size: 30px;
+            }
+        }
+    }
+    // 面包屑导航
+    .small_nav{
+        font-size: 28px;
+    }
+}
+
+//dpr=3字体大小
+[data-dpr="3"] .cartype_video{
+    // 视频模块
+    .video_module{
+        .video_list{
+            dd{
+                font-size: 45px;
+            }
+        }
+        .load_more_module{
+            .load_more{
+                font-size: 39px;
+            }
+            .more{
+                font-size: 39px;
+            }
+        }
+        .carstyle_img_empty {
+            font-size: 45px;
+        }
+    }
+    // 面包屑导航
+    .small_nav{
+        font-size: 42px;
+    }
+}

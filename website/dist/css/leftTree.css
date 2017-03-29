@@ -1,0 +1,186 @@
+/*****
+ *@author: zhangbs
+ *@from: 左侧树形样式
+ *@description: 何在朋
+ *@date: name (2017.02.06)
+*/
+#leftNav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1000px;
+  overflow: hidden;
+  background: #fff;
+}
+#leftNav .leftNavTree {
+  width: 240px;
+  height: 140px;
+  overflow: hidden;
+  background: #fff;
+}
+#leftNav .leftNavTree ul {
+  width: 245px;
+  font-size: 14px;
+}
+#leftNav .leftNavTree ul li {
+  float: left;
+  margin: 0 5px 5px 0;
+}
+#leftNav .leftNavTree ul li.none {
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  border: 1px solid #dadada;
+  color: #aaa;
+  text-align: center;
+  background: #eee;
+}
+#leftNav .leftNavTree ul li a {
+  display: block;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  border: 1px solid #dadada;
+  color: #333;
+  text-align: center;
+  background: #eee;
+}
+#leftNav .leftNavTree ul li a:hover {
+  border-color: #3189e9;
+  color: #FFF;
+  text-decoration: none;
+  background: #3189e9;
+}
+#leftNav .leftNavTree ul li a:active {
+  border-color: #126acc;
+  color: #FFF;
+  text-decoration: none;
+  background: #126acc;
+}
+#leftNav .treev1 {
+  width: 238px;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border: 1px solid #eee;
+  border-bottom: 0;
+  position: relative;
+}
+#leftNav .treev1 .root {
+  width: 100%;
+  overflow: hidden;
+  margin-top: -1px;
+  *float: left;
+}
+#leftNav .treev1 .root b {
+  width: 228px;
+  height: 27px;
+  border-top: 1px solid #eee;
+  display: block;
+  padding: 0 0 0 10px;
+  font-size: 20px;
+  line-height: 38px;
+}
+#leftNav .treev1 .root ul.tree-item-box {
+  margin: -27px 0 0 29px;
+  _margin-top: -34px;
+}
+#leftNav .treev1 .root ul.tree-item-box i {
+  width: 13px;
+  height: 14px;
+  background: url("../img/sprite.png") no-repeat -4px -2318px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+#leftNav .treev1 .root ul.tree-item-box i.active {
+  background: url("../img/sprite.png") no-repeat -4px -2332px;
+}
+#leftNav .treev1 .root ul.tree-items {
+  border-bottom: 1px dotted #eee;
+  margin: 0;
+  display: none;
+}
+#leftNav .treev1 .root ul.tree-items ul {
+  display: block;
+}
+#leftNav .treev1 .root ul.tree-items ul li a {
+  height: 33px;
+  display: block;
+}
+#leftNav .treev1 .root ul.tree-items ul li a big {
+  line-height: 33px;
+}
+#leftNav .treev1 .root ul.tree-items ul li a:hover {
+  background: #eee;
+}
+#leftNav .treev1 .root ul.tree-items ul li a:hover big {
+  color: #398BE4;
+}
+#leftNav .treev1 .root a.mainBrand:link,
+#leftNav .treev1 .root a.mainBrand:visited {
+  display: block;
+  width: 182px;
+  height: 36px;
+  line-height: 36px;
+  background: 0;
+  border-bottom: 1px solid #eee;
+  padding: 0 0 0 10px;
+}
+#leftNav .treev1 .root a.mainBrand:link span,
+#leftNav .treev1 .root a.mainBrand:visited span {
+  color: #999;
+}
+#leftNav .treev1 .root a.mainBrand:hover {
+  background: #eee;
+  text-decoration: none;
+  color: #3189e9;
+}
+#leftNav .treev1 .root a.brandType:link,
+#leftNav .treev1 .root a.brandType:visited {
+  width: 170px;
+  height: 33px;
+  display: block;
+  line-height: 22px;
+  padding: 0 0 0 23px;
+  margin: 3px 0 2px;
+}
+#leftNav .treev1 .root a.brandType:link span,
+#leftNav .treev1 .root a.brandType:visited span {
+  color: #999;
+}
+#leftNav .treev1 .root a.brandType:hover {
+  text-decoration: none;
+}
+#leftNav .treev1 .root a.brandType big {
+  font-weight: bold;
+}
+#leftNav .treev1 .root a.subBrand:link,
+#leftNav .treev1 .root a.subBrand:visited {
+  padding: 0 0 0 23px;
+  width: 160px;
+  line-height: 33px;
+  display: block;
+  overflow: hidden;
+  margin: 1px 0 1px 12px;
+}
+#leftNav .treev1 .root a.subBrand:hover {
+  text-decoration: none;
+  background: #eee;
+}
+#leftNav .treev1 .root a.subBrand:hover big {
+  color: #398BE4;
+}
+#leftNav .treev1 .root big {
+  font-size: 12px;
+  color: #333;
+}
+#leftNav .treev1 .root big.active {
+  color: #398be4;
+}
+.treeMainv1 {
+  width: 720px;
+}
+.leftNavTree {
+  margin-top: 20px;
+}

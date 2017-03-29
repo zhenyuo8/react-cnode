@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/register.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <!--<script src="js/findPassword.js"></script>-->
+    <script src="js/register.js"></script>
+</head>
+<body>
+<div class="container">
+    <!--头部logo结构-->
+    <div class="content clearfix">
+        <div class="logo_990 clearfix">
+            <div class="logo_con clearfix">
+                <a href="#" class="logo_a"></a>
+                <span class="">|</span>
+                <p class="logo_text clearfix">注册账号，玩转汽车大全!</p>
+            </div>
+        </div>
+    </div>
+
+    <!--注册form结构-->
+    <div class="content_body clearfix">
+        <div class="content_container">
+            <!--注册左模块结构-->
+            <div class="content_left">
+                <form id="register_submit">
+                    <ul>
+                        <li class="phone_num">
+                            <i></i>
+                            <input type="text" maxlength="11" placeholder="请输入手机号" id="register_input_phone">
+                            <em></em>
+                        </li>
+                        <li class="error_code">
+                            <p><i></i>请输入正确的手机号！</p>
+                        </li>
+                        <li class="checkout_msg">
+                            <input type="text" class="msg_input" maxlength="4" id="register_msg_input"><em></em>
+                            <input type="button" class="msg_get"  value="免费获取校验码">
+                        </li>
+                        <li class="error_code">
+                            <p><i></i>请输入正确验证码！</p>
+                        </li>
+                        <!--<li class="send_voice">-->
+                            <!--<p>收不到短信？试试  <a href="javascript:void (0)" id="find_voice"> 语音校验~</a></p>-->
+                        <!--</li>-->
+                        <!--点击语音校验后 提示模块-->
+                        <!--<li class="wait_call" style="display: none">-->
+                            <!--<p><a href="#">汽车大全</a> 将致电给您，请注意接听</p>-->
+                            <!--<p><span class="timer_span">25S</span> 后才能再次获取哦！</p>-->
+                        <!--</li>-->
+                        <li class="register">
+                            <input type="button" value="注册" id="register">
+                        </li>
+                        <li class="register_xy">
+                            <p>注册即代表您已阅读并同意 <a href="javascript:void (0)">《行圆汽车用户服务使用协议》</a></p>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <!--右边有账户提示登录模块-->
+            <div class="content_right">
+                <div class="has_account">
+                    <p>已有账号</p>
+                    <a href="login.html">直接登录</a>
+                </div>
+                <div class="others_account">
+                    <p>其他账号登录</p>
+                    <ul>
+                        <li class="wx">
+                            <a href="#">微信登录</a>
+                        </li>
+                        <li class="wb">
+                            <a href="#">微博登录</a>
+                        </li>
+                        <li class="tx">
+                            <a href="#">QQ登录</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--注册成功提示模块-->
+            <div class="register_suc" style="display: none">
+                <h2>
+                    <i></i>
+                    <span>恭喜你，手机号注册成功！</span>
+                </h2>
+                <p>我们已经自动给您分配了昵称：xyuser888</p>
+                <p>昵称与您的手机号已经绑定，立即 <a href="#">修改昵称</a></p>
+                <ul>
+                    <li>
+                        <a href="#" class="go_home">去首页</a>
+                        <a href="#" class="go_prev"><span>(5S)</span>返回到之前界面</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--底部结构-->
+<!--底部结构-->
+<div class="footer clearfix">
+    <div class="footer_content clearfix">
+        <ul>
+            <li class="footer_message clearfix"><a href="#">关于我们</a></li>
+            <li class="footer_message clearfix"><a href="#">联系我们</a></li>
+            <li class="footer_message clearfix"><a href="#">招贤纳士</a></li>
+            <li class="website clearfix"><a href="#">@2004-2016 www.xingyuanauto.com All Rights Reserved. 行圆汽车所有</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--<script>-->
+    <!--$(document).ready(function () {-->
+
+        <!--var a=$('.content_container').height()+224+'px';-->
+        <!--console.log(a)-->
+        <!--$('.content_container').parent().css('height',a)-->
+    <!--})-->
+
+<!--</script>-->
+</body>
+</html>

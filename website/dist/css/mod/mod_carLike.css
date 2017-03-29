@@ -1,0 +1,39 @@
+/*****
+ *@author: jianingning
+ *@from: Global style mod_carLike
+ *@description: 何在朋
+ *@date: name (2017.02.04)
+*/
+.imgs_l_car {
+  margin-bottom: 40px;
+}
+.imgs_l_car li {
+  float: left;
+  width: 90px;
+  margin-left: 8px;
+  padding-top: 12px;
+}
+.imgs_l_car li a img {
+  display: inline-block;
+  width: 90px;
+  height: 60px;
+}
+.imgs_l_car li a .imgs_l_name {
+  color: #333;
+  margin-top: 10px;
+}
+.imgs_l_car li a .imgs_l_price {
+  margin-top: 5px;
+  color: #e43a3a;
+}
+.imgs_l_car li a:hover .imgs_l_name {
+  color: #126acc;
+  text-decoration: underline;
+}
+.imgs_l_car li a:hover .imgs_l_price {
+  text-decoration: underline;
+}
+.imgs_l_car li a:active .imgs_l_name {
+  color: #1064c1;
+  text-decoration: underline;
+}

@@ -1,0 +1,810 @@
+@import (reference) "public";
+@import "mod/mod_header";
+@import "mod/mod_footer";
+
+.content {
+  width: 990px;
+  margin: 0 auto;
+  //display: none;
+  height: 100%;
+  .left_tab_menu {
+    width: 200px;
+    background: #fff;
+    padding-top: 46px;
+    height: 848px;
+    float: left;
+
+    ul {
+
+      li {
+        height: 22px;
+        width: 196px;
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 40px;
+        text-align: center;
+        border-left: 4px solid transparent;
+        a{
+          position: relative;
+          em{
+                    position: absolute;
+                    width: 6px;
+                    height: 6px;
+                    display: inline-block;
+                    background: #e43a3a;
+                    right: -6px;
+                    top: 4px;
+                   border-radius: 3px 3px 3px 3px;
+            }
+        }
+        &.bg {
+          border-left-color: #3a8be4;
+          //color: #3a8be4;
+          a {
+            display: inline-block;
+            color: #3A8BE4;
+          }
+        }
+        &:hover {
+          cursor: pointer;
+          //color: #3a8be4;
+          border-left-color: #3a8be4;
+          a {
+            color: #3a8be4;
+          }
+        }
+      }
+    }
+  }
+
+  .right_content {
+    padding-top: 54px;
+    width: 758px;
+    height: 100%;
+    float: right;
+    .account_m {
+      width: 758px;
+      .account_tab {
+        height: 21px;
+        li {
+          font-size: 16px;
+          color: #333;
+          float: left;
+          margin-right: 26px;
+          font-family: "Microsoft YaHei", "微软雅黑";
+          a {
+            &:hover {
+              color: #3a8be4;
+            }
+          }
+          a.active {
+            color: #333;
+            font-weight: bold;
+          }
+        }
+      }
+      .content {
+        width: 758px;
+        margin-top: 20px;
+        background: #fff;
+        .i {
+          font-size: 14px;
+          float: left;
+          line-height: 32px;
+          font-family: "Microsoft YaHei", "微软雅黑";
+        }
+        i {
+          .i;
+        }
+
+        .sys_notice {
+          padding-top: 20px;
+
+          margin-bottom: 40px;
+          p {
+            padding-left: 20px;
+            .i;
+            color: #aaa;
+          }
+
+        }
+
+        //修改密码提示先绑定手机账号
+        .form_div {
+          padding-top: 20px;
+          ul {
+            li {
+              margin-bottom: 20px;
+              height: 32px;
+              margin-left: 20px;
+              input {
+                height: 30px;
+                width: 308px;
+                margin-left: 32px;
+                border: 1px solid #dadada;
+              }
+              &.input_phone2 {
+                input {
+                  width: 308px;
+                  float: left;
+
+                }
+              }
+              &.input_msg_code {
+                .first {
+                  width: 188px;
+                  .i;
+                }
+                .second {
+
+                  width: 110px;
+                  height: 32px;
+                  border: none;
+                  margin-left: 10px;
+                  background: #3a8be4;
+                  color: #ffffff;
+                  .i;
+                }
+              }
+
+              &.save_settings {
+                input {
+                  .i;
+                  margin-left: 88px;
+                  color: #fff;
+                  width: 96px;
+                  background: #dadada;
+                }
+              }
+            }
+          }
+        }
+
+        //输入新密码；
+        .form_div_new_code {
+          .form_div;
+          padding-top: 40px;
+          ul {
+            li {
+              position: relative;
+              margin-left: 20px;
+              i {
+                .i;
+              }
+              input {
+                width: 308px;
+                height: 30px;
+                padding-left: 14px;
+                color: #aaa;
+                font-size: 12px;
+                font-family: "Microsoft YaHei", "微软雅黑";
+
+              }
+              em {
+                width: 23px;
+                height: 16px;
+                right: 34px;
+                top: 2px;
+                display: inline-block;
+                position: relative;
+                background: url("../img/hide_password_lit.png") no-repeat center;
+                &:hover {
+                  cursor: pointer;
+                  background: url("../img/hide_password_lit_hover.png") no-repeat center;
+                }
+              }
+              &.confirm_password {
+                position: relative;
+                input {
+                  margin-left: 18px;
+                }
+                em {
+                  top: 3px;
+                  height: 16px;
+                  background: url("../img/hide_password_lit.png") no-repeat center;
+                  &:hover {
+                    cursor: pointer;
+                    background: url("../img/hide_password_lit_hover.png") no-repeat center;
+                  }
+                }
+
+              }
+              &.save_settings {
+                input {
+                  width: 96px;
+                  height: 32px;
+                  float: left;
+                  padding: 0;
+                  font-size: 14px;
+                  line-height: 30px;
+                }
+
+              }
+            }
+          }
+        }
+
+        //输入密码不符规则或两次密码不一致
+        .form_div_new_code_error {
+          .form_div;
+          padding-top: 40px;
+          ul {
+            li {
+              margin: 0;
+              position: relative;
+              i {
+                .i;
+              }
+              input {
+                width: 308px;
+                height: 30px;
+                padding-left: 14px;
+                color: #aaa;
+                font-size: 12px;
+                border-color: #e43a3a;
+                font-family: "Microsoft YaHei", "微软雅黑";
+
+              }
+              em {
+                width: 23px;
+                height: 14px;
+                right: 34px;
+                top: 2px;
+                display: inline-block;
+                position: relative;
+                background: url("../img/show_password_lit.png") no-repeat center;
+                &:hover {
+                  cursor: pointer;
+                }
+              }
+              &.confirm_password {
+                position: relative;
+                input {
+                  margin-left: 18px;
+                }
+                em {
+                  top: 3px;
+                  height: 16px;
+                  background: url("../img/hide_password_lit.png") no-repeat center;
+                }
+
+              }
+              &.save_settings {
+                input {
+                  width: 96px;
+                  height: 32px;
+                  float: left;
+                  padding: 0;
+                  background: #ffa903;
+                  border: none;
+                  font-size: 14px;
+                  line-height: 30px;
+                }
+
+              }
+            }
+            .error_msg {
+              font-size: 12px;
+              margin-top: 12px;
+              margin-left: 88px;
+              height: 16px !important;
+              width: 400px;
+              margin-bottom: 20px;
+              p {
+                color: #e43a3a;
+                position: relative;
+                padding-left: 19px;
+                i {
+                  width: 11px;
+                  height: 11px;
+                  position: absolute;
+                  left: 0px;
+                  top: 2px;
+                  vertical-align: -1px;
+                  display: inline-block;
+                  background: url("../img/error_msg.png") no-repeat center;
+                }
+              }
+            }
+          }
+        }
+
+        //密码修改成功
+        .form_div_new_code_success {
+          .form_div_new_code;
+          position: relative;
+          ul {
+
+            li {
+              &.save_settings {
+                input {
+                  border: none;
+                  background: #ffa903;
+                }
+
+              }
+            }
+          }
+          .modify_password_success {
+            position: absolute;
+            display: none;
+            width: 358px;
+            height: 180px;
+            top: 40px;
+            left: 180px;
+            background: #fff;
+            border: 1px solid #333;
+            border-bottom-width: 4px;
+            p {
+              font-size: 20px;
+              text-align: center;
+              font-family: "Microsoft YaHei", "微软雅黑";
+              margin: 50px auto;
+            }
+            .select_button {
+              width: 316px;
+              margin: 5px auto auto auto;
+
+              button {
+                width: 146px;
+                height: 30px;
+                background: #eee;
+                border: 1px solid #dadada;
+                float: left;
+                a {
+                  color: #333;
+                  font-size: 14px;
+                  display: inline-block;
+                  text-align: center;
+                  margin: 0 auto;
+                  font-family: "Microsoft YaHei", "微软雅黑";
+                }
+                &.go_home {
+                  background: #ffa903;
+                  border-color: #ff9103;
+                  margin-left: 20px;
+                  a {
+                    color: #fff;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .sys_notice_send {
+          .sys_notice;
+        }
+        .form_div_msg {
+          .form_div;
+          .input_msg_code {
+            input {
+              margin-left: 20px;
+            }
+          }
+          //修改密码输入验证码错误提示
+          .error_msg {
+            font-size: 12px;
+            color: #e43a3a;
+            margin-top: 12px;
+            margin-left: 76px;
+            height: 14px;
+            width: 400px;
+            margin-bottom: 12px;
+            p {
+              position: relative;
+              padding-left: 19px;
+              i {
+                width: 11px;
+                height: 11px;
+                position: absolute;
+                left: 0px;
+                top: 2px;
+                //margin-right: 4px;
+                vertical-align: -1px;
+                display: inline-block;
+                background: url("../img/error_msg.png") no-repeat center;
+
+              }
+            }
+
+          }
+          .voice_identify {
+            margin-top: 12px;
+            margin-left: 74px;
+            margin-bottom: 4px;
+            p {
+              font-size: 12px;
+              font-family: "Microsoft YaHei", "微软雅黑";
+              color: #aaa;
+              a {
+                color: #3a8be4;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+          .next_step {
+            input {
+              .i;
+              height: 32px;
+              margin-left: 74px;
+              color: #fff;
+              width: 96px;
+              border: none;
+              background: #ffa903;
+            }
+          }
+        }
+
+        //更改头像独立样式开始
+        .fl {
+          float: left;
+          padding-left: 20px;
+          p {
+            font-size: 14px;
+            &:nth-child(1) {
+              color: #333;
+              margin-top: 40px;
+              margin-bottom: 32px;
+            }
+            &:nth-child(2) {
+              color: #999;
+              margin-bottom: 40px;
+            }
+          }
+          .upLoad {
+            div {
+              span {
+                display: inline-block;
+                font-size: 14px;
+                width: 124px;
+                height: 30px;
+                color: #333;
+                border: 1px solid #dadada;
+                background: #eee;
+                line-height: 30px;
+                text-align: center;
+                &:hover {
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+        .fr {
+          float: right;
+          width: 240px;
+          div {
+            p {
+              margin-top: 40px;
+              font-size: 14px;
+              color: #333;
+              font-family: "Microsoft YaHei", "微软雅黑";
+            }
+            &.cur_img {
+              width: 138px;
+              height: 138px;
+              margin-top: 20px;
+              position: relative;
+              border: 1px solid #dadada;
+              img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                width: 109px;
+                height: 52px;
+                display: inline-block;
+              }
+            }
+          }
+        }
+      }
+      //table {
+      //  width: 100%;
+      //  text-align: center;
+      //  border-collapse: collapse;
+      //  border-spacing: 1px;;
+      //  border-spacing: 0;
+      //}
+      //table td {
+      //  word-break: break-all;
+      //  word-wrap: break-word;
+      //  border-right: 1px solid #939598;
+      //  border-bottom: 1px solid #939598;
+      //  font: 500 14px Arial
+      //}
+      .upload_img {
+        margin-top: 60px;
+        margin-left: 20px;
+        //width: 280px;
+        height: 428px;
+        //float: left;
+        .upload_img_left {
+          float: left;
+          .cut_img {
+            width: 276px;
+            height: 276px;
+            border: 2px solid #999;
+            /*.css_table{
+              cursor: move;
+              position: relative;
+              height: 276px;
+              width: 276px;
+              border: 0;
+              tbody{
+                cursor: move;
+                .top{
+                  .top_td{
+                    width: 276px;
+                    height: 88px;
+                    filter: alpha(opacity=60);
+                    opacity: 0.6;
+                    background: #ccc;
+                  }
+                }
+                .middle{
+                  .middle_left{
+                    width: 88px;
+                    height: 100px;
+                    opacity: 0.6;
+                    background: #ccc;
+
+                  }
+                  .middle_right{
+                    width: 88px;
+                    height: 100px;
+                    opacity: 0.6;
+                    background: #ccc;
+                  }
+                }
+              }
+            }*/
+
+
+          }
+
+          .size_change{
+            margin-top: 22px;
+            display: none;
+            span{
+              width: 176px;
+              height: 7px;
+              display: inline-block;
+              background: #dadada;
+              border-radius: 10px;
+              i{
+                width: 10px;height: 14px;
+                display: inline-block;
+
+              }
+            }
+          }
+          .save_cancel{
+            margin-top: 40px;
+            padding-bottom: 40px;
+            span{
+              width: 96px;
+              height: 32px;
+              //display: inline-block;
+              text-align: center;
+              line-height: 32px;
+              float: left;
+              &:hover{
+                cursor: pointer;
+              }
+              &.save{
+                color: #fff;
+                background: #ffa903;
+                &:hover{
+                  background: #ff9103;
+                }
+              }
+              &.cancel{
+                margin-left: 10px;
+                border: 1px solid #dadada;
+                color: #333;
+                background: #eeeeee;
+                &:hover{
+                  background: #dadada;
+                }
+              }
+            }
+          }
+        }
+
+        .cur_img_right {
+          width: 320px;
+          float: left;
+          margin-left: 136px;
+          p {
+            font-size: 14px;
+            width: 232px;
+            color: #aaa;
+            text-wrap: normal;
+          }
+          .three_img {
+            margin-top: 20px;
+            float: left;
+
+            .size_left {
+              float: left;
+              div {
+                width: 118px;
+                height: 118px;
+                border: 1px solid #dadada;
+                border-radius: 4px;
+                position: relative;
+                span {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  bottom: 0;
+                  right: 0;
+                  width: 100px;
+                  height: 100px;
+                  display: inline-block;
+                  border: 1px dashed #dadada;
+                  border-radius: 4px;
+                  margin: auto;
+                  text-align: center;
+                  background: #eee;
+
+                  img {
+                    display: inline-block;
+                    width: 77px;
+                    height: 75px;
+                    margin: 12px auto;
+                    vertical-align: middle;
+                  }
+                }
+              }
+              p {
+                width: 120px;
+                text-align: center;
+              }
+
+            }
+            .size_right {
+              float: left;
+              width: 60px;
+              height: 120px;
+              margin-left: 40px;
+
+              .size_div1 {
+                float: left;
+
+                .size_30 {
+                  width: 28px;
+                  height: 28px;
+                  margin: auto 15px;
+                  border: 1px solid #dadada;
+                  border-radius: 2px;
+                  position: relative;
+                  span {
+                    position: absolute;
+                    display: inline-block;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 24px;
+                    height: 24px;
+                    border: 1px dashed #dadada;
+                    border-radius: 2px;
+                    margin: auto;
+                    text-align: center;
+                    img {
+                      width: 20px;
+                      height: 18px;
+                      display: inline-block;
+                      vertical-align: middle;
+                      margin: 3px auto;
+                    }
+                  }
+                }
+                p {
+                  width: 60px;
+                  text-align: center;
+                }
+              }
+              .size_div2 {
+                float: left;
+                margin-top: 12px;
+
+                .size_60 {
+                  position: relative;
+                  width: 58px;
+                  height: 58px;
+                  border: 1px solid #dadada;
+                  border-radius: 2px;
+                  span {
+                    display: inline-block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 48px;
+                    height: 48px;
+                    border: 1px dashed #dadada;
+                    border-radius: 2px;
+                    margin: auto;
+                    text-align: center;
+                    img {
+                      width: 39px;
+                      height: 37px;
+                      display: inline-block;
+                      vertical-align: middle;
+                      margin: 6px auto;
+                    }
+                  }
+                }
+                p {
+                  width: 60px;
+                  text-align: center;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .content_bind {
+        width: 758px;
+        height: 490px;
+        margin-top: 20px;
+        background: #fff;
+        .bind_notice {
+          width: 297px;
+          height: 344px;
+          position: relative;
+          img {
+            position: absolute;
+            width: 209px;
+            height: 214px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+          }
+
+        }
+        .notice_des {
+          height: 344px;
+          width: 334px;
+          margin-left: 22px;
+          h2 {
+            padding-top: 112px;
+            line-height: 25px;
+            font-weight: bold;
+            width: 366px;
+            color: #aaa;
+            font-size: 20px;
+            text-wrap: normal;
+            font-family: "Microsoft YaHei", "微软雅黑";
+          }
+          p {
+            margin-top: 16px;
+            font-size: 16px;
+            font-family: "Microsoft YaHei", "微软雅黑";
+            font-weight: bold;
+            color: #333;
+            a {
+              color: #3a8be4;
+              &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,600 @@
+/*****
+ *@author: linyh
+ *@from: Global style articleDetail
+ *@description: 陈璐
+ *@date: name (2017.02.15)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_goTop";
+
+// 文章详情主页面
+.art_detail_page{
+
+    // 占位
+    .occupy_seat{
+        height: 1.333rem /* 100/75 */;
+    }
+
+    // 间隔
+    .jiange{
+        height: .267rem /* 20/75 */;
+        background-color: @bg-color;
+    }
+
+    // 文章内容
+    .article_module{
+
+        padding: .213rem /* 16/75 */ 4% 0;
+        .art_main_title{
+            color: @main-title-color;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: .853rem /* 64/75 */;
+        }
+        .edit_msg{
+            color: @edit-color;
+            font-size: 11px;
+            line-height: .827rem /* 62/75 */;
+            span{
+                margin:0 .213rem /* 16/75 */;
+            }
+        }
+        // 文章内容
+        .article_content{
+            font-size: 15px;
+            .more_page{
+
+            }
+            p{
+                line-height: .72rem /* 54/75 */;
+                margin-bottom: .507rem /* 38/75 */;
+                img{
+                    .img-size;
+                }
+            }
+            .article_page_title{
+                color: @main-title-color;
+                font-size: 21px;
+                line-height: .853rem /* 64/75 */;
+                margin-bottom: .347rem /* 26/75 */;
+                em{
+                    color: @color-fff;
+                    background-color: @main-title-color;
+                    border-radius: 50%;
+                    width: .587rem /* 44/75 */;
+                    line-height: .587rem /* 44/75 */;
+                    text-align: center;
+                    display: inline-block;
+                }
+            }
+        }
+        // 加载更多
+        .load_more{
+            color: @load-color;
+            font-size: 13px;
+            margin-top: -.533rem /* 40/75 */;
+            .load_btn{
+                background-color: @load-bg;
+                border-radius: .08rem /* 6/75 */;
+                width: 100%;
+                line-height: .96rem /* 72/75 */;
+                text-align: center;
+                i{
+                    background-image: url("../img/blue_down.png");
+                    background-size: 100% 100%;
+                    width: .213rem /* 16/75 */;
+                    height: .12rem /* 9/75 */;
+                    vertical-align: middle;
+                    margin-left: .133rem /* 10/75 */;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    // 每个模块小标题样式
+    .item_title{
+        font-size: 14px;
+        padding-top: .347rem /* 26/75 */;
+        i{
+            background-color: @item-color;
+            border-radius: 2px;
+            width: .08rem /* 6/75 */;
+            height: .347rem /* 26/75 */;
+            vertical-align: -.053rem /* 4/75 */;
+            margin-right: .16rem /* 12/75 */;
+            display: inline-block;
+        }
+    }
+
+    // 分享至
+    .share_area{
+        padding: 0 4%;
+        ul{
+            padding: .267rem /* 20/75 */ 10.725% .733rem /* 55/75 */;
+            li{
+                width: 50%;
+                float: left;
+                a{
+                    color: @color-fff;
+                    border-radius: 50%;
+                    width: 1.6rem /* 120/75 */;
+                    height: 1.6rem /* 102/75 */;
+                    text-align: center;
+                    margin: 0 auto;
+                    padding-top: .24rem /* 18/75 */;
+                    display: block;
+                    i{
+                        background-size: cover;
+                        width: .72rem /* 54/75 */;
+                        height: .747rem /* 56/75 */;
+                        margin: 0 auto .053rem /* 4/75 */;
+                        display: block;
+                    }
+                }
+                .good{
+                    background-color: @zan-before;
+                    i{
+                        background-image: url("../img/zan.png");
+                    }
+                    &.isvote{
+                        opacity: .6
+                    }
+                }
+                .good_after{
+                    background-color: @zan-after;
+                }
+                .share{
+                    background-color: @share-bg;
+                    i{
+                        background-image: url("../img/share_nob.png");
+                    }
+                }
+            }
+        }
+    }
+
+    // 相关车型
+    .relevant_type{
+        padding: 0 4%;
+        ul{
+            padding-bottom: .267rem /* 20/75 */;
+            li{
+                margin-top: .32rem /* 24/75 */;
+                position: relative;
+                img{
+                    width: 2.533rem /* 190/75 */;
+                    height: 1.707rem /* 128/75 */;
+                    float: left;
+                }
+                .type_msg{
+                    font-size: 15px;
+                    width: 47.536%;
+                    padding-left: .213rem /* 16/75 */;
+                    float: left;
+                    p{
+                        width: 100%;
+                        line-height: .827rem /* 62/75 */;
+                        .ellipsis;
+                        &:last-child{
+                            color: @red-price;
+                        }
+                    }
+                }
+                .inquire{
+                    color: @color-fff;
+                    font-size: 13px;
+                    background-color: @share-bg;
+                    border-radius: .053rem /* 4/75 */;
+                    width: 1.867rem /* 140/75 */;
+                    line-height: .8rem /* 60/75 */;
+                    text-align: center;
+                    margin-top: .4rem /* 30/75 */;
+                    float: right;
+                }
+                .type_link{
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 2;
+                }
+                .inquire_price{
+                    width: 1.867rem /* 140/75 */;
+                    height: .8rem /* 60/75 */;
+                    display: block;
+                    position: absolute;
+                    top: .4rem /* 30/75 */;
+                    right: 0;
+                    z-index: 3;
+                }
+            }
+        }
+    }
+
+    // 热门评论
+    .hot_review{
+        padding: 0 4%;
+        .review_list{
+            padding-top: .133rem /* 10/75 */;
+            dl{
+                margin-top: .533rem /* 40/75 */;
+                dt{
+                    width: 13.913%;
+                    float: left;
+                    a{
+                        width: .933rem /* 70/75 */;
+                        height: .933rem /* 70/75 */;
+                        display: block;
+                        img{
+                            .img-size;
+                            border-radius: 100%;
+                        }
+                    }
+                }
+                dd{
+                    width: 86.087%;
+                    border-bottom: 1px solid @bg-color;
+                    float: right;
+                    .user_name{
+                        font-size: 13px;
+                        line-height: .4rem /* 30/75 */;
+                        a{
+                            color: @price-item-color;
+                        }
+                    }
+                    .review{
+                        font-size: 15px;
+                        line-height: .56rem /* 42/75 */;
+                        margin-top: .293rem /* 22/75 */;
+                    }
+                    .review_time{
+                        color: @dian-border;
+                        line-height: 1.12rem /* 84/75 */;
+                    }
+                    .reply{
+                        color: @sub-brand-name;
+                        background-color: @bg-color;
+                        line-height: .533rem /* 40/75 */;
+                        padding: .133rem /* 10/75 */ .267rem /* 20/75 */;
+                        margin-top: .293rem /* 22/75 */;
+                        span{
+                            margin-bottom: .04rem /* 3/75 */;
+                            display: block;
+                        }
+                    }
+                }
+                &:last-child dd{border-bottom: 0}
+            }
+        }
+    }
+
+    // 下载APP
+    .down_app{
+        width: 94.666%;
+        margin:.36rem 2.667% .36rem /* 27/75 */;
+        font-size: 14px;
+        a{
+            color: @color-fff;
+            background-color: @item-color;
+            border-radius: .093rem /* 7/75 */;
+            line-height: 1.067rem /* 80/75 */;
+            text-align: center;
+            display: block;
+            span{
+                color: @color-fff;
+                font-weight: 700;
+                padding: 0 .133rem /* 10/75 */;
+            }
+        }
+    }
+
+    // 相关文章
+    .relevant_article{
+        padding: 0 4%;
+        font-size: 15px;
+        ul{
+            display: -webkit-box;
+            -webkit-box-orient: horizontal;
+            overflow-x: scroll;
+            padding: .333rem /* 25/75 */ 0 .64rem /* 48/75 */;
+            &::-webkit-scrollbar{
+                height: 0;
+            }
+            li{
+                width: 4rem /* 300/75 */;
+                margin-right: .253rem /* 19/75 */;
+                img{
+                    display: inline-block;
+                    width: 100%;
+                    height: 2.667rem /* 200/75 */;
+                }
+                p{
+                    line-height: .48rem /* 36/75 */;
+                    margin-top: .213rem /* 16/75 */;
+                }
+            }
+        }
+    }
+
+    // 文章目录
+    .catalog{
+        /*display: none;*/
+        .bg-jianbian(top left,bottom right,@ml-start,@ml-end);
+        .border-jianbian(0,5px,20px,0,@ml-end);
+        border-radius: 50%;
+        width: 1.333rem /* 100/75 */;
+        height: 1.333rem /* 100/75 */;
+        line-height: 1.333rem /* 100/75 */;
+        text-align: center;
+        color: @color-fff;
+        font-size: 15px;
+        position: fixed;
+        bottom: 5.307rem /* 398/75 */;
+        right: .267rem /* 20/75 */;
+        z-index: 9;
+    }
+
+}
+
+#cate_mask,#down_mask{z-index: 999}
+//目录列表
+.catalog_area{
+    width: 100%;
+    background-color: @color-fff;
+    position: fixed;
+    display: none;
+    bottom: -100%;
+    left: 0;
+    z-index: 9999;
+    ul{
+        color: @main-title-color;
+        font-size: 16px;
+        padding: 0 4%;
+        max-height: 7.4rem /* 555/75 */;
+        overflow-y: scroll;
+        li{
+            padding: .28rem /* 21/75 */;
+            line-height: .64rem /* 48/75 */;
+            border-top: 1px solid @border-color;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+    p{
+        /*.border-jianbian(0,-10px,20px,20px,@color-fff);*/
+        color: @share-bg;
+        font-size: 13px;
+        padding: .133rem /* 10/75 */ 4%  .4rem /* 30/75 */;
+        background-color: @color-fff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 10000;
+        width: 100%;
+        span{
+            width: 100%;
+            background-color: @cancle-bg;
+            border-radius: .08rem /* 6/75 */;
+            line-height: .96rem /* 72/75 */;
+            text-align: center;
+            display: block;
+        }
+    }
+    .zhanwei{
+        width: 100%;
+        height: 1.493rem /* 112/75 */;
+    }
+}
+
+//提示弹层(分享提示，APP下载提示)
+.tips{
+    color: @sub-brand-name;
+    font-size: 13px;
+    padding: .44rem /* 33/75 */ .48rem /* 36/75 */;
+    background-color: @color-fff;
+    border-radius: .24rem /* 18/75 */;
+    position: fixed;
+    top: .293rem /* 22/75 */;
+    right: .12rem /* 9/75 */;
+    z-index: 9999;
+    p{
+        width: 5.093rem /* 382/75 */;
+    }
+    i{
+        background-image: url('../img/tip_jian.png');
+        background-size: cover;
+        width: .427rem /* 32/75 */;
+        height: .293rem /* 22/75 */;
+        display: inline-block;
+        position: absolute;
+        top: -.293rem /* 22/75 */;
+        right: .4rem /* 30/75 */;
+
+    }
+}
+
+// 分享提示
+.share_tip{
+    display: none;
+}
+
+// 下载APP提示
+.down_app_tip{
+    display: none;
+    img{
+        width: .4rem /* 30/75 */;
+        height: .4rem /* 30/75 */;
+        margin:0 .133rem /* 10/75 */;
+        vertical-align: -.08rem /* 6/75 */;
+        display: inline-block;
+    }
+    span{
+        color: @item-color;
+        margin-left: .133rem /* 10/75 */;
+    }
+}
+
+.art_name{position: absolute;left:0;bottom:2%;width:100%; text-align: center;color:#fff;z-index: 9}
+.art_name a{color:#fff}
+#youkuplayer .x-video-info .x-title{font-size:.3rem;line-height: 1.8}
+/*字体适配*/
+//dpr=2字体大小
+[data-dpr="2"] .art_detail_page{
+    //文章详情头部
+    .title_bar{
+        .title_name{
+            font-size: 30px;
+        }
+    }
+    // 文章内容
+    .article_module{
+        .art_main_title{
+            font-size: 48px;
+        }
+        .edit_msg{
+            font-size: 22px;
+        }
+        // 文章内容
+        .article_content{
+            font-size: 30px;
+            .article_page_title{
+                font-size: 42px;
+            }
+        }
+        // 加载更多
+        .load_more{
+            font-size: 26px;
+        }
+    }
+    // 小标题
+    .item_title{
+        font-size: 28px;
+    }
+    // 相关车型
+    .relevant_type{
+        .type_msg{
+            font-size: 30px;
+        }
+        .inquire{
+            font-size: 26px;
+        }
+    }
+    // 热门评论
+    .hot_review{
+        .review_list{
+            .user_name{
+                font-size: 26px;
+            }
+            .review{
+                font-size: 30px;
+            }
+        }
+    }
+    // 下载APP
+    .down_app{
+        font-size: 28px;
+    }
+    // 相关文章
+    .relevant_article{
+        font-size: 30px;
+    }
+    // 文章目录
+    .catalog{
+        font-size: 30px;
+    }
+}
+[data-dpr="2"] .catalog_area{
+    .catalog_list{
+        font-size: 32px;
+    }
+    .cancle{
+        font-size: 26px;
+    }
+}
+[data-dpr="2"] .tips{
+    font-size: 26px;
+}
+
+//dpr=3字体大小
+[data-dpr="3"] .art_detail_page{
+    //文章详情头部
+    .title_bar{
+        .title_name{
+            font-size: 45px;
+        }
+    }
+    // 文章内容
+    .article_module{
+        .art_main_title{
+            font-size: 72px;
+        }
+        .edit_msg{
+            font-size: 33px;
+        }
+        // 文章内容
+        .article_content{
+            font-size: 45px;
+            .article_page_title{
+                font-size: 63px;
+            }
+        }
+        // 加载更多
+        .load_more{
+            font-size: 39px;
+        }
+    }
+    // 小标题
+    .item_title{
+        font-size: 42px;
+    }
+    // 相关车型
+    .relevant_type{
+        .type_msg{
+            font-size: 45px;
+        }
+        .inquire{
+            font-size: 39px;
+        }
+    }
+    // 热门评论
+    .hot_review{
+        .review_list{
+            .user_name{
+                font-size: 39px;
+            }
+            .review{
+                font-size: 45px;
+            }
+        }
+    }
+    // 下载APP
+    .down_app{
+        font-size: 42px;
+    }
+    // 相关文章
+    .relevant_article{
+        font-size: 45px;
+    }
+    // 文章目录
+    .catalog{
+        font-size: 45px;
+    }
+}
+[data-dpr="3"] .catalog_area{
+    .catalog_list{
+        font-size: 48px;
+    }
+    .cancle{
+        font-size: 39px;
+    }
+}
+[data-dpr="3"] .tips{
+    font-size: 39px;
+}

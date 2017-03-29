@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>车型对比-图片对比</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/paidSafe.css"/>
+</head>
+<body>
+<div class="header">
+    <!--nav model -->
+    {{#include ./mod/mod_headerTitle.html}}
+
+    <!--logo model -->
+    {{#include ./mod/mod_headerLogo.html}}
+
+    <!--menu model -->
+    {{#include ./mod/mod_headerMenu.html}}
+</div>
+
+<!--内容区-->
+<div class="paidsafe_wrap">
+    <!--面包屑-->
+    <div class="content_nav">
+        <strong>当前位置：</strong>
+        <span><a href="javascript:;">首页</a> > <a href="javascript:;">车型</a> > <a href="javascript:;">参数对比</a></span>
+    </div>
+
+    <!--参数对比，图片对比栏-->
+    <ul class="head_title cf">
+        <li class=""><a href="javascript:;">参数对比</a></li>
+        <li class="active"><a href="javascript:;">图片对比</a></li>
+    </ul>
+    <!--图片列表-->
+    <div class="pic-wrap">
+        <!--图片对比左移右移切换，删除，添加对比功能区-->
+        <div class="img-compare-header" id="img-compare-header">
+            <div class="hascarWrap cf">
+                <div class="first_area area">
+                    <div class="img-forth">
+                        <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                        <!--图片对比页三级联动菜单-->
+                        {{#include ./mod/mod_verticalThreeInput.html}}
+                        <div class="btn_list cf">
+                            <a href="javascript:;" class="l1">< 左移</a>
+                            <a href="javascript:;" class="rm"><span></span></a>
+                            <a href="javascript:;" class="r1">右移 ></a>
+                            <a href="javascript:;" class="add_car">添加对比</a>
+                        </div>
+                        <div class="tip"><p>2017款 1.0T 手动 两驱<br/>豪华型 汽油</p></div>
+                    </div>
+                </div>
+                <div class="sec_area area">
+                    <div class="img-forth">
+                        <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                        <!--图片对比页三级联动菜单-->
+                        {{#include ./mod/mod_verticalThreeInput.html}}
+                        <div class="btn_list cf">
+                            <a href="javascript:;" class="l1">< 左移</a>
+                            <a href="javascript:;" class="rm"><span></span></a>
+                            <a href="javascript:;" class="r1">右移 ></a>
+                            <a href="javascript:;" class="add_car">添加对比</a>
+                        </div>
+                        <div class="tip"><p>2017款 2.0T 手动 两驱<br/>豪华型 汽油</p></div>
+                    </div>
+                </div>
+                <div class="third_area area">
+                    <div class="img-forth">
+                        <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                        <!--图片对比页三级联动菜单-->
+                        {{#include ./mod/mod_verticalThreeInput.html}}
+                        <div class="btn_list cf">
+                            <a href="javascript:;" class="l1">< 左移</a>
+                            <a href="javascript:;" class="rm"><span></span></a>
+                            <a href="javascript:;" class="r1">右移 ></a>
+                            <a href="javascript:;" class="add_car">添加对比</a>
+                        </div>
+                        <div class="tip"><p>2017款 3.0T 手动 两驱<br/>豪华型 汽油</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="nocarWrap cf">
+                <div class="forth_area area">
+                    <div class="img-forth">
+                        <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                        <!--图片对比页三级联动菜单-->
+                        {{#include ./mod/mod_verticalThreeInput.html}}
+                        <div class="btn_list cf">
+                            <a href="javascript:;" class="l1">< 左移</a>
+                            <a href="javascript:;" class="rm"><span></span></a>
+                            <a href="javascript:;" class="r1">右移 ></a>
+                            <a href="javascript:;" class="add_car">添加对比</a>
+                        </div>
+                        <div class="tip"><p>2017款 4.0T 手动 两驱<br/>豪华型 汽油</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--各车型对比列表-->
+        <div class="list_wrap cf">
+            <div class="img-compare-first">
+                <div class="sub-tt" id="nav_side_1">
+                    <span>正45度（车头向左）</span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span>正45度（车头向左）</span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span>正45度（车头向左）</span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span>正45度（车头向左）</span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span>正45度（车头向左）</span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span>正45度（车头向左）</span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt" id="nav_side_2">
+                    <span>内饰</span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span>正45度（车头向左）</span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span>正45度（车头向左）</span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span>正45度（车头向左）</span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span>正45度（车头向左）</span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span>正45度（车头向左）</span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt" id="nav_side_3">
+                    <span>内部空间</span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span>正45度（车头向左）</span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span>正45度（车头向左）</span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span>正45度（车头向左）</span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span>正45度（车头向左）</span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span>正45度（车头向左）</span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+            </div>
+            <div class="img-compare-sec">
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+            </div>
+            <div class="img-compare-third">
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <a target="_blank" href=""><img alt="" src="http://img4.bitautoimg.com/autoalbum/files/20161107/989/11130398906873_5365347_4.jpg" /></a>
+                    <p>前45度（车头向左）</p>
+                </div>
+            </div>
+            <div class="img-compare-forth">
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <img class="noneCar" alt="" src="http://image.bitautoimg.com/carchannel/images/nopic300_200.JPG" />
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <img class="noneCar" alt="" src="http://image.bitautoimg.com/carchannel/images/nopic300_200.JPG" />
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <img class="noneCar" alt="" src="http://image.bitautoimg.com/carchannel/images/nopic300_200.JPG" />
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <img class="noneCar" alt="" src="http://image.bitautoimg.com/carchannel/images/nopic300_200.JPG" />
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <img class="noneCar" alt="" src="http://image.bitautoimg.com/carchannel/images/nopic300_200.JPG" />
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <img class="noneCar" alt="" src="http://image.bitautoimg.com/carchannel/images/nopic300_200.JPG" />
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <img class="noneCar" alt="" src="http://image.bitautoimg.com/carchannel/images/nopic300_200.JPG" />
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <img class="noneCar" alt="" src="http://image.bitautoimg.com/carchannel/images/nopic300_200.JPG" />
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <img class="noneCar" alt="" src="http://image.bitautoimg.com/carchannel/images/nopic300_200.JPG" />
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <img class="noneCar" alt="" src="http://image.bitautoimg.com/carchannel/images/nopic300_200.JPG" />
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <img class="noneCar" alt="" src="http://image.bitautoimg.com/carchannel/images/nopic300_200.JPG" />
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <img class="noneCar" alt="" src="http://image.bitautoimg.com/carchannel/images/nopic300_200.JPG" />
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <img class="noneCar" alt="" src="http://image.bitautoimg.com/carchannel/images/nopic300_200.JPG" />
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <img class="noneCar" alt="" src="http://image.bitautoimg.com/carchannel/images/nopic300_200.JPG" />
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <img class="noneCar" alt="" src="http://image.bitautoimg.com/carchannel/images/nopic300_200.JPG" />
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <img class="noneCar" alt="" src="http://image.bitautoimg.com/carchannel/images/nopic300_200.JPG" />
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <img class="noneCar" alt="" src="http://image.bitautoimg.com/carchannel/images/nopic300_200.JPG" />
+                </div>
+                <div class="sub-tt">
+                    <span></span>
+                </div>
+                <div class="img-box">
+                    <img class="noneCar" alt="" src="http://image.bitautoimg.com/carchannel/images/nopic300_200.JPG" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--左侧浮动层 sta-->
+    <div class="po_left_nav po-a">
+        <ul class="">
+            <li class="po-a top_icon"></li>
+            <li class="po-r">
+                <a href="javascript:void(0)" class="active_a" data-target="nav_side_1">外观</a><span class="bg_icon active"></span><span class="status_icon po-a"></span>
+            </li>
+            <li class="po-r">
+                <a href="javascript:void(0)" data-target="nav_side_2">内饰</a><span class="bg_icon"></span><span class="status_n_icon po-a"></span>
+            </li>
+            <li class="po-r">
+                <a href="javascript:void(0)" data-target="nav_side_3">内部空间</a><span class="bg_icon"></span><span class="status_n_icon po-a"></span>
+            </li>
+            <li class="po-a bot_icon"></li>
+        </ul>
+    </div>
+</div>
+
+<!--dongbo左侧浮动层-->
+<!--<div class="main_box">-->
+    <!-- -->
+<!--</div>-->
+
+<!--footer model -->
+{{#include ./mod/mod_footer.html}}
+
+<!--goTop model -->
+{{#include ./mod/mod_goTop.html}}
+
+</body>
+<script src="js/jquery-1.12.3.js"></script>
+<script src="js/jquery.mousewheel.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.min.js"></script>
+<script src="js/newCars.js"></script>
+<script src="data/searchlist.js"></script>
+<script src="js/compare.js"></script>
+<script src="js/index.js"></script>
+<script src="js/goTop.js"></script>
+<script>
+    tab('.h5_str','','click');
+    function tab(ele,kzele,type){
+        $(ele).find('li').each(function (index) {
+            $(this).on(type,function(){
+                $(ele).find('li').removeClass('active').eq(index).addClass('active');
+                $(kzele).find('li').hide().eq(index).show();
+            })
+        })
+    }
+</script>
+<script>
+    $(function(){
+        if (navigator.appName === 'Microsoft Internet Explorer') { //判断是否是IE浏览器
+            if (navigator.userAgent.match(/Trident/i) && navigator.userAgent.match(/MSIE 8.0/i)) { //判断浏览器内核是否为Trident内核IE8.0
+                $("#img-compare-header .hascarWrap .area:last-child .r1").css({
+                    'visibility': 'hidden'
+                });
+            }
+        }
+    });
+
+</script>
+</html>

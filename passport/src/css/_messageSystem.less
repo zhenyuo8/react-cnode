@@ -1,0 +1,238 @@
+@import (reference) "public";
+@import  "mod/mod_confirmDelete";
+@import "mod/mod_header";
+@import "mod/mod_footer";
+@import "_pagination";
+
+.content{
+  width: 990px;
+  margin: 0 auto;
+  height: 100%;
+  .left_tab_menu{
+    width: 200px;
+    background: #fff;
+    padding-top: 46px;
+    height: 848px;
+    float: left;
+
+    ul{
+
+      li{
+        height: 22px;
+        width: 196px;
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 40px;text-align: center;
+        border-left: 4px solid transparent;
+        &.message_sys{
+          a{
+            position: relative;
+            em{
+              position: absolute;
+              width: 6px;
+              height: 6px;
+              display: inline-block;
+              background: #e43a3a;
+              right: -6px;
+              top: 4px;
+              border-radius: 3px 3px 3px 3px;
+            }
+          }
+
+        }
+        &.bg{
+          border-left-color: #3a8be4;
+          color: #3a8be4;
+          a{
+            color: #3A8BE4;
+          }
+        }
+        &:hover{
+          cursor: pointer;
+          color: #3a8be4;
+          border-left-color: #3a8be4;
+          a{
+            color: #3A8BE4;
+          }
+        }
+      }
+    }
+
+  }
+
+  .right_content{
+    padding-top: 54px;
+    width: 758px;
+    height: 100%;
+    float: right;
+    .account_m{
+      width: 758px;
+      height: 100%;
+      position: relative;
+      .account_tab{
+        height: 21px;
+        position: relative;
+        li{
+          font-size: 16px;
+          color: #333;
+          float: left;
+          position: relative;
+          font-family:  "PingFangSC-Regular","Hiragino Sans GB","Helvetica Neue",Helvetica,Arial,"Microsoft Yahei",sans-serif;
+          em{
+            display: inline-block;
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: #e43a3a;
+            right: 0;
+            border-radius: 3px 3px 3px 3px;
+          }
+          a{
+            &:hover{
+              color: #3a8be4;
+            }
+          }
+          a.active{
+            color: #333;
+            font-weight: bold;
+          }
+          &.comment_msg{
+            float: left;
+            margin-right: 26px;
+          }
+          &.delete{
+            position: absolute;
+            right: 4px;
+            a{
+              margin-left: 26px;
+              &.clear_sys_message{
+                display: none;
+              }
+            }
+          }
+        }
+      }
+      .account_con{
+
+        .content_white{
+          height: 450px;
+          background: #fff;
+          margin-top: 20px;
+          padding-top: 40px;
+          padding-left: 40px;
+          .notice_des{
+            margin-left: 48px;
+
+            h2{
+              font-family:  "PingFangSC-Regular","Hiragino Sans GB","Helvetica Neue",Helvetica,Arial,"Microsoft Yahei",sans-serif;
+              font-size: 20px;
+              font-weight: bold;
+              color: #999;
+              margin-top: 70px;
+
+            }
+          }
+
+        }
+
+      }
+      .content_490{
+        width: 758px;
+        margin-top: 20px;
+        position: relative;
+        .container{
+          width: 738px;
+          padding-top: 10px;
+          padding-left: 20px;
+          padding-bottom: 20px;
+          background: #ffffff;
+          margin-bottom: 10px;
+          position: relative;
+
+          //删除按钮
+          em{
+            position: absolute;
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            top:20px;
+            right: 20px;
+            background: url("../img/delete_grey_03.png") no-repeat center;
+            &:hover{
+              cursor: pointer;
+              background: url("../img/delete_red_03.png") no-repeat center;
+            }
+          }
+          .img_container{
+            margin-top: 15px;
+            vertical-align: middle;
+            span{
+              width: 12px;
+              height: 12px;
+              border-radius: 2px;
+              border: 1px solid #999;
+              display: inline-block;
+              margin-right: 40px;
+              margin-top: 19px;
+              cursor: pointer;
+              position: relative;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+              i{
+                width: 14px;
+                height: 14px;
+                position: absolute;
+                left: -1px;
+                top: -1px;
+                display: none;
+                background: url("../img/select_on_03.png") no-repeat center;
+              }
+            }
+            img{
+              display: inline-block;
+              margin-right: 40px;
+
+            }
+          }
+
+          .des_container{
+            a{
+              display: inline-block;
+              margin-top: 12px;
+              &:hover{
+                span{
+                  cursor: pointer;
+                  color: #3A8BE4;
+                  text-decoration: underline;
+                }
+
+              }
+              span{
+                display: inline-block;
+                font-size: 18px;
+                color: #333;
+              }
+            }
+            p{
+              width: 518px;
+              font-size: 14px;
+              margin-top: 10px;
+              line-height: 30px;
+              color: #aaa;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              word-break: break-all;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

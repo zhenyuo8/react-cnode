@@ -1,0 +1,1598 @@
+/*****
+ *@author: linyh
+ *@from: Global style summarize/yearTypeSummarize/carTypeSummarize/carTypeContrast
+ *@description: 何在朋
+ *@date: name (2017.01.21)
+*/
+
+@import (reference) "public";
+@import "mod/mod_headerTitle";
+@import "mod/mod_headerLogo";
+@import "mod/mod_carMenu";
+@import "mod/mod_carLike";
+@import "mod/mod_carOther";
+@import "mod/mod_pagination";
+@import "mod/mod_hotCarContrast";
+@import "mod/mod_carHot";
+@import "mod/mod_citySearch";
+@import "mod/mod_gotopContrast";
+@import "mod/mod_footer";
+@import "mod/mod_advert";
+@import "mod/mod_notfound";
+.font-w{
+    font-weight: bold;
+}
+.display_n{
+    display: none;
+}
+.wr{
+    background-color:@color-e72b2a;
+}
+.wo{
+    background-color:@color-e48d24;
+}
+.wp{
+    background-color:@color-f6e8f7;
+}
+.wb{
+    //background-color:@color-3a8be4;
+}
+.wg{
+    background-color:@color-2d5966;
+}
+.wblick{
+    background-color:@color-000;
+}
+.wpurp{
+    background-color:@color-c24070;
+}
+.wbrown{
+    background-color:@color-574227;
+}
+.ng{
+    background-color:@color-2d5966;
+}
+.nw{
+    background-color:@color-fff;
+}
+.nb{
+    background-color:@color-000;
+}
+
+//自定义滚动条样式
+#mCSB_1,#mCSB_2,#mCSB_3{
+	#mCSB_1_container,#mCSB_2_container,#mCSB_3_container{
+		margin-right:0;
+	}
+	#mCSB_1_scrollbar_vertical,#mCSB_2_scrollbar_vertical,#mCSB_3_scrollbar_vertical{
+		width:10px;
+		#mCSB_1_dragger_vertical,#mCSB_2_dragger_vertical,#mCSB_3_dragger_vertical{
+			.mCSB_dragger_bar{
+				width:6px;
+				background-color: @color-999;
+			}
+		}
+		.mCSB_draggerRail{
+			width:12px;
+			-webkit-border-radius:0;
+			-moz-border-radius:0;
+			border-radius:0;
+			background-color: @color-eee;
+		}
+	}
+}
+
+//页面title
+.summary_imgs_c_title{
+    width:@width-990;
+    margin: 22px auto 0;
+    //年款页差异
+    .year_imgs_c_top{
+    	.imgs_c_list {
+            position:relative;
+    		.icon-audi-logo{
+    			margin-top:8px;
+                background-image: url("../img/summar_sprite.png");
+                background-position: -56px 0px;
+                width: 33px;
+                height: 13px;
+                float:left;
+    		}
+    		.imgs_car_year {
+    			float:left;
+    			margin-top:8px;
+                .imgs_no_border{
+                    border-right:0px;
+                    width:88px;
+                    padding-left:7px;
+                    .icon-down{
+                        float:right;
+    					margin-right:20px;
+                    }
+                    .stop_s_y_list{
+                        position: absolute;
+                        top:28px;
+                        left:445px;
+                        z-index: 100;
+                        padding-top:20px;
+                        .stop_s_y{
+                            width:80px;
+                            border:1px solid @color-333;
+                            border-bottom:4px solid @color-333;
+                            overflow: hidden;
+                            a{
+                                color:@color-333;
+                                text-decoration: none;
+                                display: inline-block;
+                                width:80px;
+                                line-height: 29px;
+                                text-align: center;
+                                border-bottom: 1px solid @color-eee;
+                                background-color: @color-fff;
+                                &:hover{
+                                    color:@color-fff;
+                                    background-color:@color-3189e9;
+                                    border-color: @color-3189e9;
+                                }
+                                &:active{
+                                    color:@color-fff;
+                                    background-color:@color-126acc;
+                                    border-color: @color-126acc;
+                                }
+                            }
+                        }
+                    }
+                }
+    		}
+    	}
+    }
+}
+
+//页面内容
+.summarize_main_area{
+    width:@width-990;
+    margin:20px auto 0;
+    .display_none{
+        display: none;
+    }
+    //左侧区域
+    .summarize_show_module{
+        width:720px;
+        float:left;
+        border-right:1px solid @color-eee;
+        padding-right:31px;
+        //汽车报价模块
+        .summarize_car_msg{
+            width: 720px;
+            height: 310px;
+            .car_msg_picture{
+                width:270px;
+                float:left;
+                dl{
+                    dt{
+                        height:180px;
+                        position: relative;
+                        a{
+                            display: inline-block;
+                            width:100%;
+                            height: 100%;
+                            img{
+                                display: inline-block;
+                                width:100%;
+                                height: 180px;
+                            }
+                        }
+                        .display_n{
+                            display: none;
+                        }
+                        p{
+                            position: absolute;
+                            bottom: 0;
+                            left: 10px;
+                            color: #fff;
+                            strong{
+                                display: block;
+                            }
+                        }
+                    }
+                    dd{
+                        .color_list{
+                            position: relative;
+                            .turn_btn{
+                                background-image: url("../img/summar_sprite.png");
+                                width:7px;
+                                height:14px;
+                                position: absolute;
+                                top:12px;
+                                cursor: pointer;
+                                z-index: 200;
+                            }
+                            .pre_list{
+                                .turn_btn;
+                                background-position: -109px -34px;
+                                left:1px;
+                            }
+                            .next_list{
+                                .turn_btn;
+                                background-position: -109px 0px;
+                                right:5px;
+                            }
+                            .car_color_item{
+                                height:38px;
+                                margin:0 12px 0 13px;
+                                position:relative;
+                                overflow: hidden;
+                                .color_scroll{
+                                    position: absolute;
+                                    top:0;
+                                    left:0;
+                                    a{
+                                        display:block;
+                                        float:left;
+                                        width:18px;
+                                        height:8px;
+                                        border:1px solid @color-da;
+                                        margin:14px 5px 0;
+                                        &:hover{
+                                            width: 34px;
+                                            height: 10px;
+                                            margin: 13px -3px 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .car_show_position{
+                            span{
+                                width:133px;
+                                display: inline-block;
+                                position:relative;
+                                a{
+                                    display:inline-block;width:100%;
+                                    img{
+                                        display:inline-block;
+                                        width:133px;
+                                        height: 88px;
+                                    }
+                                }
+                                i{
+                                    color:@color-fff;
+                                    display: inline-block;
+                                    position: absolute;
+                                    top:0;
+                                    left:0;
+                                    width:34px;
+                                    line-height:20px;
+                                    text-align: center;
+                                    background-color: @color-000;
+                                    filter: alpha(opacity=80);
+                                    opacity: 0.8;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .car_msg_text{
+                width:410px;
+                margin-left:40px;
+                float:right;
+                .price_title{
+                    line-height:42px;
+                    padding-bottom: 8px;
+                    border-bottom: 1px solid @color-eee;
+                    position: relative;
+                    .p_t_p{
+                        color:@color-999;
+                        font-size: @fontSize-16;
+                        display: inline-block;
+                        float:left;
+                        a{
+                            color:@color-red-price;
+                            font-size:@fontSize-20;
+                            font-weight: 600;
+                            .red_price;
+                        }
+                    }
+                    .p_f{
+                        display: inline-block;
+                        float:right;
+                        font-size:@fontSize-14;
+                        margin-left: 12px;
+                        cursor: pointer;
+                        i{
+                            vertical-align:-1px;
+                            margin-right: 4px;
+                        }
+                        .icon-share{
+                            background-image: url("../img/summar_sprite.png");
+                            background-position: -39px -56px;
+                            width: 16px;
+                            height: 17px;
+                            display: inline-block;
+                            vertical-align: -3px;
+                        }
+                        .icon-collect{
+                            background-image: url("../img/sprite.png");
+                            background-position: 0px -302px;
+                            width: 15px;
+                            height: 15px;
+                            display: inline-block;
+                        }
+                        .icon-collected{
+                            background-image: url("../img/sprite.png");
+                            background-position: 0px -282px;
+                            width: 15px;
+                            height: 15px;
+                            display: inline-block;
+                        }
+                    }
+                    .share_area{
+                        position: absolute;
+                        top:34px;
+                        right: 44px;
+                        z-index: 200;
+                        .share_list{
+                            padding-top:12px;
+                            border:1px solid @color-333;
+                            background-color: @color-fff;
+                            li{
+                                line-height: 12px;
+                                padding:0 12px 12px;
+                                a{
+                                    display: inline-block;
+                                    width:40px;
+                                    height:40px;
+                                    background-image: url("../img/sprite.png");
+                                }
+                            }
+                            .share_wx{
+                                position: relative;
+                                .display_n{
+                                    display: none;
+                                }
+                                a{
+                                    background-position: 0px -860px;
+                                    &:hover{
+                                        background-position:0px -1130px;
+                                    }
+                                    &:active{
+                                        background-position:0px -1355px;
+                                    }
+                                }
+                                span{
+                                    position: absolute;
+                                    top:-18px;
+                                    left:64px;
+                                    z-index: 500;
+                                    padding-left: 10px;
+                                }
+                            }
+                            .share_wb{
+                                a{
+                                    background-position: 0px -1310px;
+                                    &:hover{
+                                        background-position: 0px -1265px;
+                                    }
+                                    &:active{
+                                        background-position: 0px -1220px;
+                                    }
+                                }
+                            }
+                            .share_kj{
+                                a{
+                                    background-position: 0px -1040px;
+                                    &:hover{
+                                        background-position: 0px -1085px;
+                                    }
+                                    &:active{
+                                        background-position: 0px -815px;
+                                    }
+                                }
+                            }
+                            .share_qq{
+                                a{
+                                    background-position: 0px -905px;
+                                    &:hover{
+                                        background-position: 0px -950px;
+                                    }
+                                    &:active{
+                                        background-position: 0px -995px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .car_msg_price{
+                    margin-top:8px;
+                    p{
+                        font-size:@fontSize-14;
+                        line-height:30px;
+                        overflow: hidden;
+                        span{
+                            float:left;
+                            display: inline-block;
+                            i{
+                                color:@color-999;
+                                display: inline-block;
+                                width:92px;
+                            }
+                            &:first-child{
+                                width:250px;
+                            }
+                            &:nth-of-type(2),&:first-child+span{
+                                float:left;
+                                width: 155px;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                i{
+                                    width:56px;
+                                }
+                            }
+                        }
+                    }
+                    dl{
+                        overflow: hidden;
+                        margin-top:12px;
+                        dt{
+                            float:left;
+                            width:80px;
+                            color:@color-999;
+                            font-size: @font-14;
+                        }
+                        dd{
+                            float:left;
+                            width:330px;
+                            span{
+                                font-size:12px;
+                                width:96px;
+                                line-height:22px;
+                                text-align: center;
+                                border:1px solid @color-da;
+                                display: inline-block;
+                                margin:0 0 12px 9px;
+                            }
+                        }
+                    }
+                    .car_msg_extends{
+                        margin:20px 0 12px;
+                        a{
+                            font-size: @font-16;
+                            width:122px;
+                            line-height:34px;
+                            text-align: center;
+                            border:1px solid @color-da;
+                            background-color:@color-eee;
+                            float: left;
+                            .hui_btn;
+                            &:first-child{
+                                color:@color-fff;
+                                width:130px;
+                                line-height:36px;
+                                background-color: @color-orange;
+                                border:0;
+                                .orange_btn;
+                            }
+                            &:first-child+a{
+                                margin:0 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // 品牌文章（综述页、车型对比页）
+        .brand_article{
+            .brand_article_title{
+                overflow: hidden;
+                margin-top:29px;
+                border-bottom: 4px solid @color-333;
+                i{
+                    font-size:@fontSize-20;
+                    font-weight: 600;
+                    line-height:44px;
+                    float:left;
+                    display: inline-block;
+                }
+                span{
+                    color:@color-eee;
+                    font-size:@fontSize-14;
+                    margin:15px 0 10px;
+                    display: inline-block;
+                    float:right;
+                    a{
+                        font-size:@fontSize-14;
+                        &:hover{
+                            color:@color-a-hover;
+                        }
+                        &:active{
+                            color:@color-a-active;
+                        }
+                    }
+                }
+            }
+            .brand_article_content{
+                padding:19px 0 4px;
+                overflow: hidden;
+                border-bottom: 1px solid @color-da;
+                ul{
+                    li{
+                        color:@color-999;
+                        font-size: @fontSize-14;
+                        height:30px;
+                        line-height:14px;
+                        width:346px;
+                        overflow: hidden;
+                        float:right;
+                        a{
+                            color:@color-999;
+                            float:left;
+                            padding-right:10px;
+                            border-right:1px solid @color-ccc;
+                            .a-state;
+                            em{
+                                background-image: url("../img/sprite.png");
+                                background-position: 0px -23px;
+                                width: 3px;
+                                height: 3px;
+                                display: inline-block;
+                                padding-right:6px;
+                                vertical-align: 4px;
+                            }
+                        }
+                        .list_wz{
+                            color:@color-333;
+                            float:left;
+                            padding-left:10px;
+                            border-right:0;
+                            border-left:1px solid @color-b3;
+                            .a-udline-state;
+                            width:180px;
+                            .text-clip;
+                        }
+                        i{
+                            float: right;
+                        }
+                        &:first-child{
+                            float: left;
+                        }
+                        &:first-child+li+li{
+                            float: left;
+                        }
+                        &:first-child+li+li+li+li{
+                            float: left;
+                        }
+                    }
+                }
+            }
+        }
+        //品牌车款
+        .brand_car_type{
+            position:relative;
+            .brand_car_choice{
+                padding:0 5px;
+                border:1px solid @color-333;
+                border-bottom: 4px solid @color-333;
+                background-color: @color-fff;
+                position: absolute;
+                top:72px;
+                left:-88px;
+                .item_style{
+                    width:68px;
+                    padding-top:8px;
+                    border-bottom: 1px solid @color-eee;
+                    span{
+                        display: inline-block;
+                        margin-bottom: 12px;
+                        margin-right:0;
+                        padding-left:3px;
+                        line-height:14px;
+                        i{
+                            width:12px;
+                            height:12px;
+                            border:1px solid @color-333;
+                            display: inline-block;
+                            vertical-align:-2px;
+                            margin-right:6px;
+                            cursor: pointer;
+                            &:hover{
+                                border-color: @color-a-hover;
+                            }
+                        }
+                        .checked{
+                            border:0;
+                            background-image: url("../img/summar_sprite.png");
+                            background-position: -75px -56px;
+                            width:14px;
+                            height:14px;
+                        }
+                    }
+                }
+                .stop_sell_year,.stop_sell_type,.stop_sell_num{
+                    .item_style;
+                }
+                .clear_choice{
+                    text-align: center;
+                    line-height:35px;
+                    cursor: pointer;
+                    .a-state;
+                }
+            }
+            .brand_car_type_title{
+                padding-top:28px;
+                border-bottom: 4px solid @color-333;
+                position: relative;
+                span{
+                    font-size:@font-20;
+                    font-weight:600;
+                    line-height: 44px;
+                    float:left;
+                    margin-right:21px;
+                }
+                .sell_type{
+                    float:left;
+                    margin-top: 5px;
+                    li{
+                        a{
+                            &:hover{
+                                color: #398be4;
+                            }
+                        }
+                        float:left;
+                        font-size: @fontSize-16;
+                        padding: 0 12px;
+                        margin: 10px 0;
+                        margin-bottom: 8px;
+                        line-height:16px;
+                        border-left: 1px solid @color-eee;
+                        position: relative;
+                        &:first-child{
+                            padding-left:0;
+                            border-left: 0;
+                        }
+                        &.active{
+                            a{
+                                font-weight: 600;
+
+                            }
+
+                        }
+                        .stop_sell{
+                            &:hover{
+                                color:@color-a-hover;
+                            }
+                            &:active{
+                                color:@color-a-active;
+
+                            }
+                            &.active{
+                                em{
+                                    font-weight: bold;
+                                }
+                            }
+                            i{
+                                background-image: url("../img/sprite.png");
+                                background-position: 0px -41px;
+                                width: 12px;
+                                height: 6px;
+                                display: inline-block;
+                                vertical-align: middle;
+                            }
+                        }
+                        .stop_sell_type_list{
+                            width:90px;
+                            border:1px solid @color-333;
+                            border-bottom:4px solid @color-333;
+                            overflow: hidden;
+                            position: absolute;
+                            top: 16px;
+                            left: 4px;
+                            z-index: 100;
+                            a{
+                                font-size: @font-14;
+                                display: inline-block;
+                                width:90px;
+                                height:40px;
+                                line-height: 39px;
+                                text-align: center;
+                                border-bottom: 1px solid @color-eee;
+                                background-color: @color-fff;
+                                &:hover{
+                                    color:@color-fff;
+                                    background-color:@color-3189e9;
+                                    border-color: @color-3189e9;
+                                }
+                                &:active{
+                                    color:@color-fff;
+                                    background-color:@color-126acc;
+                                    border-color: @color-126acc;
+                                }
+                            }
+                        }
+                    }
+                }
+                .b_c_t_more{
+                    font-size: @font-14;
+                    float:right;
+                    padding-top:18px;
+                    a{
+                        &:hover{
+                            color:@color-a-hover;
+                        }
+                        &:active{
+                            color:@color-a-active;
+                        }
+                    }
+                }
+            }
+            .brand_contrast{
+                .brand_contrast_table{
+                    tbody{
+                        tr{
+                            &.b_car_list{
+                                a{
+                                    &:hover{
+                                        color: #398be4;
+                                    }
+                                }
+                            }
+                            border-bottom: 1px solid @color-da;
+                            &:hover{
+                                background-color:@color-eee;
+                            }
+                            th{
+                                text-align: left;
+                                font-weight: normal;
+                                &:first-child{
+                                    width:319px;
+                                    padding:6px 0 4px;
+                                    line-height:22px;
+                                    .car_sell_msg{
+                                        margin:5px 0 2px;
+                                        position:relative;
+                                        a{
+                                            color:@color-fff;
+                                            background-color:@color-398be4;
+                                            display: inline-block;
+                                            padding:0 4px;
+                                            line-height: 16px;
+                                        }
+                                        i{
+                                            color:@color-333;
+                                            line-height:16px;
+                                            padding:0 4px;
+                                            border:1px solid @color-333;
+                                            background-color: @color-fff;
+                                            position:absolute;
+                                            bottom:-16px;
+                                            left:25px;
+                                            display: inline-block;
+                                        }
+                                        span{
+                                            color:@color-fff;
+                                            background-color:@color-aaa;
+                                            display: inline-block;
+                                            padding:0 4px;
+                                            line-height: 16px;
+                                            margin-left: 2px;
+                                        }
+                                    }
+                                    .car_style{
+                                        a{
+                                            display: inline-block;
+                                            width:95%;
+                                            &:hover{
+                                                color:@color-a-hover;
+                                                text-decoration: underline;
+                                            }
+                                            &:active{
+                                                color:@color-a-active;
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                    }
+                                    .car_dangw{
+                                        color:@color-999;
+                                        span{
+                                            margin-right: 8px;
+                                        }
+                                    }
+                                }
+                                &:first-child+th{
+                                    width:54px;
+                                    .attention_bar{
+                                        width:30px;
+                                        height:4px;
+                                        background-color: @color-da;
+                                        .attention_scale{
+                                            height:100%;
+                                            width:20%;
+                                            background-color: @color-398be4;
+                                        }
+                                    }
+                                }
+                                &:first-child+th+th{
+                                    width:91px;
+                                    a{
+                                        display: inline-block;
+                                        margin-right: 4px;
+                                        .icon-calce{
+                                            background-image: url("../img/sprite.png");
+                                            background-position: -12px -2288px;
+                                            width: 12px;
+                                            height: 13px;
+                                            display: inline-block;
+                                            vertical-align: -2px;
+                                        }
+                                    }
+                                }
+                                &:first-child+th+th+th{
+                                    width:141px;
+                                    span{
+                                        color:@color-e43a3a;
+                                        .red_price;
+                                        cursor: pointer;
+                                        // display: inline-block;
+                                        width: 60px;
+                                        display: inline-block;
+                                        white-space:nowrap;
+                                        word-break:break-all;
+                                        overflow:hidden;
+                                        text-overflow:ellipsis;
+                                        vertical-align: middle;
+                                        a{
+                                            color: @color-e43a3a;
+                                          }
+                                          a:hover{
+                                            text-decoration: underline;
+                                          }
+                                    }
+                                    &>a{
+                                        color:@color-fff;
+                                        display: inline-block;
+                                        line-height:24px;
+                                        padding:0 8px;
+                                        margin-left:7px;
+                                        background-color: @color-ffa903;
+                                        .orange_btn;
+                                    }
+                                }
+                                &:first-child+th+th+th+th{
+                                    width:116px;
+                                    a{
+                                        .a-state;
+                                    }
+                                    .margin_lr{
+                                        margin:0 3px;
+                                    }
+                                    .contrast_btn{
+                                        padding:5px;
+                                        color:@color-333;
+                                        border:1px solid @color-da;
+                                        background-color: @color-eee;
+                                        .icon-add{
+                                            background-image: url("../img/sprite.png");
+                                            background-position: -12px -2263px;
+                                            width: 12px;
+                                            height: 12px;
+                                            display: inline-block;
+
+                                            vertical-align: -1px;
+                                            margin-right:3px;
+                                        }
+                                        &:hover{
+                                            .icon-add{
+                                                background-position: -12px -2276px;
+                                            }
+                                        }
+                                        &:active{
+                                            .icon-add{
+                                                background-position: 0px -2276px;
+                                            }
+                                        }
+                                    }
+                                    .dis_contra{
+                                        color:@color-ab;
+                                        padding:5px 6px;
+                                    }
+                                }
+                            }
+                        }
+                        .contrast_table_title{
+                            color:@color-999;
+                            font-size: @font-14;
+                            line-height:40px;
+                            background-color: @color-eee;
+                            th{
+                                font-weight: bold;
+                            }
+                            .car_parameter{
+                                color:@color-333;
+                                padding-left: 4px;
+                                span{
+                                    margin-right:10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //品牌图片
+        .brand_picture{
+            .brand_article_title{
+                overflow: hidden;
+                margin-top:29px;
+                border-bottom: 4px solid @color-333;
+                i{
+                    font-size:@fontSize-20;
+                    font-weight: 600;
+                    line-height:44px;
+                    float:left;
+                    display: inline-block;
+                }
+                span{
+                    color:@color-eee;
+                    font-size:14px;
+                    margin:15px 0 10px;
+                    display: inline-block;
+                    float:right;
+                    a{
+                        font-size:@fontSize-14;
+                        margin:0 12px;
+                        &:hover{
+                            color:@color-a-hover;
+                        }
+                        &:active{
+                            color:@color-a-active;
+                        }
+                    }
+                    .b_a_more{
+                        margin-right:0;
+                    }
+                }
+            }
+            //综述页、车型对比页
+            .car_color_list{
+                padding:12px 0 11px;
+                overflow: hidden;
+                .c_color_wg{
+                    float: left;
+                    margin-right:40px;
+                    height: 22px;
+                    line-height: 22px;
+                    span{
+                        a{
+                            display: inline-block;
+                            width:18px;
+                            height:8px;
+                            border:1px solid @color-eee;
+                            margin-left:12px;
+                        }
+                    }
+                }
+                .c_color_ns{
+                    float: left;
+                    height: 22px;
+                    line-height: 20px;
+                    span{
+                        a{
+                            display: inline-block;
+                            width:18px;
+                            height:8px;
+                            border:1px solid @color-eee;
+                            margin-left:12px;
+                        }
+                    }
+                }
+            }
+            .brand_picture_show{
+                overflow: hidden;
+                .b_pic_left{
+                    float:left;
+                    span{
+                        display: block;
+                        width:237px;
+                        height:158px;
+                        position:relative;
+                        img{
+                            display: block;
+                            width:100%;
+                            height: 100%;
+                        }
+                        &:first-child{
+                            margin-bottom: 4px;
+                        }
+                        .pic_link{
+                            width:100%;
+                            height:100%;
+                            display: inline-block;
+                            position: absolute;
+                            top:0;
+                            left:0;
+                            z-index: 100;
+                        }
+                        .review_link{
+                            color:@color-fff;
+                            font-size: @font-14;
+                            line-height: 24px;
+                            padding:0 10px;
+                            background-color: @color-ffa903;
+                            display: inline-block;
+                            position: absolute;
+                            top:0;
+                            left:0;
+                            z-index: 200;
+                        }
+                    }
+                }
+                .b_pic_right{
+                    float:right;
+                    ul{
+                        width:478px;
+                        li{
+                            overflow: hidden;
+                            width: 478px;
+                            height: 104px;
+                            position: relative;
+                            a{
+                                display: block;
+                                float:left;
+                                width:156px;
+                                height:104px;
+                                margin-left: 5px;
+                                img{
+                                    display: inline-block;
+                                    width:100%;
+                                    height: 100%;
+                                }
+                                &:first-child{
+                                    margin-left:0;
+                                }
+                            }
+                            &:first-child+li{
+                                margin:5px 0;
+                            }
+                            .more_pic_picture{
+                                position: relative;
+                                &:hover{
+                                    .shade{
+                                        background-color: @color-a-hover;
+                                    }
+                                }
+                                &:active{
+                                    .shade{
+                                        background-color: @color-a-active;
+                                    }
+                                }
+                            }
+                            .shade{
+                                width:156px;
+                                height:104px;
+                                background-color: @color-000;
+                                fliter:opacity(alpha=80);
+                                opacity: 0.8;
+                                position: absolute;
+                                top:0;
+                                left:0;
+                            }
+                            .more_pic{
+                                width:156px;
+                                height:104px;
+                                position: absolute;
+                                top:0;
+                                left:0;
+                                .icon-next{
+                                    display: inline-block;
+                                    margin:20px 60px 0;
+                                    background-image: url("../img/summar_sprite.png");
+                                    background-position: 0px 0px;
+                                    width: 36px;
+                                    height: 36px;
+                                }
+                                .more_pic_text{
+                                    width:100%;
+                                    color:@color-fff;
+                                    font-size: @font-14;
+                                    margin-top: 14px;
+                                    text-align: center;
+                                    display: inline-block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            //年款综述页
+            .pic_classify_list{
+                .pic_classify_item{
+                    .p_c_item_title{
+                        padding-top:12px;
+                        a{
+                            font-size: @font-16;
+                            line-height: 56px;
+                            .a-state;
+                        }
+                    }
+                    ul{
+                        overflow: hidden;
+                        li{
+                            float: left;
+                            margin-left: 20px;
+                            a{
+                                display: inline-block;
+                                .b_p_img{
+                                    width:165px;
+                                    margin-bottom: 12px;
+                                    img{
+                                        width:100%;
+                                    }
+                                }
+                                &:hover{
+                                    .b_p_text{
+                                        color:@color-a-hover;
+                                        text-decoration: underline;
+                                    }
+                                }
+                                &:active{
+                                    .b_p_text{
+                                        color:@color-a-active;
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                            &:first-child{
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //视频模块（综述页、车型对比页）
+        .summarize_video{
+            .brand_article_title{
+                overflow: hidden;
+                margin-top:29px;
+                border-bottom: 4px solid @color-333;
+                i{
+                    font-size:@fontSize-20;
+                    font-weight: 600;
+                    line-height:44px;
+                    float:left;
+                    display: inline-block;
+                }
+                span{
+                    color:@color-eee;
+                    font-size:14px;
+                    margin:15px 0 10px;
+                    display: inline-block;
+                    float:right;
+                    a{
+                        font-size:@fontSize-14;
+                        margin:0 12px;
+                        &:hover{
+                            color:@color-a-hover;
+                        }
+                        &:active{
+                            color:@color-a-active;
+                        }
+                    }
+                    .b_a_more{
+                        margin-right:0;
+                    }
+                }
+            }
+            .pub-list {
+                .time {
+                	position:absolute;
+                	top:136px;
+                	right:4px;
+                	width:40px;
+                	height:18px;
+                	line-height: 18px;
+                	z-index: 2;
+                	background:#3a2a25;
+                	opacity:0.8;
+                	filter:alpha(opacity=50);
+                	color:@color-fff;
+                }
+            	li {
+            		dl {
+                        cursor: pointer;
+                        dt{
+                            width:237px;
+                            height: 158px;
+                            margin-top:12px;
+                            img{
+                                display: block;
+                                width:100%;
+                                height: 100%;
+                            }
+                            span{
+                                display: inline-block;
+                                width:50px;
+                                height:50px;
+                                position:absolute;
+                				top:50%;
+                				left:50%;
+                				margin-left: -25px;
+                				margin-top: -38px;
+                            }
+                        }
+            			dd {
+            				font-size:@font-14;
+            				color:@color-333;
+            				padding-left:4px;
+                            line-height:38px;
+            			}
+            			.v-small-tit {
+                            width:233px;
+                            .text-ellipsis;
+            			}
+            			.v-time {
+                            .time;
+            			}
+                        &:hover{
+                            dt{
+                                span{
+                                    background: url("../img/sprite.png");
+                                    background-repeat: no-repeat;
+                                    background-position: 0px -1400px;
+                                }
+                            }
+                            .v-small-tit{
+                                background-color: @color-eee;
+                            }
+                        }
+                        &:active{
+                            dt{
+                                span{
+                                    background: url("../img/sprite.png");
+                                    background-repeat: no-repeat;
+                                    background-position: 0px -1455px;
+                                }
+                            }
+                            .v-small-tit{
+                                background-color: @color-eee;
+                            }
+                        }
+            		}
+                    &:first-child+li{
+                        margin:0 4px;
+                    }
+            	}
+            }
+        }
+        //授权经销
+        .authorized_dealer{
+            .brand_article_title{
+                margin-top:16px;
+                border-bottom: 4px solid @color-333;
+                position: relative;
+                .b_a_t{
+                    font-size:@fontSize-20;
+                    font-weight: 600;
+                    line-height:44px;
+                    float:left;
+                    display: inline-block;
+                }
+                .area_dealer_choice{
+                    float:left;
+                    padding-top:18px;
+                    li{
+                        font-size: @fontSize-14;
+                        float:left;
+                        margin-left:20px;
+                        .ch_btn{
+                            .dealer_name{
+                                .dealer_num{
+                                    color:@color-b3;
+                                }
+                            }
+                            i{
+                                background-image: url("../img/sprite.png");
+                                background-position: 0px -41px;
+                                width: 12px;
+                                height: 6px;
+                                display: inline-block;
+                                margin-left:4px;
+                            }
+                            &:hover{
+                                color:@color-a-hover;
+                                .dealer_num{
+                                    color:@color-a-hover;
+                                }
+                            }
+                            &:active{
+                                color:@color-a-active;
+                                .dealer_num{
+                                    color:@color-a-active;
+                                }
+                            }
+                        }
+                        .city_chose{
+                            top:44px;
+                            .delete_city_c {
+                                float: right;
+                                position: absolute;
+                                right: 10px;
+                                top: 18px;
+                                cursor: pointer;
+                            }
+                        }
+                        .all_dealer{
+                            width:126px;
+                            border:1px solid @color-333;
+                            border-bottom:4px solid @color-333;
+                            background-color: @color-fff;
+                            position: absolute;
+                            top:44px;
+                            left:174px;
+                            a{
+                                display: inline-block;
+                                width:116px;
+                                line-height:28px;
+                                padding-left:10px;
+                                border-bottom: 1px solid @color-eee;
+                                &:hover{
+                                    color:@color-fff;
+                                    background-color:@color-3189e9;
+                                    border-color: @color-3189e9;
+                                    span{
+                                        color:@color-fff;
+                                    }
+                                }
+                                &:active{
+                                    color:@color-fff;
+                                    background-color:@color-126acc;
+                                    border-color: @color-126acc;
+                                    span{
+                                        color:@color-fff;
+                                    }
+                                }
+                            }
+                            .display_n{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .area_dealer_sort{
+                    color:@color-eee;
+                    font-size:14px;
+                    margin:15px 0 10px;
+                    display: inline-block;
+                    float:right;
+                    a{
+                        font-size:@fontSize-14;
+                        padding:0 12px;
+                        line-height:14px;
+                        display: inline-block;
+                        &:first-child+a{
+                            padding-right:4px;
+                            border-left: 1px solid @color-da;
+                        }
+                    }
+                }
+            }
+            //车型页差别
+            .yt_b_t{
+                margin-top:28px;
+            }
+            //
+            .dealer_area{
+                dl{
+                    overflow: hidden;
+                    padding-bottom: 12px;
+                    border-bottom: 1px solid @color-eee;
+                    dt{
+                        float:left;
+                        width: 40px;
+                        margin-top:12px;
+                    }
+                    dd{
+                        float:left;
+                        width:676px;
+                        padding-left:4px;
+                        a{
+                            display: inline-block;
+                            line-height: 17px;
+                            padding:0 4px;
+                            margin:12px 0 0 16px;
+                            i{
+                                color:@color-999;
+                            }
+                            &:hover{
+                                .a-hover;
+                            }
+                        }
+                        .a-hover{
+                            color: @color-fff;
+                            background-color: @color-398be4;
+                            i{
+                                color: @color-fff;
+                            }
+                        }
+                    }
+                }
+                .dealer_list{
+                    a{
+                        .a-state;
+                    }
+                    .dealer_item{
+                        overflow: hidden;
+                        .dealer_detail{
+                            float:left;
+                            width: 340px;
+                            border-bottom: 1px solid @color-eee;
+                            &:first-child{
+                                padding-right:40px;
+                            }
+                            &:first-child+.dealer_detail+.dealer_detail{
+                                padding-right:40px;
+                            }
+                            &:first-child+.dealer_detail+.dealer_detail+.dealer_detail+.dealer_detail{
+                                padding-right:40px;
+                            }
+                            h2{
+                                margin-top:10px;
+                                line-height: 40px;
+                                a{
+                                    font-size: @font-16;
+                                    font-weight: 600;
+                                    color:@color-e43a3a;
+                                    cursor: pointer;
+                                    max-width: 230px;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    float: left;
+                                    em{
+                                        color:@color-999;
+                                        font-weight: 600;
+                                    }
+                                    span{
+                                        color:@color-333;
+                                        font-weight: 600;
+                                    }
+                                    &:hover{
+                                        span{
+                                            color:@color-a-hover;
+                                        }
+                                    }
+                                    &:active{
+                                        span{
+                                            color:@color-a-active;
+                                        }
+                                    }
+                                }
+                                i{
+                                    font-size: 12px;
+                                    width:53px;
+                                    line-height:18px;
+                                    display: inline-block;
+                                    text-align: center;
+                                    border: 1px solid @color-c4;
+                                    margin-left: 12px;
+                                }
+                            }
+                            p{
+                                line-height:30px;
+                                font-size: @font-14;
+                                span{
+                                    color:@color-999;
+                                }
+                                .cuxiao{
+                                    display: inline-block;
+                                    width:232px;
+                                    .text-ellipsis;
+                                    vertical-align: top;
+                                }
+                                .ad{
+                                    width:38px;
+                                    line-height:16px;
+                                    text-align: center;
+                                    color:@color-f2f2f2;
+                                    border:1px solid @color-f2f2f2;
+                                }
+                            }
+                            .address{
+                                i{
+                                    width:192px;
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                }
+                                .area_pic{
+                                    color:@color-a-hover;
+                                    .a-udline-state;
+                                }
+                            }
+                            .car_msg_extends{
+                                margin:12px 0 20px;
+                                a{
+                                    font-size: @font-16;
+                                    display: inline-block;
+                                    width:90px;
+                                    line-height:26px;
+                                    text-align: center;
+                                    border:1px solid @color-da;
+                                    background-color:@color-eee;
+                                    .hui_btn;
+                                    &:first-child{
+                                        color:@color-fff;
+                                        width:112px;
+                                        line-height:28px;
+                                        background-color: @color-orange;
+                                        border:0;
+                                        .orange_btn;
+                                    }
+                                    &:first-child+a{
+                                        margin:0 8px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //右侧区域
+    .imgs_m_right{
+        width:206px;
+        height:auto;
+        float:right;
+        margin-top:-3px;
+
+        .calLike_wrap {
+            margin-top: 30px;
+        }
+        .carHot_wrap {
+            margin-bottom: 40px;
+        }
+
+        h3 {
+             font-size: @font-16;
+             font-weight: 700;
+             line-height: 28px;
+             padding-top: 2px;
+             border-bottom: 1px solid @color-eee;
+             margin-top: 20px;
+        }
+    }
+}
+#back_to_top{
+    display: none;
+}
+.we-buy{
+    margin-bottom: 10px;
+}
+#putweixin1{
+    display: none;
+    position: absolute;
+    left: 42px;
+    top: 89px;
+}
+/*
+dongbo   jxiufu erweima
+*/
+.erweima{
+    position: absolute;
+    left: 61px;
+    top: -18px;
+    display: none;
+    padding-left: 10px;
+}
+#putweixin{
+    position: absolute;
+    top: 93px;
+    left: 56px;
+}
+.share_wx{
+    position: relative;
+}

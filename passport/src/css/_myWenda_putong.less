@@ -1,0 +1,204 @@
+/*****
+ *@author: jiann
+ *@from: Global style myWenda_putong   个人中心的我的问答-普通人
+ *@description:
+ *@date: name (2017.03.15)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_header";
+@import "mod/mod_answer";
+@import "mod/mod_problem";
+@import "mod/mod_pagination";
+@import "mod/mod_footer";
+@import "mod/mod_preview_image";
+
+html{
+	background: #f7f7f7;
+}
+.wrap {
+	width: 100%;
+
+	/*content*/
+	.content {
+		width: 992px;
+		margin: 0 auto 48px auto;
+
+		/*左侧个人中心模块列表*/
+		.left_tab_menu {
+			float: left;
+			width: 200px;
+			height: 848px;
+    		background: #fff;
+    		padding-top: 46px;
+
+    		li {
+    			width: 196px;
+    			height: 22px;
+    			border-left: 4px solid transparent;
+    			text-align: center;
+    			font-size: 18px;
+    			color: #666;
+    			margin-bottom: 40px;
+    			cursor: pointer;
+			a{
+				position: relative;
+				 	em{
+				position: absolute;
+				    width: 6px;
+				    height: 6px;
+				    display: inline-block;
+				    background: #e43a3a;
+				    right: -6px;
+				    top: 4px;
+				    border-radius: 3px 3px 3px 3px;
+		            	}
+			}
+    			&:hover {
+    				border-left-color: #3a8be4;
+		            a{
+		            	color: #3A8BE4;
+		            }
+    			}
+    		}
+    		.message_sys {
+    			a {
+    				position: relative;
+    				em {
+    					position: absolute;
+			            width: 6px;
+			            height: 6px;
+			            display: inline-block;
+			            background: #e43a3a;
+			            right: -6px;
+			            top: 4px;
+			            border-radius: 3px 3px 3px 3px;
+    				}
+    			}
+    		}
+    		.bg {
+    			border-left-color: #3a8be4;
+    			a {
+    				color: #3a8be4;
+
+    			}
+    		}
+		}
+		/*右侧我的问答内容*/
+		.wenda_content {
+			width: 762px;
+			min-height: 860px;
+			margin-top: 36px;
+			float: right;
+			/*个人信息*/
+			.pt_personal_news {
+				width: 762px;
+				height: 182px;
+				border: 1px solid #dadada;
+				background: #fff;
+
+				.pt_per {
+					float: left;
+					margin-top: 25px;
+					width: 313px;
+					height: 115px;
+					border-right: 1px dashed #eee;
+
+					dt {
+						position: relative;
+						float: left;
+						margin: 0 39px 0 40px;
+						width: 120px;
+						height: 120px;
+
+						.pt_photo {
+							display: inline-block;
+							width: 120px;
+							height: 120px;
+						}
+
+						.pt_photo_mask {
+							position: absolute;
+							top: 0;
+							left: 0;
+							z-index: 2;
+							display: inline-block;
+							width: 120px;
+							height: 120px;
+							background: url(../img/zhj_photo_mask.png);
+						}
+					}
+					.pt_name {
+						margin-top: 41px;
+						font-size: 24px;
+						font-weight: 700;
+						max-width: 150px;
+						overflow: hidden;
+						white-space: nowrap;
+						text-overflow: ellipsis;
+					}
+					p {
+						display: inline-block;
+						font-size: 18px;
+						margin: 46px 0 0 35px;
+
+						span {
+							font-weight: 700;
+						}
+					}
+					.pt_num2 {
+						margin-left: 80px;
+					}
+				}
+				.pt_noborder {
+					border-right: none;
+					width: 447px;
+				}
+			}
+			/*问答tab*/
+			.wenda_tab {
+				width: 762px;
+				margin-top: 28px;
+
+				.wenda_tab_type {
+					height: 42px;
+					padding-left: 3px;
+
+					li {
+						float: left;
+						margin-right: 25px;
+						cursor: pointer;
+						a {
+							font-size: 16px;
+							color: #333;
+						}
+					}
+					.wenda_current {
+						a {
+							font-weight: 700;
+						}
+					}
+				}
+				.wenda_tab_content {
+					width: 722px;
+					padding: 0 20px 40px 20px;
+					min-height: 476px;
+					background: #fff;
+
+					.wenda_tab_con {
+						display: none;
+
+						.tcdPageCode {
+							margin-top:20px;
+						}
+					}
+					.wenda_tab_show {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}

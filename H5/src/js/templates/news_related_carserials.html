@@ -1,0 +1,16 @@
+<div class="relevant_type" v-if="rows.length">
+	<h5 class="item_title"><i></i>相关车型</h5>
+	<ul>
+		<li class="clearfix" v-for="el in rows">
+			<img v-bind:src="el.bottompicImgUrl">
+			<div class="type_msg">
+				<p>{{el.serialName}}</p>
+				<p v-if="el.dealerMinPrice">{{el.dealerMinPrice}}-{{el.dealerMaxPrice}}万</p>
+				<p v-else>暂无报价</p>
+			</div>
+			<span class="inquire">询底价</span>
+			<router-link bdtag="NewsPage_DetailsPage_Model_Clicked" class="type_link" :to="{name:'carserial',query:{serialId:el.serialId}}" reload></router-link>
+			<router-link bdtag="NewsPage_DetailsPage_InquiryButton_Clicked" class="inquire_price" :to="{name:'price',query:{serialId:el.serialId}}" reload></router-link>
+		</li>
+	</ul>
+</div>

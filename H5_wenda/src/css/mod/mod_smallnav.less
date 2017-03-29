@@ -1,0 +1,39 @@
+/*****
+ *@author: linyh
+ *@from: Global style mod_smallnav(面包屑导航)
+ *@description:
+ *@date: name (2017.02.25)
+*/
+
+@import (reference) "../public";
+
+/* 面包屑导航 */
+.small_nav{
+    font-size: 14px;
+    width: 100%;
+    padding: 0 0.4rem;
+    line-height: 1.067rem /* 80/75 */;
+    border-bottom: 2px solid @color-tab-border;
+    box-sizing: border-box;
+    a{
+        color: @color-666;
+    }
+    img{
+        width: .133rem /* 10/75 */;
+        height: .213rem /* 16/75 */;
+        vertical-align: middle;
+        margin: 0 .213rem /* 16/75 */;
+        display: inline-block;
+    }
+    span{
+        color: @color-999;
+    }
+}
+//dpr=2 字体大小
+[data-dpr="2"] .small_nav{
+    font-size: 28px;
+}
+//dpr=3 字体大小
+[data-dpr="3"] .small_nav{
+    font-size: 42px;
+}

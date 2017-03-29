@@ -1,0 +1,275 @@
+/*****
+ *@author: linyh
+ *@from: Global style carType
+ *@description: 陈璐
+ *@date: name (2017.02.17)
+*/
+
+
+
+@import (reference) "public";
+
+.wrap_bg{
+    height: 100%;
+    /*background: url("../img/bg_sc.jpg") no-repeat;
+    background-size: cover;*/
+}
+.blue_bg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 5.2rem;
+    background: url("../img/bot_blue_xb.png") no-repeat center top;
+    background-size: 100% auto;
+}
+.car_pic_list .swiper-container{min-height: 4rem}
+.car_pic_list .swiper-pagination{height:.5rem;}
+.car_pic_list .swiper-pagination-bullet{border: 1px solid #ccc;opacity: 1;}
+
+// 车型主页面
+.car_type_page{
+    height: 100%;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+
+    // 换车
+    .change_car{
+        font-size: 14px;
+        position: absolute;
+        top: 2.747rem /* 206/75 */;
+        right: -.427rem /* 32/75 */;
+        z-index: 10;
+        a{
+            color: @color-999;
+            display: block;
+            width: 2.094rem;
+            line-height: 1.04rem /* 78/75 */;
+            padding-left: .267rem /* 20/75 */;
+            background-color: @color-fff;
+            border: 1px solid @border-c6;
+            border-radius: .507rem /* 38/75 */;
+            i{
+                .icon_bg(url("../img/changecar.png"),.4rem /* 30/75 */,.4rem /* 30/75 */);
+                display: inline-block;
+                vertical-align: -.067rem /* 5/75 */;
+                margin-right: .12rem /* 9/75 */;
+            }
+            &:active{
+                color: @color-333;
+                i{
+                    background-image: url("../img/changecar_h.png");
+                }
+            }
+        }
+    }
+
+    // 车型图片展示
+    .car_type_img{
+        .logo{
+            text-align: center;
+            font-size: 15px;
+            padding-top: 2%;
+            img{
+                width: 1.5rem;
+            }
+            span{display: block}
+        }
+        .car_pic_tab{
+            .car_pic_list{
+                margin: 0 auto;
+                overflow: hidden;
+                text-align: center;
+                img{
+                    width: 7.2rem;
+                    height: 4.8rem;
+                }
+            }
+        }
+    }
+
+    // 车型信息
+    .car_type_msg{
+        font-size: 11px;
+        padding: 0 13.333% .467rem /* 35/75 */;
+        p{
+            background:url(../img/line.png) no-repeat center top;
+            background-size:100% 1px;
+            span{
+                display: block;
+            }
+        }
+        .price_msg{
+            padding: .133rem /* 10/75 */ 0 .133rem /* 10/75 */ .347rem /* 26/75 */;
+            position: relative;
+            .price_n{
+                font-size: 18px;
+                color: @result-price;
+                font-weight: 700;
+                line-height: .64rem /* 48/75 */;
+            }
+            .price_zd{
+                line-height: .453rem /* 34/75 */;
+            }
+            .tip{
+                position: absolute;
+                top: 0;
+                right: .24rem /* 18/75 */;
+                i{
+                    .icon_bg( url("../img/butie_bg.png"), .747rem /* 56/75 */, .8rem /* 60/75 */);
+                    color: @color-fff;
+                    text-shadow: .04rem .04rem .04rem @color-666;
+                    line-height: .8rem /* 60/75 */;
+                    text-align: center;
+                    margin-left: .067rem /* 5/75 */;
+                    display: inline-block;
+                }
+            }
+        }
+        .param_msg{
+            color:#666;
+            padding: .187rem /* 14/75 */ 0 .187rem /* 14/75 */ .347rem /* 26/75 */;
+            span{
+                line-height: .4rem /* 30/75 */;
+                word-break: break-all;
+            }
+        }
+    }
+
+    // 导航
+    nav{
+        font-size: 15px;
+        width: 100%;
+        padding: 0 5.2%;
+        position: absolute;
+        left: 0;
+        bottom: 1.3rem;
+        ul{
+            li{
+                float: left;
+                width: 33.333%;
+                a{
+                    color: @color-fff;
+                    display: block;
+                    width: 88.393%;
+                    line-height: 1.04rem /* 78/75 */;
+                    text-align: center;
+                    border: 1px solid @color-fff;
+                    border-radius: 0.48rem /* 36/75 */;
+                    margin: .173rem /* 13/75 */ auto;
+                }
+                &:active{
+                    a{
+                        color: @nav-active;
+                        background-color:@color-fff;
+                    }
+                }
+                &.active a{
+                    color: @nav-active;
+                    background-color: @color-fff;
+                }
+            }
+        }
+        p{
+            width: 100%;
+            height: 1.667rem /* 125/75 */;
+        }
+    }
+
+}
+
+// 下一页
+.next_page{
+    .icon_bg(url("../img/down.png"), .813rem /* 61/75 */, .44rem /* 33/75 */);
+    margin-left: -.4rem /* 30/75 */;
+    position: absolute;
+    left: 50%;
+    bottom: .6rem;
+    z-index: 8;
+    -webkit-animation:arrow_down 1.8s infinite normal forwards;
+    animation:arrow_down 1.8s infinite normal forwards;
+    opacity: 0;
+}
+
+@keyframes arrow_down
+{
+    0% {bottom:.6rem;opacity: 1}
+    90% {bottom:.1rem;opacity: 0}
+    100%{bottom: .6rem;opacity: 0}
+}
+
+@-webkit-keyframes arrow_down
+{
+    0% {bottom:.6rem;opacity: 1}
+    90% {bottom:.1rem;opacity: 0}
+    100%{bottom: .6rem;opacity: 0 }
+}
+
+.car_type_page .next_page,.article-bg .next_page{
+    .icon_bg(url("../img/double_down.png"), .813rem /* 61/75 */, .44rem /* 33/75 */);
+}
+
+
+/* 字体大小适配 */
+//dpr=2字体大小
+[data-dpr="2"] .car_type_page{
+    // 换车
+    .change_car{
+        font-size: 28px;
+    }
+    // 车型图片展示
+    .car_type_img{
+        .logo{
+            font-size: 30px;
+        }
+    }
+    // 车型信息
+    .car_type_msg{
+        font-size: 22px;
+        .price_n{
+            font-size: 36px;
+        }
+    }
+    // 导航
+    nav{
+        font-size: 30px;
+    }
+}
+
+//dpr=3字体大小
+[data-dpr="3"] .car_type_page{
+    // 换车
+    .change_car{
+        font-size: 42px;
+    }
+    // 车型图片展示
+    .car_type_img{
+        .logo{
+            font-size: 45px;
+        }
+    }
+    // 车型信息
+    .car_type_msg{
+        font-size: 33px;
+        .price_n{
+            font-size: 54px;
+        }
+    }
+    // 导航
+    nav{
+        font-size: 45px;
+    }
+}
+
+
+/* 适配iphone4尺寸 */
+[data-dpr="2"] .car_type_page{
+    @media (max-width: 640px) and (max-height: 960px){
+        // 导航
+        nav{
+            bottom: .933rem /* 70/75 */;
+        }
+    }
+}

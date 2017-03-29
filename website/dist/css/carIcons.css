@@ -1,0 +1,40 @@
+.carIcons {
+  width: 100%;
+  height: 100%;
+}
+.carIcons .carIcons_detail {
+  width: 990px;
+  height: 60px;
+  margin: 14px auto 0px auto;
+}
+.carIcons .carIcons_detail .carIcon_detail_ul {
+  width: 982px;
+  height: 48px;
+  padding: 0 4px;
+  border-bottom: 1px solid #eee;
+}
+.carIcons .carIcons_detail .carIcon_detail_ul li {
+  display: inline-block;
+  width: 75.5px;
+  height: 48px;
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+.carIcons .carIcons_detail .carIcon_detail_ul li span {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 2px;
+}
+.carIcons .carIcons_detail .carIcon_detail_ul li span.icons {
+  margin: 0 auto;
+  height: 20px;
+}
+.carIcons .carIcons_detail .carIcon_detail_ul li span.ver_line {
+  position: absolute;
+  top: 0px;
+  left: 73px;
+  color: #eee;
+  font-size: 14px;
+}

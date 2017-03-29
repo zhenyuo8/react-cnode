@@ -1,0 +1,16 @@
+
+
+{{ for (var i = 0; i < it.selects.length; i++) { var carP = it.selects[i].param['carParam']; }}
+
+<li>
+    <a href="#">
+        <p class="style_name">{{ out+= carP['serialname'];}} {{ out+= carP['name']; }}</p>
+        <p class="style_price clearfix">
+            <span>{{ out += it.selects[i].param['carParam']['referprice']; }}万起</span>
+            <span class="style_zd_price">指导价：{{ out += it.selects[i].param['carParam']['referprice']; }}万</span>
+        </p>
+    </a>
+    <span class="delete_c_h"></span>
+</li>
+
+{{ } }}

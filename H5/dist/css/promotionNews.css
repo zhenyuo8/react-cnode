@@ -1,0 +1,255 @@
+/*****
+ *@author: jianingning
+ *@from: Global style promotionNews
+ *@description: 
+ *@date: name (2017.02.16)
+*/
+/*****
+ *@author: jianingning
+ *@from: Global style mod/mod_nav
+ *@description: 
+ *@date: name (2017.02.13)
+*/
+.nav_menu {
+  width: 100%;
+  height: 5.333rem;
+  background: url(../img/nav_bg.png);
+  background-size: cover;
+  display: none;
+}
+.nav_menu ul {
+  padding: 0.827rem 0 0 0.667rem;
+}
+.nav_menu ul li {
+  float: left;
+  margin: 0 0.293rem 0.347rem 0;
+  width: 2.667rem;
+  height: 1.067rem;
+  border: 1px solid #fff;
+  border-radius: 50px;
+}
+.nav_menu ul li a {
+  display: inline-block;
+  width: 2.667rem;
+  height: 1.067rem;
+  text-align: center;
+  line-height: 1.067rem;
+  font-size: 15px;
+  color: #fff;
+}
+.nav_menu ul li a:active {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: rgba(0, 0, 0, 0);
+  tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.nav_menu ul li:active {
+  background: #fff;
+}
+.nav_menu ul li:active a {
+  color: #269ffe;
+}
+.nav_menu ul .nav_active {
+  border: 1px solid #fff;
+  background: #2799fe;
+}
+.nav_menu ul .nav_active a {
+  color: #fff;
+}
+[data-dpr="2"] .nav_menu li a {
+  font-size: 30px;
+}
+[data-dpr="3"] .nav_menu li a {
+  font-size: 45px;
+}
+/*****
+ *@author: jianingning
+ *@from: Global style mod_rotatoHint
+ *@description:
+ *@date: name (2017.02.17)
+*/
+.rotatoHint_mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  filter: alpha(opacity=50);
+  opacity: .5;
+  display: none;
+}
+.rotatoHint {
+  position: fixed;
+  top: 21.9%;
+  left: 16.4%;
+  z-index: 100;
+  width: 63.4%;
+  display: none;
+}
+.rotatoHint img {
+  width: 100%;
+}
+.wrap {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+.wrap .content {
+  padding-top: 1.333rem;
+}
+.wrap .content .dealer_logo {
+  margin: 0.6rem auto 0 auto;
+  display: block;
+  width: 2.0rem;
+  height: 2.0rem;
+}
+.wrap .content .dealer_name {
+  margin-top: 0.107rem;
+  font-size: 15px;
+  text-align: center;
+}
+.wrap .content .dealer_map {
+  position: relative;
+  margin-top: 1.507rem;
+}
+.wrap .content .dealer_map .map {
+  width: 100%;
+}
+.wrap .content .dealer_map .map img {
+  width: 100%;
+}
+.wrap .content .dealer_map .address_label {
+  position: absolute;
+  top: 1.96rem;
+  left: 3.333rem;
+  display: inline-block;
+  width: 4.667rem;
+  height: 1.2rem;
+  background: #2896fe;
+  font-size: 15px;
+  text-align: center;
+  line-height: 1.2rem;
+  color: #fff;
+  border-radius: 10px;
+}
+.wrap .content .dealer_map .arrow-down {
+  position: absolute;
+  top: 3.14rem;
+  left: 5.47rem;
+  width: 0;
+  height: 0;
+  border-left: 0.267rem solid transparent;
+  border-right: 0.267rem solid transparent;
+  border-top: 0.267rem solid #2896fe;
+}
+.wrap .content .dealer_map .dealer_address {
+  position: absolute;
+  top: -0.907rem;
+  left: 0.187rem;
+  width: 95%;
+  height: 1.813rem;
+  border: 1px solid #ededed;
+  background: #fff;
+}
+.wrap .content .dealer_map .dealer_address .location_icon {
+  float: left;
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.813rem;
+  text-align: center;
+  background: #fafafa;
+}
+.wrap .content .dealer_map .dealer_address .location_icon img {
+  display: inline-block;
+  margin-top: 0.56rem;
+  width: 0.587rem;
+  height: 0.8rem;
+}
+.wrap .content .dealer_map .dealer_address .address {
+  font-size: 15px;
+  width: 76%;
+  float: left;
+  padding: 0.333rem 0.267rem 0 0.4rem;
+}
+.wrap .content .promotionNews {
+  height: 0.747rem;
+  line-height: 0.747rem;
+  background: #f3f3f3;
+  font-size: 13px;
+}
+.wrap .content .promotionNews span {
+  display: inline-block;
+  width: 0.08rem;
+  height: 0.36rem;
+  background: #2896fe;
+  border-radius: 5px;
+  float: left;
+  margin: 0.213rem 0.16rem 0 0.373rem;
+}
+.wrap .content .promotion_list li {
+  margin-left: 0.4rem;
+  height: 1.333rem;
+  line-height: 1.333rem;
+  border-bottom: 1px solid #f3f3f3;
+}
+.wrap .content .promotion_list li .promotion_sign {
+  font-size: 14px;
+  color: #ff3a44;
+  margin-right: 0.2rem;
+}
+.wrap .content .promotion_list li .promotion_text {
+  font-size: 13px;
+}
+[data-dpr="2"] .wrap .content .dealer_name {
+  font-size: 30px;
+}
+[data-dpr="2"] .wrap .content .address_label {
+  font-size: 30px;
+}
+[data-dpr="2"] .wrap .content .dealer_address .address {
+  font-size: 30px;
+}
+[data-dpr="2"] .wrap .content .promotionNews {
+  font-size: 26px;
+}
+[data-dpr="2"] .wrap .content .promotion_list .promotion_sign {
+  font-size: 28px;
+}
+[data-dpr="2"] .wrap .content .promotion_list .promotion_text {
+  font-size: 26px;
+}
+[data-dpr="2"] .floor_price h2 {
+  font-size: 36px;
+}
+[data-dpr="3"] .wrap .content .dealer_name {
+  font-size: 45px;
+}
+[data-dpr="3"] .wrap .content .address_label {
+  font-size: 45px;
+}
+[data-dpr="3"] .wrap .content .dealer_address .address {
+  font-size: 45px;
+}
+[data-dpr="3"] .wrap .content .promotionNews {
+  font-size: 39px;
+}
+[data-dpr="3"] .wrap .content .promotion_list .promotion_sign {
+  font-size: 42px;
+}
+[data-dpr="3"] .wrap .content .promotion_list .promotion_text {
+  font-size: 39px;
+}
+[data-dpr="3"] .floor_price h2 {
+  font-size: 54px;
+}
+@media all and (orientation: landscape) {
+  .rotatoHint_mask {
+    display: block;
+  }
+  .rotatoHint {
+    display: block;
+  }
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人资料修改</title>
+    <link rel="stylesheet" href="http://127.0.0.1/css/base.css">
+    <link rel="stylesheet" href="http://127.0.0.1/css/fixMsg.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+<div class="main">
+    <div class="header">
+        <div class="header_con">
+            <p class="fl">
+                <a href="#"><img src="http://127.0.0.1/img/personCenter_logo.png" alt="logo"></a>
+            </p>
+            <p class="fr">
+                <a href="#" class="user_img"><img src="http://127.0.0.1/img/pic/user_img_03.png" alt="用户头像"> </a>
+                <a href="#" class="user_name">conan <em></em></a>
+            </p>
+        </div>
+    </div>
+    <div class="content clearfix">
+        <div class="left_tab_menu clearfix">
+            <ul>
+                <li class="bg"><a href="personalCenter.html">账号管理</a></li>
+                <li><a href="myCollect.html">我的收藏</a></li>
+                <li><a href="myPrice.html">我的询价</a></li>
+                <li><a href="#">我的问答</a></li>
+                <li><a href="myComment.html">我的评论</a></li>
+                <li><a href="messageSystem.html">消息中心</a></li>
+            </ul>
+        </div>
+        <div class="right_content clearfix">
+            <div class="account_m">
+                <ul  class="account_tab">
+                    <li class="cur">个人资料</li>
+                    <li>修改头像</li>
+                    <li>修改密码</li>
+                </ul>
+                <div class="account_con clearfix">
+                    <form>
+                        <div class="content">
+                            <ul class="">
+                                <li class="basic_msg clearfix">
+                                    <span>基本信息</span>
+                                    <a href="#" style="display: none">修改资料></a>
+                                </li>
+                                <li class="promise_t clearfix">
+                                    完善个人资料，享受专属服务（请放心，您的个人信息不会泄露)
+                                </li>
+                                <li class="user nick_name">
+                                    <p class="name"><i>昵称</i> : <input type="text" placeholder="请输入昵称"></p>
+                                    <p class="name"><i>真实姓名</i> : <input type="text"></p>
+                                    <p class="select" id="select_sex">
+                                        <i>性别</i> :
+                                        <input type="text" value="男" readonly="readonly">
+                                        <em></em>
+                                        <span class="select_span_sex" id="select_span_sex">
+                                            <span>女</span>
+                                            <span class="last">男</span>
+                                        </span>
+                                    </p>
+                                    <p class="select" id="select_age">
+                                        <i>年龄</i> :
+                                        <input type="text" value="请选择" readonly="readonly">
+                                        <em></em>
+                                        <span class="select_span_age" id="select_span_age">
+                                            <!--年龄选择生成-->
+                                        </span>
+                                    </p>
+                                </li>
+                                <li class="save_cancel_settings">
+                                    <p>
+                                        <input type="button" value="保存设置" class="save">
+                                        <input type="button" value="取消" class="cancel">
+                                    </p>
+                                </li>
+                                <li class="bind_account">
+                                    <p class="modify" style="display: none"><a href="#">账号绑定</a> > <a href="#">更改手机号</a></p>
+                                    <p class="bind"><a href="#">账号绑定</a> > <a href="#">绑定手机号</a></p>
+                                </li>
+                                <li class="sys_msg">
+                                    <p>你正在更改您之前绑定的手机号码</p>
+                                    <p>汽车大全将给您181****6898的手机发送验证码，请您填写，30分钟内有效</p>
+                                </li>
+                                <li class="input_phone clearfix">
+                                    <p>
+                                        <i>手机号</i> : <input type="text">
+                                    </p>
+                                </li>
+                                <li class="input_msg_code clearfix">
+                                    <p>
+                                        <i>校验码</i> : <input type="text" class="input_msg_input"> <input type="button" class="get_msg_code" value="获取校验码">
+                                    </p>
+                                </li>
+                                <li class="step clearfix">
+                                    <input type="button"  class="next_step" style="display: none" value="下一步">
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--底部结构-->
+    <div class="footer clearfix">
+        <div class="footer_content">
+            <ul>
+                <li class="footer_message"><a href="#">关于我们</a></li>
+                <li class="footer_message"><a href="#">联系我们</a></li>
+                <li class="footer_message"><a href="#">招贤纳士</a></li>
+                <li class="website"><a href="#">@2004-2016 www.xingyuanauto.com All Rights Reserved.
+                    行圆汽车所有</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        var flag=false;
+        $('#select_sex').on('click',function (e) {
+            e=e||window.event;
+            var tar=e.target||e.srcElement;
+            if(tar.tagName=='INPUT'||tar.tagName=='EM'){
+                if(!flag){
+                    $('#select_span_sex').show();
+                    flag=true;
+                }else{
+                    $('#select_span_sex').hide();
+                    flag=false;
+                }
+            }
+        });
+
+        $('#select_span_sex span').on('click',function () {
+            var select_span_val=$(this).text();
+            $('#select_sex input').val(select_span_val);
+            $('#select_span_sex').hide();
+            flag=false;
+        });
+
+        $('#select_age').on('click',function (e) {
+            e=e||window.event;
+            var tar=e.target||e.srcElement;
+            if(tar.tagName=='INPUT'||tar.tagName=='EM'){
+                if(!flag){
+                    createSpan();
+                    $('#select_span_age').show();
+                    flag=true;
+                }else{
+                    $('#select_span_age').hide();
+                    $('#select_span_age').empty();
+                    flag=false;
+                }
+            }
+        });
+        $('#select_span_age').on('click',function (e) {
+            e=e||window.event;
+            var tar=e.target||e.srcElement;
+            if(tar.tagName=='SPAN'){
+                $('#select_age input').val($(tar).text())
+                $('#select_span_age').hide();
+                flag=false;
+            }
+
+
+        });
+
+
+        function createSpan() {
+            var str='';
+            for(var i=18;i<=65;i++){
+                str+=i==65?'<span class="last">'+i+'</span>':'<span>'+i+'</span>'
+            }
+            $('#select_span_age').html(str)
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,370 @@
+.cursor {
+  cursor: pointer;
+}
+.float_l {
+  float: left;
+}
+.float_r {
+  float: right;
+}
+.carMarket {
+  width: 990px;
+  height: 454px;
+  margin: 20px auto;
+}
+.carMarket_left {
+  width: 751px;
+  height: 454px;
+  float: left;
+}
+.carMarket_left .carMarket_left_title {
+  height: 51px;
+  line-height: 51px;
+  border-bottom: 4px solid #333;
+  position: relative;
+}
+.carMarket_left .carMarket_left_title .city_chose2 {
+  width: 478px;
+  height: 378px;
+  position: absolute;
+  left: 0;
+  top: 35px;
+  border: 1px solid #333;
+  border-bottom: 5px solid #333;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 101;
+  background: #fff;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .city_search {
+  width: 478px;
+  border-bottom: 1px solid #eee;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .city_search .city_search_input {
+  height: 52px;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .city_search .city_search_input span {
+  display: block;
+  float: left;
+  position: relative;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .city_search .city_search_input span .input_letters_search {
+  position: absolute;
+  width: 144px;
+  z-index: 103;
+  overflow: hidden;
+  border: 1px solid #eee;
+  border-bottom: none;
+  margin-top: 1px;
+  top: 42px;
+  left: 10px;
+  background: #fff;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .city_search .city_search_input span .input_letters_search ul li {
+  z-index: 120;
+  width: 124px;
+  height: 24px;
+  line-height: 24px;
+  border-bottom: 1px solid #eee;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .city_search .city_search_input span .input_letters_search ul li.click_to_destiny {
+  color: #999;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .city_search .city_search_input span .input_letters_search ul li.click_to_destiny span {
+  margin-left: 4px;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .city_search .city_search_input span .input_letters_search ul li.city_search_result {
+  cursor: pointer;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .city_search .city_search_input span .input_letters_search ul li.city_search_result:hover {
+  background: #398be4;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .city_search .city_search_input span .input_letters_search ul li.city_search_result span {
+  display: inline-block;
+  margin-left: 15px;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .city_search .city_search_input span .input_letters_search ul li.city_search_result span.city_text {
+  float: left;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .city_search .city_search_input span .input_letters_search ul li.city_search_result span.city_letters {
+  float: right;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .city_search .city_search_input span .input_letters_search ul li span img {
+  display: inline-block;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .city_search .city_search_input span img {
+  display: block;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .city_search .city_search_input span.delete_city {
+  float: right;
+  position: absolute;
+  right: 4px;
+  top: 10px;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .city_search .city_search_input span.search_btn {
+  position: absolute;
+  left: 15px;
+  top: 18px;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .city_search .city_search_input span.city_hot_search {
+  text-align: center;
+  display: block;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .city_search .city_search_input span.city_hot_search a {
+  font-size: 12px;
+  display: inline-block;
+  line-height: 52px;
+  padding: 0 8px;
+  color: #333;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .city_search .city_search_input span input {
+  height: 32px;
+  text-align: center;
+  border: none;
+  background: #eee;
+  margin: 10px 10px;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .hot_city_num {
+  width: 464px;
+  height: 32px;
+  padding: 10px 8px;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .hot_city_num a {
+  height: 26px;
+  display: block;
+  float: left;
+  margin: 3px 5px;
+  width: 26px;
+  line-height: 26px;
+  border: 1px solid #dadada;
+  text-align: center;
+  color: #333;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .city_chose_region {
+  height: 372px;
+  border-top: 1px solid #eee;
+  padding-top: 8px;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .city_chose_region dl {
+  padding: 4px 0 0 0;
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .city_chose_region dl dt {
+  height: 30px;
+  width: 70px;
+  text-align: right;
+  line-height: 30px;
+  float: left;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .city_chose_region dl dt span {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .city_chose_region dl dt span.province_tx {
+  float: right;
+  display: block;
+  padding-top: 0;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .city_chose_region dl dt span.has_same_num {
+  padding-top: 30px;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .city_chose_region dl dt span.province_num {
+  font-size: 14px;
+  color: #999;
+  float: left;
+  font-family: "\5FAE\8F6F\96C5\9ED1", Helvetica, sans-serif;
+  display: inline-block;
+  padding-left: 10px;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .city_chose_region dl dd {
+  float: right;
+  width: 380px;
+  zoom: 1;
+  line-height: 30px;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .city_chose_region dl dd a {
+  font-size: 12px;
+  float: left;
+  height: 30px;
+  color: #333;
+  zoom: 1;
+  line-height: 30px;
+  padding: 0 8px;
+  margin: 0 2px;
+  white-space: nowrap;
+}
+.carMarket_left .carMarket_left_title .city_chose2 .city_chose_region dl dd a:hover {
+  background: #398be4;
+  color: #fff;
+}
+.carMarket_left .carMarket_left_title p {
+  width: 86px;
+  float: left;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-right: 16px;
+}
+.carMarket_left .carMarket_left_title span {
+  display: inline-block;
+}
+.carMarket_left .carMarket_left_title span.more {
+  float: right;
+  padding-right: 4px;
+  color: #333;
+  font-family: "Microsoft YaHei", "微软雅黑";
+}
+.carMarket_left .carMarket_left_title .city {
+  font-size: 12px;
+  color: #666666;
+  cursor: pointer;
+}
+.carMarket_left .carMarket_left_title .city img {
+  margin-left: 2px;
+  display: inline-block;
+}
+.carMarket_left_tab {
+  width: 749px;
+  height: 392px;
+  margin-top: 4px;
+  border: 1px solid #eee;
+}
+.carMarket_left_tab .price_list {
+  width: 111px;
+  height: 392px;
+  float: left;
+}
+.carMarket_left_tab .price_list li {
+  width: 92px;
+  height: 48px;
+  line-height: 48px;
+  padding-left: 19px;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  font-size: 12px;
+  color: #666666;
+  background: #f7f7f7;
+  cursor: pointer;
+}
+.carMarket_left_tab .price_list li.bg {
+  border-left: 4px solid #ffa903;
+  width: 93px;
+  background: #fff;
+  border-right: none;
+  padding-left: 15px;
+}
+.carMarket_left_tab .price_list li:hover {
+  border-left: 4px solid #ffa903;
+  width: 93px;
+  background: #fff;
+  border-right: none;
+  padding-left: 15px;
+}
+.carMarket_left_tab .price_list li:last-child {
+  border-bottom: none;
+  height: 49px;
+}
+.carMarket_left_tab .carMarket_left_tab_content {
+  width: 626px;
+  height: 392px;
+  overflow: hidden;
+  float: right;
+}
+.carMarket_left_tab .carMarket_left_tab_content .carMarket_tab1 {
+  width: 626px;
+  height: 392px;
+}
+.carMarket_left_tab .carMarket_left_tab_content .carMarket_tab1 .price_news {
+  width: 626px;
+  height: 48px;
+  line-height: 48px;
+  border-bottom: 1px solid #eee;
+}
+.carMarket_left_tab .carMarket_left_tab_content .carMarket_tab1 .price_news li {
+  float: left;
+  width: 117px;
+  font-size: 12px;
+  padding-left: 8px;
+}
+.carMarket_left_tab .carMarket_left_tab_content .carMarket_tab1 .price_news li .gift {
+  color: #38a800;
+}
+.carMarket_left_tab .carMarket_left_tab_content .carMarket_tab1 .price_news li .gift:hover {
+  text-decoration: underline;
+}
+.carMarket_left_tab .carMarket_left_tab_content .carMarket_tab1 .price_news li .gift img {
+  margin-right: 5px;
+  display: inline-block;
+}
+.carMarket_left_tab .carMarket_left_tab_content .carMarket_tab1 .price_news li .price {
+  color: #e53939;
+}
+.carMarket_left_tab .carMarket_left_tab_content .carMarket_tab1 .price_news li .price:hover {
+  text-decoration: underline;
+}
+.carMarket_left_tab .carMarket_left_tab_content .carMarket_tab1 .price_news li .floor_price_button {
+  width: 80px;
+  height: 32px;
+  background: #ffa903;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+}
+.carMarket_left_tab .carMarket_left_tab_content .carMarket_tab1 .price_news .adress {
+  width: 130px;
+}
+.carMarket_left_tab .carMarket_left_tab_content .carMarket_tab1 .price_news .priceButton {
+  width: 104px;
+}
+.carMarket_left_tab .carMarket_left_tab_content .carMarket_tab1 .price_news:last-child {
+  border-bottom: none;
+}
+.carMarket_right {
+  width: 207px;
+  height: 404px;
+  padding-top: 50px;
+  float: right;
+}
+.carMarket_right .promotion {
+  font-size: 16px;
+  color: #333;
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 12px;
+  font-weight: bold;
+}
+.carMarket_right .refresh {
+  height: 12px;
+  background: url(../img/border_bg.png) no-repeat left 7px;
+  padding-left: 12px;
+  cursor: pointer;
+}
+.carMarket_right .refresh img {
+  display: inline-block;
+}
+.carMarket_right .refresh span {
+  font-size: 12px;
+  color: #666666;
+  vertical-align: middle;
+  margin-left: 9px;
+}
+.carMarket_right ul {
+  margin-top: 10px;
+}
+.carMarket_right ul li {
+  background: url(../img/dian.png) no-repeat left center;
+  width: 197px;
+  padding-left: 10px;
+  height: 28px;
+  line-height: 28px;
+  overflow: hidden;
+}
+.carMarket_right ul li a {
+  font-size: 14px;
+  color: #333;
+}

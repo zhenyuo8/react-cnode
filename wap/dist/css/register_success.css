@@ -1,0 +1,142 @@
+/*****
+ *@author: linyh
+ *@from: Global style register_success(注册成功)
+ *@description: 陈璐
+ *@date: name (2017.03.01)
+*/
+/*****
+ *@author: jianingning
+ *@from: Global style mod_pubHead.html   公共的带返回的头部
+ *@description:
+ *@date: name (2017.02.21)
+*/
+.pub_head {
+  height: 1.173rem;
+  text-align: center;
+  background: -webkit-linear-gradient(left, #23a6fe, #2484fa);
+}
+.pub_head .goback_btn {
+  float: left;
+  margin: .4rem 0 0 .4rem;
+  display: inline-block;
+  width: .227rem;
+  height: .4rem;
+  background: url(../img/goback_btn.png);
+  background-size: cover;
+}
+.pub_head .logo_text {
+  display: inline-block;
+  width: 1.813rem;
+  height: .427rem;
+  vertical-align: middle;
+  margin-top: -0.12rem;
+}
+.pub_head .p {
+  margin: 0 .12rem;
+  height: 1.173rem;
+  line-height: 1.173rem;
+  color: #fff;
+  font-size: 10px;
+}
+.pub_head .title_extra {
+  margin-top: .28rem;
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+}
+.pub_head .nav_btn {
+  float: right;
+  margin-right: .4rem;
+  margin-top: .28rem;
+  font-size: 16px;
+  color: #fff;
+}
+.pub_head .nav_btn a {
+  color: #fff;
+}
+[data-dpr="2"] .pub_head .title_extra {
+  font-size: 32px;
+}
+[data-dpr="2"] .pub_head .p {
+  font-size: 20px;
+}
+[data-dpr="2"] .pub_head .nav_btn {
+  font-size: 32px;
+}
+[data-dpr="3"] .pub_head .title_extra {
+  font-size: 48px;
+}
+[data-dpr="3"] .pub_head .p {
+  font-size: 30px;
+}
+[data-dpr="3"] .pub_head .nav_btn {
+  font-size: 48px;
+}
+html,
+body {
+  height: 100%;
+}
+.register_success {
+  height: 100%;
+  background-color: #f4f5f7;
+}
+.register_success .book_bg {
+  display: block;
+  width: 3.653rem /* 274/75 */;
+  height: 3.147rem /* 236/75 */;
+  margin: 1.733rem /* 130/75 */ auto 0.267rem /* 20/75 */;
+}
+.register_success .success_tips {
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.173rem /* 88/75 */;
+}
+.register_success .tips_name_msg {
+  color: #c1c1c1;
+  text-align: center;
+  line-height: 0.64rem /* 48/75 */;
+}
+.register_success .user_name {
+  color: #c1c1c1;
+  text-align: center;
+  line-height: 0.64rem /* 48/75 */;
+}
+.register_success .change_name_tip {
+  color: #c1c1c1;
+  text-align: center;
+  line-height: 0.64rem /* 48/75 */;
+}
+.register_success .change_name_tip a {
+  font-size: 14px;
+  color: #2799fe;
+}
+.register_success .iknow {
+  font-size: 16px;
+  color: #fff;
+  width: 50.667%;
+  text-align: center;
+  line-height: 1.067rem /* 80/75 */;
+  background-color: #2799fe;
+  border-radius: 0.107rem /* 8/75 */;
+  margin: 0.373rem /* 28/75 */ auto 0;
+  display: block;
+}
+/* 字体大小适配 */
+[data-dpr="2"] .register_success .success_tips {
+  font-size: 36px;
+}
+[data-dpr="2"] .register_success .change_name_tip a {
+  font-size: 28px;
+}
+[data-dpr="2"] .register_success .iknow {
+  font-size: 32px;
+}
+[data-dpr="3"] .register_success .success_tips {
+  font-size: 54px;
+}
+[data-dpr="3"] .register_success .change_name_tip a {
+  font-size: 42px;
+}
+[data-dpr="3"] .register_success .iknow {
+  font-size: 48px;
+}

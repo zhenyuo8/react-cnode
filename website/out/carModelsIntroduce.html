@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>车型详解</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="stylesheet"  href="http://172.16.0.135:8888/website/css/base.css"/>
+    <link rel="stylesheet"  href="http://172.16.0.135:8888/website/css/carModelIntroduce.css"/>
+</head>
+<body>
+<!--header模块-->
+<div class="header">
+    <!--nav model -->
+    <!-- 顶部导航模块 -->
+<div class="header_nav">
+    <div class="header_nav_content">
+        <ul class="header_nav_left">
+            <li class="first"> <span class="default_address"><a href="javascript:void(0);" class="bg">北京</a></span> </li>
+            <li class="city_position" id="city_position"> <span class="changeAdd" id="city_position_qie">切换</span> <span class="triangle clearfix" id="city_position_triangle"></span>
+                <div class="city_chose clearfix" id="city_chose" style="display: none">
+                    <div class="city_search">
+                        <div class="city_search_input"> <span class="search_btn"> <img src="http://172.16.0.135:8888/website/img/search-btn.png" alt=""> </span> <span> <input type="text" value="请输入城市" class="input" id="input_letters"> <div class="input_letters_search" id="input_letters_search" style="display: none"> <ul id="input_city_search"> <li class="click_to_destiny"> <span><img src="http://172.16.0.135:8888/website/img/city_down_select.png" alt=""></span>                            <span>点击直达</span> </li>
+            <li class="city_search_result"> <span class="city_text">北京</span> <span class="city_letters">beijing</span> </li>
+            <li class="city_search_result"> <span class="city_text">上海</span> <span class="city_letters">shanghai</span> </li>
+            <li class="city_search_result"> <span class="city_text">南昌</span> <span class="city_letters">nanchang</span> </li>
+            <li class="city_search_result"> <span class="city_text">深圳</span> <span class="city_letters">shenzhen</span> </li>
+        </ul>
+        </div>
+        </span> <span class="city_hot_search"> <a href="javascript:void(0);">北京</a> <a href="javascript:void(0);">上海</a> <a href="javascript:void(0);">广州</a> <a href="javascript:void(0);">深圳</a> <a href="javascript:void(0);">武汉</a> <a href="javascript:void(0);">杭州</a> </span>        <span class="delete_city"> <img src="http://172.16.0.135:8888/website/img/delete-btn.png" alt=""> </span> </div>
+        </div>
+        <div class="hot_city_num"> <a href="javascript:void(0);">A</a> <a href="javascript:void(0);">B</a> <a href="javascript:void(0);">C</a> <a href="javascript:void(0);">E</a> <a href="javascript:void(0);">F</a> <a href="javascript:void(0);">G</a> <a href="javascript:void(0);">H</a>            <a href="javascript:void(0);">I</a> <a href="javascript:void(0);">J</a> <a href="javascript:void(0);">K</a> <a href="javascript:void(0);">L</a> <a href="javascript:void(0);">M</a> <a href="javascript:void(0);">N</a> <a href="javascript:void(0);">O</a>            <a href="javascript:void(0);">P</a> <a href="javascript:void(0);">Q</a> <a href="javascript:void(0);">R</a> <a href="javascript:void(0);">S</a> <a href="javascript:void(0);">T</a> <a href="javascript:void(0);">U</a> <a href="javascript:void(0);">W</a>            <a href="javascript:void(0);">X</a> <a href="javascript:void(0);">Y</a> <a href="javascript:void(0);">Z</a> </div>
+        <div class="city_scroll">
+            <div class="city_chose_region" id="city_chose_region">
+                <!--城市选择模块位置-->
+                <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)" cityid="101">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a>                        <a href="javascript:void (0)">六安</a> <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">B</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">C</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">D</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">E</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">F</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">G</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">H</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">I</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">J</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">K</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">L</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">L</span> <span class="province_num">临川</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">M</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">N</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">O</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">P</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">Q</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">R</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">S</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">T</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">U</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">V</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">W</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">X</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">Y</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">X</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">Z</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+            </div>
+            <div class="scrollbar">
+                <div class="scrollbtn"></div>
+            </div>
+        </div>
+    </div>
+    </li>
+    <li class="nav_line"> <span></span> </li>
+    <li> <span class="others"><a href="javascript:void(0)" target="_blank" id="othersCarId">查看其他地方车市</a></span> </li>
+    </ul>
+    <ul class="header_nav_right">
+        <li class="header_hover" id="app_id"> <span class="app" id="app"> <a href="javascript:void(0);" target="_blank">移动应用</a> </span> <span class="triangle"></span> </li>
+        <li class="nav_line nav_line2" id="nav_line"><span></span></li>
+        <li class="header_hover message_notice" style="display: none"> <em></em> <i></i> <span class="message_drop"> <a href="javascript:void(0);"><span>我的询价</span> ><i></i></a> <a href="javascript:void(0);"><span>我的问答</span> ><i></i></a> <a href="javascript:void(0);"><span>我的评论</span> ><i></i></a> <a href="javascript:void(0);"><span>消息中心</span> ><i></i></a>            </span>
+        </li>
+        <li class=" header_hover login_third" id="login_third"> <span><a href="javascript:void(0);">第三方登录</a></span> <span class="triangle1"></span> <span class="login_third_container"> <a href="javascript:void(0);" class="wx"><i></i>微信</a> <a href="javascript:void(0);" class="wb"><i></i>微博</a> <a href="javascript:void(0);" class="tx_qq"><i></i>QQ</a> </span>            </li>
+        <li class="nav_line" id="nav_line2"><span></span></li>
+        <li class="header_hover user_name" style="display: none"> <span><a href="javascript:void(0);">conan</a></span> <span class="triangle2"></span> <span class="user_drop"> <span class="latest_view"> <a href="javascript:void(0);" class="view_res">最近看过的</a> <a href="javascript:void(0);">宝马6系</a> <a href="javascript:void(0);">奥迪7系</a> <a href="javascript:void(0);">英菲尼迪Q70L</a> </span>            <span class="sign_out"> <a href="javascript:void(0);">我的收藏</a> <a href="javascript:void(0);">退出登录</a> </span> </span>
+        </li>
+        <li class="header_hover" id="register_id"> <span class="register" id="register"><a href="javascript:void (0)" target="_blank">注册</a></span> </li>
+        <li class="bg header_hover" id="login_id"> <span class="login bg"><a href="javascript:void (0)" target="_blank">登录</a></span> </li>
+    </ul>
+</div>
+</div>
+
+    <!--logo model -->
+    <!-- 头部 Logo 及 banner 模块 -->
+<div class="logo">
+    <div class="logo_left">
+        <a href="index.html"> <img src="http://172.16.0.135:8888/website/img/logo_car.png" alt="这是logo图片"> </a>
+    </div>
+    <div class="logo_right">
+        <a href="#">
+            <!-- <img src="http://172.16.0.135:8888/website/img/top-logo-nav.png" alt="这是广告图片"> -->
+            <XYins id="div_a8326c61-5174-49fe-902c-860df07bab64" data-type="ad_play" data-adplay_IP="" data-adplay_AreaName="" data-adplay_CityName="" data-adplay_BrandID="" data-adplay_BrandName="" data-adplay_BrandType="" data-adplay_BlockCode="a8326c61-5174-49fe-902c-860df07bab64">
+            </XYins>
+        </a>
+    </div>
+</div>
+
+</div>
+
+<!--content-->
+<div class="carModels">
+    <!--导航菜单-->
+    <div class="imgs_c_top">
+        
+        <!-- 返回顶部 -->
+<p class="imgs_c_crumbs"> 当前位置： <a href="javascript:void(0);" target="_blank">首页</a>> <a href="javascript:void(0);" target="_blank">车型</a>> <a href="javascript:void(0);" target="_blank">奥迪A3</a>> <a href="javascript:void(0);">车型详解</a></p>
+
+        <!-- 车型筛选 -->
+<div class="imgs_c_list">
+    <a href="summarize.html" target="_blank" class="imgs_car_sign"><img src="http://172.16.0.135:8888/website/img/audi-logo.png" /></a> <a href="summarize.html" target="_blank" class="imgs_car_name">奥迪A3</a>
+    <ul class="imgs_car_year clearfix">
+        <li class="imgs_c_y_li imgs_year_b"><a href="javascript:void(0);">全部</a></li>
+        <li class="imgs_c_y_li"><a href="javascript:void(0);">2017款</a></li>
+        <li class="imgs_c_y_li"><a href="javascript:void(0);">2016款</a></li>
+        <li class="imgs_c_y_li"><a href="javascript:void(0);">2015款</a></li>
+        <li class="imgs_no_border"> <span class="tsYear">停售年款</span> <span class="icon-down imgs_down"></span>
+            <div class="stop_list_w">
+                <ol class="stop_list">
+                    <li><a href="#" target="_blank">2013款</a></li>
+                    <li><a href="#" target="_blank">2012款</a></li>
+                    <li><a href="#" target="_blank">2011款</a></li>
+                    <li><a href="#" target="_blank">2010款</a></li>
+                    <li><a href="#" target="_blank">2009款</a></li>
+                    <li class="s_no_border"><a href="#" target="_blank">2008款</a></li>
+                </ol>
+            </div>
+        </li>
+    </ul>
+</div>
+<ul class="imgs_car_type">
+    <li class="no_h"><a href="carTypeSummarize.html">综述</a></li>
+    <li class="no_h"><a href="configPara.html">参数配置</a></li>
+    <li class="no_h"><a href="imgs.html">图片</a></li>
+    <li class="no_h"><a href="carTypeContrast.html">报价</a></li>
+    <li class="no_h"><a href="carTypeContrast.html">降价</a></li>
+    <li class="imgs_current"><a href="carModelsIntroduce.html">车型详解</a></li>
+    <li class="no_h no_click"><a href="carArticle.html">文章</a></li>
+    <li class="no_h"><a href="carVideo.html">视频</a></li>
+</ul>
+    </div>
+    
+    <div class="car_m_middle clearfix">
+        <div class="car_m_middle_l fl">
+            <div class="car_m_middle_news" >
+                <!--左侧固定菜单-->
+                <ul class="floating_menu" id="floating_menu">
+                    <li class="f_active"><a href="javascript:void(0);" target="_blank">导语</a></li>
+                    <li class="h"><a href="javascript:void(0);" target="_blank">外观</a></li>
+                    <li class="h"><a href="javascript:void(0);" target="_blank">内饰</a></li>
+                    <li class="h"><a href="javascript:void(0);" target="_blank">空间</a></li>
+                    <li class="h"><a href="javascript:void(0);" target="_blank">视野</a></li>
+                    <li class="h"><a href="javascript:void(0);" target="_blank">灯光</a></li>
+                    <li class="h"><a href="javascript:void(0);" target="_blank">动力</a></li>
+                    <li class="h"><a href="javascript:void(0);" target="_blank">操控</a></li>
+                    <li class="h"><a href="javascript:void(0);" target="_blank">舒适性</a></li>
+                    <li class="h"><a href="javascript:void(0);" target="_blank">油耗</a></li>
+                    <li class="h"><a href="javascript:void(0);" target="_blank">配置</a></li>
+                    <li class="h"><a href="javascript:void(0);" target="_blank">总结</a></li>
+                    <li class="f_no_border h"><a href="javascript:void(0);" target="_blank">优惠</a></li>
+                </ul>
+                
+                <!--车型详解部分-->
+                <div class="car-type-introduce-con" >
+                    <h2 class="title">不动声色的高调，车展实拍全新奥迪A3</h2>
+                    <p class="time">
+                        <span class="year">2016年12月07日</span><span class="hour">00:00</span>来源&nbsp:&nbsp<a class="source" href="#" target="_blank">汽车大全</a>类型&nbsp:&nbsp<span class="type">原创</span>编辑&nbsp:&nbsp<span class="ed">郑宇</span>
+                    </p>
+                    <div class="iframe_content">
+                        <p>哈弗H6新款车型今天亮相广州车展，蓝标版本新车采用哈弗最新设计风格，前脸看上去非常具有运动感，动力则依旧采用1.5,版本新车采用哈弗最新设计风格，前脸看上去非常具有运动感，动力则依旧采用1.5版本新车采用哈弗最新设计风格，前脸看上去非常具有运动感，动力则依旧采用1.5</p>
+                        <div class="img"><img src="http://172.16.0.107/group1/M00/01/17/oYYBAFikL5iAWHnoAAbuZ7tJrJ8853_630x170.jpg" alt="" class="w630" width="630" height="466"></div>
+                        <div class="img"><img src="http://172.16.0.108/group2/M00/01/DF/ooYBAFikL5iARFPXAAQJ2MYLKz0777_630x190.jpg" alt="" class="w630" width="630" height="466"></div>
+                        <div class="img-sec"><img src="http://172.16.0.107/group1/M00/01/17/oYYBAFikL5eACu35AAWdQk04R8I006_630x190.jpg" alt="" class="w630" width="630" height="466"></div>
+                        <p>哈弗H6新款车型今天亮相广州车展，蓝标版本新车采用哈弗最新设计风格，前脸看上去非常具有运动感，动力则依旧采用1.5,版本新车采用哈弗最新设计风格，前脸看上去非常具有运动感，动力则依旧采用1.5版本新车采用哈弗最新设计风格，前脸看上去非常具有运动感，动力则依旧采用1.5</p>
+                        <div class="img-th"><img src="http://172.16.0.107/group1/M00/01/17/oYYBAFikL5iABUcfAAatMBq-Uzk272_630x190.jpg" alt="" width="630" height="466"></div>
+                    </div>
+                    <div style="clear:both"></div>
+                </div>
+                <div id="car_m_wrap" style="display: none;">
+                    <div class="car_m_textW js-con show">
+                        <a href="#" target="_blank" class="car_m_title">
+                            测一汽奥迪A3两厢版 用着舒心玩的尽兴
+                        </a>
+                        <ul class="car_m_notation clearfix">
+                            <li>2016年12月07日 00:00</li>
+                            <li>来源：<a href="index.html" target="_blank">汽车大全</a></li>
+                            <li>类型：原创</li>
+                            <li>编辑：郑宇</li>
+                        </ul>
+                        <p class="car_m_text">这是导语-哈弗H6新款车型今天亮相广州车展，蓝标版本新车采用哈弗最新设计风格，前脸看上去非常具有运动感，动力则依旧采用1.5T发动机，燃油消耗得到优化</p>
+                        <img src="http://172.16.0.135:8888/website/img/pic/audi-q5.png" width="630" height="467"/>
+                        <img src="http://172.16.0.135:8888/website/img/pic/a8.png" width="630" height="465"/>
+                        <p class="car_m_text car_m_text_d">三幅式方向盘在三点和九点握手位置采用了真皮打孔处理，方向盘盘辐较大。仪表采用白色背光，中间配以液晶显示屏，方便读取行车信息。</p>         
+                    </div>
+                    <div class="car_m_textW js-con">
+                        <a href="#" target="_blank" class="car_m_title">
+                            测一汽奥迪A3两厢版 用着舒心玩的尽兴
+                        </a>
+                        <ul class="car_m_notation clearfix">
+                            <li>2016年12月07日 00:00</li>
+                            <li>来源：<a href="index.html" target="_blank">汽车大全</a></li>
+                            <li>类型：原创</li>
+                            <li>编辑：郑宇</li>
+                        </ul>
+                        <p class="car_m_text">外观-哈弗H6新款车型今天亮相广州车展，蓝标版本新车采用哈弗最新设计风格，前脸看上去非常具有运动感，动力则依旧采用1.5T发动机，燃油消耗得到优化</p>
+                        <img src="http://172.16.0.135:8888/website/img/pic/audi-q5.png" width="630" height="467"/>
+                        <img src="http://172.16.0.135:8888/website/img/pic/a8.png" width="630" height="465"/>
+                        <p class="car_m_text car_m_text_d">三幅式方向盘在三点和九点握手位置采用了真皮打孔处理，方向盘盘辐较大。仪表采用白色背光，中间配以液晶显示屏，方便读取行车信息。</p>         
+                    </div>
+                    <div class="car_m_textW js-con">
+                        <a href="#" target="_blank" class="car_m_title">
+                            测一汽奥迪A3两厢版 用着舒心玩的尽兴
+                        </a>
+                        <ul class="car_m_notation clearfix">
+                            <li>2016年12月07日 00:00</li>
+                            <li>来源：<a href="index.html" target="_blank">汽车大全</a></li>
+                            <li>类型：原创</li>
+                            <li>编辑：郑宇</li>
+                        </ul>
+                        <p class="car_m_text">内饰-哈弗H6新款车型今天亮相广州车展，蓝标版本新车采用哈弗最新设计风格，前脸看上去非常具有运动感，动力则依旧采用1.5T发动机，燃油消耗得到优化</p>
+                        <img src="http://172.16.0.135:8888/website/img/pic/audi-q5.png" width="630" height="467"/>
+                        <img src="http://172.16.0.135:8888/website/img/pic/a8.png" width="630" height="465"/>
+                        <p class="car_m_text car_m_text_d">三幅式方向盘在三点和九点握手位置采用了真皮打孔处理，方向盘盘辐较大。仪表采用白色背光，中间配以液晶显示屏，方便读取行车信息。</p>         
+                    </div>
+                    <div class="car_m_textW js-con">
+                        <a href="#" target="_blank" class="car_m_title">
+                            测一汽奥迪A3两厢版 用着舒心玩的尽兴
+                        </a>
+                        <ul class="car_m_notation clearfix">
+                            <li>2016年12月07日 00:00</li>
+                            <li>来源：<a href="index.html" target="_blank">汽车大全</a></li>
+                            <li>类型：原创</li>
+                            <li>编辑：郑宇</li>
+                        </ul>
+                        <p class="car_m_text">空间-哈弗H6新款车型今天亮相广州车展，蓝标版本新车采用哈弗最新设计风格，前脸看上去非常具有运动感，动力则依旧采用1.5T发动机，燃油消耗得到优化</p>
+                        <img src="http://172.16.0.135:8888/website/img/pic/audi-q5.png" width="630" height="467"/>
+                        <img src="http://172.16.0.135:8888/website/img/pic/a8.png" width="630" height="465"/>
+                        <p class="car_m_text car_m_text_d">三幅式方向盘在三点和九点握手位置采用了真皮打孔处理，方向盘盘辐较大。仪表采用白色背光，中间配以液晶显示屏，方便读取行车信息。</p>         
+                    </div>
+                    <div class="car_m_textW js-con">
+                        <a href="#" target="_blank" class="car_m_title">
+                            测一汽奥迪A3两厢版 用着舒心玩的尽兴
+                        </a>
+                        <ul class="car_m_notation clearfix">
+                            <li>2016年12月07日 00:00</li>
+                            <li>来源：<a href="index.html" target="_blank">汽车大全</a></li>
+                            <li>类型：原创</li>
+                            <li>编辑：郑宇</li>
+                        </ul>
+                        <p class="car_m_text">视野-哈弗H6新款车型今天亮相广州车展，蓝标版本新车采用哈弗最新设计风格，前脸看上去非常具有运动感，动力则依旧采用1.5T发动机，燃油消耗得到优化</p>
+                        <img src="http://172.16.0.135:8888/website/img/pic/audi-q5.png" width="630" height="467"/>
+                        <img src="http://172.16.0.135:8888/website/img/pic/a8.png" width="630" height="465"/>
+                        <p class="car_m_text car_m_text_d">三幅式方向盘在三点和九点握手位置采用了真皮打孔处理，方向盘盘辐较大。仪表采用白色背光，中间配以液晶显示屏，方便读取行车信息。</p>         
+                    </div>
+                    <div class="car_m_textW js-con">
+                        <a href="#" target="_blank" class="car_m_title">
+                            测一汽奥迪A3两厢版 用着舒心玩的尽兴
+                        </a>
+                        <ul class="car_m_notation clearfix">
+                            <li>2016年12月07日 00:00</li>
+                            <li>来源：<a href="index.html" target="_blank">汽车大全</a></li>
+                            <li>类型：原创</li>
+                            <li>编辑：郑宇</li>
+                        </ul>
+                        <p class="car_m_text">灯光-哈弗H6新款车型今天亮相广州车展，蓝标版本新车采用哈弗最新设计风格，前脸看上去非常具有运动感，动力则依旧采用1.5T发动机，燃油消耗得到优化</p>
+                        <img src="http://172.16.0.135:8888/website/img/pic/audi-q5.png" width="630" height="467"/>
+                        <img src="http://172.16.0.135:8888/website/img/pic/a8.png" width="630" height="465"/>
+                        <p class="car_m_text car_m_text_d">三幅式方向盘在三点和九点握手位置采用了真皮打孔处理，方向盘盘辐较大。仪表采用白色背光，中间配以液晶显示屏，方便读取行车信息。</p>         
+                    </div>
+                    <div class="car_m_textW js-con">
+                        <a href="#" target="_blank" class="car_m_title">
+                            测一汽奥迪A3两厢版 用着舒心玩的尽兴
+                        </a>
+                        <ul class="car_m_notation clearfix">
+                            <li>2016年12月07日 00:00</li>
+                            <li>来源：<a href="index.html" target="_blank">汽车大全</a></li>
+                            <li>类型：原创</li>
+                            <li>编辑：郑宇</li>
+                        </ul>
+                        <p class="car_m_text">动力-哈弗H6新款车型今天亮相广州车展，蓝标版本新车采用哈弗最新设计风格，前脸看上去非常具有运动感，动力则依旧采用1.5T发动机，燃油消耗得到优化</p>
+                        <img src="http://172.16.0.135:8888/website/img/pic/audi-q5.png" width="630" height="467"/>
+                        <img src="http://172.16.0.135:8888/website/img/pic/a8.png" width="630" height="465"/>
+                        <p class="car_m_text car_m_text_d">三幅式方向盘在三点和九点握手位置采用了真皮打孔处理，方向盘盘辐较大。仪表采用白色背光，中间配以液晶显示屏，方便读取行车信息。</p>         
+                    </div>
+                    <div class="car_m_textW js-con">
+                        <a href="#" target="_blank" class="car_m_title">
+                            测一汽奥迪A3两厢版 用着舒心玩的尽兴
+                        </a>
+                        <ul class="car_m_notation clearfix">
+                            <li>2016年12月07日 00:00</li>
+                            <li>来源：<a href="index.html" target="_blank">汽车大全</a></li>
+                            <li>类型：原创</li>
+                            <li>编辑：郑宇</li>
+                        </ul>
+                        <p class="car_m_text">操控-哈弗H6新款车型今天亮相广州车展，蓝标版本新车采用哈弗最新设计风格，前脸看上去非常具有运动感，动力则依旧采用1.5T发动机，燃油消耗得到优化</p>
+                        <img src="http://172.16.0.135:8888/website/img/pic/audi-q5.png" width="630" height="467"/>
+                        <img src="http://172.16.0.135:8888/website/img/pic/a8.png" width="630" height="465"/>
+                        <p class="car_m_text car_m_text_d">三幅式方向盘在三点和九点握手位置采用了真皮打孔处理，方向盘盘辐较大。仪表采用白色背光，中间配以液晶显示屏，方便读取行车信息。</p>         
+                    </div>
+                    <div class="car_m_textW js-con">
+                        <a href="#" target="_blank" class="car_m_title">
+                            测一汽奥迪A3两厢版 用着舒心玩的尽兴
+                        </a>
+                        <ul class="car_m_notation clearfix">
+                            <li>2016年12月07日 00:00</li>
+                            <li>来源：<a href="index.html" target="_blank">汽车大全</a></li>
+                            <li>类型：原创</li>
+                            <li>编辑：郑宇</li>
+                        </ul>
+                        <p class="car_m_text">舒适性-哈弗H6新款车型今天亮相广州车展，蓝标版本新车采用哈弗最新设计风格，前脸看上去非常具有运动感，动力则依旧采用1.5T发动机，燃油消耗得到优化</p>
+                        <img src="http://172.16.0.135:8888/website/img/pic/audi-q5.png" width="630" height="467"/>
+                        <img src="http://172.16.0.135:8888/website/img/pic/a8.png" width="630" height="465"/>
+                        <p class="car_m_text car_m_text_d">三幅式方向盘在三点和九点握手位置采用了真皮打孔处理，方向盘盘辐较大。仪表采用白色背光，中间配以液晶显示屏，方便读取行车信息。</p>         
+                    </div>
+                    <div class="car_m_textW js-con">
+                        <a href="#" target="_blank" class="car_m_title">
+                            测一汽奥迪A3两厢版 用着舒心玩的尽兴
+                        </a>
+                        <ul class="car_m_notation clearfix">
+                            <li>2016年12月07日 00:00</li>
+                            <li>来源：<a href="index.html" target="_blank">汽车大全</a></li>
+                            <li>类型：原创</li>
+                            <li>编辑：郑宇</li>
+                        </ul>
+                        <p class="car_m_text">油耗-哈弗H6新款车型今天亮相广州车展，蓝标版本新车采用哈弗最新设计风格，前脸看上去非常具有运动感，动力则依旧采用1.5T发动机，燃油消耗得到优化</p>
+                        <img src="http://172.16.0.135:8888/website/img/pic/audi-q5.png" width="630" height="467"/>
+                        <img src="http://172.16.0.135:8888/website/img/pic/a8.png" width="630" height="465"/>
+                        <p class="car_m_text car_m_text_d">三幅式方向盘在三点和九点握手位置采用了真皮打孔处理，方向盘盘辐较大。仪表采用白色背光，中间配以液晶显示屏，方便读取行车信息。</p>         
+                    </div>
+                    <div class="car_m_textW js-con">
+                        <a href="#" target="_blank" class="car_m_title">
+                            测一汽奥迪A3两厢版 用着舒心玩的尽兴
+                        </a>
+                        <ul class="car_m_notation clearfix">
+                            <li>2016年12月07日 00:00</li>
+                            <li>来源：<a href="index.html" target="_blank">汽车大全</a></li>
+                            <li>类型：原创</li>
+                            <li>编辑：郑宇</li>
+                        </ul>
+                        <p class="car_m_text">配置-哈弗H6新款车型今天亮相广州车展，蓝标版本新车采用哈弗最新设计风格，前脸看上去非常具有运动感，动力则依旧采用1.5T发动机，燃油消耗得到优化</p>
+                        <img src="http://172.16.0.135:8888/website/img/pic/audi-q5.png" width="630" height="467"/>
+                        <img src="http://172.16.0.135:8888/website/img/pic/a8.png" width="630" height="465"/>
+                        <p class="car_m_text car_m_text_d">三幅式方向盘在三点和九点握手位置采用了真皮打孔处理，方向盘盘辐较大。仪表采用白色背光，中间配以液晶显示屏，方便读取行车信息。</p>         
+                    </div>
+                    <div class="car_m_textW js-con">
+                        <a href="#" target="_blank" class="car_m_title">
+                            测一汽奥迪A3两厢版 用着舒心玩的尽兴
+                        </a>
+                        <ul class="car_m_notation clearfix">
+                            <li>2016年12月07日 00:00</li>
+                            <li>来源：<a href="index.html" target="_blank">汽车大全</a></li>
+                            <li>类型：原创</li>
+                            <li>编辑：郑宇</li>
+                        </ul>
+                        <p class="car_m_text">总结-哈弗H6新款车型今天亮相广州车展，蓝标版本新车采用哈弗最新设计风格，前脸看上去非常具有运动感，动力则依旧采用1.5T发动机，燃油消耗得到优化</p>
+                        <img src="http://172.16.0.135:8888/website/img/pic/audi-q5.png" width="630" height="467"/>
+                        <img src="http://172.16.0.135:8888/website/img/pic/a8.png" width="630" height="465"/>
+                        <p class="car_m_text car_m_text_d">三幅式方向盘在三点和九点握手位置采用了真皮打孔处理，方向盘盘辐较大。仪表采用白色背光，中间配以液晶显示屏，方便读取行车信息。</p>         
+                    </div>
+                    <div class="car_m_textW js-con">
+                        <a href="#" target="_blank" class="car_m_title">
+                            测一汽奥迪A3两厢版 用着舒心玩的尽兴
+                        </a>
+                        <ul class="car_m_notation clearfix">
+                            <li>2016年12月07日 00:00</li>
+                            <li>来源：<a href="index.html" target="_blank">汽车大全</a></li>
+                            <li>类型：原创</li>
+                            <li>编辑：郑宇</li>
+                        </ul>
+                        <p class="car_m_text">优惠-哈弗H6新款车型今天亮相广州车展，蓝标版本新车采用哈弗最新设计风格，前脸看上去非常具有运动感，动力则依旧采用1.5T发动机，燃油消耗得到优化</p>
+                        <img src="http://172.16.0.135:8888/website/img/pic/audi-q5.png" width="630" height="467"/>
+                        <img src="http://172.16.0.135:8888/website/img/pic/a8.png" width="630" height="465"/>
+                        <p class="car_m_text car_m_text_d">三幅式方向盘在三点和九点握手位置采用了真皮打孔处理，方向盘盘辐较大。仪表采用白色背光，中间配以液晶显示屏，方便读取行车信息。</p>         
+                    </div>
+                </div>
+
+                <!--page-->
+                <div class="car_m_page clearfix">
+                    <!-- <li class="prev_page">
+                        <a href="javascript:void(0);">
+                            上一页：
+                            <span></span>
+                        </a>
+                    </li>
+                    <li class="car_page_active">
+                        <a href="javascript:void(0);">1</a>
+                    </li>
+                    <li class="page_h">
+                        <a href="javascript:void(0);">2</a>
+                    </li>
+                    <li class="page_h">
+                        <a href="javascript:void(0);">3</a>
+                    </li>
+                    <li class="next_page page_h">
+                        <a href="javascript:void(0);">
+                            下一页：
+                            <span>外观</span>
+                        </a>
+                    </li> -->
+                </div>
+            </div>
+            <!--更多测评-->
+            <div class="car_m_more">
+                <p class="car_m_more_title">更多奥迪A3测评</p>
+                <div class="car_more_wrap">
+                    <dl class="car_more_list clearfix">
+                        <a href="javascript:void(0);" target="_blank">
+                            <dt>
+                                <img src="http://172.16.0.135:8888/website/img/pic/news_choice_module.png" />
+                            </dt>
+                            <dd class="car_more_tit">
+                                小孩变少年 实拍2017款福特改款翼博
+                            </dd>
+                            <dd class="car_more_text">
+                                福特翼博（Ecosport）是一款基于嘉年华平台打造的小型SUV，小巧可爱是它的标签，本代车型最早发布于2012年5月的北京，小巧可爱是它的标签
+                            </dd>
+                            <dd class="car_more_time">2017年1月4号</dd>
+                        </a>
+                    </dl>
+                    <dl class="car_more_list clearfix">
+                        <a href="javascript:void(0);" target="_blank">
+                            <dt>
+                                <img src="http://172.16.0.135:8888/website/img/pic/news_choice_module.png" />
+                            </dt>
+                            <dd class="car_more_tit">
+                                小孩变少年 实拍2017款福特改款翼博
+                            </dd>
+                            <dd class="car_more_text">
+                                福特翼博（Ecosport）是一款基于嘉年华平台打造的小型SUV，小巧可爱是它的标签，本代车型最早发布于2012年5月的北京，小巧可爱是它的标签
+                            </dd>
+                            <dd class="car_more_time">2017年1月4号</dd>
+                        </a>
+                    </dl>
+                    <dl class="car_more_list clearfix">
+                        <a href="javascript:void(0);" target="_blank">
+                            <dt>
+                                <img src="http://172.16.0.135:8888/website/img/pic/news_choice_module.png" />
+                            </dt>
+                            <dd class="car_more_tit">
+                                小孩变少年 实拍2017款福特改款翼博
+                            </dd>
+                            <dd class="car_more_text">
+                                福特翼博（Ecosport）是一款基于嘉年华平台打造的小型SUV，小巧可爱是它的标签，本代车型最早发布于2012年5月的北京，小巧可爱是它的标签
+                            </dd>
+                            <dd class="car_more_time">2017年1月4号</dd>
+                        </a>
+                    </dl>
+                    <dl class="car_more_list clearfix">
+                        <a href="javascript:void(0);" target="_blank">
+                            <dt>
+                                <img src="http://172.16.0.135:8888/website/img/pic/news_choice_module.png" />
+                            </dt>
+                            <dd class="car_more_tit">
+                                小孩变少年 实拍2017款福特改款翼博
+                            </dd>
+                            <dd class="car_more_text">
+                                福特翼博（Ecosport）是一款基于嘉年华平台打造的小型SUV，小巧可爱是它的标签，本代车型最早发布于2012年5月的北京，小巧可爱是它的标签
+                            </dd>
+                            <dd class="car_more_time">2017年1月4号</dd>
+                        </a>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <!--右侧列表-->
+        <div class="imgs_m_right">
+            <!--猜你喜欢-->
+            <!--猜你喜欢-->
+<h3>竞品车型</h3>
+<ul class="imgs_l_car clearfix">
+    <li>
+        <dl>
+            <a href="javascript:void(0);" target="_blank"> <dt><img src="http://172.16.0.135:8888/website/img/pic/imgs_l_img1.jpg"/></dt>
+                <dd class="imgs_l_name">奥迪A3</dd>
+            </a>
+            <a href="javascript:void(0);" target="_blank">
+                <dd class="imgs_l_price">9999.67-1218.48万</dd>
+            </a>
+        </dl>
+    </li>
+    <li>
+        <dl>
+            <a href="javascript:void(0);" target="_blank"> <dt><img src="http://172.16.0.135:8888/website/img/pic/imgs_l_img2.jpg"/></dt>
+                <dd class="imgs_l_name">帕萨特</dd>
+            </a>
+            <a href="javascript:void(0);" target="_blank">
+                <dd class="imgs_l_price">1212.02-1220.20万</dd>
+            </a>
+        </dl>
+    </li>
+    <li>
+        <dl>
+            <a href="javascript:void(0);" target="_blank"> <dt><img src="http://172.16.0.135:8888/website/img/pic/imgs_l_img3.jpg"/></dt>
+                <dd class="imgs_l_name">宝马3系</dd>
+            </a>
+            <a href="javascript:void(0);" target="_blank">
+                <dd class="imgs_l_price">1220.30-1245.60万</dd>
+            </a>
+        </dl>
+    </li>
+    <li>
+        <dl>
+            <a href="javascript:void(0);" target="_blank"> <dt><img src="http://172.16.0.135:8888/website/img/pic/imgs_l_img4.jpg"/></dt>
+                <dd class="imgs_l_name">奥迪A6L</dd>
+            </a>
+            <a href="javascript:void(0);" target="_blank">
+                <dd class="imgs_l_price">1227.00-1248.27万</dd>
+            </a>
+        </dl>
+    </li>
+</ul>
+
+            <!--其他车型-->
+            <h3>一汽奥迪其他车型</h3>
+<ul class="imgs_other_car">
+    <li> <span class="imgs_blue_dian"></span> <a href="#" target="_blank">奥迪A3</a> <span class="imgs_other_price">9.67-18.48万</span> </li>
+    <li> <span class="imgs_blue_dian"></span> <a href="#" target="_blank">高尔夫 嘉旋</a> <span class="imgs_other_price">18.48-32.98万</span> </li>
+    <li> <span class="imgs_blue_dian"></span> <a href="#" target="_blank">高尔夫GTI</a> <span class="imgs_other_price">8.19-14.89万</span> </li>
+    <li> <span class="imgs_blue_dian"></span> <a href="#" target="_blank">大众CC</a> <span class="imgs_other_price">18.48-32.98万</span> </li>
+    <li> <span class="imgs_blue_dian"></span> <a href="#" target="_blank">奥迪A3</a> <span class="imgs_other_price">9.67-18.48万</span> </li>
+    <li> <span class="imgs_blue_dian"></span> <a href="#" target="_blank">高尔夫 嘉旋</a> <span class="imgs_other_price">18.48-32.98万</span> </li>
+    <li> <span class="imgs_blue_dian"></span> <a href="#" target="_blank">高尔夫GTI</a> <span class="imgs_other_price">9.67-18.48万</span> </li>
+    <li> <span class="imgs_blue_dian"></span> <a href="#" target="_blank">大众CC</a> <span class="imgs_other_price">18.48-32.98万</span> </li>
+</ul>
+
+            <!--热门车-->
+            <!--热门车-->
+<p class="imgs_hot_title">大家都在买什么车</p>
+<div class="clearfix we-buy">
+    <div class="clearfix bor-to-bo-ri">
+        <ul class="fl" id='js-left-tap'>
+            <li class="fl-li active js-menu"> 全部 </li>
+            <li class="fl-li js-menu"> 微型 </li>
+            <li class="fl-li js-menu"> 小型 </li>
+            <li class="fl-li js-menu"> 紧凑型 </li>
+            <li class="fl-li js-menu"> 中型 </li>
+            <li class="fl-li js-menu"> 中大型 </li>
+            <li class="fl-li js-menu"> SUV </li>
+            <li class="fl-li js-menu"> MPV </li>
+            <li class="fl-li fl_li_nBoder"> </li>
+            <li class="fl-li fl_li_nBoder"> </li>
+        </ul>
+        <div class="fr clearfix w189" id="js-tab-warp">
+            <ul class="fr js-con js-show">
+                <li class="l-li"> <span class="num bgtop">1</span> <a href="#" target="_blank">迈腾</a> </li>
+                <li class="l-li"> <span class="num bgtop">2</span> <a href="#" target="_blank">宝来</a> </li>
+                <li class="l-li"> <span class="num bgtop">3</span> <a href="#" target="_blank">奥迪A6L</a> </li>
+                <li class="l-li"> <span class="num ">4</span> <a href="#" target="_blank">哈弗H6</a> </li>
+                <li class="l-li"> <span class="num ">5</span> <a href="#" target="_blank">途观</a> </li>
+                <li class="l-li"> <span class="num ">6</span> <a href="#" target="_blank">捷达</a> </li>
+                <li class="l-li"> <span class="num ">7</span> <a href="#" target="_blank">朗逸</a> </li>
+                <li class="l-li"> <span class="num ">8</span> <a href="#" target="_blank">别克GL8</a> </li>
+                <li class="l-li"> <span class="num ">9</span> <a href="#" target="_blank">长安CS75</a> </li>
+                <li class="l-li l-li-nBorder"> <span class="num ">10</span> <a href="#" target="_blank">宝骏730</a> </li>
+            </ul>
+            <ul class="fr js-con">
+                <li class="l-li"> <span class="num bgtop">11</span> <a href="#" target="_blank">迈腾</a> </li>
+                <li class="l-li"> <span class="num bgtop">2</span> <a href="#" target="_blank">宝来</a> </li>
+                <li class="l-li"> <span class="num bgtop">3</span> <a href="#" target="_blank">奥迪A6L</a> </li>
+                <li class="l-li"> <span class="num ">4</span> <a href="#" target="_blank">哈弗H6</a> </li>
+                <li class="l-li"> <span class="num ">5</span> <a href="#" target="_blank">途观</a> </li>
+                <li class="l-li"> <span class="num ">6</span> <a href="#" target="_blank">捷达</a> </li>
+                <li class="l-li"> <span class="num ">7</span> <a href="#" target="_blank">朗逸</a> </li>
+                <li class="l-li"> <span class="num ">8</span> <a href="#" target="_blank">别克GL8</a> </li>
+                <li class="l-li"> <span class="num ">9</span> <a href="#" target="_blank">长安CS75</a> </li>
+                <li class="l-li"> <span class="num ">10</span> <a href="#" target="_blank">宝骏730</a> </li>
+            </ul>
+            <ul class="fr js-con">
+                <li class="l-li"> <span class="num bgtop">12</span> <a href="#" target="_blank">迈腾</a> </li>
+                <li class="l-li"> <span class="num bgtop">2</span> <a href="#" target="_blank">宝来</a> </li>
+                <li class="l-li"> <span class="num bgtop">3</span> <a href="#" target="_blank">奥迪A6L</a> </li>
+                <li class="l-li"> <span class="num ">4</span> <a href="#" target="_blank">哈弗H6</a> </li>
+                <li class="l-li"> <span class="num ">5</span> <a href="#" target="_blank">途观</a> </li>
+                <li class="l-li"> <span class="num ">6</span> <a href="#" target="_blank">捷达</a> </li>
+                <li class="l-li"> <span class="num ">7</span> <a href="#" target="_blank">朗逸</a> </li>
+                <li class="l-li"> <span class="num ">8</span> <a href="#" target="_blank">别克GL8</a> </li>
+                <li class="l-li"> <span class="num ">9</span> <a href="#" target="_blank">长安CS75</a> </li>
+                <li class="l-li l-li-nBorder"> <span class="num ">10</span> <a href="#" target="_blank">宝骏730</a> </li>
+            </ul>
+            <ul class="fr js-con">
+                <li class="l-li"> <span class="num bgtop">14</span> <a href="#" target="_blank">迈腾</a> </li>
+                <li class="l-li"> <span class="num bgtop">2</span> <a href="#" target="_blank">宝来</a> </li>
+                <li class="l-li"> <span class="num bgtop">3</span> <a href="#" target="_blank">奥迪A6L</a> </li>
+                <li class="l-li"> <span class="num ">4</span> <a href="#" target="_blank">哈弗H6</a> </li>
+                <li class="l-li"> <span class="num ">5</span> <a href="#" target="_blank">途观</a> </li>
+                <li class="l-li"> <span class="num ">6</span> <a href="#" target="_blank">捷达</a> </li>
+                <li class="l-li"> <span class="num ">7</span> <a href="#" target="_blank">朗逸</a> </li>
+                <li class="l-li"> <span class="num ">8</span> <a href="#" target="_blank">别克GL8</a> </li>
+                <li class="l-li"> <span class="num ">9</span> <a href="#" target="_blank">长安CS75</a> </li>
+                <li class="l-li l-li-nBorder"> <span class="num ">10</span> <a href="#" target="_blank">宝骏730</a> </li>
+            </ul>
+            <ul class="fr js-con">
+                <li class="l-li"> <span class="num bgtop">15</span> <a href="#" target="_blank">迈腾</a> </li>
+                <li class="l-li"> <span class="num bgtop">2</span> <a href="#" target="_blank">宝来</a> </li>
+                <li class="l-li"> <span class="num bgtop">3</span> <a href="#" target="_blank">奥迪A6L</a> </li>
+                <li class="l-li"> <span class="num ">4</span> <a href="#" target="_blank">哈弗H6</a> </li>
+                <li class="l-li"> <span class="num ">5</span> <a href="#" target="_blank">途观</a> </li>
+                <li class="l-li"> <span class="num ">6</span> <a href="#" target="_blank">捷达</a> </li>
+                <li class="l-li"> <span class="num ">7</span> <a href="#" target="_blank">朗逸</a> </li>
+                <li class="l-li"> <span class="num ">8</span> <a href="#" target="_blank">别克GL8</a> </li>
+                <li class="l-li"> <span class="num ">9</span> <a href="#" target="_blank">长安CS75</a> </li>
+                <li class="l-li l-li-nBorder"> <span class="num ">10</span> <a href="#" target="_blank">宝骏730</a> </li>
+            </ul>
+            <ul class="fr js-con">
+                <li class="l-li"> <span class="num bgtop">1</span> <a href="#" target="_blank">迈腾</a> </li>
+                <li class="l-li"> <span class="num bgtop">2</span> <a href="#" target="_blank">宝来</a> </li>
+                <li class="l-li"> <span class="num bgtop">3</span> <a href="#" target="_blank">奥迪A6L</a> </li>
+                <li class="l-li"> <span class="num ">4</span> <a href="#" target="_blank">哈弗H6</a> </li>
+                <li class="l-li"> <span class="num ">5</span> <a href="#" target="_blank">途观</a> </li>
+                <li class="l-li"> <span class="num ">6</span> <a href="#" target="_blank">捷达</a> </li>
+                <li class="l-li"> <span class="num ">7</span> <a href="#" target="_blank">朗逸</a> </li>
+                <li class="l-li"> <span class="num ">8</span> <a href="#" target="_blank">别克GL8</a> </li>
+                <li class="l-li"> <span class="num ">9</span> <a href="#" target="_blank">长安CS75</a> </li>
+                <li class="l-li l-li-nBorder"> <span class="num ">10</span> <a href="#" target="_blank">宝骏730</a> </li>
+            </ul>
+            <ul class="fr js-con">
+                <li class="l-li"> <span class="num bgtop">11</span> <a href="#" target="_blank">迈腾</a> </li>
+                <li class="l-li"> <span class="num bgtop">2</span> <a href="#" target="_blank">宝来</a> </li>
+                <li class="l-li"> <span class="num bgtop">3</span> <a href="#" target="_blank">奥迪A6L</a> </li>
+                <li class="l-li"> <span class="num ">4</span> <a href="#" target="_blank">哈弗H6</a> </li>
+                <li class="l-li"> <span class="num ">5</span> <a href="#" target="_blank">途观</a> </li>
+                <li class="l-li"> <span class="num ">6</span> <a href="#" target="_blank">捷达</a> </li>
+                <li class="l-li"> <span class="num ">7</span> <a href="#" target="_blank">朗逸</a> </li>
+                <li class="l-li"> <span class="num ">8</span> <a href="#" target="_blank">别克GL8</a> </li>
+                <li class="l-li"> <span class="num ">9</span> <a href="#" target="_blank">长安CS75</a> </li>
+                <li class="l-li l-li-nBorder"> <span class="num ">10</span> <a href="#" target="_blank">宝骏730</a> </li>
+            </ul>
+            <ul class="fr js-con">
+                <li class="l-li"> <span class="num bgtop">12</span> <a href="#" target="_blank">迈腾</a> </li>
+                <li class="l-li"> <span class="num bgtop">2</span> <a href="#" target="_blank">宝来</a> </li>
+                <li class="l-li"> <span class="num bgtop">3</span> <a href="#" target="_blank">奥迪A6L</a> </li>
+                <li class="l-li"> <span class="num ">4</span> <a href="#" target="_blank">哈弗H6</a> </li>
+                <li class="l-li"> <span class="num ">5</span> <a href="#" target="_blank">途观</a> </li>
+                <li class="l-li"> <span class="num ">6</span> <a href="#" target="_blank">捷达</a> </li>
+                <li class="l-li"> <span class="num ">7</span> <a href="#" target="_blank">朗逸</a> </li>
+                <li class="l-li"> <span class="num ">8</span> <a href="#" target="_blank">别克GL8</a> </li>
+                <li class="l-li"> <span class="num ">9</span> <a href="#" target="_blank">长安CS75</a> </li>
+                <li class="l-li l-li-nBorder"> <span class="num ">10</span> <a href="#" target="_blank">宝骏730</a> </li>
+            </ul>
+            <ul class="fr js-con">
+                <li class="l-li"> <span class="num bgtop">14</span> <a href="#" target="_blank">迈腾</a> </li>
+                <li class="l-li"> <span class="num bgtop">2</span> <a href="#" target="_blank">宝来</a> </li>
+                <li class="l-li"> <span class="num bgtop">3</span> <a href="#" target="_blank">奥迪A6L</a> </li>
+                <li class="l-li"> <span class="num ">4</span> <a href="#" target="_blank">哈弗H6</a> </li>
+                <li class="l-li"> <span class="num ">5</span> <a href="#" target="_blank">途观</a> </li>
+                <li class="l-li"> <span class="num ">6</span> <a href="#" target="_blank">捷达</a> </li>
+                <li class="l-li"> <span class="num ">7</span> <a href="#" target="_blank">朗逸</a> </li>
+                <li class="l-li"> <span class="num ">8</span> <a href="#" target="_blank">别克GL8</a> </li>
+                <li class="l-li"> <span class="num ">9</span> <a href="#" target="_blank">长安CS75</a> </li>
+                <li class="l-li l-li-nBorder"> <span class="num ">10</span> <a href="#" target="_blank">宝骏730</a> </li>
+            </ul>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>  
+</div>
+
+<!--footer model -->
+<!-- 底部 -->
+<div class="footer">
+    <div class="footer_content">
+        <ul>
+            <li class="footer_message"><a href="http://www.xingyuanauto.com/" target="_blank">关于我们</a></li>
+            <li class="footer_message"><a href="http://www.xingyuanauto.com/" target="_blank">联系我们</a></li>
+            <li class="footer_message"><a href="http://www.xingyuanauto.com/html/recruitment.html?newtarget=technology" target="_blank">招贤纳士</a></li>
+            <li class="footer_message"><a href="dealer.xingyuanauto.com" target="_blank">行圆智慧云</a></li>
+            <li class="website"><a href="javascript:void (0)">@2016-2017 www .qichedaquan .com All Rights Reserved. 北京行圆汽车信息技术有限公司所有</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--goTop model -->
+<!-- 返回顶部 -->
+<div class="goTop" id="back_to_top"> <span class="goTop_icon"></span> <span class="goTop_text">返回顶部</span></div>
+
+</body>
+<script>
+    var carSerialDetail = {
+        "code": 10000,
+        "data": [
+            {
+            "title": "内饰",
+            "url": "http://news.manager.xingyuanauto.com:8080/News/Preview/1758.html"
+            },
+            {
+            "title": "空间",
+            "url": "http://news.manager.xingyuanauto.com:8080/News/Preview/1758-2.html"
+            }
+        ],
+        "msg": "服务调用成功",
+        "sub_code": 0
+    }
+</script>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/tab.js"></script>
+<script src="js/page.js"></script>
+<script src="js/carModelPage.js"></script>
+<script src="js/publicMain.js"></script>
+<script src="js/floating.js"></script>
+<script src="js/index.js"></script>
+<script src="js/goTop.js"></script>
+<script>
+	//tab切换
+	Tab('js-left-tap','js-tab-warp','active','js-show','mouseover');
+</script>
+</html>

@@ -1,0 +1,155 @@
+@import (reference) "public";
+@import "mod/mod_headerTitle";
+@import "mod/mod_pagination";
+@import "mod/mod_footer";
+.show {
+  display: block;
+}
+.time {
+  position: absolute;
+  top: 146px;
+  right: 4px;
+  width: 44px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+  z-index: 2;
+  background: #3a2a25;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.v-ranking {
+  height: auto;
+  margin-top: 40px;
+  margin-left: 32px;
+
+  .ranking-lis {
+    color: #333;
+    height: 33px;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 4px solid #333;
+    margin-bottom: 4px;
+
+    .ranking-title {
+      display: inline-block;
+    }
+    .weeks,.month {
+      font-size: 16px;
+      display: none;
+      cursor: pointer;
+    }
+    .weeks {
+      height: 16px;
+      width: 42px;
+      font-size: 16px;
+      display: none;
+      cursor: pointer;
+      text-align: center;
+      line-height: 16px;
+      margin-right: 12px;
+      margin-top: 8px;
+      border-right: 1px solid #eee;
+    }
+    .blue_text {
+      color: #1673D9;
+    }
+    .month {
+      margin-top: 5px;
+    }
+  }
+  .ranking-con {
+    .ranking-play {
+      margin-top: 10px;
+      width: 252px;
+      height: 168px;
+      cursor: pointer;
+
+      a {
+        .ranking-time-wrap {
+          .time;
+        }
+        .ranking-time {
+          color: @color-fff;
+          width: 44px;
+          height: 18px;
+          line-height: 18px;
+          position: absolute;
+          top: 146px;
+          right: 0px;
+          z-index: 3;
+          font-size: 14px;
+        }
+        .ranking-play-btn {
+          .inline-block;
+          background-image: url("../img/sprite.png");
+          background-position: 0px -1400px;
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-left: -25px;
+          margin-top: -25px;
+          //display: none;
+
+          &:hover {
+            background-position: 0px -1455px;
+          }
+        }
+      }
+    }
+  }
+  .show {
+    .show;
+  }
+  .ranking-list {
+    width: 252px;
+    height: auto;
+    margin-top: 5px;
+
+    li {
+      line-height: 33px;
+      height: 33px;
+      width: 252px;
+
+      span {
+        float: left;
+        width: 16px;
+        height: 16px;
+        text-align: center;
+        line-height: 16px;
+        border: 1px solid @color-eee;
+        margin-right: 5px;
+        margin-top: 8px;
+      }
+      .orange {
+        background: #FFA904;
+        width: 16px;
+        height: 16px;
+        border: none;
+        color: #fff;
+      }
+      a {
+        font-size: 12px;
+        color: #333;
+        display: inline-block;
+        &:hover {
+          text-decoration: underline;
+          color: @color-126acc;
+          .normal{
+            color: #333333;
+          }
+        }
+        &:active {
+          text-decoration: underline;
+          color: #1064c1;
+        }
+      }
+      .a_hover {
+        text-decoration: underline;
+        color: @color-126acc;
+      }
+    }
+  }
+}

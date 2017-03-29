@@ -1,0 +1,92 @@
+/*****
+ *@author: jianingning
+ *@from: Global style mod_carHot
+ *@description: 何在朋
+ *@date: name (2017.02.04)
+*/
+
+
+
+
+@import (reference) "../public";
+
+.imgs_hot_title {
+    height: 30px;
+    padding-top: 16px;
+    font-size: @font-16;
+    color: @color-333;
+    font-weight: 700;
+}
+.we-buy {
+    .bor-to-bo-ri {
+      border: 1px solid @color-eee;
+      border-left: none;
+
+      .fl-li {
+        height: 33px;
+        width: 59px;
+        border-left: 2px solid @color-f7;
+        border-right: 1px solid @color-eee;
+        border-bottom: 1px solid @color-eee;
+        background-color: @color-f7;
+        text-align: center;
+        line-height: 33px;
+        .cursor;
+        color: @color-666;
+      }
+      .active {
+        border-left: 2px solid @color-orange;
+        border-right: 1px solid @color-fff;
+        background-color: @color-fff;
+      }
+      .fl_li_nBoder {
+        border-bottom: 1px solid @color-f7;
+      }
+    }
+    .w189 {
+      width: 140px;
+      border: none;
+
+      ul {
+            display: none;
+
+            li {
+                height: 33px;
+                width: 140px;
+                border-bottom: 1px solid @color-eee;
+                background-color: @color-fff;
+                line-height: 33px;
+                .cursor;
+
+                .num{
+                    float: left;
+                    width: 16px;
+                    height: 16px;
+                    background: @color-c4;
+                    color: #FEFFFD;
+                    text-align: center;
+                    margin: 8px 12px 0 4px;
+                    vertical-align: text-bottom;
+                    line-height: 16px;
+                }
+                .bgtop {
+                    background: #FFA904;
+                }
+                a {
+                    display: inline-block;
+                    width: 100px;
+                }
+                &:hover a {
+                    color: @color-398be4;
+                    text-decoration: underline;
+                }
+            }
+            .l-li-nBorder {
+                border-bottom: none;
+            }
+        }
+        .js-show {
+            display: block;
+        }
+    }
+}

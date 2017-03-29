@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>车系选车</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/carModel.css"/>
+</head>
+<body>
+<!--header模块-->
+<div class="header">
+    <!--nav model -->
+    {{#include ./mod/mod_headerTitle2.html}}
+
+    <!--logo model -->
+    {{#include ./mod/mod_headerBanner.html}}
+</div>
+
+<!--内容区-->
+<div class="content_wrap">
+    <!--汽车大全 • 产品库-->
+    <!--carMenu model -->
+    {{#include ./mod/mod_headerCarMenu.html?tab=1}}
+
+    <div class="cf relative">
+        <!--左侧树形-->
+        <div id="leftNav" class="fl">
+        </div>
+
+        <!--树形右侧-->
+        <div class="treeMainv1 fr">
+            <!--面包屑-->
+            <div class="content_nav">
+                <strong>当前位置：</strong>
+                <span><a href="javascript:;">汽车大全</a> > <a href="javascript:;">车型</a> > <a href="javascript:;">奥迪</a> > <a href="javascript:;">奥迪A3</a></span>
+            </div>
+
+            <!--车型频道参考图片报价视频-->
+            <div class="hot_title cf hot_tit">
+                <h3 class="fl"><a href="javascript:;">奥迪A3</a></h3>
+                <!--<i class="fl">共405.2万张图片 12月15日更新</i>-->
+                <ul class="fr hot_right">
+                    <li><a href="javascript:;" class="active">车型频道</a></li>
+                    <li><a href="javascript:;" class="">参数</a></li>
+                    <li class="no_click"><a href="javascript:;" class="">图片</a></li>
+                    <li><a href="javascript:;">报价</a></li>
+                    <li class="no_click"><a href="javascript:;">视频</a></li>
+                </ul>
+            </div>
+
+            <!--产品展示询底价，试驾，置换-->
+            <div class="cf" id="car_series">
+                <div class="fl left_img">
+                    <img src="img/pic/jdb.jpg" alt=""/>
+                </div>
+                <div class="fl right_mod">
+                    <p style="display: none">经销商报价：<a href="javascript:;"><strong>18.49-29.67万</strong></a></p>
+                    <p class="status">停售</p>
+                    <ul class="cf" >
+                        <li><span>发动机：</span><i>1.2T  1.4T  1.6T</i></li>
+                        <li><span>油耗：</span><i>  5.9-9.1L</i></li>
+                        <li><span>变速箱：</span><i>自动 / 手动 / 双离合</i></li>
+                        <li><span>车身架构：</span><i>三厢</i></li>
+                    </ul>
+                    <div class="btn_list cf dis_no">
+                        <a href="javascript:;" class="active">询底价</a>
+                        <a href="javascript:;" class="blue">试驾</a>
+                        <a href="javascript:;" class="blue last-child">置换</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--全部在售title-->
+            <div class="cf select_div">
+                <div class="fl">
+                    <strong>全部在售</strong>
+                </div>
+            </div>
+
+            <!--全部在售，列表展示-->
+            <table class="car_table">
+                <thead>
+                    <tr>
+                        <th width="320">1.2升<span>1100马力</span></th>
+                        <th width="54" class="thead_color">关注度</th>
+                        <th width="90" class="thead_color">指导价</th>
+                        <th width="136" class="thead_color">经销商报价</th>
+                        <th width="120"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="javascript:;"><h2>2015款 Sportback 35 TFSI 纪念智领版纪念智领版</h2></a>
+                            <span class="label blue">减税</span>
+                            <span class="label gray">停产在售</span>
+                            <strong class="about">前置前驱  5挡手动</strong>
+
+                        </td>
+                        <td>
+                            <div class="ow">
+                                <div class="iw" style="width: 23%"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="counter"><i></i>43.56万</span>
+                        </td>
+                        <td>
+                            <a href="javascript:;"><strong class="guide_price">34.17万起</strong></a>
+                            <a href="javascript:;" class="inquiry">询底价</a>
+                        </td>
+                        <td class="cf">
+                            <a href="javascript:;" class="p1">图片</a>
+                            <a href="javascript:;" class="p1">配置</a>
+                            <a href="javascript:;" class="compare" data-cid="123333"><b></b>对比</a>
+                            <span href="javascript:;" class="compare_y">已对比</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="javascript:;"><h2>2015款 Sportback 35 TFSI 纪念智领版纪念智领版</h2></a>
+                            <strong class="about">前置前驱  5挡手动</strong>
+                        </td>
+                        <td>
+                            <div class="ow">
+                                <div class="iw" style="width: 53%"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="counter"><i></i>43.56万</span>
+                        </td>
+                        <td>
+                            <a href="javascript:;"><strong class="guide_price">34.17万起</strong></a>
+                            <a href="javascript:;" class="inquiry">询底价</a>
+                        </td>
+                        <td class="cf">
+                            <a href="javascript:;" class="p1">图片</a>
+                            <a href="javascript:;" class="p1">配置</a>
+                            <a href="javascript:;" class="compare" data-cid="12333366"><b></b>对比</a>
+                            <span href="javascript:;" class="compare_y">已对比</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="javascript:;"><h2>2015款 Sportback 35 TFSI 纪念智领版纪念智领版</h2></a>
+                            <strong class="about">前置前驱  5挡手动</strong>
+                        </td>
+                        <td>
+                            <div class="ow">
+                                <div class="iw" style="width: 93%"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="counter"><i></i>43.56万</span>
+                        </td>
+                        <td>
+                            <a href="javascript:;"><strong class="guide_price">34.17万起</strong></a>
+                            <a href="javascript:;" class="inquiry">询底价</a>
+                        </td>
+                        <td class="cf">
+                            <a href="javascript:;" class="p1">图片</a>
+                            <a href="javascript:;" class="p1">配置</a>
+                            <a href="javascript:;" class="compare" data-cid="123333"><b></b>对比</a>
+                            <span href="javascript:;" class="compare_y">已对比</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="javascript:;"><h2>2015款 Sportback 35 TFSI 纪念智领版纪念智领版</h2></a>
+                            <strong class="about">前置前驱  5挡手动</strong>
+                        </td>
+                        <td>
+                            <div class="ow">
+                                <div class="iw" style="width: 100%"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="counter"><i></i>43.56万</span>
+                        </td>
+                        <td>
+                            <a href="javascript:;"><strong class="guide_price">34.17万起</strong></a>
+                            <a href="javascript:;" class="inquiry">询底价</a>
+                        </td>
+                        <td class="cf">
+                            <a href="javascript:;" class="p1">图片</a>
+                            <a href="javascript:;" class="p1">配置</a>
+                            <a href="javascript:;" class="compare" data-cid="123333"><b></b>对比</a>
+                            <span href="javascript:;" class="compare_y">已对比</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="car_table">
+                <thead>
+                <tr>
+                    <th width="320">1.2升<span>1100马力</span></th>
+                    <th width="54" class="thead_color">关注度</th>
+                    <th width="90" class="thead_color">指导价</th>
+                    <th width="136" class="thead_color">经销商报价</th>
+                    <th width="120"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <a href="javascript:;"><h2>2015款 Sportback 35 TFSI 纪念智领版纪念智领版</h2></a>
+                        <span class="label blue">减税</span>
+                        <span class="label gray">停产在售</span>
+                        <strong class="about">前置前驱  5挡手动</strong>
+
+                    </td>
+                    <td>
+                        <div class="ow">
+                            <div class="iw" style="width: 23%"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="counter"><i></i>43.56万</span>
+                    </td>
+                    <td>
+                        <a href="javascript:;"><strong class="guide_price">34.17万起</strong></a>
+                        <a href="javascript:;" class="inquiry">询底价</a>
+                    </td>
+                    <td class="cf">
+                        <a href="javascript:;" class="p1">图片</a>
+                        <a href="javascript:;" class="p1">配置</a>
+                        <a href="javascript:;" class="compare" data-cid="123333"><b></b>对比</a>
+                        <span href="javascript:;" class="compare_y">已对比</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="javascript:;"><h2>2015款 Sportback 35 TFSI 纪念智领版纪念智领版</h2></a>
+                        <strong class="about">前置前驱  5挡手动</strong>
+                    </td>
+                    <td>
+                        <div class="ow">
+                            <div class="iw" style="width: 23%"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="counter"><i></i>43.56万</span>
+                    </td>
+                    <td>
+                        <a href="javascript:;"><strong class="guide_price">34.17万起</strong></a>
+                        <a href="javascript:;" class="inquiry">询底价</a>
+                    </td>
+                    <td class="cf">
+                        <a href="javascript:;" class="p1">图片</a>
+                        <a href="javascript:;" class="p1">配置</a>
+                        <a href="javascript:;" class="compare" data-cid="123333"><b></b>对比</a>
+                        <span href="javascript:;" class="compare_y">已对比</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="javascript:;"><h2>2015款 Sportback 35 TFSI 纪念智领版纪念智领版</h2></a>
+                        <strong class="about">前置前驱  5挡手动</strong>
+                    </td>
+                    <td>
+                        <div class="ow">
+                            <div class="iw" style="width: 23%"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="counter"><i></i>43.56万</span>
+                    </td>
+                    <td>
+                        <a href="javascript:;"><strong class="guide_price">34.17万起</strong></a>
+                        <a href="javascript:;" class="inquiry">询底价</a>
+                    </td>
+                    <td class="cf">
+                        <a href="javascript:;" class="p1">图片</a>
+                        <a href="javascript:;" class="p1">配置</a>
+                        <a href="javascript:;" class="compare" data-cid="123333"><b></b>对比</a>
+                        <span href="javascript:;" class="compare_y">已对比</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="javascript:;"><h2>2015款 Sportback 35 TFSI 纪念智领版纪念智领版</h2></a>
+                        <strong class="about">前置前驱  5挡手动</strong>
+                    </td>
+                    <td>
+                        <div class="ow">
+                            <div class="iw" style="width: 23%"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="counter"><i></i>43.56万</span>
+                    </td>
+                    <td>
+                        <a href="javascript:;"><strong class="guide_price">34.17万起</strong></a>
+                        <a href="javascript:;" class="inquiry">询底价</a>
+                    </td>
+                    <td class="cf">
+                        <a href="javascript:;" class="p1">图片</a>
+                        <a href="javascript:;" class="p1">配置</a>
+                        <a href="javascript:;" class="compare" data-cid="123333"><b></b>对比</a>
+                        <span href="javascript:;" class="compare_y">已对比</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="car_table">
+                <thead>
+                <tr>
+                    <th width="320">1.2升<span>1100马力</span></th>
+                    <th width="54" class="thead_color">关注度</th>
+                    <th width="90" class="thead_color">指导价</th>
+                    <th width="136" class="thead_color">经销商报价</th>
+                    <th width="120"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <a href="javascript:;"><h2>2015款 Sportback 35 TFSI 纪念智领版纪念智领版</h2></a>
+                        <span class="label blue">减税</span>
+                        <span class="label gray">停产在售</span>
+                        <strong class="about">前置前驱  5挡手动</strong>
+
+                    </td>
+                    <td>
+                        <div class="ow">
+                            <div class="iw" style="width: 23%"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="counter"><i></i>43.56万</span>
+                    </td>
+                    <td>
+                        <a href="javascript:;"><strong class="guide_price">34.17万起</strong></a>
+                        <a href="javascript:;" class="inquiry">询底价</a>
+                    </td>
+                    <td class="cf">
+                        <a href="javascript:;" class="p1">图片</a>
+                        <a href="javascript:;" class="p1">配置</a>
+                        <a href="javascript:;" class="compare" data-cid="123333"><b></b>对比</a>
+                        <span href="javascript:;" class="compare_y">已对比</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="javascript:;"><h2>2015款 Sportback 35 TFSI 纪念智领版纪念智领版</h2></a>
+                        <strong class="about">前置前驱  5挡手动</strong>
+                    </td>
+                    <td>
+                        <div class="ow">
+                            <div class="iw" style="width: 23%"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="counter"><i></i>43.56万</span>
+                    </td>
+                    <td>
+                        <a href="javascript:;"><strong class="guide_price">34.17万起</strong></a>
+                        <a href="javascript:;" class="inquiry">询底价</a>
+                    </td>
+                    <td class="cf">
+                        <a href="javascript:;" class="p1">图片</a>
+                        <a href="javascript:;" class="p1">配置</a>
+                        <a href="javascript:;" class="compare" data-cid="123333"><b></b>对比</a>
+                        <span href="javascript:;" class="compare_y">已对比</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="javascript:;"><h2>2015款 Sportback 35 TFSI 纪念智领版纪念智领版</h2></a>
+                        <strong class="about">前置前驱  5挡手动</strong>
+                    </td>
+                    <td>
+                        <div class="ow">
+                            <div class="iw" style="width: 23%"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="counter"><i></i>43.56万</span>
+                    </td>
+                    <td>
+                        <a href="javascript:;"><strong class="guide_price">34.17万起</strong></a>
+                        <a href="javascript:;" class="inquiry">询底价</a>
+                    </td>
+                    <td class="cf">
+                        <a href="javascript:;" class="p1">图片</a>
+                        <a href="javascript:;" class="p1">配置</a>
+                        <a href="javascript:;" class="compare" data-cid="123333"><b></b>对比</a>
+                        <span href="javascript:;" class="compare_y">已对比</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="javascript:;"><h2>2015款 Sportback 35 TFSI 纪念智领版纪念智领版</h2></a>
+                        <strong class="about">前置前驱  5挡手动</strong>
+                    </td>
+                    <td>
+                        <div class="ow">
+                            <div class="iw" style="width: 23%"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="counter"><i></i>43.56万</span>
+                    </td>
+                    <td>
+                        <a href="javascript:;"><strong class="guide_price">34.17万起</strong></a>
+                        <a href="javascript:;" class="inquiry">询底价</a>
+                    </td>
+                    <td class="cf">
+                        <a href="javascript:;" class="p1">图片</a>
+                        <a href="javascript:;" class="p1">配置</a>
+                        <a href="javascript:;" class="compare" data-cid="123333"><b></b>对比</a>
+                        <span href="javascript:;" class="compare_y">已对比</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!--footer model -->
+{{#include ./mod/mod_footer.html}}
+
+<!--对比回到顶部-->
+{{#include ./mod/mod_gotopContrast.html}}
+</body>
+<script src="data/lefttree.js"></script>
+<script src="js/jquery-1.12.3.js"></script>
+<script src="js/jquery.mousewheel.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.min.js"></script>
+
+<script src="js/leftnav.js"></script>
+<script src="js/index.js"></script>
+
+
+<script src="data/carTypeJson.js"></script>
+<script src="js/gotopContrast.js"></script>
+<script src="js/carModel.js"></script>
+<script>
+    $(function(){
+        if (navigator.appName === 'Microsoft Internet Explorer') { //判断是否是IE浏览器
+            if (navigator.userAgent.match(/Trident/i) && navigator.userAgent.match(/MSIE 8.0/i)) { //判断浏览器内核是否为Trident内核IE8.0
+                $(".btn_list a:last-child").css({
+                    'margin-right':'0'
+                });
+            }
+        }
+    });
+
+</script>
+</html>

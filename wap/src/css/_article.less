@@ -1,0 +1,154 @@
+/*****
+ *@author: linyh
+ *@from: Global style article(文章)
+ *@description: 陈璐
+ *@date: name (2017.02.24)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_pubHeadNav";
+@import "mod/mod_pubHead";
+@import "mod/mod_smallnav";
+@import "mod/mod_footer";
+@import "mod/mod_goTop";
+
+// 文章主页面
+.article_page{
+
+    // 灰色间隔条
+    .bg_bar{
+        width: 100%;
+        height: .4rem /* 30/75 */;
+        background-color: @bg-bar;
+
+    }
+
+    // 新闻模块
+    .news_module{
+        overflow: hidden;
+        height: auto;
+        .tab_title{
+            font-size: 15px;
+            width: 92%;
+            padding: 0 4%;
+            border-bottom: 2px solid @color-tab-border;
+            li{
+                float: left;
+                width: 25%;
+                line-height: 1.053rem /* 79/75 */;
+                a{
+                    color: @color-tab-color;
+                    height: 100%;
+                    text-align: center;
+                    margin: 0 19%;
+                    display: block;
+                }
+                .current{
+                    color: @color-main-blue;
+                    border-bottom: 2px solid @color-main-blue;
+                    margin-bottom: -2px;
+                }
+            }
+        }
+        .news_content{
+            width: 400%;
+            height: auto;
+            overflow: hidden;
+            position: relative;
+            .news_swiper_box{
+                width: 25%;
+                float: left;
+                .swiper_news{
+                    .news_list{
+                        dl{
+                            .article_list;
+                        }
+                    }
+                    .load_more_module{
+                        width: 92%;
+                        margin: 0 4% .267rem /* 20/75 */;
+                        .load_more{
+                            .load_more;
+                        }
+                        .loading{
+                            .loading;
+                            display: none;
+                        }
+                        .no_more{
+                            .no_more;
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* 字体大小适配 */
+//dpr=2字体大小
+[data-dpr="2"] .article_page{
+    // 新闻模块
+    .news_module{
+        .tab_title{
+            font-size: 30px;
+        }
+        .news_swiper_box{
+            .swiper_news{
+                .news_list{
+                    .article_list{
+                        .synopsis {
+                            font-size: 30px;
+                        }
+                        .minor {
+                            font-size: 24px;
+                        }
+                    }
+                }
+                .load_more_module{
+                    .load_more{
+                        font-size: 26px;
+                    }
+                    .no_more{
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//dpr=3字体大小
+[data-dpr="3"] .article_page{
+    // 新闻模块
+    .news_module{
+        .tab_title{
+            font-size: 45px;
+        }
+        .news_swiper_box{
+            .swiper_news{
+                .news_list{
+                    .article_list{
+                        .synopsis {
+                            font-size: 45px;
+                        }
+                        .minor {
+                            font-size: 36px;
+                        }
+                    }
+                }
+                .load_more_module{
+                    .load_more{
+                        font-size: 39px;
+                    }
+                    .no_more{
+                        font-size: 39px;
+                    }
+                }
+            }
+        }
+    }
+}

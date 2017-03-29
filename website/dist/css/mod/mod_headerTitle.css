@@ -1,0 +1,372 @@
+.header {
+  width: 100%;
+}
+.header .header_nav {
+  width: 100%;
+  height: 36px;
+  background: #333;
+}
+.header .header_nav .header_nav_content {
+  width: 982px;
+  margin: 0 auto;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 4px;
+  background: #333;
+}
+.header .header_nav .header_nav_content a {
+  float: left;
+  font-size: 14px;
+  color: #999;
+}
+.header .header_nav .header_nav_content .triangle {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  position: absolute;
+  float: left;
+  border: 4px solid transparent;
+  border-top-color: #999;
+  cursor: pointer;
+  top: 16px;
+  right: 0;
+}
+.header .header_nav .header_nav_content .header_nav_left {
+  float: left;
+}
+.header .header_nav .header_nav_content .header_nav_left li {
+  float: left;
+  color: #999;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Microsoft YaHei", "微软雅黑";
+}
+.header .header_nav .header_nav_content .header_nav_left li.car_all {
+  float: left;
+  text-align: center;
+  height: 36px;
+  cursor: pointer;
+}
+.header .header_nav .header_nav_content .header_nav_left li.car_all .car_all_s a {
+  display: block;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 10px;
+  background: #398be4;
+  font-weight: bold;
+  font-family: "Microsoft YaHei", "微软雅黑";
+}
+.header .header_nav .header_nav_content .header_nav_left li.address_li {
+  float: left;
+  margin: 0 12px;
+  text-align: center;
+  height: 36px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Microsoft YaHei", "微软雅黑";
+}
+.header .header_nav .header_nav_content .header_nav_left li.address_li .default_address {
+  font-size: 14px;
+  font-family: "Microsoft YaHei", "微软雅黑";
+  padding-left: 4px;
+}
+.header .header_nav .header_nav_content .header_nav_left li.first {
+  float: left;
+  padding-left: 4px;
+  text-align: center;
+  height: 36px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.header .header_nav .header_nav_content .header_nav_left li.first span {
+  display: block;
+  height: 36px;
+  color: #fff;
+  font-family: "Microsoft YaHei", "微软雅黑";
+}
+.header .header_nav .header_nav_content .header_nav_left li.default_address {
+  float: left;
+  text-align: center;
+  padding-right: 12px;
+  height: 36px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Microsoft YaHei", "微软雅黑";
+}
+.header .header_nav .header_nav_content .header_nav_left li.first,
+.header .header_nav .header_nav_content .header_nav_left li.nav_line {
+  padding: 0 12px 0 0;
+}
+.header .header_nav .header_nav_content .header_nav_left li.nav_line {
+  position: relative;
+  top: 10px;
+  color: #272727;
+}
+.header .header_nav .header_nav_content .header_nav_left li.nav_line span {
+  width: 0;
+  display: block;
+  height: 16px;
+  top: 10px;
+  border-left: 1px solid #272727;
+  vertical-align: middle;
+}
+.header .header_nav .header_nav_content .header_nav_left li.first .bg {
+  color: #fff;
+}
+.header .header_nav .header_nav_content .header_nav_left li.first span {
+  display: block;
+  height: 36px;
+  color: #fff;
+}
+.header .header_nav .header_nav_content .header_nav_left li:hover .changeAdd,
+.header .header_nav .header_nav_content .header_nav_left li:hover a {
+  color: #fff;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position {
+  position: relative;
+  margin-right: 12px;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position span {
+  color: #999;
+  cursor: pointer;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position span.changeAdd {
+  height: 36px;
+  display: block;
+  padding-right: 12px;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose {
+  width: 478px;
+  height: 378px;
+  position: absolute;
+  top: 35px;
+  border: 1px solid #333;
+  border-bottom: 5px solid #333;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 9999999999;
+  background: #fff;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search {
+  width: 478px;
+  border-bottom: 1px solid #eee;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input {
+  height: 52px;
+  text-align: left;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span {
+  display: block;
+  float: left;
+  position: relative;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span img {
+  display: block;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span .input_letters_search {
+  position: absolute;
+  width: 145px;
+  z-index: 103;
+  overflow: hidden;
+  border: 1px solid #eee;
+  border-bottom: none;
+  margin-top: 1px;
+  top: 42px;
+  left: 10px;
+  background: #fff;
+  text-align: left;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span .input_letters_search ul li {
+  z-index: 120;
+  width: 144px;
+  height: 24px;
+  line-height: 24px;
+  margin-right: 4px;
+  border-bottom: 1px solid #eee;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span .input_letters_search ul li.click_to_destiny {
+  color: #999;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span .input_letters_search ul li.click_to_destiny span {
+  margin-left: 4px;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span .input_letters_search ul li.city_search_result {
+  cursor: pointer;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span .input_letters_search ul li.city_search_result:hover {
+  background: #398be4;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span .input_letters_search ul li.city_search_result span {
+  display: inline-block;
+  margin-left: 15px;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span .input_letters_search ul li.city_search_result span.city_text {
+  float: left;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span .input_letters_search ul li.city_search_result span.city_letters {
+  float: right;
+  margin-right: 4px;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span .input_letters_search ul li .city_text {
+  color: #333;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span .input_letters_search ul li span img {
+  display: inline-block;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span.delete_city {
+  float: right;
+  position: absolute;
+  right: 10px;
+  top: 18px;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span.search_btn {
+  position: absolute;
+  left: 15px;
+  top: 18px;
+  z-index: 109;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span.city_hot_search {
+  text-align: center;
+  display: block;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span.city_hot_search a {
+  font-size: 12px;
+  display: inline-block;
+  line-height: 30px;
+  padding: 0 8px;
+  margin: 11px 0;
+  color: #333;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span.city_hot_search a:hover {
+  background: #398be4;
+  color: #fff;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span input {
+  height: 32px;
+  padding-left: 20px;
+  border: none;
+  background: #eee;
+  margin: 10px 10px;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .hot_city_num {
+  width: 464px;
+  height: 32px;
+  padding: 10px 8px;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .hot_city_num a {
+  display: block;
+  float: left;
+  height: 26px;
+  margin: 3px 5px;
+  font-family: "Microsoft YaHei", "微软雅黑";
+  width: 26px;
+  line-height: 26px;
+  font-weight: bold;
+  border: 1px solid #dadada;
+  text-align: center;
+  color: #333;
+  background: #eee;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_chose_region {
+  height: 372px;
+  border-top: 1px solid #eee;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_chose_region dl {
+  padding: 4px 0 4px 0;
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_chose_region dl dt {
+  float: left;
+  height: 30px;
+  width: 70px;
+  text-align: right;
+  line-height: 30px;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_chose_region dl dt span {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_chose_region dl dt span.province_tx {
+  float: right;
+  display: block;
+  padding-top: 0;
+  color: #333;
+  font-family: "Microsoft YaHei", "微软雅黑";
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_chose_region dl dt span.province_num {
+  display: inline-block;
+  font-size: 14px;
+  color: #999;
+  float: left;
+  font-family: "\5FAE\8F6F\96C5\9ED1", Helvetica, sans-serif;
+  padding-left: 10px;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_chose_region dl dd {
+  float: right;
+  width: 380px;
+  zoom: 1;
+  line-height: 30px;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_chose_region dl dd a {
+  font-size: 12px;
+  float: left;
+  height: 30px;
+  color: #333;
+  zoom: 1;
+  line-height: 30px;
+  padding: 0 8px;
+  margin: 0 2px;
+  white-space: nowrap;
+}
+.header .header_nav .header_nav_content .header_nav_right {
+  float: right;
+  height: 36px;
+  position: relative;
+}
+.header .header_nav .header_nav_content .header_nav_right li {
+  float: right;
+  height: 36px;
+}
+.header .header_nav .header_nav_content .header_nav_right li.bg {
+  background: #5a5a5a;
+}
+.header .header_nav .header_nav_content .header_nav_right li.bg a {
+  color: #FFFFFF;
+}
+.header .header_nav .header_nav_content .header_nav_right li.nav_line {
+  color: #272727;
+  padding: 0;
+  display: inline-block;
+}
+.header .header_nav .header_nav_content .header_nav_right li.nav_line span {
+  width: 0;
+  display: block;
+  position: relative;
+  height: 16px;
+  top: 10px;
+  border-left: 1px solid #272727;
+  vertical-align: middle;
+}
+.header .header_nav .header_nav_content .header_nav_right li.header_hover {
+  padding: 0 10px;
+}
+.header .header_nav .header_nav_content .header_nav_right li.header_hover span {
+  height: 36px;
+}
+.header .header_nav .header_nav_content .header_nav_right li.header_hover span.triangle {
+  height: 0;
+}
+.header .header_nav .header_nav_content .header_nav_right li span {
+  display: block;
+}
+.header .header_nav .header_nav_content .header_nav_right li span.app {
+  width: 100%;
+  display: inline-block;
+}
+.header .header_nav .header_nav_content .header_nav_right li span.app a {
+  display: inline-block;
+  float: left;
+}

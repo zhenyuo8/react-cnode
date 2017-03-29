@@ -1,0 +1,75 @@
+<table cellspacing="0" cellpadding="0" class="carLaryerBox" id="carLaryerBox" style="width:{{ out+= it.widthB; }}px;">
+    <tbody>
+            <tr class="first_tr Js_first_tr" elenodenum="4" >
+                <th class="signBox">
+                    <div class="div1">
+                        <label class="visibal {{ out+=it.sign.hl ? 'active' : ''; }}" m="hl"><span class="sign bg_icon"></span>高亮显示不同项</label>
+                    </div>
+                    <div class="div2">
+                        <label  class="visibal {{ out+=it.sign.hd ? 'active' : ''; }}" m="hd"><span class="sign bg_icon"></span>隐藏相同参数</label>
+                    </div>
+
+                    <div class="div3">
+                        <label  class="visibal {{ out+=it.sign.nv ? 'active' : ''; }}" m="nv"><span class="sign bg_icon"></span>隐藏暂无内容参数</label>
+                    </div>
+                    <p>
+                        <span class="bg_icon bp_icon"></span>标配&nbsp;&nbsp;&nbsp;
+                        <span class="bg_icon xp_icon"></span>选配&nbsp;&nbsp;&nbsp;
+                        <span class="bg_icon null_icon"></span>无
+                    </p>
+                </th>
+                {{ for (var i = 0; i < it.selects.length; i++) { var carP = it.selects[i].param['carParam']; }}
+                     <td class="po-r v_top Js_tableHead_item" hascon="true">
+                        <div id="draggcarbox_{{out+=i;}}" class="dragg_car_box" carId="{{out+= it.selects[i].CarID ;}}">
+                            <!--<div class="img_box">
+                                <img src="{{out+= it.selects[i]['imgUrl'] ;}}" alt="" width="93" height="62">
+                            </div>-->
+                            <p class="car_des">
+                                {{ out+= it.selects[i].year + '款 ' + carP['name']; }}
+                            </p>
+                        </div>
+                        <div class="duibi_btn Js_duibi_btn">
+                            <div>
+                                {{ if(i > 0){ }}
+                                <span class="icon_left Js_icon_left" ismove="true" i="{{out+=i;}}"> &lt;左移</span>
+                                {{ } }}
+                                <span class="title Js_compare_btn {{out += it.inList(it.selects[i].CarID) ? 'dsl' : ''; }}" isAdd="false">对比</span>
+                                {{ if(i < it.selects.length){ }}
+                                <span class="icon_right Js_icon_right" ismove="true" i="{{out+=i;}}">右移&gt;</span>
+                                {{ } }}
+                            </div>
+                        </div>
+                        <span class="close_btn po-a Js_delete_ele" i="{{out+=i;}}"></span>
+                    </td>
+                {{ } }}
+                {{if(it.selects.length<4) {}}
+                    {{ for (var i = 0; i < 4-it.selects.length; i++) { }}
+                    <td></td>
+                    {{ } }}
+                {{ } }}
+            </tr>
+            <tr class="f_price  {{out+= it.isSome('referprice'); }}">
+                <th class="line_hi_31">厂家指导价</th>
+                {{ for (var i = 0; i < it.selects.length; i++) { }}
+                <td>{{ out += it.selects[i].param['carParam']['referprice']; }}万</td>
+                {{ } }}
+                {{if(it.selects.length<4) {}}
+                    {{ for (var i = 0; i < 4-it.selects.length; i++) { }}
+                    <td></td>
+                    {{ } }}
+                {{ } }}
+            </tr>
+
+            <tr class="m_price  {{out+= it.isSome('referprice'); }}">
+                <th class="line_hi_31">经销商报价</th>
+                {{ for (var i = 0; i < it.selects.length; i++) { }}
+                <td  class="f_w">{{ out += it.selects[i].param['carParam']['dealerminprice']; }}万起<a href="http://cheshi.qichedaquan.com/xunjia/2_{{ out += it.selects[i].param['carParam']['id']; }}" class="find_loc_price_btn" target="_blank">询底价</a></td>
+                {{ } }}
+                {{if(it.selects.length<4) {}}
+                    {{ for (var i = 0; i < 4-it.selects.length; i++) { }}
+                    <td></td>
+                    {{ } }}
+                {{ } }}
+            </tr>
+    </tbody>
+</table>

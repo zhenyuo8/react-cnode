@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>汽车大全-文章评论详情页</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/articleCommentPage.css">
+    <link rel="stylesheet"  href="css/mod/mod_pagination.css"/>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/placeholder.js"></script>
+    <script type="text/javascript" src="js/tab.js"></script>
+    <script src="js/articleComment.js"></script>
+    <script src="js/goTop.js"></script>
+    <script type="text/javascript" src="js/paginationPage.js"></script>
+</head>
+<body>
+<div class="main">
+    <!--header模块-->
+    <div class="header">
+        <!--nav model -->
+        {{#include ./mod/mod_headerTitle2.html}}
+    </div>
+
+        <!--nav model end-->
+    <div class="body_nav">
+        <div class="body_nav_container">
+            <div class="location_cur">
+                <span>当前位置：</span>
+                <a href="#" class="web_title">汽车大全</a> >
+                <a href="#" class="a_active">网友评论</a>
+            </div>
+        </div>
+        <div class="body_content">
+            <div class="fl body_left">
+                <div class="text_art">
+                    <div class="title">
+                        <h2>东风悦达起亚K2 车型亮点展示Rap版</h2>
+                        <span>[查看原文]</span>
+                    </div>
+                    <form class="my_form">
+                        <textarea class="text_area" placeholder="文明上网，理智发言"></textarea>
+                        <p>
+                            您好，<span class="self-name">张金月</span>
+                            <a href="#" class="exit">【退出】</a>
+                            <input type="button" value="发布" class="submit fr"/>
+                        </p>
+                    </form>
+                </div>
+                <div class="comment_area">
+                    <div class="comment_title">
+                        <ul class="comment_title_ul">
+                            <li class="fl all_comment">全部评论</li>
+                            <li class="fr latest">
+                                <span>最新</span>
+                                <span class="article_line">|</span>
+                                <span class="active_span">最热</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="comments-con">
+                   <!--  <div class="comments-type clearfix">
+                        <dl class="clearfix">
+                            <dt class="fl photo-box po-r">
+                                <img src="img/pic/photo.png" width="60" height="60"/>
+                                <span class="photo-mask"></span>
+                                <span class="floor">120楼</span>
+                            </dt>
+                            <dd class="fr">
+                                <p class="fl nt">
+                                    <span class="c-name">泛滥的极限</span>
+                                    <span class="c-time">前天 04:08</span>
+                                </p>
+                                <p class="c-con fl">
+                                    H1太小，H2太贵，所以除了个H2S来填补产品的空白，倒不如叫H1 PLUS来得更贴切，反正我是没在这辆车上看到长城的诚意，更多的还是商人的逐利。
+                                </p>
+                                <p class="c-zan fr">
+                                    <span class="fl zan_wrap">
+                                        <span class="icon-fine_norme fl"><img src="img/zan_c_03.png" alt=""></span>
+                                        <span class="c-zan-num fl">（33）</span>
+                                    </span>
+                                    <span class="icon-text_norme reply-btn fl"></span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </div> -->
+                </div>
+                <div class="tcdPageCode"></div>
+            </div>
+            <div class="fr body_right">
+                <div class="hot_article">
+                     <span >热门文章</span>
+                     <ul class=" hot_article_container">
+                         <li class="each_article">
+                             <a href="#" class="bg" target="_blank"><img src="img/list-icon.png" alt="">全新CX-5等 2016年洛杉矶车展洛杉矶车洛洛 售18.57-27.37万元 标致全新4008洛杉矶车 售20.78-26.全新CX-5等 2016年洛杉矶车展洛杉矶车洛洛 售18.57-27.37万元 标致全新4008洛杉矶车 售20.78-26.</a>
+                         </li>
+                         <li class="each_article">
+                             <a href="#" target="_blank"><img src="img/list-icon.png" alt="">全新CX-5等 2016年洛杉矶车展洛杉矶车洛洛 售18.57-27.37万元 标致全新4008洛杉矶车 售20.78-26.全新CX-5等 2016年洛杉矶车展洛杉矶车洛洛 售18.57-27.37万元 标致全新4008洛杉矶车 售20.78-26.</a>
+                         </li>
+                         <li class="each_article">
+                             <a href="#" target="_blank"><img src="img/list-icon.png" alt="">全新CX-5等 2016年洛杉矶车展洛杉矶车洛洛 售18.57-27.37万元 标致全新4008洛杉矶车 售20.78-26.全新CX-5等 2016年洛杉矶车展洛杉矶车洛洛 售18.57-27.37万元 标致全新4008洛杉矶车 售20.78-26.</a>
+                         </li>
+                         <li class="each_article">
+                             <a href="#" target="_blank"><img src="img/list-icon.png" alt="">全新CX-5等 2016年洛杉矶车展洛杉矶车洛洛 售18.57-27.37万元 标致全新4008洛杉矶车 售20.78-26.全新CX-5等 2016年洛杉矶车展洛杉矶车洛洛 售18.57-27.37万元 标致全新4008洛杉矶车 售20.78-26.</a>
+                         </li>
+                         <li class="each_article">
+                             <a href="#" target="_blank"><img src="img/list-icon.png" alt="">全新CX-5等 2016年洛杉矶车展洛杉矶车洛洛 售18.57-27.37万元 标致全新4008洛杉矶车 售20.78-26.全新CX-5等 2016年洛杉矶车展洛杉矶车洛洛 售18.57-27.37万元 标致全新4008洛杉矶车 售20.78-26.</a>
+                         </li>
+                         <li class="each_article">
+                             <a href="#" target="_blank"><img src="img/list-icon.png" alt="">全新CX-5等 2016年洛杉矶车展洛杉矶车洛洛 售18.57-27.37万元 标致全新4008洛杉矶车 售20.78-26.全新CX-5等 2016年洛杉矶车展洛杉矶车洛洛 售18.57-27.37万元 标致全新4008洛杉矶车 售20.78-26.</a>
+                         </li>
+                         <li class="each_article">
+                             <a href="#" target="_blank"><img src="img/list-icon.png" alt="">全新CX-5等 2016年洛杉矶车展洛杉矶车洛洛 售18.57-27.37万元 标致全新4008洛杉矶车 售20.78-26.全新CX-5等 2016年洛杉矶车展洛杉矶车洛洛 售18.57-27.37万元 标致全新4008洛杉矶车 售20.78-26.</a>
+                         </li>
+                         <li class="each_article">
+                             <a href="#" target="_blank"><img src="img/list-icon.png" alt="">全新CX-5等 2016年洛杉矶车展洛杉矶车洛洛 售18.57-27.37万元 标致全新4008洛杉矶车 售20.78-26.全新CX-5等 2016年洛杉矶车展洛杉矶车洛洛 售18.57-27.37万元 标致全新4008洛杉矶车 售20.78-26.</a>
+                         </li>
+                         <li class="each_article">
+                             <a href="#" target="_blank"><img src="img/list-icon.png" alt="">全新CX-5等 2016年洛杉矶车展洛杉矶车洛洛 售18.57-27.37万元 标致全新4008洛杉矶车 售20.78-26.全新CX-5等 2016年洛杉矶车展洛杉矶车洛洛 售18.57-27.37万元 标致全新4008洛杉矶车 售20.78-26.</a>
+                         </li>
+                         <li class="each_article">
+                             <a href="#" target="_blank"><img src="img/list-icon.png" alt="">全新CX-5等 2016年洛杉矶车展洛杉矶车洛洛 售18.57-27.37万元 标致全新4008洛杉矶车 售20.78-26.全新CX-5等 2016年洛杉矶车展洛杉矶车洛洛 售18.57-27.37万元 标致全新4008洛杉矶车 售20.78-26.</a>
+                         </li>
+                     </ul>
+                 </div>
+                <div class="what_car">
+                    {{#include ./mod/mod_carHot.html}}
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--footer model -->
+    {{#include ./mod/mod_footer.html}}
+
+</div>
+
+<!--goTop model -->
+{{#include ./mod/mod_goTop.html}}
+<script>
+    $(".tcdPageCode").createPage({
+        pageCount: 100,
+        current: 1,
+        backFn: function (p) {
+            console.log(p)
+        }
+    });
+    Tab('js-left-tap','js-tab-warp','active','js-show','mouseover');
+</script>
+
+</body>
+</html>

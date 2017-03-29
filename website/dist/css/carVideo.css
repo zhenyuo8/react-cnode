@@ -1,0 +1,116 @@
+.car_video_area {
+  width: 100%;
+  height: 422px;
+}
+.car_video_area .car_video_nav {
+  width: 990px;
+  margin: 0 auto;
+  height: 54px;
+  line-height: 54px;
+}
+.car_video_area .car_video_nav p {
+  display: inline-block;
+}
+.car_video_area .car_video_nav p.title {
+  font-size: 17px;
+  font-weight: bold;
+  padding-right: 22px;
+  color: #333;
+  padding-left: 3px;
+}
+.car_video_area .car_video_nav p a {
+  padding-left: 9px;
+  padding-right: 9px;
+  font-size: 12px;
+}
+.car_video_area .car_video_nav p a,
+.car_video_area .car_video_nav p span {
+  color: #999;
+}
+.car_video_area .car_video_nav .car_video_rightMore {
+  float: right;
+}
+.car_video_area .car_video_nav .car_video_rightMore a,
+.car_video_area .car_video_nav .car_video_rightMore span {
+  color: #333;
+}
+.car_video_area .car_video_content {
+  height: 368px;
+  border-top: 4px solid #333;
+  width: 990px;
+  margin: 0 auto;
+}
+.car_video_area .car_video_content .car_video_margin {
+  width: 986px;
+  margin: 0 0px 12px 2px;
+}
+.car_video_area .car_video_content .car_video_margin .car_video_float {
+  display: inline-block;
+  font-size: 0px;
+  overflow: hidden;
+  width: 194px;
+}
+.car_video_area .car_video_content .car_video_margin .car_video_float .car_video_list {
+  width: 194px;
+  height: 144px;
+  background: url("../img/pic/carVideo.jpg") no-repeat;
+  margin-top: 4px;
+  text-align: center;
+  position: relative;
+}
+.car_video_area .car_video_content .car_video_margin .car_video_float .iconSpan {
+  color: #333;
+  font-size: 12px;
+  padding-left: 4px;
+  position: absolute;
+}
+.car_video_area .car_video_content .car_video_margin .car_video_float .iconSpan.iconSpan3 {
+  left: 5px;
+  bottom: 5px;
+}
+.car_video_area .car_video_content .car_video_margin .car_video_float .iconSpan.iconSpan3:hover {
+  background-position: -248px -76px;
+}
+.car_video_area .car_video_content .car_video_margin .car_video_float .iconSpan.iconSpan1 {
+  left: 0;
+  top: 0;
+}
+.car_video_area .car_video_content .car_video_margin .car_video_float .iconSpan.iconSpan4 {
+  bottom: 0;
+  right: -4px;
+  line-height: 24px;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Microsoft YaHei", "微软雅黑";
+  color: #fff;
+}
+.car_video_area .car_video_content .car_video_margin .car_video_float .iconSpan.icon-five-text {
+  right: 15px;
+}
+.car_video_area .car_video_content .car_video_margin .car_video_float .iconSpan.top-right-bg {
+  width: 40px;
+  height: 14px;
+  background: rgba(61, 61, 61, 0.8);
+  right: -4px;
+  top: 0px;
+}
+.car_video_area .car_video_content .car_video_margin .car_video_float .iconSpan.top-right-showtime {
+  right: 4px;
+  top: 0px;
+  text-align: center;
+  line-height: 14px;
+  color: white;
+}
+.car_video_area .car_video_content .car_video_margin .car_video_float .text_span_div {
+  width: 194px;
+  height: 30px;
+  background: #eee;
+  display: block;
+}
+.car_video_area .car_video_content .car_video_margin .car_video_float .text_span_div .textSpan {
+  display: block;
+  color: #333;
+  font-size: 12px;
+  padding-top: 10px;
+  margin-left: 6px;
+}

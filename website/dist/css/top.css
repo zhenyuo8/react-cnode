@@ -1,0 +1,93 @@
+.config_top {
+  width: 990px;
+  margin: 0 auto;
+}
+.config_top .imgs_c_top .imgs_c_crumbs {
+  height: 50px;
+  line-height: 50px;
+  color: #999;
+}
+.config_top .imgs_c_top .imgs_c_crumbs a {
+  display: inline-block;
+  margin: 0 8px;
+  color: #666;
+}
+.config_top .imgs_c_top .imgs_c_crumbs a:last-child {
+  color: #398be4;
+}
+.config_top .imgs_c_top .imgs_c_list {
+  height: 43px;
+  padding-top: 20px;
+  border: 1px solid #c4c4c4;
+  border-bottom: none;
+  padding-left: 12px;
+}
+.config_top .imgs_c_top .imgs_c_list span {
+  display: inline-block;
+  float: left;
+}
+.config_top .imgs_c_top .imgs_c_list .imgs_car_sign {
+  margin-top: 8px;
+}
+.config_top .imgs_c_top .imgs_c_list .imgs_car_name {
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+  margin-left: 12px;
+}
+.config_top .imgs_c_top .imgs_c_list .imgs_car_year {
+  float: left;
+  margin-top: 5px;
+}
+.config_top .imgs_c_top .imgs_c_list .imgs_car_year li {
+  float: left;
+  width: 68px;
+  text-align: center;
+  border-right: 1px solid #c4c4c4;
+  cursor: pointer;
+}
+.config_top .imgs_c_top .imgs_c_list .imgs_car_year li:first-child {
+  font-weight: bold;
+}
+.config_top .imgs_c_top .imgs_c_list .imgs_car_year li:hover a {
+  color: #398be4;
+  text-decoration: underline;
+}
+.config_top .imgs_c_top .imgs_c_list .imgs_car_year li .imgs_down {
+  float: right;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+.config_top .imgs_c_top .imgs_c_list .imgs_car_year .imgs_no_border {
+  border-right: 0px;
+  width: 88px;
+  padding-left: 7px;
+}
+.config_top .imgs_c_top .imgs_car_type {
+  height: 31px;
+  border-top: 4px solid #333;
+  border-bottom: 1px solid #c4c4c4;
+  background: #eee;
+}
+.config_top .imgs_c_top .imgs_car_type li {
+  float: left;
+  font-size: 16px;
+  color: #333;
+  height: 31px;
+  line-height: 31px;
+}
+.config_top .imgs_c_top .imgs_car_type li a {
+  display: inline-block;
+  padding: 0 18px;
+}
+.config_top .imgs_c_top .imgs_car_type .imgs_current {
+  border-left: 1px solid #c4c4c4;
+  border-right: 1px solid #c4c4c4;
+  background: #fff;
+  height: 32px;
+}
+.config_top .imgs_c_top .imgs_car_type .imgs_current a {
+  height: 32px;
+  border-top: 4px solid #1673d9;
+  margin-top: -4px;
+}

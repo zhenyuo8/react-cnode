@@ -1,0 +1,396 @@
+/*****
+ *@author: linyh
+ *@from: Global style choiceCar
+ *@description: 陈璐
+ *@date: name (2017.02.24)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_pubHeadNav";
+@import "mod/mod_pubHead";
+@import "mod/mod_smallnav";
+@import "mod/mod_footer";
+@import "mod/mod_hasFix_goTop";
+
+// 占位
+.occupy_seat{
+    height: 1.147rem /* 86/75 */;
+}
+// 灰色间隔条
+.bg_bar{
+    width: 100%;
+    height: .4rem /* 30/75 */;
+    background-color: @bg-bar;
+}
+
+// 选车
+.choice_car{
+    // 页面主体
+    .choice_main{
+        .tab_title{
+            font-size: 15px;
+            li{
+                float: left;
+                width: 50%;
+                a{
+                    display: block;
+                    color: @color-tab-color;
+                    line-height: 1.173rem /* 88/75 */;
+                    text-align: center;
+                    margin: 0 35%;
+                }
+                .current{
+                    color: @color-main-blue;
+                    border-bottom: .027rem /* 2/75 */ solid @color-main-blue;
+                }
+            }
+        }
+        .choice_swiper{
+            /* 按条件选车主页面 */
+            .condition_page{
+                //公共标题样式
+                .module_title{
+                    color: @color-666;
+                    font-size: 13px;
+                    line-height: .72rem /* 54/75 */;
+                    background-color: @bg-bar;
+                    padding: 0 .4rem /* 30/75 */;
+                    a{
+                        float: right;
+                        color: @color-666;
+                        line-height: .48rem /* 36/75 */;
+                        padding: 0 .107rem /* 8/75 */;
+                        margin: .12rem /* 9/75 */ 0;
+                        i{
+                            .icon_bg(url("../img/wd_delete.png"), .37rem, .43rem);
+                            display: inline-block;
+                            vertical-align: -0.093rem /* 7/75 */;
+                            margin-right: 0.107rem /* 8/75 */;
+                        }
+                    }
+                }
+
+                //更多条件弹层模块
+                .more_module{
+                    .more_condi{
+                        position: relative;
+                        .more_condi_list{
+                            display: none;
+                            font-size: 12px;
+                            .border-jianbian(5px,5px,20px,5px,@color-666);
+                            background-color: @color-fff;
+                            border-radius: .107rem /* 8/75 */;
+                            position: absolute;
+                            top: 1.067rem /* 80/75 */;
+                            .up_blue{
+                                .icon_bg(url("../img/wjt_bg.png"), .4rem /* 30/75 */, 0.227rem /* 17/75 */);
+                                display: inline-block;
+                                position: absolute;
+                                top: -.213rem /* 16/75 */;
+                            }
+                            .more_condi_item{
+                                padding: .2rem /* 15/75 */ .16rem /* 12/75 */;
+                                a{
+                                    width: 2.533rem /* 190/75 */;
+                                    line-height: .853rem /* 64/75 */;
+                                    text-align: center;
+                                    border: 1px solid @condition-border;
+                                    border-radius: .04rem /* 3/75 */;
+                                    margin: .2rem /* 15/75 */ .16rem /* 12/75 */;
+                                    display: inline-block;
+                                    &:active{
+                                        color: @color-main-blue;
+                                        border-color: @color-main-blue;
+                                    }
+                                }
+                                .checked{
+                                    color: @color-main-blue;
+                                    border-color: @color-main-blue;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                //级别
+                .level_list{
+                    .level_title{
+                        .module_title;
+                    }
+                    ul{
+                        padding-bottom: .8rem /* 60/75 */;
+                        li{
+                            width: 33.333%;
+                            float: left;
+                            .car_logo{
+                                display: block;
+                                width: 100%;
+                                text-align: center;
+                                padding-top: .467rem /* 35/75 */;
+                                span{
+                                    width: 2.133rem /* 160/75 */;
+                                    height: 1.2rem /* 90/75 */;
+                                    background-size: 100% 100%;
+                                    display: block;
+                                    margin: 0 auto;
+                                }
+                                .weixing_car{ background-image: url("../img/icon-wx.png");}
+                                .xiaoxing_car{ background-image: url("../img/icon-smallcar.png");}
+                                .jincou_car{ background-image: url("../img/icon-jc.png");}
+                                .zhongxing_car{ background-image: url("../img/icon-centercar.png");}
+                                .big_car{ background-image: url("../img/icon-bigcar.png");}
+                                .haohua_car{ background-image: url("../img/icon-haoh.png");}
+                                .mpv_car{ background-image: url("../img/icon-mpv.png");}
+                                .suv_car{ background-image: url("../img/icon-suv.png");}
+                                .pao_car{ background-image: url("../img/icon-pc.png");}
+                                .pika_car{ background-image: url("../img/icon-pk.png");}
+                                .mianbao_car{ background-image: url("../img/icon-mbc.png");}
+                                .ke_car{ background-image: url("../img/icon-kc.png");}
+                            }
+                        }
+                        .checked{
+                            .car_logo{
+                                .weixing_car{ background-image: url("../img/icon-wx-h.png");}
+                                .xiaoxing_car{ background-image: url("../img/icon-smallcar-h.png");}
+                                .jincou_car{ background-image: url("../img/icon-jc-h.png");}
+                                .zhongxing_car{ background-image: url("../img/icon-centercar-h.png");}
+                                .big_car{ background-image: url("../img/icon-bigcar-h.png");}
+                                .haohua_car{ background-image: url("../img/icon-haoh-h.png");}
+                                .mpv_car{ background-image: url("../img/icon-mpv-h.png");}
+                                .suv_car{ background-image: url("../img/icon-suv-h.png");}
+                                .pao_car{ background-image: url("../img/icon-pc-h.png");}
+                                .pika_car{ background-image: url("../img/icon-pk-h.png");}
+                                .mianbao_car{ background-image: url("../img/icon-mbc-h.png");}
+                                .ke_car{ background-image: url("../img/icon-kc-h.png");}
+                                em{
+                                    color: @color-main-blue;
+                                }
+                            }
+                        }
+                        .more_module;
+                        .suv{
+                            .suv_list{
+                                top: 2.4rem /* 180/75 */;
+                                left: -2.933rem /* 220/75 */;
+                                .suv_up{
+                                    left: 48.5%;
+                                }
+                                .suv_item{
+                                    width: 9.04rem /* 678/75 */;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                //条件列表
+                .condition_list{
+                    font-size: 13px;
+                    width: 100%;
+                    .condition_title{
+                        .module_title;
+                    }
+                    ul{
+                        padding:.333rem /* 25/75 */ 2%;
+                        li{
+                            width: 28.527%;
+                            height: .827rem /* 62/75 */;
+                            border: 1px solid @condition-border;
+                            border-radius: .04rem /* 3/75 */;
+                            float: left;
+                            margin: 2.084%;
+                            a{
+                                width:100%;
+                                line-height: .827rem /* 62/75 */;
+                                text-align: center;
+                                display: inline-block;
+                            }
+                        }
+                        .checked{
+                            border-color: @item-color;
+                            a{
+                                color: @item-color;
+                            }
+                            .more_condi_item{
+                                a{
+                                    color: @color-333;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                //变速箱
+                .speed_box{
+                    .more_module;
+                    .zd_list{
+                        left: -3.2rem /* 240/75 */;
+                        .zd_up{
+                            left: 50%;
+                        }
+                        .zd_item{
+                            width: 9.04rem /* 678/75 */;
+                        }
+                    }
+                }
+
+                //驱动
+                .drive_box{
+                    .more_module;
+                    .siqu_list{
+                        left: -3.4rem /* 255/75 */;
+                        .siqu_up{
+                            left: 75%;
+                        }
+                        .siqu_item{
+                            width: 6.027rem /* 452/75 */;
+                        }
+                    }
+                }
+
+                //重置
+                .reset_bar{
+                    font-size: 12px;
+                    width: 92%;
+                    position: fixed;
+                    left: 0.4rem /* 30/75 */;
+                    bottom: .267rem /* 20/75 */;
+                    z-index: 999;
+                    .reset_btn{
+                        color: @color-fff;
+                        width: 21.449%;
+                        line-height: 1.067rem /* 80/75 */;
+                        text-align: center;
+                        background-color: @color-666;
+                        border-top-left-radius: .107rem /* 8/75 */;
+                        border-bottom-left-radius: .107rem /* 8/75 */;
+                        float: left;
+                    }
+                    .fit_standard{
+                        color: @color-fff;
+                        width: 78.551%;
+                        line-height: 1.067rem /* 80/75 */;
+                        text-align: center;
+                        background-color: @item-color;
+                        border-top-right-radius: .107rem /* 8/75 */;
+                        border-bottom-right-radius: .107rem /* 8/75 */;
+                        float: right;
+                        img{
+                            width: .12rem /* 9/75 */;
+                            height: .213rem /* 16/75 */;
+                            vertical-align: middle;
+                            margin-left: .067rem /* 5/75 */;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//dpr=2 字体大小
+[data-dpr="2"] .choice_car{
+    // 页面主体
+    .choice_main{
+        .tab_title{
+            font-size: 30px;
+        }
+        .choice_swiper{
+            /* 按条件选车主页面 */
+            .condition_page{
+                .more_condi{
+                    .more_condi_list{
+                        .more_condi_item{
+                            a{
+                                font-size: 24px;
+                            }
+                        }
+                    }
+                }
+                //选择价格区间
+                .price_region_list{
+                    .price_region_title{
+                        font-size: 26px;
+                    }
+                    .price_region_area{
+                        .num{
+                            font-size: 20px;
+                        }
+                    }
+                }
+                //级别
+                .level_list{
+                    font-size: 26px;
+                    .level_title{
+                        font-size: 26px;
+                    }
+                }
+                .condition_list{
+                    font-size: 26px;
+                    .condition_title{
+                        font-size: 26px;
+                    }
+                }
+                //重置
+                .reset_bar{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+//dpr=3 字体大小
+[data-dpr="3"] .choice_car{
+    // 页面主体
+    .choice_main{
+        .tab_title{
+            font-size: 45px;
+        }
+        .choice_swiper{
+            .more_condi{
+                .more_condi_list{
+                    .more_condi_item{
+                        a{
+                            font-size: 36px;
+                        }
+                    }
+                }
+            }
+            /* 按条件选车主页面 */
+            .condition_page{
+                //选择价格区间
+                .price_region_list{
+                    .price_region_title{
+                        font-size: 39px;
+                    }
+                    .price_region_area{
+                        .num{
+                            font-size: 30px;
+                        }
+                    }
+                }
+                //级别
+                .level_list{
+                    font-size: 39px;
+                    .level_title{
+                        font-size: 39px;
+                    }
+                }
+                .condition_list{
+                    font-size: 39px;
+                    .condition_title{
+                        font-size: 39px;
+                    }
+                }
+                //重置
+                .reset_bar{
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+}

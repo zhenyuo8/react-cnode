@@ -1,0 +1,50 @@
+.content_white {
+  width: 758px;
+  height: 490px;
+  margin-top: 20px;
+  background: #fff;
+}
+.content_white .bind_notice {
+  width: 297px;
+  height: 344px;
+  position: relative;
+}
+.content_white .bind_notice img {
+  position: absolute;
+  width: 209px;
+  height: 214px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.content_white .notice_des {
+  height: 344px;
+  width: 334px;
+  margin-left: 22px;
+}
+.content_white .notice_des h2 {
+  padding-top: 112px;
+  line-height: 25px;
+  font-weight: bold;
+  width: 366px;
+  color: #aaa;
+  font-size: 20px;
+  text-wrap: normal;
+  font-family: "Microsoft YaHei", "微软雅黑";
+}
+.content_white .notice_des p {
+  margin-top: 16px;
+  font-size: 16px;
+  font-family: "Microsoft YaHei", "微软雅黑";
+  font-weight: bold;
+  color: #333;
+}
+.content_white .notice_des p a {
+  color: #3a8be4;
+}
+.content_white .notice_des p a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

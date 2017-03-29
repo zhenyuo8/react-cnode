@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>车型首页</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/carModel.css"/>
+
+
+</head>
+<body>
+<!--header模块-->
+<div class="header">
+    <!--nav model -->
+    {{#include ./mod/mod_headerTitle2.html}}
+
+    <!--logo model -->
+    {{#include ./mod/mod_headerBanner.html}}
+</div>
+
+<!--内容区-->
+<div class="content_wrap">
+    <!--carMenu model -->
+    {{#include ./mod/mod_headerCarMenu.html?tab=1}}
+
+    <div class="cf relative">
+        <!--左侧树形-->
+        <div id="leftNav" class="fl">
+        </div>
+        <!--树形右侧-->
+        <div class="treeMainv1 fr">
+            <!--面包屑-->
+            <div class="content_nav">
+                <strong>当前位置：</strong>
+                <span><a href="javascript:;">汽车大全</a> > <a href="javascript:;">车型</a></span>
+            </div>
+
+            <!--按条件选车-->
+            <div class="condition-tro search Js-search">
+                <p class="title mt41">
+                    按条件选车
+                    <span class="fr ft14 clear_choice">清空条件</span>
+                </p>
+
+                {{#include ./mod/mod_screenCar.html}}
+
+                <div id="showhideCon" class="tool-selectcar-v2 y2015 cf Js-dis-n dis-n">
+                    <dl id="toolPeiZhi">
+                        <dt>其&#12288;它：</dt>
+                        <dd class="config-list">
+                            <ul>
+                                <li>
+                                    <label>
+                                        <input id="more_204" type="checkbox" data-channelid="2.94.641" />天窗
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input id="more_196" type="checkbox" data-channelid="2.94.642" />GPS导航
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input id="more_200" type="checkbox" data-channelid="2.94.643" />倒车影像
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input id="more_180" type="checkbox" data-channelid="2.94.644" />儿童锁
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input id="more_101" type="checkbox" data-channelid="2.94.645" />涡轮增压
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input id="more_179" type="checkbox" data-channelid="2.94.646" />无钥匙启动
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input id="more_141" type="checkbox" data-channelid="2.94.647" />四轮碟刹
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input id="more_250" type="checkbox" data-channelid="2.94.648" />真皮座椅
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input id="more_184" type="checkbox" data-channelid="2.94.649" />ESP
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input id="more_224" type="checkbox" data-channelid="2.94.650" />氙气大灯
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input id="more_194" type="checkbox" data-channelid="2.94.651" />定速巡航
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input id="more_274" type="checkbox" data-channelid="2.94.652" />自动空调
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input id="more_177" type="checkbox" data-channelid="2.94.653" />胎压监测
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input id="more_189" type="checkbox" data-channelid="2.94.654" />自动泊车
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input id="more_249" type="checkbox" data-channelid="2.94.655" />空气净化器
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input id="more_163" type="checkbox" data-channelid="2.94.656" />换挡拨片
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input id="more_236" type="checkbox" data-channelid="2.94.657" />电动座椅
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input id="more_181" type="checkbox" data-channelid="2.94.658" />儿童座椅接口
+                                    </label>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+                {{#include ./mod/mod_downUp.html}}
+            </div>
+            <div class="hot_title">
+                <h3>热门品牌</h3>
+            </div>
+            
+            <!--热门品牌列表-->
+            <ul class="hot_brand cf">
+                <li>
+                    <a href="javascript:;">
+                        <img src="img/pic/bm.png" alt=""/>
+                        <strong>宝马</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="img/pic/bm.png" alt=""/>
+                        <strong>宝马</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="img/pic/bm.png" alt=""/>
+                        <strong>宝马</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="img/pic/bm.png" alt=""/>
+                        <strong>宝马</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="img/pic/bm.png" alt=""/>
+                        <strong>宝马</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="img/pic/bm.png" alt=""/>
+                        <strong>宝马</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="img/pic/bm.png" alt=""/>
+                        <strong>宝马</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="img/pic/bm.png" alt=""/>
+                        <strong>宝马</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="img/pic/bm.png" alt=""/>
+                        <strong>宝马</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="img/pic/bm.png" alt=""/>
+                        <strong>宝马</strong>
+                    </a>
+                </li>
+            </ul>
+            
+            <!-- 右侧横幅广告模块 -->
+            <div class="ad_right_mod">
+                <a href="#"><img src="img/pic/ad_right.jpg" alt=""></a>
+            </div>
+            <!--热门车型title-->
+            <div class="hot_title">
+                <h3>热门车型</h3>
+            </div>
+            <!--热门车型列表-->
+            <ul class="hot_type cf">
+                <li>
+                    <a href="javascript:;">
+                        <img src="img/pic/xfz.jpg" alt=""/>
+                    </a>
+                    <div class="hott_wrap">
+                        <a href="javascript:;">
+                            <strong>速腾</strong>
+                        </a>
+                        <a href="javascript:;">
+                            <b>9.63-18.45万</b>
+                        </a>
+                        <span>厂商指导价：10.63-18.45万</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="img/pic/jdb.jpg" alt=""/>
+                    </a>
+                    <div class="hott_wrap">
+                        <a href="javascript:;">
+                            <strong>速腾</strong>
+                        </a>
+                        <a href="javascript:;">
+                            <b>9.63-18.45万</b>
+                        </a>
+                        <span>厂商指导价：10.63-18.45万</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="img/pic/pzb.jpg" alt=""/>
+                    </a>
+                    <div class="hott_wrap">
+                        <a href="javascript:;">
+                            <strong>速腾</strong>
+                        </a>
+                        <a href="javascript:;">
+                            <b>9.63-18.45万</b>
+                        </a>
+                        <span>厂商指导价：10.63-18.45万</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="img/pic/xyb.jpg" alt=""/>
+                    </a>
+                    <div class="hott_wrap">
+                        <a href="javascript:;">
+                            <strong>速腾</strong>
+                        </a>
+                        <a href="javascript:;">
+                            <b>9.63-18.45万</b>
+                        </a>
+                        <span>厂商指导价：10.63-18.45万</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="img/pic/xyb.jpg" alt=""/>
+                    </a>
+                    <div class="hott_wrap">
+                        <a href="javascript:;">
+                            <strong>速腾</strong>
+                        </a>
+                        <a href="javascript:;">
+                            <b>9.63-18.45万</b>
+                        </a>
+                        <span>厂商指导价：10.63-18.45万</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="img/pic/pzb.jpg" alt=""/>
+                    </a>
+                    <div class="hott_wrap">
+                        <a href="javascript:;">
+                            <strong>速腾</strong>
+                        </a>
+                        <a href="javascript:;">
+                            <b>9.63-18.45万</b>
+                        </a>
+                        <span>厂商指导价：10.63-18.45万</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="img/pic/jdb.jpg" alt=""/>
+                    </a>
+                    <div class="hott_wrap">
+                        <a href="javascript:;">
+                            <strong>速腾</strong>
+                        </a>
+                        <a href="javascript:;">
+                            <b>9.63-18.45万</b>
+                        </a>
+                        <span>厂商指导价：10.63-18.45万</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="img/pic/xfz.jpg" alt=""/>
+                    </a>
+                    <div class="hott_wrap">
+                        <a href="javascript:;">
+                            <strong>速腾</strong>
+                        </a>
+                        <a href="javascript:;">
+                            <b>9.63-18.45万</b>
+                        </a>
+                        <span>厂商指导价：10.63-18.45万</span>
+                    </div>
+                </li>
+            </ul>
+
+            <!--车型关注排行榜title-->
+            <div class="hot_title cf hot_titlecal">
+                <h3 class="fl">车型关注排行榜</h3>
+                <ul class="hot_left hot_left1">
+                    <li class="active"><strong class="fl"><a href="javascript:;">按价位</a></strong></li>
+                    <li><strong class="fl"><a href="javascript:;">按级别</a></strong></li>
+                </ul>
+            </div>
+            <!--车型关注排行榜列表-->
+            <div class="top_list cf">
+                <dl>
+                    <dt>5万以下</dt>
+                    <dd class="cf">
+                        <span class="fl active">1</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl active">2</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl active">3</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">4</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">5</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">6</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">7</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>5-8万</dt>
+                    <dd class="cf">
+                        <span class="fl active">1</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl active">2</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl active">3</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">4</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">5</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">6</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">7</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>8-12万</dt>
+                    <dd class="cf">
+                        <span class="fl active">1</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl active">2</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl active">3</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">4</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">5</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">6</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">7</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>12-18万</dt>
+                    <dd class="cf">
+                        <span class="fl active">1</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl active">2</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl active">3</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">4</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">5</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">6</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">7</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>18-25万</dt>
+                    <dd class="cf">
+                        <span class="fl active">1</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl active">2</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl active">3</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">4</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">5</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">6</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">7</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>25-40万</dt>
+                    <dd class="cf">
+                        <span class="fl active">1</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl active">2</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl active">3</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">4</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">5</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">6</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">7</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>25-40万</dt>
+                    <dd class="cf">
+                        <span class="fl active">1</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl active">2</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl active">3</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">4</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">5</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">6</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">7</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>40-80万</dt>
+                    <dd class="cf">
+                        <span class="fl active">1</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl active">2</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl active">3</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">4</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">5</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">6</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">7</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>80万以上</dt>
+                    <dd class="cf">
+                        <span class="fl active">1</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl active">2</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl active">3</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">4</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">5</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">6</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                    <dd class="cf">
+                        <span class="fl">7</span>
+                        <strong class="fl"><a href="javascript:;">凯美瑞</a></strong>
+                        <i class="fr">小型车</i>
+                    </dd>
+                </dl>
+            </div>
+            <!-- 右侧横幅广告模块 -->
+            <div class="ad_right_mod">
+                <a href="#"><img src="img/pic/ad_right.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--footer model -->
+{{#include ./mod/mod_footer.html}}
+
+<!--goTop model -->
+{{#include ./mod/mod_goTop.html}}
+
+
+
+</body>
+<script src="js/jquery-1.12.3.js"></script>
+<script src="js/index.js"></script>
+<script src="js/imghome.js"></script>
+<script src="data/lefttree.js"></script>
+<script src="js/leftnav.js"></script>
+<script src="js/goTop.js"></script>
+<script src="js/carModel.js"></script>
+<script src="js/footer.js"></script>
+<script>
+    $(function(){
+        if (navigator.appName === 'Microsoft Internet Explorer') { //判断是否是IE浏览器
+            if (navigator.userAgent.match(/Trident/i) && navigator.userAgent.match(/MSIE 8.0/i)) { //判断浏览器内核是否为Trident内核IE8.0
+                $(".top_list dl:nth-of-type(3n+1),.top_list dl:nth-of-type(3n+2)").css({
+                    'padding-right':'30px'
+                });
+                $(".top_list dl:nth-of-type(3n+2),.top_list dl:nth-of-type(3n+3)").css({
+                    'padding-left':'32px',
+                    'border-left':'1px solid @color-eee'
+                });
+                $(".hot_type li:nth-of-type(4n)").css({
+                    'width':'165px'
+                });
+                $(".hot_type li:nth-of-type(4n) img").css({
+                    'margin':'20px 0 9px 0'
+                });
+                $(".hot_type li:nth-of-type(4n) .hott_wrap").css({
+                    'margin-right':'0'
+                });
+            }
+        }
+    });
+
+</script>
+</html>

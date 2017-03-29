@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的收藏 空白页</title>
+    <link rel="stylesheet" href="http://127.0.0.1/css/base.css">
+    <link rel="stylesheet" href="http://127.0.0.1/css/changeUserImg.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/accountTab.js"></script>
+</head>
+<body>
+<div class="main">
+    <div class="header">
+        <div class="header_con">
+            <p class="fl">
+                <a href="#"><img src="http://127.0.0.1/img/personCenter_logo.png" alt="logo"></a>
+            </p>
+            <p class="fr">
+                <a href="#" class="user_img"><img src="http://127.0.0.1/img/pic/user_img_03.png" alt="用户头像"> </a>
+                <a href="#" class="user_name">conan <em></em></a>
+            </p>
+        </div>
+    </div>
+    <div class="content clearfix">
+        <div class="left_tab_menu clearfix">
+            <ul>
+                <li>账号管理</li>
+                <li>我的收藏</li>
+                <li>我的询价</li>
+                <li>我的问答</li>
+                <li>我的评论</li>
+                <li>消息中心</li>
+            </ul>
+        </div>
+        <div class="right_content clearfix">
+            <div class="account_m">
+                <ul  class="account_tab" id="js_account_tab">
+                    <li><a href="javascript:void (0)" class="active">车型（3）</a></li>
+                    <li class="cur count0"><a href="javascript:void (0)">车款（0）</a></li>
+                    <li class=""><a href="javascript:void (0)">经销商（4）</a></li>
+                    <li><a href="javascript:void (0)">文章（4）</a></li>
+                    <li><a href="javascript:void (0)">视频（4）</a></li>
+                </ul>
+                <div class="account_con clearfix">
+                    <div class="content_white">
+                        <div class="bind_notice fl">
+                            <img src="http://127.0.0.1/img/white_collection_03.png" alt="">
+                        </div>
+                        <div class="notice_des fl">
+                            <h2>这段时间您还没有收藏车款哟，快去收藏您喜欢的车款吧！</h2>
+                            <p>汽车大全 > <a href="#">产品库</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--底部结构-->
+    <div class="footer clearfix">
+        <div class="footer_content">
+            <ul>
+                <li class="footer_message"><a href="#">关于我们</a></li>
+                <li class="footer_message"><a href="#">联系我们</a></li>
+                <li class="footer_message"><a href="#">招贤纳士</a></li>
+                <li class="website"><a href="#">@2004-2016 www.xingyuanauto.com All Rights Reserved.
+                    行圆汽车所有</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        var setGrey=(function () {
+            var js_account_tab_arr=$('#js_account_tab li');
+            $.each(js_account_tab_arr,function (index,item) {
+                if($(item).hasClass('count0')){
+//                    console.log(item)
+                    $(item).children('a').css({'color':'#aaa','font-weight':"normal"});
+
+                }
+//                if(!$(item).hasClass('count0')){
+//                    console.log(item)
+//                    $(item).on('click',function () {
+//                        console.log(123)
+//                        $(this).children('a').addClass('active')
+////                        $(this).siblings().children('a').removeClass('active')
+//                    });
+//
+//                }
+
+            })
+        })()
+    })
+</script>
+</body>
+</html>

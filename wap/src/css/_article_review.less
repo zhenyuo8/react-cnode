@@ -1,0 +1,283 @@
+/*****
+ *@author: linyh
+ *@from: Global style article——review(文章_评论)
+ *@description: 陈璐
+ *@date: name (2017.02.27)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_pubHeadNav";
+@import "mod/mod_pubHead";
+@import "mod/mod_comment";
+@import "mod/mod_smallnav";
+@import "mod/mod_footer";
+@import "mod/mod_hasFix_goTop";
+
+body{
+    height: 100%;
+}
+
+// 评论页
+.artcle_review{
+
+    // 灰色间隔条
+    .bg_bar{
+        width: 100%;
+        height: .4rem /* 30/75 */;
+        background-color: @bg-bar;
+    }
+
+    // 占位
+    .zhanwei{
+        height: 1.28rem /* 96/75 */;
+    }
+
+    // 页面主体
+    .review_main{
+        width: 100%;
+        position: relative;
+        .tab_title{
+            font-size: 15px;
+            width: 92%;
+            margin: 0 auto;
+            border-bottom: 1px solid @list-border;
+            li{
+                float: left;
+                width: 50%;
+                a{
+                    display: block;
+                    color: @color-tab-color;
+                    line-height: 1.173rem /* 88/75 */;
+                    text-align: center;
+                    margin: 0 28%;
+                }
+                .current{
+                    color: @color-main-blue;
+                    border-bottom: .027rem /* 2/75 */ solid @color-main-blue;
+                }
+            }
+        }
+        .review_content{
+            .review_swiper_box{
+                width: 100%;
+                .load_more_module{
+                    width: 92%;
+                    margin: 0 4% .267rem /* 20/75 */;
+                    .load_more{
+                        .load_more;
+                    }
+                    .loading{
+                        .loading;
+                        display: none;
+                    }
+                    .no_more{
+                        .no_more;
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    // 评论输入框
+    .review_input{
+        width: 92%;
+        padding: .213rem /* 16/75 */ 4%;
+        background-color: @color-fff;
+        .border-jianbian(0,5px,20px,5px,@border-color);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 99;
+        input{
+            font-size: 15px;
+            width: 96.812%;
+            height: .827rem /* 62/75 */;
+            border: 1px solid @input-border;
+            background-color: @letter-alert-bg;
+            border-radius: .053rem /* 4/75 */;
+            padding-left: .267rem /* 20/75 */;
+        }
+    }
+
+}
+
+
+// 遮罩层
+.mask{
+    display: none;
+    background-color: @color-000;
+    background-color: cover;
+    filter: alpha(opacity=60);
+    opacity: .6;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+// 操作提示
+.action_tips{
+    display: none;
+    font-size: 15px;
+    color: @color-fff;
+    width: 3.467rem /* 260/75 */;
+    line-height: 1.333rem /* 100/75 */;
+    text-align: center;
+    background-color: @color-000;
+    border-radius: .107rem /* 8/75 */;
+    filter: alpha(opacity=60);
+    opacity: .6;
+    margin: -.667rem /* 50/75 */ 0 0 -1.733rem /* 130/75 */;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 99;
+}
+
+
+// 评论
+.review_area{
+    width: 92%;
+    padding: 0 4%;
+    background-color: @color-fff;
+    position: fixed;
+    left: 0;
+    bottom: -100%;
+    z-index: 9999;
+    p{
+        font-size: 15px;
+        line-height: 1.067rem /* 80/75 */;
+    }
+    .re_btn{
+        span{
+            color: @price-item-color;
+            float: left;
+        }
+        a{
+            color: @color-ccc;
+            float: right;
+        }
+        .reply_btn{
+            display: none;
+        }
+    }
+    .user_msg{
+        img{
+            display: inline-block;
+            width: .64rem /* 48/75 */;
+            height: .64rem /* 48/75 */;
+            border-radius: 50%;
+            vertical-align: middle;
+            margin-right: .133rem /* 10/75 */;
+        }
+    }
+    .textarea_box{
+        position: relative;
+        textarea{
+            font-size: 14px;
+            display: block;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            width: 100%;
+            height: 3.493rem /* 262/75 */;
+            padding: .267rem /* 20/75 */;
+            background-color: @bg-bar;
+            border: 0;
+            resize: none;
+        }
+        span{
+            color: @color-ccc;
+            display: block;
+            position: absolute;
+            bottom: .133rem /* 10/75 */;
+            right: .133rem /* 10/75 */;
+        }
+    }
+}
+
+/*字体适配*/
+//dpr=2字体大小
+[data-dpr="2"] .artcle_review{
+    // 页面主体
+    .review_main{
+        .tab_title{
+            font-size: 30px;
+        }
+        .review_content{
+            .load_more_module{
+                .load_more{
+                    font-size: 26px;
+                }
+                .no_more{
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+    // 评论输入框
+    .review_input{
+        input{
+            font-size: 30px;
+        }
+    }
+}
+
+//dpr=3字体大小
+[data-dpr="3"] .artcle_review{
+    // 页面主体
+    .review_main{
+        .tab_title{
+            font-size: 45px;
+        }
+        .review_content{
+            .load_more_module{
+                .load_more{
+                    font-size: 39px;
+                }
+                .no_more{
+                    font-size: 39px;
+                }
+            }
+        }
+    }
+    // 评论输入框
+    .review_input{
+        input{
+            font-size: 45px;
+        }
+    }
+}
+
+// 评论
+//dpr=2字体大小
+[data-dpr="2"] .review_area{
+    p{
+        font-size: 30px;
+    }
+    textarea{
+        font-size: 28px;
+    }
+}
+//dpr=3字体大小
+[data-dpr="3"] .review_area{
+    p{
+        font-size: 45px;
+    }
+    textarea{
+        font-size: 42px;
+    }
+}
+//dpr=2字体大小
+[data-dpr="2"] .action_tips{
+    font-size: 30px;
+}
+//dpr=3字体大小
+[data-dpr="3"] .action_tips{
+    font-size: 45px;
+}

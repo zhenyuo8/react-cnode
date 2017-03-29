@@ -1,0 +1,141 @@
+.cancel_collection {
+  display: none;
+  width: 68px;
+  height: 22px;
+  position: absolute;
+  line-height: 22px;
+  line-height: 22px\9;
+  text-align: center;
+  border: 1px solid #333;
+  font-size: 12px;
+  right: -50px;
+  top: 50px;
+  color: #333;
+  font-family: "Microsoft YaHei", "微软雅黑";
+  background: #fff;
+}
+.cancel_confirm_delete {
+  display: none;
+  z-index: 11;
+  position: absolute;
+  width: 356px;
+  height: 175px;
+  top: 214px;
+  left: 200px;
+  border: 1px solid #333;
+  border-bottom-width: 4px;
+  background: #fff;
+}
+.cancel_confirm_delete p {
+  width: 316px;
+  text-align: center;
+  font-size: 20px;
+  color: #333;
+  margin: 50px auto;
+}
+.cancel_confirm_delete p input {
+  width: 148px;
+  height: 30px;
+  float: left;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+  border: 1px solid #dadada;
+}
+.cancel_confirm_delete p input.cancel {
+  background: #eee;
+}
+.cancel_confirm_delete p input.confirm {
+  background: #ffa903;
+  border: #ff9103;
+  margin-left: 20px;
+  color: #fff;
+}
+.content_video {
+  width: 758px;
+  margin-top: 20px;
+  position: relative;
+}
+.content_video .container {
+  width: 738px;
+  height: 160px;
+  padding-left: 20px;
+  background: #ffffff;
+  margin-bottom: 10px;
+  position: relative;
+}
+.content_video .container .img_container {
+  margin-top: 20px;
+  vertical-align: middle;
+  position: relative;
+}
+.content_video .container .img_container .play_time {
+  position: absolute;
+  width: 44px;
+  height: 14px;
+  bottom: 4px;
+  right: 4px;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  line-height: 14px;
+  background: #333;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.content_video .container .img_container a {
+  display: inline-block;
+  height: 120px;
+  width: 180px;
+}
+.content_video .container .img_container a img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.content_video .container .des_container {
+  margin-top: 20px;
+  margin-left: 20px;
+  position: relative;
+}
+.content_video .container .des_container a {
+  display: block;
+  font-family: "Microsoft YaHei", "微软雅黑";
+}
+.content_video .container .des_container a.car_type {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+.content_video .container .des_container a.car_type:hover {
+  cursor: pointer;
+  color: #3A8BE4;
+  text-decoration: underline;
+}
+.content_video .container .des_container a.comment_time {
+  font-size: 14px;
+  color: #666;
+  margin-top: 16px;
+  cursor: default;
+}
+.content_video .container .des_container a.comment_time .con_count {
+  margin-left: 18px;
+  cursor: default;
+}
+.content_video .container .des_container a.collect_time_a {
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 42px;
+  cursor: default;
+}
+.content_video .container em {
+  position: absolute;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  top: 20px;
+  right: 20px;
+  background: url("../img/delete_grey_03.png") no-repeat center;
+}
+.content_video .container em:hover {
+  cursor: pointer;
+  background: url("../img/delete_red_03.png") no-repeat center;
+}

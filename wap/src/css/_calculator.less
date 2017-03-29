@@ -1,0 +1,825 @@
+/*****
+ *@author: jianingning
+ *@from: Global style calculator_jisuanqi   购车计算器
+ *@description:
+ *@date: name (2017.02.25)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_pubHead.less";
+@import "mod/mod_pubHeadNav.less";
+@import "mod/mod_footer.less";
+@import "mod/mod_goTop.less";
+
+html {
+    background: #f3f3f3;
+}
+.wrap {
+    width: 100%;
+    background: #f3f3f3;
+
+    /*content*/
+    .calculate_way {
+        height: 1.173rem;
+        line-height: 1.173rem;
+        background: #fff; 
+
+        li {
+            float: left;
+            width: 50%;
+            text-align: center;
+            a {
+                font-size: 15px;
+                color: #848484;
+            }
+        }
+        .calculate_active {
+            a {
+                color: #2799fe;
+            }
+        }
+    }
+    .calculate_content {
+        background: #fff;
+    }
+    .calculate {
+        padding-bottom: .293rem;
+
+        .cal_totalPrices {
+            padding: .72rem .4rem 0 .4rem;
+            height: 2.439rem;
+            background:-webkit-linear-gradient(left,#23a1fd,#248bfb);
+
+            .zj {
+                display: block;
+                font-size: 15px;
+                color: #fff43f;
+            }
+            .cal_price {
+                margin-top: 0.293rem;
+                font-size: 40px;
+                color: #fff43f;
+            }
+            .cal_reset {
+                float: right;
+                width: 1.627rem;
+                height: .747rem;
+                text-align: center;
+                line-height: .747rem;
+                border: 2px solid #fff;
+                border-radius: 4px;
+                background: transparent;
+                font-size: 13px;
+                color: #fff;
+            }
+        }
+        .cal_fenqi {
+            margin-top: -1px;
+            height: 1.76rem;
+            background:-webkit-linear-gradient(left,#219aee,#2284ec);
+
+            li {
+                float: left;
+                padding-top: .427rem;
+                width: 33.333%;
+                text-align: center;
+
+                span {
+                    display: block;
+                    color: #fff;
+                }
+                .cal_fenqi_text {
+                    font-size: 14px;
+                }
+                .cal_fenqi_price {
+                    font-size: 16px;
+                }
+            }
+        }
+        .cal_type {
+            margin-left: .4rem;
+            padding-right: .4rem;
+            height: 1.333rem;
+            line-height: 1.333rem;
+            border-bottom: 1px solid #f3f3f3;
+
+            .cal_type_tit,
+            .cal_type_con,
+            .cal_type_con2 {
+                font-size: 15px;
+            }
+            .cal_type_tit {
+                display: inline-block;
+                width:23.5%;
+                float: left;
+            }
+            .cal_type_con {
+                display: inline-block;
+                width:69.5%;
+                text-align: right;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            .cal_arrow_right {
+                float: right;
+                margin-top: .53rem;
+                display: inline-block;
+                width: .16rem;
+                height: .293rem;
+                background: url(../img/arrow_right_gray.png);
+                background-size: cover;
+            }
+            .cal_type_editor {
+                float: right;
+                margin-top: .4rem;
+                display: inline-block;
+                width: .453rem;
+                height: .507rem;
+                background: url(../img/editor.png);
+                background-size: cover;
+            }
+            .cal_type_explain {
+                display: inline-block;
+                width:50.5%;
+                text-align: center;
+                font-size: 14px;
+                color: #999;
+            }
+            .cal_type_con2 {
+                display: inline-block;
+                width:17.5%;
+                text-align: right;
+            }
+        }
+        .cal_gray {
+            padding: 0 .4rem;
+            height: .907rem;
+            line-height: .907rem;
+            background: #f4f5f7;
+
+            .cal_gray_text,
+            .cal_gray_zongji {
+                font-size: 14px;
+                color: #999;
+            }
+            .cal_gray_text {
+                display: inline-block;
+                width:18.5%;
+            }
+            .cal_gray_zongji {
+                display: inline-block;
+                width:75.5%;
+                text-align: right;
+            }
+        }
+        .cal_interval2 {
+            height: .4rem;
+            background: #f3f3f3;
+        }
+        .cal_recommend {
+            margin-left: .4rem;
+            padding-right: .8rem;
+            height: 1.36rem;
+            border-bottom: 1px solid #f3f3f3;
+
+            span {
+                float: left;
+                margin-top: .46rem;
+                font-size: 15px;
+                color: #555;
+            }
+            .cal_insurance {
+                float: right;
+                margin-top: .43rem;
+                li {
+                   float: left;
+                   margin-right: .347rem;
+                   width: 1.347rem;
+                   height: .507rem;
+                   text-align: center;
+                   line-height: .507rem;
+                   border: 1px solid  #e2e2e2;
+                   font-size: 12px;
+
+                   &:last-child {
+                        margin-right: 0;
+                   } 
+                }
+                .recommend_active {
+                    border-color: #2799fe;
+                    color: #2799fe; 
+                }
+            }
+        }
+        .recommend_type {
+            margin-left: .4rem;
+            display: none;
+
+            li {
+               height: 1.32rem;
+               line-height: 1.32rem;
+               border-bottom: 1px solid #e2e2e2;
+               position: relative;
+
+               .cal_select,
+               .cal_select_nor,
+               .noclick {
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    margin-top: -0.3rem;
+                    margin-right: 0.267rem;
+                    display: inline-block;
+                    width: .533rem;
+                    height: .533rem;
+               }
+               .cal_select {
+                    background: url(../img/cal_select2.png);
+                    background-size: cover;
+               }
+               .cal_select_nor {
+                    background: url(../img/cal_select.png);
+                    background-size: cover;
+               }
+               .noclick {
+                    background: url(../img/cal_select.png);
+                    background-size: cover;
+               }
+               .recommend_name1,
+               .recommend_name2 {
+                    float: left;
+                    margin-left: .8rem;
+                    font-size: 14px;
+                    color: #858585;
+               }
+               .recommend_name1 {
+                    width: 29%;
+               }
+               .recommend_name2 {
+                    width: 51%;
+               } 
+               .recommend_bizozhu {
+                    float: left;
+                    display: inline-block;
+                    width: 25%;
+                    font-size: 14px;
+                    color: #ff981f;
+                    text-align: center;
+               }
+               .recommend_price1,
+               .recommend_price2 {
+                    display: inline-block;
+                    text-align: right;
+                    font-size: 15px;
+               }
+               .recommend_price1 {
+                    width: 29%;
+               }
+               .recommend_price2 {
+                    width: 32%;
+               }
+               .cal_arrow_right {
+                    float: right;
+                    margin-top: .53rem;
+                    margin-right: .4rem;
+                    display: inline-block;
+                    width: .16rem;
+                    height: .293rem;
+                    background: url(../img/arrow_right_gray.png);
+                    background-size: cover;
+               } 
+
+               &:last-child {
+                    border-bottom: 0;
+               }
+            }
+        }
+        .recommend_show {
+            display: block;
+        }
+        .cal_hint {
+            line-height: .6rem;
+            padding: .2rem .4rem;
+            font-size: 14px;
+            color: #ff981f;
+
+            img {
+                float: left;
+                margin: .15rem .267rem 0 0;
+                display: inline-block;
+                width: .413rem;
+                height: .453rem;
+                vertical-align: middle;
+            }
+            span {
+                display: inline-block;
+                float: left;
+                width: 91%;
+            }
+        }
+        .hint {
+            height: 1rem;
+            line-height: 1rem;
+            text-align: center;
+            font-size: 12px;
+            color: #b6b6b6;
+            background: #fff;
+        }
+        /*首付比例、还款年限、贷款利率*/
+        .cal_loan {
+            height: 4.04rem;
+
+            .cal_loan_type {
+                margin-left: .4rem;
+                padding-right: .4rem;
+                height: 1.333rem;
+                line-height: 1.333rem;
+                border-bottom: 1px solid #f3f3f3;
+
+                .cal_loan_tit {
+                    display: inline-block;
+                    width:23.5%;
+                    font-size: 15px;
+                }
+                .cal_loan_detail {
+                    display: inline-block;
+                    float: right;
+                    margin-top: .373rem;
+                    li {
+                        float: left;
+                        margin-right: .213rem;
+                        width: 1.12rem;
+                        height: .507rem;
+                        text-align: center;
+                        line-height: .507rem;
+                        border: 2px solid #e2e2e2;
+                        font-size: 12px;
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                    .cal_loan_active {
+                        border-color: #2896fe;
+                        border-radius: 2px;
+                    }
+                }
+                .cal_loan_con {
+                    display: inline-block;
+                    width:69.5%;
+                    text-align: right;
+                    font-size: 15px;
+                }
+                .cal_loan_editor {
+                    float: right;
+                    margin-top: .4rem;
+                    display: inline-block;
+                    width: .453rem;
+                    height: .507rem;
+                    background: url(../img/editor.png);
+                    background-size: cover;
+                }
+            }
+        }
+    }
+    .cal_interval {
+        height: .427rem;
+        background: #f3f3f3;
+    }
+}
+/*半透明遮罩*/
+.mask2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    filter:alpha(opacity=60);
+    opacity:.6; 
+    display: none;
+}
+/*右侧抽屉*/
+.slider_btn {
+    position: fixed;
+    top: 50%;
+    left: 1.093rem;
+    margin-top: -.32rem;
+    z-index: 3;
+    width: .693rem;
+    height: .64rem;
+    display: none;
+}
+.cal_drawer {
+    width: 7.667rem;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -100%; 
+    transition: right .5s;
+    z-index: 100;
+    border-left: 1px solid #d2d2d2;
+    background: @color-fff;
+    overflow-y: scroll;
+    &::-webkit-scrollbar{
+        width: 0;
+    }
+
+    .drawerBox {
+        width: 7.667rem;
+        background: @color-fff;
+
+        .drawerList {
+            padding-bottom: 1.333rem;
+            li {
+                margin-left: 0.4rem;
+                height: 1.333rem;
+                border-bottom: 1px solid #f3f3f3;
+                line-height: 1.484rem;
+                font-size: 16px; 
+            }
+            .drawer_select {
+                color: #2799fe;
+            }
+        }
+    } 
+}
+/*字号适配*/
+[data-dpr="2"] .wrap {
+    .calculate_way {
+        li {
+            a {
+                font-size: 30px;
+            }
+        }
+    }
+    .calculate {
+        .cal_totalPrices {
+            .zj {
+                font-size: 30px;
+            }
+            .cal_price {
+                font-size: 80px;
+            }
+            .cal_reset {
+                font-size: 26px;
+            }
+        }
+        .cal_fenqi {
+            li {
+                .cal_fenqi_text {
+                    font-size: 28px;
+                }
+                .cal_fenqi_price {
+                    font-size: 32px;
+                }
+            }
+        }
+        .cal_type {
+            .cal_type_tit,
+            .cal_type_con,
+            .cal_type_con2 {
+                font-size: 30px;
+            }
+            .cal_type_explain {
+                font-size: 28px;
+            }
+        }
+        .cal_gray {
+            .cal_gray_text,
+            .cal_gray_zongji {
+                font-size: 28px;
+            }
+        }
+        .cal_recommend {
+            span {
+                font-size: 30px;
+            }
+            .cal_insurance {
+                li {
+                   font-size: 24px; 
+                }
+            }
+        }
+        .recommend_type {
+            li {
+                .recommend_name1,
+                .recommend_bizozhu,
+                .recommend_name2 {
+                    font-size: 28px;
+                } 
+                .recommend_price1,
+                .recommend_price2 {
+                    font-size: 30px;
+                }
+            }
+        }
+        .cal_hint {
+            font-size: 28px;
+        }
+        .hint {
+            font-size: 24px;
+        }
+        .cal_loan {
+            .cal_loan_type {
+                .cal_loan_tit,
+                .cal_loan_con {
+                    font-size: 30px;
+                }
+                .cal_loan_detail {
+                    li {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+[data-dpr="2"] .cal_drawer {
+    .drawerBox {
+        .drawerList {
+            li {
+                font-size: 32px;
+            }
+        }
+    }
+}
+[data-dpr="3"] .wrap {
+    .calculate_way {
+        li {
+            a {
+                font-size: 45px;
+            }
+        }
+    }
+    .calculate {
+        .cal_totalPrices {
+            .zj {
+                font-size: 45px;
+            }
+            .cal_price {
+                font-size: 120px;
+            }
+            .cal_reset {
+                font-size: 39px;
+            }
+        }
+        .cal_fenqi {
+            li {
+                .cal_fenqi_text {
+                    font-size: 42px;
+                }
+                .cal_fenqi_price {
+                    font-size: 48px;
+                }
+            }
+        }
+        .cal_type {
+            .cal_type_tit,
+            .cal_type_con,
+            .cal_type_con2 {
+                font-size: 45px;
+            }
+            .cal_type_explain {
+                font-size: 42px;
+            }
+        }
+        .cal_gray {
+            .cal_gray_text,
+            .cal_gray_zongji {
+                font-size: 42px;
+            }
+        }
+        .cal_recommend {
+            span {
+                font-size: 45px;
+            }
+            .cal_insurance {
+                li {
+                   font-size: 36px; 
+                }
+            }
+        }
+        .recommend_type {
+            li {
+                .recommend_name1,
+                .recommend_bizozhu,
+                .recommend_name2 {
+                    font-size: 42px;
+                } 
+                .recommend_price1,
+                .recommend_price2 {
+                    font-size: 45px;
+                }
+            }
+        }
+        .cal_hint {
+            font-size: 42px;
+        }
+        .hint {
+            font-size: 36px;
+        }
+        .cal_loan {
+            .cal_loan_type {
+                .cal_loan_tit,
+                .cal_loan_con {
+                    font-size: 45px;
+                }
+                .cal_loan_detail {
+                    li {
+                        font-size: 36px;
+                    }
+                }
+            }
+        }
+    }
+}
+[data-dpr="3"] .cal_drawer {
+    .drawerBox {
+        .drawerList {
+            li {
+                font-size: 48px;
+            }
+        }
+    }
+}
+/*匹配dpr=1 最大320*/
+[data-dpr="1"] .wrap{
+    @media (max-width: 320px){
+        .calculate {
+            .cal_type {
+                .cal_type_tit {
+                    width: 25.5%;
+                }
+                .cal_type_con {
+                    width: 67.5%;
+                }
+                .cal_type_con2 {
+                    width: 16.5%;
+                }
+            }
+            .cal_gray {
+                .cal_gray_text {
+                    width: 19.5%;
+                }
+                .cal_gray_zongji {
+                    width: 73.5%;
+                }
+            }
+            .recommend_type {
+                li {
+                   .recommend_name1 {
+                        width: 34%;
+                   }
+                   .recommend_name2 {
+                        width: 57%;
+                   }
+                   .recommend_bizozhu {
+                        width: 25%;
+                   } 
+                   .recommend_price1 {
+                        width: 24%;
+                   }
+                   .recommend_price2 {
+                        width: 27%;
+                   } 
+                }
+            }
+            .cal_loan {
+                .cal_loan_type {
+                    .cal_loan_tit {
+                        width: 22.5%;
+                    }
+                }
+            }
+        }
+    }
+}
+/*匹配dpr=2 iphone4*/
+.wrap {
+    @media (device-height:480px) and (-webkit-min-device-pixel-ratio:2) {
+        .calculate {
+            .cal_type {
+                .cal_type_tit {
+                    width: 25.5%;
+                }
+                .cal_type_con {
+                    width: 67.5%;
+                }
+                .cal_type_con2 {
+                    width: 16.5%;
+                }
+            }
+            .cal_gray {
+                .cal_gray_text {
+                    width: 19.5%;
+                }
+                .cal_gray_zongji {
+                    width: 73.5%;
+                }
+            }
+            .recommend_type {
+                li {
+                    .cal_select {
+                        margin-top: -.27rem;
+                    }
+                   .recommend_name1 {
+                        width: 34%;
+                   }
+                   .recommend_name2 {
+                        width: 57%;
+                   }
+                   .recommend_bizozhu {
+                        width: 25%;
+                   } 
+                   .recommend_price1 {
+                        width: 24%;
+                   }
+                   .recommend_price2 {
+                        width: 27%;
+                   } 
+                }
+            }
+        }
+    }
+}
+/*匹配dpr=2 iphone5*/
+.wrap {
+    @media (device-height:568px) and (-webkit-min-device-pixel-ratio:2) {
+        .calculate {
+            .cal_type {
+                .cal_type_tit {
+                    width: 25.5%;
+                }
+                .cal_type_con {
+                    width: 67.5%;
+                }
+                .cal_type_con2 {
+                    width: 16.5%;
+                }
+            }
+            .cal_gray {
+                .cal_gray_text {
+                    width: 19.5%;
+                }
+                .cal_gray_zongji {
+                    width: 73.5%;
+                }
+            }
+            .recommend_type {
+                li {
+                    .cal_select {
+                        margin-top: -.27rem;
+                    }
+                   .recommend_name1 {
+                        width: 34%;
+                   }
+                   .recommend_name2 {
+                        width: 57%;
+                   }
+                   .recommend_bizozhu {
+                        width: 25%;
+                   } 
+                   .recommend_price1 {
+                        width: 24%;
+                   }
+                   .recommend_price2 {
+                        width: 27%;
+                   } 
+                }
+            }
+        }
+    }
+}
+/*匹配dpr=2 iphone6*/
+.wrap {
+    @media (device-height:667px) and (-webkit-min-device-pixel-ratio:2) {
+        .calculate {
+            .recommend_type {
+                li {
+                    .cal_select {
+                        margin-top: -.27rem;
+                    }
+                }
+            }
+        }
+    }
+}
+/*匹配dpr=3 iphone6 plus*/
+.wrap {
+    @media (device-height:736px) and (-webkit-min-device-pixel-ratio:3) {
+        .calculate {
+            .recommend_type {
+                li {
+                    .cal_select {
+                        margin-top: -.27rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>汽车大全</title>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="js/flexible.js"></script>
+    <script src="js/flexible_css.js"></script>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/demo.css"/>
+</head>
+<body>
+<!--首页顶部的蓝色导航-->
+{{#include ./mod/mod_nav.html}}
+<!--车型详解页面中的导航-->
+{{#include ./mod/mod_carNav.html}}
+<!--页面中的浅蓝色背景按钮（如：加载更多 箭头向下）-->
+<a href="#" class="load_more">加载更多<img src="img/down.png"></a>
+<!--页面中的浅蓝色背景按钮（如：查看更多视频 箭头向右）-->
+<a href="#" class="more">详细参数配置<img src="img/arrow_right_blue.png"></a>
+<!--页面中的浅蓝色背景按钮（如：查看更多视频 加载中）-->
+<a href="#" class="loading"><img src="img/load_icon.png"></a>
+<!--页面中的浅灰色背景条（如：查看更多视频 没有更多了）-->
+<a href="#" class="no_more">没有更多了...</a>
+<!--140*60的蓝色询底价按钮-->
+<button class="floorPrice_btn">询底价</button>
+<!--前面带蓝色块的标题-->
+<h3 class="demo_title"><span>汽车视频</span></h3>
+<!--返回顶部-->
+<div class="goTop"><img src="img/goTop.png"></div>
+<!--车型详解页面中的悬浮菜单-->
+<div class="float_menu">
+    <img src="img/menu_show.png" class="menu_show"><!--默认隐藏了-->
+    <img src="img/menu_close.png" class="menu_close">
+</div>
+<!--分享-->
+<div class="share">
+    <li class="share_type">
+        <a href="#">
+            <img src="img/wx.png">
+            <span>微信</span>
+        </a>
+    </li>
+    <li class="share_type">
+        <a href="#">
+            <img src="img/pyq.png">
+            <span>朋友圈</span>
+        </a>
+    </li>
+    <li class="share_type">
+        <a href="#">
+            <img src="img/qq.png">
+            <span>QQ</span>
+        </a>
+    </li>
+    <li class="share_type">
+        <a href="#">
+            <img src="img/wb.png">
+            <span>微博</span>
+        </a>
+    </li>
+    <li class="share_type">
+        <a href="#">
+            <img src="img/kj.png">
+            <span>QQ空间</span>
+        </a>
+    </li>
+</div>
+<!--阅读列表（左图右文字）-->
+<dl class="article_list clearfix">
+    <a href="#">
+        <dt><img src="img/pic/img1.jpg"></dt>
+        <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+        <dd class="minor">
+            <span class="date">10-16</span>
+            <span class="pinlun">355评论</span>
+        </dd>
+    </a>
+</dl>
+<!--评论-->
+<dl class="comment_list clearfix">
+    <dt><img src="img/pic/photo.png"></dt>
+    <dd>
+        <span class="comment_name">雨晴</span>
+        <span class="comment_tier">7楼</span>
+    </dd>
+    <dd class="commnet_text">全新Minicooper的前脸变化很大，中网的格栅面积有所加宽格栅面积有面积</dd>
+    <dd class="reply">
+        <span>董力发表评论</span>
+        <p>
+            全新Minicooper的前脸变化很大，中网的格栅面积有所加宽格栅面积有面积全新Minicooper的前脸变化很大，中网的格栅面积有所加宽格栅面积有面积全新Minicooper的前脸变化很大，中网的格栅面积有所加宽格栅面积有面积全新Minicooper的前脸变化很大，中网的格栅面积有所加宽格栅面积有面积
+        </p>
+    </dd>
+    <dd>
+        <span class="comment_time">刚刚</span>
+        <span class="comment_interaction">
+            <span class="comment_zan_icon"></span>
+            <span class="comment_zan">6</span>
+            <span class="comment_reply"></span>
+        </span>
+    </dd>
+</dl>
+<!-- 车型信息 -->
+<div class="type_msg_demo">
+    <h5 class="sub_brand_name">一汽奥迪</h5>
+    <dl>
+        <a href="#">
+            <dt>
+                <img src="img/pic/hotbrand_car.png">
+            </dt>
+            <dd>
+                <p class="type_name">捷达</p>
+                <p class="type_price">9.93-17.48万</p>
+                <p class="type_zd_price">指导价：18.98-40.15万</p>
+            </dd>
+        </a>
+    </dl>
+    <dl>
+        <a href="#">
+            <dt>
+                <img src="img/pic/hotbrand_car.png">
+            </dt>
+            <dd>
+                <p class="type_name">捷达</p>
+                <p class="type_price">9.93-17.48万</p>
+                <p class="type_zd_price">指导价：18.98-40.15万</p>
+            </dd>
+        </a>
+    </dl>
+    <dl>
+        <a href="#">
+            <dt>
+                <img src="img/pic/hotbrand_car.png">
+            </dt>
+            <dd>
+                <p class="type_name">捷达</p>
+                <p class="type_price">9.93-17.48万</p>
+                <p class="type_zd_price">指导价：18.98-40.15万</p>
+            </dd>
+        </a>
+    </dl>
+    <dl>
+        <a href="#">
+            <dt>
+                <img src="img/pic/hotbrand_car.png">
+            </dt>
+            <dd>
+                <p class="type_name">捷达</p>
+                <p class="type_price">9.93-17.48万</p>
+                <p class="type_zd_price">指导价：18.98-40.15万</p>
+            </dd>
+        </a>
+    </dl>
+    <dl>
+        <a href="#">
+            <dt>
+                <img src="img/pic/hotbrand_car.png">
+            </dt>
+            <dd>
+                <p class="type_name">捷达</p>
+                <p class="type_price">9.93-17.48万</p>
+                <p class="type_zd_price">指导价：18.98-40.15万</p>
+            </dd>
+        </a>
+    </dl>
+</div>
+<!-- 问答问题 -->
+<dl class="recom_content_module">
+    <dt>
+        <a href="#" class="user_photo"><img src="img/pic/wd_user.jpg"></a>
+        <img src="img/biaobing.png" class="level_title">
+    </dt>
+    <dd>
+        <a href="#" class="user_name">嘉裕晟</a>
+        <a href="#" class="recom_content_item">
+            <p class="recom_text">
+                <i>精</i><span>#用车#</span>
+                今天我们要试驾的悦纳RV是一款更受年轻消费者青睐的两厢车，内外设计驾驶感受方面和悦纳三厢版非常相似，更受年轻消费者青睐的两厢车
+            </p>
+            <p class="recom_img">
+                <img src="img/pic/wd_recom_pic.jpg"><img src="img/pic/wd_recom_pic.jpg"><img src="img/pic/wd_recom_pic.jpg">
+            </p>
+        </a>
+        <p class="recom_type">
+            <a href="#">哈佛H5</a><a href="#">传奇CS4</a><a href="#">北汽幻速S5</a><a href="#">起亚</a><a href="#">哈佛H6</a>
+        </p>
+        <p class="recom_other clearfix">
+            <span class="time_area"><i>5分钟前</i>北京</span>
+            <span class="reply_num">234条回答</span>
+        </p>
+    </dd>
+</dl>
+</body>
+</html>

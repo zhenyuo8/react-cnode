@@ -1,0 +1,229 @@
+//城市选择样式
+.city_chose{
+  width: 478px;
+  position: absolute;
+  top: 35px;
+  border: 1px solid #333;
+  border-bottom: 5px solid #333;
+  z-index: 9999999999;
+  background: #fff;
+  .city_search{
+    width: 478px;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+    .city_search_input{
+      height: 52px;
+      width: 478px;
+      text-align: left;
+      span{
+        display: block;
+        float: left;
+        position: relative;
+        img{
+          display: block;
+        }
+        .input_letters_search{
+          position: absolute;
+          width: 145px;
+          z-index: 10311111;
+          border: 1px solid #eee;
+          border-bottom: none;
+          margin-top: 1px;
+          top: 42px;
+          left: 10px;
+          background: #fff;
+          text-align: left;
+          ul{
+            li{
+              z-index: 120;
+              width: 144px;
+              height: 24px;
+              line-height: 24px;
+              margin-right: 4px;
+              border-bottom: 1px solid #eee;
+              &.click_to_destiny{
+                color: #999;
+                span{
+                  margin-left: 4px;
+                }
+              }
+              &.city_search_result{
+                cursor: pointer;
+                &:hover{
+                  background: #398be4;
+                }
+                span{
+                  display: inline-block;
+                  margin-left: 15px;
+                  &.city_text{
+                    float: left;
+                  }
+                  &.city_letters{
+                    float: right;
+                    margin-right: 4px;
+                  }
+                }
+              }
+              .city_text{
+                color: #333;
+              }
+              span{
+                img{
+                  display: inline-block;
+                }
+              }
+            }
+          }
+        }
+        &.delete_city{
+          float: right;
+          position: absolute;
+          right: 10px;
+          top: 18px;
+          cursor: pointer;
+        }
+        &.search_btn{
+          position: absolute;
+          left: 15px;
+          top: 18px;
+          z-index: 109;
+        }
+        &.city_hot_search{
+          text-align: center;
+          display: block;
+          a{
+            font-size: 12px;
+            display: inline-block;
+            line-height: 30px;
+            padding: 0 8px;
+            margin:11px 0;
+            color: #333;
+            &:hover{
+              background: #398be4;
+              color: #fff;
+            }
+          }
+        }
+        input{
+          height: 32px;
+          padding-left: 26px;
+          border: none;
+          width: 121px;
+          background: #eee;
+          margin: 10px 10px;
+        }
+      }
+    }
+  }
+  .hot_city_num{
+    width: 462px;
+    height: 72px;
+    background: #fff;
+    padding: 10px 8px;
+    border-bottom: 1px solid #eee;
+    a{
+      display: block;
+      float: left;
+      height: 26px;
+      margin: 4px 5px;
+      width: 26px;
+      line-height: 26px;
+      font-weight: bold;
+      border: 1px solid #dadada;
+      text-align: center;
+      color: #333;
+      background: #eee;
+      &:hover{
+        background:#398be4;
+        color: #fff;
+      }
+    }
+    .a_active{
+      background:#1064c1;
+      color: #fff;
+    }
+  }
+  .city_scroll{
+    height: 372px;
+    width: 478px;
+    overflow: hidden;
+    position: relative;
+    .scrollbar{
+      width:12px;
+      height:372px;
+      background:#eee;
+      position: absolute;
+      right:0;top:0;
+      .scrollbtn{
+        width:100%;height:50px;
+        background:#666;
+        border-radius:20px;
+        opacity: 0.2;
+        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+        position: absolute;
+      }
+    }
+
+    .city_chose_region{
+      position: absolute;
+      width: 468px;
+      top:0;
+      //margin: 0 auto;
+      dl{
+        padding: 4px 0 4px 0;
+        display: block;
+        overflow: hidden;
+        border-bottom: 1px solid #eee;
+        dt{
+          float: left;
+          height: 30px;
+          width: 70px;
+          text-align: right;
+          line-height: 30px;
+          span{
+            display: block;
+            height: 30px;
+            line-height: 30px;
+            &.province_tx{
+              float: right;
+              display: block;
+              padding-top: 0;
+              color: #333;
+            }
+            &.province_num{
+              display: inline-block;
+              font-size: 14px;
+              color: #999;
+              float: left;
+              font-family: "PingFangSC-Regular","Hiragino Sans GB","Helvetica Neue",Helvetica,Arial,"Microsoft Yahei",sans-serif;
+              padding-left: 10px;
+            }
+          }
+        }
+        dd{
+          float: right;
+          width: 380px;
+          zoom: 1;
+          line-height: 30px;
+          a{
+            font-size: 12px;
+            float: left;
+            height: 30px;
+            color: #333;
+            zoom: 1;
+            line-height: 30px;
+            padding: 0 8px;
+            margin: 0 2px;
+            white-space: nowrap;
+            &:hover{
+              background: #398BE4;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

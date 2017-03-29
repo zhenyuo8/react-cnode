@@ -1,0 +1,784 @@
+/**
+*
+*/
+.container {
+  width: 100%;
+  height: 100%;
+}
+.container input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+.container input::-ms-clear {
+  display: none;
+}
+.container .content {
+  width: 100%;
+  height: 100%;
+  background: #3a8be4;
+  position: relative;
+}
+.container .content .logo_990 {
+  width: 990px;
+  height: 360px;
+  margin: 0 auto;
+}
+.container .content .logo_990 .logo_con {
+  width: 700px;
+  height: 54px;
+  padding-left: 130px;
+  padding-right: 130px;
+  margin-top: 123px;
+  float: left;
+}
+.container .content .logo_990 .logo_con span {
+  color: #fff;
+  font-size: 32px;
+  height: 54px;
+  width: 2px;
+  line-height: 54px;
+  line-height: 54px\9;
+  float: left;
+  margin: auto 30px;
+}
+.container .content .logo_990 .logo_con .logo_a {
+  display: inline-block;
+  height: 54px;
+  width: 209px;
+  float: left;
+  overflow: hidden;
+  background: url("../img/logo_a.png") no-repeat center;
+}
+.container .content .logo_990 .logo_con .logo_text {
+  height: 54px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 54px;
+  line-height: 54px\9;
+  float: left;
+  display: inline-block;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+  color: #fff;
+}
+.container .content_body {
+  width: 990px;
+  margin: auto;
+  height: 702px;
+  position: relative;
+}
+.container .content_body .content_container {
+  width: 990px;
+  height: 480px;
+  top: -60px;
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 0 0 12px 1px #999;
+  -moz-box-shadow: 0 0 12px 1px #999;
+  -webkit-box-shadow: 0 0 12px 1px #999;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=125, Strength=9);
+}
+.container .content_body .content_container .content_left {
+  float: left;
+  width: 400px;
+  margin-left: 86px;
+  margin-top: 56px;
+  padding-top: 8px;
+  overflow: hidden;
+}
+.container .content_body .content_container .content_left .login_menu {
+  position: relative;
+}
+.container .content_body .content_container .content_left .login_menu p {
+  font-size: 16px;
+  color: #dadada;
+  width: 400px;
+}
+.container .content_body .content_container .content_left .login_menu p a {
+  display: inline-block;
+  font-size: 16px;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+  color: #333;
+}
+.container .content_body .content_container .content_left .login_menu p a.login_msg {
+  margin-right: 12px;
+}
+.container .content_body .content_container .content_left .login_menu p a.login_account {
+  margin-left: 12px;
+}
+.container .content_body .content_container .content_left .login_menu p a.active {
+  font-weight: bold;
+}
+.container .content_body .content_container .content_left .login_menu p a:hover {
+  font-weight: bold;
+}
+.container .content_body .content_container .content_left .login_msg {
+  margin-top: 12px;
+}
+.container .content_body .content_container .content_left .login_msg ul li {
+  height: 53px;
+}
+.container .content_body .content_container .content_left .login_msg ul li.phone_num {
+  position: relative;
+}
+.container .content_body .content_container .content_left .login_msg ul li.phone_num i {
+  width: 16px;
+  height: 28px;
+  left: 20px;
+  top: 12px;
+  z-index: 111;
+  position: absolute;
+  display: inline-block;
+  background: url("../img/phone.png");
+}
+.container .content_body .content_container .content_left .login_msg ul li.phone_num em {
+  display: none;
+  width: 16px;
+  height: 16px;
+  right: 10px;
+  top: 18px;
+  position: absolute;
+  background: url("../img/clear_input.png") no-repeat center;
+  z-index: 3;
+}
+.container .content_body .content_container .content_left .login_msg ul li.phone_num em:hover {
+  cursor: pointer;
+  background: url("../img/clear_input_hover.png") no-repeat center;
+}
+.container .content_body .content_container .content_left .login_msg ul li.phone_num span {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  z-index: 2;
+}
+.container .content_body .content_container .content_left .login_msg ul li.phone_num input {
+  line-height: 53px;
+  line-height: 53px\9;
+  width: 340px;
+  padding-left: 58px;
+  font-size: 16px;
+  color: #333;
+  background: #fff;
+  outline: none;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+}
+.container .content_body .content_container .content_left .login_msg ul li.sys_notice {
+  margin-top: 8px;
+  height: 24px;
+  margin-bottom: 16px;
+}
+.container .content_body .content_container .content_left .login_msg ul li.sys_notice p {
+  line-height: 24px;
+  line-height: 24px\9;
+  color: #c1c1c1;
+  font-size: 12px;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+}
+.container .content_body .content_container .content_left .login_msg ul li.checkout_msg {
+  position: relative;
+}
+.container .content_body .content_container .content_left .login_msg ul li.checkout_msg em {
+  position: absolute;
+  display: none;
+  width: 16px;
+  height: 16px;
+  left: 216px;
+  top: 18px;
+  z-index: 3;
+  background: url("../img/clear_input.png") no-repeat center;
+}
+.container .content_body .content_container .content_left .login_msg ul li.checkout_msg em:hover {
+  cursor: pointer;
+  background: url("../img/clear_input_hover.png") no-repeat center;
+}
+.container .content_body .content_container .content_left .login_msg ul li.checkout_msg span {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  position: absolute;
+  left: 192px;
+  top: 7px;
+  z-index: 2;
+}
+.container .content_body .content_container .content_left .login_msg ul li.login_register {
+  height: 14px;
+  margin-top: 12px;
+  vertical-align: middle;
+}
+.container .content_body .content_container .content_left .login_msg ul li.login_register .login_auto {
+  float: left;
+  height: 16px;
+  line-height: 16px;
+  line-height: 16px\9;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+}
+.container .content_body .content_container .content_left .login_msg ul li.login_register .login_auto span {
+  position: relative;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  top: 2px;
+  margin-right: 4px;
+  border: 1px solid #dadada;
+  border-radius: 3px;
+}
+.container .content_body .content_container .content_left .login_msg ul li.login_register .login_auto span i {
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  top: -1px;
+  left: -1px;
+  display: inline-block;
+  margin-right: 4px;
+  vertical-align: -2px;
+  background: url("../img/login_next_select.png") no-repeat center;
+}
+.container .content_body .content_container .content_left .login_msg ul li.login_register .login_auto span i:hover {
+  cursor: pointer;
+}
+.container .content_body .content_container .content_left .login_msg ul li.login_register .register_imd {
+  float: right;
+  display: inline-block;
+  line-height: 14px;
+  line-height: 14px\9;
+  color: #333333;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+}
+.container .content_body .content_container .content_left .login_msg ul li.login_register .register_imd:hover {
+  color: #3a8be4;
+  text-decoration: underline;
+}
+.container .content_body .content_container .content_left .login_msg ul li input {
+  height: 51px;
+  line-height: 51px\9;
+  line-height: 51px;
+  font-size: 16px;
+  border: 1px solid #dadada;
+  position: relative;
+  outline: none;
+}
+.container .content_body .content_container .content_left .login_msg ul li input.msg_input {
+  width: 217px;
+  float: left;
+  font-size: 16px;
+  color: #333;
+  padding-left: 22px;
+}
+.container .content_body .content_container .content_left .login_msg ul li input.msg_get {
+  width: 140px;
+  float: right;
+  border: none;
+  height: 53px;
+  line-height: 53px;
+  line-height: 53px\9;
+  background: #3a8be4;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+}
+.container .content_body .content_container .content_left .login_msg ul li input.msg_get:hover {
+  cursor: pointer;
+}
+.container .content_body .content_container .content_left .login_msg ul li input.wait {
+  background-color: #dadada !important;
+}
+.container .content_body .content_container .content_left .login_msg ul li input.wait:hover {
+  cursor: default !important;
+}
+.container .content_body .content_container .content_left .login_msg ul li.send_voice P {
+  font-size: 12px;
+  color: #aaaaaa;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+}
+.container .content_body .content_container .content_left .login_msg ul li.send_voice P a {
+  color: #3a8be4;
+}
+.container .content_body .content_container .content_left .login_msg ul li.send_voice P a:hover {
+  text-decoration: underline;
+}
+.container .content_body .content_container .content_left .login_msg ul li.login {
+  width: 400px;
+  margin-bottom: 20px;
+}
+.container .content_body .content_container .content_left .login_msg ul li.login .canKit {
+  background: #ffa903;
+}
+.container .content_body .content_container .content_left .login_msg ul li.login .canKit:hover {
+  cursor: pointer;
+}
+.container .content_body .content_container .content_left .login_msg ul li.login input {
+  width: 400px;
+  border: none;
+  background: #dadada;
+  outline: none;
+  line-height: 53px;
+  line-height: 53px\9;
+  font-size: 16px;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+  text-align: center;
+  color: #ffffff;
+}
+.container .content_body .content_container .content_left .login_msg ul li.login input:hover {
+  cursor: default;
+}
+.container .content_body .content_container .content_left .login_msg ul li.error_code {
+  display: none;
+  font-size: 12px;
+  color: #e43a3a;
+  margin-top: 12px;
+  height: 14px;
+  width: 400px;
+}
+.container .content_body .content_container .content_left .login_msg ul li.error_code i {
+  width: 11px;
+  height: 11px;
+  margin-right: 4px;
+  vertical-align: -1px;
+  display: inline-block;
+  background: url("../img/error_msg.png") no-repeat center;
+}
+.container .content_body .content_container .content_left li.login {
+  margin-top: 20px;
+}
+.container .content_body .content_container .content_left .login_account {
+  margin-top: 12px;
+}
+.container .content_body .content_container .content_left .login_account ul li {
+  height: 53px;
+}
+.container .content_body .content_container .content_left .login_account ul li.phone_num {
+  position: relative;
+}
+.container .content_body .content_container .content_left .login_account ul li.phone_num i {
+  width: 16px;
+  height: 28px;
+  left: 20px;
+  top: 12px;
+  position: absolute;
+  display: inline-block;
+  background: url("../img/phone.png");
+}
+.container .content_body .content_container .content_left .login_account ul li.phone_num em {
+  display: none;
+  width: 16px;
+  height: 16px;
+  right: 10px;
+  top: 18px;
+  position: absolute;
+  z-index: 3;
+  background: url("../img/clear_input.png") no-repeat center;
+}
+.container .content_body .content_container .content_left .login_account ul li.phone_num em:hover {
+  cursor: pointer;
+  background: url("../img/clear_input_hover.png") no-repeat center;
+}
+.container .content_body .content_container .content_left .login_account ul li.phone_num span {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  z-index: 2;
+}
+.container .content_body .content_container .content_left .login_account ul li.phone_num input {
+  width: 340px;
+  padding-left: 58px;
+  color: #333;
+  outline: none;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+}
+.container .content_body .content_container .content_left .login_account ul li input {
+  height: 51px;
+  line-height: 51px;
+  line-height: 51px\9;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid #dadada;
+}
+.container .content_body .content_container .content_left .login_account ul li input.msg_input {
+  width: 217px;
+  float: left;
+  font-size: 16px;
+  color: #333;
+  padding-left: 21px;
+}
+.container .content_body .content_container .content_left .login_account ul li input.msg_get {
+  width: 140px;
+  float: right;
+  border: none;
+  height: 53px;
+  background: #3a8be4;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+}
+.container .content_body .content_container .content_left .login_account ul li input.msg_get:hover {
+  cursor: pointer;
+}
+.container .content_body .content_container .content_left .login_account ul li input .wait {
+  background: #dadada !important;
+}
+.container .content_body .content_container .content_left .login_account ul li input .wait:hover {
+  cursor: default !important;
+}
+.container .content_body .content_container .content_left .login_account ul li.input_password {
+  width: 400px;
+  position: relative;
+  margin-top: 20px;
+}
+.container .content_body .content_container .content_left .login_account ul li.input_password input {
+  width: 343px;
+  padding-left: 55px;
+  outline: none;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+}
+.container .content_body .content_container .content_left .login_account ul li.input_password i {
+  position: absolute;
+  width: 18px;
+  height: 22px;
+  left: 19px;
+  top: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url("../img/lock.png") no-repeat center;
+}
+.container .content_body .content_container .content_left .login_account ul li.input_password em {
+  width: 23px;
+  display: inline-block;
+  position: absolute;
+  right: 12px;
+  z-index: 3;
+}
+.container .content_body .content_container .content_left .login_account ul li.input_password em.hide {
+  top: 20px;
+  height: 16px;
+  background: url("../img/hide_password.png") no-repeat center;
+}
+.container .content_body .content_container .content_left .login_account ul li.input_password em.hide:hover {
+  cursor: pointer;
+  background: url("../img/hide_password_lit_hover.png") no-repeat center;
+}
+.container .content_body .content_container .content_left .login_account ul li.input_password em.show {
+  height: 14px;
+  top: 22px;
+  background: url("../img/show_password.png") no-repeat center;
+}
+.container .content_body .content_container .content_left .login_account ul li.input_password em.show:hover {
+  cursor: pointer;
+  background: url("../img/show_password_blue.png") no-repeat center;
+}
+.container .content_body .content_container .content_left .login_account ul li.input_password span {
+  width: 50px;
+  height: 40px;
+  background-color: #fff;
+  position: absolute;
+  right: 1px;
+  top: 7px;
+  z-index: 2;
+}
+.container .content_body .content_container .content_left .login_account ul li.login {
+  width: 400px;
+  margin-bottom: 20px;
+}
+.container .content_body .content_container .content_left .login_account ul li.login input {
+  width: 400px;
+  border: none;
+  line-height: 53px;
+  line-height: 53px\9;
+  background: #dadada;
+  font-size: 16px;
+  outline: none;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+  text-align: center;
+  color: #ffffff;
+}
+.container .content_body .content_container .content_left .login_account ul li.login input:hover {
+  cursor: default;
+}
+.container .content_body .content_container .content_left .login_account ul li.login .canKit {
+  background: #ffa903;
+}
+.container .content_body .content_container .content_left .login_account ul li.login .canKit:hover {
+  cursor: pointer;
+}
+.container .content_body .content_container .content_left .login_account ul li.login_register {
+  height: 14px;
+  margin-bottom: 20px;
+  margin-top: 12px;
+  vertical-align: middle;
+}
+.container .content_body .content_container .content_left .login_account ul li.login_register .login_auto {
+  float: left;
+  height: 16px;
+  line-height: 16px;
+  line-height: 16px\9;
+  user-select: none;
+  top: 2px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+}
+.container .content_body .content_container .content_left .login_account ul li.login_register .login_auto span {
+  position: relative;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 4px;
+  border: 1px solid #dadada;
+  border-radius: 3px;
+}
+.container .content_body .content_container .content_left .login_account ul li.login_register .login_auto span i {
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  top: -1px;
+  left: -1px;
+  display: inline-block;
+  vertical-align: -2px;
+  background: url("../img/login_next_select.png") no-repeat center;
+}
+.container .content_body .content_container .content_left .login_account ul li.login_register .login_auto span i:hover {
+  cursor: pointer;
+}
+.container .content_body .content_container .content_left .login_account ul li.login_register .login_text {
+  float: right;
+  display: inline-block;
+  line-height: 14px;
+  line-height: 14px\9;
+  color: #dadada;
+}
+.container .content_body .content_container .content_left .login_account ul li.login_register .login_text .forgot_password {
+  margin-right: 12px;
+}
+.container .content_body .content_container .content_left .login_account ul li.login_register .login_text .register_imd {
+  margin-left: 12px;
+}
+.container .content_body .content_container .content_left .login_account ul li.login_register .login_text a:hover {
+  color: #3a8be4;
+  text-decoration: underline;
+}
+.container .content_body .content_container .content_left .login_account ul li.error_code {
+  display: none;
+  font-size: 12px;
+  color: #e43a3a;
+  margin-top: 12px;
+  height: 14px;
+  width: 400px;
+}
+.container .content_body .content_container .content_left .login_account ul li.error_code i {
+  width: 11px;
+  height: 11px;
+  margin-right: 4px;
+  vertical-align: -1px;
+  display: inline-block;
+  background: url("../img/error_msg.png") no-repeat center;
+}
+.container .content_body .content_container #login_imd {
+  cursor: pointer;
+  background-color: #ffa903;
+}
+.container .content_body .content_container .content_right {
+  float: right;
+  width: 392px;
+  height: 360px;
+  margin-top: 56px;
+  margin-bottom: 56px;
+  padding-top: 8px;
+  border-left: 1px dotted #dbdbdb;
+}
+.container .content_body .content_container .content_right .others_account_login {
+  margin-top: 85px;
+}
+.container .content_body .content_container .content_right .others_account_login P {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+}
+.container .content_body .content_container .content_right .others_account_login ul {
+  margin: 50px 18px 0 18px;
+}
+.container .content_body .content_container .content_right .others_account_login ul li {
+  float: left;
+  margin: 0 28px;
+}
+.container .content_body .content_container .content_right .others_account_login ul li.wx a {
+  padding-top: 54px;
+  font-size: 14px;
+  width: 58px;
+  color: #333;
+  display: inline-block;
+  text-align: center;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+  background: url("../img/wx_default.png") no-repeat center;
+  background-position: 5px 0px;
+}
+.container .content_body .content_container .content_right .others_account_login ul li.wx a:hover {
+  color: #3a8be4;
+  text-decoration: underline;
+  background: url("../img/wx_hover.png") no-repeat center;
+  background-position: 5px 0px;
+}
+.container .content_body .content_container .content_right .others_account_login ul li.wb a {
+  padding-top: 54px;
+  font-size: 14px;
+  width: 58px;
+  color: #333;
+  display: inline-block;
+  text-align: center;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+  background: url("../img/wx_default.png") no-repeat center;
+  background-position: 5px 0px;
+}
+.container .content_body .content_container .content_right .others_account_login ul li.wb a:hover {
+  color: #3a8be4;
+  text-decoration: underline;
+  background: url("../img/wx_hover.png") no-repeat center;
+  background-position: 5px 0px;
+}
+.container .content_body .content_container .content_right .others_account_login ul li.wb a {
+  background: url("../img/wb_default.png") no-repeat center;
+  background-position: 5px 0px;
+}
+.container .content_body .content_container .content_right .others_account_login ul li.wb a:hover {
+  background: url("../img/wb_hover.png") no-repeat center;
+  background-position: 5px 0px;
+}
+.container .content_body .content_container .content_right .others_account_login ul li.tx a {
+  padding-top: 54px;
+  font-size: 14px;
+  width: 58px;
+  color: #333;
+  display: inline-block;
+  text-align: center;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+  background: url("../img/wx_default.png") no-repeat center;
+  background-position: 5px 0px;
+}
+.container .content_body .content_container .content_right .others_account_login ul li.tx a:hover {
+  color: #3a8be4;
+  text-decoration: underline;
+  background: url("../img/wx_hover.png") no-repeat center;
+  background-position: 5px 0px;
+}
+.container .content_body .content_container .content_right .others_account_login ul li.tx a {
+  background: url("../img/qq_default.png") no-repeat center;
+  background-position: 3px 0px;
+}
+.container .content_body .content_container .content_right .others_account_login ul li.tx a:hover {
+  background: url("../img/qq_hover.png") no-repeat center;
+  background-position: 3px 0px;
+}
+.container .content_body .content_container .register_suc {
+  margin-top: 86px;
+  text-align: center;
+}
+.container .content_body .content_container .register_suc h2 {
+  height: 172px;
+  position: relative;
+  margin-bottom: 14px;
+}
+.container .content_body .content_container .register_suc h2 i {
+  display: inline-block;
+  width: 164px;
+  height: 162px;
+  background: url("../img/register_suc.png") no-repeat center;
+}
+.container .content_body .content_container .register_suc h2 span {
+  position: absolute;
+  left: 351px;
+  text-align: center;
+  bottom: 0;
+  display: inline-block;
+  font-size: 24px;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+  color: #333;
+}
+.container .content_body .content_container .register_suc p {
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 10px;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+}
+.container .content_body .content_container .register_suc p a {
+  font-size: 14px;
+  color: #3a8be4;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+}
+.container .content_body .content_container .register_suc p a:hover {
+  text-decoration: underline;
+}
+.container .content_body .content_container .register_suc ul {
+  width: 460px;
+  margin: 21px auto;
+}
+.container .content_body .content_container .register_suc ul li {
+  width: 100%;
+  height: 53px;
+}
+.container .content_body .content_container .register_suc ul li a {
+  height: 53px;
+  display: block;
+  float: left;
+  color: #fff;
+  line-height: 53px;
+  line-height: 53px\9;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+.container .content_body .content_container .register_suc ul li a.go_home {
+  width: 200px;
+  background: #3a8be4;
+}
+.container .content_body .content_container .register_suc ul li a.go_prev {
+  width: 240px;
+  background: #ffa903;
+  margin-left: 20px;
+}
+.footer {
+  width: 100%;
+  background: #333;
+  height: 78px;
+  position: relative;
+}
+.footer .footer_content {
+  width: 990px;
+  height: 78px;
+  background: #333;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999999999;
+}
+.footer .footer_content ul {
+  height: 78px;
+  width: 990px;
+  overflow: hidden;
+  line-height: 78px;
+  line-height: 78px\9;
+  margin-left: 120px;
+}
+.footer .footer_content ul li {
+  float: left;
+  margin: 0 28px;
+}
+.footer .footer_content ul li a {
+  display: inline-block;
+  font-size: 12px;
+  color: #ffffff;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+}
+.footer .footer_content ul li.website {
+  margin-right: 0;
+}

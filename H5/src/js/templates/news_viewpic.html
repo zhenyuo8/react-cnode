@@ -1,0 +1,20 @@
+<div class="large_img swiper-container-fp">
+        
+    <swiper :options="swiperOption" ref="imageSwiper">
+        <swiper-slide v-for="row in list">
+            <img v-bind:data-src="row" class="swiper-lazy">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+        </swiper-slide>
+    </swiper>
+    <div class="art_name">
+        <p>{{index+1}}/{{list.length}}</p>
+        <p><router-link :to="{
+            name: 'news',
+            query: {    
+                newsId: newsId,
+                serialId: serialId
+            }
+        }" reload>查看文章详情</router-link></p>
+    </div>
+
+</div>

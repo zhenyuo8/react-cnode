@@ -1,0 +1,124 @@
+/*****
+ *@author: linyh
+ *@from: Global style conditionChoiceResult
+ *@description: 何在朋
+ *@date: name (2017.02.14)
+*/
+.choice_result_page .sort_bar {
+  background: -webkit-linear-gradient(left, #24aafe, #2896fe);
+  background: -moz-linear-gradient(left, #24aafe, #2896fe);
+  background: -o-linear-gradient(left, #24aafe, #2896fe);
+  background: linear-gradient(to right, #24aafe, #2896fe);
+  width: 92%;
+  height: 1.333rem /* 100/75 */;
+  padding: 0 4%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.choice_result_page .sort_bar .total_type {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.333rem /* 100/75 */;
+  float: left;
+}
+.choice_result_page .sort_bar .sort_btn {
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.333rem /* 100/75 */;
+  float: right;
+}
+.choice_result_page .sort_bar .sort_btn .sort_img {
+  background-size: cover;
+  width: 0.827rem /* 62/75 */;
+  height: 0.827rem /* 62/75 */;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.107rem /* 8/75 */;
+}
+.choice_result_page .sort_bar .sort_btn .hot_sort {
+  margin-right: 0.4rem /* 30/75 */;
+}
+.choice_result_page .sort_bar .sort_btn .hot_sort i {
+  background-size: cover;
+  width: 0.827rem /* 62/75 */;
+  height: 0.827rem /* 62/75 */;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.107rem /* 8/75 */;
+  background-image: url("../img/hot_sort.png");
+}
+.choice_result_page .sort_bar .sort_btn .price_sort i {
+  background-size: cover;
+  width: 0.827rem /* 62/75 */;
+  height: 0.827rem /* 62/75 */;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.107rem /* 8/75 */;
+  background-image: url("../img/pri_sort.png");
+}
+.choice_result_page .sort_bar .sort_btn .hot_current {
+  color: #f4f08b;
+}
+.choice_result_page .sort_bar .sort_btn .hot_current i {
+  background-image: url("../img/hot_sort_h.png");
+}
+.choice_result_page .sort_bar .sort_btn .price_current {
+  color: #f4f08b;
+}
+.choice_result_page .sort_bar .sort_btn .price_current i {
+  background-image: url("../img/pri_sort_h.png");
+}
+.choice_result_page .occupy_seat {
+  height: 1.333rem /* 100/75 */;
+}
+.choice_result_page .result_list {
+  font-size: 15px;
+  width: 94.666%;
+  padding: 0.347rem /* 26/75 */ 2.667% 0;
+}
+.choice_result_page .result_list a {
+  width: 50%;
+  float: left;
+}
+.choice_result_page .result_list a:nth-child(even) {
+  float: right;
+}
+.choice_result_page .result_list a dl {
+  padding: 0.133rem /* 10/75 */ 0.133rem /* 10/75 */ 0;
+}
+.choice_result_page .result_list a dl dt {
+  width: 100%;
+}
+.choice_result_page .result_list a dl dt img {
+  display: inline-block;
+  width: 100%;
+}
+.choice_result_page .result_list a dl dd {
+  padding: 0 0 0.373rem /* 28/75 */ 0.333rem /* 25/75 */;
+}
+.choice_result_page .result_list a dl dd .type_name {
+  line-height: 0.667rem /* 50/75 */;
+}
+.choice_result_page .result_list a dl dd .type_price {
+  color: #de0000;
+}
+[data-dpr="2"] .choice_result_page .sort_bar .total_type {
+  font-size: 30px;
+}
+[data-dpr="2"] .choice_result_page .sort_bar .sort_btn {
+  font-size: 26px;
+}
+[data-dpr="2"] .choice_result_page .result_list {
+  font-size: 30px;
+}
+[data-dpr="3"] .choice_result_page .sort_bar .total_type {
+  font-size: 45px;
+}
+[data-dpr="3"] .choice_result_page .sort_bar .sort_btn {
+  font-size: 39px;
+}
+[data-dpr="3"] .choice_result_page .result_list {
+  font-size: 45px;
+}

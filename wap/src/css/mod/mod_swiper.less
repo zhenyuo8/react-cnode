@@ -1,0 +1,96 @@
+/*****
+ *@author: dongbo
+ *@from: Global style videoIndex
+ *@description:
+ *@date: name (2017.02.23)
+*/
+
+.swiper{
+    width: 100%;
+    height:4.56rem;
+    position: relative;
+    font-size: 14px;
+    .swiper-wrapper{
+        height:4.56rem;
+        li{
+            width: 100%;
+            a{
+                display: block;
+                height:4.56rem;
+                .swiper_img{
+                    width: 100%;
+                    height: 4.56rem;
+                }
+                p{
+                    width: 100%;
+                    bottom: 0px;
+                    height: 1.067rem;
+                    line-height: 1.067rem;
+                    color:#fff;
+                    text-indent: 0.4rem;
+                }
+                .play_btn{
+                    width: 1.173rem;
+                    height: 1.173rem;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .swiper-pagination{
+        text-align: right;
+        color: #999;
+        bottom: 0px;
+        height: 1.067rem;
+        line-height: 1.067rem;
+        .swiper-pagination-current{
+            color: #fff;
+        }
+        .swiper-pagination-total{
+            margin-right: 0.4rem;
+        }
+    }
+    .gradient{
+        width: 100%;
+        height: 30%;
+        bottom: 0px;
+        opacity: .5;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000);
+        background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000);
+        background: -o-linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000);
+        background: -ms-linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000);
+        background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000);
+    }
+}
+[data-dpr="2"] body{
+    .swiper{
+        .swiper-pagination{
+                font-size: 28px;
+        }
+        .swiper-wrapper{
+            p{
+                font-size: 28px;
+            }
+        }
+    }
+}
+[data-dpr="3"] body{
+    .swiper{
+        .swiper-pagination{
+            span{
+                font-size: 42px;
+            }
+        }
+         .swiper-wrapper{
+            p{
+                font-size: 42px;
+            }
+         }
+    }
+}

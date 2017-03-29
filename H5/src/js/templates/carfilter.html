@@ -1,0 +1,239 @@
+<div class="condition_page">
+		<!-- 选择价格区间 -->
+		<div class="price_region_list condition_list">
+			<h2 class="price_region_title">选择价格区间</h2>
+			<div class="price_region_area1">
+				<slider :options="sliderOption" ref="priceSlider"></slider>
+				<!--
+				<ul class="clearfix">
+					<li v-bind:class="{checked:p=='0-5'}" v-on:click="setParam('p','0-5')"><a>5万以下</a></li>
+					<li v-bind:class="{checked:p=='5-8'}" v-on:click="setParam('p','5-8')"><a>5-8万</a></li>
+					<li v-bind:class="{checked:p=='8-12'}" v-on:click="setParam('p','8-12')"><a>8-12万</a></li>
+					<li v-bind:class="{checked:p=='12-18'}" v-on:click="setParam('p','12-18')"><a>12-18万</a></li>
+					<li v-bind:class="{checked:p=='18-25'}" v-on:click="setParam('p','18-25')"><a>18-25万</a></li>
+					<li v-bind:class="{checked:p=='25-40'}" v-on:click="setParam('p','25-40')"><a>25-40万</a></li>
+					<li v-bind:class="{checked:p=='40-80'}" v-on:click="setParam('p','40-80')"><a>40-80万</a></li>
+					<li v-bind:class="{checked:p=='80-9999'}" v-on:click="setParam('p','80-9999')"><a>80万以上</a></li>
+				</ul>
+				-->
+			</div>
+		</div>
+
+		<!-- 级别 -->
+		<div class="level_list">
+			<h2 class="level_title">级别</h2>
+			<ul class="clearfix">
+				<!-- <li v-bind:class="{checked:l=='1'}" v-on:click="setParam('l','1')">
+					<a class="car_logo"><span class="weixing_car"></span><em>轿车</em></a></li> -->
+				<li v-bind:class="{checked:l=='2'}" v-on:click="setParam('l','2')">
+					<a class="car_logo"><span class="weixing_car"></span><em>微型车</em></a></li>
+				<li v-bind:class="{checked:l=='3'}" v-on:click="setParam('l','3')">
+					<a class="car_logo"><span class="xiaoxing_car"></span><em>小型车</em></a></li>
+				<li v-bind:class="{checked:l=='4'}" v-on:click="setParam('l','4')">
+					<a class="car_logo"><span class="jincou_car"></span><em>紧凑型</em></a></li>
+				<li v-bind:class="{checked:l=='5'}" v-on:click="setParam('l','5')">
+					<a class="car_logo"><span class="zhongxing_car"></span>中型车<em></em></a></li>
+				<li v-bind:class="{checked:l=='6'}" v-on:click="setParam('l','6')">
+					<a class="car_logo"><span class="big_car"></span><em>中大型</em></a></li>
+				<li v-bind:class="{checked:l=='7'}" v-on:click="setParam('l','7')">
+					<a class="car_logo"><span class="haohua_car"></span><em>豪华型</em></a></li>
+				<li v-bind:class="{checked:l=='8'}" v-on:click="setParam('l','8')">
+					<a class="car_logo"><span class="mpv_car"></span><em>MPV</em></a></li>
+				<li v-bind:class="{checked:mutiCheck('l','9,10,11,12,13,14')}" class="more_condi suv">
+					<a class="car_logo" v-on:click.stop="suv_visible = !suv_visible"><span class="suv_car"></span><em>SUV</em></a>
+					<div class="more_condi_list suv_list" v-show="suv_visible">
+						<span class="up_blue suv_up"></span>
+						<div class="more_condi_item suv_item">
+							<a v-bind:class="{checked:l=='9'}" v-on:click="setParam('l','9')">全部</a>
+							<a v-bind:class="{checked:l=='10'}" v-on:click="setParam('l','10')">小型SUV</a>
+							<a v-bind:class="{checked:l=='11'}" v-on:click="setParam('l','11')">紧凑型SUV</a>
+							<a v-bind:class="{checked:l=='12'}" v-on:click="setParam('l','12')">中型SUV</a>
+							<a v-bind:class="{checked:l=='13'}" v-on:click="setParam('l','13')">中大型SUV</a>
+							<a v-bind:class="{checked:l=='14'}" v-on:click="setParam('l','14')">大型SUV</a>
+						</div>
+					</div>
+				</li>
+				<li v-bind:class="{checked:l=='15'}" v-on:click="setParam('l','15')">
+					<a class="car_logo"><span class="pao_car"></span><em>跑车</em></a></li>
+				<li v-bind:class="{checked:l=='17'}" v-on:click="setParam('l','17')">
+					<a class="car_logo"><span class="pika_car"></span><em>皮卡</em></a></li>
+				<li v-bind:class="{checked:l=='16'}" v-on:click="setParam('l','16')">
+					<a class="car_logo"><span class="mianbao_car"></span>面包车<em></em></a></li>
+				<li v-bind:class="{checked:l=='18'}" v-on:click="setParam('l','18')">
+					<a class="car_logo"><span class="ke_car"></span><em>客车</em></a></li>
+			</ul>
+		</div>
+
+		<!-- 国别 -->
+		<div class="condition_list country_list">
+			<h2 class="condition_title">国别</h2>
+			<ul class="clearfix">
+				<li v-bind:class="{checked:c=='6'}" v-on:click="setParam('c','6')"><a>中国</a></li>
+				<li v-bind:class="{checked:c=='1'}" v-on:click="setParam('c','1')"><a>德国</a></li>
+				<li v-bind:class="{checked:c=='4'}" v-on:click="setParam('c','4')"><a>美国</a></li>
+				<li v-bind:class="{checked:c=='2'}" v-on:click="setParam('c','2')"><a>日本</a></li>
+				<li v-bind:class="{checked:c=='3'}" v-on:click="setParam('c','3')"><a>韩国</a></li>
+				<li v-bind:class="{checked:c=='5'}" v-on:click="setParam('c','5')"><a>法国</a></li>
+				<li v-bind:class="{checked:c=='-1'}" v-on:click="setParam('c','-1')"><a>其他</a></li>
+			</ul>
+		</div>
+
+		<!-- 厂商 -->
+		<div class="condition_list">
+			<h2 class="condition_title">厂商</h2>
+			<ul class="clearfix">
+				<li v-bind:class="{checked:g=='1'}" v-on:click="setParam('g','1')"><a>自主</a></li>
+				<li v-bind:class="{checked:g=='2'}" v-on:click="setParam('g','2')"><a>合资</a></li>
+				<li v-bind:class="{checked:g=='3'}" v-on:click="setParam('g','3')"><a>进口</a></li>
+			</ul>
+		</div>
+
+		<!-- 变速箱 -->
+		<div class="condition_list speed_box">
+			<h2 class="condition_title">变速箱</h2>
+			<ul class="clearfix">
+				<li v-bind:class="{checked:t=='1'}" v-on:click="setParam('t','1')"><a>手动挡</a></li>
+				<li v-bind:class="{checked:mutiCheck('t','2,3,4,5,6,7')}" class="more_condi zd">
+					<a v-on:click.stop="bsx_visible = !bsx_visible">自动挡</a>
+					<div class="more_condi_list zd_list" v-show="bsx_visible">
+						<span class="up_blue zd_up"></span>
+						<div class="more_condi_item zd_item">
+							<a v-bind:class="{checked:t=='2'}" v-on:click="setParam('t','2')">全部</a>
+							<a v-bind:class="{checked:t=='3'}" v-on:click="setParam('t','3')">半自动(AMT)</a>
+							<a v-bind:class="{checked:t=='4'}" v-on:click="setParam('t','4')">自动(AT)</a>
+							<a v-bind:class="{checked:t=='5'}" v-on:click="setParam('t','5')">手自一体</a>
+							<a v-bind:class="{checked:t=='6'}" v-on:click="setParam('t','6')">无极变速(CVT)</a>
+							<a v-bind:class="{checked:t=='7'}" v-on:click="setParam('t','7')">双离合(DSG)</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<!-- 能源 -->
+		<div class="condition_list">
+			<h2 class="condition_title">能源</h2>
+			<ul class="clearfix">
+				<li v-bind:class="{checked:f=='1'}" v-on:click="setParam('f','1')"><a>汽油</a></li>
+				<li v-bind:class="{checked:f=='2'}" v-on:click="setParam('f','2')"><a>柴油</a></li>
+				<li v-bind:class="{checked:f=='3'}" v-on:click="setParam('f','3')"><a>纯电动</a></li>
+				<li v-bind:class="{checked:f=='4'}" v-on:click="setParam('f','4')"><a>油电混合</a></li>
+				<li v-bind:class="{checked:f=='5'}" v-on:click="setParam('f','5')"><a>油气混合</a></li>
+			</ul>
+		</div>
+
+		<!-- 车身 -->
+		<div class="condition_list">
+			<h2 class="condition_title">车身</h2>
+			<ul class="clearfix">
+				<li v-bind:class="{checked:b=='1'}" v-on:click="setParam('b','1')"><a>两厢</a></li>
+				<li v-bind:class="{checked:b=='2'}" v-on:click="setParam('b','2')"><a>三厢</a></li>
+				<li v-bind:class="{checked:b=='3'}" v-on:click="setParam('b','3')"><a>旅行版</a></li>
+			</ul>
+		</div>
+
+		<!-- 排量 -->
+		<div class="condition_list">
+			<h2 class="condition_title">排量</h2>
+			<ul class="clearfix">
+				<li v-bind:class="{checked:d=='0-1.3'}" v-on:click="setParam('d','0-1.3')"><a>1.3L以下</a></li>
+				<li v-bind:class="{checked:d=='1,3-1.6'}" v-on:click="setParam('d','1,3-1.6')"><a>1.3L-1.6L</a></li>
+				<li v-bind:class="{checked:d=='1.7-2.0'}" v-on:click="setParam('d','1.7-2.0')"><a>1.7L-2.0L</a></li>
+				<li v-bind:class="{checked:d=='2.1-3.0'}" v-on:click="setParam('d','2.1-3.0')"><a>2.1L-3.0L</a></li>
+				<li v-bind:class="{checked:d=='3.1-5.0'}" v-on:click="setParam('d','3.1-5.0')"><a>3.1L-5.0L</a></li>
+				<li v-bind:class="{checked:d=='5.0-9'}" v-on:click="setParam('d','5.0-9')"><a>5.0L以上</a></li>
+			</ul>
+		</div>
+
+		<!-- 驱动 -->
+		<div class="condition_list drive_box">
+			<h2 class="condition_title">驱动</h2>
+			<ul class="clearfix">
+				<li v-bind:class="{checked:dt=='1'}" v-on:click="setParam('dt','1')"><a>前驱</a></li>
+				<li v-bind:class="{checked:dt=='2'}" v-on:click="setParam('dt','2')"><a>后驱</a></li>
+				<li v-bind:class="{checked:mutiCheck('dt','3,4,5,6')}" class="more_condi siqu">
+					<a v-on:click.stop="qd_visible = !qd_visible">四驱</a>
+					<div class="more_condi_list siqu_list" v-show="qd_visible">
+						<span class="up_blue siqu_up"></span>
+						<div class="more_condi_item siqu_item">
+							<a v-bind:class="{checked:dt=='3'}" v-on:click="setParam('dt','3')">全部</a>
+							<a v-bind:class="{checked:dt=='4'}" v-on:click="setParam('dt','4')">全时四驱</a>
+							<a v-bind:class="{checked:dt=='5'}" v-on:click="setParam('dt','5')">分时四驱</a>
+							<a v-bind:class="{checked:dt=='6'}" v-on:click="setParam('dt','6')">实时四驱</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<!-- 排放 -->
+		<div class="condition_list">
+			<h2 class="condition_title">排放</h2>
+			<ul class="clearfix">
+				<li v-bind:class="{checked:pf=='1'}" v-on:click="setParam('pf','1')"><a>国4</a></li>
+				<li v-bind:class="{checked:pf=='2'}" v-on:click="setParam('pf','2')"><a>国5</a></li>
+				<li v-bind:class="{checked:pf=='3'}" v-on:click="setParam('pf','3')"><a>京5</a></li>
+				<li v-bind:class="{checked:pf=='4'}" v-on:click="setParam('pf','4')"><a>欧4</a></li>
+				<li v-bind:class="{checked:pf=='5'}" v-on:click="setParam('pf','5')"><a>欧5</a></li>
+				<li v-bind:class="{checked:pf=='6'}" v-on:click="setParam('pf','6')"><a>国4/欧4</a></li>
+				<li v-bind:class="{checked:pf=='7'}" v-on:click="setParam('pf','7')"><a>国5/欧5</a></li>
+			</ul>
+		</div>
+
+		<!-- 车门数 -->
+		<div class="condition_list">
+			<h2 class="condition_title">车门数</h2>
+			<ul class="clearfix">
+				<li v-bind:class="{checked:dr=='1'}" v-on:click="setParam('dr','1')"><a>2-3门</a></li>
+				<li v-bind:class="{checked:dr=='2'}" v-on:click="setParam('dr','2')"><a>4-6门</a></li>
+			</ul>
+		</div>
+
+		<!-- 座位数 -->
+		<div class="condition_list">
+			<h2 class="condition_title">座位数</h2>
+			<ul class="clearfix">
+				<li v-bind:class="{checked:zw=='1'}" v-on:click="setParam('zw','1')"><a>2座</a></li>
+				<li v-bind:class="{checked:zw=='2'}" v-on:click="setParam('zw','2')"><a>4-5座</a></li>
+				<li v-bind:class="{checked:zw=='3'}" v-on:click="setParam('zw','3')"><a>6座</a></li>
+				<li v-bind:class="{checked:zw=='4'}" v-on:click="setParam('zw','4')"><a>7座</a></li>
+				<li v-bind:class="{checked:zw=='5'}" v-on:click="setParam('zw','5')"><a>7座以上</a></li>
+			</ul>
+		</div>
+
+		<!-- 配置选项 -->
+		<div class="condition_list">
+			<h2 class="condition_title">配置选项</h2>
+			<ul class="clearfix">
+				<li v-bind:class="{checked:inMore('0')}" v-on:click="setParam('more','0')"><a>天窗</a></li>
+				<li v-bind:class="{checked:inMore('1')}" v-on:click="setParam('more','1')"><a>GPS导航</a></li>
+				<li v-bind:class="{checked:inMore('2')}" v-on:click="setParam('more','2')"><a>倒车影像</a></li>
+				<li v-bind:class="{checked:inMore('3')}" v-on:click="setParam('more','3')"><a>儿童锁</a></li>
+				<li v-bind:class="{checked:inMore('4')}" v-on:click="setParam('more','4')"><a>旋涡增压</a></li>
+				<li v-bind:class="{checked:inMore('5')}" v-on:click="setParam('more','5')"><a>无钥匙启动</a></li>
+				<li v-bind:class="{checked:inMore('6')}" v-on:click="setParam('more','6')"><a>四轮碟刹</a></li>
+				<li v-bind:class="{checked:inMore('7')}" v-on:click="setParam('more','7')"><a>真皮座椅</a></li>
+				<li v-bind:class="{checked:inMore('8')}" v-on:click="setParam('more','8')"><a>ESP</a></li>
+				<li v-bind:class="{checked:inMore('9')}" v-on:click="setParam('more','9')"><a>疝气大灯</a></li>
+				<li v-bind:class="{checked:inMore('10')}" v-on:click="setParam('more','10')"><a>定速巡航</a></li>
+				<li v-bind:class="{checked:inMore('11')}" v-on:click="setParam('more','11')"><a>自动空调</a></li>
+				<li v-bind:class="{checked:inMore('12')}" v-on:click="setParam('more','12')"><a>胎压监测</a></li>
+				<li v-bind:class="{checked:inMore('13')}" v-on:click="setParam('more','13')"><a>自动泊车</a></li>
+				<li v-bind:class="{checked:inMore('14')}" v-on:click="setParam('more','14')"><a>空气进化器</a></li>
+				<li v-bind:class="{checked:inMore('15')}" v-on:click="setParam('more','15')"><a>换挡拨片</a></li>
+				<li v-bind:class="{checked:inMore('16')}" v-on:click="setParam('more','16')"><a>电动座椅</a></li>
+				<li v-bind:class="{checked:inMore('17')}" v-on:click="setParam('more','17')"><a>儿童座椅接口</a></li>
+			</ul>
+		</div>
+
+		<!-- 占位 -->
+		<div class="occupy_seat_two"></div>
+
+		<!-- 重置 -->
+		<div class="reset_bar clearfix">
+			<span class="reset_btn" v-on:click="reset()"><i></i>重置</span>
+			<a class="fit_standard" :href="resultLink" bdtag="HomePage_ConditionConfirmButton_Clicked">
+				有{{total}}个车型符合要求
+			</a>
+		</div>
+	</div>

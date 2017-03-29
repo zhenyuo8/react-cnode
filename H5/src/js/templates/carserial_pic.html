@@ -1,0 +1,36 @@
+<div class="wrap_bg">
+    <carserial-header title="车型图片" page="pic"></carserial-header>
+
+    <div class="img_wrap" v-if="imgs.length">
+
+        <div class="img_guisepos" v-bind:class="imgclass">
+            <div v-for="(row,i) in imgs" v-bind:class="img3[i]" class="list">
+                <div class="img_bgwrap">
+                    <router-link :to="{
+                        name: 'piclist',
+                        query: {
+                            serialId: serialId,
+                            categoryId: row.categoryId
+                        }
+                    }" reload>
+                    <img v-bind:src="row.coverImgUrl" alt="">
+                    <span>{{row.picCount}}</span>
+                    </router-link>
+                </div>
+                
+                <p class="wg_strong">{{row.categoryName}}</p>
+            </div>
+
+        </div>
+ 
+    </div>
+    
+    <div class="nothing" v-if="!loading && imgs.length===0">
+        <img src="../../img/waiting.png">
+        <p class="waiting_text">数据完善中…</p>
+        <p class="coming">敬请期待</p>
+    </div>
+
+    <div class="next_page"></div>
+
+</div>

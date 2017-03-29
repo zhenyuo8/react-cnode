@@ -1,0 +1,136 @@
+/*****
+ *@author: linyh
+ *@from: Global style article
+ *@description: 陈璐
+ *@date: name (2017.02.17)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_head";
+
+// 亮点配置主页面
+.lightspot_no_page{
+    position: absolute;
+    left:50%;
+    top: 50%;
+    width:100%;
+    transform: translate(-50%,-50%);
+    // 全部参数
+    .link_btn{
+        width: 44.8%;
+        margin: .867rem /* 65/75 */ auto .333rem /* 25/75 */;
+        .param_btn{
+            font-size: 15px;
+            width: 50%;
+            float: left;
+            a{
+                color: @color-fff;
+                .bg-jianbian( left top, right bottom, @param-btn-start, @param-btn-end);
+                border-radius: 50%;
+                width: 1.76rem /* 132/75 */;
+                height: 1.76rem /* 132/75 */;
+                display: block;
+                margin: 0 auto;
+                em{
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+        .all_param{
+            em{
+                width: 60%;
+                line-height: .48rem /* 36/75 */;
+                margin: 0 auto;
+                padding-top: .4rem /* 30/75 */;
+            }
+        }
+        .xun_price{
+            em{
+                padding-top: .56rem /* 42/75 */;
+            }
+        }
+    }
+
+    // 布可背景
+    .book_brid{
+        width: 58.133%;
+        height: 6.6rem /* 495/75 */;
+        margin: 0 auto;
+        img{
+            display: inline-block;
+            width: 100%;
+            height: 100;
+        }
+    }
+
+    // 提示语
+    .tip{
+        margin-top: -.667rem /* 50/75 */;
+        p{
+            color: @sub-brand-name;
+            text-align: center;
+            &:first-child{
+                font-size: 24px;
+            }
+            &:last-child{
+                font-size: 15px;
+                line-height: .64rem /* 48/75 */;
+            }
+        }
+    }
+
+    // 翻页箭头
+    .next_page{
+        .icon_bg( url("../img/down.png"), .813rem /* 61/75 */, .44rem /* 33/75 */);
+        margin-left: -.4rem /* 30/75 */;
+        position: absolute;
+        left: 50%;
+        bottom: .6rem /* 45/75 */;
+    }
+}
+
+/* 字体大小适配 */
+//dpr=2字体大小
+[data-dpr="2"] .lightspot_no_page{
+    // 全部参数
+    .link_btn{
+        .param_btn{
+            font-size: 30px;
+        }
+    }
+    // 提示语
+    .tip{
+        p{
+            &:first-child{
+                font-size: 48px;
+            }
+            &:last-child{
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+//dpr=3字体大小
+[data-dpr="3"] .lightspot_no_page{
+    // 全部参数
+    .link_btn{
+        .param_btn{
+            font-size: 45px;
+        }
+    }
+    // 提示语
+    .tip{
+        p{
+            &:first-child{
+                font-size: 72px;
+            }
+            &:last-child{
+                font-size: 45px;
+            }
+        }
+    }
+}

@@ -1,0 +1,924 @@
+/*****
+ *@author: linyh
+ *@from: Global style articleDetail
+ *@description: 陈璐
+ *@date: name (2017.02.24)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_pubHeadNav";
+@import "mod/mod_pubHead";
+@import "mod/mod_comment";
+@import "mod/mod_smallnav";
+@import "mod/mod_footer";
+@import "mod/mod_hasFix_goTop";
+@import "mod/mod_shareIcon.less";
+
+body{
+    height: 100%;
+}
+// 文章详情主页面
+.art_detail_page{
+    padding-bottom: 1.28rem;
+
+    // 通栏广告位
+    .ad_bar{
+        width: 100%;
+        background-color: @bg-bar;
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+
+    // 占位
+    .occupy_seat{
+        height: 1.333rem /* 100/75 */;
+    }
+
+    // 灰色间隔条
+    .bg_bar{
+        width: 100%;
+        height: .4rem /* 30/75 */;
+        background-color: @bg-bar;
+    }
+
+    // 文章内容
+    .article_module{
+        width: 92%;
+        padding: .493rem /* 37/75 */ 4% 0;
+        .art_main_title{
+            color: @main-title-color;
+            font-size: 24px;
+            line-height: .853rem /* 64/75 */;
+        }
+        .edit_msg{
+            color: @edit-color;
+            font-size: 11px;
+            line-height: .827rem /* 62/75 */;
+            span{
+                margin:0 .213rem /* 16/75 */;
+            }
+        }
+        // 文章内容
+        .article_content{
+            font-size: 15px;
+            .more_page{
+                display: none;
+            }
+            p{
+                line-height: .72rem /* 54/75 */;
+                margin-bottom: .507rem /* 38/75 */;
+                img{
+                    .img-size;
+                }
+            }
+            .article_page_title{
+                color: @main-title-color;
+                font-size: 21px;
+                line-height: .853rem /* 64/75 */;
+                margin-bottom: .347rem /* 26/75 */;
+                em{
+                    color: @color-fff;
+                    background-color: @main-title-color;
+                    border-radius: 50%;
+                    width: .587rem /* 44/75 */;
+                    line-height: .587rem /* 44/75 */;
+                    text-align: center;
+                    display: inline-block;
+                }
+            }
+        }
+        // 加载更多
+        .load_more{
+            color: @load-color;
+            font-size: 13px;
+            background-color: @color-fff;
+            margin-top: -.533rem /* 40/75 */;
+            position: relative;
+            span{
+                display: inline-block;
+                width: 100%;
+                height: 1.33rem;
+                .bg-jianbian(top,bottom,rgba(255,255,255,0),rgba(255,255,255,1));
+                position: absolute;
+                top: -1.33rem;
+                left: 0;
+            }
+            .load_btn{
+                background-color: @load-bg;
+                border-radius: .08rem /* 6/75 */;
+                width: 100%;
+                line-height: .96rem /* 72/75 */;
+                text-align: center;
+                .border-jianbian(0,-10px,20px,5px,@color-fff);
+                i{
+                    .icon_bg( url("../img/down.png"), .213rem /* 16/75 */, .12rem /* 9/75 */);
+                    vertical-align: middle;
+                    margin-left: .133rem /* 10/75 */;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    // 每个模块小标题样式
+    .item_title{
+        font-size: 14px;
+        padding-top: .347rem /* 26/75 */;
+        i{
+            background-color: @item-color;
+            border-radius: 2px;
+            width: .08rem /* 6/75 */;
+            height: .347rem /* 26/75 */;
+            vertical-align: -.053rem /* 4/75 */;
+            margin-right: .16rem /* 12/75 */;
+            display: inline-block;
+        }
+    }
+
+    // 分享至
+    .share_area{
+        width: 92%;
+        padding: 0 4% .467rem /* 35/75 */;
+        .share{
+            padding: .453rem /* 34/75 */ 0 0.533rem /* 40/75 */;
+            .share;
+        }
+        .zan_collect{
+            margin-top: 0.45rem;
+            text-align: center;
+            a{
+                color: @color-999;
+                display: inline-block;
+                width: 2.667rem /* 200/75 */;
+                height: .8rem /* 60/75 */;
+                line-height: .8rem /* 60/75 */;
+                text-align: center;
+                margin: 0 .267rem /* 20/75 */;
+                border: 1px solid @time-color;
+                border-radius: .053rem /* 4/75 */;
+                i{
+                    display: inline-block;
+                    vertical-align: -0.027rem /* 2/75 */;
+                    margin-right: .107rem /* 8/75 */;
+                }
+            }
+            .zan{
+                i{
+                    .icon_bg( url("../img/fine.png"), .373rem /* 28/75 */, .347rem /* 26/75 */);
+                }
+                &.zan_checked{
+                    color: @red-price;
+                    border-color: @red-price;
+                    i{
+                        background-image: url("../img/zan_bg_h.png");
+                    }
+                }
+            }
+            .collect{
+                i{
+                    .icon_bg( url("../img/sc.png"), .373rem /* 28/75 */, .347rem /* 26/75 */);
+                }
+                &.collect_checked{
+                    color: @sc-h-color;
+                    border-color: @sc-h-color;
+                    i{
+                        background-image: url("../img/sc_bg_h.png");
+                    }
+                }
+            }
+        }
+    }
+
+    // 相关车型
+    .relevant_type{
+        width: 92%;
+        padding: 0 4%;
+        ul{
+            li{
+                border-bottom: 1px solid @border-color;
+                position: relative;
+                &:last-child{
+                    border: 0;
+                }
+                img{
+                    width: 2.4rem /* 180/75 */;
+                    height: 1.6rem /* 120/75 */;
+                    padding: .333rem /* 25/75 */ 0 .467rem /* 35/75 */;
+                    float: left;
+                }
+                .type_msg{
+                    font-size: 15px;
+                    width: 47.536%;
+                    padding-left: .213rem /* 16/75 */;
+                    float: left;
+                    .type_name{
+                        padding-top: .24rem /* 18/75 */;
+                    }
+                    .type_price{
+                        color: @red-price;
+                        padding-top: .133rem /* 10/75 */;
+                    }
+                    .type_zd_price{
+                        font-size: 12px;
+                        color: @time-color;
+                        padding-top: .16rem /* 12/75 */;
+                    }
+                }
+                .inquire{
+                    color: @color-fff;
+                    font-size: 13px;
+                    background-color: @share-bg;
+                    border-radius: .053rem /* 4/75 */;
+                    width: 1.867rem /* 140/75 */;
+                    line-height: .8rem /* 60/75 */;
+                    text-align: center;
+                    margin-top: .48rem /* 36/75 */;
+                    float: right;
+                }
+                .type_link{
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 9;
+                }
+                .inquire_price{
+                    width: 1.867rem /* 140/75 */;
+                    height: .8rem /* 60/75 */;
+                    display: block;
+                    position: absolute;
+                    top: .48rem /* 36/75 */;
+                    right: 0;
+                    z-index: 99;
+                }
+            }
+        }
+    }
+
+    // 推荐阅读、相关阅读
+    .article_reading{
+        .rele_art_title{
+            width: 92%;
+            margin: 0 auto;
+        }
+        .news_list{
+            dl{
+                .article_list;
+            }
+        }
+        .load_more_module{
+            width: 92%;
+            margin: 0 4% .267rem /* 20/75 */;
+            .load_more{
+                .load_more;
+            }
+            .loading{
+                .loading;
+                display: none;
+            }
+            .no_more{
+                .no_more;
+            }
+        }
+    }
+
+    // 热门评论
+    .hot_review{
+        width: 100%;
+        padding:  .133rem /* 10/75 */ 0 .267rem /* 20/75 */;
+        .item_title{
+            width: 92%;
+            padding: 0 4%;
+        }
+        .more{
+            .more;
+            width: 92%;
+            margin: 0 4%;
+        }
+    }
+
+    // 文章目录
+    .catalog{
+        display: none;
+        .bg-jianbian(top left,bottom right,@ml-start,@ml-end);
+        .border-jianbian(0,5px,20px,0,@ml-end);
+        border-radius: 50%;
+        width: 1.333rem /* 100/75 */;
+        height: 1.333rem /* 100/75 */;
+        text-align: center;
+        position: fixed;
+        bottom: 3.867rem /* 290/75 */;
+        right: .267rem /* 20/75 */;
+        z-index: 99;
+        img{
+            display: inline-block;
+            width: .587rem /* 44/75 */;
+            height: .48rem /* 36/75 */;
+            margin-top: .427rem /* 32/75 */;
+        }
+    }
+
+    // 我来说两句
+    .function_bar{
+        width: 92%;
+        padding: .213rem /* 16/75 */ 4%;
+        background-color: @color-fff;
+        .border-jianbian(0,5px,20px,5px,@border-color);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 99;
+        input{
+            float: left;
+            width: 56.45%;
+            height: .827rem /* 62/75 */;
+            border: 1px solid @input-border;
+            background-color: @letter-alert-bg;
+            border-radius: .08rem /* 6/75 */;
+            padding-left: .267rem /* 20/75 */;
+        }
+        span{
+            float: right;
+            height: .853rem /* 64/75 */;
+            padding-right: .133rem /* 10/75 */;
+            a{
+                display: inline-block;
+                vertical-align: middle;
+                margin: .147rem /* 11/75 */ 0 0 .56rem /* 42/75 */;
+            }
+            .review_btn{
+                position: relative;
+                i{
+                    .icon_bg(url(../img/mes.png), .56rem /* 42/75 */, .507rem /* 38/75 */);
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                em{
+                    color: @color-fff;
+                    width: 1rem /* 75/75 */;
+                    text-align: center;
+                    border-radius: .267rem /* 20/75 */;
+                    background-color: @red-price;
+                    display: inline-block;
+                    position: absolute;
+                    top: -.24rem /* 18/75 */;
+                    right: -.613rem /* 46/75 */;
+                }
+            }
+            .collect_btn{
+                .icon_bg(url(../img/star.png), .573rem /* 43/75 */, .533rem /* 40/75 */);
+            }
+            .collect_btn_checked{
+                .icon_bg(url(../img/sc_bg_h.png), .573rem /* 43/75 */, .533rem /* 40/75 */);
+            }
+            .share_btn{
+                .icon_bg(url(../img/share_video.png), .507rem /* 38/75 */, .533rem /* 40/75 */);
+            }
+        }
+    }
+
+}
+
+// 遮罩层
+.mask{
+    display: none;
+    background-color: @color-000;
+    background-color: cover;
+    filter: alpha(opacity=60);
+    opacity: .6;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 700;
+}
+
+// 弹层
+/*.tanceng_tip{*/
+
+//目录列表
+.catalog_area{
+    width: 100%;
+    background-color: @color-fff;
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    z-index: 9999;
+    ul{
+        color: @main-title-color;
+        font-size: 16px;
+        width: 92%;
+        padding: 0 4%;
+        max-height: 7.4rem /* 555/75 */;
+        overflow-y: scroll;
+        li{
+            padding: .28rem /* 21/75 */;
+            line-height: .64rem /* 48/75 */;
+            border-top: 1px solid @border-color;
+            a{
+                display: block;
+                overflow: hidden;
+                i{
+                    float: left;
+                }
+                span{
+                    float: left;
+                    width: 78%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    p{
+        display: none;
+        .border-jianbian(0,-10px,20px,20px,@color-fff);
+        color: @share-bg;
+        font-size: 13px;
+        width: 92%;
+        padding: .133rem /* 10/75 */ 4%  .4rem /* 30/75 */;
+        background-color: @color-fff;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 10000;
+        span{
+            width: 100%;
+            background-color: @cancle-bg;
+            border-radius: .08rem /* 6/75 */;
+            line-height: .96rem /* 72/75 */;
+            text-align: center;
+            display: block;
+        }
+    }
+    .zhanwei{
+        width: 100%;
+        height: 1.493rem /* 112/75 */;
+    }
+}
+
+// 评论
+.review_area{
+    width: 92%;
+    padding: 0 4%;
+    background-color: @color-fff;
+    position: fixed;
+    left: 0;
+    bottom: -100%;
+    z-index: 9999;
+    p{
+        font-size: 15px;
+        line-height: 1.067rem /* 80/75 */;
+    }
+    .re_btn{
+        span{
+            color: @price-item-color;
+            float: left;
+        }
+        a{
+            color: @color-ccc;
+            float: right;
+        }
+        .reply{
+            display: none;
+        }
+    }
+    .user_msg{
+        img{
+            display: inline-block;
+            width: .64rem /* 48/75 */;
+            height: .64rem /* 48/75 */;
+            border-radius: 50%;
+            vertical-align: middle;
+            margin-right: .133rem /* 10/75 */;
+        }
+    }
+    .textarea_box{
+        position: relative;
+        textarea{
+            font-size: 14px;
+            display: block;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            width: 100%;
+            height: 3.493rem /* 262/75 */;
+            padding: .267rem /* 20/75 */;
+            background-color: @bg-bar;
+            border: 0;
+            resize: none;
+        }
+        span{
+            color: @color-ccc;
+            display: block;
+            position: absolute;
+            bottom: .133rem /* 10/75 */;
+            right: .133rem /* 10/75 */;
+        }
+    }
+}
+
+// 分享弹层
+.zsh_shareLayer {
+    width: 100%;
+    height: 4.36rem;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    bottom: -100%;
+    z-index: 999;
+    ul {
+        padding-top: .64rem;
+        li {
+            float: left;
+            width: 20%;
+            height: 1.72rem;
+            text-align: center;
+
+            .zsh_wx,
+            .zsh_pyq,
+            .zsh_qq,
+            .zsh_wb,
+            .zsh_kj {
+                display: block;
+                margin: 0 auto .147rem auto;
+                width: 1.173rem;
+                height: 1.173rem;
+            }
+            .zsh_wx {
+                background: url(../img/wx.png) no-repeat;
+                background-size: contain;
+                &:active {
+                    background: url(../img/wx_press.png) no-repeat;
+                    background-size: contain;
+                }
+            }
+            .zsh_pyq {
+                background: url(../img/pyq.png) no-repeat;
+                background-size: contain;
+                &:active {
+                    background: url(../img/pyq_press.png) no-repeat;
+                    background-size: contain;
+                }
+            }
+            .zsh_qq {
+                background: url(../img/qq.png) no-repeat;
+                background-size: contain;
+                &:active {
+                    background: url(../img/qq_press.png) no-repeat;
+                    background-size: contain;
+                }
+            }
+            .zsh_wb {
+                background: url(../img/wb.png) no-repeat;
+                background-size: contain;
+                &:active {
+                    background: url(../img/wb_press.png) no-repeat;
+                    background-size: contain;
+                }
+            }
+            .zsh_kj {
+                background: url(../img/kj.png) no-repeat;
+                background-size: contain;
+                &:active {
+                    background: url(../img/kj_press.png) no-repeat;
+                    background-size: contain;
+                }
+            }
+            span {
+                font-size: 11px;
+            }
+        }
+    }
+    .zsh_cancel {
+        margin: .627rem 0 0 4%;
+        width: 92%;
+        height: .96rem;
+        text-align: center;
+        line-height: .96rem;
+        background: #edf7ff;
+        font-size: 13px;
+        color: #52adfe;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+    }
+}
+// 微信分享如果是safari浏览器
+// 透明遮罩
+.zsh_sf_mask {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    filter:alpha(opacity=60);
+    opacity:.6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+// 提示弹层
+.wx_share_tip {
+    display: none;
+    width: 92%;
+    height: 4.933rem;
+    background: #fff;
+    border-radius: 8px;
+    position: fixed;
+    bottom: 3.947rem;
+    left: 4%;
+    z-index: 99999;
+
+    .zsh_sf_arrowDown {
+        position: absolute;
+        bottom: -.173rem;
+        left: .613rem;
+        width: 0px;
+        height: 0px;
+        border-left: .213rem solid transparent;
+        border-right: .213rem solid transparent;
+        border-top: .213rem solid #fff;
+    }
+    .zsh_sf_wx {
+        position: absolute;
+        left: 0.02rem;
+        bottom: -1.393rem;
+        display: inline-block;
+        width: 1.173rem;
+        height: 1.173rem;
+        background: url(../img/wx.png);
+        background-size: contain;
+    }
+    p {
+        margin: .3rem 0 0 .627rem;
+        font-size: 13px;
+
+        .share_img1 {
+            display: inline-block;
+            width: 0.44rem;
+            height: 0.613rem;
+        }
+        .share_img2 {
+            display: inline-block;
+            width: 0.587rem;
+            height: 0.587rem;
+        }
+        .share_img3 {
+            display: inline-block;
+            width: 1.0rem;
+            height: 0.6rem;
+        }
+        .share_img4 {
+            display: inline-block;
+            width: 0.587rem;
+            height: 0.587rem;
+        }
+        .share_img5 {
+            display: inline-block;
+            width: 0.6rem;
+            height: 0.587rem;
+        }
+    }
+}
+
+// 分享提示弹层
+.wx_fixed_tip{
+    display: block;
+    bottom: -100%;
+    left: 4%;
+}
+/*}*/
+
+
+/*字体适配*/
+//dpr=2字体大小
+[data-dpr="2"] .art_detail_page{
+    // 文章内容
+    .article_module{
+        .art_main_title{
+            font-size: 48px;
+        }
+        .edit_msg{
+            font-size: 22px;
+        }
+        // 文章内容
+        .article_content{
+            font-size: 30px;
+            .article_page_title{
+                font-size: 42px;
+            }
+        }
+        // 加载更多
+        .load_more{
+            font-size: 26px;
+        }
+    }
+    // 小标题
+    .item_title{
+        font-size: 28px;
+    }
+    // 相关车型
+    .relevant_type{
+        .type_msg{
+            font-size: 30px;
+            .type_zd_price{
+                font-size: 24px;
+            }
+        }
+        .inquire{
+            font-size: 26px;
+        }
+    }
+    // 热门评论
+    .hot_review{
+        .more{
+            font-size: 26px;
+        }
+    }
+    // 相关阅读、推荐阅读
+    .article_reading{
+        .news_list{
+            .article_list{
+                .synopsis {
+                    font-size: 30px;
+                }
+                .minor {
+                    font-size: 24px;
+                }
+            }
+        }
+        .load_more_module{
+            .load_more{
+                font-size: 26px;
+            }
+            .no_more{
+                font-size: 26px;
+            }
+        }
+    }
+    // 文章目录
+    .catalog{
+        font-size: 30px;
+    }
+}
+//dpr=3字体大小
+[data-dpr="3"] .art_detail_page{
+    // 文章内容
+    .article_module{
+        .art_main_title{
+            font-size: 72px;
+        }
+        .edit_msg{
+            font-size: 33px;
+        }
+        // 文章内容
+        .article_content{
+            font-size: 45px;
+            .article_page_title{
+                font-size: 63px;
+            }
+        }
+        // 加载更多
+        .load_more{
+            font-size: 39px;
+        }
+    }
+    // 小标题
+    .item_title{
+        font-size: 42px;
+    }
+    // 相关车型
+    .relevant_type{
+        .type_msg{
+            font-size: 45px;
+            .type_zd_price{
+                font-size: 36px;
+            }
+        }
+        .inquire{
+            font-size: 39px;
+        }
+    }
+    // 热门评论
+    .hot_review{
+        .more{
+            font-size: 39px;
+        }
+    }
+    // 相关阅读、推荐阅读
+    .article_reading{
+        .news_list{
+            .article_list{
+                .synopsis {
+                    font-size: 45px;
+                }
+                .minor {
+                    font-size: 36px;
+                }
+            }
+        }
+        .load_more_module{
+            .load_more{
+                font-size: 39px;
+            }
+            .no_more{
+                font-size: 39px;
+            }
+        }
+    }
+    // 文章目录
+    .catalog{
+        font-size: 45px;
+    }
+}
+
+//弹层
+[data-dpr="2"] {
+    .action_tips{
+        font-size: 30px;
+    }
+    // 文章目录
+    .catalog_area{
+        .catalog_list{
+            font-size: 32px;
+        }
+        .cancle{
+            font-size: 26px;
+        }
+    }
+    // 评论
+    .review_area{
+        p{
+            font-size: 30px;
+        }
+        textarea{
+            font-size: 28px;
+        }
+    }
+    // 分享
+    .zsh_shareLayer {
+        ul {
+            li {
+                span {
+                    font-size: 22px;
+                }
+            }
+        }
+        .zsh_cancel {
+            font-size: 26px;
+        }
+    }
+    .wx_share_tip{
+        p {
+            font-size: 26px;
+        }
+    }
+}
+[data-dpr="3"] {
+    .action_tips{
+        font-size: 45px;
+    }
+    // 文章目录
+    .catalog_area{
+        .catalog_list{
+            font-size: 48px;
+        }
+        .cancle{
+            font-size: 39px;
+        }
+    }
+    // 评论
+    .review_area{
+        p{
+            font-size: 45px;
+        }
+        textarea{
+            font-size: 42px;
+        }
+    }
+    // 分享
+    .zsh_shareLayer {
+        ul {
+            li {
+                span {
+                    font-size: 36px;
+                }
+            }
+        }
+        .zsh_cancel {
+            font-size: 39px;
+        }
+    }
+    .wx_share_tip {
+        p {
+            font-size: 39px;
+        }
+    }
+}

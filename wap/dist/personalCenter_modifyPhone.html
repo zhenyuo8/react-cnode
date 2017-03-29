@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="telephone=no,spanail=no" name="format-detection">
+	<script src="js/flexible_css.js"></script>
+	<script src="js/flexible.js"></script>
+	<title>汽车大全-个人资料设置</title>
+
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/personalCenter_modifyPhone.css">
+</head>
+
+<body>
+	<!-- 首页主页面 -->
+	<div class="index_page">
+		<!-- 头部logo -->
+	    <div class="pub_head">
+	        <a href="javascript:history.back(-1)" class="goback_btn"></a>
+	        <a href=" http://172.16.0.135:8888/wap/out/index.html"><img src="img/logo_text.png" class="logo_text"></a>
+	        <span class="p">●</span>
+	        <span class="title_extra">更换手机号</span>
+	    </div>
+		<div class="content_list">
+			<!-- 进入个人中心设置默认页面 -->
+		      <p class="sys_notice">
+		        <span>您正在更改您之前绑定的手机号码</span>
+						<span>汽车大全将给您 <i>182****2345</i>的手机发送校验码</span>
+						<span>请您填写，30分钟内有效</span>
+		      </p>
+		      <p class="code">
+		        <i>验证码：</i>
+		        <input type="text" id="yzm_input" name="" value="" placeholder="请输入验证码" maxlength="4">
+				<span class="error_tip yzm_error">
+					请输入正确验证码<strong></strong>
+				</span>
+		        <em id="delYzm"></em>
+		        <span class="get_code">获取校验码</span>
+		      </p>
+		      <p class="bind" id="js_next_step">
+		        <span>下一步</span>
+		      </p>
+
+		      <p class="footer">
+		        <a href="#">首页</a><i></i>
+				<a href="#">个人中心</a><i></i>
+				<a href="#">个人资料设置</a><em></em>
+				<span class="cur">更换手机号</a>
+		      </p>
+		</div>
+	</div>
+
+	<div class="video_fte">
+    <p> <span class="colora4">©&nbsp;&nbsp;2017&nbsp;&nbsp;汽车大全</span> </p>
+</div>
+
+	<!-- 回到顶部 -->
+	<!-- 回到顶部 -->
+<div class="go_top" id="goTop"> <span></span> <i></i></div>
+
+	<!-- 遮罩层 -->
+	<div class="mask_area">
+		<div class="mask"></div>
+		<div class="mask_jt"></div>
+	</div>
+
+	<!-- load图标弹层 -->
+	<div class="load_mask">
+		<span class="mask"></span>
+		<img src="img/load_w.png">
+	</div>
+
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/personalCenter_modifyPhone.js"></script>
+</body>
+</html>

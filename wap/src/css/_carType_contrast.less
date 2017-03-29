@@ -1,0 +1,304 @@
+/*****
+ *@author: linyh
+ *@from: Global style carType_contrast(车型-对比页)
+ *@description: 陈璐
+ *@date: name (2017.02.24)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_pubHeadNav";
+@import "mod/mod_carNav";
+@import "mod/mod_pubHead";
+@import "mod/mod_footer";
+
+
+// 车型对比主页面
+.param_config_page{
+
+    // 配置车型列表
+    .param_type_list{
+        display: table;
+        width: 100%;
+        .hide_alike{
+            display: table-cell;
+            color: @eye-color;
+            // padding: .48rem /* 36/75 */ 0;
+            p{
+                width: 1.933rem /* 145/75 */;
+                line-height: .747rem /* 56/75 */;
+                text-align: center;
+                border: 1px solid @eye-color;
+                border-radius: .053rem /* 4/75 */;
+                margin: .133rem /* 10/75 */ .4rem /* 30/75 */;
+            }
+            .checked{
+                color: @color-main-blue;
+                border-color: @color-main-blue;
+            }
+        }
+        .check_type{
+            display: table-cell;
+            width: 72%;
+            height: 100%;
+            // overflow: hidden;
+            position: relative;
+            ul{
+                padding: .4rem /* 30/75 */ 0;
+                display: -webkit-box;
+                -webkit-box-orient: horizontal;
+                position: absolute;
+                top: 0;
+                left: 0;
+                li{
+                    width: 3.233333rem;
+                    border: 1px solid @color-main-blue;
+                    border-radius: .04rem /* 3/75 */;
+                    // padding: .133rem /* 10/75 */ .267rem /* 20/75 */ .187rem /* 14/75 */ .173rem /* 13/75 */;
+                    margin-right: .3rem;
+                    padding: 0.1rem;
+                    position: relative;
+                    .type_name{
+                        font-size: 13px;
+                        line-height: .4rem /* 30/75 */;
+                        margin-bottom: .133rem /* 10/75 */;
+                    }
+                    .type_price{
+                        font-size: 14px;
+                        color: @red-price;
+                    }
+                    em{
+                        .icon_bg(url("../img/delete_red.png"), .48rem /* 36/75 */, .48rem /* 36/75 */);
+                        position: absolute;
+                        top: -.24rem /* 18/75 */;
+                        right: -.24rem /* 18/75 */;
+                    }
+                    i{
+                        display: inline-block;
+                        border-bottom: 0.267rem solid @color-main-blue;
+                        border-left: 0.267rem solid transparent;
+                        position: absolute;
+                        bottom: .053rem /* 4/75 */;
+                        right: .053rem /* 4/75 */;
+                    }
+                }
+                .add_type{
+                    font-size: 15px;
+                    text-align: center;
+                    img{
+                        display: block;
+                        width: .453rem /* 34/75 */;
+                        height: .453rem /* 34/75 */;
+                        margin: .64rem /* 48/75 */ auto .133rem /* 10/75 */;
+                    }
+                }
+            }
+        }
+    }
+
+    // 配置参数表格
+    .param_table{
+        .bp{
+            display: inline-block;
+            border-radius: 50%;
+            width: .267rem /* 20/75 */;
+            height: .267rem /* 20/75 */;
+            background-color: @dian-border;
+        }
+        .xp{
+            display: inline-block;
+            border-radius: 50%;
+            width: .187rem /* 14/75 */;
+            height: .187rem /* 14/75 */;
+            border: .04rem /* 3/75 */ solid @dian-border;
+        }
+        .w{
+            display: inline-block;
+            width: .267rem /* 20/75 */;
+            height: 1px;
+            border-top: 2px solid @dian-border;
+            vertical-align: middle;
+        }
+        .param_title{
+            width: 92%;
+            padding: 0 4%;
+            background-color: @bg-color;
+            .title{
+                font-size: 14px;
+                color: @color-555;
+                line-height: .827rem /* 62/75 */;
+                float: left;
+            }
+            .item{
+                font-size: 11px;
+                color: @price-item-color;
+                float: right;
+                i{
+                    line-height: .827rem /* 62/75 */;
+                    display: inline-block;
+                    em{
+                        margin: 0 .16rem /* 12/75 */ 0 .373rem /* 28/75 */;
+                    }
+                }
+            }
+        }
+        table{
+            tr{
+                height: 1.28rem /* 96/75 */;
+                &.title_box{
+                    height:0.82rem;
+                }
+                th{
+                    color: @eye-color;
+                    width: 2.4rem /* 180/75 */;
+                    border: 1px solid @bg-color;
+                    word-break: break-all;
+                    // padding-left: .4rem /* 30/75 */;
+                }
+                td{
+                    color: @color-555;
+                    width: 3.333rem /* 250/75 */;
+                    border: 1px solid @bg-color;
+                    padding-left: .24rem /* 18/75 */;
+                    overflow: hidden;
+                    .inquiry_price{
+                        color: @color-fff;
+                        display: inline-block;
+                        width: 1.133rem /* 85/75 */;
+                        line-height: .533rem /* 40/75 */;
+                        text-align: center;
+                        background-color: @color-main-blue;
+                        border-radius: .053rem /* 4/75 */;
+                        vertical-align: middle;
+                        margin-left: .267rem /* 20/75 */;
+                    }
+                }
+                .blue_bg{
+                    background-color: @table-bg;
+                }
+            }
+        }
+    }
+
+    // 注
+    .tip_bar{
+        color: @color-999;
+        width: 92%;
+        padding: .267rem /* 20/75 */ 4% .307rem /* 23/75 */;
+        background-color: @bg-bar;
+        line-height: .48rem /* 36/75 */;
+    }
+
+    // 配置目录
+    .param_catalog{
+        display: none;
+        font-size: 14px;
+        position: fixed;
+        right: .133rem /* 10/75 */;
+        bottom: .24rem /* 18/75 */;
+        z-index: 99;
+        ul{
+            // display: none;
+            .border-jianbian(3px,3px,20px,3px,@catalog-border);
+            width: 5.893rem /* 442/75 */;
+            background-color: @color-fff;
+            border: 1px solid @catalog-border;
+            border-radius: .093rem /* 7/75 */;
+            padding: .24rem /* 18/75 */ .453rem /* 34/75 */ .293rem /* 22/75 */;
+            li{
+                float: left;
+                width: 50%;
+                line-height: .96rem /* 72/75 */;
+            }
+        }
+        span{
+            color: @color-fff;
+            .bg-jianbian(top left,bottom right,@ml-start,@ml-end);
+            .border-jianbian(0,5px,20px,0,@ml-end);
+            border-radius: 50%;
+            width: 1.307rem /* 98/75 */;
+            height: 1.307rem /* 98/75 */;
+            line-height: 1.307rem /* 98/75 */;
+            text-align: center;
+            display: inline-block;
+            position: absolute;
+            right: .32rem /* 24/75 */;
+            bottom: .16rem /* 12/75 */;
+        }
+    }
+}
+
+//dpr=2字体大小
+[data-dpr="2"] .param_config_page{
+    // 配置车型列表
+    .param_type_list{
+        .check_type{
+            .type_name{
+                font-size: 26px;
+            }
+            .type_price{
+                font-size: 28px;
+            }
+            .add_type{
+                font-size: 30px;
+            }
+        }
+    }
+    // 配置参数表格
+    .param_table{
+        .param_title{
+            .title{
+                font-size: 28px;
+            }
+            .item{
+                font-size: 22px;
+            }
+        }
+    }
+    // 配置目录
+    .param_catalog{
+        font-size: 28px;
+    }
+}
+//dpr=3字体大小
+[data-dpr="3"] .param_config_page{
+    // 配置车型列表
+    .param_type_list{
+        .check_type{
+            .type_name{
+                font-size: 39px;
+            }
+            .type_price{
+                font-size: 42px;
+            }
+            .add_type{
+                font-size: 45px;
+            }
+        }
+    }
+    // 配置参数表格
+    .param_table{
+        .param_title{
+            .title{
+                font-size: 42px;
+            }
+            .item{
+                font-size: 33px;
+            }
+        }
+    }
+    // 配置目录
+    .param_catalog{
+        font-size: 42px;
+    }
+
+}
+
+.page-header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}

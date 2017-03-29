@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>404</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="stylesheet"  href="css/base.css"/>
+    <link rel="stylesheet"  href="css/404.css"/>
+</head>
+
+<body>
+<div class="header">
+    <!--nav model -->
+    {{#include ./mod/mod_headerTitle2.html}}
+</div>
+
+<!--content-->
+<div class="main404" id="main404">
+    <img src="img/404.jpg" width="350" />
+    <p>咦，您访问的页面出错了，正在抢修中~</p>
+    <a href="#">回到首页</a>
+</div>
+
+
+
+<!--footer model -->
+{{#include ./mod/mod_footer.html}}
+
+</body>
+<script type="text/javascript">
+    document.getElementById('main404').style.height = window.innerHeight - 110 + 'px';
+</script>
+</html>

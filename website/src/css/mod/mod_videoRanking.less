@@ -1,0 +1,156 @@
+/*****
+ *@author: jianingning
+ *@from: 用于视频播放排行
+ *@description: 
+ *@date: name (2017.02.07)
+*/
+
+
+@import (reference) "../public";
+
+.v-ranking {
+    .ranking-lis {
+        color: @color-333;
+        height: 34px;
+        font-size: @font-12 + 8;
+        font-weight: 700;
+        border-bottom: @border-b-333;
+        margin-bottom: 4px;
+
+        .ranking-title {
+            .inline-block;
+        }
+        .weeks,.month {
+            font-size: @font-12 + 4;
+            .inline-block;
+            .cursor;
+        }
+        .weeks {
+            height: 16px;
+            width: 42px;
+            text-align: center;
+            line-height: 16px;
+            margin-right: 12px;
+            margin-top: 8px;
+            border-right: 1px solid @color-eee;
+        }
+        .blue_text {
+            color: @color-blue;
+        }
+        .month {
+            margin-top: 5px;
+        }
+    }
+    .ranking-con {
+        display: none;
+
+        .ranking-play {
+            margin-top: 10px;
+            width: 252px;
+            height: 168px;
+            .cursor;
+
+            a {
+                .ranking-time-wrap {
+                    position: absolute;
+                    top: 146px;
+                    right: 4px;
+                    width: 44px;
+                    height: 18px;
+                    text-align: center;
+                    line-height: 18px;
+                    z-index: 2;
+                    background: #3a2a25;
+                    opacity: 0.5;
+                    filter: alpha(opacity=50);
+                }
+                .ranking-time {
+                    color: @color-fff;
+                    width: 44px;
+                    height: 18px;
+                    line-height: 18px;
+                    position: absolute;
+                    top: 146px;
+                    right: 0px;
+                    z-index: 3;
+                    font-size: 14px;
+                }
+                .ranking-play-btn {
+                    .inline-block;
+                    background-image: url("../img/sprite.png");
+                    background-position: 0px -1400px;
+                    width: 50px;
+                    height: 50px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    margin-left: -25px;
+                    margin-top: -25px;
+                    display: none;
+                    
+                    &:hover {
+                        background-position: 0px -1455px;
+                    }   
+                }
+            }
+        }
+    }
+    .show {
+        display: block;
+    }
+    .ranking-list {
+        width: 252px;
+        height: auto;
+        margin-top: 5px;
+
+        li {
+            line-height: 33px;
+            height: 33px;
+            width: 252px;
+
+            span {
+                .inline-block;
+                width: 15px;
+                height: 15px;
+                text-align: center;
+                line-height: 15px;
+                border: 1px solid @color-eee;
+                margin-right: 5px;
+                margin-top: 8px;
+            }
+            .orange {
+                background: @color-orange;
+                width: 16px;
+                height: 16px;
+                text-align: center;
+                line-height: 16px;
+                border: none;
+                color: @color-fff;
+            }
+            a {
+                font-size: @font-12;
+                color: @color-333;
+                .inline-block;
+                line-height: 33px;
+                height: 33px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                &:hover {
+                    text-decoration: underline;
+                    color: @color-126acc;
+                }
+                &:active {
+                    text-decoration: underline;
+                    color: #1064c1;
+                }
+            }
+            .a_hover {
+                text-decoration: underline;
+                color: @color-126acc;
+            }
+        }
+    }
+}

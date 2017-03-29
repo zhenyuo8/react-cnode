@@ -1,0 +1,58 @@
+<div class="article-bg" style="height: 100%">
+    <carserial-header title="评测导购" page="news"></carserial-header>
+	<!-- 文章主页面 -->
+    <div class="article_page">
+
+		<!-- 文章列表 -->
+		<div class="article_main" v-if="rows.length">
+			<swiper :options="swiperOption">
+                <swiper-slide v-for="row in rows">
+					<ul class="article_list" v-bind:class="{article_one:row.length===1}">
+						<template v-for="el in row">
+						<li v-if="el.isAd">
+							<a class="clearfix" v-bind:href="el.Link" target="_blank">
+								<span class="car_pic"><img v-bind:src="el.ImageUrl"></span>
+								<div class="article_news">
+									<p class="news_title">{{el.Text}}</p>
+									<p class="news_time">{{el.publish_time}}</p>
+								</div>
+								<i></i>
+							</a>
+						</li>
+						<li v-else>
+							<a class="clearfix" :href="el.urlMobile" target="_blank" v-if="el.newstype === 1">
+								<span class="car_pic"><img v-bind:src="el.piccover"></span>
+								<div class="article_news">
+									<p class="news_title">{{el.title}}</p>
+									<p class="news_time">{{el.publish_time}}</p>
+								</div>
+								<i></i>
+							</a>
+							<router-link class="clearfix" :to="{name:'news',query:{newsId:el.newsId,serialId:serialId}}" v-else reload>
+								<span class="car_pic"><img v-bind:src="el.piccover"></span>
+								<div class="article_news">
+									<p class="news_title">{{el.title}}</p>
+									<p class="news_time">{{el.publish_time}}</p>
+								</div>
+								<i></i>
+							</router-link>
+						</li>
+						</template>
+					</ul>
+                </swiper-slide>
+				<div class="swiper-pagination"  slot="pagination" v-show="rows.length>1"></div>
+			</swiper>
+		</div>
+
+        <div class="nothing_bg" v-if="!loading && rows.length===0">
+            <div class="nothing">
+    			<img src="../../img/waiting.png">
+    			<p class="waiting_text">数据完善中…</p>
+    			<p class="coming">敬请期待</p>
+    		</div>
+            <div class="nothing_bot"></div>
+        </div>
+
+    </div>
+	<div class="next_page"></div>
+</div>

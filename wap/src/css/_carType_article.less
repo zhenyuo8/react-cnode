@@ -1,0 +1,173 @@
+/*****
+ *@author: linyh
+ *@from: Global style cartype_article(车型-视频)
+ *@description: 陈璐
+ *@date: name (2017.02.24)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_pubHeadNav";
+@import "mod/mod_pubHead";
+@import "mod/mod_carNav.less";
+@import "mod/mod_footer";
+@import "mod/mod_goTop";
+
+
+// 车型文章主页面
+.cartype_article{
+
+    // 灰色间隔条
+    .bg_bar{
+        width: 100%;
+        height: .4rem /* 30/75 */;
+        background-color: @bg-bar;
+    }
+
+    // 文章模块
+    .article_news{
+        .news_list{
+            dl{
+                .article_list;
+            }
+        }
+        .load_more_module{
+            width: 92%;
+            margin: 0 4% .267rem /* 20/75 */;
+            .load_more{
+                .load_more;
+            }
+            .loading{
+                .loading;
+                display: none;
+            }
+            .no_more{
+                .no_more;
+                display: none;
+            }
+        }
+        /*没有图片时显示*/
+        .carstyle_img_empty {
+            width: 100%;
+            position: relative;
+
+            img {
+                display: inline-block;
+                width: 4.257rem;
+                height: 4.257rem;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-top: -1.828rem;
+                margin-left: -3.828rem;
+            }
+            p {
+               font-size: 15px;
+               font-weight: 700;
+               position: absolute;
+            }
+            .e_text1 {
+                top: 50%;
+                left: 50%;
+                margin-top: -.8rem;
+                margin-left: .6rem;
+            }
+            .e_text2 {
+                top: 50%;
+                left: 50%;
+                margin-left: .6rem;
+            }
+        }
+    }
+
+    // 面包屑导航
+    .small_nav{
+        font-size: 14px;
+        width: 92%;
+        margin: 0 4%;
+        line-height: 1.067rem /* 80/75 */;
+        border-bottom: 1px solid @list-border;
+        a{
+            color: @color-666;
+        }
+        i{
+            .icon_bg(url(../img/small_rightjt.png), .12rem /* 9/75 */, .213rem /* 16/75 */);
+            margin: 0 .213rem /* 16/75 */;
+            display: inline-block;
+        }
+        span{
+            color: @color-999;
+        }
+    }
+
+}
+
+
+//dpr=2字体大小
+[data-dpr="2"] .cartype_article{
+    // 面包屑导航
+    .small_nav{
+        font-size: 28px;
+    }
+    // 文章模块
+    .article_news{
+        .news_list{
+            .article_list{
+                .synopsis {
+                    font-size: 30px;
+                }
+                .minor {
+                    font-size: 24px;
+                }
+            }
+        }
+        .load_more_module{
+            .load_more{
+                font-size: 26px;
+            }
+            .no_more{
+                font-size: 26px;
+            }
+        }
+        .carstyle_img_empty {
+            p {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+//dpr=3字体大小
+[data-dpr="3"] .cartype_article{
+    // 面包屑导航
+    .small_nav{
+        font-size: 42px;
+    }
+    // 文章模块
+    .article_news{
+        .news_list{
+            .article_list{
+                .synopsis {
+                    font-size: 45px;
+                }
+                .minor {
+                    font-size: 36px;
+                }
+            }
+        }
+        .load_more_module{
+            .load_more{
+                font-size: 39px;
+            }
+            .no_more{
+                font-size: 39px;
+            }
+        }
+        .carstyle_img_empty {
+            p {
+                font-size: 45px;
+            }
+        }
+    }
+}

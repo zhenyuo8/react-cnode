@@ -1,0 +1,227 @@
+@import (reference) "public";
+@import (reference) "./mod/mod_headerTitle";
+@import (reference) "./mod/mod_headerLogo";
+@import "mod/mod_headerCarMenu";
+@import (reference) "_articleCommentPage";
+@import (reference) "./mod/mod_footer";
+@import (reference) "./mod/mod_goTop";
+
+.pub-list {
+  li {
+    &.first{
+      margin-right:5px;
+      margin-right:5px\0;
+    }
+    &.first_fl{
+      margin-left: 2px;
+      margin-left:2px\0;
+    }
+    margin-bottom:10px;
+    .float_l;
+    .a;
+    dl {
+      width:236px;
+      height:201px;
+      .cursor;
+      dt{
+        img{
+          width: 236px;
+          height: 158px;
+          display: inline-block;
+        }
+        .play_btn{
+          display: inline-block;
+          width: 50px;
+        height: 50px;
+        background-image: url('../img/sprite.png');
+        background-position: 0px -1400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -25px;
+        margin-top: -38px;
+        display: none;
+        }
+      }
+
+      dd {
+        font-size:@font-size-12 + 2;
+        color:@color-333;
+        height:33px;
+        line-height: 33px;
+        //padding-left:4px;
+      }
+      .v-small-tit {
+        width:236px;
+        height:33px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        text-indent: 4px;
+      }
+      .v-time {
+        .time;
+      }
+      .r-play-btn {
+        position:absolute;
+        top:50%;
+        left:50%;
+        margin-left: -25px;
+        margin-top: -38px;
+        display:none;
+      }
+      &:hover {
+        background:@color-eee;
+      }
+    }
+  }
+}
+
+.a{
+  display: inline-block;
+  float: left;
+}
+
+.time {
+  position:absolute;
+  top:136px;
+  right:4px;
+  width:44px;
+  height:18px;
+  text-align: center;
+  line-height: 18px;
+  z-index: 2;
+  background:#3a2a25;
+  opacity:0.5;
+  filter:alpha(opacity=50);
+  color:@color-fff;
+}
+.main{
+  position: relative;
+  width: 100%;
+  .header{
+    .header;
+    .hearer_advertisement;
+  };
+
+  .video_content{
+    width: 100%;
+    height: 100%;
+    .video_content_nav{
+      width: 990px;
+      margin: 0 auto;
+      overflow: hidden;
+
+    }
+    .video_content_detail{
+      width: 990px;
+      margin:0 auto;
+
+      .leftTree{
+        width: 270px;
+        height: 1068px;
+
+      }
+
+      .rightTree{
+        width: 720px;
+        margin-top: 20px;
+        position: relative;
+        .video_text{
+          width: 720px;
+          height: 82px;
+          font-family: "Microsoft YaHei", "微软雅黑";
+          border-bottom: @border-b-333;
+          .location_cur{
+            span,a{
+              font-size: 12px;
+
+            }
+            span{
+              color:@color-999
+            }
+            .web_title{
+              color: @color-666;
+            }
+            .a_video{
+              color: @color-398be4;
+            }
+          }
+
+          .new_video{
+            height: 70px;
+            margin-top: 28px;
+            span{
+              margin: 0;
+              padding: 0;
+              display: inline-block;
+              height: 44px;
+              line-height: 44px;
+              font-size: 20px;
+              font-weight: bold;
+            }
+
+          }
+        }
+
+        .new-video-box{
+          width: 720px;
+          height: 100%;
+        }
+
+        .new-video-box {
+          width:720px;
+          height:auto;
+          margin-top: 12px;
+          overflow: hidden;
+
+          .new-video-type {
+            width:720px;
+            height:auto;
+            display:none;
+            .pub-list;
+
+          }
+          .show {
+            display: block;
+          }
+        }
+
+        .noResult {
+          width: 100%;
+          text-align: center;
+          padding-top: 50px;
+
+          p{
+            display: inline-block;
+            height: 252px;
+            line-height: 252px;
+            font-size: 26px;
+            margin-left: 22px;
+          }
+        }
+
+      }
+    }
+  }
+  .footer{
+   .footer;
+  }
+  .goTop{
+    .goTop;
+  }
+}
+.pub-list {
+  ul{
+    li{
+      a:hover{
+        .play_btn{
+          display: block;
+        }
+      }
+      .play_btn:hover{
+            background-position: 0px -1455px;
+          }
+    }
+  }
+}

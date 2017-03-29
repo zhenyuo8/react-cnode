@@ -1,0 +1,131 @@
+/*****
+ *@author: linyh
+ *@from: Global style article
+ *@description: 陈璐
+ *@date: name (2017.02.15)
+*/
+
+@import (reference) "public";
+
+// 背景自适应全屏
+.article-bg{
+    .bg-jianbian(left,right,#24a7fe,#2992fe);
+}
+
+// 文章主页面
+.article_page{
+    padding-top: 28%;
+    // 文章列表
+    .article_main{
+        .swiper-pagination{
+            .swiper-pagination-bullet{
+                background: @dian-bg;
+            }
+            .swiper-pagination-bullet-active{
+                background: #fff;
+            }
+        }
+        .article_list{
+            width: 94%;
+            height: 10.2rem;
+            margin: 0 auto;
+            li{
+                padding: 0 .3rem ;
+                .xiejiao(0.147rem /* 11/75 */,@color-fff,50.2%,51.1%); /*斜角效果*/
+                &:first-child{
+                    .top-xiejiao(45deg,-45deg,0.147rem /* 11/75 */,@color-fff,50.5%,100%,bottom left,bottom right);
+                }
+                &:last-child{
+                    .top-xiejiao(135deg,-135deg,0.147rem /* 11/75 */,@color-fff,50.5%,100%,top left,top right);
+                }
+                a{
+                    border-bottom: 1px solid #eee;
+                    padding:  .2rem 0;
+                    display: block;
+                    .car_pic{
+                        float: left;
+                        img{
+                            width: 2.4rem;
+                            height: 1.6rem;
+                        }
+                    }
+                    .article_news{
+                        width: 67%;
+                        float: left;
+                        .news_title{
+                            font-size: 15px;
+                            line-height: .533rem /* 40/75 */;
+                            height: 1.067rem /* 80/75 */;
+                            overflow: hidden;
+                            margin: .08rem .307rem 0;
+                        }
+                        .news_time{
+                            color: @color-999;
+                            font-size: 11px;
+                            padding: 0 .307rem;
+                        }
+                    }
+                    i{
+                        background-image: url("../img/right.png");
+                        background-size: cover;
+                        width: .187rem /* 14/75 */;
+                        height: .347rem /* 26/75 */;
+                        margin-top: .64rem /* 48/75 */;
+                        float: left;
+                    }
+                }
+            }
+        }
+        .article_one li:last-child{    
+            background-size:cover;
+        }
+    }
+}
+
+
+/* 字体大小适配 */
+//dpr=2字体大小
+[data-dpr="2"] .article_page{
+    // 标题
+    .article_title{
+        .title{
+            font-size: 48px;
+        }
+    }
+    // 文章列表
+    .article_main{
+        .article_list{
+                .article_news{
+                    .news_title{
+                        font-size: 30px;
+                    }
+                    .news_time{
+                        font-size: 22px;
+                    }
+                }
+            }
+    }
+}
+
+//dpr=3字体大小
+[data-dpr="3"] .article_page{
+    // 标题
+    .article_title{
+        .title{
+            font-size: 72px;
+        }
+    }
+    // 文章列表
+    .article_main{
+        .article_list{
+                .article_news{
+                    .news_title{
+                        font-size: 42px;
+                    }
+                    .news_time{
+                        font-size: 30px;
+                    }
+                }
+        }
+    }
+}

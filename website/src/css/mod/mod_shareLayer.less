@@ -1,0 +1,109 @@
+/*****
+ *@author: jianingning
+ *@from: Global style mod_carLike
+ *@description: 何在朋
+ *@date: name (2017.02.04)
+*/
+
+
+
+
+@import (reference) "../public";
+/*微信分享*/
+.wx_wrap {
+  position: relative;
+  margin-right: 20px;
+  z-index: 99;
+}
+#putweixin {
+  position:absolute;
+  top:138px;
+  left:-32px;
+  display: none;
+}
+.share-to-qq{
+    text-align: center;
+    position: relative;
+    width: 240px;
+    margin: 28px auto 0;
+    &>a{
+      margin-right: 20px;
+    }
+    &>.fenxiang {
+      position: absolute;
+      top: 46px;
+      left: 112px;
+      z-index: 10;
+      display: none;
+    }
+    &>.dele_close{
+      position: absolute;
+      top: 43px;
+      left: 318px;
+      display: none;
+      cursor: pointer;
+    }
+}
+.icon-wx_norme{
+  background-image: url("../img/sprite.png");
+  background-position: 0px -860px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  img{
+    padding-top: 10px;
+    margin-top: -10px;
+    top: 45px;
+    left: -76px;
+    display: none;
+  }
+}
+.icon-wx_norme:hover img{
+  display: block;
+  
+}
+.icon-wx_norme:hover{
+  background-position: 0px -1130px;
+}
+.icon-wx_norme:active{
+  background-position: 0px -1355px;
+}
+.icon-wb_norme {
+  background-image: url("../img/sprite.png");
+  background-position: 0px -1310px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+.icon-wb_norme:hover{
+  background-position: 0px -1265px;
+}
+.icon-wb_norme:active{
+  background-position: 0px -1220px;
+}
+.icon-kj_norme{
+  background-image: url("../img/sprite.png");
+  background-position: 0px -1040px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+.icon-kj_norme:hover{
+  background-position: 0px -1085px;
+}
+.icon-kj_norme:active{
+  background-position: 0px -815px;
+}
+.icon-qq_norme{
+  background-image: url("../img/sprite.png");
+  background-position: 0px -905px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+.icon-qq_norme:hover{
+  background-position: 0px -950px;
+}
+.icon-qq_norme:active{
+  background-position: 0px -995px;
+}

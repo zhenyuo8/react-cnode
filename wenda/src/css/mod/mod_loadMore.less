@@ -1,0 +1,27 @@
+//新闻列表加载提示
+.news-load-tips{
+    cursor: pointer;
+    padding:20px 0 48px 0;
+    p{
+        font-size:@fontSize-14;
+        color:@color-999;
+        width:100%;
+        line-height:40px !important;
+        text-align: center;
+        background-color: @color-eee;
+        .news-load-more{
+            &:hover{
+                color:@color-a-hover;
+            }
+            &:active{
+                color:@color-a-active;
+            }
+        }
+        .news-load-now{
+            display: none;
+        }
+        .news-no-more{
+            display: none;
+        }
+    }
+}

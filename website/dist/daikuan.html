@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>购车计算器-贷款</title>
+    <link rel="stylesheet" href="css/base.css"/>
+
+    <link rel="stylesheet" href="css/carSelectS.css">
+    <link rel="stylesheet" href="css/paidSafe2.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css">
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="js/newCars.js"></script>
+    <script src="data/searchlist.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/daikuan.js"></script>
+    <script src="js/goTop.js"></script>
+</head>
+<body>
+<div class="header">
+    <!--nav model -->
+    <!-- 顶部导航模块 -->
+<div class="header_nav">
+    <div class="header_nav_content">
+        <ul class="header_nav_left">
+            <li class="car_all"> <span class="car_all_s"> <a href="index.html" target="_blank" class="bg">汽车大全</a> </span> </li>
+            <li class="address_li"> <span class="default_address"><a href="#">北京</a></span> </li>
+            <li class="city_position" id="city_position"> <span class="changeAdd" id="city_position_qie">切换</span> <span class="triangle" id="city_position_triangle"></span>
+                <div class="city_chose" id="city_chose" style="display: none">
+                    <div class="city_search">
+                        <div class="city_search_input"> <span class="search_btn"> <img src="img/search-btn.png" alt=""> </span> <span> <input type="text" value="请输入城市" class="input" id="input_letters"> <div class="input_letters_search" id="input_letters_search" style="display: none"> <ul id="input_city_search"> <li class="click_to_destiny"> <span><img src="img/city_down_select.png" alt=""></span>                            <span>点击直达</span> </li>
+            <li class="city_search_result"> <span class="city_text">北京</span> <span class="city_letters">beijing</span> </li>
+            <li class="city_search_result"> <span class="city_text">上海</span> <span class="city_letters">shanghai</span> </li>
+            <li class="city_search_result"> <span class="city_text">南昌</span> <span class="city_letters">nanchang</span> </li>
+            <li class="city_search_result"> <span class="city_text">深圳</span> <span class="city_letters">shenzhen</span> </li>
+        </ul>
+        </div>
+        </span> <span class="city_hot_search"> <a href="#">北京</a> <a href="#">上海</a> <a href="#">广州</a> <a href="#">深圳</a> <a href="#">武汉</a> <a href="#">杭州</a> </span> <span class="delete_city"> <img src="img/delete-btn.png" alt=""> </span> </div>
+        </div>
+        <div class="hot_city_num"> <a href="#">A</a> <a href="#">B</a> <a href="#">C</a> <a href="#">N</a> <a href="#">H</a> <a href="#">J</a> <a href="#">X</a> <a href="#">Z</a> </div>
+        <div class="city_chose_region" id="city_chose_region">
+            <!--城市选择模块位置-->
+            <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                    <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+            </dl>
+            <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                    <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+            </dl>
+            <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                    <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+            </dl>
+            <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                    <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+            </dl>
+            <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                    <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+            </dl>
+            <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                    <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+            </dl>
+            <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                    <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+            </dl>
+        </div>
+    </div>
+    </li>
+    <li class="nav_line"> <span></span> </li>
+    <li> <span class="others"><a href="#">查看其他地方车市</a></span> </li>
+    </ul>
+    <ul class="header_nav_right">
+        <li class="header_hover" id="app_id"> <span class="app" id="app"> <a href="#">移动应用</a> </span> <span class="triangle"></span> </li>
+        <li class="nav_line nav_line2" id="nav_line"><span></span></li>
+        <li class="header_hover message_notice" style="display: none"> <em></em> <i></i> <span class="message_drop"> <a href="#"><span>我的询价</span> ><i></i></a> <a href="#"><span>我的问答</span> ><i></i></a> <a href="#"><span>我的评论</span> ><i></i></a> <a href="#"><span>消息中心</span> ><i></i></a> </span>
+        </li>
+        <li class=" header_hover login_third" id="login_third"> <span><a href="#">第三方登录</a></span> <span class="triangle1"></span> <span class="login_third_container"> <a href="#" class="wx"><i></i>微信</a> <a href="#" class="wb"><i></i>微博</a> <a href="#" class="tx_qq"><i></i>QQ</a> </span> </li>
+        <li class="nav_line "
+            id="nav_line2"><span></span></li>
+        <li class="header_hover user_name" style="display: none"> <span><a href="#">conan</a></span> <span class="triangle2"></span> <span class="user_drop"> <span class="latest_view"> <a href="#" class="view_res">最近看过的</a> <a href="#">宝马6系</a> <a href="#">奥迪7系</a> <a href="#">英菲尼迪Q70L</a> </span> <span class="sign_out"> <a href="#">我的收藏</a> <a href="#">退出登录</a> </span>            </span>
+        </li>
+        <li class="header_hover" id="register_id"> <span class="register" id="register"><a href="#">注册</a></span> </li>
+        <li class="bg header_hover" id="login_id"> <span class="login bg"><a href="#">登录</a></span> </li>
+    </ul>
+</div>
+</div>
+
+    <!--logo model -->
+    <!-- 头部 Logo 及 banner 模块 -->
+<div class="logo">
+    <div class="logo_left">
+        <a href="index.html"> <img src="img/logo_car.png" alt="这是logo图片"> </a>
+    </div>
+    <div class="logo_right">
+        <a href="#">
+            <!-- <img src="img/top-logo-nav.png" alt="这是广告图片"> -->
+            <XYins id="div_a8326c61-5174-49fe-902c-860df07bab64" data-type="ad_play" data-adplay_IP="" data-adplay_AreaName="" data-adplay_CityName="" data-adplay_BrandID="" data-adplay_BrandName="" data-adplay_BrandType="" data-adplay_BlockCode="a8326c61-5174-49fe-902c-860df07bab64">
+            </XYins>
+        </a>
+    </div>
+</div>
+
+
+</div>
+
+<!--内容区-->
+<div class="paidsafe_wrap">
+    <!--面包屑-->
+    <div class="content_nav">
+        <strong>当前位置：</strong>
+        <span><a href="javascript:;">首页</a> > <a href="javascript:;">车型</a> > <a href="javascript:;">参数对比</a></span>
+    </div>
+
+    <!--全款，贷款切换-->
+    <ul class="head_title cf">
+        <li class=""><a href="quankuan.html">全款</a></li>
+        <li class="active"><a href="javascript:;">贷款</a></li>
+    </ul>
+
+    <!--选择车款-->
+    <div class="chose_type cf">
+        <p class="fl">选择车款</p>
+        <!--三级联动菜单-->
+        <!--保险页面三级联动菜单-->
+<div class="car_select_input_box Js_car_select_input_box cf">
+    <div class="car_brand po-r is_ho Js-car_brand" isclick="true"> <span class="Js_car_barnd_word">宝马</span>
+        <div class="h10">
+            <div class="car_barnd_box po-a clearfix Js-car_barnd_box">
+                <div class="letter_index fl Js_letter_index">
+                    <ul>
+                        <li class="active">A</li>
+                        <li>B</li>
+                        <li>C</li>
+                        <li>D</li>
+                        <li>E</li>
+                        <li>F</li>
+                        <li>G</li>
+                        <li>H</li>
+                        <li>I</li>
+                        <li>J</li>
+                        <li>K</li>
+                        <li>L</li>
+                        <li>M</li>
+                        <li>N</li>
+                        <li>O</li>
+                        <li>P</li>
+                        <li>Q</li>
+                        <li>R</li>
+                        <li>S</li>
+                        <li>T</li>
+                        <li>U</li>
+                        <li>V</li>
+                        <li>W</li>
+                        <li>X</li>
+                        <li>Y</li>
+                        <li>Z</li>
+                    </ul>
+                </div>
+                <div class="car_brand_con fr Js_car_brand_con">
+                    <dvi class="ul">
+                        <ul class="car_brand_A_ul" carBrandType="A">
+                            <li> <span class="letter">A</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">A</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">A</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">A</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">A</span> <span class="car_brand_name">奥迪</span> </li>
+                        </ul>
+                        <ul class="car_brand_B_ul" carBrandType="B">
+                            <li> <span class="letter">B</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">B</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">B</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">B</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">B</span> <span class="car_brand_name">奥迪</span> </li>
+                        </ul>
+                        <ul class="car_brand_C_ul" carBrandType="C">
+                            <li> <span class="letter">C</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">C</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">C</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">C</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">C</span> <span class="car_brand_name">奥迪</span> </li>
+                        </ul>
+                        <ul class="car_brand_D_ul" carBrandType="D">
+                            <li> <span class="letter">D</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">D</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">D</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">D</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">D</span> <span class="car_brand_name">奥迪</span> </li>
+                        </ul>
+                        <ul class="car_brand_E_ul" carBrandType="E">
+                            <li> <span class="letter">E</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">E</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">E</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">E</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">E</span> <span class="car_brand_name">奥迪</span> </li>
+                        </ul>
+                        <ul class="car_brand_F_ul" carBrandType="F">
+                            <li> <span class="letter">F</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">F</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">F</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">F</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">F</span> <span class="car_brand_name">奥迪</span> </li>
+                        </ul>
+                        <ul class="car_brand_G_ul" carBrandType="G">
+                            <li> <span class="letter">G</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">G</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">G</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">G</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">G</span> <span class="car_brand_name">奥迪</span> </li>
+                        </ul>
+                        <ul class="car_brand_H_ul" carBrandType="H">
+                            <li> <span class="letter">H</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">H</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">H</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">H</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">H</span> <span class="car_brand_name">奥迪</span> </li>
+                        </ul>
+                        <ul class="car_brand_I_ul" carBrandType="I">
+                            <li> <span class="letter">I</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">I</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">I</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">I</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">I</span> <span class="car_brand_name">奥迪0</span> </li>
+                        </ul>
+                        <ul class="car_brand_J_ul" carBrandType="J">
+                            <li> <span class="letter">J</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">J</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">J</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">J</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">J</span> <span class="car_brand_name">奥迪0</span> </li>
+                        </ul>
+                        <ul class="car_brand_K_ul" carBrandType="K">
+                            <li> <span class="letter">K</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">K</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">K</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">K</span> <span class="car_brand_name">奥迪</span> </li>
+                            <li> <span class="letter">K</span> <span class="car_brand_name">奥迪0</span> </li>
+                        </ul>
+                    </dvi>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="car_type po-r Js-car_type" isclick="false"> <span class="Js_car_type_word">宝马7系列</span>
+        <div class="h10">
+            <div class="car_type_box po-a Js_car_type_box">
+                <div class="car_type_con Js_car_type_con">
+                    <dl> <dt>一汽奥迪</dt>
+                        <dd>A3</dd>
+                        <dd>A4</dd>
+                        <dd>A4L</dd>
+                        <dd>A6L&nbsp;<span class="c_cd">停售</span></dd>
+                        <dd>Q3</dd>
+                        <dd>Q5</dd>
+                        <dd>Q7</dd>
+                        <dd>A4</dd>
+                        <dd>100&nbsp;<span class="c_cd">停售</span></dd>
+                        <dd>100&nbsp;<span class="c_cd">停售</span></dd>
+                        <dd>100&nbsp;<span class="c_cd">停售</span></dd>
+                    </dl>
+                    <dl> <dt>进口奥迪</dt>
+                        <dd>A3</dd>
+                        <dd>A4</dd>
+                        <dd>A4L</dd>
+                        <dd>A6L</dd>
+                        <dd>Q3</dd>
+                        <dd>Q5</dd>
+                        <dd>Q7</dd>
+                        <dd>A4</dd>
+                        <dd>100&nbsp;<span class="c_cd">停售</span></dd>
+                        <dd>100&nbsp;<span class="c_cd">停售</span></dd>
+                        <dd>100&nbsp;<span class="c_cd">停售</span></dd>
+                    </dl>
+                    <dl> <dt>进口奥迪</dt>
+                        <dd>A3</dd>
+                        <dd>A4</dd>
+                        <dd>A4L</dd>
+                        <dd>A6L</dd>
+                        <dd>Q3</dd>
+                        <dd>Q5</dd>
+                        <dd>Q7</dd>
+                        <dd>A4</dd>
+                        <dd>100&nbsp;<span class="c_cd">停售</span></dd>
+                        <dd>100&nbsp;<span class="c_cd">停售</span></dd>
+                        <dd>100&nbsp;<span class="c_cd">停售</span></dd>
+                    </dl>
+                    <dl> <dt>进口奥迪</dt>
+                        <dd>A3</dd>
+                        <dd>A4</dd>
+                        <dd>A4L</dd>
+                        <dd>A6L</dd>
+                        <dd>Q3</dd>
+                        <dd>Q5</dd>
+                        <dd>Q7</dd>
+                        <dd>A4</dd>
+                        <dd>100&nbsp;<span class="c_cd">停售</span></dd>
+                        <dd>100&nbsp;<span class="c_cd">停售</span></dd>
+                        <dd>100&nbsp;<span class="c_cd">停售</span></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="car_year po-r Js-car_year" isclick="false"> <span isclick="false" class="Js_car_des">2016歀 740Li 豪华型</span>
+        <div class="h10">
+            <div class="car_year_box po-a Js-car_year_box">
+                <dl> <dt>2016款</dt>
+                    <dd> <span class="span">Sportback35TFUSI&nbsp;进取型</span> <span class="c_e53b3c fr">12.8万起</span> </dd>
+                    <dd> <span class="span">Sportback35TFUSI&nbsp;进取型</span> <span class="c_e53b3c fr">12.8万起</span> </dd>
+                    <dd> <span class="span">Sportback35TFUSI&nbsp;进取型</span> <span class="c_e53b3c fr">12.8万起</span> </dd>
+                    <dd> <span class="span">Sportback35TFUSI&nbsp;进取型</span> <span class="c_e53b3c fr">12.8万起</span> </dd>
+                    <dd> <span class="span">Sportback35TFUSI&nbsp;进取型</span> <span class="c_e53b3c fr">12.8万起</span> </dd>
+                    <dd> <span class="span">Sportback35TFUSI&nbsp;进取型</span> <span class="c_e53b3c fr">12.8万起</span> </dd>
+                    <dd> <span class="span">Sportback35TFUSI&nbsp;进取型</span> <span class="c_e53b3c fr">12.8万起</span> </dd>
+                    <dd> <span class="span">Sportback35TFUSI&nbsp;进取型</span> <span class="c_e53b3c fr">12.8万起</span> </dd>
+                    <dd> <span class="span">Sportback35TFUSI&nbsp;进取型</span> <span class="c_e53b3c fr">12.8万起</span> </dd>
+                    <dd> <span class="span">Sportback35TFUSI&nbsp;进取型</span> <span class="c_e53b3c fr">12.8万起</span> </dd>
+                </dl>
+                <dl> <dt>2015款</dt>
+                    <dd> <span>Sportback35TFUSI&nbsp;进取型</span> <span class="c_e53b3c fr">12.8万起</span> </dd>
+                    <dd> <span>Sportback35TFUSI&nbsp;进取型</span> <span class="c_e53b3c fr">12.8万起</span> </dd>
+                    <dd> <span>Sportback35TFUSI&nbsp;进取型</span> <span class="c_e53b3c fr">12.8万起</span> </dd>
+                    <dd> <span>Sportback35TFUSI&nbsp;进取型</span> <span class="c_e53b3c fr">12.8万起</span> </dd>
+                    <dd> <span>Sportback35TFUSI&nbsp;进取型</span> <span class="c_e53b3c fr">12.8万起</span> </dd>
+                    <dd> <span>Sportback35TFUSI&nbsp;进取型</span> <span class="c_e53b3c fr">12.8万起</span> </dd>
+                    <dd> <span>Sportback35TFUSI&nbsp;进取型</span> <span class="c_e53b3c fr">12.8万起</span> </dd>
+                    <dd> <span>Sportback35TFUSI&nbsp;进取型</span> <span class="c_e53b3c fr">12.8万起</span> </dd>
+                    <dd> <span>Sportback35TFUSI&nbsp;进取型</span> <span class="c_e53b3c fr">12.8万起</span> </dd>
+                    <dd> <span>Sportback35TFUSI&nbsp;进取型</span> <span class="c_e53b3c fr">12.8万起</span> </dd>
+                </dl>
+                <dl> <dt>2014款</dt>
+                    <dd> <span>Sportback35TFUSI&nbsp;进取型</span> <span class="c_e53b3c fr">12.8万起</span> </dd>
+                    <dd> <span>Sportback35TFUSI&nbsp;进取型</span> <span class="c_e53b3c fr">12.8万起</span> </dd>
+                    <dd> <span>Sportback35TFUSI&nbsp;进取型</span> <span class="c_e53b3c fr">12.8万起</span> </dd>
+                    <dd> <span>Sportback35TFUSI&nbsp;进取型</span> <span class="c_e53b3c fr">12.8万起</span> </dd>
+                    <dd> <span>Sportback35TFUSI&nbsp;进取型</span> <span class="c_e53b3c fr">12.8万起</span> </dd>
+                    <dd> <span>Sportback35TFUSI&nbsp;进取型</span> <span class="c_e53b3c fr">12.8万起</span> </dd>
+                    <dd> <span>Sportback35TFUSI&nbsp;进取型</span> <span class="c_e53b3c fr">12.8万起</span> </dd>
+                    <dd> <span>Sportback35TFUSI&nbsp;进取型</span> <span class="c_e53b3c fr">12.8万起</span> </dd>
+                    <dd> <span>Sportback35TFUSI&nbsp;进取型</span> <span class="c_e53b3c fr">12.8万起</span> </dd>
+                    <dd> <span>Sportback35TFUSI&nbsp;进取型</span> <span class="c_e53b3c fr">12.8万起</span> </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+    <!--裸车价格-->
+    <div class="chose_type cf" id="js_chose_type">
+        <p class="fl">裸车价格</p>
+        <input type="text" class="price"/>
+        <span>元</span>
+    </div>
+
+    <!--贷款市场价栏-->
+    <div class="text_area clearfix" id="js_text_area" style="height: 69px">
+        <div class="text_area_con clearfix">
+            <p class="p1">首付款：<strong>18,979元</strong></p>
+            <p class="p2">首付金额+必要花费+商业保险</p>
+
+        </div>
+        <div class="text_area_con clearfix">
+            <p class="p1">月供：<strong>7,279元</strong></p>
+            <p class="p2">36期</p>
+        </div>
+        <div class="text_area_con clearfix">
+            <p class="p1">购车总 花费：<strong>142,970元</strong></p>
+            <p class="p2"><strong>比全款多花24,184元</strong></p>
+        </div>
+    </div>
+    <p class="last_tip" id="mid_tip"><i></i>此结果仅供参考，实际费用以当地缴费为准。</p>
+
+    <!--贷款明细-->
+    <div class="table_pay">
+        <div class="h5_str cf">
+            <h5 class="fl">贷款明细</h5>
+            <!--<strong class="str fl">小计：<span><i>30.973</i>元</span></strong>-->
+        </div>
+        <table border="">
+            <tr>
+                <td width="200">
+                    <label>
+                        首付金额
+                    </label>
+                </td>
+                <td width="157" class="can_modify"><input type="text" value="101198"> 元</td>
+                <td width="190" class="cf diy">
+                    <div>
+                        <ul>
+                            <li><i><em></em></i><strong>30%</strong></li>
+                            <li><i><em></em></i><strong>40%</strong></li>
+                            <li><i><em></em></i><strong>50%</strong></li>
+                            <li><i><em></em></i><strong>60%</strong></li>
+                            <li><i><em></em></i><strong>自定义</strong></li>
+                        </ul>
+                    </div>
+
+                </td>
+                <td width="380">首付金额=首付比例*裸车价格</td>
+            </tr>
+            <tr>
+                <td width="200">
+                    <label>
+                        贷款金额
+                    </label>
+                </td>
+                <td width="157" class="can_modify"><i>290,043</i>  元</td>
+                <td width="190" class="cf diy diy_year">
+                    <div>
+                        <ul>
+                            <li class="year"><i><em></em></i><strong>1年</strong></li>
+                            <li class="year"><i><em></em></i><strong>2年</strong></li>
+                            <li class="year"><i><em></em></i><strong>3年</strong></li>
+                            <li class="year"><i><em></em></i><strong>4年</strong></li>
+                            <li class="year"><i><em></em></i><strong>5年</strong></li>
+                        </ul>
+                    </div>
+                </td>
+                <td width="380">货款金额=购车价格=首付款</td>
+            </tr>
+            <tr>
+                <td width="200">
+                    <label>
+                        货款期限
+                    </label>
+                </td>
+                <td width="157" class="can_modify"><i>36</i>  期</td>
+                <td width="190" class="">
+                </td>
+                <td width="380">银行贷款基准利率：1年期6.56%;2年期限6.65%；3年期6.65%；4年期6.65%；5年期6.90%；3年期6.69%</td>
+            </tr>
+            <tr>
+                <td width="200">
+                    <label>
+                        贷款利率
+                    </label>
+                </td>
+                <td width="157" class="can_modify"><input type="text" value="6.4"> %</td>
+                <td width="190" class="cf">
+
+                </td>
+                <td width="380">国家强制保险</td>
+            </tr>
+        </table>
+    </div>
+
+    <!--必要花费-->
+    <div class="table_pay">
+        <div class="h5_str cf">
+            <h5 class="fl">必要花费</h5>
+            <strong class="str fl">小计：<span><i>30.973</i>元</span></strong>
+        </div>
+        <table border="">
+            <tr>
+                <td width="200">
+                    <label>
+                        购置税
+                    </label>
+                </td>
+                <td width="157"><i>29,043</i>元</td>
+                <td width="190" class="cf">
+
+                </td>
+                <td width="380">购置税=购车款/(1+17%)*购置税率(7.5%)<span></span></td>
+            </tr>
+            <tr>
+                <td width="200">
+                    <label>
+                        上牌费用
+                    </label>
+                </td>
+                <td width="157" class="can_modify"><input type="text" value="500">  元</td>
+                <td width="190" class="">
+
+                </td>
+                <td width="380">可手动修改，不同地区费用不同<span></span></td>
+            </tr>
+            <tr>
+                <td width="200">
+                    <label>
+                        车船使用税
+                    </label>
+                </td>
+                <td width="157" class="can_modify"><input type="text" value="443">  元</td>
+                <td width="190" class="">
+                    <div class="choice-input limit_pay fl">
+                        <div class="choice-type choice_type_width">
+                            <span>1.6-2.0L（含）</span><i><em></em></i>
+                        </div>
+                        <div class="choice-list">
+                            <dl>
+                                <dd><a href="javascript:void(0);">家用6座以下</a></dd>
+                                <dd><a href="javascript:void(0);">E 级</a></dd>
+                                <dd><a href="javascript:void(0);">GLC 级</a></dd>
+                                <dd><a href="javascript:void(0);">CLA 级</a></dd>
+                                <dd><a href="javascript:void(0);">GLD 级</a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </td>
+                <td width="380">按排量收取费用<span></span></td>
+            </tr>
+            <tr>
+                <td width="200">
+                    <label>
+                        交强税
+                    </label>
+                </td>
+                <td width="157"><i>29,043</i>元</td>
+                <td width="190" class="cf">
+                    <div class="choice-input limit_pay fl">
+                        <div class="choice-type choice_type_width">
+                            <span>家用六座以下</span><i><em></em></i>
+                        </div>
+                        <div class="choice-list">
+                            <dl>
+                                <dd><a href="javascript:void(0);">家用6座以下</a></dd>
+                                <dd><a href="javascript:void(0);">E 级</a></dd>
+                                <dd><a href="javascript:void(0);">GLC 级</a></dd>
+                                <dd><a href="javascript:void(0);">CLA 级</a></dd>
+                                <dd><a href="javascript:void(0);">GLD 级</a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </td>
+                <td width="380">国家强制保险<span></span></td>
+            </tr>
+        </table>
+    </div>
+
+    <!--商业保险-->
+    <div class="table_pay">
+        <div class="h5_str cf">
+            <h5 class="fl">商业保险</h5>
+            <strong class="str fl">小计：<span><i>30.973</i>元</span></strong>
+            <ul class="fr">
+                <li class="active">
+                    <a href="javascript:;">基本保障</a>
+                    <b><i></i></b>
+                </li>
+                <li><a href="javascript:;">高性价比</a><b><i></i></b></li>
+                <li><a href="javascript:;">新车主全面保障</a><b><i></i></b></li>
+            </ul>
+        </div>
+        <table border="">
+            <tr>
+                <td width="200">
+                    <label>
+                        <input type="checkbox">第三者责任险
+                    </label>
+                </td>
+                <td width="157"><i>29,043</i>元</td>
+                <td width="190" class="cf">
+                    <p class="fl">赔付额度</p>
+                    <div class="choice-input limit_pay fl">
+                        <div class="choice-type">
+                            <span>20万</span><i><em></em></i>
+                        </div>
+                        <div class="choice-list">
+                            <dl>
+                                <dd><a href="javascript:void(0);">家用6座以下</a></dd>
+                                <dd><a href="javascript:void(0);">E 级</a></dd>
+                                <dd><a href="javascript:void(0);">GLC 级</a></dd>
+                                <dd><a href="javascript:void(0);">CLA 级</a></dd>
+                                <dd><a href="javascript:void(0);">GLD 级</a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </td>
+                <td width="380">发生车险事故时，赔偿对第三方造成的人身及财产损失<span></span></td>
+            </tr>
+            <tr>
+                <td width="200">
+                    <label>
+                        <input type="checkbox">车辆损失险
+                    </label>
+                </td>
+                <td width="157"><i>29,043</i>元</td>
+                <td width="190" class="">
+
+                </td>
+                <td width="380">车子发生碰撞，赔偿自己爱车损失的费用<span></span></td>
+            </tr>
+            <tr>
+                <td width="200">
+                    <label>
+                        <input id="" type="checkbox">全车盗抢险
+                    </label>
+                </td>
+                <td width="157"><i>29,043</i>元</td>
+                <td width="190" class="">
+
+                </td>
+                <td width="380">赔偿全车被盗窃、抢劫、抢夺造成的车辆损失<span></span></td>
+            </tr>
+            <tr>
+                <td width="200">
+                    <label>
+                        <input type="checkbox">玻璃单独破碎险
+                    </label>
+                </td>
+                <td width="157"><i>29,043</i>元</td>
+                <td width="190" class="cf">
+                    <p class="fl">赔付额度</p>
+                    <div class="choice-input limit_pay fl">
+                        <div class="choice-type">
+                            <span>20万</span><i><em></em></i>
+                        </div>
+                        <div class="choice-list">
+                            <dl>
+                                <dd><a href="javascript:void(0);">家用6座以下</a></dd>
+                                <dd><a href="javascript:void(0);">E 级</a></dd>
+                                <dd><a href="javascript:void(0);">GLC 级</a></dd>
+                                <dd><a href="javascript:void(0);">CLA 级</a></dd>
+                                <dd><a href="javascript:void(0);">GLD 级</a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </td>
+                <td width="380">负责赔偿保险车辆在使用过程中，发生车窗、挡风玻璃的单独破碎损失 <span></span></td>
+            </tr>
+            <tr>
+                <td width="200">
+                    <label>
+                        <input type="checkbox">自燃损失险
+                    </label>
+                </td>
+                <td width="157"><i>29,043</i>元</td>
+                <td width="190" class="">
+
+                </td>
+                <td width="380">赔偿车子因电器、线路、运载货物等自身原因引发火灾造成的损失<span></span></td>
+            </tr>
+            <tr>
+                <td width="200">
+                    <label>
+                        <input type="checkbox">不计免赔特约险
+                    </label>
+                </td>
+                <td width="157"><i>29,043</i>元</td>
+                <td width="190" class="">
+
+                </td>
+                <td width="380">保险条款约定事故发生后被保险人要自己承担一定比例的损失金额，购买此险这部分损失费用保险公司将同样给予赔偿<span></span></td>
+            </tr>
+            <tr>
+                <td width="200">
+                    <label>
+                        <input type="checkbox">乘客座位责任险
+                    </label>
+                </td>
+                <td width="157"><i>29,043</i>元</td>
+                <td width="190" class="cf">
+                    <p class="fl">赔付额度</p>
+                    <div class="choice-input limit_pay fl">
+                        <div class="choice-type">
+                            <span>20万</span><i><em></em></i>
+                        </div>
+                        <div class="choice-list">
+                            <dl>
+                                <dd><a href="javascript:void(0);">家用6座以下</a></dd>
+                                <dd><a href="javascript:void(0);">E 级</a></dd>
+                                <dd><a href="javascript:void(0);">GLC 级</a></dd>
+                                <dd><a href="javascript:void(0);">CLA 级</a></dd>
+                                <dd><a href="javascript:void(0);">GLD 级</a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </td>
+                <td width="380">发生车险事故时，赔偿车内乘客的伤亡和医疗赔偿费用<span></span></td>
+            </tr>
+            <tr>
+                <td width="200">
+                    <label>
+                        <input type="checkbox">司机座位责任险
+                    </label>
+                </td>
+                <td width="157"><i>29,043</i>元</td>
+                <td width="190" class="cf">
+                    <p class="fl">赔付额度</p>
+                    <div class="choice-input limit_pay fl">
+                        <div class="choice-type">
+                            <span>20万</span><i><em></em></i>
+                        </div>
+                        <div class="choice-list">
+                            <dl>
+                                <dd><a href="javascript:void(0);">家用6座以下</a></dd>
+                                <dd><a href="javascript:void(0);">E 级</a></dd>
+                                <dd><a href="javascript:void(0);">GLC 级</a></dd>
+                                <dd><a href="javascript:void(0);">CLA 级</a></dd>
+                                <dd><a href="javascript:void(0);">GLD 级</a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </td>
+                <td width="380">发生车险事故时，赔偿车内司机的伤亡和医疗赔偿费用<span></span></td>
+            </tr>
+            <tr>
+                <td width="200">
+                    <label>
+                        <input id="" type="checkbox">车身划痕险
+                    </label>
+                </td>
+                <td width="157"><i>29,043</i>元</td>
+                <td width="190" class="cf">
+                    <p class="fl">赔付额度</p>
+                    <div class="choice-input limit_pay fl">
+                        <div class="choice-type">
+                            <span>20万</span><i><em></em></i>
+                        </div>
+                        <div class="choice-list">
+                            <dl>
+                                <dd><a href="javascript:void(0);">家用6座以下</a></dd>
+                                <dd><a href="javascript:void(0);">E 级</a></dd>
+                                <dd><a href="javascript:void(0);">GLC 级</a></dd>
+                                <dd><a href="javascript:void(0);">CLA 级</a></dd>
+                                <dd><a href="javascript:void(0);">GLD 级</a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </td>
+                <td width="380">负责无碰撞痕迹的车身表面油漆单独划伤的损失<span></span></td>
+            </tr>
+            <tr>
+                <td width="200">
+                    <label>
+                        <input type="checkbox">涉水险/发动机特别损失险
+                    </label>
+                </td>
+                <td width="157"><i>29</i>元</td>
+                <td width="190" class="cf">
+                </td>
+                <td width="380">负责爱车被水淹导致发动机受损所造成的损失<span></span></td>
+            </tr>
+        </table>
+    </div>
+
+    <!--全款购车价-->
+    <div class="text_area" style="height: 39px">
+        <div class="text_area_con">
+            <p class="p1">购车总花费：<strong>8,979元</strong></p>
+
+        </div>
+        <div class="text_area_con">
+            <p class="p1">首付款：<strong>142,970元</strong></p>
+        </div>
+        <div class="text_area_con">
+            <p class="p1">月供：<strong>7,279元</strong></p>
+        </div>
+    </div>
+    <p class="last_tip" style="margin: 0 auto"> <span>国家补贴 <strong>5.6</strong>万，地方补贴 <strong>4.5</strong>万</span></p>
+</div>
+
+<!--footer model -->
+<!-- 底部 -->
+<div class="footer">
+    <div class="footer_content">
+        <ul>
+            <li class="footer_message"><a href="http://www.xingyuanauto.com/" target="_blank">关于我们</a></li>
+            <li class="footer_message"><a href="http://www.xingyuanauto.com/" target="_blank">联系我们</a></li>
+            <li class="footer_message"><a href="http://www.xingyuanauto.com/html/recruitment.html?newtarget=technology" target="_blank">招贤纳士</a></li>
+            <li class="footer_message"><a href="dealer.xingyuanauto.com" target="_blank">行圆智慧云</a></li>
+            <li class="website"><a href="javascript:void (0)">@2016-2017 www .qichedaquan .com All Rights Reserved. 北京行圆汽车信息技术有限公司所有</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<!--goTop model -->
+<!-- 返回顶部 -->
+<div class="goTop" id="back_to_top"> <span class="goTop_icon"></span> <span class="goTop_text">返回顶部</span></div>
+
+</body>
+
+<script>
+    tab('.h5_str','','click');
+    function tab(ele,kzele,type){
+        $(ele).find('li').each(function (index) {
+            $(this).on(type,function(){
+                $(ele).find('li').removeClass('active').eq(index).addClass('active');
+                $(kzele).find('li').hide().eq(index).show();
+            })
+        })
+    }
+</script>
+<script>
+    $(document).ready(function () {
+        $(".table_pay table td:nth-of-type(3) p").css({
+            'line-height': '32px',
+            'color': '#999',
+            'margin-right': '14px'
+        });
+        $(".table_pay table tr td").css({
+            'border-left':'1px solid #eee',
+            'padding':'9px'
+        });
+        $(".table_pay TABLE TR TD INPUT[type='checkbox']").css({
+            'top':'1px'
+        });
+    });
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if($(window).scrollTop()>$('#js_text_area').offset().top){
+                $('#js_text_area').css({'position':'fixed','top':'0'})
+            }else if($(window).scrollTop()<$('#js_chose_type').height()+20){
+                $('#js_text_area').css({'position':'static'})
+            }
+        })
+    })
+
+</script>
+<script src="js/carSelectS.js"></script>
+</html>

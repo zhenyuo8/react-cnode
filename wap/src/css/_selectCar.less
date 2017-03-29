@@ -1,0 +1,492 @@
+/*****
+ *@author: jianingning
+ *@from: Global style selectCar_xuanzechekuan  购车计算器中选择车款
+ *@description:
+ *@date: name (2017.02.27)
+*/
+
+
+
+@import (reference) "public";
+
+.wrap {
+    width: 100%;
+
+    /*head*/
+    .secletCar_head {
+        height: 1.173rem;
+        line-height: 1.173rem;
+        text-align: center;
+        background:-webkit-linear-gradient(left,#23a1fd,#248bfb);
+
+        .back {
+            float: left;
+            margin:.4rem 0 0 .4rem;
+            display: inline-block;
+            width: .227rem;
+            height: .4rem;
+            background: url(../img/goback_btn.png);
+            background-size: cover;
+        }
+        span {
+            font-size: 16px;
+            color: #fff;
+        }
+    }
+    /*content*/
+    .sel_type {
+        height: 1.173rem;
+        line-height: 1.173rem;
+
+        li {
+            float: left;
+            width: 50%;
+            text-align: center;
+            font-size: 15px;
+            color: #848484;
+        }
+        .sel_active {
+            color: #2799fe;
+        }
+    }
+    .sel_content_list {
+        display: none;
+
+        .sel_carType {
+            padding-left: .4rem;
+            height: .72rem;
+            line-height: .72rem;
+            background: #f4f5f7;
+            font-size: 12px;
+            color: #848484;
+        }
+        .sel_carList {
+            li {
+               margin-left: .4rem;
+               height: 1.893rem;
+               border-bottom: 1px solid #f3f3f3;
+               font-size: 16px;
+
+               .sel_carStyle {
+                    display: block;
+                    margin: .36rem 0 .4rem 0;
+               }
+               .sel_carPrice {
+                    color: #ff2727;
+               }
+            }
+        }
+        /*标题公共样式*/
+        .module_title {
+            font-size: 13px;
+            line-height: .747rem /* 56/75 */;
+            background-color: @bg-color;
+            padding-left: .4rem /* 30/75 */;
+        }
+        //热门品牌
+        .hot_brand{
+            width: 100%;
+            .hot_title{
+                .module_title;
+            }
+            .hot_list{
+                ul{
+                    margin: 0 4% .267rem /* 20/75 */;
+                    li{
+                        float: left;
+                        width: 20%;
+                        text-align: center;
+                        margin-bottom: .267rem /* 20/75 */;
+                        a{
+                            display: block;
+                            img{
+                                display: inline-block;
+                                width: .987rem /* 74/75 */;
+                                height: .987rem /* 74/75 */;
+                                margin: .173rem /* 13/75 */;
+                            }
+                            span{
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        /* 品牌车型列表*/
+        .brand_type{
+            position: relative;
+            .brand_list{
+                .letter_title{
+                    .module_title;
+                    font-size: 14px;
+                    padding-left: .667rem /* 50/75 */;
+                }
+                .brand_box{
+                    font-size: 15px;
+                    li{
+                        overflow: hidden;
+                        a{
+                            padding-left: .533rem /* 40/75 */;
+                            display: block;
+                            overflow: hidden;
+                            img{
+                                width: .987rem /* 74/75 */;
+                                height: .987rem /* 74/75 */;
+                                margin: .173rem /* 13/75 */;
+                                float: left;
+                            }
+                            .brand_name{
+                                width: 71.549%;
+                                line-height: 1.32rem /* 99/75 */;
+                                border-bottom: 1px solid @color-eee;
+                                margin-right: .8rem /* 60/75 */;
+                                float: right;
+                            }
+                        }
+                    }
+                }
+            }
+            .letter_list{
+                float: right;
+                position: absolute;
+                top: .747rem /* 56/75 */;
+                right: 0;
+                z-index: 1;
+                li{
+                    width: .8rem /* 60/75 */;
+                    line-height: .48rem /* 36/75 */;
+                    text-align: center;
+                    a{
+                        color: @item-color;
+                    }
+                }
+            }
+            .letter_list_fix{
+                position: fixed;
+                top: 1.76rem /* 132/75 */;
+                right: 0;
+                z-index: 99;
+            }
+            .letter_alert{
+                font-size: 50px;
+                width: 1.867rem /* 140/75 */;
+                height: 1.867rem /* 140/75 */;
+                border: 1px solid @letter-alert-border;
+                background-color: @letter-alert-bg;
+                border-radius: .133rem /* 10/75 */;
+                text-align: center;
+                margin-top: -.933rem /* 70/75 */;
+                margin-left: -.933rem /* 70/75 */;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                z-index: 999;
+                display: none;
+                span{
+                    color: @color-888;
+                    line-height: 1.867rem /* 140/75 */;
+                }
+            }
+        }
+    }
+    .sel_show {
+        display: block;
+    }
+}
+/*按品牌遮罩层*/
+.mask2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    filter:alpha(opacity=60);
+    opacity:.6;
+    display: none;
+}
+/*按品牌右侧车款模块*/
+.slider_btn {
+    position: fixed;
+    top: 50%;
+    left: 1.093rem;
+    margin-top: -.32rem;
+    z-index: 150;
+    width: .693rem;
+    height: .64rem;
+    display: none;
+}
+.right_module{
+    width: 76.667%;
+    height: 100%;
+    background-color: @color-fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 999;
+    .car_type_module{
+        .type_brand{
+            font-size: 15px;
+            line-height: 1.6rem /* 120/75 */;
+            padding-left: .533rem /* 40/75 */;
+            .type_brand_logo{
+                width: .987rem /* 74/75 */;
+                height: .987rem /* 74/75 */;
+                display: inline-block;
+                vertical-align: middle;
+                margin: .173rem /* 13/75 */;
+            }
+        }
+        .sub_brand{
+            color: @sub-brand-name;
+            font-size: 13px;
+            line-height: .747rem /* 56/75 */;
+            background-color: @sub-brand-bg;
+            padding-left: .707rem /* 53/75 */;
+        }
+        .cartype_list{
+            li{
+                padding: .187rem /* 14/75 */ .4rem /* 30/75 */;
+                a{
+                    dl{
+                        overflow: hidden;
+                        dt{
+                            width: 2.24rem /* 168/75 */;
+                            height: 1.493rem /* 112/75 */;
+                            float: left;
+                            img{
+                                display: inline-block;
+                                width: 100%;
+                            }
+                        }
+                        dd{
+                            font-size: 15px;
+                            float: left;
+                            padding-left: .2rem /* 15/75 */;
+                            .type_name{
+                                line-height: .853rem /* 64/75 */;
+                            }
+                            .type_price{
+                                color: @red-price;
+                                line-heihgt: .427rem /* 32/75 */;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*按品牌右侧车款模块二级抽屉*/
+.right_module_cars {
+    width: 73.767%;
+    height: 100%;
+    background-color: @color-fff;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 1000;
+    &::-webkit-scrollbar{
+        width: 0;
+    }
+
+    .back_car {
+        height: 1.6rem;
+        line-height: 1.6rem;
+        font-size: 15px;
+
+        i {
+            margin-right: 0.133rem;
+            display: inline-block;
+            vertical-align: -0.04rem;
+            width: 0.213rem;
+            height: 0.4rem;
+            background-image: url(../img/leftjt.png);
+            background-size: 100% 100%;
+        }
+    }
+    .sel_carType {
+        padding-left: .4rem;
+        height: .72rem;
+        line-height: .72rem;
+        background: #f4f5f7;
+        font-size: 12px;
+        color: #848484;
+    }
+    .sel_carList {
+        li {
+           margin-left: .4rem;
+           border-bottom: 1px solid #f3f3f3;
+           font-size: 15px;
+
+           .sel_carStyle {
+                display: block;
+                margin-top: 0.267rem;
+           }
+           .sel_carPrice {
+                color: #ff2727;
+           }
+        }
+    }
+}
+/*适配字号大小*/
+[data-dpr="2"] .wrap {
+    .secletCar_head {
+        span {
+            font-size: 32px;
+        }
+    }
+    .sel_type {
+        li {
+            font-size: 30px;
+        }
+    }
+    .sel_content_list {
+        .sel_carType {
+            font-size: 24px;
+        }
+        .sel_carList {
+            li {
+                font-size: 32px;
+            }
+        }
+        .module_title {
+            font-size: 26px;
+        }
+        .hot_brand{
+            .hot_title{
+                font-size:26px;
+            }
+        }
+        .brand_type {
+            .brand_list {
+                .letter_title {
+                    font-size: 28px;
+                }
+                .brand_box {
+                    font-size: 30px;
+                }
+            }
+            .letter_alert {
+                font-size: 100px;
+            }
+        }
+    }
+}
+[data-dpr="2"] .right_module {
+    .car_type_module{
+        .type_brand{
+            font-size: 30px;
+        }
+        .sub_brand {
+            font-size: 26px;
+        }
+        .cartype_list {
+            li {
+                a {
+                    dl{
+                        dd {
+                           font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+[data-dpr="2"] .right_module_cars {
+    .back_car {
+        font-size: 30px;
+    }
+    .sel_carType {
+        font-size: 24px;
+    }
+    .sel_carList {
+        li {
+            font-size: 30px;
+        }
+    }
+}
+[data-dpr="3"] .wrap {
+    .secletCar_head {
+        span {
+            font-size: 48px;
+        }
+    }
+    .sel_type {
+        li {
+            font-size: 45px;
+        }
+    }
+    .sel_content_list {
+        .sel_carType {
+            font-size: 36px;
+        }
+        .sel_carList {
+            li {
+                font-size: 48px;
+            }
+        }
+        .module_title {
+            font-size: 39px;
+        }
+        .hot_brand{
+            .hot_title{
+                font-size:39px;
+            }
+        }
+        .brand_type {
+            .brand_list {
+                .letter_title {
+                    font-size: 42px;
+                }
+                .brand_box {
+                    font-size: 45px;
+                }
+            }
+            .letter_alert {
+                font-size: 150px;
+            }
+        }
+    }
+}
+[data-dpr="3"] .right_module {
+    .car_type_module{
+        .type_brand{
+            font-size: 45px;
+        }
+        .sub_brand {
+            font-size: 39px;
+        }
+        .cartype_list {
+            li {
+                a {
+                    dl{
+                        dd {
+                           font-size: 45px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+[data-dpr="3"] .right_module_cars {
+    .back_car {
+        font-size: 45px;
+    }
+    .sel_carType {
+        font-size: 36px;
+    }
+    .sel_carList {
+        li {
+            font-size: 45px;
+        }
+    }
+}

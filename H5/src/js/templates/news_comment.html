@@ -1,0 +1,17 @@
+<div class="hot_review" v-if="list.length">
+	<h5 class="item_title"><i></i>热门评论</h5>
+	<div class="review_list">
+		<dl class="review_item clearfix" v-for="el in list">
+			<dt><a><img v-bind:src="el.userHeadurl"></a></dt>
+			<dd>
+				<p class="user_name"><a>{{el.userName}}</a></p>
+				<p class="review">{{el.commentSummary}}</p>
+				<p class="reply" v-if="el.referUserName">
+					<span>{{el.referUserName}}发表评论</span>
+					<span>{{el.referSummary}}</span>
+				</p>
+				<p class="review_time">{{timeago(el.createTime)}}</p>
+			</dd>
+		</dl>
+	</div>
+</div>

@@ -1,0 +1,304 @@
+/*****
+ *@author: jianingning
+ *@from: Global style mod_dealer   经销商
+ *@description:
+ *@date: name (2017.02.28)
+*/
+
+
+
+@import (reference) "../public";
+
+/*经销商*/
+.zsh_dealer {
+    margin-top: .4rem;
+    background: @color-fff;
+
+    .demo_title {
+        width: 92%;
+        margin: 0 4%;
+        height: .747rem /* 56/75 */;
+        padding-top: .32rem /* 24/75 */;
+        span {
+            font-size: 14px;
+            height: .4rem;
+            line-height: .4rem;
+            border-left: .107rem /* 8/75 */ solid #2899ff;
+            padding-left: .16rem;
+            display: inline-block;
+        }
+        a {
+            float: right;
+            margin-top: -.03rem;
+            font-size: 14px;
+            color: #848484; 
+
+            img {
+                margin: .133rem 0 0 .133rem;
+                display: inline-block; 
+                width: .16rem;
+                height: .293rem;
+            }
+        }
+    }
+    .zsh_dealer_type {
+        margin: 0 .4rem;
+        height: 1.147rem;
+        border-bottom: 1px solid #f3f3f3;
+        border-top: 1px solid #ebedef;
+
+        li {
+            float: left;
+            padding: 0 .08rem;
+            margin-right: .733rem;
+            height: 1.147rem;
+            line-height: 1.147rem;
+            font-size: 15px;
+            color: #848484;
+        }
+        .dealer_active {
+            border-bottom: 1px solid #2799fe;
+            color: #2799fe;
+        }
+    }
+    .dealer_content {
+       background: #f4f5f7;
+       padding-bottom: .1333rem; 
+       display: none;
+    }
+    .show {
+        display: block;
+    }
+    .dealer_news {
+        padding-top: .533rem;
+        margin-bottom: .133rem;
+        background: @color-fff;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .dealer_news_con {
+        margin: 0 .4rem .4rem .4rem;
+        font-size: 12px;
+        color: #6a6a6a;
+        .dealer_rank {
+            font-size: 16px;
+            color: #ff2727;
+        }
+        .dealer_name {
+            font-size: 16px;
+            color: #333;
+        }
+        .area {
+            margin-left: .12rem;
+            display: inline-block;
+            width: 1.12rem;
+            height: .373rem;
+            text-align: center;
+            line-height: .373rem;
+            background: #84c3ff;
+            font-size: 11px; 
+            color: @color-fff; 
+        }
+        .bidPrice {
+            float: right;
+            font-size: 16px;
+            color: #ff2727;
+        }
+        .cuxiao {
+            color: #6a6a6a;
+        }
+        .advertisement {
+            margin-left: .12rem;
+            display: inline-block;
+            width: .747rem;
+            height: .373rem;
+            text-align: center;
+            line-height: .373rem;
+            border: 1px solid #ececec;
+            font-size: 10px;
+            color: #ececec; 
+        }
+        .dealer_distance {
+            float: right;
+            font-size: 11px;
+            color: #666;
+        }
+        .zhihuan,
+        .shijia,
+        .dealer_xundijai {
+            display: inline-block;
+            width:32%;
+            height: 1.0rem;
+            text-align: center;
+            line-height: 1.0rem;
+            font-size: 14px;
+        }
+        .zhihuan,
+        .shijia {
+            border-right: 1px solid #ebedef;
+        }
+        .dealer_xundijai {
+            color: #2799fe;
+        }
+    }
+    .p1 {
+        margin-bottom: .267rem;
+    }
+    .p2 {
+        margin: 0;
+        height: 1.0rem;
+        border-top: 1px solid #ebedef;
+    }
+    .more_box {
+        margin: 0 .4rem;
+        height: 1.226rem;
+        padding-top: 0.267rem;
+        .more {
+            display: inline-block;
+            width: 100%;
+            height: .96rem;
+            line-height: .96rem;
+            text-align: center;
+            background: #edf7ff;
+            border: none;
+            outline: none;
+            border-radius: 8px;
+            margin: 0 auto;
+            font-size: 13px;
+            color: #52adfe;
+
+            img {
+                display: inline-block;
+                width: 0.213rem;
+                height: 0.12rem;
+                margin-left: .16rem;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+[data-dpr="2"] .zsh_dealer {
+    .demo_title {
+        span,a {
+            font-size: 28px;
+        }
+    }
+    .zsh_dealer_type {
+        li {
+            font-size: 30px
+        }
+    }
+    .dealer_news_con {
+        font-size: 24px;
+        .dealer_rank,
+        .dealer_name,
+        .bidPrice {
+            font-size: 32px;
+        }
+        .area,
+        .dealer_distance {
+            font-size: 22px;
+        }
+        .advertisement {
+            font-size: 20px;
+        }
+        .zhihuan,
+        .shijia,
+        .dealer_xundijai {
+            font-size: 28px;
+        }
+    }
+    .more {
+        font-size: 26px;
+    }
+}
+[data-dpr="3"] .zsh_dealer {
+    .demo_title {
+        span,a {
+            font-size: 42px;
+        }
+    }
+    .zsh_dealer_type {
+        li {
+            font-size: 45px
+        }
+    }
+    .dealer_news_con {
+        font-size: 36px;
+        .dealer_rank,
+        .dealer_name,
+        .bidPrice {
+            font-size: 48px;
+        }
+        .area,
+        .dealer_distance {
+            font-size: 33px;
+        }
+        .advertisement {
+            font-size: 30px;
+        }
+        .zhihuan,
+        .shijia,
+        .dealer_xundijai {
+            font-size: 42px;
+        }
+    }
+    .more {
+        font-size: 39px;
+    }
+}
+/*匹配dpr=1 最大320*/
+[data-dpr="1"] .wrap{
+    @media (max-width: 320px){
+        .zsh_dealer {
+            .dealer_news_con {
+                .area {
+                    width: 1.22rem;
+                    height: .473rem;
+                    line-height: .473rem;
+                }
+                .advertisement {
+                    width: .847rem;
+                    height: .473rem;
+                    line-height: .473rem;
+                }
+            }
+        }  
+    }
+}
+/*匹配dpr=2 iphone4*/
+.zsh_dealer {
+    @media (device-height:480px) and (-webkit-min-device-pixel-ratio:2) { 
+            .dealer_news_con {
+                .area {
+                    width: 1.32rem;
+                    height: .473rem;
+                    line-height: .473rem;
+                }
+                .advertisement {
+                    width: .847rem;
+                    height: .373rem;
+                    line-height: .373rem;
+                }
+            }
+    } 
+}
+/*匹配dpr=2 iphone5*/
+.zsh_dealer {
+    @media (device-height:568px) and (-webkit-min-device-pixel-ratio:2) {
+        
+            .dealer_news_con {
+                .area {
+                    width: 1.32rem;
+                    height: .473rem;
+                    line-height: .473rem;
+                }
+                .advertisement {
+                    width: .847rem;
+                    height: .373rem;
+                    line-height: .373rem;
+                }
+            } 
+    }
+}

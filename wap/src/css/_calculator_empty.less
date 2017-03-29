@@ -1,0 +1,352 @@
+/*****
+ *@author: jianingning
+ *@from: Global style calculator_jisuanqi   购车计算器
+ *@description:
+ *@date: name (2017.02.25)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_pubHead.less";
+@import "mod/mod_pubHeadNav.less";
+@import "mod/mod_footer.less";
+
+html {
+    background: #f3f3f3;
+}
+.wrap {
+    width: 100%;
+    background: #f3f3f3;
+
+    /*content*/
+    .calculate_way {
+        height: 1.173rem;
+        line-height: 1.173rem;
+        background: #fff; 
+
+        li {
+            float: left;
+            width: 50%;
+            text-align: center;
+            a {
+                font-size: 15px;
+                color: #848484;
+            }
+        }
+        .calculate_active {
+            a {
+                color: #2799fe;
+            }
+        }
+    }
+    .calculate_content {
+        background: #fff;
+    }
+    .calculate {
+        display: none;
+
+        .cal_empty {
+            height: 2.667rem;
+            background:-webkit-linear-gradient(left,#23a1fd,#248bfb);
+            text-align: center;
+            line-height: 2.667rem;
+            font-size: 14px;
+            color: #fff;
+        }
+        .cal_type {
+            margin-left: .4rem;
+            padding-right: .4rem;
+            height: 1.333rem;
+            line-height: 1.333rem;
+            border-bottom: 1px solid #f3f3f3;
+
+            .cal_type_tit,
+            .cal_type_con,
+            .cal_type_con2 {
+                font-size: 15px;
+            }
+            .cal_type_tit {
+                display: inline-block;
+                width:23.5%;
+                float: left;
+            }
+            .cal_type_con {
+                display: inline-block;
+                width:69.5%;
+                text-align: right;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            .cal_arrow_right {
+                float: right;
+                margin-top: .53rem;
+                display: inline-block;
+                width: .16rem;
+                height: .293rem;
+                background: url(../img/arrow_right_gray.png);
+                background-size: cover;
+            }
+            .cal_type_editor {
+                float: right;
+                margin-top: .4rem;
+                display: inline-block;
+                width: .453rem;
+                height: .507rem;
+                background: url(../img/editor.png);
+                background-size: cover;
+            }
+            .cal_type_explain {
+                display: inline-block;
+                width:50.5%;
+                text-align: center;
+                font-size: 14px;
+                color: #999;
+            }
+            .cal_type_con2 {
+                display: inline-block;
+                width:17.5%;
+                text-align: right;
+            }
+        }
+        .cal_interval2 {
+        	height: .4rem;
+            background: #f3f3f3;
+        }
+        .cal_start_btn {
+            height: 1.494rem;
+            padding-top: .533rem;
+            background: #f3f3f3;
+
+            a {
+                margin-left: 4%;
+                display: block;
+                width: 92%;
+                height: .96rem;
+                text-align: center;
+                line-height: .96rem;
+                font-size: 14px;
+                color: #fff;
+                border: none;
+                outline: none;
+                border-radius: 8px;
+                background: #2799fe;
+            }
+        }
+        /*首付比例、还款年限、贷款利率*/
+        .cal_loan {
+            height: 4.04rem;
+
+            .cal_loan_type {
+                margin-left: .4rem;
+                padding-right: .4rem;
+                height: 1.333rem;
+                line-height: 1.333rem;
+                border-bottom: 1px solid #f3f3f3;
+
+                .cal_loan_tit {
+                    display: inline-block;
+                    width:23.5%;
+                    font-size: 15px;
+                }
+                .cal_loan_detail {
+                    display: inline-block;
+                    float: right;
+                    margin-top: .373rem;
+                    li {
+                        float: left;
+                        margin-right: .213rem;
+                        width: 1.12rem;
+                        height: .507rem;
+                        text-align: center;
+                        line-height: .507rem;
+                        border: 2px solid #e2e2e2;
+                        font-size: 12px;
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                    .cal_loan_active {
+                        border-color: #2896fe;
+                        border-radius: 2px;
+                    }
+                }
+                .cal_loan_con {
+                    display: inline-block;
+                    width:69.5%;
+                    text-align: right;
+                    font-size: 15px;
+                }
+                .cal_loan_editor {
+                    float: right;
+                    margin-top: .4rem;
+                    display: inline-block;
+                    width: .453rem;
+                    height: .507rem;
+                    background: url(../img/editor.png);
+                    background-size: cover;
+                }
+            }
+        }
+    }
+    .show {
+    	display: block;
+    }
+    .cal_interval {
+        height: .427rem;
+        background: #f3f3f3;
+    }
+    .video_fte {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+}
+/*字号适配*/
+[data-dpr="2"] .wrap {
+    .calculate_way {
+        li {
+            a {
+                font-size: 30px;
+            }
+        }
+    }
+    .calculate {
+        .cal_empty {
+            font-size: 28px;
+        }
+        .cal_type {
+            .cal_type_tit,
+            .cal_type_con,
+            .cal_type_con2 {
+                font-size: 30px;
+            }
+            .cal_type_explain {
+                font-size: 28px;
+            }
+        }
+        .cal_start_btn {
+            a {
+                font-size: 28px;
+            }
+        }
+        .cal_loan {
+            .cal_loan_type {
+                .cal_loan_tit,
+                .cal_loan_con {
+                    font-size: 30px;
+                }
+                .cal_loan_detail {
+                    li {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+[data-dpr="3"] .wrap {
+    .calculate_way {
+        li {
+            a {
+                font-size: 45px;
+            }
+        }
+    }
+    .calculate {
+        .cal_empty {
+            font-size: 42px;
+        }
+        .cal_type {
+            .cal_type_tit,
+            .cal_type_con,
+            .cal_type_con2 {
+                font-size: 45px;
+            }
+            .cal_type_explain {
+                font-size: 42px;
+            }
+        }
+        .cal_start_btn {
+            a {
+                font-size: 42px;
+            }
+        }
+        .cal_loan {
+            .cal_loan_type {
+                .cal_loan_tit,
+                .cal_loan_con {
+                    font-size: 45px;
+                }
+                .cal_loan_detail {
+                    li {
+                        font-size: 36px;
+                    }
+                }
+            }
+        }
+    }
+}
+/*匹配dpr=1 最大320*/
+[data-dpr="1"] .wrap{
+    @media (max-width: 320px){
+        .calculate {
+            .cal_type {
+                .cal_type_tit {
+                    width: 25.5%;
+                }
+                .cal_type_con {
+                    width: 67.5%;
+                }
+                .cal_type_con2 {
+                    width: 16.5%;
+                }
+            }
+            .cal_loan {
+                .cal_loan_type {
+                    .cal_loan_tit {
+                        width: 22.5%;
+                    }
+                }
+            }
+        }
+    }
+}
+/*匹配dpr=2 iphone4*/
+.wrap {
+    @media (device-height:480px) and (-webkit-min-device-pixel-ratio:2) {
+        .calculate {
+            .cal_type {
+                .cal_type_tit {
+                    width: 25.5%;
+                }
+                .cal_type_con {
+                    width: 67.5%;
+                }
+                .cal_type_con2 {
+                    width: 16.5%;
+                }
+            }
+        }
+    }
+}
+/*匹配dpr=2 iphone5*/
+.wrap {
+    @media (device-height:568px) and (-webkit-min-device-pixel-ratio:2) {
+        .calculate {
+            .cal_type {
+                .cal_type_tit {
+                    width: 25.5%;
+                }
+                .cal_type_con {
+                    width: 67.5%;
+                }
+                .cal_type_con2 {
+                    width: 16.5%;
+                }
+            }
+        }
+    }
+}

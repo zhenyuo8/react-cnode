@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="telephone=no,spanail=no" name="format-detection">
+	<meta name="description" content="［车型］图片，展示各种角度车型图片,包括车型外观,车型内饰,车型内部空间,
+	车型行驶等最新车型图片壁纸。"/>
+	<meta name="keywords" content= "车型图片,车型外观,车型内饰图,汽车大全"/>
+	<script src="js/flexible_css.js"></script>
+	<script src="js/flexible.js"></script>
+	<title>［车型］图｜［车型］图片大全－汽车大全</title>
+
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/carType_img.css">
+</head>
+
+<body>
+
+	<!--顶部导航-->
+    {{#include ./mod/mod_pubHeadNav.html}}
+
+    <!-- 车型图片主页面 -->
+    <div class="cartype_img">
+
+        <!-- 标题 -->
+        {{#include ./mod/mod_pubHead.html?m=速腾}}
+
+        <!-- 导航 -->
+        {{#include ./mod/mod_carNav.html}}
+
+        <!-- 条件选择 -->
+        <div class="condition_choice">
+            <p class="choice_type clearfix"><span>选车款</span><a href="javascript:void(0);">可根据车款查询<i></i></a></p>
+            <p class="choice_color clearfix"><span>选颜色</span><a href="javascript:void(0);">外观内饰/颜色<i></i></a></p>
+        </div>
+
+        <!-- 间隔条 -->
+		<div class="bg_bar"></div>
+
+        <!-- 图片切换模块 -->
+		<div class="img_module">
+            <div class="tab_title_box">
+                <ul class="tab_title clearfix" id="imgTabTitle">
+    				<li><a class="current" href="javascript:void(0);">全部</a></li>
+    				<li><a href="javascript:void(0);">外观</a></li>
+    				<li><a href="javascript:void(0);">内饰</a></li>
+    				<li><a href="javascript:void(0);">空间</a></li>
+                    <li><a href="javascript:void(0);">图解</a></li>
+                    <li><a href="javascript:void(0);">官方</a></li>
+                    <li><a href="javascript:void(0);">车展</a></li>
+    			</ul>
+            </div>
+            <div class="img_module_box">
+                <div class="tab_module img_module" id="img_module">
+    				<div class="swiper_box img_swiper_box all_img_box">
+                        <h3 class="demo_title"><span>外观</span><a href="#">更多<i></i></a></h3>
+                        <ul class="clearfix">
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                        </ul>
+                        <!-- 间隔条 -->
+                		<div class="bg_bar"></div>
+                        <h3 class="demo_title"><span>内饰</span><a href="#">更多<i></i></a></h3>
+                        <ul class="clearfix">
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                        </ul>
+                        <!-- 间隔条 -->
+                		<div class="bg_bar"></div>
+                        <h3 class="demo_title"><span>空间</span><a href="#">更多<i></i></a></h3>
+                        <ul class="clearfix">
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                        </ul>
+                        <!-- 间隔条 -->
+                		<div class="bg_bar"></div>
+                        <h3 class="demo_title"><span>图解</span><a href="#">更多<i></i></a></h3>
+                        <ul class="clearfix">
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                        </ul>
+                        <!-- 间隔条 -->
+                		<div class="bg_bar"></div>
+                        <h3 class="demo_title"><span>官方</span><a href="#">更多<i></i></a></h3>
+                        <ul class="clearfix">
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                        </ul>
+                        <!-- 间隔条 -->
+                		<div class="bg_bar"></div>
+                        <h3 class="demo_title"><span>车展</span><a href="#">更多<i></i></a></h3>
+                        <ul class="clearfix">
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                        </ul>
+    				</div>
+    				<div class="swiper_box img_swiper_box">
+                        <ul class="clearfix">
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                        </ul>
+                        <div class="load_more_module">
+                            <a href="#" class="load_more">加载更多wg<img src="img/down.png"></a>
+                            <a href="#" class="loading"><img src="img/load_icon.png"></a>
+                            <a href="#" class="more">进入文章频道页<img src="img/arrow_right_blue.png"></a>
+                        </div>
+    				</div>
+    				<div class="swiper_box img_swiper_box">
+                        <ul class="clearfix">
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                        </ul>
+                        <div class="load_more_module">
+                            <a href="#" class="load_more">加载更多ns<img src="img/down.png"></a>
+                            <a href="#" class="loading"><img src="img/load_icon.png"></a>
+                            <a href="#" class="more">进入文章频道页<img src="img/arrow_right_blue.png"></a>
+                        </div>
+    				</div>
+    				<div class="swiper_box img_swiper_box">
+                        <ul class="clearfix">
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                        </ul>
+                        <div class="load_more_module">
+                            <a href="#" class="load_more">加载更多kj<img src="img/down.png"></a>
+                            <a href="#" class="loading"><img src="img/load_icon.png"></a>
+                            <a href="#" class="more">进入文章频道页<img src="img/arrow_right_blue.png"></a>
+                        </div>
+    				</div>
+                    <div class="swiper_box img_swiper_box">
+                        <ul class="clearfix">
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                        </ul>
+                        <div class="load_more_module">
+                            <a href="#" class="load_more">加载更多tj<img src="img/down.png"></a>
+                            <a href="#" class="loading"><img src="img/load_icon.png"></a>
+                            <a href="#" class="more">进入文章频道页<img src="img/arrow_right_blue.png"></a>
+                        </div>
+    				</div>
+                    <div class="swiper_box img_swiper_box">
+                        <ul class="clearfix">
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                        </ul>
+                        <div class="load_more_module">
+                            <a href="#" class="load_more">加载更多gf<img src="img/down.png"></a>
+                            <a href="#" class="loading"><img src="img/load_icon.png"></a>
+                            <a href="#" class="more">进入文章频道页<img src="img/arrow_right_blue.png"></a>
+                        </div>
+    				</div>
+                    <div class="swiper_box img_swiper_box">
+                        <ul class="clearfix">
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                            <li><a href="#"><img src="img/pic/imgcar.png"></a></li>
+                        </ul>
+                        <div class="load_more_module">
+                            <a href="#" class="load_more">加载更多cz<img src="img/down.png"></a>
+                            <a href="#" class="loading"><img src="img/load_icon.png"></a>
+                            <a href="#" class="more">进入文章频道页<img src="img/arrow_right_blue.png"></a>
+                        </div>
+    				</div>
+    			</div>
+            </div>
+		</div>
+
+        <!-- 间隔条 -->
+		<div class="bg_bar"></div>
+
+		<!-- 面包屑导航 -->
+		<div class="small_nav">
+			<a href="#">首页</a><img src="img/back_rightjt.png">
+            <a href="#">选车</a><img src="img/back_rightjt.png">
+            <a href="#">大众</a><img src="img/back_rightjt.png">
+            <a href="#">速腾</a><img src="img/rightjt.png">
+            <span>图片</span>
+		</div>
+
+        <!-- 底部版权 -->
+		{{#include ./mod/mod_footer.html}}
+
+		<!-- 回到顶部 -->
+		{{#include mod/mod_goTop.html}}
+
+    </div>
+
+    <!-- 遮罩层 -->
+	<div class="mask_area">
+		<div class="mask"></div>
+		<div class="mask_jt"></div>
+	</div>
+
+    <!-- 右侧车款模块 -->
+	<div class="right_type_module right_module">
+		<div class="car_type_module car_msg_module">
+			<div class="current_msg">
+				<span>不限</span>
+			</div>
+			<div class="sub_brand">
+				<span>2017款</span>
+			</div>
+			<ul class="car_type_list">
+				<li>
+					<a href="#">
+						<p class="type_name">2017款 1.4L 手动实用型</p>
+						<p class="type_price"><span>9.93万起</span><i>指导价：19.93万</i></p>
+					</a>
+				</li>
+                <li>
+					<a href="#">
+						<p class="type_name">2017款 1.4L 手动实用型</p>
+						<p class="type_price"><span>9.93万起</span><i>指导价：19.93万</i></p>
+					</a>
+				</li>
+                <li>
+					<a href="#">
+						<p class="type_name">2017款 1.4L 手动实用型</p>
+						<p class="type_price"><span>9.93万起</span><i>指导价：19.93万</i></p>
+					</a>
+				</li>
+                <li>
+					<a href="#">
+						<p class="type_name">2017款 1.4L 手动实用型</p>
+						<p class="type_price"><span>9.93万起</span><i>指导价：19.93万</i></p>
+					</a>
+				</li>
+                <li>
+					<a href="#">
+						<p class="type_name">2017款 1.4L 手动实用型</p>
+						<p class="type_price"><span>9.93万起</span><i>指导价：19.93万</i></p>
+					</a>
+				</li>
+			</ul>
+			<div class="sub_brand">
+				<span>2016款</span>
+			</div>
+            <ul class="car_type_list">
+                <li>
+					<a href="#">
+						<p class="type_name">2017款 1.4L 手动实用型</p>
+						<p class="type_price"><span>9.93万起</span><i>指导价：19.93万</i></p>
+					</a>
+				</li>
+                <li>
+					<a href="#">
+						<p class="type_name">2017款 1.4L 手动实用型</p>
+						<p class="type_price"><span>9.93万起</span><i>指导价：19.93万</i></p>
+					</a>
+				</li>
+                <li>
+					<a href="#">
+						<p class="type_name">2017款 1.4L 手动实用型</p>
+						<p class="type_price"><span>9.93万起</span><i>指导价：19.93万</i></p>
+					</a>
+				</li>
+                <li>
+					<a href="#">
+						<p class="type_name">2017款 1.4L 手动实用型</p>
+						<p class="type_price"><span>9.93万起</span><i>指导价：19.93万</i></p>
+					</a>
+				</li>
+                <li>
+					<a href="#">
+						<p class="type_name">2017款 1.4L 手动实用型</p>
+						<p class="type_price"><span>9.93万起</span><i>指导价：19.93万</i></p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+    <!-- 右侧颜色模块 -->
+	<div class="right_color_module right_module">
+		<div class="car_color_module car_msg_module">
+			<div class="current_msg">
+				<span>不限</span>
+			</div>
+			<div class="sub_brand">
+				<span>外观颜色</span>
+			</div>
+			<ul class="car_color_list">
+				<li><a href="#"><i style="background-color:#272834"></i>传奇黑</a></li>
+                <li><a href="#"><i style="background-color:#d2d2d2"></i>水晶银</a></li>
+                <li><a href="#"><i style="background-color:#0856cb"></i>宝石蓝</a></li>
+                <li><a href="#"><i style="background-color:#c60909"></i>典雅红</a></li>
+			</ul>
+			<div class="sub_brand">
+				<span>内饰颜色</span>
+			</div>
+            <ul class="car_color_list">
+				<li><a href="#"><i style="background-color:#ff8610"></i>萨摩亚橙</a></li>
+                <li><a href="#"><i style="background-color:#d2d2d2"></i>水晶银</a></li>
+                <li><a href="#"><i style="background-color:#fff"></i>素洁白</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/cartype_img.js"></script>
+	<script src="js/pubNav.js"></script>
+    <script src="js/goTop.js"></script>
+</body>
+</html>

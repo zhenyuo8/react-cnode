@@ -1,0 +1,328 @@
+.car_select_input_box{
+  width: 100%;
+  margin-top: 12px;
+  .car_brand{
+    width: 145px;
+    height: 25px;
+    border: 1px solid #dadada;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    line-height: 25px;
+    text-indent: 8px;
+    padding-right: 10px;
+    background: url("../img/select_down.png")no-repeat 140px center;
+    cursor: pointer;
+    .Js_car_barnd_word{
+      display: inline-block;
+      width: 100px;
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 0px;
+      margin: 0px;
+    }
+  }
+  .car_type{
+    width: 145px;
+    height: 25px;
+    border: 1px solid #dadada;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    line-height: 25px;
+    text-indent: 8px;
+    padding-right: 10px;
+    background: url("../img/select_down.png")no-repeat 140px center;
+    cursor: pointer;
+    .Js_car_type_word{
+      display: inline-block;
+      width: 100px;
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 0px;
+      margin: 0px;
+    }
+  }
+  .car_year{
+    width: 285px;
+    height: 25px;
+    border: 1px solid #dadada;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    line-height: 25px;
+    text-indent: 8px;
+    padding-right: 10px;
+    background: url("../img/select_down.png")no-repeat 240px center;
+    cursor: pointer;
+    .Js_car_des{
+      display: inline-block;
+      width: 230px;
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 0px;
+      margin: 0px;
+    }
+
+  }
+  .car_brand:hover{
+    border: 1px solid #398be4;
+    background: url("../img/select_b_down.png")no-repeat 141px center;
+  }
+  .car_type:hover{
+    border: 1px solid #398be4;
+    background: url("../img/select_b_down.png")no-repeat 141px center;
+  }
+  .car_year:hover{
+    border: 1px solid #398be4;
+    background: url("../img/select_b_down.png")no-repeat 241px center;
+  }
+}
+.car_barnd_box{
+  width: 218px;
+  height: 483px;
+  border: 1px solid #333333;
+  border-bottom: 4px solid #333333 ;
+  background-color: silver;
+  z-index: 10;
+  top: 35px;
+  .title_p{
+    border-bottom: 1px solid #333333 ;
+    line-height: 31px;
+    text-indent: 0px;
+    background-color: #ffffff;
+    span{
+      display: inline-block;
+      height: 29px;
+      border-bottom: 2px solid #3a8be4 ;
+      text-align: center;
+    }
+  }
+  .car_brand_con {
+    width: 185px;
+    height: 451px;
+    overflow: auto;
+    background-color: white;
+    ul{
+      padding-top: 7px;
+      border-bottom: 1px solid #eeeeee;
+      li:hover{
+        background-color: #3a8be4;
+        color: #fffeff;
+      }
+      li{
+        line-height: 30px;
+        height: 30px;
+        text-indent: 0px;
+        span{
+          display: inline-block;
+        }
+        .car_brand_name{
+          width: 100px;
+          overflow: hidden;
+          white-space:nowrap;
+        }
+        .letter{
+          vertical-align: top;
+          margin-right: 10px;
+        }
+      }
+    }
+    .mCSB_inside>.mCSB_container{
+      margin-right: 0px;
+    }
+    .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+      width: 6px;
+      background-color: #999999;
+    }
+    .mCSB_scrollTools .mCSB_draggerRail{
+      width: 0px;
+    }
+    .mCSB_scrollTools .mCSB_dragger{
+      height: 24px;
+    }
+  }
+  .letter_index{
+    border-right: 1px solid #eeeeee ;
+    background: #ffffff;
+    height: 451px;
+    ul{
+      width:31px;
+      border-right: 1px solid #efefef;
+      li{
+        line-height: 18px;
+        text-align: center;
+        text-indent: 0px;
+      }
+      .active{
+        color:#378be1 ;
+      }
+    }
+  }
+}
+.car_type_box{
+  width: 218px;
+  height: 350px;
+  border: 1px solid #333333;
+  border-bottom: 4px solid #333333;
+  background-color: #ffffff;
+  z-index: 10;
+  overflow-y: auto;
+  top: 35px;
+  .mCSB_inside{
+    .mCSB_container{
+      margin-right: 0px;
+    }
+  }
+  .mCustomScrollBox{
+    .mCSB_inside>.mCSB_container{
+      margin-right: 0px;
+    }
+    .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+      width: 6px;
+      background-color: #999999;
+    }
+    .mCSB_scrollTools .mCSB_draggerRail{
+      width: 0px;
+    }
+    .mCSB_scrollTools .mCSB_dragger{
+      height: 24px;
+    }
+
+  }
+  .title_extra{
+    font-weight: 600;
+    border-bottom: 1px solid #eeeeee;
+    line-height: 29px;
+  }
+  .title{
+    line-height: 31px;
+    text-indent: 0px;
+    border-bottom: 1px solid #333333;
+    span{
+      display: inline-block;
+      height: 29px;
+      text-align: center;
+    }
+    .active{
+      border-bottom: 2px solid #3a8be4;
+    }
+  }
+  .car_type_con{
+    .Js_car_des {
+      overflow: hidden;
+      width: 130px;
+    }
+    dl{
+      border-bottom: 1px solid #eeeeee;
+      padding-bottom: 7px;
+      text-indent: 14px;
+      dd{
+        line-height: 30px;
+        overflow: hidden;
+        white-space: nowrap;
+        .c_cd{
+          color: #cdcdcd;
+        }
+      }
+      dd:hover{
+        background-color: #3a8be4;
+        color: #fffeff;
+      }
+      dt{
+        line-height: 32px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+.car_year_box{
+  width: 278px;
+  height: 350px;
+  border: 1px solid #333333;
+  border-bottom: 4px solid #333333;
+  background-color: #ffffff;
+  z-index: 20;
+  overflow-y: auto;
+  top: 35px;
+  .mCSB_inside{
+    .mCSB_container{
+      margin-right: 0px;
+    }
+  }
+  .mCustomScrollBox{
+    .mCSB_inside>.mCSB_container{
+      margin-right: 0px;
+    }
+    .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+      width: 6px;
+      background-color: #999999;
+    }
+    .mCSB_scrollTools .mCSB_draggerRail{
+      width: 0px;
+    }
+    .mCSB_scrollTools .mCSB_dragger{
+      height: 24px;
+    }
+
+  }
+  .title_extra{
+    font-weight: 600;
+    border-bottom: 1px solid #eeeeee;
+    line-height: 29px;
+  }
+  .title{
+    line-height: 31px;
+    text-indent: 0px;
+    border-bottom: 1px solid #333333;
+    span{
+      display: inline-block;
+      height: 29px;
+      text-align: center;
+    }
+    .active{
+      border-bottom: 2px solid #3a8be4;
+    }
+  }
+
+  dl{
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 7px;
+    text-indent: 14px;
+    dt{
+      font-weight: 600;
+    }
+    dd{
+      line-height: 30px;
+      height: 30px;
+      .span{
+          display: inline-block;
+          height: 30px;
+          width: 162px;
+          overflow-x: hidden;
+          white-space: nowrap;
+      }
+      .fr{
+        margin-right: 13px;
+      }
+      .c_e53b3c{
+        color: #e53b3c;
+      }
+      span{
+        margin-left: 0;
+        padding: 0px;
+      }
+    }
+    dd:hover{
+      background-color: #3a8be4;
+      color: #fffeff;
+      .c_e53b3c{
+        color: #fffeff;
+      }
+    }
+    dt{
+      line-height: 32px;
+    }
+  }
+}
+.h10{
+  height: 10px;
+  margin-top: -15px;
+}

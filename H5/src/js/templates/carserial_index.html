@@ -1,0 +1,69 @@
+<div style="height: 100%">
+	<!-- 车型 -->
+	<div class="blue_bg"></div>
+
+	<!-- 车型主页面 -->
+    <div class="car_type_page">
+
+		<!-- 换车 -->
+		<div class="change_car">
+			<router-link :to="'/'" bdtag="SubbrandPage_ChangeButton_Clicked" reload><i></i>换车</router-link>
+		</div>
+
+		<!-- 车型图片展示 -->
+		<div class="car_type_img">
+			<div class="logo">
+				<img v-bind:src="brand_logo">
+				<span>{{info.serialname}}</span>
+			</div>
+			<div class="car_pic_tab">
+				<div class="car_pic_list">
+					<swiper :options="swiperOption">
+						<swiper-slide v-for="row in imgs">
+							<img v-bind:src="row.imgUrl" />
+						</swiper-slide>
+						<div class="swiper-pagination"  slot="pagination" v-show="imgs.length>1"></div>
+					</swiper>
+				</div>
+			</div>
+		</div>
+
+		<!-- 车型信息 -->
+		<div class="car_type_msg" v-if="info.brandId">
+			<p class="price_msg">
+				<span class="price_n">{{info.salererprice?info.salererprice:'暂无报价'}}</span>
+				<span class="price_zd">指导价：{{info.referprice?info.referprice:'暂无'}}</span>
+				<span class="tip"><i v-show="info.purchasetaxrelief">减税</i><i v-show="info.subsidies">补贴</i></span>
+			</p>
+			<p class="param_msg" v-if="isElectric()">
+				<span>电动车</span>
+				<span>续航里程：{{info.electricMustMileageconstant ? info.electricMustMileageconstant : '暂无'}}</span>
+			</p>
+			<p class="param_msg" v-else>
+				<span>排量：{{filterStr(info.engineexhaustforfloat)}}</span>
+				<span>油耗：{{info.perfzongheyouhao ? info.perfzongheyouhao : '暂无'}}</span>
+			</p>
+		</div>
+
+		<!-- 导航 -->
+		<nav>
+			<ul class="clearfix">
+				<li bdtag="SubbrandPage_ModelButton_Clicked" class="active">
+					<router-link :to="getLink('index')">车型</router-link></li>
+				<li bdtag="SubbrandPage_PriceButton_Clicked">
+					<router-link :to="getLink('price')">报价</router-link></li>
+				<li bdtag="SubbrandPage_ImageButton_Clicked">
+					<router-link :to="getLink('pic')">图片</router-link></li>
+				<li bdtag="SubbrandPage_ConfigurationButton_Clicked">
+					<router-link :to="getLink('param')">配置</router-link></li>
+				<li bdtag="SubbrandPage_NewsButton_Clicked">
+					<router-link :to="getLink('news')">评测</router-link></li>
+				<li bdtag="SubbrandPage_DealerButton_Clicked">
+					<router-link :to="getLink('dealer')">经销商</router-link></li>
+			</ul>
+		</nav>
+
+		<div class="next_page"></div>
+
+    </div>
+</div>

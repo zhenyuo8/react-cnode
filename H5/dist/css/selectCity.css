@@ -1,0 +1,207 @@
+/*****
+ *@author: jianingning
+ *@from: Global style selectCity
+ *@description: 
+ *@date: name (2017.02.13)
+*/
+/*****
+ *@author: jianingning
+ *@from: Global style mod_rotatoHint
+ *@description:
+ *@date: name (2017.02.17)
+*/
+.rotatoHint_mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  filter: alpha(opacity=50);
+  opacity: .5;
+  display: none;
+}
+.rotatoHint {
+  position: fixed;
+  top: 21.9%;
+  left: 16.4%;
+  z-index: 100;
+  width: 63.4%;
+  display: none;
+}
+.rotatoHint img {
+  width: 100%;
+}
+.wrap {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+.wrap .content {
+  width: 100%;
+  padding-top: 1.333rem;
+}
+.wrap .content .select {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 1.333rem;
+  line-height: 1.333rem;
+  background: -webkit-linear-gradient(to right bottom, #24aafe, #2896fe);
+  background: linear-gradient(to right bottom, #24aafe, #2896fe);
+}
+.wrap .content .select h3 {
+  float: left;
+  margin-left: 0.37rem;
+  font-size: 18px;
+  color: #fff;
+}
+.wrap .content .select .close {
+  float: right;
+  margin: 0.427rem 0.4rem 0 0;
+  display: inline-block;
+  width: 0.48rem;
+  height: 0.48rem;
+  background: url(../img/close.png);
+  background-size: cover;
+}
+.wrap .content .sign_text {
+  height: 0.857rem;
+  font-size: 13px;
+  color: #999;
+  padding-left: 0.373rem;
+  line-height: 0.857rem;
+}
+.wrap .content .city li {
+  height: 1.497rem;
+  background: #fff;
+  font-size: 15px;
+  padding-left: 0.373rem;
+  line-height: 1.397rem;
+  border-bottom: 1px solid #f3f3f3;
+}
+.wrap .content .city li span {
+  margin-right: 0.8rem;
+}
+.wrap .content .city li .current {
+  color: #2896fe;
+}
+.wrap .content .c_sign_text {
+  height: 0.807rem;
+  font-size: 13px;
+  color: #6a6a6a;
+  padding-left: 0.373rem;
+  line-height: 0.807rem;
+}
+.wrap .content .letter {
+  height: 0.667rem;
+  font-size: 14px;
+  color: #6a6a6a;
+  padding-left: 0.373rem;
+  line-height: 0.667rem;
+}
+/*城市抽屉*/
+.slider_btn {
+  position: fixed;
+  top: 50%;
+  left: 1.093rem;
+  margin-top: -0.32rem;
+  z-index: 5;
+  width: 0.693rem;
+  height: 0.64rem;
+  display: none;
+}
+.cityDrawer {
+  width: 7.667rem;
+  height: 100%;
+  position: fixed;
+  top: 1.333rem;
+  right: -80%;
+  transition: right .5s;
+  z-index: 4;
+  border-left: 1px solid #d2d2d2;
+  background: #fff;
+  -moz-box-shadow: -10px 0 10px #6e6e6e;
+  -webkit-box-shadow: -10px 0 10px #6e6e6e;
+  box-shadow: -10px 0 10px #6e6e6e;
+  overflow-y: scroll;
+}
+.cityDrawer .cityBox {
+  width: 7.667rem;
+  background: #fff;
+}
+.cityDrawer .cityBox .citys {
+  padding-bottom: 1.333rem;
+}
+.cityDrawer .cityBox .citys li {
+  padding-left: 0.4rem;
+  height: 1.484rem;
+  border-bottom: 1px solid #f3f3f3;
+  line-height: 1.484rem;
+  font-size: 15px;
+}
+.cityDrawer .cityBox .citys .select span {
+  float: right;
+  margin: 0.387rem 0.373rem 0 0;
+  display: inline-block;
+  width: 0.533rem;
+  height: 0.533rem;
+  background: url(../img/select.png);
+  background-size: cover;
+}
+.cityDrawer .cityBox .drawer {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -1.68rem;
+  z-index: 5;
+  width: 0.093rem;
+  height: 2.16rem;
+}
+[data-dpr="2"] .wrap .content h3 {
+  font-size: 36px;
+}
+[data-dpr="2"] .wrap .content .sign_text {
+  font-size: 26px;
+}
+[data-dpr="2"] .wrap .content .city li {
+  font-size: 30px;
+}
+[data-dpr="2"] .wrap .content .c_sign_text {
+  font-size: 26px;
+}
+[data-dpr="2"] .wrap .content .letter {
+  font-size: 28px;
+}
+[data-dpr="2"] .cityBox .citys li {
+  font-size: 30px;
+}
+[data-dpr="3"] .wrap .content h3 {
+  font-size: 54px;
+}
+[data-dpr="3"] .wrap .content .sign_text {
+  font-size: 39px;
+}
+[data-dpr="3"] .wrap .content .city li {
+  font-size: 45px;
+}
+[data-dpr="3"] .wrap .content .c_sign_text {
+  font-size: 39px;
+}
+[data-dpr="3"] .wrap .content .letter {
+  font-size: 42px;
+}
+[data-dpr="3"] .cityBox .citys li {
+  font-size: 45px;
+}
+@media all and (orientation: landscape) {
+  .rotatoHint_mask {
+    display: block;
+  }
+  .rotatoHint {
+    display: block;
+  }
+}

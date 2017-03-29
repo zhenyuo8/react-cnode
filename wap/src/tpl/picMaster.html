@@ -1,0 +1,11 @@
+
+{{ for (var i = 0, l = it.length; i < l; i++) { }}
+	<div id="char_nav_{{=it[i].initial}}" class="letter_title"><span>{{=it[i].initial}}</span></div>
+	<div class="brand_box">
+		<ul>
+			{{ for (var j = 0, k = it[i].data.length; j < k; j++) { }}
+				<li data-id="{{=it[i].data[j].id}}" data-img="{{=it[i].data[j].img100}}"><a href="javascript:void(0);"><i><img src="{{=it[i].data[j].img100}}"></i><span class="brand_name">{{=it[i].data[j].name}}</span></a></li>
+			{{ } }}
+		</ul>
+	</div>
+{{ } }}

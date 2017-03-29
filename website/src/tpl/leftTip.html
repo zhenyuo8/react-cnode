@@ -1,0 +1,11 @@
+<ul class="">
+    <li class="po-a top_icon"></li>
+    {{~it.list :value:index}}
+    <li class="po-r current {{=index == 0 ? 'active' : ''}}">
+        <a href="#" i="{{=index}}" start="{{=value.start}}" end="{{=value.end}}">{{=value.name}}</a>
+        <span class="bg_icon"></span>
+        <span class="status_n_icon po-a"></span>
+    </li>
+    {{~}}
+    <li class="po-a bot_icon"></li>
+</ul>

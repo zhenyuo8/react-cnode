@@ -1,0 +1,16 @@
+
+
+    
+
+    {{ for (var i = 0; i < it.selects.length; i++) { var carP = it.selects[i].param['carParam']; }}
+
+    <li>
+        <a href="#">
+            <p class="type_name">{{ out+= carP['serialname'];}} {{ out+= carP['caryear'];}}款 {{ out+= carP['name']; }}</p>
+            <p class="type_price">{{ out += it.selects[i].param['carParam']['referprice']; }}万</p>
+            <em i="{{=i}}"></em>
+            <i id="{{ out += it.selects[i].CarID; }}" data-id="{{ out += it.selects[i].CarID; }}" data-text="{{ out+= carP['serialname'];}} {{ out+= carP['name']; }}" data-price="{{ out += it.selects[i].param['carParam']['referprice']; }}" data-dealerminprice="{{ out += it.selects[i].param['carParam']['dealerminprice']; }}"></i>
+        </a>
+    </li>
+
+    {{ } }}

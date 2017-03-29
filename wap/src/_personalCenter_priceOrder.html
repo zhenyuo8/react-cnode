@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="telephone=no,spanail=no" name="format-detection">
+	<script src="js/flexible_css.js"></script>
+	<script src="js/flexible.js"></script>
+	<title>汽车大全-个人中心-我的询价</title>
+
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/personalCenter_priceOrder.css">
+</head>
+
+<body>
+
+<!--顶部导航-->
+{{#include ./mod/mod_pubHeadNav.html}}
+
+<!-- 首页主页面 -->
+<div class="index_page">
+	<!-- 头部logo -->
+	{{#include ./mod/mod_pubHead.html?m=询价订单}}
+
+    <div class="content_list">
+      <div class="content">
+		  <!--每个order——list算是一项-->
+		<div class="order_list clearfix">
+			<dl class="img_show clearfix">
+				<a href="#">
+					<dt>
+						  <img src="img/pic/order.jpg" alt="">
+					</dt>
+					<dd class="model_des clearfix">2015款 1.5T MT 280SI 舒适版</dd>
+					<dd class="model_price">
+						<span>报价<strong>9.93万起</strong></span>
+					</dd>
+				</a>
+			</dl>
+			<dl class="order_detail">
+				<a href="#"><span>[4S]</span>北京博瑞祥云<i></i></a>
+				<dd class="top_msg clearfix">
+					<span><i>我的信息 : </i>秦王 13888768988</span>
+					<span><i>询价时间 : </i>2016.01.12</span>
+				</dd>
+			</dl>
+			<div class="bg_bar"></div>
+		</div>
+		  <!--每个order——list算是一项-->
+		<div class="order_list clearfix">
+			  <dl class="img_show clearfix">
+				  <a href="#">
+					  <dt>
+						  <img src="img/pic/order.jpg" alt="">
+					  </dt>
+					  <dd class="model_des clearfix">2015款 1.5T MT 280SI 舒适版</dd>
+					  <dd class="model_price">
+						  <span>报价<strong>9.93万起</strong></span>
+					  </dd>
+				  </a>
+			  </dl>
+			  <dl class="order_detail">
+				  <a href="#"><span>[4S]</span>北京博瑞祥云<i></i></a>
+				  <dd class="top_msg clearfix">
+					  <span><i>我的信息 : </i>秦王 13888768988</span>
+					  <span><i>询价时间 : </i>2016.01.12</span>
+				  </dd>
+			  </dl>
+			  <div class="bg_bar"></div>
+		  </div>
+		  <!--每个order——list算是一项-->
+		<div class="order_list clearfix">
+			  <dl class="img_show clearfix">
+				  <a href="#">
+					  <dt>
+						  <img src="img/pic/order.jpg" alt="">
+					  </dt>
+					  <dd class="model_des clearfix">2015款 1.5T MT 280SI 舒适版</dd>
+					  <dd class="model_price">
+						  <span>报价<strong>9.93万起</strong></span>
+					  </dd>
+				  </a>
+			  </dl>
+			  <dl class="order_detail">
+				  <a href="#"><span>[4S]</span>北京博瑞祥云<i></i></a>
+				  <dd class="top_msg clearfix">
+					  <span><i>我的信息 : </i>秦王 13888768988</span>
+					  <span><i>询价时间 : </i>2016.01.12</span>
+				  </dd>
+			  </dl>
+			  <div class="bg_bar"></div>
+		  </div>
+		<div class="load_more_module">
+			<a href="#" class="load_more">加载更多<img src="img/down.png"></a>
+			<a href="#" class="loading"><img src="img/load_icon.png"></a>
+			<a href="#" class="no_more">没有更多了...</a>
+		</div>
+      </div>
+
+	  <!-- 间隔条 -->
+	  <div class="bg_bar"></div>
+
+	  {{#include ./mod/mod_footer.html}}
+    </div>
+
+	<!-- 无询价订单模块 -->
+	<div class="no_content_container">
+		<img src="img/book_empty.png" alt="">
+		<span>暂无询价订单</span>
+	</div>
+</div>
+
+<!-- 回到顶部 -->
+{{#include mod/mod_goTop.html}}
+
+<!-- 遮罩层 -->
+<div class="mask_area">
+	<div class="mask"></div>
+	<div class="mask_jt"></div>
+</div>
+
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/pubNav.js"></script>
+</body>
+</html>

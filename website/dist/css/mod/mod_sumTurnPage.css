@@ -1,0 +1,44 @@
+/*****
+ *@author: linyh
+ *@from: Global style sumTurnPage module
+ *@description: 何在朋
+ *@date: name (2017.02.05)
+*/
+.pade_turning {
+  margin: 30px 0 48px;
+  text-align: center;
+}
+.pade_turning a {
+  color: #555;
+  font-size: 16px;
+  display: inline-block;
+  width: 36px;
+  line-height: 36px;
+  text-align: center;
+  border: 1px solid #e1e1e1;
+  background-color: #f3f3f3;
+  margin: 0 5px;
+}
+.pade_turning .turn_page_h:hover {
+  color: #3a8be4;
+}
+.pade_turning .turn_page_h:active {
+  color: #1673d9;
+}
+.pade_turning .pre_page,
+.pade_turning .next_page {
+  width: 76px;
+}
+.pade_turning .pre_page:hover,
+.pade_turning .next_page:hover {
+  color: #3a8be4;
+}
+.pade_turning .pre_page:active,
+.pade_turning .next_page:active {
+  color: #1673d9;
+}
+.pade_turning .turn_page_visited {
+  color: #fff;
+  background-color: #398be4;
+  border-color: #1673d9;
+}

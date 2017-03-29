@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="telephone=no,email=no" name="format-detection">
+	<meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+	<script src="js/flexible_css.js"></script>
+	<script src="js/flexible.js"></script>
+	<title>汽车大全-问题库</title>
+
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/wenda_issues.css">
+</head>
+
+<body>
+
+    <!--顶部导航-->
+    <div class="pubHeadNav">
+    <div class="logo_box"> <img src="img/xylogo.png" class="nav_logo"> <a href="#" class="login">登录</a>
+        <div class="login_photo">
+            <a href="#"><img src="img/login_photo.png"></a>
+        </div>
+    </div>
+    <ul class="nav_type clearfix">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="choiceCar.html">选车</a></li>
+        <li><a href="article.html">新车</a></li>
+        <li><a href="article.html">评测</a></li>
+        <li class="pubHeadNav_active"><a href="article.html">导购</a></li>
+        <li><a href="picture.html">图片</a></li>
+        <li><a href="videoindex.html">视频</a></li>
+        <li><a href="summarize_zongshu.html">报价</a></li>
+        <li><a href="summarize_zongshu.html">降价</a></li>
+        <li><a href="carstyle_zongshu.html">经销商</a></li>
+        <li><a href="#">问答</a></li>
+    </ul>
+</div>
+<!--导航下面的半透明遮罩-->
+<div class="nav_mask"></div>
+
+    <!-- 问题库 -->
+    <div class="issues_page">
+
+        <!-- 标题 -->
+    	<div class="pub_head">
+    <a href="#" class="goback_btn" id="goHistory"></a>
+    <a href="http://m.qichedaquan.com/"><img src="img/logo_text.png" class="logo_text"></a> <span class="p">●</span> <span class="title_extra">问题库</span> <span class="nav_btn">导航</span></div>
+
+        <!-- nav -->
+        <div class="nav_list clearfix">
+            <a href="#" id="buyCar" class="checked">买车问题 <i></i></a>
+            <a href="#" id="choiceType">选择车型<i></i></a>
+            <a href="#" class="reset">重置</a>
+        </div>
+
+        <!-- 推荐内容 -->
+        <div class="recommend_content">
+			<div class="recom_content_list">
+                <dl class="recom_content_module">
+                    <dt>
+                        <a href="#" class="user_photo"><img src="img/pic/wd_user.jpg"></a>
+                        <img src="img/biaobing.png" class="level_title">
+                    </dt>
+                    <dd>
+                        <a href="#" class="user_name">嘉裕晟</a>
+						<a href="#" class="use_car"></a>
+                        <a href="#" class="recom_content_item">
+                            <p class="recom_text">
+                                <i>精</i><span>#用车#</span>
+                                今天我们要试驾的悦纳RV是一款更受年轻消费者青睐的两厢车，内外设计驾驶感受方面和悦纳三厢版非常相似，更受年轻消费者青睐的两厢车
+                            </p>
+                            <p class="recom_img">
+                                <img src="img/pic/wd_recom_pic.jpg"><img src="img/pic/wd_recom_pic.jpg"><img src="img/pic/wd_recom_pic.jpg">
+                            </p>
+						</a>
+                        <p class="recom_type">
+                            <a href="#">哈佛H5</a><a href="#">传奇CS4</a><a href="#">北汽幻速S5</a><a href="#">起亚</a><a href="#">哈佛H6</a>
+                        </p>
+                        <p class="recom_other clearfix">
+                            <span class="time_area"><i>5分钟前</i>北京</span>
+                            <span class="reply_num">234条回答</span>
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="recom_content_module">
+                    <dt>
+                        <a href="#" class="user_photo"><img src="img/pic/wd_user.jpg"></a>
+                        <img src="img/expert.png" class="level_title">
+                    </dt>
+                    <dd>
+                        <a href="#" class="user_name">嘉裕晟</a>
+						<a href="#" class="use_car"></a>
+                        <a href="#" class="recom_content_item">
+                            <p class="recom_text">
+                                <span>#买车#</span>
+                                今天我们要试驾的悦纳RV是一款更受年轻消费者青睐的两厢车，内外设计驾驶感受方面和悦纳三厢版非常相似，更受年轻消费者青睐的两厢车
+                            </p>
+                            <p class="recom_img">
+                                <img src="img/pic/wd_recom_pic.jpg"><img src="img/pic/wd_recom_pic.jpg">
+                            </p>
+						</a>
+                        <p class="recom_type">
+                            <a href="#">哈佛H5</a><a href="#">传奇CS4</a><a href="#">北汽幻速S5</a><a href="#">起亚</a><a href="#">哈佛H6</a>
+                        </p>
+                        <p class="recom_other clearfix">
+                            <span class="time_area"><i>5分钟前</i>北京</span>
+                            <span class="reply_num">234条回答</span>
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="recom_content_module">
+                    <dt>
+                        <a href="#" class="user_photo"><img src="img/pic/wd_user.jpg"></a>
+                    </dt>
+                    <dd>
+                        <a href="#" class="user_name">嘉裕晟</a>
+						<a href="#" class="use_car"></a>
+                        <a href="#" class="recom_content_item">
+                            <p class="recom_text">
+                                <span>#用车#</span>
+                                今天我们要试驾的悦纳RV是一款更受年轻消费者青睐的两厢车，内外设计驾驶感受方面和悦纳三厢版非常相似，更受年轻消费者青睐的两厢车
+                            </p>
+                            <p class="recom_img">
+                                <img src="img/pic/wd_recom_pic.jpg"><img src="img/pic/wd_recom_pic.jpg"><img src="img/pic/wd_recom_pic.jpg">
+                            </p>
+						</a>
+                        <p class="recom_type">
+                        </p>
+                        <p class="recom_other clearfix">
+                            <span class="time_area"><i>5分钟前</i>北京</span>
+                            <span class="reply_num">234条回答</span>
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="recom_content_module">
+                    <dt>
+                        <a href="#" class="user_photo"><img src="img/pic/wd_user.jpg"></a>
+                    </dt>
+                    <dd>
+                        <a href="#" class="user_name">嘉裕晟</a>
+						<a href="#" class="use_car"></a>
+                        <a href="#" class="recom_content_item">
+                            <p class="recom_text">
+                                <span>#用车#</span>
+                                今天我们要试驾的悦纳RV是一款更受年轻消费者青睐的两厢车，内外设计驾驶感受方面和悦纳三厢版非常相似，更受年轻消费者青睐的两厢车
+                            </p>
+                            <p class="recom_img">
+                                <img src="img/pic/wd_recom_pic.jpg">
+                            </p>
+						</a>
+                        <p class="recom_type">
+                            <a href="#">哈佛H5</a>
+                        </p>
+                        <p class="recom_other clearfix">
+                            <span class="time_area"><i>5分钟前</i>北京</span>
+                            <span class="reply_num">234条回答</span>
+                        </p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="load_more_module">
+                <a href="#" class="load_more">加载更多<img src="img/down.png"></a>
+                <a href="#" class="loading"><img src="img/load_icon.png"></a>
+                <a href="#" class="more">查看全部问题<img src="img/arrow_right_blue.png"></a>
+            </div>
+        </div>
+
+        <!-- 间隔条 -->
+		<div class="bg_bar"></div>
+
+		<!-- 面包屑导航 -->
+		<div class="small_nav">
+			<a href="#">首页</a><img src="img/back_rightjt.png">
+            <a href="#">问答</a><img src="img/rightjt.png">
+			<span>问题库</span>
+		</div>
+
+        <!-- 底部版权 -->
+		<div class="video_fte">
+    <p> <span class="colora4">©&nbsp;&nbsp;2017&nbsp;&nbsp;汽车大全</span> </p>
+</div>
+
+		<!-- 提问 -->
+		<div class="ask_btn" id="askBtn">
+			<a href="#">提问</a>
+		</div>
+
+    </div>
+
+    <!-- 回到顶部 -->
+    <!-- 回到顶部 -->
+<div class="go_top" id="goTop"> <span></span> <i></i></div>
+
+    <!-- 遮罩层 -->
+	<div class="mask_area">
+		<div class="mask"></div>
+		<div class="mask_jt"></div>
+	</div>
+
+    <!-- 右侧抽屉品牌 -->
+    <div class="right_brand_module">
+        <!-- 品牌车型列表 -->
+        <div class="brand_type">
+            <div class="brand_list">
+                <div id="char_nav_A" class="letter_title"><span>A</span></div>
+                <div class="brand_box">
+                    <ul>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">奥迪</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿斯顿▪马丁</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿尔特</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">AC Schnitzer</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">Artega</span></a></li>
+                    </ul>
+                </div>
+                <div id="char_nav_B" class="letter_title"><span>B</span></div>
+                <div class="brand_box">
+                    <ul>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">奥迪</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿斯顿▪马丁</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿尔特</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">AC Schnitzer</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">Artega</span></a></li>
+                    </ul>
+                </div>
+                <div id="char_nav_C" class="letter_title"><span>C</span></div>
+                <div class="brand_box">
+                    <ul>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">奥迪</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿斯顿▪马丁</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿尔特</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">AC Schnitzer</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">Artega</span></a></li>
+                    </ul>
+                </div>
+                <div id="char_nav_D" class="letter_title"><span>D</span></div>
+                <div class="brand_box">
+                    <ul>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">奥迪</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿斯顿▪马丁</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿尔特</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">AC Schnitzer</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">Artega</span></a></li>
+                    </ul>
+                </div>
+                <div id="char_nav_E" class="letter_title"><span>E</span></div>
+                <div class="brand_box">
+                    <ul>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">奥迪</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿斯顿▪马丁</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿尔特</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">AC Schnitzer</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">Artega</span></a></li>
+                    </ul>
+                </div>
+                <div id="char_nav_F" class="letter_title"><span>F</span></div>
+                <div class="brand_box">
+                    <ul>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">奥迪</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿斯顿▪马丁</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿尔特</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">AC Schnitzer</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">Artega</span></a></li>
+                    </ul>
+                </div>
+                <div id="char_nav_G" class="letter_title"><span>G</span></div>
+                <div class="brand_box">
+                    <ul>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">奥迪</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿斯顿▪马丁</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿尔特</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">AC Schnitzer</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">Artega</span></a></li>
+                    </ul>
+                </div>
+                <div id="char_nav_H" class="letter_title"><span>H</span></div>
+                <div class="brand_box">
+                    <ul>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">奥迪</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿斯顿▪马丁</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿尔特</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">AC Schnitzer</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">Artega</span></a></li>
+                    </ul>
+                </div>
+                <div id="char_nav_I" class="letter_title"><span>I</span></div>
+                <div class="brand_box">
+                    <ul>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">奥迪</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿斯顿▪马丁</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿尔特</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">AC Schnitzer</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">Artega</span></a></li>
+                    </ul>
+                </div>
+                <div id="char_nav_J" class="letter_title"><span>J</span></div>
+                <div class="brand_box">
+                    <ul>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">奥迪</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿斯顿▪马丁</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿尔特</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">AC Schnitzer</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">Artega</span></a></li>
+                    </ul>
+                </div>
+                <div id="char_nav_K" class="letter_title"><span>K</span></div>
+                <div class="brand_box">
+                    <ul>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">奥迪</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿斯顿▪马丁</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿尔特</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">AC Schnitzer</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">Artega</span></a></li>
+                    </ul>
+                </div>
+                <div id="char_nav_L" class="letter_title"><span>L</span></div>
+                <div class="brand_box">
+                    <ul>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">奥迪</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿斯顿▪马丁</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿尔特</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">AC Schnitzer</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">Artega</span></a></li>
+                    </ul>
+                </div>
+                <div id="char_nav_M" class="letter_title"><span>M</span></div>
+                <div class="brand_box">
+                    <ul>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">奥迪</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿斯顿▪马丁</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿尔特</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">AC Schnitzer</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">Artega</span></a></li>
+                    </ul>
+                </div>
+                <div id="char_nav_N" class="letter_title"><span>N</span></div>
+                <div class="brand_box">
+                    <ul>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">奥迪</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿斯顿▪马丁</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿尔特</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">AC Schnitzer</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">Artega</span></a></li>
+                    </ul>
+                </div>
+                <div id="char_nav_O" class="letter_title"><span>O</span></div>
+                <div class="brand_box">
+                    <ul>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">奥迪</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿斯顿▪马丁</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿尔特</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">AC Schnitzer</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">Artega</span></a></li>
+                    </ul>
+                </div>
+                <div id="char_nav_P" class="letter_title"><span>P</span></div>
+                <div class="brand_box">
+                    <ul>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">奥迪</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿斯顿▪马丁</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿尔特</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">AC Schnitzer</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">Artega</span></a></li>
+                    </ul>
+                </div>
+                <div id="char_nav_Q" class="letter_title"><span>Q</span></div>
+                <div class="brand_box">
+                    <ul>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">奥迪</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿斯顿▪马丁</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿尔特</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">AC Schnitzer</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">Artega</span></a></li>
+                    </ul>
+                </div>
+                <div id="char_nav_R" class="letter_title"><span>R</span></div>
+                <div class="brand_box">
+                    <ul>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">奥迪</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿斯顿▪马丁</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿尔特</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">AC Schnitzer</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">Artega</span></a></li>
+                    </ul>
+                </div>
+                <div id="char_nav_S" class="letter_title"><span>S</span></div>
+                <div class="brand_box">
+                    <ul>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">奥迪</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿斯顿▪马丁</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿尔特</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">AC Schnitzer</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">Artega</span></a></li>
+                    </ul>
+                </div>
+                <div id="char_nav_T" class="letter_title"><span>T</span></div>
+                <div class="brand_box">
+                    <ul>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">奥迪</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿斯顿▪马丁</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿尔特</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">AC Schnitzer</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">Artega</span></a></li>
+                    </ul>
+                </div>
+                <div id="char_nav_U" class="letter_title"><span>U</span></div>
+                <div class="brand_box">
+                    <ul>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">奥迪</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿斯顿▪马丁</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿尔特</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">AC Schnitzer</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">Artega</span></a></li>
+                    </ul>
+                </div>
+                <div id="char_nav_V" class="letter_title"><span>V</span></div>
+                <div class="brand_box">
+                    <ul>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">奥迪</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿斯顿▪马丁</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿尔特</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">AC Schnitzer</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">Artega</span></a></li>
+                    </ul>
+                </div>
+                <div id="char_nav_W" class="letter_title"><span>W</span></div>
+                <div class="brand_box">
+                    <ul>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">奥迪</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿斯顿▪马丁</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿尔特</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">AC Schnitzer</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">Artega</span></a></li>
+                    </ul>
+                </div>
+                <div id="char_nav_X" class="letter_title"><span>X</span></div>
+                <div class="brand_box">
+                    <ul>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">奥迪</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿斯顿▪马丁</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿尔特</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">AC Schnitzer</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">Artega</span></a></li>
+                    </ul>
+                </div>
+                <div id="char_nav_Y" class="letter_title"><span>Y</span></div>
+                <div class="brand_box">
+                    <ul>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">奥迪</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿斯顿▪马丁</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿尔特</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">AC Schnitzer</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">Artega</span></a></li>
+                    </ul>
+                </div>
+                <div id="char_nav_Z" class="letter_title"><span>Z</span></div>
+                <div class="brand_box">
+                    <ul>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">奥迪</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿斯顿▪马丁</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">阿尔特</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">AC Schnitzer</span></a></li>
+                        <li><a href="javascript:void(0);"><i><img src="img/pic/aodi_logo.png"></i><span class="brand_name">Artega</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="letter_list">
+                <ul>
+                    <li><a href="#">#</a></li>
+                    <li><a class="checked" href="#char_nav_A">A</a></li>
+                    <li><a href="#char_nav_B">B</a></li>
+                    <li><a href="#char_nav_C">C</a></li>
+                    <li><a href="#char_nav_D">D</a></li>
+                    <li><a href="#char_nav_E">E</a></li>
+                    <li><a href="#char_nav_F">F</a></li>
+                    <li><a href="#char_nav_G">G</a></li>
+                    <li><a href="#char_nav_H">H</a></li>
+                    <li><a href="#char_nav_I">I</a></li>
+                    <li><a href="#char_nav_J">J</a></li>
+                    <li><a href="#char_nav_K">K</a></li>
+                    <li><a href="#char_nav_L">L</a></li>
+                    <li><a href="#char_nav_M">M</a></li>
+                    <li><a href="#char_nav_N">N</a></li>
+                    <li><a href="#char_nav_O">O</a></li>
+                    <li><a href="#char_nav_P">P</a></li>
+                    <li><a href="#char_nav_Q">Q</a></li>
+                    <li><a href="#char_nav_R">R</a></li>
+                    <li><a href="#char_nav_S">S</a></li>
+                    <li><a href="#char_nav_T">T</a></li>
+                    <li><a href="#char_nav_U">U</a></li>
+                    <li><a href="#char_nav_V">V</a></li>
+                    <li><a href="#char_nav_W">W</a></li>
+                    <li><a href="#char_nav_X">X</a></li>
+                    <li><a href="#char_nav_Y">Y</a></li>
+                    <li><a href="#char_nav_Z">Z</a></li>
+                </ul>
+            </div>
+            <div class="letter_alert">
+                <span>H</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 右侧车款模块 -->
+    <div class="right_type_module">
+        <div class="car_type_module">
+            <div class="type_brand">
+                <span class="type_brand_logo"></span>
+                <span class="type_brand_name">奥迪</span>
+            </div>
+            <div class="type_msg_list">
+                <h5 class="sub_brand_name">一汽奥迪</h5>
+                <ul class="sub_type_list">
+                    <li><a href="#"><img src="img/pic/hotbrand_car.png"><span class="type_name">捷达</span></a></li>
+                    <li><a href="#"><img src="img/pic/hotbrand_car.png"><span class="type_name">捷达</span></a></li>
+                    <li><a href="#"><img src="img/pic/hotbrand_car.png"><span class="type_name">捷达</span></a></li>
+                </ul>
+            </div>
+            <div class="type_msg_list">
+                <h5 class="sub_brand_name">进口奥迪</h5>
+                <ul class="sub_type_list">
+                    <li><a href="#"><img src="img/pic/hotbrand_car.png"><span class="type_name">捷达</span></a></li>
+                    <li><a href="#"><img src="img/pic/hotbrand_car.png"><span class="type_name">捷达</span></a></li>
+                    <li><a href="#"><img src="img/pic/hotbrand_car.png"><span class="type_name">捷达</span></a></li>
+                    <li><a href="#"><img src="img/pic/hotbrand_car.png"><span class="type_name">捷达</span></a></li>
+                    <li><a href="#"><img src="img/pic/hotbrand_car.png"><span class="type_name">捷达</span></a></li>
+                    <li><a href="#"><img src="img/pic/hotbrand_car.png"><span class="type_name">捷达</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	<!-- 右侧问题类型 -->
+	<div class="right_issues_module">
+		<div class="issues_list">
+			<ul>
+				<li><a href="#">全部</a></li>
+				<li><a href="#" class="current">买车问题</a></li>
+				<li><a href="#">用车问题</a></li>
+			</ul>
+		</div>
+	</div>
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/wenda_issues.js"></script>
+    <script src="js/pubNav.js"></script>
+    <script src="js/goTop.js"></script>
+</body>
+</html>

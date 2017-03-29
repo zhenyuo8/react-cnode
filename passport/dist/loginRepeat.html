@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三方登录名重复</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/loginRepeat.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/loginNameRepeat.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="top">
+        <div class="top_container">
+            <div class="left">
+                <img src="img/user_img.png" alt="用户头像">
+            </div>
+            <div class="right">
+                <h2>来自微信的用户-Winni,您好！</h2>
+                <p>亲爱的会员，昵称将作为您的账号显示哦，所以尽量让它与众不同吧！</p>
+            </div>
+        </div>
+
+        <em></em>
+    </div>
+    <div class="content clearfix">
+        <form>
+            <div class="container_con clearfix">
+                <div class="input_username" id="input_username">
+                    <p class="clearfix"><i>用户名 : </i><input type="text" maxlength="16"></p>
+                </div>
+
+                <div class="error_notice clearfix" id="error_notice">
+                    <span><i></i>该昵称已存在，您可以使用：</span>
+                    <em></em>
+                    <ul class="repeat_name_list">
+                        <!--<li class="bg">Winni12</li>-->
+                        <!--<li>Winni2018</li>-->
+                    </ul>
+                </div>
+                <button id="save_settings">保存设置</button>
+                <a href="#">返回到之前的界面</a>
+            </div>
+        </form>
+    </div>
+
+    <!--底部结构-->
+    <div class="footer clearfix">
+        <div class="footer_content">
+            <ul>
+                <li class="footer_message"><a href="#">关于我们</a></li>
+                <li class="footer_message"><a href="#">联系我们</a></li>
+                <li class="footer_message"><a href="#">招贤纳士</a></li>
+                <li class="website"><a href="#">@2004-2016 www.xingyuanauto.com All Rights Reserved.
+                    行圆汽车所有</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

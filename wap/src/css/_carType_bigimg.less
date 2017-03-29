@@ -1,0 +1,232 @@
+/*****
+ *@author: linyh
+ *@from: Global style carType-bigimg(车型大图)
+ *@description: 陈璐
+ *@date: name (2017.02.28)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_shareIcon.less";
+html,body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.cartype_large_img{
+    width: 100%;
+    height: 100%;
+    background:#151515;
+}
+
+// 大图模式页
+.top{
+    font-size: 16px;
+    color: @color-fff;
+    width: 100%;
+    height: 1.12rem /* 84/75 */;
+    line-height: 1.12rem /* 84/75 */;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    .page_num{
+        i{
+            color: @color-fff;
+        }
+    }
+    .back{
+        .icon_bg(url("../img/goback_btn.png"), .32rem /* 24/75 */, .587rem /* 44/75 */);
+        margin: .267rem /* 20/75 */ 1.333rem /* 100/75 */ 0 .4rem /* 30/75 */;
+        float: left;
+    }
+    .function{
+        float: right;
+        padding: .267rem /* 20/75 */ .4rem /* 30/75 */ 0 0;
+        .down_load{
+            .icon_bg(url("../img/down_load.png"), .507rem /* 38/75 */, .64rem /* 48/75 */);
+            display: inline-block;
+        }
+        .share{
+            .icon_bg(url("../img/share_btn.png"), .64rem /* 48/75 */, .667rem /* 50/75 */);
+            margin-left: .44rem /* 33/75 */;
+            display: inline-block;
+        }
+    }
+}
+.large_img{
+    font-size: 15px;
+    display: table-cell;
+    vertical-align:middle;
+    text-align:center;
+    width:100%;
+    height:100%;
+    background:#151515;
+    margin:0 auto;
+    .detail_img{
+        display: inline-block;
+        max-height: 100%;
+        max-width: 100%;
+        vertical-align: middle;
+        img{
+            width:100%;
+            height:auto;
+            vertical-align: middle;
+            display: block;
+        }
+    }
+    p{
+        color:#fff;
+        line-height: 24px;
+        &.p1{
+            margin-top: 0.266667rem;
+            color:#e0e0e0;
+        }
+    }
+    .enquiry_a{
+        width:96%;
+        height:1.066667rem;
+        background:#2896fe;
+        display: block;
+        line-height: 1.066667rem;
+        text-align: center;
+        color:#fff;
+        font-size: 16px;
+        position: absolute;
+        bottom: 0.266667rem;
+        left:0.24rem;
+        border-radius: 0.106667rem;
+    }
+    strong{
+        width:96%;
+        height:1.066667rem;
+        display: block;
+        line-height: 1.066667rem;
+        text-align: center;
+        color:#eee;
+        font-size: 18px;
+        position: absolute;
+        bottom: 1.653333rem;
+        left:0.24rem;
+    }
+}
+[data-dpr="2"] .cartype_large_img {
+    .top{
+        font-size: 32px;
+    }
+    .large_img{
+        font-size: 30px;
+        p{
+            line-height: 48px;
+        }
+        .enquiry_a{
+            font-size: 32px;
+        }
+        strong{
+            font-size: 36px;
+        }
+    }
+}
+[data-dpr="3"] .cartype_large_img {
+    .top{
+        font-size: 48px;
+    }
+    .large_img{
+        font-size: 45px;
+        p{
+            line-height: 72px;
+        }
+        .enquiry_a{
+            font-size: 48px;
+        }
+        strong{
+            font-size: 54px;
+        }
+    }
+}
+
+.big_img_wrap {
+    position: relative;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: auto;
+    p{
+        font-size: 15px;
+        line-height: 40px;
+    }
+}
+[data-dpr="2"] {
+    p{
+        font-size: 30px;
+        line-height: 80px;
+    }
+} 
+[data-dpr="3"] {
+    p{
+        font-size: 45px;
+        line-height: 120px;
+    }
+} 
+//swiper样式
+.swiper-container{width:100%;height:100%;}
+.swiper-slide{text-align:center;font-size:18px;}
+.swiper-slide img{
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:100%;
+}
+.cartype_large_img{position: fixed;left:0;top:0; width: 100%}
+.cartype_large_img .top,.cartype_large_img .footer{z-index: 10}
+.cartype_large_img .footer{position: absolute;left:0;bottom:0;width:100%}
+.large_img{display: block}
+.mask{
+    display: none;
+    background-color: #000;
+    filter: alpha(opacity=60);
+    opacity: .6;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 700;
+}
+.zsh_shareLayer {
+    width: 100%;
+    height: 4.36rem;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    bottom: -100%;
+    z-index: 999;
+    padding-bottom: 0.5rem;
+
+}
+.zsh_cancel{
+    margin: .627rem 0 0 4%;
+    width: 92%;
+    height: .96rem;
+    text-align: center;
+    line-height: .96rem;
+    background: #edf7ff;
+    font-size: 13px;
+    color: #52adfe;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+[data-dpr="2"] {
+    .zsh_cancel{
+        font-size: 26px;
+    }
+} 
+[data-dpr="3"] {
+    .zsh_cancel{
+        font-size: 39px;
+    }
+} 

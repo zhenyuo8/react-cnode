@@ -1,0 +1,236 @@
+/*****
+ *@author: linyh
+ *@from: Global style register(注册)
+ *@description: 陈璐
+ *@date: name (2017.03.01)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_pubHead";
+
+
+html,body{
+    height: 100%;
+}
+
+// 注册页
+.register{
+    height: 100%;
+    background-color: @bg-bar;
+    // 输入框
+    .input_msg{
+        width: 92%;
+        padding: 0 4%;
+        background-color: @color-fff;
+        p{
+            font-size: 15px;
+            line-height: 1.333rem /* 100/75 */;
+            border-bottom: 1px solid @list-border;
+            i{
+                display: inline-block;
+                width: 21%;
+                text-align: justify;
+                text-align-last: justify;
+                margin-right: .107rem /* 8/75 */;
+            }
+            input{
+                .placeholder-color(@input-color);
+                padding-left: .133rem /* 10/75 */;
+                width: 64%;
+            }
+            .yzm_input{
+                width: 36%;
+            }
+            .error_tip{
+                font-size: 12px;
+                color: @color-fff;
+                display: none;
+                height: .507rem /* 38/75 */;
+                line-height: .507rem /* 38/75 */;
+                padding: 0 .267rem /* 20/75 */;
+                background-color: @red-price;
+                border-radius: .107rem /* 8/75 */;
+                position: absolute;
+                top: 1.04rem /* 78/75 */;
+                left: 20%;
+                em{
+                    display: block;
+                    border-left: .267rem /* 20/75 */ solid @red-price;
+                    border-bottom:  .267rem /* 20/75 */ solid transparent;
+                    transform: rotate(45deg);
+                    position: absolute;
+                    top: -.133rem /* 10/75 */;
+                    left: 20%;
+                }
+            }
+            img{
+                display: inline-block;
+                width: .48rem /* 36/75 */;
+                height: .48rem /* 36/75 */;
+                position: absolute;
+                top: .427rem /* 32/75 */;
+            }
+        }
+        .phone_num{
+            position: relative;
+            .delete_phone_num{
+                right: 0;
+                display: none;
+            }
+        }
+        .yzm_num{
+            position: relative;
+            .delete_yzm_num{
+              display: none;
+                right: 3.333rem /* 250/75 */;
+            }
+            .yzm_time{
+                font-size: 13px;
+                color: @input-color;
+                line-height: .747rem /* 56/75 */;
+                background-color: @color-fff;
+                border: 1px solid @input-color;
+                border-radius: .067rem /* 5/75 */;
+                padding: 0 .267rem /* 20/75 */;
+                margin-top: .267rem /* 20/75 */;
+                float: right;
+            }
+            button{
+                .yzm_time;
+                // display: none;
+            }
+            .count_time{
+                .yzm_time;
+                display: none;
+            }
+        }
+    }
+    // 注册按钮
+    .register_area{
+        width: 92%;
+        margin: 0.533rem /* 40/75 */ 4% 0;
+
+        .register_btn{
+            font-size: 17px;
+            color: @color-fff;
+            with: 100%;
+            line-height: 1.147rem /* 86/75 */;
+            text-align: center;
+            background-color: @register-bg;
+            border-radius: .093rem /* 7/75 */;
+            display: block;
+        }
+        .tips{
+            color: @edit-color;
+            line-height: 1.467rem /* 110/75 */;
+            a{
+                color: @edit-color;
+                text-decoration: underline;
+            }
+        }
+    }
+    // load图标弹层
+    .load_mask{
+        width: 3.733rem /* 280/75 */;
+        height: 2.533rem /* 190/75 */;
+        margin: -1.267rem /* 95/75 */ 0 0 -1.867rem /* 140/75 */;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        display: none;
+        .mask{
+            width: 3.733rem /* 280/75 */;
+            height: 2.533rem /* 190/75 */;
+            background-color: @color-000;
+            border-radius: .107rem /* 8/75 */;
+            filter: alpha(opacity=60);
+            opacity: .6;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .keyframes (all,circleChange,{
+            0%{-webkit-transform:rotate(0deg);}
+            50%{-webkit-transform:rotate(180deg);}
+            100%{-webkit-transform:rotate(360deg);}
+        });
+        img{
+            display: inline-block;
+            width: .813rem /* 61/75 */;
+            height: .867rem /* 65/75 */;
+            margin: -.427rem /* 32/75 */ 0 0 -.4rem /* 30/75 */;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-animation: circleChange 2s linear infinite;
+        }
+    }
+}
+
+
+/* 字体大小适配 */
+//dpr=2字体大小
+[data-dpr="2"] .register{
+    // 输入框
+    .input_msg{
+        p{
+            font-size: 30px;
+            .error_tip{
+                font-size: 24px;
+            }
+        }
+        .yzm_num{
+            button{
+                font-size: 26px;
+            }
+            .count_time{
+                font-size: 26px;
+            }
+        }
+    }
+    // 注册按钮
+    .register_area{
+        .voice_checking{
+            a{
+                font-size: 28px;
+            }
+        }
+        .register_btn{
+            font-size: 34px;
+        }
+    }
+}
+//dpr=3字体大小
+[data-dpr="3"] .register{
+    // 输入框
+    .input_msg{
+        p{
+            font-size: 45px;
+            .error_tip{
+                font-size: 36px;
+            }
+        }
+        .yzm_num{
+            button{
+                font-size: 39px;
+            }
+            .count_time{
+                font-size: 39px;
+            }
+        }
+    }
+    // 注册按钮
+    .register_area{
+        .voice_checking{
+            a{
+                font-size: 42px;
+            }
+        }
+        .register_btn{
+            font-size: 51px;
+        }
+    }
+}

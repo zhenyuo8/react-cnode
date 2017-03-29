@@ -1,0 +1,227 @@
+
+@import (reference) "public";
+@import "mod/mod_pubHead";
+@import "mod/mod_smallnav";
+@import "mod/mod_footer";
+@import "mod/mod_goTop";
+@import "mod/mod_pubHeadNav";
+@import "mod/mod_selectCity.less";
+@import "mod/mod_wenda_chooseCar.less";
+
+//发布页样式
+.interlocution_publish_page{
+    width: 100%;
+
+    .font-weight{
+        font-weight: 700;
+    }
+    .pub_header{
+        position: relative;
+
+        p {
+            padding-left: .4rem;
+            height: .8rem;
+            line-height: .8rem;
+            border-bottom: 1px solid #f3f3f3;
+            font-size: 13px;
+            color: #ff981f;
+
+            span {
+                display: inline-block;
+                margin: 0 0.067rem;
+            }
+        }
+        //文本域样式
+        .publish_area{
+            width: 100%;
+            height: 7rem;
+            resize:none;
+            border:none;
+            padding: 0.4rem;
+            padding-bottom: 0;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        .publish_img{
+            bottom:0.4rem;
+            left: 0.4rem;
+            border-bottom: 1px solid @bg-color;
+            padding: 0.2rem;
+            padding-top: 0;
+            input{
+                display: none;
+            }
+            label img{
+                width: 1.7rem;
+            }
+            span{
+                position: relative;
+                display: inline-block;
+                width: 1.7rem;
+                height: 1.7rem;
+                margin-left: 0.15rem;
+                margin-bottom: 0.15rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                .del{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 20%;
+                    height: 20%;
+                }
+            }
+        }
+    }
+    .pub_section{
+        margin-left: 0.4rem;
+        margin-bottom: 1.733rem /* 130/75 */;
+
+        .publish_bound{
+            .cho_car{
+                color:@item-color;
+                position: relative;
+                margin-right: 0.2rem;
+                margin-bottom: 0.2rem;
+                img{
+                    position: absolute;
+                    right: -5px;
+                    top: -5%;
+                    width: 0.333rem /* 25/75 */;
+                    height: 0.333rem /* 25/75 */;
+                }
+            }
+        }
+        & > div{
+            border-bottom:1px solid @bg-color;
+            padding:0.2rem 0;
+        }
+        .p_dec{
+            float: left;
+            padding: 0.1rem 0.2rem;
+            font-size: 15px;
+        }
+        .fl{
+
+            span{
+                display: inline-block;
+                border:1px solid @color-ccc;
+                border-radius: 5px;
+                padding: 0.1rem 0.2rem;
+                font-size: 13px;
+                img{
+                    vertical-align: middle;
+                    margin-top: -3px;
+                    width: 20%;
+                }
+            }
+            .q_select {
+                border-color: #398be4;
+                color: #398be4;
+            }
+        }
+        .city{
+            position: relative;
+            .fl{
+                color:@item-color;
+                font-size: 0.4rem;
+                width: 66%;
+                span{
+                    border: 0;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+                img{
+                    display: block;
+                    width: 0.16rem /* 12/75 */;
+                    height: 0.293rem /* 22/75 */;
+                    position: absolute;
+                    right: 5%;
+                    top:35%;
+                }
+            }
+        }
+    }
+    .pub_footer{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 20;
+        width: 100%;
+        height: 1.6rem /* 120/75 */;
+        background: #fff;
+        -webkit-box-shadow: 0 -5px 20px 5px #ededed;
+        -moz-box-shadow: 0 -5px 20px 5px #ededed;
+        box-shadow: 0 -5px 20px 5px #ededed;
+        input{
+            display: inline-block;
+            width: 95%;
+            height: 1.067rem;
+            background: #2896fe;
+            font-size: 0.4rem;
+            color: #ffffff;
+            border-radius: 8px;
+            position: fixed;
+            left: 0.267rem;
+            bottom: 0.267rem;
+            font-size: 15px;
+            text-align: center;
+            line-height: 1.067rem;
+            border: none;
+        }
+    }
+}
+
+[data-dpr="2"] .interlocution_publish_page {
+    .pub_header {
+        p {
+            font-size: 26px;
+        }
+        .publish_area {
+            font-size: 28px;
+        }
+    }
+    .pub_section {
+        .p_dec {
+            font-size: 30px;
+        }
+        .fl {
+            span {
+                font-size: 26px;
+            }
+        }
+    }
+    .pub_footer {
+        input {
+            font-size: 30px;
+        }
+    }
+}
+[data-dpr="3"] .interlocution_publish_page {
+    .pub_header {
+        p {
+            font-size: 39px;
+        }
+        .publish_area {
+            font-size: 42px;
+        }
+    }
+    .pub_section {
+        .p_dec {
+            font-size: 45px;
+        }
+        .fl {
+            span {
+                font-size: 39px;
+            }
+        }
+    }
+    .pub_footer {
+        input {
+            font-size: 45px;
+        }
+    }
+}

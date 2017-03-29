@@ -1,0 +1,401 @@
+/*****
+ *@author: jianingning
+ *@from: Global style video
+ *@description: 何在朋
+ *@date: name (2017.01.23)
+*/
+
+
+
+
+@import (reference) "public";
+@import "mod/mod_headerTitle.less";
+@import "mod/mod_headerLogo.less";
+@import "mod/mod_headerMenu.less";
+@import "mod/mod_footer.less";
+@import "mod/mod_goTop.less";
+@import "mod/mod_videoRanking.less";
+@import "mod/mod_advert";
+
+.videoWrap {
+	width: 990px;
+	margin: 0 auto;
+	height: auto;
+
+	.v-title {
+		color: @color-333;
+		height: 48px;
+		font-size: @font-12 * 2;
+		font-weight: 700;
+		padding-top: 40px;
+		border-bottom: @border-b-333;
+		margin-bottom: 4px;
+
+		span {
+			.inline-block;
+			margin: 0 9px;
+		}
+	}
+	.v-play {
+		height: 490px;
+		position: relative;
+
+		.play-l {
+			width: 736px;
+			height: 490px;
+			overflow: hidden;
+	
+			.video {
+				width: 736px;
+				display: none;
+				height: 490px;
+				.cursor;
+
+				a {
+					.inline-block;
+					width: 77px;
+					height: 76px;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					margin-top: -38px;
+					margin-left: -38.5px;
+					z-index: 2;
+					background-image: url("../img/sprite.png");
+    				background-position: 0px -1672px;
+					&:hover {
+						background-position: 0px -1510px;
+					}
+					&:active {
+						background-position: 0px -1591px;
+					}
+				}
+			}
+			.show {
+				display: block;
+			}
+		}
+		.play-r {
+			width: 254px;
+			height: 470px;
+			padding-top: 20px;
+			background: #000;
+
+			li {
+				width: 231px;
+				height: 24px;
+				line-height: 24px;
+				margin: 11px 0;
+				padding-left: 23px;
+				.cursor;
+
+				a{
+					font-size: @font-14;
+					color: @color-fff;
+
+					.play-r-lis {
+						.inline-block;
+						width: 220px;
+						height: 24px;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						display: -webkit-box;
+						-webkit-box-orient: vertical;
+						-webkit-line-clamp: 1;
+						white-space: nowrap;	
+					}
+					.play-r-sign {
+						.inline-block;
+						position: absolute;
+						top: 0;
+						left: -16px;
+						z-index: 12;
+						background-image: url("../img/sprite.png");
+						background-position: 0px -598px;
+						width: 16px;
+						height: 24px;
+					}
+				}
+			}
+			.blue_bg {
+				background: @color-blue;
+			}
+		}
+	}
+	.v-content {
+		padding-top: 40px;
+
+		.v-content-l {
+			width: 694px;
+			height: auto;
+
+			.v-recommended {
+				width: 694px;
+				height: auto;
+
+				.recommended-title {
+					font-size: @font-12 + 8;
+					color: @color-333;
+					font-weight: 700;
+					border-bottom: @border-b-333;
+					height: 34px;
+					margin-bottom: 10px;
+				}
+				.pub-list {
+					li {
+						margin-right: 8px;
+						margin-right: 5px \0;
+						margin-bottom: 10px;
+
+						a{
+							dl {
+								width: 225px;
+								height: 191px;
+								.cursor;
+
+								dt {
+									width: 225px;
+									height: 150px;
+
+									img {
+										display: inline-block;
+										width: 225px;
+										height: 150px;
+									}
+								}
+
+								dd {
+									font-size: @font-12 + 2;
+									color: @color-333;
+									height: 33px;
+									line-height: 33px;
+									padding-left: 4px;
+								}
+								.v-small-tit {
+									height: 33px;
+									overflow: hidden;
+									text-overflow: ellipsis;
+									-webkit-box-orient: vertical;
+									-webkit-line-clamp: 1;
+									white-space: nowrap;
+								}
+								.v-time-wrap {
+									position: absolute;
+									top: 125px;
+									right: 4px;
+									width: 44px;
+									height: 18px;
+									text-align: center;
+									z-index: 2;
+									background: #3a2a25;
+									opacity: 0.5;
+									filter: alpha(opacity=50);
+								}
+								.v-time {
+									color: @color-fff;
+									width: 44px;
+									height: 18px;
+									line-height: 18px;
+									position: absolute;
+									top: 125px;
+									right: 2px;
+									z-index: 3;
+								}
+								.r-play-btn {
+									width: 50px;
+									height: 50px;
+									background-image: url("../img/sprite.png");
+									background-position: 0px -1400px;
+									position: absolute;
+									top: 50%;
+									left: 50%;
+									margin-left: -25px;
+									margin-top: -38px;
+									display: none;
+
+									&:hover {
+										background-position: 0px -1455px;
+									}
+								}
+							}
+						}
+						a:hover {
+							dl {
+								background: @color-eee;
+								.r-play-btn {
+									display: block;
+								}
+							}
+						}
+					}
+				}
+				
+			}
+			.new-video {
+				margin-top: 30px;
+
+				.v-list {
+					font-size: @font-12 + 4;
+					color: @color-333;
+					border-bottom: @border-b-333;
+					height: 34px;
+					margin-bottom: 10px;
+
+					li {
+						width: 88px;
+						height: 16px;
+						border-right: 1px solid @color-eee;
+						text-align: center;
+						line-height: 16px;
+						margin-top: 7px;
+						.cursor;
+
+						.more-down {
+							.inline-block;
+							background-image: url("../img/sprite1.png");
+							background-position: -164px -145px;
+							width: 12px;
+							height: 6px;
+							position: absolute;
+							top: 4px;
+    						right: 3px;
+						}
+					}
+					.blue_text {
+						color: #1773da;
+						font-weight: 700;
+					}
+					.v_menu:hover {
+						color: #126acc;
+						font-weight: 700;
+					}
+				}
+				.new-video-box {
+					width: 694px;
+					height: auto;
+					margin-bottom: 48px;
+					overflow: hidden;
+
+					.new-video-type {
+						width: 694px;
+						height: auto;
+						display: none;
+
+						.pub-list {
+							li {
+								margin-right: 8px;
+								margin-right: 5px \0;
+								margin-bottom: 10px;
+
+								a{
+									dl {
+										width: 225px;
+										height: 191px;
+										.cursor;
+
+										dt {
+											width: 225px;
+											height: 150px;
+
+											img {
+												display: inline-block;
+												width: 225px;
+												height: 150px;
+											}
+										}
+
+										dd {
+											font-size: @font-12 + 2;
+											color: @color-333;
+											height: 33px;
+											line-height: 33px;
+											padding-left: 4px;
+										}
+										.v-small-tit {
+											height: 33px;
+											overflow: hidden;
+											text-overflow: ellipsis;
+											-webkit-box-orient: vertical;
+											-webkit-line-clamp: 1;
+											white-space: nowrap;
+										}
+										.v-time-wrap {
+											position: absolute;
+											top: 125px;
+											right: 4px;
+											width: 44px;
+											height: 18px;
+											text-align: center;
+											z-index: 2;
+											background: #3a2a25;
+											opacity: 0.5;
+											filter: alpha(opacity=50);
+										}
+										.v-time {
+											color: @color-fff;
+											width: 44px;
+											height: 18px;
+											line-height: 18px;
+											position: absolute;
+											top: 125px;
+											right: 2px;
+											z-index: 3;
+										}
+										.r-play-btn {
+											width: 50px;
+											height: 50px;
+											background-image: url("../img/sprite.png");
+											background-position: 0px -1400px;
+											position: absolute;
+											top: 50%;
+											left: 50%;
+											margin-left: -25px;
+											margin-top: -38px;
+											display: none;
+
+											&:hover {
+												background-position: 0px -1455px;
+											}
+										}
+									}
+								}
+								a:hover {
+									dl {
+										background: @color-eee;
+										.r-play-btn {
+											display: block;
+										}
+									}
+								}
+							}
+						}
+
+						.load-more {
+							color: @color-999;
+							font-size:@font-14;
+							height: 40px;
+							line-height: 40px;
+							width: 694px;
+							text-align: center;
+							background: @color-eee;
+							.cursor;
+							margin-top: 10px;
+
+							&:hover {
+								color: @color-blue-h;
+							}
+						}
+					}
+					.show {
+						display: block;
+					}
+				}
+			}
+		}
+		.v-ranking {
+			width: 253px;
+			height: auto;
+		}	
+	}
+}
+

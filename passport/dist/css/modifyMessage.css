@@ -1,0 +1,307 @@
+#modify_message {
+  height: 100%;
+}
+#modify_message li {
+  line-height: 46px;
+  background: #ffffff;
+  padding-left: 20px;
+  position: relative;
+}
+#modify_message li.basic_msg span {
+  font-size: 14px;
+  color: #333333;
+  float: left;
+  display: inline-block;
+}
+#modify_message li.basic_msg a {
+  display: inline-block;
+  font-size: 12px;
+  color: #aaa;
+  position: absolute;
+  right: 5px;
+}
+#modify_message li.basic_msg a:hover {
+  color: #3a8be4;
+  text-decoration: underline;
+}
+#modify_message li.promise_t {
+  height: 40px;
+  line-height: 40px;
+  background: #fffaf0;
+  color: #e43a3a;
+  font-size: 12px;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+}
+#modify_message li.user {
+  line-height: 46px;
+  padding-top: 16px;
+}
+#modify_message li.user p {
+  height: 46px;
+  position: relative;
+  font-size: 14px;
+  color: #333;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+}
+#modify_message li.user p i {
+  width: 64px;
+  font-size: 14px;
+  display: block;
+  float: left;
+  text-justify: inter-ideograph;
+  text-align-last: justify;
+  text-align: justify;
+}
+#modify_message li.user p.select {
+  position: relative;
+}
+#modify_message li.user p.select input {
+  cursor: pointer;
+}
+#modify_message li.user p.select .select_span_sex {
+  position: absolute;
+  width: 218px;
+  left: 89px;
+  top: 42px;
+  z-index: 10;
+  display: none;
+  border: 1px solid #dadada;
+}
+#modify_message li.user p.select .select_span_sex span {
+  display: block;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background: #fff;
+  color: #333;
+  float: none;
+}
+#modify_message li.user p.select .select_span_sex span:hover {
+  cursor: pointer;
+  background: #3a8be4;
+  color: #fff;
+}
+#modify_message li.user p.select .select_span_sex span.last {
+  border-bottom: none;
+}
+#modify_message li.user p.select .select_span_age {
+  position: absolute;
+  width: 218px;
+  left: 89px;
+  top: 42px;
+  z-index: 10;
+  height: 155px;
+  overflow-y: scroll;
+  display: none;
+  border: 1px solid #dadada;
+}
+#modify_message li.user p.select .select_span_age span {
+  display: block;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background: #fff;
+  color: #333;
+  float: none;
+}
+#modify_message li.user p.select .select_span_age span:hover {
+  cursor: pointer;
+  background: #3a8be4;
+  color: #fff;
+}
+#modify_message li.user p.select .select_span_age span.last {
+  border-bottom: none;
+}
+#modify_message li.user input {
+  width: 206px;
+  height: 30px;
+  border: 1px solid #dadada;
+  margin-left: 10px;
+  padding-left: 12px;
+}
+#modify_message li.user em {
+  width: 10px;
+  height: 8px;
+  display: inline-block;
+  top: 20px;
+  position: absolute;
+  left: 286px;
+  background: url("../img/down_arrow.png") no-repeat center;
+}
+#modify_message li.user em:hover {
+  cursor: pointer;
+}
+#modify_message li.user span {
+  display: block;
+}
+#modify_message li.user span.error_msg1 {
+  color: #e43a3a;
+  margin-top: 12px;
+  margin-left: 88px;
+  line-height: 0;
+  margin-bottom: 10px;
+}
+#modify_message li.user span.error_msg1 i {
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  margin-right: 6px;
+  background: url("../img/error_msg.png") no-repeat center;
+}
+#modify_message li.save_cancel_settings {
+  padding-bottom: 40px;
+  height: 32px;
+}
+#modify_message li.save_cancel_settings p {
+  margin-left: 82px;
+}
+#modify_message li.save_cancel_settings p input {
+  font-size: 14px;
+  width: 96px;
+  height: 32px;
+  float: left;
+  line-height: 32px;
+  text-align: center;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+}
+#modify_message li.save_cancel_settings p input.save {
+  color: #fff;
+  margin-left: 10px;
+  background: #dadada;
+}
+#modify_message li.save_cancel_settings p input.save:hover {
+  cursor: default;
+}
+#modify_message li.save_cancel_settings p input.cancel {
+  width: 96px;
+  height: 32px;
+  color: #333;
+  border: 1px solid #dadada;
+  margin-left: 10px;
+  background: #eee;
+}
+#modify_message li.save_cancel_settings p .active {
+  background-color: #ffa903 !important;
+}
+#modify_message li.save_cancel_settings p .active:hover {
+  cursor: pointer !important;
+}
+#modify_message li.bind_account {
+  margin-top: 20px;
+}
+#modify_message li.sys_msg {
+  color: #aaa;
+  height: 60px;
+  font-size: 14px;
+}
+#modify_message li.sys_msg p {
+  height: 30px;
+  line-height: 30px;
+}
+#modify_message li.sys_msg_do {
+  font-size: 14px;
+}
+#modify_message li.sys_msg_do p {
+  height: 30px;
+  line-height: 30px;
+  color: #aaa;
+}
+#modify_message li.input_phone {
+  padding-top: 32px;
+}
+#modify_message li.input_phone p i {
+  font-size: 14px;
+  margin-top: 8px;
+  margin-right: 6px;
+  color: #333;
+  display: block;
+  float: left;
+  text-align: justify;
+  text-justify: inter-ideograph;
+  text-align-last: justify;
+}
+#modify_message li.input_phone p strong {
+  display: block;
+  float: left;
+  margin: 0 12px;
+}
+#modify_message li.input_phone p input {
+  float: left;
+  width: 218px;
+  height: 32px;
+  margin-left: 32px;
+  border: 1px solid #dadada;
+}
+#modify_message li.input_msg_code {
+  padding-top: 8px;
+}
+#modify_message li.input_msg_code p i {
+  font-size: 14px;
+  color: #333;
+  display: block;
+  line-height: 50px;
+  margin-right: 6px;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+  text-align: justify;
+  text-justify: inter-ideograph;
+  text-align-last: justify;
+}
+#modify_message li.input_msg_code p .input_msg_input {
+  width: 98px;
+  height: 30px;
+  margin-left: 32px;
+  border: 1px solid #dadada;
+}
+#modify_message li.input_msg_code p .get_msg_code {
+  width: 110px;
+  height: 32px;
+  margin-left: 7px;
+  margin-top: 8px;
+  background: #3a8be4;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+  color: #ffffff;
+}
+#modify_message li.bind_phone {
+  line-height: 46px;
+  padding-top: 16px;
+}
+#modify_message li.bind_phone p {
+  height: 46px;
+  font-size: 14px;
+  color: #333;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+}
+#modify_message li.bind_phone p i {
+  width: 64px;
+  font-size: 14px;
+  display: block;
+  text-align-last: justify;
+  text-justify: inter-ideograph;
+  text-align: justify;
+}
+#modify_message li.bind_phone p span {
+  margin-left: 100px;
+  width: 58px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #dadada;
+  background: #eee;
+  color: #333;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+}
+#modify_message li.step {
+  padding: 8px 0 42px 94px;
+}
+#modify_message li.step input {
+  width: 96px;
+  height: 32px;
+  margin-left: 10px;
+  color: #fff;
+  background: #dadada;
+  font-size: 14px;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+}

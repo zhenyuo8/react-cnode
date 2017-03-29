@@ -1,0 +1,380 @@
+/*****
+ *@author: linyh
+ *@from: Global style article
+ *@description: 陈璐
+ *@date: name (2017.02.17)
+*/
+/*****
+ *@author: jianingning
+ *@from: Global style mod/mod_head
+ *@description: 
+ *@date: name (2017.02.13)
+*/
+.header {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.nav_mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 10000px;
+  background: #000;
+  filter: alpha(opacity=50);
+  opacity: .5;
+  display: none;
+}
+.nav_mask_show {
+  display: block;
+}
+.head {
+  width: 100%;
+  height: 2.627rem;
+  background: url(../img/head_bg.png);
+  background-size: cover;
+  margin-top: -1px;
+}
+.head h1 {
+  display: inline-block;
+  float: left;
+  margin: 0.6rem 0 0 0.84rem;
+  font-size: 24px;
+  color: #fff;
+}
+.head ul {
+  float: right;
+  margin: 0.493rem 0.547rem 0 0;
+}
+.head ul li {
+  float: left;
+  margin-right: 0.267rem;
+  width: 0.84rem;
+  text-align: center;
+}
+.head ul li span {
+  font-size: 12px;
+  color: #fff;
+}
+.head ul .share_btn {
+  display: block;
+  width: 0.853rem;
+  height: 0.853rem;
+  margin-bottom: 0.133rem;
+  background: url(../img/share.png);
+  background-size: cover;
+}
+.head ul .share_btn:active {
+  background: url(../img/share_press.png);
+  background-size: cover;
+}
+.head ul .change_btn {
+  display: block;
+  width: 0.853rem;
+  height: 0.853rem;
+  margin-bottom: 0.133rem;
+  background: url(../img/change.png);
+  background-size: cover;
+}
+.head ul .change_btn:active {
+  background: url(../img/change_press.png);
+  background-size: cover;
+}
+.head ul .nav_btn {
+  display: block;
+  width: 0.853rem;
+  height: 0.853rem;
+  margin-bottom: 0.133rem;
+  background: url(../img/nav.png);
+  background-size: cover;
+}
+.head ul .nav_btn:active {
+  background: url(../img/nav_press.png);
+  background-size: cover;
+}
+.head ul .up .up_btn {
+  display: block;
+  width: 0.853rem;
+  height: 0.853rem;
+  margin-bottom: 0.133rem;
+  background: url(../img/up.png);
+  background-size: cover;
+}
+.head ul .up .up_btn:active {
+  background: url(../img/up_press.png);
+  background-size: cover;
+}
+[data-dpr="2"] .head h1 {
+  font-size: 48px;
+}
+[data-dpr="2"] .head ul li span {
+  font-size: 24px;
+}
+[data-dpr="3"] .head h1 {
+  font-size: 72px;
+}
+[data-dpr="3"] .head ul li span {
+  font-size: 36px;
+}
+.fixbox {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+.fixbox .head {
+  width: 100%;
+  height: 2.627rem;
+  background: url(../img/head_bg.png);
+  background-size: cover;
+  margin-top: -1px;
+}
+.fixbox .head h1 {
+  display: inline-block;
+  float: left;
+  margin: 0.6rem 0 0 0.84rem;
+  font-size: 24px;
+  color: #fff;
+}
+.fixbox .head h1 .dealerCity {
+  margin-left: 0.24rem;
+  display: inline-block;
+  height: 0.44rem;
+  line-height: 0.44rem;
+  border-left: 3px solid #fff;
+  padding-left: 0.2rem;
+  font-size: 16px;
+  color: #fff;
+}
+.fixbox .head h1 .dealerCity img {
+  display: inline-block;
+  width: 0.213rem;
+  height: 0.347rem;
+  margin-top: 0.067rem;
+}
+.fixbox .head ul {
+  float: right;
+  margin: 0.493rem 0.547rem 0 0;
+}
+.fixbox .head ul li {
+  float: left;
+}
+.fixbox .head ul li img {
+  display: block;
+  width: 0.84rem;
+  height: 0.84rem;
+  margin: 0 auto 0.133rem auto;
+}
+.fixbox .head ul li span {
+  display: block;
+  font-size: 12px;
+  color: #fff;
+  /*width: 1.187rem;*/
+  text-align: center;
+}
+.fixbox .head ul .sort_btn {
+  display: block;
+  width: 0.853rem;
+  height: 0.853rem;
+  background: url(../img/pri_sort.png);
+  background-size: cover;
+  margin: 0 auto 0.133rem auto;
+}
+.fixbox .head ul .sort_btn:active {
+  background: url(../img/pri_sort_h.png);
+  background-size: cover;
+}
+.fixbox .head ul .sort_press {
+  background: url(../img/pri_sort_h.png);
+  background-size: cover;
+}
+.fixbox .head ul .change_btn {
+  display: block;
+  width: 0.853rem;
+  height: 0.853rem;
+  margin: 0 auto 0.133rem auto;
+  background: url(../img/change.png);
+  background-size: cover;
+}
+.fixbox .head ul .change_btn:active {
+  background: url(../img/change_press.png);
+  background-size: cover;
+}
+.fixbox .head ul .nav_btn {
+  display: block;
+  width: 0.853rem;
+  height: 0.853rem;
+  margin: 0 auto 0.133rem auto;
+  background: url(../img/nav.png);
+  background-size: cover;
+}
+.fixbox .head ul .nav_btn:active {
+  background: url(../img/nav_press.png);
+  background-size: cover;
+}
+.fixbox .head ul .up .up_btn {
+  display: block;
+  width: 0.853rem;
+  height: 0.853rem;
+  margin: 0 auto 0.133rem auto;
+  background: url(../img/up.png);
+  background-size: cover;
+}
+.fixbox .head ul .up .up_btn:active {
+  background: url(../img/up_press.png);
+  background-size: cover;
+}
+/*
+
+.fixbox {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4; 
+
+    .floor_price {
+        width: 100%;
+        height: 1.333rem;
+        line-height: 1.333rem; 
+        background:-webkit-linear-gradient(to right, #24aafe, #2799fe); 
+        background:linear-gradient(to right ,#24aafe,#2799fe);
+
+        h2 {
+           float: left;
+           margin-left: 0.373rem;
+           display: inline-block;
+           font-size: 18px;
+           color: @color-fff; 
+        }
+        .price_nav {
+            float: right;
+            margin: 0.253rem 0.4rem 0 0;
+            display: inline-block;
+            width: 0.853rem;
+            height: 0.853rem;
+            background: url(../img/nav.png);
+            background-size: cover;
+
+            &:active {
+                background: url(../img/nav_press.png);
+                background-size: cover;
+            }
+        }
+        .price_up {
+            float: right;
+            margin: 0.253rem 0.4rem 0 0;
+            display: inline-block;
+            width: 0.827rem;
+            height: 0.84rem;
+            background: url(../img/up.png);
+            background-size: cover;
+            display:none;
+
+            &:active {
+                background: url(../img/up_press.png);
+                background-size: cover;
+            }
+        }
+    }
+}
+*/
+.lightspot_page {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.lightspot_page .para_list {
+  width: 89.6%;
+  padding: 0 5.2%;
+  font-size: 13px;
+}
+.lightspot_page .para_list ul li {
+  padding: 0.867rem /* 65/75 */ 0 0.667rem /* 50/75 */;
+  border-top: 1px solid #c6c6c6;
+}
+.lightspot_page .para_list ul li a {
+  float: left;
+  width: 25%;
+}
+.lightspot_page .para_list ul li a span {
+  display: block;
+  width: 1.68rem /* 126/75 */;
+  height: 1.68rem /* 126/75 */;
+  margin: 0 auto;
+}
+.lightspot_page .para_list ul li a span img {
+  display: inline-block;
+  width: 100%;
+}
+.lightspot_page .para_list ul li a em {
+  display: block;
+  text-align: center;
+  line-height: 0.747rem /* 56/75 */;
+}
+.lightspot_page .para_list ul li .param_btn {
+  font-size: 15px;
+}
+.lightspot_page .para_list ul li .param_btn span {
+  color: #fff;
+  background: -webkit-linear-gradient(left top, #26a0fe, #2d7eff);
+  background: -moz-linear-gradient(left top, #26a0fe, #2d7eff);
+  background: -o-linear-gradient(left top, #26a0fe, #2d7eff);
+  background: linear-gradient(to right bottom, #26a0fe, #2d7eff);
+  border-radius: 50%;
+  width: 1.76rem /* 132/75 */;
+  height: 1.76rem /* 132/75 */;
+}
+.lightspot_page .para_list ul li .all_param em {
+  width: 60%;
+  line-height: 0.48rem /* 36/75 */;
+  margin: 0 auto;
+  padding-top: 0.4rem /* 30/75 */;
+}
+.lightspot_page .para_list ul li .xun_price em {
+  padding-top: 0.507rem /* 38/75 */;
+}
+.lightspot_page .para_list ul li:last-child {
+  border-bottom: 1px solid #c6c6c6;
+}
+.lightspot_page .para_list ul li:first-child {
+  border: none;
+}
+.lightspot_page .next_page {
+  background-image: url("../img/down.png");
+  background-size: 100% 100%;
+  width: 0.813rem;
+  height: 0.44rem;
+  margin-left: -0.4rem /* 30/75 */;
+  position: absolute;
+  left: 50%;
+  bottom: 0.6rem /* 45/75 */;
+}
+/* 字体大小适配 */
+[data-dpr="2"] .lightspot_page .para_list {
+  font-size: 28px;
+}
+[data-dpr="2"] .lightspot_page .para_list .param_btn {
+  font-size: 30px;
+}
+[data-dpr="3"] .lightspot_page .para_list {
+  font-size: 42px;
+}
+[data-dpr="3"] .lightspot_page .para_list .param_btn {
+  font-size: 45px;
+}
+/* 适配iphone4尺寸*/
+@media (max-width: 640px) {
+  [data-dpr="2"] .lightspot_page .para_list {
+    font-size: 22px;
+  }
+  [data-dpr="2"] .lightspot_page .para_list li {
+    padding: 0.6rem /* 45/75 */ 0 0.4rem /* 30/75 */;
+  }
+}

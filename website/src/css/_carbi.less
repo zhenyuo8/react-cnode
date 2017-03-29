@@ -1,0 +1,1297 @@
+@import (reference) "public";
+@import (reference) "mod/mod_carMenu";
+@import (reference) "mod/mod_goTop";
+@import (reference) "mod/mod_carHot";
+@import (reference) "mod/mod_headerTitle";
+@import (reference) "mod/mod_headerLogo";
+@import (reference) "mod/mod_footer";
+.logo{
+  .logo;
+}
+.goTop{
+  .goTop;
+}
+.header{
+  .header;
+}
+.footer{
+  .footer;
+}
+.config_para{
+  margin-top: 20px;
+  .peizhi_filter{
+    width: 990px;
+    height: 40px;
+    border: 1px solid #999999;
+    line-height: 40px;
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    .pub{
+      ul{
+        li{
+          margin-right: 16px;
+          cursor: pointer;
+          .bg_icon{
+            vertical-align: middle;
+            display:inline-block;
+            width: 10px;
+            height: 10px;
+            border: 1px solid #999999;
+            margin-right: 6px;
+            margin-top: -3px;
+            border-radius: 2px;
+            background-color: #FFFFFF;
+          }
+          .active{
+            width: 12px;
+            height: 12px;
+            background: url('../img/right_icon.png')center;
+            border:none;
+          }
+        }
+      }
+    }
+    .year{
+      margin-left: 20px;
+      ul{
+        li:first-child{
+          color: #666666;
+        }
+      }
+    }
+    .speed_box{
+      margin-left: 40px;
+      ul{
+        li:first-child{
+          color: #666666;
+        }
+      }
+    }
+    .engine{
+      margin-left: 50px;
+      ul{
+        li:first-child{
+          color: #666666;
+        }
+      }
+    }
+  }
+}
+.main_box{
+  width: 990px;
+  margin: 0 auto;
+  position: relative;
+  zoom: 1;
+  .car_compare_con{
+    width: 100%;
+    table{
+      width: 100%;
+      border-collapse: separate;
+      border-left:1px solid #dadada ;
+      .first_tr{
+        th{
+          div{
+            cursor: pointer;
+          }
+          h3{
+            height: 20px;
+            font-size: 20px;
+            margin-bottom: 7px;
+          }
+        }
+      }
+      .f_price{
+        td{
+          text-align: center;
+        }
+      }
+      .op0{
+        th{
+          border-bottom: 0px;
+
+        }
+        td{
+          border-bottom: 0px;
+        }
+      }
+      .m_price{
+        .f_w{
+          font-weight: 600;
+        }
+        td{
+          text-align: center;
+          color:#e43a3a;
+          span{
+            color:#ffffff ;
+            display: inline-block;
+            width: 52px;
+            height: 22px;
+            line-height: 22px;
+            background-color:#ffa903;
+            cursor: pointer;
+            margin-left: 11px;
+            font-weight: normal;
+          }
+        }
+      }
+      th{
+        width: 175px;
+        font-weight: normal;
+        padding-left: 22px;
+        text-align: left;
+        border-right: 1px solid #dadada;
+        border-bottom: 1px solid #dadada;
+        position: relative;
+        div:first-child{
+          margin-top: 8px;
+          margin-bottom: 5px;
+        }
+        .color_999{
+          color: #999999;
+        }
+        div{
+          line-height: 32px;
+          .active{
+            width: 12px;
+            height: 12px;
+            background: url('../img/right_icon.png')center;
+            border:none;
+          }
+        }
+        p{
+          margin-top: 10px;
+          margin-bottom: 60px;
+        }
+        .bg_icon{
+          vertical-align: middle;
+          display:inline-block;
+          width: 10px;
+          height: 10px;
+          border: 1px solid #999999;
+          margin-right: 6px;
+          margin-top: -3px;
+          border-radius: 2px;
+          background-color: #FFFFFF;
+        }
+        .bp_icon{
+          width: 12px;
+          height: 12px;
+          background: url('../img/biaopei_icon.png') no-repeat center;
+          border:none;
+        }
+        .xp_icon{
+          width: 12px;
+          height: 12px;
+          background: url('../img/xuanpei_icon.png') no-repeat center;
+          border:none;
+        }
+        .null_icon{
+          width: 12px;
+          height: 4px;
+          background: url('../img/null_icon.png') no-repeat center;
+          border:none;
+        }
+      }
+      .line_hi_31{
+        height: 31px;
+      }
+      .v_top{
+        vertical-align: top;
+      }
+      td{
+        width: 197px;
+        border-right: 1px solid #dadada;
+        border-bottom: 1px solid #dadada;
+        .close_btn{
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          cursor: pointer;
+          background: url("../img/close_icon.png") no-repeat center;
+          top: 0px;
+          right: 0px;
+        }
+        //标记位置
+
+        .img_box{
+          text-align: center;
+          margin-top: 14px;
+          img{
+            margin: 0 auto;
+          }
+        }
+        .car_des{
+          padding: 0px 28px;
+          text-align: center;
+          margin-top: 11px;
+          line-height: 18px;
+        }
+        .duibi_btn{
+          text-align: center;
+          bottom: 18px;
+          left: 0px;
+          right: 0px;
+          margin: 0 auto;
+          div{
+            margin: 0 auto;
+          }
+
+          .left_move{
+             width: 54px;
+             height: 24px;
+             text-align: center;
+             line-height: 24px;
+           }
+          .right_move{
+            width: 54px;
+            height: 24px;
+            text-align: center;
+            line-height: 24px;
+          }
+          .add_car{
+            display: inline-block;
+            width: 155px;
+            height: 24px;
+            line-height: 24px;
+            border: 1px solid #398be4;
+            color: #398be4;
+            cursor: pointer;
+            background: url(../img/addcar.png) no-repeat 37px center;
+          }
+          span{
+            display: inline-block;
+            border: 1px solid #dadada;
+            vertical-align: middle;
+            cursor: pointer;
+          }
+          .icon_left{
+            width: 24px;
+            height: 24px;
+            background: url("../img/duibi_left_icon.png")no-repeat center;
+          }
+          .icon_right{
+            width: 24px;
+            height: 24px;
+            background: url("../img/duibi_right_icon.png")no-repeat center;
+            margin-right: 0px;
+          }
+          .title{
+            width: 31px;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            margin: 0 6px;
+            background: url(../img/delete_bule.png) no-repeat center;
+          }
+        }
+      }
+      .h73{
+        td{
+          padding-left: 20px;
+          padding-top: 18px;
+          padding-bottom: 18px;
+          line-height: 26px;
+          span{
+            display: inline-block;
+            width:18px ;
+            height: 8px;
+            border: 1px solid #dadada;
+            margin-right: 8px;
+          }
+        }
+      }
+      .safety_con_tr{
+        td{
+          .bg_icon{
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border: none;
+          }
+          .bp_icon{
+            background: url(../img/biaopei_icon.png) no-repeat center;
+          }
+          .xuanpei_icon{
+            background: url(../img/xuanpei_icon.png) no-repeat center;
+          }
+          .null_icon{
+            background: url(../img/null_icon.png) no-repeat center;
+          }
+        }
+      }
+      .h48{
+        text-align: center;
+        .font_b{
+          font-weight: 600;
+          padding: 5px 27px;
+          line-height: 18px;
+        }
+      }
+      .h36:hover{
+        background: #a5d0ff;
+      }
+      .car_name:hover{
+        background: #a5d0ff;
+      }
+      .f_price:hover{
+        background: #a5d0ff;
+      }
+      .m_price:hover{
+        background: #a5d0ff;
+      }
+      .h73:hover{
+        background: #a5d0ff;
+      }
+      .h36{
+        height: 36px;
+        td{
+          padding-left: 20px;
+        }
+        .color_999{
+          color: #999999;
+        }
+      }
+      .title_box{
+        background-color: #f7f7f7;
+        th{
+          padding-left: 22px;
+          border-right: none;
+          height: 40px;
+          font-weight: 600;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .hint_mes_box{
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 46px;
+    .c_999{
+      color: #999999;
+    }
+    .bg_icon{
+      display: inline-block;
+      height: 18px;
+      width: 18px;
+      vertical-align: middle;
+      margin: 0 9px;
+    }
+    .hint_icon{
+      background: url("../img/hint_icon.png") no-repeat center;
+    }
+  }
+  .top200{
+    top: 380px;
+  }
+  .po_left_nav{
+    background-color: #FFFFFF;
+    left: -138px;;
+    ul{
+      padding-right: 8px;
+      border-right: 2px solid #dadada;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      .top_icon{
+        width: 10px;
+        height: 10px;
+        background: url("../img/status_icon_top.png") no-repeat center;
+        right: -4px;
+        top: -7px;
+      }
+      .bot_icon{
+        width: 10px;
+        height: 10px;
+        background: url("../img/status_icon_top.png") no-repeat center;
+        right: -4px;
+        bottom: -7px;
+      }
+      li{
+        line-height: 34px;
+        font-size: 0px;
+        text-align: right;
+        a{
+          display: inline-block;
+          height: 24px;
+          padding-left: 12px;
+          padding-right: 8px;
+          line-height: 24px;
+          vertical-align: middle;
+          font-size: 12px;
+          background-color: #ffffff;
+          color: #666666;
+          font-size: 16px;
+        }
+        .active_a{
+          background-color:#398be4;
+          color: #f3f8fd;
+        }
+        .bg_icon{
+          display: inline-block;
+          width: 12px;
+          height: 24px;
+          background-color: #ffffff;
+          vertical-align: middle;
+        }
+        .active{
+          background: url("../img/point_to_icon.png") no-repeat center;
+        }
+        .status_icon{
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          background: url("../img/status_icon.png") no-repeat center;
+          right: -14px;
+          top: 50%;
+          margin-top: -5px;
+        }
+        .status_n_icon{
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          background: url("../img/status_n_icon.png") no-repeat center;
+          right: -14px;
+          top: 50%;
+          margin-top: -5px;
+        }
+      }
+
+    }
+  }
+
+}
+.floatlayer{
+  width: 100%;
+  table{
+    border-collapse: separate;
+    border-top: 1px solid #dadada;
+    border-left:1px solid #dadada ;
+    background-color: #ffffff;
+    .w197{
+      width: 197px;
+    }
+    .dis_no{
+      display: none;
+    }
+    .title_box{
+      th{
+        padding-left: 22px;
+        border-right: none;
+        height: 40px;
+        font-weight: 600;
+        font-size: 16px;
+      }
+    }
+    th{
+      div{
+        width: 175px;
+      }
+    }
+    .addCar{
+        .duibi_btn{
+          width: 197px;
+        }
+      .car_select_input_box{
+        width: 197px;
+      }
+    }
+    .first_tr{
+      th{
+        div{
+          cursor: pointer;
+        }
+        .mar_bo13{
+          margin-bottom: 13px;
+        }
+        .mar_bo85{
+          margin-bottom: 85px;
+        }
+        h3{
+          font-size: 20px;
+          margin-bottom: 7px;
+        }
+      }
+      td:first-child{
+        .delete_btn{
+          margin-left: 60px;
+        }
+      }
+      td{
+        width: 197px;
+        .title_des{
+          padding-left: 27px;
+          padding-right: 24px;
+          width: 146px;
+          .title{
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 20px;
+
+          }
+          .des{
+            line-height: 18px;
+          }
+        }
+      }
+    }
+    .f_price{
+      td{
+        text-align: center;
+      }
+    }
+    .car_name{
+      td{
+        padding: 0px 27px;
+        font-weight: 600;
+      }
+    }
+    .m_price{
+      .f_w{
+        font-weight: 600;
+      }
+      td{
+        text-align: center;
+        color:#e43a3a;
+        span{
+          color:#ffffff ;
+          display: inline-block;
+          width: 52px;
+          height: 22px;
+          line-height: 22px;
+          background-color:#ffa903;
+          cursor: pointer;
+          margin-left: 11px;
+          font-weight: normal;
+        }
+      }
+    }
+    th{
+      width: 175px;
+      font-weight: normal;
+      padding-left: 22px;
+      text-align: left;
+      border-right: 1px solid #dadada;
+      border-bottom: 1px solid #dadada;
+      position: relative;
+      div:first-child{
+        margin-top: 8px;
+        margin-bottom: 5px;
+      }
+      .color_999{
+        color: #999999;
+      }
+      div{
+        line-height: 32px;
+      }
+      p{
+        margin-top: 10px;
+      }
+      .bg_icon{
+        vertical-align: middle;
+        display:inline-block;
+        width: 10px;
+        height: 10px;
+        border: 1px solid #999999;
+        margin-right: 6px;
+        margin-top: -3px;
+        border-radius: 2px;
+        background-color: #FFFFFF;
+      }
+      .bp_icon{
+        width: 12px;
+        height: 12px;
+        background: url('../img/biaopei_icon.png') no-repeat center;
+        border:none;
+      }
+      .xp_icon{
+        width: 12px;
+        height: 12px;
+        background: url('../img/xuanpei_icon.png') no-repeat center;
+        border:none;
+      }
+      .null_icon{
+        width: 12px;
+        height: 4px;
+        background: url('../img/null_icon.png') no-repeat center;
+        border:none;
+      }
+    }
+    .line_hi_31{
+      height: 31px;
+    }
+    .v_top{
+      vertical-align: top;
+    }
+    .h45{
+      td{
+        line-height: 18px;
+        padding: 6px 27px;
+      }
+    }
+    .dis_no{
+      display: none;
+    }
+    td{
+      border-right: 1px solid #dadada;
+      border-bottom: 1px solid #dadada;
+      .close_btn{
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+        background: url("../img/close_icon.png") no-repeat center;
+        top: 0px;
+        right: 0px;
+      }
+      .car_select_input_box{
+        width: 100%;
+        margin-top: 12px;
+        .car_brand{
+          width: 145px;
+          height: 25px;
+          border: 1px solid #dadada;
+          margin: 0 auto;
+          margin-bottom: 8px;
+          line-height: 25px;
+          text-indent: 8px;
+          padding-right: 10px;
+          background: url("../img/select_down.png")no-repeat 140px center;
+          cursor: pointer;
+        }
+        .car_type{
+          width: 145px;
+          height: 25px;
+          border: 1px solid #dadada;
+          margin: 0 auto;
+          margin-bottom: 8px;
+          line-height: 25px;
+          text-indent: 8px;
+          padding-right: 10px;
+          background: url("../img/select_down.png")no-repeat 140px center;
+          cursor: pointer;
+        }
+        .car_year{
+          width: 145px;
+          height: 25px;
+          border: 1px solid #dadada;
+          margin: 0 auto;
+          margin-bottom: 8px;
+          line-height: 25px;
+          text-indent: 8px;
+          padding-right: 10px;
+          background: url("../img/select_down.png")no-repeat 140px center;
+          cursor: pointer;
+        }
+        .is_ho:hover{
+          border: 1px solid #398be4;
+          background: url("../img/select_b_down.png")no-repeat 141px center;
+        }
+
+      }
+      .img_box{
+        text-align: center;
+        margin-top: 14px;
+        width: 197px;
+        img{
+          margin: 0 auto;
+        }
+      }
+      .car_des{
+        padding: 0px 28px;
+        text-align: center;
+        margin-top: 11px;
+        line-height: 18px;
+      }
+      .duibi_btn{
+        text-align: center;
+        bottom: 18px;
+        left: 0px;
+        right: 0px;
+        margin: 0 auto;
+        div{
+          margin: 0 auto;
+        }
+
+        .left_move{
+          width: 54px;
+          height: 24px;
+          text-align: center;
+          line-height: 24px;
+        }
+        .right_move{
+          width: 54px;
+          height: 24px;
+          text-align: center;
+          line-height: 24px;
+        }
+        .add_car{
+          display: inline-block;
+          width: 155px;
+          height: 24px;
+          line-height: 24px;
+          border: 1px solid #398be4;
+          color: #398be4;
+          cursor: pointer;
+          background: url(../img/addcar.png) no-repeat 37px center;
+        }
+        span{
+          display: inline-block;
+          border: 1px solid #dadada;
+          vertical-align: middle;
+          cursor: pointer;
+        }
+        .icon_left{
+          width: 24px;
+          height: 24px;
+          background: url("../img/duibi_left_icon.png")no-repeat center;
+        }
+        .icon_right{
+          width: 24px;
+          height: 24px;
+          background: url("../img/duibi_right_icon.png")no-repeat center;
+          margin-right: 0px;
+        }
+        .title{
+          width: 31px;
+          height: 24px;
+          line-height: 24px;
+          text-align: center;
+          margin: 0 6px;
+          background: url(../img/delete_bule.png) no-repeat center;
+        }
+      }
+    }
+    .h73{
+      td{
+        padding-left: 20px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        line-height: 26px;
+        span{
+          display: inline-block;
+          width:18px ;
+          height: 8px;
+          border: 1px solid #dadada;
+          margin-right: 8px;
+        }
+      }
+    }
+    .safety_con_tr{
+      td{
+        .bg_icon{
+          display: inline-block;
+          width: 12px;
+          height: 12px;
+          border: none;
+        }
+        .bp_icon{
+          background: url(../img/biaopei_icon.png) no-repeat center;
+        }
+        .xuanpei_icon{
+          background: url(../img/xuanpei_icon.png) no-repeat center;
+        }
+        .null_icon{
+          background: url(../img/null_icon.png) no-repeat center;
+        }
+      }
+    }
+    .h48{
+      text-align: center;
+      .font_b{
+        font-weight: 600;
+        padding: 5px 27px;
+        line-height: 18px;
+      }
+    }
+    .h36:hover{
+      background: #a5d0ff;
+    }
+    .car_name:hover{
+      background: #a5d0ff;
+    }
+    .f_price:hover{
+      background: #a5d0ff;
+    }
+    .m_price:hover{
+      background: #a5d0ff;
+    }
+    .h73:hover{
+      background: #a5d0ff;
+    }
+    .h36{
+      height: 36px;
+      td{
+        padding-left: 20px;
+      }
+      .color_999{
+        color: #999999;
+      }
+    }
+    .title_box{
+      background-color: #f7f7f7;
+      td{
+        padding-left: 22px;
+        border-right: none;
+        height: 40px;
+        font-weight: 600;
+        font-size: 16px;
+      }
+    }
+  }
+}
+.floatLeft{
+  border-left:1px solid #dadada;
+  position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 89;
+    background-color: #fff;
+    display: none;
+  table{
+    th{
+      div{
+        width: 175px;
+      }
+    }
+    .dis_no{
+      display: none;
+    }
+    .mar_bo85{
+          margin-bottom: 85px;
+        }
+    .title_box{
+      th{
+        padding-left: 22px;
+        border-right: none;
+        height: 40px;
+        font-weight: 600;
+        font-size: 16px;
+      }
+    }
+    tr{
+      th{
+        border-right: 1px solid #dadada;
+      }
+    }
+    .title_box{
+      border-right: none;
+    }
+    .first_tr{
+      th{
+        div{
+          cursor: pointer;
+        }
+        h3{
+          font-size: 20px;
+          margin-bottom: 7px;
+        }
+      }
+      td{
+        .title_des{
+          padding-left: 27px;
+          padding-right: 24px;
+          width: 146px;
+          .title{
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 20px;
+          }
+          .des{
+            line-height: 18px;
+          }
+        }
+      }
+    }
+    .f_price{
+      td{
+        text-align: center;
+      }
+    }
+    .m_price{
+      .f_w{
+        font-weight: 600;
+      }
+      td{
+        text-align: center;
+        color:#e43a3a;
+        span{
+          color:#ffffff ;
+          display: inline-block;
+          width: 52px;
+          height: 22px;
+          line-height: 22px;
+          background-color:#ffa903;
+          cursor: pointer;
+          margin-left: 11px;
+          font-weight: normal;
+        }
+      }
+    }
+    th{
+      width: 175px;
+      font-weight: normal;
+      padding-left: 22px;
+      text-align: left;
+      border-bottom: 1px solid #dadada;
+      position: relative;
+      div:first-child{
+        margin-top: 8px;
+        margin-bottom: 5px;
+      }
+      div{
+        line-height: 32px;
+      }
+      p{
+        margin-top: 10px;
+        margin-bottom: 60px;
+      }
+      .bg_icon{
+        vertical-align: middle;
+        display:inline-block;
+        width: 10px;
+        height: 10px;
+        border: 1px solid #999999;
+        margin-right: 6px;
+        margin-top: -3px;
+        border-radius: 2px;
+        background-color: #FFFFFF;
+      }
+      .bp_icon{
+        width: 12px;
+        height: 12px;
+        background: url('../img/biaopei_icon.png') no-repeat center;
+        border:none;
+      }
+      .xp_icon{
+        width: 12px;
+        height: 12px;
+        background: url('../img/xuanpei_icon.png') no-repeat center;
+        border:none;
+      }
+      .null_icon{
+        width: 12px;
+        height: 4px;
+        background: url('../img/null_icon.png') no-repeat center;
+        border:none;
+      }
+    }
+    .line_hi_31{
+      height: 31px;
+    }
+    .v_top{
+      vertical-align: top;
+    }
+    td{
+      width: 197px;
+      border-right: 1px solid #dadada;
+      border-bottom: 1px solid #dadada;
+      .close_btn{
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+        background: url("../img/close_icon.png") no-repeat center;
+        top: 0px;
+        right: 0px;
+      }
+      .car_select_input_box{
+        width: 100%;
+        margin-top: 12px;
+        .car_brand{
+          width: 145px;
+          height: 25px;
+          border: 1px solid #dadada;
+          margin: 0 auto;
+          margin-bottom: 8px;
+          line-height: 25px;
+          text-indent: 8px;
+          padding-right: 10px;
+          background: url("../img/select_down.png")no-repeat 140px center;
+          cursor: pointer;
+        }
+        .car_type{
+          width: 145px;
+          height: 25px;
+          border: 1px solid #dadada;
+          margin: 0 auto;
+          margin-bottom: 8px;
+          line-height: 25px;
+          text-indent: 8px;
+          padding-right: 10px;
+          background: url("../img/select_down.png")no-repeat 140px center;
+          cursor: pointer;
+        }
+        .car_year{
+          width: 145px;
+          height: 25px;
+          border: 1px solid #dadada;
+          margin: 0 auto;
+          margin-bottom: 8px;
+          line-height: 25px;
+          text-indent: 8px;
+          padding-right: 10px;
+          background: url("../img/select_down.png")no-repeat 140px center;
+          cursor: pointer;
+        }
+        .is_ho:hover{
+          border: 1px solid #398be4;
+          background: url("../img/select_b_down.png")no-repeat 141px center;
+        }
+
+      }
+      .img_box{
+        width: 197px;
+        text-align: center;
+        margin-top: 14px;
+        img{
+          margin: 0 auto;
+        }
+      }
+      .car_des{
+        padding: 0px 28px;
+        text-align: center;
+        margin-top: 11px;
+        line-height: 18px;
+      }
+      .duibi_btn{
+        text-align: center;
+        bottom: 18px;
+        left: 0px;
+        right: 0px;
+        margin: 0 auto;
+        div{
+          margin: 0 auto;
+        }
+        .left_move{
+          width: 54px;
+          height: 24px;
+          text-align: center;
+          line-height: 24px;
+        }
+        .delete_btn{
+          margin-left: 60px;
+        }
+        .right_move{
+          width: 54px;
+          height: 24px;
+          text-align: center;
+          line-height: 24px;
+        }
+        .add_car{
+          display: inline-block;
+          width: 155px;
+          height: 24px;
+          line-height: 24px;
+          border: 1px solid #398be4;
+          color: #398be4;
+          cursor: pointer;
+          background: url(../img/addcar.png) no-repeat 37px center;
+        }
+        span{
+          display: inline-block;
+          border: 1px solid #dadada;
+          vertical-align: middle;
+          cursor: pointer;
+        }
+        .icon_left{
+          width: 24px;
+          height: 24px;
+          background: url("../img/duibi_left_icon.png")no-repeat center;
+        }
+        .icon_right{
+          width: 24px;
+          height: 24px;
+          background: url("../img/duibi_right_icon.png")no-repeat center;
+          margin-right: 0px;
+        }
+        .title{
+          width: 31px;
+          height: 24px;
+          line-height: 24px;
+          text-align: center;
+          margin: 0 6px;
+          background: url(../img/delete_bule.png) no-repeat center;
+        }
+      }
+    }
+    .h73{
+      td{
+        padding-left: 20px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        line-height: 26px;
+        span{
+          display: inline-block;
+          width:18px ;
+          height: 8px;
+          border: 1px solid #dadada;
+          margin-right: 8px;
+        }
+      }
+    }
+    .safety_con_tr{
+      td{
+        .bg_icon{
+          display: inline-block;
+          width: 12px;
+          height: 12px;
+          border: none;
+        }
+        .bp_icon{
+          background: url(../img/biaopei_icon.png) no-repeat center;
+        }
+        .xuanpei_icon{
+          background: url(../img/xuanpei_icon.png) no-repeat center;
+        }
+        .null_icon{
+          background: url(../img/null_icon.png) no-repeat center;
+        }
+      }
+    }
+    .h73{
+    height: 89px;
+  }
+    .h48{
+      text-align: center;
+      height: 47px;
+      .font_b{
+        font-weight: 600;
+        padding: 5px 27px;
+        line-height: 18px;
+      }
+    }
+    .h36:hover{
+      background: #a5d0ff;
+    }
+    .car_name:hover{
+      background: #a5d0ff;
+    }
+    .f_price:hover{
+      background: #a5d0ff;
+    }
+    .m_price:hover{
+      background: #a5d0ff;
+    }
+    .h73:hover{
+      background: #a5d0ff;
+    }
+    .h36{
+      height: 36px;
+      td{
+        padding-left: 20px;
+      }
+      .color_999{
+        color: #999999;
+      }
+    }
+    .title_box{
+      background-color: #f7f7f7;
+      th{
+        padding-left: 22px;
+        border-right: none;
+        height: 40px;
+        font-weight: 600;
+        font-size: 16px;
+      }
+
+    }
+  }
+}
+#_config_setbox{
+  display: none;
+  width: 198px;
+  border-top: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+  background-color: #FFFFFF;
+  z-index: 200;
+  .wrap{
+    width: 175px;
+    padding-left: 22px;
+    border-bottom: 1px solid #dadada;
+    div:first-child{
+      margin-top: 8px;
+      margin-bottom: 5px;
+    }
+    h3{
+      font-size: 20px;
+      margin-bottom: 7px;
+    }
+    .bg_icon{
+      vertical-align: middle;
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border: 1px solid #999999;
+      margin-right: 6px;
+      margin-top: -3px;
+      border-radius: 2px;
+      background-color: #FFFFFF;
+    }
+    .xp_icon{
+      width: 12px;
+      height: 12px;
+      background: url(../img/xuanpei_icon.png) no-repeat center;
+      border: none;
+    }
+    .null_icon{
+      width: 12px;
+      height: 4px;
+      background: url(../img/null_icon.png) no-repeat center;
+      border: none;
+    }
+    p{
+      .bp_icon{
+        width: 12px;
+        height: 12px;
+        background: url(../img/biaopei_icon.png) no-repeat center;
+        border: none;
+      }
+      margin-top: 10px;
+      padding-bottom: 13px;
+    }
+    div{
+      cursor: pointer;
+      line-height: 32px;
+      .active{
+        width: 12px;
+        height: 12px;
+        background: url(../img/right_icon.png) center;
+        border: none;
+      }
+
+    }
+
+
+  }
+  .p{
+    width: 175px;
+    margin: 0 ;
+    padding-left: 22px;
+    font-weight: normal;
+    border-bottom: 1px solid #dadada;
+    text-align: left;
+    line-height: 31px;
+  }
+  .bor_no{
+    border-bottom: none;
+  }
+}
+
+.main_box .trSome td { background-color: #d8eaff; }
+.signBox{
+  label{
+    cursor: pointer;
+  }
+  label.active{
+        span{
+          width: 12px;
+          height: 12px;
+          background: url('../img/right_icon.png')center;
+          border:none;
+        }
+
+        }
+}

@@ -1,0 +1,344 @@
+/*****
+ *@author: jianingning
+ *@from: Global style imgs
+ *@description: 何在朋
+ *@date: name (2017.01.12)
+*/
+@import (reference) "public";
+@import "mod/mod_headerTitle.less";
+@import "mod/mod_headerLogo.less";
+@import "mod/mod_footer.less";
+@import "mod/mod_carMenu.less";
+@import "mod/mod_carHot.less";
+@import "mod/mod_goTop.less";
+@import "mod/mod_carLike.less";
+@import "mod/mod_carOther.less";
+@import "mod/mod_pagination.less";
+.imgsContent {
+    width: @width-990;
+    height: auto;
+    margin: 17px auto 48px auto;
+
+    .imgs_c_top {
+        height: 150px;
+    }
+    .imgs_c_middle {
+        padding-top: 30px;
+        .imgs_m_year {
+            width: 721px;
+            height: 30px;
+            padding-top: 18px;
+            border-bottom: 2px solid @color-eee;
+
+            li {
+                float: left;
+                width: 77px;
+                text-align: center;
+                border-right: 1px solid @color-c4;
+                height: 15px;
+                line-height: 15px;
+
+                a {
+                    font-size: @font-16;
+                    .inline-block;
+                    &:active {
+                        color: #1064c1;
+                    }
+
+                }
+                &:first-child {
+                    width: 68px;
+                    text-align: left;
+                }
+                &:last-child {
+                    border-right: none;
+                }
+            }
+            .imgs_nor:hover {
+                a {
+                    color: #398be4;
+                }
+            }
+            .imgs_weight {
+                a {
+                    font-weight: 700;
+                }
+            }
+        }
+        .imgs_m_left {
+            width: 721px;
+            height: auto;
+            float: left;
+            padding-right: 31px;
+            border-right: 1px solid @color-eee;
+
+            .imgs_m_news {
+                height: auto;
+
+                dl {
+                    padding-top: 20px;
+                    border-bottom: 1px solid @color-eee;
+
+                    dt {
+                        font-size: @fontSize-14;
+                        font-weight: 700;
+                        width: 56px;
+                        float: left;
+                    }
+                    dd {
+                        width: 664px;
+                        float: right;
+
+                        .imgs_m_uls {
+
+                            .imgs_m_li {
+                                float: left;
+                                width: 207px;
+                                height: 19px;
+                                margin: 1px 0px 20px 8px;
+
+                                p {
+                                    border: 1px solid #ccc;
+                                    border-radius: 3px;
+                                    padding: 0 5px;
+                                    height: 20px;
+                                    line-height: 20px;
+                                    display: inline-block;
+
+                                    em {
+                                        width: 12px;
+                                        height: 12px;
+                                        border: 1px solid @color-eee;
+                                        background-color: @color-fff;
+                                        float: left;
+                                        margin-top: 3px;
+                                        margin-right: 8px;
+                                        .inline-block;
+                                        .cursor;
+                                    }
+                                    a {
+                                        .inline-block;
+                                        max-width: 153px;
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                    }
+                                    i {
+                                        width: 10px;
+                                        height: 10px;
+                                        background-image: url(../img/delete_face.png);
+                                        background-repeat: no-repeat;
+                                        float: right;
+                                        margin-top: 4px;
+                                        .inline-block;
+                                        margin-left: 5px;
+                                        cursor: pointer;
+                                        display: none;
+                                    }
+                                }
+                                .p_hover {
+                                    background: #398be4;
+                                    a {
+                                        color: #fff;
+                                    }
+                                    i {
+                                        display: block;
+                                    }
+                                }
+                                .p_nor:hover {
+                                    border:1px solid #fff;
+                                    background: #e8eff6; 
+                                }
+                            }
+                            .imgs_blueB {
+                                border-color: @color-398be4;
+                            }
+                            .other_color {
+                                width: 153px;
+                                position: relative;
+                                .other_down {
+                                    width: 10px;
+                                    height: 5px;
+                                    .inline-block;
+                                    float: right;
+                                    margin-top: 7px;
+                                    background: url(../img/other_down.png);
+                                }
+                                .color_top {
+                                    padding-top: 5px;
+                                    ul {
+                                        width: 186px;
+                                        height: auto;
+                                        border: 1px solid @color-333;
+                                        border-bottom-width: 4px;
+                                        background: @color-fff;
+                                        left: 2px;
+                                        z-index: 10;
+                                        padding: 0;
+                                        display: none;
+                                        position: absolute;
+                                        cursor:default;
+                                        li{
+                                            border: none;
+                                            border-bottom: 1px solid #eee;
+                                            width: 93px;
+                                            float: left;
+                                            margin: 0;
+                                            height: 28px;
+                                            line-height: 28px;
+                                            span {
+                                                .inline-block;
+                                                width: 12px;
+                                                height: 12px;
+                                                border: 1px solid @color-eee;
+                                                float: left;
+                                                margin: 7px 8px 0px 10px;
+                                            }
+                                            .red {
+                                                background: #dd2533;
+                                            }
+                                            .black {
+                                                background: #262626;
+                                            }
+                                            .grey {
+                                                background: #606060;
+                                            }
+                                            .blue {
+                                                background: #2f499f;
+                                            }
+                                            .white {
+                                                background: @color-fff;
+                                            }
+                                            .silver {
+                                                background: #9fa2a7;
+                                            }
+                                        }
+                                        .o_nBorder {
+                                            border: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .car-decoration {
+                    border: none;
+                }
+            }
+            .picture-show-module {
+                margin-top: 10px;
+                .picture-show-nav {
+                    padding-top: 20px;
+                    border-bottom: 2px solid @color-eee;
+                    overflow: hidden;
+
+                    li {
+                        float: left;
+                        margin: 10px 0;
+                        padding: 0 12px;
+                        border-left: 1px solid @color-eee;
+                        font-size: @font-16;
+                        .cursor;
+                        &:first-child {
+                            padding-left: 0;
+                            border: none;
+                        }
+                    }
+                    .imgs_type_last {
+                        float: right;
+                        font-size: @font-12;
+                        border-left: none;
+                        color: @color-999;
+                        margin-top: 15px;
+                        padding-right: 0px;
+                    }
+                    .p_type_weight {
+                        font-weight: 700;
+                    }
+                    .p_type_h:hover {
+                        color: @color-398be4;
+                    }
+                }
+                .picture-show-list {
+                    margin-bottom: 20px;
+                    .picture-show-list_content {
+                        margin-top: 32px;
+                        a {
+                            font-size: @font-16;
+                            corlor: @color-333;
+                            span {
+                                 color: @color-999;
+                                 font-size: @font-12;
+                                 margin-left: 20px;
+                            }
+                            &:hover {
+                                color: @color-398be4;
+                            }
+                        }
+                        ul {
+                            li {
+                                 float: left;
+                                 padding-top: 16px;
+                                 margin-right: 20px;
+                                a {
+                                     width: 165px;
+                                     height: 140px;
+                                     .inline-block;
+                                    img{
+                                         .inline-block;
+                                         width: 100%;
+                                         height: 110px;
+                                    }
+                                    p {
+                                        width: 165px;
+                                        padding-top: 12px;
+                                        font-size: @font-12;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        display: -webkit-box;
+                                        -webkit-box-orient: vertical;
+                                        white-space: nowrap;
+                                        -webkit-line-clamp: 1;
+                                    }
+                                }
+                                a:hover p {
+                                    color:@color-398be4;
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .noResult {
+            width: 721px;
+            text-align: center;
+            padding-top: 50px;
+            float: left;
+            display: none;
+
+            p {
+                display: inline-block;
+                height: 252px;
+                line-height: 252px;
+                font-size: 26px;
+                margin-left: 22px;
+            }
+        }
+        .imgs_m_right {
+            width: 206px;
+            height: auto;
+            float: right;
+
+            h3 {
+                 font-size: @font-16;
+                 font-weight: 700;
+                 height: 28px;
+                 padding-top: 2px;
+                 border-bottom: 1px solid @color-eee;
+            }
+        }
+    }
+}

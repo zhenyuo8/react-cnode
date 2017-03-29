@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>汽车大全-404</title>
+	<meta charset="UTF-8">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="js/flexible.js"></script>
+    <script src="js/flexible_css.js"></script>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/error.css"/>
+</head>
+<body>
+	<div class="wrap">
+		<!-- 头部 -->
+        {{#include ./mod/mod_pubHead.html?m=404}}
+
+        <!--content-->
+    	<img src="img/error_img.jpg" class="error_img">
+    	<p class="error_text1">咦，您访问的页面出错了</p>
+    	<p class="error_text2">正在抢修中~</p>
+        <a href="index.html" class="error_return">返回首页</a>
+	</div>
+
+	<!--顶部导航-->
+    {{#include ./mod/mod_pubHeadNav.html}}
+</body>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/pubNav.js"></script>
+</html>

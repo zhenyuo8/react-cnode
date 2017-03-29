@@ -1,0 +1,64 @@
+.car_class {
+  width: 100%;
+  height: 100%;
+}
+.car_class .car_class_content {
+  width: 990px;
+  margin: 0 auto;
+  border-top: 4px solid #333;
+  position: relative;
+}
+.car_class .car_class_content .car_class_tab {
+  height: 35px;
+  width: 990px;
+  min-width: 50%;
+  margin: 0 auto;
+  position: relative;
+  background: #eee;
+  vertical-align: middle;
+  border-bottom: 1px solid #c4c4c4;
+}
+.car_class .car_class_content .car_class_tab li {
+  float: left;
+  line-height: 35px;
+  position: relative;
+  margin-left: 6px;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  cursor: pointer;
+}
+.car_class .car_class_content .car_class_tab li.hover_first {
+  margin-left: 12px;
+}
+.car_class .car_class_content .car_class_tab li.hover1 a {
+  font-size: 14px;
+  height: 31px;
+  font-weight: bold;
+  line-height: 31px;
+  border-top: 4px solid transparent;
+  font-family: "Microsoft YaHei", "微软雅黑";
+  display: block;
+  top: -4px;
+  position: relative;
+  padding: 0 12px;
+}
+.car_class .car_class_content .car_class_tab li.hover1:hover {
+  border-bottom: 1px solid transparent;
+  border-left: 1px solid #c4c4c4;
+  border-right: 1px solid #c4c4c4;
+  font-family: "Microsoft YaHei", "微软雅黑";
+  background: #fff;
+}
+.car_class .car_class_content .car_class_tab li.hover1:hover a {
+  border-top: 4px solid #398BE4;
+}
+.car_class .car_class_content .car_class_tab li.on {
+  border-bottom: 1px solid transparent;
+  border-left: 1px solid #c4c4c4;
+  border-right: 1px solid #c4c4c4;
+  font-family: "Microsoft YaHei", "微软雅黑";
+  background: #fff;
+}
+.car_class .car_class_content .car_class_tab li.on a {
+  border-top: 4px solid #398BE4;
+}

@@ -1,0 +1,95 @@
+.answer_content{
+    border:1px solid @color-dadada;
+    width: 720px;
+    box-sizing: border-box;
+    //height: 136px;
+    textarea{
+        width: 100%;
+        box-sizing: border-box;
+        resize: none;
+        border:none;
+        height: 100px;
+        padding: 8px;
+        padding-right: 80px;
+        font-family: "PingFangSC-Regular","Hiragino Sans GB","Helvetica Neue",Helvetica,Arial,"Microsoft Yahei",sans-serif;
+        font-size: @font-14;
+    }
+    .textarea{
+        width: 100%;
+        box-sizing: border-box;
+        border:none;
+        height: 100px;
+        padding: 8px;
+        font-family: "PingFangSC-Regular","Hiragino Sans GB","Helvetica Neue",Helvetica,Arial,"Microsoft Yahei",sans-serif;
+        text-align: center;
+        padding-top: 40px;
+        a{
+            color: @color-398be4;
+        }
+    }
+    .answer_bottom_no{
+        height: 18px;
+    }
+    .answer_bottom{
+        border-top:1px solid @color-eee;
+        background-color: @color-f7f7f7;
+        padding: 8px 20px;
+        .clearZoom{
+            margin:0 40px 0 10px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        input{
+            display: none;
+        }
+        label{
+            cursor: pointer;
+        }
+        img{
+            width: 16px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+    }
+    .img_area{
+        width: 60px;
+        height: 90px;
+        right: 6px;
+        top:6px;
+        span{
+            img{
+                width: 60px;
+                height: 60px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            .p_del{
+                position: absolute;
+                width: 20px;
+                display: none;
+                height: 20px;
+                z-index: 2;
+                right: 0;
+                top: 0;
+                display: block;
+                background-image: url("../img/p_del.png");
+                background-size: 100%;
+            }
+        }
+        .absolute{
+            bottom: 8px;
+            right: 8px;
+        }
+    }
+}
+.submit{
+    text-align: right;
+    padding: 20px 0 20px;
+    a{
+        padding: 8px 20px;
+        color: @color-fff;
+        background-color: @color-ffa903;
+    }
+}

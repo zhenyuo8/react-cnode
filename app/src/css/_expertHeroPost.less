@@ -1,0 +1,405 @@
+/*****
+ *@author: zhangwx
+ *@from: Global style experHeroPost
+ *@description: 专家英雄帖
+ *@date: name (2017.03.15)
+*/
+
+html,body{
+	height:100%;
+	font-family: PingFangSC-Medium;
+	color: #f7dab0;
+	overflow:hidden;
+}
+.expert_home, .expert_hervest, .expert_step{
+	//position: absolute;
+	height: 100%;
+	left: 0;
+}
+/*首屏部分*/
+.page{
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.expert_home{
+	top: 0;
+	background-image: url(../img/expert_home_bg.png);
+	border-top: 1px solid transparent;
+	.expert_logo{
+		margin-top: 2rem;
+		height: 4.8rem;
+		width: 100%;
+		background-image: url(../img/expert_logo_tri.png);
+		background-size: 100%;
+		img{
+			height: 0;
+			width: 0;
+			margin-top: 0.733rem;
+			text-align: center;
+		}
+	}
+	p{
+		text-align: center;
+	}
+	.home_text{
+		font-size: 16px;
+		margin-bottom: 0.48rem;
+		position: relative;
+	}
+}
+/*首屏和第二屏页面三角号*/
+.next_arr{
+	position: absolute;
+	height: 0.507rem;
+	width: 0.773rem;
+	left: 4.6rem;
+	bottom: 0.987rem;
+	background-image: url(../img/expert_next_arr.png);
+	background-size: 100%;
+}
+/*第二屏，申请获得部分*/
+.expert_hervest{
+	background-image: url(../img/expert_hervest_bg.png);
+
+	section{
+		margin-left: 0.533rem;
+	}
+
+	.content{
+		position: relative;
+		width: 90%;
+		margin: 0 auto;
+		height: 2.4rem;
+		margin-bottom: 0.667rem;
+		background:-webkit-gradient(linear, 0% 0%, 100% 0%,from(rgba(255,255,255,0.3)), to(rgba(255,255,255,0.0)));/*谷歌*/
+		background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(rgba(255,255,255,0.3)), to(rgba(255,255,255,0.0)));      /* Safari 4-5, Chrome 1-9*/
+		background: -webkit-linear-gradient(left, rgba(255,255,255,0.3), rgba(255,255,255,0.0));   /*Safari5.1 Chrome 10+*/
+		div{
+			display: inline-block;
+		}
+
+		.content_left{
+			float: left;
+			width: 20%;
+			height: 2.0rem;
+			img{
+				width: 0.96rem;
+				height: 0.96rem;
+				margin-top: 0.267rem;
+				margin-left: 0.267rem;
+			}
+		}
+		.content_right{
+			float: left;
+			width:80%;
+			font-size: 13px;
+
+			h3{
+				font-size: 15px;
+				margin-top: 0.267rem;
+				margin-bottom: 0.267rem;
+			}
+		}
+	}
+	.content_one{
+		height: 2.0rem;
+		margin-top: 0.4rem;
+	}
+}
+.hervest_title, .step_title{
+	padding-top: 10%;
+	position: relative;
+	height: 10%;
+	h2{
+		font-size: 16px;
+		margin-top: 0.293rem;
+	}
+
+	span{
+		display: block;
+		height: 4%;
+		vertical-align: top;
+		background: url(../img/expert_line.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+}
+/*第三屏，申请流程部分*/
+.expert_step{
+	background-image: url(../img/expert_hervest_bg.png);
+	section{
+		width: 90%;
+		margin: 0 auto;
+	}
+	header{
+		height: 9%;
+		width: 90%;
+		margin: 0 auto;
+		overflow: hidden;
+		.content{
+			float: left;
+			height: 100%;
+			width: 18%;
+			text-align: center;
+			background-color: rgba(255,255,255,0.3);
+			border-radius: 50%;
+			img{
+				margin-top: 20%;
+				width: 35%;
+			}
+		}
+		.arrow{
+			float: left;
+			width: 9%;
+			text-align: center;
+			margin-top: 7%;
+			img{
+				width: 35%;
+			}
+		}
+	}
+	div{
+		display: inline-block;
+	}
+	.step{
+		position: relative;
+		letter-spacing: 0.04rem;
+		.step_left{
+			float: left;
+			width: 1.76rem;
+			text-align: center;
+			img{
+				height: 0.667rem;
+				width: 0.667rem;
+				margin-top: 0.267rem;
+				margin-bottom: 0.133rem;
+			}
+		}
+
+		.step_right{
+			font-size: 12px;
+			float: left;
+			width: 6.267rem;
+			line-height: 0.653rem;
+
+			p{
+				margin-top: 0.2rem;
+			}
+		}
+		.step_arr{
+			position: absolute;
+			left: 4.133rem;
+			bottom: -0.533rem;
+			display: inline-block;
+			height: 0.267rem;
+			width: 0.387rem;
+			background-image: url(../img/expert_step_arr.png);
+		}
+	}
+	.step_short{
+		height: 1.8rem;
+
+		.step_right{
+			line-height: 1.8rem;
+			p{
+				margin-top: 0;
+			}
+		}
+	}
+	.step_last{
+		margin-bottom: 0.533rem;
+	}
+
+	.step_footer{
+		position: relative;
+		top: 500px;
+		font-size: 16px;
+	}
+}
+.section{
+	display: none;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+.section.current{
+	display:inline-block;
+}
+.section.next{
+	display:inline-block;
+	z-index: 2;
+}
+.section.prev{
+	display:inline-block;
+	z-index: 2;
+}
+/*动画部分*/
+.ani_home_bg {
+  animation-name: ani_home_bg;
+  animation-fill-mode : forwards;
+  animation-duration: 1s;
+}
+.ani_home_logo {
+  animation-name: ani_home_logo;
+  animation-fill-mode : forwards;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+.delay(@time) {
+  animation-delay: @time;
+  animation-name: ani_home_text_one;
+  animation-duration: 0.5s;
+  animation-fill-mode :forwards;
+}
+.ani_home_text_one {
+  .delay(3s);
+}
+.ani_home_text_two {
+  .delay(3.5s);
+}
+.ani_home_text_three {
+  .delay(4s);
+}
+.ani_home_text_four {
+  .delay(4.5s);
+}
+.ani_home_text_five {
+  .delay(5s);
+}
+.ani_stop {
+	animation-duration: 0s;
+	animation-delay: 0s;
+}
+.ani_home_arr(@time) {
+	animation-name: ani_arr;
+	animation-iteration-count: infinite;
+	animation-delay: @time;
+	animation-duration: 0.02s;
+}
+.ani_arr_one{
+	.ani_home_arr(5.5s);
+}
+.ani_arr_two{
+	.ani_home_arr(2.5s);
+}
+@keyframes ani_arr {
+	from {
+		bottom: 1rem;
+	}
+	to {
+		bottom: 0.9rem;
+	}
+}
+@keyframes ani_home_bg {
+  0%{
+    background-position: -1000px 0;
+  }
+  50%{
+    background-position: 50px 0;
+  }
+  100%{
+    background-position: 0 0;
+  }
+}
+@keyframes ani_home_logo {
+  from{
+    width: 0px;
+    height: 0px;
+  }
+  to{
+    height: 3.093rem;
+    width: 6.48rem;
+  }
+}
+@keyframes ani_home_text_one {
+  from{
+    top: 1000px;
+  }
+  to{
+    top: 0px;
+  }
+}
+.ani_hervest(@time) {
+  animation-name: ani_hervest_title;
+  animation-duration: 0.5s;
+  animation-fill-mode :forwards;
+  animation-delay: @time;
+}
+@keyframes ani_hervest_title {
+  from{
+    top: 1000px;
+  }
+  to{
+    top: 0px;
+  }
+}
+.ani_hervest_one{
+	.ani_hervest(0s);
+}
+.ani_hervest_two{
+	.ani_hervest(0.5s);
+}
+.ani_hervest_three{
+	.ani_hervest(1s);
+}
+.ani_hervest_four{
+	.ani_hervest(1.5s);
+}
+.ani_hervest_five{
+	.ani_hervest(2s);
+}
+.ani_hervest_six{
+	.ani_hervest(2.5s);
+}
+
+/*字体适配设置*/
+[data-dpr="2"].hervest_title, .step_title{
+	font-size: 32px;
+}
+[data-dpr="2"] .expert_hervest .content .content_right h3{
+	font-size: 30px;
+}
+
+[data-dpr="2"] .expert_hervest .content .content_right{
+	font-size: 26px;
+}
+[data-dpr="2"] .expert_step .step .step_right{
+	font-size: 24px;
+}
+[data-dpr="2"] .expert_step .step .step_footer{
+	font-size: 32px;
+}
+[data-dpr="2"] .expert_home .home_text{
+	font-size: 30px;
+}
+[data-dpr="2"] .hervest_title, .step_title{
+	h2{
+		font-size: 32px;
+	}
+}
+[data-dpr="3"] .expert_step .step .step_right{
+	font-size: 36px;
+}
+[data-dpr="3"] .expert_step .step .step_footer{
+	font-size: 48px;
+}
+[data-dpr="3"] .expert_home .home_text{
+	font-size: 45px;
+}
+[data-dpr="3"] .expert_hervest .content .content_right{
+	font-size: 39px;
+}
+[data-dpr="3"] .expert_hervest .content .content_right h3{
+	font-size: 45px;
+}
+[data-dpr="3"].hervest_title, .step_title{
+	font-size: 48px;
+}
+[data-dpr="3"] .hervest_title, .step_title{
+	h2{
+		font-size: 48px;
+	}
+}

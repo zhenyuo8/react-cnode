@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>行圆汽车——筛选新车</title>
+
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/newCar.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css">
+</head>
+
+<body>
+<!-- header模块 -->
+<div class="header">
+    <!--nav model -->
+    <!-- 顶部导航模块 -->
+<div class="header_nav">
+    <div class="header_nav_content">
+        <ul class="header_nav_left">
+            <li class="first"> <span class="default_address"><a href="javascript:void(0);" class="bg">北京</a></span> </li>
+            <li class="city_position" id="city_position"> <span class="changeAdd" id="city_position_qie">切换</span> <span class="triangle clearfix" id="city_position_triangle"></span>
+                <div class="city_chose clearfix" id="city_chose" style="display: none">
+                    <div class="city_search">
+                        <div class="city_search_input"> <span class="search_btn"> <img src="img/search-btn.png" alt=""> </span> <span> <input type="text" value="请输入城市" class="input" id="input_letters"> <div class="input_letters_search" id="input_letters_search" style="display: none"> <ul id="input_city_search"> <li class="click_to_destiny"> <span><img src="img/city_down_select.png" alt=""></span>                            <span>点击直达</span> </li>
+            <li class="city_search_result"> <span class="city_text">北京</span> <span class="city_letters">beijing</span> </li>
+            <li class="city_search_result"> <span class="city_text">上海</span> <span class="city_letters">shanghai</span> </li>
+            <li class="city_search_result"> <span class="city_text">南昌</span> <span class="city_letters">nanchang</span> </li>
+            <li class="city_search_result"> <span class="city_text">深圳</span> <span class="city_letters">shenzhen</span> </li>
+        </ul>
+        </div>
+        </span> <span class="city_hot_search"> <a href="javascript:void(0);">北京</a> <a href="javascript:void(0);">上海</a> <a href="javascript:void(0);">广州</a> <a href="javascript:void(0);">深圳</a> <a href="javascript:void(0);">武汉</a> <a href="javascript:void(0);">杭州</a> </span>        <span class="delete_city"> <img src="img/delete-btn.png" alt=""> </span> </div>
+        </div>
+        <div class="hot_city_num"> <a href="javascript:void(0);">A</a> <a href="javascript:void(0);">B</a> <a href="javascript:void(0);">C</a> <a href="javascript:void(0);">E</a> <a href="javascript:void(0);">F</a> <a href="javascript:void(0);">G</a> <a href="javascript:void(0);">H</a>            <a href="javascript:void(0);">I</a> <a href="javascript:void(0);">J</a> <a href="javascript:void(0);">K</a> <a href="javascript:void(0);">L</a> <a href="javascript:void(0);">M</a> <a href="javascript:void(0);">N</a> <a href="javascript:void(0);">O</a>            <a href="javascript:void(0);">P</a> <a href="javascript:void(0);">Q</a> <a href="javascript:void(0);">R</a> <a href="javascript:void(0);">S</a> <a href="javascript:void(0);">T</a> <a href="javascript:void(0);">U</a> <a href="javascript:void(0);">W</a>            <a href="javascript:void(0);">X</a> <a href="javascript:void(0);">Y</a> <a href="javascript:void(0);">Z</a> </div>
+        <div class="city_scroll">
+            <div class="city_chose_region" id="city_chose_region">
+                <!--城市选择模块位置-->
+                <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)" cityid="101">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a>                        <a href="javascript:void (0)">六安</a> <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">B</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">C</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">D</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">E</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">F</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">G</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">H</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">I</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">J</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">K</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">L</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">L</span> <span class="province_num">临川</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">M</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">N</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">O</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">P</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">Q</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">R</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">S</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">T</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">U</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">V</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">W</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">X</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">Y</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">X</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">Z</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+            </div>
+            <div class="scrollbar">
+                <div class="scrollbtn"></div>
+            </div>
+        </div>
+    </div>
+    </li>
+    <li class="nav_line"> <span></span> </li>
+    <li> <span class="others"><a href="javascript:void(0)" target="_blank" id="othersCarId">查看其他地方车市</a></span> </li>
+    </ul>
+    <ul class="header_nav_right">
+        <li class="header_hover" id="app_id"> <span class="app" id="app"> <a href="javascript:void(0);" target="_blank">移动应用</a> </span> <span class="triangle"></span> </li>
+        <li class="nav_line nav_line2" id="nav_line"><span></span></li>
+        <li class="header_hover message_notice" style="display: none"> <em></em> <i></i> <span class="message_drop"> <a href="javascript:void(0);"><span>我的询价</span> ><i></i></a> <a href="javascript:void(0);"><span>我的问答</span> ><i></i></a> <a href="javascript:void(0);"><span>我的评论</span> ><i></i></a> <a href="javascript:void(0);"><span>消息中心</span> ><i></i></a>            </span>
+        </li>
+        <li class=" header_hover login_third" id="login_third"> <span><a href="javascript:void(0);">第三方登录</a></span> <span class="triangle1"></span> <span class="login_third_container"> <a href="javascript:void(0);" class="wx"><i></i>微信</a> <a href="javascript:void(0);" class="wb"><i></i>微博</a> <a href="javascript:void(0);" class="tx_qq"><i></i>QQ</a> </span>            </li>
+        <li class="nav_line" id="nav_line2"><span></span></li>
+        <li class="header_hover user_name" style="display: none"> <span><a href="javascript:void(0);">conan</a></span> <span class="triangle2"></span> <span class="user_drop"> <span class="latest_view"> <a href="javascript:void(0);" class="view_res">最近看过的</a> <a href="javascript:void(0);">宝马6系</a> <a href="javascript:void(0);">奥迪7系</a> <a href="javascript:void(0);">英菲尼迪Q70L</a> </span>            <span class="sign_out"> <a href="javascript:void(0);">我的收藏</a> <a href="javascript:void(0);">退出登录</a> </span> </span>
+        </li>
+        <li class="header_hover" id="register_id"> <span class="register" id="register"><a href="javascript:void (0)" target="_blank">注册</a></span> </li>
+        <li class="bg header_hover" id="login_id"> <span class="login bg"><a href="javascript:void (0)" target="_blank">登录</a></span> </li>
+    </ul>
+</div>
+</div>
+
+    <!--logo model -->
+    <!-- 头部 Logo 及 banner 模块 -->
+<div class="logo">
+    <div class="logo_left">
+        <a href="index.html"> <img src="img/logo_car.png" alt="这是logo图片"> </a>
+    </div>
+    <div class="logo_right">
+        <a href="#">
+            <!-- <img src="img/top-logo-nav.png" alt="这是广告图片"> -->
+            <XYins id="div_a8326c61-5174-49fe-902c-860df07bab64" data-type="ad_play" data-adplay_IP="" data-adplay_AreaName="" data-adplay_CityName="" data-adplay_BrandID="" data-adplay_BrandName="" data-adplay_BrandType="" data-adplay_BlockCode="a8326c61-5174-49fe-902c-860df07bab64">
+            </XYins>
+        </a>
+    </div>
+</div>
+
+	<!--menu model -->
+    <!-- 头部菜单模块 -->
+<div class="total_Nav">
+    <div class="total_Nav_Content" id="total_nav_content">
+        <ul>
+            <li class=""><a href="carTypeIndex.html" target="_blank">车型</a></li>
+            <li><a href="imgHome.html" target="_blank">图片</a></li>
+            <li><a href="video.html" target="_blank">视频</a></li>
+            <li><a href="newCar.html" target="_blank">新车</a></li>
+            <li><a href="evaluatingGuide.html" target="_blank">评测</a></li>
+            <li><a href="shoppingGuide.html" target="_blank">导购</a></li>
+            <li><a href="javascript:void(0)" target="_blank">报价</a></li>
+            <li><a href="javascript:void(0)" target="_blank">降价</a></li>
+            <li><a href="javascript:void(0)" target="_blank">经销商</a></li>
+            <li><a href="javascript:void(0)" target="_blank">问答</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+
+<!-- 页面标题模块 -->
+<!-- 汽车大全-视频，新车，评测标题模块 -->
+<div class="search-module-title">
+    <h1>汽车大全 • 新车</h1>
+</div>
+
+<div class="module-space-16"></div>
+
+<!--条件选择展示模块-->
+<!--条件选择展示模块-->
+<div id="choice-search-module" class="choice-search-module filter-choice-search-module">
+    <div class="choice-condition-list">
+        <dl><dt>价 格：</dt>
+            <dd>
+                <ul>
+                    <li class="filter-choice-search-different"><a href="javascript:void(0)">不限</a></li>
+                    <li><a href="javascript:void(0)">5万以下</a></li>
+                    <li><a href="javascript:void(0)">5-8万</a></li>
+                    <li><a href="javascript:void(0)">8-12万</a></li>
+                    <li><a href="javascript:void(0)">12-18万</a></li>
+                    <li><a href="javascript:void(0)">18-25万</a></li>
+                    <li><a href="javascript:void(0)">25-40万</a></li>
+                    <li><a href="javascript:void(0)">40-80万</a></li>
+                    <li><a href="javascript:void(0)">80万以上</a></li>
+                </ul>
+            </dd>
+        </dl>
+        <dl class="car-type-list"><dt>级 别：</dt>
+            <dd>
+                <ul>
+                    <li class="filter-choice-search-different"><a href="javascript:void(0)">不限</a></li>
+                    <li><a href="javascript:void(0)">轿车</a></li>
+                    <li class="car-type-item"> （<a href="javascript:void(0)">微型车</a> <a href="javascript:void(0)">小型车</a> <a href="javascript:void(0)">紧凑车</a> <a href="javascript:void(0)">中型车</a> <a href="javascript:void(0)">大中型</a> <a href="javascript:void(0)">豪华型</a>） </li>
+                    <li><a href="javascript:void(0)">MPV</a></li>
+                    <li><a href="javascript:void(0)">SUV</a></li>
+                    <li><a href="javascript:void(0)">跑车</a></li>
+                    <li><a href="javascript:void(0)">面包车</a></li>
+                </ul>
+            </dd>
+        </dl>
+        <dl><dt>国 别：</dt>
+            <dd>
+                <ul>
+                    <li class="filter-choice-search-different"><a href="javascript:void(0)">不限</a></li>
+                    <li><a href="javascript:void(0)">自主</a></li>
+                    <li><a href="javascript:void(0)">合资</a></li>
+                    <li><a href="javascript:void(0)">德系</a></li>
+                    <li><a href="javascript:void(0)">日系</a></li>
+                    <li><a href="javascript:void(0)">韩系</a></li>
+                    <li><a href="javascript:void(0)">日系</a></li>
+                    <li><a href="javascript:void(0)">美系</a></li>
+                    <li><a href="javascript:void(0)">欧系</a></li>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+    <div class="search-input">
+        <div class="choice-brand">
+            <div class="choice-brand-input"><span>请选择品牌</span><i><em></em></i></div>
+            <div class="brand-scroll-list-box display-none">
+                <div class="brand-letter-index"><span><a href="javascript:void(0);">A</a></span><span><a href="javascript:void(0);">B</a></span><span><a href="javascript:void(0);">C</a></span><span><a href="javascript:void(0);">D</a></span><span><a href="javascript:void(0);">E</a></span><span><a href="javascript:void(0);">F</a></span><span><a href="javascript:void(0);">G</a></span><span><a href="javascript:void(0);">H</a></span><span><a href="javascript:void(0);">I</a></span><span><a href="javascript:void(0);">J</a></span><span><a href="javascript:void(0);">K</a></span><span><a href="javascript:void(0);">L</a></span><span><a href="javascript:void(0);">M</a></span><span><a href="javascript:void(0);">N</a></span><span><a href="javascript:void(0);">O</a></span><span><a href="javascript:void(0);">P</a></span><span><a href="javascript:void(0);">Q</a></span><span><a href="javascript:void(0);">R</a></span><span><a href="javascript:void(0);">S</a></span><span><a href="javascript:void(0);">T</a></span><span><a href="javascript:void(0);">U</a></span><span><a href="javascript:void(0);">V</a></span><span><a href="javascript:void(0);">W</a></span><span><a href="javascript:void(0);">X</a></span><span><a href="javascript:void(0);">Y</a></span><span><a href="javascript:void(0);">Z</a></span></div>
+                <div
+                    class="brand-scroll-list  show-scroll-bar">
+                    <!--<ul><li><a href="javascript:void(0);">A<span>奥迪</span></a></li><li><a href="javascript:void(0);">A<span>阿拉斯▪马丁</span></a></li><li><a href="javascript:void(0);">A<span>阿尔法▪罗密欧</span></a></li><li><a href="javascript:void(0);">A<span>阿尔特</span></a></li><li><a href="javascript:void(0);">A<span>AC Schnitzer</span></a></li><li><a href="javascript:void(0);">A<span>Arteda</span></a></li></ul><ul><li><a href="javascript:void(0);">B<span>本田</span></a></li><li><a href="javascript:void(0);">B<span>奔驰</span></a></li><li><a href="javascript:void(0);">B<span>宝马</span></a></li><li><a href="javascript:void(0);">B<span>别克</span></a></li><li><a href="javascript:void(0);">B<span>宝骏</span></a></li><li><a href="javascript:void(0);">B<span>标致</span></a></li><li><a href="javascript:void(0);">B<span>比亚迪</span></a></li><li><a href="javascript:void(0);">B<span>保时捷</span></a></li></ul><ul><li><a href="javascript:void(0);">C<span>长安轿车</span></a></li><li><a href="javascript:void(0);">C<span>长安商用</span></a></li><li><a href="javascript:void(0);">C<span>长城</span></a></li><li><a href="javascript:void(0);">C<span>昌河</span></a></li><li><a href="javascript:void(0);">C<span>长安跨越</span></a></li><li><a href="javascript:void(0);">C<span>长久汽车</span></a></li></ul><ul><li><a href="javascript:void(0);">D<span>长安轿车</span></a></li><li><a href="javascript:void(0);">D<span>长安商用</span></a></li><li><a href="javascript:void(0);">D<span>长城</span></a></li><li><a href="javasDript:void(0);">D<span>昌河</span></a></li><li><a href="javasDript:void(0);">D<span>长安跨越</span></a></li><li><a href="javascript:void(0);">D<span>长久汽车</span></a></li></ul><ul><li><a href="javasDript:void(0);">E<span>长安轿车</span></a></li><li><a href="javasEript:void(0);">E<span>长安商用</span></a></li><li><a href="javascript:void(0);">E<span>长城</span></a></li><li><a href="javascript:void(0);">E<span>昌河</span></a></li><li><a href="javascript:void(0);">E<span>长安跨越</span></a></li><li><a href="javascript:void(0);">E<span>长久汽车</span></a></li></ul>-->
+            </div>
+        </div>
+    </div>
+    <div class="choice-car-type">
+        <div class="choice-car-type-input"><span>选择车型（可不选）</span><i><em></em></i></div>
+        <div class="car-type-scroll-list display-none  show-scroll-bar">
+            <!--<dl><dt>北京奔驰</dt><dd><a href="javascript:void(0);">C 级</a></dd><dd><a href="javascript:void(0);">E 级</a></dd><dd><a href="javascript:void(0);">GLC 级</a></dd><dd><a href="javascript:void(0);">CLA 级</a></dd><dd><a href="javascript:void(0);">GLD 级</a></dd></dl><dl><dt>福建奔驰</dt><dd><a href="javascript:void(0);">凌特</a></dd><dd><a href="javascript:void(0);">V 级</a></dd><dd><a href="javascript:void(0);">C 级</a></dd></dl><dl><dt>北京奔驰</dt><dd><a href="javascript:void(0);">C 级</a></dd><dd><a href="javascript:void(0);">E 级</a></dd><dd><a href="javascript:void(0);">V 级</a></dd><dd><a href="javascript:void(0);">F 级</a></dd><dd><a href="javascript:void(0);">S 级</a></dd></dl>-->
+        </div>
+    </div>
+    <p class="search-submit-btn"><a href="javascript:void(0)">搜索</a><span>搜索</span></p>
+</div>
+</div>
+
+<!--新闻展示模块-->
+<div class="news-tab-change filter-news-tab-change cf">
+	<div class="news-module-main">
+		<!-- 左侧内容展示区域 -->
+		<div class="news-module-left-area">
+			<h1 class="filter-news-title"><span>新车</span><i>共有1234篇文章</i></h1>
+			<div class="news-module-change news-car-page">
+				<div class="news-content-list">
+					<div class="news-content">
+						<dl>
+							<dt><img src="img/pic/news_choice_module.png"></dt>
+							<dd>
+								<h1>小孩变少年 实拍2017款福特改款翼博</h1>
+								<p class="news-text">
+									福特翼博（Ecosport）是一款基于嘉年华平台打造的小型SUV，小巧可爱是它的标签，本代车型最早发布于2012年5月的北京。福特翼博（Ecosport）是一款基于嘉年华平台打造的小型SUV，小巧可爱是它的标签，本代车型最早发布于2012年5月的北京。
+								</p>
+								<p class="reading-messages">
+									<i>49分钟前</i>
+								</p>
+							</dd>
+						</dl>
+						<a href="javascript:void(0)" class="news-article-link"></a>
+					</div>
+					<div class="news-content">
+						<dl>
+							<dt><img src="img/pic/news_choice_module.png"></dt>
+							<dd>
+								<h1>小孩变少年 实拍2017款福特改款翼博</h1>
+								<p class="news-text">
+									福特翼博（Ecosport）是一款基于嘉年华平台打造的小型SUV，小巧可爱是它的标签，本代车型最早发布于2012年5月的北京。福特翼博（Ecosport）是一款基于嘉年华平台打造的小型SUV，小巧可爱是它的标签，本代车型最早发布于2012年5月的北京。
+								</p>
+								<p class="reading-messages">
+									<i>49分钟前</i>
+								</p>
+							</dd>
+						</dl>
+						<a href="javascript:void(0)" class="news-article-link"></a>
+					</div>
+					<div class="news-content">
+						<dl>
+							<dt><img src="img/pic/news_choice_module.png"></dt>
+							<dd>
+								<h1>小孩变少年 实拍2017款福特改款翼博</h1>
+								<p class="news-text">
+									福特翼博（Ecosport）是一款基于嘉年华平台打造的小型SUV，小巧可爱是它的标签，本代车型最早发布于2012年5月的北京。福特翼博（Ecosport）是一款基于嘉年华平台打造的小型SUV，小巧可爱是它的标签，本代车型最早发布于2012年5月的北京。
+								</p>
+								<p class="reading-messages">
+									<i>49分钟前</i>
+								</p>
+							</dd>
+						</dl>
+						<a href="javascript:void(0)" class="news-article-link"></a>
+					</div>
+					<div class="news-content">
+						<dl>
+							<dt><img src="img/pic/news_choice_module.png"></dt>
+							<dd>
+								<h1>小孩变少年 实拍2017款福特改款翼博</h1>
+								<p class="news-text">
+									福特翼博（Ecosport）是一款基于嘉年华平台打造的小型SUV，小巧可爱是它的标签，本代车型最早发布于2012年5月的北京。福特翼博（Ecosport）是一款基于嘉年华平台打造的小型SUV，小巧可爱是它的标签，本代车型最早发布于2012年5月的北京。
+								</p>
+								<p class="reading-messages">
+									<i>49分钟前</i>
+								</p>
+							</dd>
+						</dl>
+						<a href="javascript:void(0)" class="news-article-link"></a>
+					</div>
+				</div>
+				<div class="news-load-tips">
+					<p>
+						<span class="news-load-more">加载更多</span>
+						<span class="news-load-now">正在加载...</span>
+						<span class="news-no-more">没有更多了</span>
+					</p>
+				</div>
+			</div>
+
+			<!--筛选无结果-->
+            <dl class="noResult">
+                <dt><img src="img/not_found.png"></dt>
+                <dd class="b_hint">未找到相关信息</dd>
+                <dd class="s_hint">请修改条件再次查询</dd>
+            </dl>
+		</div>
+		<!-- 右侧列表内容不变区域 -->
+		<div class="news-module-right-area filter-news-module-right-area">
+			<div class="news-right-bottom-list">
+				<h1>热门文章</h1>
+				<ul>
+					<li>
+						<i></i>
+						<a href="javascript:void(0)">全新CX-5等2016年洛杉矶车展新闻</a>
+					</li>
+					<li>
+						<i></i>
+						<a href="javascript:void(0)">全新CX-5等2016年洛杉矶车展新闻</a>
+					</li>
+					<li>
+						<i></i>
+						<a href="javascript:void(0)">全新CX-5等2016年洛杉矶车展新闻</a>
+					</li>
+					<li>
+						<i></i>
+						<a href="javascript:void(0)">全新CX-5等2016年洛杉矶车展新闻</a>
+					</li>
+					<li>
+						<i></i>
+						<a href="javascript:void(0)">全新CX-5等2016年洛杉矶车展新闻</a>
+					</li>
+					<li>
+						<i></i>
+						<a href="javascript:void(0)">全新CX-5等2016年洛杉矶车展新闻</a>
+					</li>
+					<li>
+						<i></i>
+						<a href="javascript:void(0)">全新CX-5等2016年洛杉矶车展新闻</a>
+					</li>
+					<li>
+						<i></i>
+						<a href="javascript:void(0)">全新CX-5等2016年洛杉矶车展新闻</a>
+					</li>
+					<li>
+						<i></i>
+						<a href="javascript:void(0)">全新CX-5等2016年洛杉矶车展新闻</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="module-space-40"></div>
+
+<!--footer model -->
+<!-- 底部 -->
+<div class="footer">
+    <div class="footer_content">
+        <ul>
+            <li class="footer_message"><a href="http://www.xingyuanauto.com/" target="_blank">关于我们</a></li>
+            <li class="footer_message"><a href="http://www.xingyuanauto.com/" target="_blank">联系我们</a></li>
+            <li class="footer_message"><a href="http://www.xingyuanauto.com/html/recruitment.html?newtarget=technology" target="_blank">招贤纳士</a></li>
+            <li class="footer_message"><a href="dealer.xingyuanauto.com" target="_blank">行圆智慧云</a></li>
+            <li class="website"><a href="javascript:void (0)">@2016-2017 www .qichedaquan .com All Rights Reserved. 北京行圆汽车信息技术有限公司所有</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--goTop model -->
+<!-- 返回顶部 -->
+<div class="goTop" id="back_to_top"> <span class="goTop_icon"></span> <span class="goTop_text">返回顶部</span></div>
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mousewheel.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.min.js"></script>
+<script src="data/news.js"></script>
+<script src="data/searchlist.js"></script>
+<script src="js/newCars.js"></script>
+<script src="js/subScroll.js"></script>
+<script src="js/index.js"></script>
+<script src="js/goTop.js"></script>
+</body>
+</html>

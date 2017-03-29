@@ -1,0 +1,105 @@
+@import (reference) "public";
+.config_top{
+	width: 990px;
+	margin: 0 auto;
+	.imgs_c_top{
+
+		.imgs_c_crumbs{
+			height:50px;
+			line-height:50px;
+			color:@color-999;
+
+			a{
+				.inline-block;
+				margin:0 8px;
+				color:@color-666;
+
+				&:last-child{
+					color:@color-398be4;
+				}
+			}
+		}
+		.imgs_c_list {
+			height:43px;
+			padding-top:20px;
+			border:1px solid @color-c4;
+			border-bottom:none;
+			padding-left:12px;
+
+			span{
+				.inline-block;
+				float:left;
+			}
+			.imgs_car_sign{
+				margin-top:8px;
+			}
+			.imgs_car_name{
+				font-size:@font-20;
+				color:@color-333;
+				font-weight:bold;
+				margin-left:12px;
+			}
+			.imgs_car_year {
+				float:left;
+				margin-top:5px;
+				li{
+					float:left;
+					width:68px;
+					text-align: center;
+					border-right:1px solid @color-c4;
+					.cursor;
+					&:first-child{
+						font-weight: bold;
+					}
+					&:hover{
+						a{
+							color:@color-398be4;
+							text-decoration: underline;
+						}
+					}
+					.imgs_down{
+						float:right;
+						margin-top:5px;
+						margin-right:20px;
+					}
+				}
+				.imgs_no_border{
+					border-right:0px;
+					width:88px;
+					padding-left:7px;
+				}
+			}
+		}
+		.imgs_car_type{
+			height:31px;
+			border-top:@border-b-333;
+			border-bottom:1px solid @color-c4;
+			background:@color-eee;
+
+			li{
+				float:left;
+				font-size:@font-16;
+				color:@color-333;
+				height:31px;
+				line-height:31px;
+
+				a{
+					.inline-block;
+					padding:0 18px;
+				}
+			}
+			.imgs_current{
+				border-left:1px solid @color-c4;
+				border-right:1px solid @color-c4;
+				background:@color-fff;
+				height:32px;
+
+				a{
+					height:32px;
+					border-top:4px solid @color-1673d9;
+					margin-top:-4px;
+				}
+			}
+		}
+	}
+}

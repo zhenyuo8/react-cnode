@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/login.js"></script>
+</head>
+<body>
+<div class="container">
+    <!--头部logo结构-->
+    <div class="content clearfix">
+        <div class="logo_990 clearfix">
+            <div class="logo_con clearfix">
+                <a href="#" class="logo_a"></a>
+                <span class="">|</span>
+                <p class="logo_text clearfix">登录账号，玩转所有汽车大全!</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <!--注册form结构-->
+    <div class="content_body clearfix">
+        <div class="content_container clearfix">
+            <!--注册左模块结构-->
+            <div class="content_left">
+                <div class="login_menu">
+                    <p>
+                        <a href="javascript:void (0)" class=" login_msg active">动态密码登录</a>|<a href="javascript:void (0)" class="login_account">账号登录</a>
+                    </p>
+                </div>
+                <!--动态验证码登录-->
+                <div id="form_id">
+                    <div class="login_msg login_tab" >
+                        <ul>
+                            <li class="phone_num clearfix">
+                                <i></i>
+                                <input type="text" placeholder="请输入手机号" maxlength="11" id="login_input">
+                                <em></em>
+                                <span></span>
+                            </li>
+                            <li class="error_code login_msg_code" style="display: none">
+                                <p><i></i>请输入正确的手机号码</p>
+                            </li>
+                            <li class="sys_notice clearfix">
+                                <p>未注册账号，系统将自动为您创建账号！</p>
+                            </li>
+
+                            <li class="checkout_msg clearfix">
+                                <input type="text" class="msg_input js_msg_input" maxlength="4" placeholder="请输入动态密码">
+                                <input type="button" class="msg_get" value="获取动态密码">
+                                <em></em>
+                                <span></span>
+                            </li>
+                            <li class="error_code login_msg_code" style="display: none">
+                                <p><i></i>请输入正确的动态密码</p>
+                            </li>
+                            <li class="login">
+                                <input type="button" value="立即登录">
+                            </li>
+                            <li class="login_register clearfix">
+                                <p class="login_auto"><span><i></i></span>下次自动登录</p>
+                                <a href="register.html" class="register_imd">立即注册</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--账号登录-->
+                    <div class="login_account login_tab" style="display: none;">
+                        <ul>
+                            <li class="phone_num clearfix">
+                                <i></i>
+                                <input type="text" placeholder="请输入手机号" id="js_input_account" maxlength="11">
+                                <em></em>
+                                <span></span>
+                            </li>
+                            <li class="error_code" id="js_password_error2">
+                                <p><i></i>请输入正确的账号</p>
+                            </li>
+                            <li class="input_password">
+                                <i></i>
+                                <input type="text" placeholder="请输入密码" id="js_account_pas" minlength="6" maxlength="16">
+                                <em class="hide"></em>
+                                <span></span>
+                            </li>
+                            <li class="error_code" id="js_password_error">
+                                <p><i></i>请输入正确的账号或密码</p>
+                            </li>
+                            <li class="login_register clearfix">
+                                <p class="login_auto"><span><i></i></span>下次自动登录</p>
+                                <p class="login_text">
+                                    <a href="findPassword.html" class="forgot_password">忘记密码</a>|
+                                    <a href="register.html" class="register_imd">立即注册</a>
+                                </p>
+                            </li>
+                            <li class="login">
+                                <input type="button" value="立即登录" id="login_imd">
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!--右边有账户提示登录模块-->
+            <div class="content_right">
+                <div class="others_account_login">
+                    <p>其他账号登录</p>
+                    <ul>
+                        <li class="wx">
+                            <a href="#">微信登录</a>
+                        </li>
+                        <li class="wb">
+                            <a href="#">微博登录</a>
+                        </li>
+                        <li class="tx">
+                            <a href="#">QQ登录</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!--注册成功提示模块-->
+            <div class="register_suc" style="display: none">
+                <h2>
+                    <i></i>
+                    <span>恭喜你，手机号注册成功！</span>
+                </h2>
+                <p>我们已经自动给您分配了昵称：xyuser888</p>
+                <p>昵称与您的手机号已经绑定，立即 <a href="#">修改昵称</a></p>
+                <ul>
+                    <li>
+                        <a href="#" class="go_home">去首页</a>
+                        <a href="#" class="go_prev"><span>(5S)</span>返回到之前界面</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部结构-->
+<!--底部结构-->
+<div class="footer clearfix">
+    <div class="footer_content clearfix">
+        <ul>
+            <li class="footer_message clearfix"><a href="#">关于我们</a></li>
+            <li class="footer_message clearfix"><a href="#">联系我们</a></li>
+            <li class="footer_message clearfix"><a href="#">招贤纳士</a></li>
+            <li class="website clearfix"><a href="#">@2004-2016 www.xingyuanauto.com All Rights Reserved. 行圆汽车所有</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        var flag=false;
+        $('.login_menu p a').on('click',function () {
+            $(this).addClass('active').siblings().removeClass('active');
+            $('#form_id .login_tab').eq($(this).index()).show().siblings().hide();
+
+        })
+
+        $('.login_auto i').on('click',function () {
+            if(!flag){
+                $(this).css('background','none')
+                flag=true;
+            }else{
+                $(this).css('background','url("../img/login_next_select.png") no-repeat center');
+                flag=false;
+            }
+
+        })
+    })
+</script>
+</body>
+</html>

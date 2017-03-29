@@ -1,0 +1,378 @@
+.icon-adk-top{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -165px -176px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+}
+.icon-ask-bom{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -208px -182px;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+}
+.icon-ask{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -19px -200px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+}
+.icon-audi-logo{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -208px -36px;
+    width: 33px;
+    height: 13px;
+    display: inline-block;
+}
+.icon-comm-top{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -225px -182px;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+}
+.icon-comment{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -38px -200px;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+}
+.icon-dayu{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -231px -54px;
+    width: 10px;
+    height: 12px;
+    display: inline-block;
+}
+.icon-down-bule{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -231px -98px;
+    width: 10px;
+    height: 6px;
+    display: inline-block;
+}
+.icon-down-t{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -106px -200px;
+    width: 12px;
+    height: 7px;
+    display: inline-block;
+}
+.icon-down{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -231px -76px;
+    width: 9px;
+    height: 7px;
+    display: inline-block;
+}
+.icon-fine-norme{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -56px -176px;
+    width: 18px;
+    height: 16px;
+    display: inline-block;
+}
+.icon-fine{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -179px -135px;
+    width: 18px;
+    height: 16px;
+    display: inline-block;
+}
+.icon-fine_hover{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -208px -161px;
+    width: 18px;
+    height: 16px;
+    display: inline-block;
+}
+.icon-fine_norme{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -208px -140px;
+    width: 18px;
+    height: 16px;
+    display: inline-block;
+}
+.icon-fine_press{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -208px -119px;
+    width: 18px;
+    height: 16px;
+    display: inline-block;
+}
+.icon-go-top{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -208px 0px;
+    width: 33px;
+    height: 31px;
+    display: inline-block;
+}
+.icon-hd{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -231px -88px;
+    width: 4px;
+    height: 4px;
+    display: inline-block;
+}
+.icon-img-down{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -231px -119px;
+    width: 10px;
+    height: 6px;
+    display: inline-block;
+}
+.icon-img-left{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -180px -65px;
+    width: 23px;
+    height: 60px;
+    display: inline-block;
+}
+.icon-img-right{
+    background-image: url("../img/pic/sprite.png");
+    background-position: 0px -135px;
+    width: 23px;
+    height: 60px;
+    display: inline-block;
+}
+.icon-imgleft{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -28px -135px;
+    width: 23px;
+    height: 60px;
+    display: inline-block;
+}
+.icon-imgright{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -180px 0px;
+    width: 23px;
+    height: 60px;
+    display: inline-block;
+}
+.icon-kj_hover{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -135px 0px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.icon-kj_norme{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -45px 0px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.icon-kj_press{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -135px -45px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.icon-p{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -231px -109px;
+    width: 3px;
+    height: 3px;
+    display: inline-block;
+}
+.icon-play-hover{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -97px -135px;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+}
+.icon-play-norme{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -56px -135px;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+}
+.icon-play-press{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -138px -135px;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+}
+.icon-qq_hover{
+    background-image: url("../img/pic/sprite.png");
+    background-position: 0px 0px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.icon-qq_norme{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -45px -90px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.icon-qq_press{
+    background-image: url("../img/pic/sprite.png");
+    background-position: 0px -90px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.icon-read-top{
+    background-image: url("../img/pic/sprite.png");
+    background-position: 0px -200px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+}
+.icon-read{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -184px -176px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+}
+.icon-share-top{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -55px -200px;
+    width: 12px;
+    height: 11px;
+    display: inline-block;
+}
+.icon-share{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -72px -200px;
+    width: 12px;
+    height: 11px;
+    display: inline-block;
+}
+.icon-shouc{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -208px -54px;
+    width: 18px;
+    height: 17px;
+    display: inline-block;
+}
+.icon-shouchang-top{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -125px -176px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+.icon-star-w{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -208px -76px;
+    width: 18px;
+    height: 17px;
+    display: inline-block;
+}
+.icon-star{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -179px -156px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+.icon-suvx{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -231px -161px;
+    width: 10px;
+    height: 6px;
+    display: inline-block;
+}
+.icon-suvxb{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -231px -140px;
+    width: 10px;
+    height: 6px;
+    display: inline-block;
+}
+.icon-text_hover{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -208px -98px;
+    width: 18px;
+    height: 16px;
+    display: inline-block;
+}
+.icon-text_norme{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -102px -176px;
+    width: 18px;
+    height: 16px;
+    display: inline-block;
+}
+.icon-text_press{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -79px -176px;
+    width: 18px;
+    height: 16px;
+    display: inline-block;
+}
+.icon-up-t{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -89px -200px;
+    width: 12px;
+    height: 7px;
+    display: inline-block;
+}
+.icon-wb_hover{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -90px -45px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.icon-wb_norme{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -90px 0px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.icon-wb_press{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -45px -45px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.icon-wx_hover{
+    background-image: url("../img/pic/sprite.png");
+    background-position: 0px -45px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.icon-wx_norme{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -90px -90px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.icon-wx_press{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -135px -90px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.icon-xd{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -239px -109px;
+    width: 2px;
+    height: 2px;
+    display: inline-block;
+}
+.icon-yishouchang{
+    background-image: url("../img/pic/sprite.png");
+    background-position: -145px -176px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}

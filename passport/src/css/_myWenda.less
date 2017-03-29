@@ -1,0 +1,263 @@
+@import (reference) "public";
+@import "mod/mod_header";
+@import "mod/mod_footer";
+@import "_pagination";
+
+
+.content{
+    width: 990px;
+    margin: 0 auto;
+    height: 100%;
+    .left_tab_menu{
+        width: 200px;
+        background: #fff;
+        padding-top: 46px;
+        height: 848px;
+        float: left;
+
+        ul{
+
+            li{
+                height: 22px;
+                width: 196px;
+                font-size: 18px;
+                color: #666;
+                margin-bottom: 40px;text-align: center;
+                border-left: 4px solid transparent;
+                &.bg{
+                    border-left-color: #3a8be4;
+                    color: #3a8be4;
+                    a{
+                        color: #3A8BE4;
+                    }
+                }
+                &:hover{
+                    cursor: pointer;
+                    color: #3a8be4;
+                    border-left-color: #3a8be4;
+                    a{
+                        color: #3A8BE4;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .right_content{
+        padding-top: 54px;
+        width: 758px;
+        height: 100%;
+        float: right;
+        .account_m{
+            width: 758px;
+            height: 100%;
+            position: relative;
+            .account_tab{
+                height: 21px;
+                li{
+                    font-size: 16px;
+                    color: #333;
+                    float: left;
+                    margin-right: 26px;
+                    font-family: "Microsoft YaHei", "微软雅黑";
+                    a{
+                        &:hover{
+                            color: #3a8be4;
+                        }
+                    }
+                    a.active{
+                        color: #333;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+
+            .comment_other{
+                width: 758px;
+                margin-top: 20px;
+
+                position: relative;
+                .container{
+                    width: 738px;
+                    padding-bottom: 20px;
+                    padding-left: 20px;
+
+                    background: #ffffff;
+                    position: relative;
+                    margin-top: 10px;
+
+                    .des_container{
+                        p{
+                            font-size: 14px;
+                            width: 590px;
+                            color: #333;
+                            padding-top: 20px;
+                            font-family: "Microsoft YaHei", "微软雅黑";
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            word-break: break-all;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            a{
+                                &:hover{
+                                    color: #3A8BE4;
+                                    text-decoration: underline;
+                                }
+                            }
+
+                            i{
+                                color: #aaa;
+                                display: inline-block;
+                                margin-right: 20px;
+                            }
+                            &.comment_con{
+                                font-size: 16px;
+                                padding-top: 0;
+                                margin-top: 10px;
+                                line-height: 32px;
+                            }
+                            &.about_time{
+                                font-size: 14px;
+                                color: #aaa;
+                                a{
+                                    display: inline-block;
+                                    color: #aaa;
+                                    &:hover{
+                                        color: #3a8be4;
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+            }
+
+            .reply_me{
+                width: 758px;
+                margin-top: 20px;
+                height: 100%;
+
+                position: relative;
+                .container{
+                    width: 738px;
+                    padding-bottom: 20px;
+                    padding-left: 20px;
+                    background: #ffffff;
+                    position: relative;
+                    margin-top: 10px;
+                    .des_container{
+
+                        p{
+                            font-size: 18px;
+                            width: 590px;
+                            display: inline-block;
+                            margin-bottom: 20px;
+                            color: #333;
+                            font-family: "Microsoft YaHei", "微软雅黑";
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            word-break: break-all;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            i{
+                                color: #aaa;
+                                display: inline-block;
+                                margin-left: 16px;
+                            }
+                            a{
+                                display: inline-block;
+                                &:hover{
+                                    color: #3A8BE4;
+                                    text-decoration: underline;
+                                }
+                            }
+                            &.img_p{
+                                line-height: 30px;
+                                font-size: 16px;
+                            }
+                            &.about_time{
+                                font-size: 14px;
+                                color: #aaa;
+                                padding-top: 20px;
+                                i{
+                                    font-size: 14px;
+                                    margin-left: 0;
+                                    margin-right: 20px;
+                                }
+                                a{
+                                    font-size: 14px;
+                                    display: inline-block;
+                                    color: #aaa;
+                                    &:hover{
+                                        color: #3a8be4;
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                            .header_img{
+                                width: 26px;
+                                height: 26px;
+                                display: inline-block;
+                                margin: 0 auto;
+                                font-size: 16px;
+                                img{
+                                    width: 26px;
+                                    height: 26px;
+                                    border-radius: 50%;
+                                }
+                            }
+
+
+                        }
+                        .my_comment{
+                            background: #f7f7f7;
+                            height: 88px;
+                            width: 698px;
+                            padding-left: 20px;
+                            p{
+                                font-size: 14px;
+                                padding-top: 20px;
+                                width: 590px;
+                                display: inline-block;
+                                margin-bottom: 20px;
+                                color: #aaa;
+                                font-family: "Microsoft YaHei", "微软雅黑";
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                word-break: break-all;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 2;
+                                -webkit-box-orient: vertical;
+                                a{
+                                    display: inline-block;
+
+                                    &:hover{
+                                        text-decoration: none;
+                                        span{
+                                            color: #3A8BE4;
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                }
+                                span{
+                                    color: #333;
+                                }
+                            }
+                            .time{
+                                color: #aaa;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

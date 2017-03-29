@@ -1,0 +1,108 @@
+<table cellspacing="0" cellpadding="0" class="carBi carLaryerBox" id="carLaryerBox" style="width:{{ out+= it.width; }}px;">
+    <!-- 浮动置顶模块 -->
+    <tbody>
+        <tr class="first_tr Js_first_tr" elenodenum="4" >
+
+            <!-- 左侧高亮选择模块 -->
+            <th class="signBox">
+                <div class="div1">
+                    <label class="visibal {{ out+=it.sign.hl ? 'active' : ''; }}" m="hl"><span class="sign bg_icon"></span>高亮显示不同项</label>
+                </div>
+                <div class="div2">
+                    <label  class="visibal {{ out+=it.sign.hd ? 'active' : ''; }}" m="hd"><span class="sign bg_icon"></span>隐藏相同参数</label>
+                </div>
+
+                <div class="div3">
+                    <label  class="visibal {{ out+=it.sign.nv ? 'active' : ''; }}" m="nv"><span class="sign bg_icon"></span>隐藏暂无内容参数</label>
+                </div>
+                <p>
+                    <span class="bg_icon bp_icon"></span>标配&nbsp;&nbsp;&nbsp;
+                    <span class="bg_icon xp_icon"></span>选配&nbsp;&nbsp;&nbsp;
+                    <span class="bg_icon null_icon"></span>无
+                </p>
+            </th>
+
+            {{ for (var i = 0; i < it.selects.length; i++) { var carP = it.selects[i].param['carParam']; }}
+            <td class="po-r v_top tableHead_item" hascon="true">
+                <div style="height:110px;width: 197px ;">
+                    <div id="draggcarbox_{{out+=i;}}" class="dragg_car_box" carId="{{out+= it.selects[i].CarID ;}}">
+                        <h3>{{ out+= carP['brandname'];}} {{ out+= carP['serialname'];}} </h3>
+                        <p class="carbi_des">
+                            {{ out+= carP['name']; }}
+                        </p>
+                    </div>
+                </div>
+                <div class="duibi_btn po-a Js_duibi_btn modTop18">
+                    <div style="width: 197px;">
+                    {{ if(i > 0){ }}
+                        <span class="icon_left Js_icon_left" ismove="true"  i="{{out+=i;}}">&lt;左移</span>
+                    {{ } }}
+                        <span class="titleCarbi delete_btn  Js_delete_ele"  i="{{out+=i;}}"></span>
+                    {{ if(i < it.selects.length){ }}
+                        <span class="icon_right Js_icon_right" ismove="true"  i="{{out+=i;}}">右移&gt;</span>
+                    {{ } }}
+                    </div>
+                </div>
+
+            </td>
+            {{ } }}
+
+            <!-- 添加对比模块 -->
+            <td class="po-r v_top addCar">
+                <div class="car_select_input_box Js_car_select_input_box">
+                    <div class="car_brand po-r is_ho Js-car_brand selCarBi" i="-1" id="brand_-1">
+                        <span class="Js_car_barnd_word tit">请选择品牌</span>
+                    </div>
+                    <div class="car_type po-r Js-car_type selCarBi"  i="-1" id="series_-1">
+                        <span class="Js_car_type_word tit">请选择车型</span>
+                    </div>
+                    <div class="car_type po-r Js-car_year selCarBi"  i="-1" id="model_-1">
+                        <span isclick="false" class="Js_car_type_word tit">请选择车款</span>
+                    </div>
+                </div>
+                <!--<div class="duibi_btn modTop18">
+                    <div>
+                        <span class="add_car">添加对比</span>
+                    </div>
+                </div>-->
+            </td>
+
+
+            {{if(it.selects.length<3) {}}
+                {{ for (var i = 0; i < 3-it.selects.length; i++) { }}
+                <td></td>
+                {{ } }}
+            {{ } }}
+
+
+        </tr>
+
+        <!-- 厂家指导价 -->
+        <tr class="f_price  {{out+= it.isSome('referprice'); }}">
+            <th class="line_hi_31">厂家指导价</th>
+            {{ for (var i = 0; i < it.selects.length; i++) { }}
+            <td>{{ out += it.selects[i].param['carParam']['referprice']; }}万</td>
+            {{ } }}
+            {{if(it.selects.length<3) {}}
+                {{ for (var i = 0; i < 3-it.selects.length; i++) { }}
+                <td></td>
+                {{ } }}
+            {{ } }}
+            <td></td>
+        </tr>
+
+        <!-- 经销商参考报价 -->
+        <tr class="m_price  {{out+= it.isSome('referprice'); }}">
+            <th class="line_hi_31">经销商报价</th>
+            {{ for (var i = 0; i < it.selects.length; i++) { }}
+            <td  class="f_w">{{ out += it.selects[i].param['carParam']['dealerminprice']; }}万起<a href="http://cheshi.qichedaquan.com/xunjia/2_{{ out += it.selects[i].param['carParam']['id']; }}" class="find_loc_price_btn" target="_blank">询底价</a></td>
+            {{ } }}
+            {{if(it.selects.length<3) {}}
+                {{ for (var i = 0; i < 3-it.selects.length; i++) { }}
+                <td></td>
+                {{ } }}
+            {{ } }}
+            <td></td>
+        </tr>
+    </tbody>
+</table>

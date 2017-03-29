@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=8,9,10,11">
+    <title>问题列表</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/wenda_question_list.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/goTop.js"></script>
+    <script src="js/willAsk.js"></script>
+    <script src="js/carSelect.js"></script>
+
+</head>
+<body>
+<div class="header">
+    {{#include ./mod/mod_headerTitle.html}}
+
+    <!--logo model -->
+    {{#include ./mod/mod_headerLogo.html}}
+
+    <!--menu model -->
+    {{#include ./mod/mod_headerMenu.html}}
+</div>
+<div class="main">
+    <div class="wenda_title clearfix relative">
+        <div class="list_search">
+            <div class="search_head relative">
+                <h2>全部问题</h2>
+                <p><a href="#">清空条件</a></p>
+            </div>
+            <div class="search_content clearfix">
+                <div class="search_type">
+                    <input type="radio" id="quetion_all" name="type">
+                    <label for="quetion_all" class="lab_active">全部类型</label>
+                    <input type="radio" id="quetion_buy" name="type">
+                    <label for="quetion_buy">买车</label>
+                    <input type="radio" id="quetion_use" name="type">
+                    <label for="quetion_use">用车</label>
+                </div>
+                <!--选择车类型-->
+                {{#include ./mod/mod_carSelect.html}}
+                </div>
+            </div>
+        {{#include ./mod/mod_login_not.html}}
+    </div>
+    <div class="section clearfix">
+        <div class="w_left fl">
+            <!--问题列表-->
+            <div class="quetion_list">
+                <div class="q_title clearfix"  id="q_choose">
+                    <h2 class="js-menu q_new fl t_active">最新</h2>
+                    <h2 class="js-menu recommend fl ">推荐</h2>
+                    <div class="check_all fr"><a href="#">查看全部问题>></a></div>
+                </div>
+                {{#include ./mod/mod_question_list.html}}
+                <!--加载更多-->
+                {{#include ./mod/mod_loadMore.html}}
+            </div>
+        </div>
+        <div class="w_right fr">
+            <!--优秀标兵-->
+            <div class="example">
+                {{#include ./mod/mod_small_head.html?m=优秀标兵展示}}
+                <ul class="clearfix">
+                    <li>
+                        <div class="exa_icon fl">
+                            <img src="img/pic/iconf_1_07.jpg" alt="">
+                        </div>
+                        <div class="exa_sec fl">
+                            <h3>汉库克</h3>
+                            <p class="gray">全能型汽车技术专家</p>
+                            <p><a href="#">向ta提问>></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="exa_icon fl">
+                            <img src="img/pic/iconf_1_07.jpg" alt="">
+                        </div>
+                        <div class="exa_sec fl">
+                            <h3>汉库克</h3>
+                            <p class="gray">全能型汽车技术专家</p>
+                            <p><a href="#">向ta提问>></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="exa_icon fl">
+                            <img src="img/pic/iconf_1_07.jpg" alt="">
+                        </div>
+                        <div class="exa_sec fl">
+                            <h3>汉库克</h3>
+                            <p class="gray">全能型汽车技术专家</p>
+                            <p><a href="#">向ta提问>></a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--专家列表-->
+            <div class="example">
+                {{#include ./mod/mod_small_head.html?m=周秀专家展示}}
+                <ul class="clearfix">
+                    <li>
+                        <div class="exa_icon fl">
+                            <img src="img/pic/iconf_1_07.jpg" alt="">
+                        </div>
+                        <div class="exa_sec fl">
+                            <h3>汉库克</h3>
+                            <p class="gray">全能型汽车技术专家</p>
+                            <p><a href="#">向ta提问>></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="exa_icon fl">
+                            <img src="img/pic/iconf_1_07.jpg" alt="">
+                        </div>
+                        <div class="exa_sec fl">
+                            <h3>汉库克</h3>
+                            <p class="gray">全能型汽车技术专家</p>
+                            <p><a href="#">向ta提问>></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="exa_icon fl">
+                            <img src="img/pic/iconf_1_07.jpg" alt="">
+                        </div>
+                        <div class="exa_sec fl">
+                            <h3>汉库克</h3>
+                            <p class="gray">全能型汽车技术专家</p>
+                            <p><a href="#">向ta提问>></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="exa_icon fl">
+                            <img src="img/pic/iconf_1_07.jpg" alt="">
+                        </div>
+                        <div class="exa_sec fl">
+                            <h3>汉库克</h3>
+                            <p class="gray">全能型汽车技术专家</p>
+                            <p><a href="#">向ta提问>></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="exa_icon fl">
+                            <img src="img/pic/iconf_1_07.jpg" alt="">
+                        </div>
+                        <div class="exa_sec fl">
+                            <h3>汉库克</h3>
+                            <p class="gray">全能型汽车技术专家</p>
+                            <p><a href="#">向ta提问>></a></p>
+                        </div>
+                    </li>
+                    <li>
+                    <div class="exa_icon fl">
+                        <img src="img/pic/iconf_1_07.jpg" alt="">
+                    </div>
+                    <div class="exa_sec fl">
+                        <h3>汉库克</h3>
+                        <p class="gray">全能型汽车技术专家</p>
+                        <p><a href="#">向ta提问>></a></p>
+                    </div>
+                </li>
+                    <li>
+                        <div class="exa_icon fl">
+                            <img src="img/pic/iconf_1_07.jpg" alt="">
+                        </div>
+                        <div class="exa_sec fl">
+                            <h3>汉库克</h3>
+                            <p class="gray">全能型汽车技术专家</p>
+                            <p><a href="#">向ta提问>></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="exa_icon fl">
+                            <img src="img/pic/iconf_1_07.jpg" alt="">
+                        </div>
+                        <div class="exa_sec fl">
+                            <h3>汉库克</h3>
+                            <p class="gray">全能型汽车技术专家</p>
+                            <p><a href="#">向ta提问>></a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!--二维码-->
+            <div class="ercode">
+                <img src="img/erclode.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer model -->
+{{#include ./mod/mod_footer.html}}
+
+<!--goTop model -->
+{{#include ./mod/mod_goTop.html}}
+<!--我要提问 -->
+{{#include ./mod/mod_willAsk.html}}
+<!--<script src="js/_tab.js"></script>-->
+<script src="js/wenda_question_list.js"></script>
+<script src="js/limite.js"></script>
+</body>
+</html>

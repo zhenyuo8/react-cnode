@@ -1,0 +1,142 @@
+/*****
+ *@author: linyh
+ *@from: Global style article
+ *@description: 陈璐
+ *@date: name (2017.02.15)
+*/
+.article-bg {
+  background: -webkit-linear-gradient(left top, #24abfe, #2f74ff);
+  background: -moz-linear-gradient(left top, #24abfe, #2f74ff);
+  background: -o-linear-gradient(left top, #24abfe, #2f74ff);
+  background: linear-gradient(to right bottom, #24abfe, #2f74ff);
+}
+.article_page {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: .5rem;
+}
+.article_page .article_main {
+  position: relative;
+}
+.article_page .article_main .article_swipe .article_box {
+  float: left;
+}
+.article_page .article_main .article_swipe .article_box ul {
+  width: 100%;
+}
+.article_page .article_main .article_swipe .article_box ul li {
+  padding: 0 0.4rem /* 30/75 */ 0 0.347rem /* 26/75 */;
+  margin: 0 4%;
+  background-color: #fff;
+  background: linear-gradient(135deg, transparent 11px, #fff 0) top left, linear-gradient(-135deg, transparent 11px, #fff 0) top right, linear-gradient(-45deg, transparent 11px, #fff 0) bottom right, linear-gradient(45deg, transparent 11px, #fff 0) bottom left;
+  background-repeat: no-repeat;
+  background-size: 50.2% 51.1%;
+  /*斜角效果*/
+}
+.article_page .article_main .article_swipe .article_box ul li a {
+  border-bottom: 1px solid #dcdcdc;
+  padding: 0.4rem /* 30/75 */ 0;
+  display: block;
+}
+.article_page .article_main .article_swipe .article_box ul li a .car_pic {
+  width: 2.4rem /* 180/75 */;
+  height: 1.6rem /* 120/75 */;
+  float: left;
+}
+.article_page .article_main .article_swipe .article_box ul li a .car_pic img {
+  display: inline-block;
+  width: 100%;
+}
+.article_page .article_main .article_swipe .article_box ul li a .article_news {
+  width: 60.87%;
+  float: left;
+}
+.article_page .article_main .article_swipe .article_box ul li a .article_news .news_title {
+  font-size: 15px;
+  line-height: 0.533rem /* 40/75 */;
+  height: 1.067rem /* 80/75 */;
+  overflow: hidden;
+  margin: .08rem .307rem 0;
+}
+.article_page .article_main .article_swipe .article_box ul li a .article_news .news_time {
+  color: #999;
+  font-size: 11px;
+  padding: 0 .307rem;
+}
+.article_page .article_main .article_swipe .article_box ul li a i {
+  background-image: url("../img/right.png");
+  background-size: cover;
+  width: 0.187rem /* 14/75 */;
+  height: 0.347rem /* 26/75 */;
+  margin-top: 0.64rem /* 48/75 */;
+  float: left;
+}
+.article_page .turn_page {
+  width: 92%;
+  height: 1rem /* 75/75 */;
+  text-align: center;
+  margin: 0 4%;
+  background-color: #fff;
+  background: linear-gradient(135deg, transparent 11px, #fff 0) top left, linear-gradient(-135deg, transparent 11px, #fff 0) top right;
+  background-repeat: no-repeat;
+  background-size: 50.5% 100%;
+}
+.article_page .turn_page i {
+  background-color: #c8c8c8;
+  border: 1px solid #b7b7b7;
+  border-radius: 50%;
+  width: 0.187rem /* 14/75 */;
+  height: 0.187rem /* 14/75 */;
+  display: inline-block;
+  margin: .507rem .053rem 0;
+}
+.article_page .turn_page .checked_page {
+  background-color: #2b86ff;
+  width: 0.213rem /* 16/75 */;
+  height: 0.213rem /* 16/75 */;
+  margin-top: 0.507rem /* 38/75 */;
+}
+.article_page .next_page {
+  background-image: url("../img/double_down.png");
+  background-size: 100% 100%;
+  width: 0.813rem /* 61/75 */;
+  height: 0.44rem /* 33/75 */;
+  margin-left: -0.4rem /* 30/75 */;
+  position: absolute;
+  left: 50%;
+  bottom: 0.6rem /* 45/75 */;
+}
+/* 字体大小适配 */
+[data-dpr="2"] .article_page .article_title .title {
+  font-size: 48px;
+}
+[data-dpr="2"] .article_page .article_main .article_swipe .article_box .article_news .news_title {
+  font-size: 30px;
+}
+[data-dpr="2"] .article_page .article_main .article_swipe .article_box .article_news .news_time {
+  font-size: 22px;
+}
+[data-dpr="3"] .article_page .article_title .title {
+  font-size: 72px;
+}
+[data-dpr="3"] .article_page .article_main .article_swipe .article_box .article_news .news_title {
+  font-size: 30px;
+}
+[data-dpr="3"] .article_page .article_main .article_swipe .article_box .article_news .news_time {
+  font-size: 22px;
+}
+/* 适配小屏*/
+/* 适配安卓小屏*/
+@media (max-width: 320px) and (max-height: 640px) {
+  [data-dpr="1"] .article_page .article_main .article_swipe .article_box li a {
+    padding: 0.333rem 0;
+  }
+}
+/* 适配iphone4尺寸*/
+@media (max-width: 640px) and (max-height: 960px) {
+  [data-dpr="2"] .article_page .article_main .article_swipe .article_box li a {
+    padding: 0.2rem 0;
+  }
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>输入框字数限制</title>
+</head>
+<body>
+<textarea name="" id="textarea" cols="30" rows="10"></textarea>
+<div class="counter"></div>
+<script src="../src/js/libs/jquery.js"></script>
+<script src="../src/js/libs/underscore.js"></script>
+<script src="../src/js/components/textCounter.js"></script>
+<script>
+    $('.counter').textCounter({ 
+        target: '#textarea'
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+
+/*****
+ *@author: zhangbs
+ *@from: 汽车大全 • 产品库 车型图片视频报价降价经销商导航栏
+ *@description: 何在朋
+ *@date: name (2017.02.06)
+*/
+@import (reference) "../public";
+#pro_type{
+  width:990px;
+  background:@color-fff;
+  border-bottom: 4px solid @color-333;
+
+  position: relative;
+  z-index: 10;
+  h2{
+
+    font-size: @font-24;
+    font-weight:bold;
+    line-height: 49px;
+  }
+  ul{
+    position: absolute;
+    right:0;
+    bottom: 0;
+  }
+  li{
+    float:left;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    a{
+      width:64px;
+      height:32px;
+      line-height: 32px;
+      text-align: center;
+      color:@color-fff;
+      display: block;
+      font-size: @font-16;
+      background:@color-333;
+      &.active{
+        background:@color-398be4;
+      }
+      &:hover{
+        background: @color-398be4;
+      }
+      &:active{
+        background:@color-126acc;
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的收藏 文章</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/myPrice.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/accountTab.js"></script>
+    <script src="js/pagination.js"></script>
+</head>
+<body>
+<div class="main">
+    <div class="header">
+    <div class="header_con clearfix">
+        <div class="fl clearfix">
+            <a href="#"><img src="img/personCenter_logo.png" alt="logo"></a>
+        </div>
+        <div class="fr clearfix">
+            <a href="#" class="user_img"> <img src="img/pic/user_img_03.png" alt="用户头像"> <img src="img/photo_mask.png" class="photo_mask"> </a>
+            <div href="#" class="user_name"> <span class="name">conan</span> <em></em> <span class="message_drop"> <a href="myPrice.html"><span>我的询价</span> ><i></i></a> <a href="#"><span>我的问答</span> ><i></i></a> <a href="myComment.html"><span>我的评论</span> ><i></i></a> <a href="messageSystem.html"><span>消息中心</span> ><i></i></a>                <a href="#"><span>退出登录</span> ><i></i></a> </span>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="content clearfix">
+        <div class="left_tab_menu clearfix">
+            <ul>
+                <li><a href="personalCenter.html">账号管理</a></li>
+                <li><a href="myCollect.html">我的收藏</a></li>
+                <li class="bg"><a href="myPrice.html">我的询价</a></li>
+                <li><a href="myWenda.html">我的问答</a></li>
+                <li><a href="myComment.html">我的评论</a></li>
+                <li><a href="messageSystem.html">消息中心</a></li>
+            </ul>
+        </div>
+        <div class="right_content clearfix">
+            <div class="account_m">
+                <!--这里算一项-->
+                <div class="account_con clearfix">
+                    <div class="content_490 content_490_first clearfix">
+                        <div class="container">
+                            <ul class="detail_msg">
+                                <li class="order_time"><i>下单时间 ：</i>2017年10月22日</li>
+                                <li class="price"><i>报价 ：</i>76.66万</li>
+                            </ul>
+                            <div class="img_container">
+                                <a href="#" class="img_a"><img src="img/pic/collect_article_06.png" alt=""></a>
+                            </div>
+                            <div class="des_container">
+
+                                <h2><a href="#">2017款 xDrive28i</a></h2>
+                                <p class="distribute"><i class="qi">经销商</i> ：<a hre="#">上海华庭汽车销售有限公司</a></p>
+                                <p><i class="qi">地址</i> ：<a class="personLocaltion" href="#">北京市大兴区黄花镇狼华宝芦花北京市大兴区黄花镇狼华宝芦花北京市大兴区黄花镇狼华宝芦花</a><a href="#">[<span>地图</span>]</a></p>
+                                <p><i>我的信息</i> ：王先生（15821669898）</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--这里算一项-->
+                <div class="account_con clearfix">
+                    <div class="content_490 content_490_first clearfix">
+                        <div class="container">
+                            <ul class="detail_msg">
+                                <li class="order_time"><i>下单时间 ：</i>2017年10月22日</li>
+                                <li class="price"><i>报价 ：</i>76.66万</li>
+                            </ul>
+                            <div class="img_container">
+                                <a href="#" class="img_a"><img src="img/pic/collect_article_06.png" alt=""></a>
+                            </div>
+                            <div class="des_container">
+
+                                <h2><a href="#">2017款 xDrive28i</a></h2>
+                                <p class="distribute"><i class="qi">经销商</i> ：<a hre="#">上海华庭汽车销售有限公司</a></p>
+                                <p><i class="qi">地址</i> ：北京市大兴区黄花镇狼华宝芦花<a href="#">[<span>地图</span>]</a></p>
+                                <p><i>我的信息</i> ：王先生（15821669898）</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--底部结构-->
+    <!--底部结构-->
+<div class="footer clearfix">
+    <div class="footer_content clearfix">
+        <ul>
+            <li class="footer_message clearfix"><a href="#">关于我们</a></li>
+            <li class="footer_message clearfix"><a href="#">联系我们</a></li>
+            <li class="footer_message clearfix"><a href="#">招贤纳士</a></li>
+            <li class="website clearfix"><a href="#">@2004-2016 www.xingyuanauto.com All Rights Reserved. 行圆汽车所有</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+
+
+<script>
+
+
+    $(document).ready(function () {
+
+        var setGrey=(function () {
+            var flag=false;
+            var js_account_tab_arr=$('#js_account_tab li');
+            $.each(js_account_tab_arr,function (index,item) {
+                if($(item).hasClass('count0')){
+                    $(item).children('a').css({'color':'#aaa','font-weight':"normal"});
+                }
+            })
+
+            $('.container').on('mouseover','em',function () {
+                $(this).siblings('span').css('display','inline-block')
+            })
+            $('.container').on('mouseout','em',function () {
+                $(this).siblings('span').css('display','none')
+            });
+//            取消收藏模块确认模块弹出
+            $('#js_content_490').on('click','em',function () {
+                if(!flag){
+                    $(this).siblings('.cancel_confirm_delete').show();
+                    $(this).parent().siblings().children('.cancel_confirm_delete').hide();
+                    flag=true;
+                }else{
+                    $(this).parent().siblings().children('.cancel_confirm_delete').hide();
+                    $(this).siblings('.cancel_confirm_delete').hide();
+                    flag=false;
+                }
+            })
+        })()
+    })
+</script>
+</body>
+</html>

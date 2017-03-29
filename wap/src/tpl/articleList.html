@@ -1,0 +1,13 @@
+
+{{~it.newsList:value:index}}
+<dl class="article_list clearfix">
+    <a href="{{= value.url}}">
+        <dt><img src="{{= value.piccover}}"></dt>
+        <dd class="synopsis"> {{= value.summary}} </dd>
+        <dd class="minor">
+            <span class="date"> {{= value.publish_time}} </span>
+            <span class="pinlun"> {{= value.commentcount}} 评论</span>
+        </dd>
+    </a>
+</dl>
+{{~}}

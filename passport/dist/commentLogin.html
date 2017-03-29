@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>评论页登录提示</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/commentLogin.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/commentLogin.js"></script>
+</head>
+<body>
+<div class="login_bg">
+
+</div>
+<div class="login_vice">
+    <div class="delete">
+        <i></i>
+    </div>
+    <div class="content">
+        <div class="login_menu">
+            <p>
+                <a href="#" class=" login_msg active">动态密码登录</a>|<a href="#" class="login_account">账号登录</a>
+            </p>
+        </div>
+
+        <div>
+            <div class="login_module">
+                <!--动态验证码登录-->
+                <form class="login_msg">
+                    <ul>
+                        <li class="phone_num clearfix">
+                            <i></i>
+                            <input type="text" placeholder="请输入手机号" maxlength="11" id="login_input">
+                            <em></em>
+                        </li>
+                        <li class="error_code">
+                            <p><i></i>手机号格式不正确</p>
+                        </li>
+                        <li class="sys_notice clearfix">
+                            <p>未注册账号，系统将自动为您创建账号！</p>
+                        </li>
+
+                        <li class="checkout_msg clearfix">
+                            <input type="text" class="msg_input" maxlength="4" placeholder="请输入动态密码">
+                            <input type="button" class="msg_get" value="获取动态密码">
+                        </li>
+                        <li class="error_code">
+                            <p><i></i>动态密码错误</p>
+                        </li>
+                        <li class="login">
+                            <input type="button" value="立即登录">
+                        </li>
+                        <li class="login_register clearfix">
+                            <a href="javascript:;" class="login_auto"><span><i></i></span>下次自动登录</a>
+                            <a href="register.html" class="register_imd">立即注册</a>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="login_module"  style="display: none;">
+
+                <!--账号登录-->
+                <form class="login_account">
+                    <ul>
+                        <li class="phone_num clearfix">
+                            <i></i>
+                            <input type="text" placeholder="请输入手机号" id="js_input_account" maxlength="11">
+                            <em></em>
+                        </li>
+                        <li class="input_password">
+                            <i></i>
+                            <input type="text" placeholder="请输入密码" id="js_account_pas" maxlength="16">
+                            <em class="hide"></em>
+                        </li>
+                        <li class="error_code" id="js_password_error">
+                            <p><i></i>请输入正确的账号或密码</p>
+                        </li>
+                        <li class="login_register clearfix">
+                            <p class="login_auto"><span><i></i></span>下次自动登录</p>
+                            <p class="login_text">
+                                <a href="findPassword.html" class="forgot_password">忘记密码</a>|
+                                <a href="register.html" class="register_imd">立即注册</a>
+                            </p>
+                        </li>
+                        <li class="login">
+                            <input type="button" value="立即登录" id="login_imd">
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="others_login">
+        <div class="others_account_login">
+            <em class="left"></em>
+            <p>其他账号登录</p>
+            <em class="right"></em>
+            <ul>
+                <li class="wx">
+                    <a href="#">微信登录</a>
+                </li>
+                <li class="wb">
+                    <a href="#">微博登录</a>
+                </li>
+                <li class="tx">
+                    <a href="#">QQ登录</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,278 @@
+@import (reference) "public";
+
+.comments {
+  margin-top: 40px;
+
+  .comments-tit {
+    height: 32px;
+    padding-bottom: 5px;
+    border-bottom: @border-b-333;
+
+    h3 {
+      font-size: @font-12 + 8;
+      color: @color-333;
+      font-weight: 700;
+      margin-top: 3px;
+    }
+    p {
+      margin-top: 15px;
+      .cursor;
+      .is_ho {
+        color: @color-999;
+        &:hover {
+          color: @color-398be4;
+        }
+      }
+    }
+  }
+  .myform {
+    .textarea {
+      width: 691px;
+      height: 88px;
+      border: 1px solid #c4c4c4;
+      margin-top: 11px;
+      resize: none;
+      padding: 5px;
+    }
+    p {
+      height: 37px;
+      line-height: 37px;
+      color: @color-999;
+
+      .setf-name {
+        color: @color-333;
+      }
+      .exit {
+        color: @color-333;
+        .cursor;
+      }
+      .submit {
+        .inline-block;
+        width: 78px;
+        height: 24px;
+        background: @color-aaa;
+        color: @color-fff;
+        font-size: @font-14;
+        margin-top: 5px;
+        .cursor;
+      }
+    }
+  }
+  .n-comments-tit {
+    height: 29px;
+    padding-top: 29px;
+    border-bottom: @border-b-333;
+    font-size: @font-12 + 4;
+  }
+  .comments-con {
+    height: auto;
+
+    .comments-type {
+      border-bottom: 1px solid @color-eee;
+      padding-bottom: 12px;
+
+      .photo-box {
+        width: 60px;
+        height: 60px;
+        margin-top: 16px;
+        margin-right: 12px;
+
+        img {
+          .inline-block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 2;
+        }
+        .photo-mask {
+          .inline-block;
+          width: 60px;
+          height: 60px;
+          background: url(../img/photo_mask.png) no-repeat;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 3;
+        }
+        .floor {
+          .inline-block;
+          width: 60px;
+          color: @color-999;
+          position: absolute;
+          top: 65px;
+          left: 0;
+          text-align: center;
+        }
+      }
+      dd {
+        width: 620px;
+        min-height: 100px;
+
+        .c-borderB {
+          width: 616px;
+          height: auto;
+          border: 1px solid #DADADA;
+          background: #F7F7F7;
+          margin-top: 14px;
+          margin-bottom: 5px;
+          padding-top: 12px;
+
+          p {
+            border-bottom: 1px solid #DADADA;
+            padding-left: 20px;
+            padding: 10px 20px;
+
+            span {
+              display: block;
+            }
+            .c-borderB-new {
+              color: @color-999;
+            }
+            .c-borderB-con {
+              color: @color-333;
+              line-height: 25px;
+              word-wrap: break-word;
+            }
+          }
+          p:last-child {
+            border-bottom: none;
+          }
+          .sh {
+            height: 59px;
+            border-bottom: 1px solid #DADADA;
+            background: @color-fff;
+            font-size: @font-14;
+            color: @color-333;
+            text-align: center;
+            line-height: 59px;
+            .cursor;
+
+            .sh-img {
+              .inline-block;
+              margin-left: 4px;
+            }
+          }
+        }
+        .nt {
+          margin-top: 16px;
+          width: 620px;
+
+          .c-name {
+            color: @color-333;
+            .inline-block;
+            margin-right: 20px;
+          }
+          .c-time {
+            color: @color-999;
+          }
+        }
+        .c-con {
+          width: 620px;
+          color: @color-333;
+          line-height: 18px;
+          margin-top: 22px;
+          word-wrap: break-word;
+        }
+        .c-zan {
+          margin-top: 20px;
+          span {
+            .inline-block;
+            .cursor;
+          }
+          .zan_wrap {
+            .c-zan-icon {
+              width: 18px;
+              height: 16px;
+              background-image: url("../img/sprite.png");
+              background-position: 0px -448px;
+              margin-top: -1px;
+            }
+            .c-zan-num {
+              margin-right: 20px;
+              line-heiht: 16px;
+              color: @color-orange;
+            }
+            &:hover {
+              .c-zan-icon {
+                background-position: 0px -532px;
+              }
+              .c-zan-num {
+                color: #ff9103;
+              }
+            }
+            &:active {
+              .c-zan-icon {
+                background-position: 0px -490px;
+              }
+              .c-zan-num {
+                color: #ff8003;
+              }
+            }
+          }
+          .reply-btn {
+            width: 18px;
+            height: 16px;
+            background-image: url("../img/sprite.png");
+            background-position: 0px -343px;
+            &:hover {
+              background-position: 0px -469px;
+            }
+            &:active {
+              background-position: 0px -322px;
+            }
+          }
+        }
+      }
+      .reply-box {
+        width: 690px;
+        height: 88px;
+        border: 1px solid #c4c4c4;
+        margin-top: 20px;
+        padding-left: 10px;
+        padding-top: 5px;
+        resize: none;
+        display: none;
+      }
+      .reply-release {
+        width: 78px;
+        height: 24px;
+        border: none;
+        font-size: @font-14;
+        color: @color-fff;
+        background: @color-aaa;
+        margin-top: 5px;
+        .cursor;
+        display: none;
+      }
+    }
+  }
+  .see-more-c {
+    height: 40px;
+    background: @color-eee;
+    font-size: @font-14;
+    line-height: 40px;
+    text-align: center;
+    .cursor;
+    margin-top: 20px;
+    margin-bottom: 48px;
+    display: none;
+
+    a {
+      color: @color-666;
+      &:hover {
+        color: @color-126acc;
+      }
+      &:active {
+        color: #1064c1;
+      }
+    }
+
+  }
+  .no_comments{
+      color: @color-999;
+      font-size: 14px;
+      text-align: center;
+      margin: 40px auto 90px;
+      display: none;
+  }
+}

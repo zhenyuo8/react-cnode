@@ -1,0 +1,1 @@
+module.exports = "{{ for (var i = 0, l = it.length; i<l; i++) { }} <div class=\"swiper-slide\"><div class=\"big_img_wrap\"> <img data-src=\"{{=it[i].imgUrl}}\" class=\"swiper-lazy\"><div class=\"swiper-lazy-preloader swiper-lazy-preloader-white\"></div><p>{{=it[i].positionName?it[i].positionName:\'\'}}</p></div></div> {{ } }}";

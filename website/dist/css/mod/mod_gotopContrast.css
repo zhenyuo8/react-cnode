@@ -1,0 +1,577 @@
+/*****
+ *@author: linyh
+ *@from: Global style gotopContrast module
+ *@description: 何在朋
+ *@date: name (2017.02.06)
+*/
+.position_fixed {
+  position: fixed;
+  left: 50%;
+  margin-left: 520px;
+  bottom: 160px;
+}
+.position_fixed .display_n {
+  display: none;
+}
+.position_fixed .type_constract {
+  margin-bottom: 8px;
+  position: relative;
+}
+.position_fixed .type_constract .type_constract_btn {
+  width: 68px;
+  height: 68px;
+  border: 1px solid #bababa;
+  background-color: #eee;
+  color: #999;
+  position: relative;
+  cursor: pointer;
+}
+.position_fixed .type_constract .type_constract_btn .pk {
+  display: block;
+  width: 26px;
+  height: 26px;
+  margin: 12px auto 0;
+  background-image: url("../img/constract.png");
+}
+.position_fixed .type_constract .type_constract_btn .pk_text {
+  line-height: 32px;
+  display: block;
+  font-weight: 700;
+  text-align: center;
+}
+.position_fixed .type_constract .type_constract_btn i {
+  color: #fff;
+  width: 20px;
+  line-height: 20px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #FFA904;
+  position: absolute;
+  top: -11px;
+  right: -11px;
+}
+.position_fixed .type_constract .type_constract_btn:hover {
+  background: #3a8be4;
+}
+.position_fixed .type_constract .type_constract_btn:hover .pk {
+  background-image: url("../img/constract_h.png");
+}
+.position_fixed .type_constract .type_constract_btn:hover .pk_text {
+  color: #fff;
+}
+.position_fixed .type_constract .type_constract_list {
+  position: absolute;
+  bottom: -87px;
+  left: -238px;
+}
+.position_fixed .type_constract .type_constract_list .display_n {
+  display: none;
+}
+.position_fixed .type_constract .type_constract_list .t_c_title {
+  color: #fff;
+  line-height: 32px;
+  width: 220px;
+  background-color: #333;
+  overflow: hidden;
+}
+.position_fixed .type_constract .type_constract_list .t_c_title h5 {
+  float: left;
+  display: inline-block;
+  padding-left: 13px;
+  font-weight: bold;
+}
+.position_fixed .type_constract .type_constract_list .t_c_title span {
+  float: right;
+  display: inline-block;
+  padding-right: 9px;
+  cursor: pointer;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content {
+  padding-bottom: 10px;
+  border: 1px solid #333;
+  border-bottom: 4px solid #333;
+  background-color: #fff;
+  position: relative;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_history {
+  margin-bottom: 14px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_history li {
+  padding: 8px 11px 8px 12px;
+  border-bottom: 1px solid #eee;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_history li a {
+  display: inline-block;
+  line-height: 18px;
+  width: 170px;
+  margin-right: 14px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_history li a:hover {
+  color: #3a8be4;
+  text-decoration: underline;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_history li a:active {
+  color: #1673d9;
+  text-decoration: underline;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_history li .delete_icon {
+  background-image: url("../img/sprite.png");
+  background-position: -3px -430px;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 5px;
+  text-align: right;
+  cursor: pointer;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .display_n {
+  display: none;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .p_style {
+  width: 196px;
+  line-height: 26px;
+  overflow: hidden;
+  border: 1px solid #dadada;
+  margin-bottom: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .p_style span {
+  color: #999;
+  display: inline-block;
+  padding-left: 9px;
+  float: left;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .p_style .down_icon {
+  width: 10px;
+  height: 8px;
+  display: inline-block;
+  margin: 10px 11px 0 0;
+  float: right;
+  background-image: url("../img/sprite.png");
+  background-position: 0px -2370px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .p_style .display_n {
+  display: none;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .p_style:hover {
+  border-color: #3a8be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .p_style:hover .down_icon {
+  background-position: 0px -2419px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .scroll-box-style {
+  color: #333;
+  border: 1px solid #333;
+  border-bottom: 5px solid #333;
+  background-color: #fff;
+  position: absolute;
+  top: 36px;
+  left: 10px;
+  z-index: 1000;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand {
+  position: relative;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .choice_input {
+  width: 196px;
+  line-height: 26px;
+  overflow: hidden;
+  border: 1px solid #dadada;
+  margin-bottom: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .choice_input span {
+  color: #999;
+  display: inline-block;
+  padding-left: 9px;
+  float: left;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .choice_input .down_icon {
+  width: 10px;
+  height: 8px;
+  display: inline-block;
+  margin: 10px 11px 0 0;
+  float: right;
+  background-image: url("../img/sprite.png");
+  background-position: 0px -2370px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .choice_input .display_n {
+  display: none;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .choice_input:hover {
+  border-color: #3a8be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .choice_input:hover .down_icon {
+  background-position: 0px -2419px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .choice_input_hover {
+  border-color: #3a8be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .choice_input_hover .down_icon {
+  background-position: 0px -2419px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .brand_scroll_area {
+  color: #333;
+  border: 1px solid #333;
+  border-bottom: 5px solid #333;
+  background-color: #fff;
+  position: absolute;
+  top: 36px;
+  left: 10px;
+  z-index: 1000;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .brand_scroll_area .choice_route {
+  line-height: 31px;
+  border-bottom: 1px solid #333;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .brand_scroll_area .choice_route .blue_border {
+  border-bottom: 2px solid #398be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .brand_scroll_area .choice_route span {
+  display: inline-block;
+  padding: 0 10px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .brand_scroll_area .brand-scroll-list-box {
+  height: 470px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .brand_scroll_area .brand-scroll-list-box .brand-letter-index {
+  float: left;
+  width: 31px;
+  border-right: 1px solid #eee;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .brand_scroll_area .brand-scroll-list-box .brand-letter-index span {
+  display: inline-block;
+  width: 31px;
+  text-align: center;
+  line-height: 18px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .brand_scroll_area .brand-scroll-list-box .brand-letter-index span:hover a {
+  color: #398be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .brand_scroll_area .brand-scroll-list-box .brand-letter-index span:first-child a {
+  color: #398be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .brand_scroll_area .brand-scroll-list-box .brand-scroll-list {
+  float: right;
+  height: 470px;
+  overflow: auto;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .brand_scroll_area .brand-scroll-list-box .brand-scroll-list ul {
+  border-top: 1px solid #eee;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .brand_scroll_area .brand-scroll-list-box .brand-scroll-list ul li {
+  padding-left: 14px;
+  width: 156px;
+  line-height: 28px;
+  cursor: pointer;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .brand_scroll_area .brand-scroll-list-box .brand-scroll-list ul li a span {
+  padding-left: 14px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .brand_scroll_area .brand-scroll-list-box .brand-scroll-list ul li:hover {
+  background-color: #398be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .brand_scroll_area .brand-scroll-list-box .brand-scroll-list ul li:hover a {
+  color: #fff;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type {
+  position: relative;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .choice_input {
+  width: 196px;
+  line-height: 26px;
+  overflow: hidden;
+  border: 1px solid #dadada;
+  margin-bottom: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .choice_input span {
+  color: #999;
+  display: inline-block;
+  padding-left: 9px;
+  float: left;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .choice_input .down_icon {
+  width: 10px;
+  height: 8px;
+  display: inline-block;
+  margin: 10px 11px 0 0;
+  float: right;
+  background-image: url("../img/sprite.png");
+  background-position: 0px -2370px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .choice_input .display_n {
+  display: none;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .choice_input:hover {
+  border-color: #3a8be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .choice_input:hover .down_icon {
+  background-position: 0px -2419px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .choice_input_hover {
+  border-color: #3a8be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .choice_input_hover .down_icon {
+  background-position: 0px -2419px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .car_type_scroll_area {
+  color: #333;
+  border: 1px solid #333;
+  border-bottom: 5px solid #333;
+  background-color: #fff;
+  position: absolute;
+  top: 36px;
+  left: 10px;
+  z-index: 1000;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .car_type_scroll_area .choice_route {
+  line-height: 31px;
+  border-bottom: 1px solid #333;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .car_type_scroll_area .choice_route .blue_border {
+  border-bottom: 2px solid #398be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .car_type_scroll_area .choice_route span {
+  display: inline-block;
+  padding: 0 10px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .car_type_scroll_area .car-type-scroll-list {
+  height: 470px;
+  overflow: auto;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .car_type_scroll_area .car-type-scroll-list .all_item {
+  font-weight: bold;
+  line-height: 28px;
+  padding-left: 12px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .car_type_scroll_area .car-type-scroll-list dl {
+  width: 196px;
+  line-height: 28px;
+  padding: 6px 0;
+  border-top: 1px solid #eee;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .car_type_scroll_area .car-type-scroll-list dl dt {
+  font-weight: bold;
+  line-height: 32px;
+  padding-left: 14px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .car_type_scroll_area .car-type-scroll-list dl dd {
+  padding-left: 14px;
+  cursor: pointer;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .car_type_scroll_area .car-type-scroll-list dl dd:hover {
+  background-color: #398be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .car_type_scroll_area .car-type-scroll-list dl dd:hover a {
+  color: #fff;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style {
+  position: relative;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .choice_input {
+  width: 196px;
+  line-height: 26px;
+  overflow: hidden;
+  border: 1px solid #dadada;
+  margin-bottom: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .choice_input span {
+  color: #999;
+  display: inline-block;
+  padding-left: 9px;
+  float: left;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .choice_input .down_icon {
+  width: 10px;
+  height: 8px;
+  display: inline-block;
+  margin: 10px 11px 0 0;
+  float: right;
+  background-image: url("../img/sprite.png");
+  background-position: 0px -2370px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .choice_input .display_n {
+  display: none;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .choice_input:hover {
+  border-color: #3a8be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .choice_input:hover .down_icon {
+  background-position: 0px -2419px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .choice_input_hover {
+  border-color: #3a8be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .choice_input_hover .down_icon {
+  background-position: 0px -2419px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .car_style_scroll_area {
+  color: #333;
+  border: 1px solid #333;
+  border-bottom: 5px solid #333;
+  background-color: #fff;
+  position: absolute;
+  top: 36px;
+  left: 10px;
+  z-index: 1000;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .car_style_scroll_area .choice_route {
+  line-height: 31px;
+  border-bottom: 1px solid #333;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .car_style_scroll_area .choice_route .blue_border {
+  border-bottom: 2px solid #398be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .car_style_scroll_area .choice_route span {
+  display: inline-block;
+  padding: 0 10px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .car_style_scroll_area .car-style-scroll-list {
+  height: 470px;
+  overflow: auto;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .car_style_scroll_area .car-style-scroll-list .all_item {
+  font-weight: bold;
+  line-height: 28px;
+  padding-left: 12px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .car_style_scroll_area .car-style-scroll-list dl {
+  width: 278px;
+  line-height: 28px;
+  padding: 6px 0;
+  border-top: 1px solid #eee;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .car_style_scroll_area .car-style-scroll-list dl dt {
+  font-weight: bold;
+  line-height: 32px;
+  padding-left: 14px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .car_style_scroll_area .car-style-scroll-list dl dd {
+  padding-left: 14px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .car_style_scroll_area .car-style-scroll-list dl dd span {
+  float: left;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .car_style_scroll_area .car-style-scroll-list dl dd i {
+  float: right;
+  color: #e43a3a;
+  padding-right: 14px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .car_style_scroll_area .car-style-scroll-list dl dd:hover {
+  background-color: #398be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .car_style_scroll_area .car-style-scroll-list dl dd:hover span {
+  color: #fff;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .car_style_scroll_area .car-style-scroll-list dl dd:hover i {
+  color: #fff;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .start_contrast .btn_sty {
+  font-size: 14px;
+  width: 196px;
+  line-height: 36px;
+  text-align: center;
+  margin-left: 10px;
+  display: inline-block;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .start_contrast .dis_click {
+  font-size: 14px;
+  width: 196px;
+  line-height: 36px;
+  text-align: center;
+  margin-left: 10px;
+  display: inline-block;
+  color: #999;
+  background-color: #eee;
+  border: 1px solid #dadada;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .start_contrast .sure_click {
+  font-size: 14px;
+  width: 196px;
+  line-height: 36px;
+  text-align: center;
+  margin-left: 10px;
+  display: inline-block;
+  color: #fff;
+  background-color: #398be4;
+  border: 1px solid #398be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .start_contrast .display_n {
+  display: none;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .tip_bar {
+  padding: 13px 10px 0;
+  overflow: hidden;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .tip_bar .tip {
+  float: left;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .tip_bar .clear_all {
+  float: right;
+  cursor: pointer;
+  color: #666;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .tip_bar .clear_all:hover {
+  color: #3a8be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .tip_bar .clear_all:active {
+  color: #1673d9;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .jt {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-top: 1px solid #333;
+  border-right: 1px solid #333;
+  position: absolute;
+  bottom: 100px;
+  right: -6px;
+  z-index: 10;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  display: inline-block;
+}
+.position_fixed .go_top {
+  width: 68px;
+  height: 68px;
+  border: 1px solid #bababa;
+  background: #eee;
+  cursor: pointer;
+}
+.position_fixed .go_top .goTop_icon {
+  margin: 12px auto 0 auto;
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-image: url(../img/gotop.png);
+}
+.position_fixed .go_top .goTop_text {
+  font-weight: 700;
+  color: #999;
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+}
+.position_fixed .go_top:hover {
+  background: #3a8be4;
+}
+.position_fixed .go_top:hover .goTop_icon {
+  background-image: url(../img/gotop_hover.png);
+}
+.position_fixed .go_top:hover .goTop_text {
+  color: #fff;
+}

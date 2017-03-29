@@ -1,0 +1,191 @@
+/*****
+ *@author: zhangwx
+ *@from: Global style experHeroPost
+ *@description: 标兵征集令
+ *@date: name (2017.03.15)
+*/
+body{
+	font-family: PingFangSC-Medium;
+}
+
+.example_home, .example_trait, .example_join, .ball{
+	height: 100%;
+	width: 10.0rem;
+	position: absolute;
+	left: 0;
+}
+
+/*首屏*/
+.example_home{
+	top: 0;
+	.home_content{
+		width: 6.667rem;
+		height: 12.267rem;
+		margin: 3.0rem auto 1.067rem auto;
+		background: url(../img/example_bg_content.png) no-repeat 0 0;
+		background-size: 6.667rem 12.267rem;
+	}
+}
+/*一，二屏点击箭头*/
+.next_arr{
+	position: absolute;
+	height: 0.48rem;
+	width: 0.8rem;
+	left: 4.6rem;
+	bottom: 1.067rem;
+	background: url(../img/example_next_arr.png) no-repeat 0 0;
+	background-size: 0.8rem 0.48rem;
+}
+.example_home,.example_trait,.example_join{
+	background-image: url(../img/example_bg_blue.png);
+	background-size: 100% 100%;
+	color: #fff;
+}
+/*第二屏*/
+.example_trait{
+	top: 100%;
+	font-size: 0.32rem;
+	.content{
+		margin: 0 0 0.6rem 0.6rem;
+	}
+	.content_left{
+		width: 1.6rem;
+		height: 1.8rem;
+	}
+	.content_one{
+		background: url(../img/example_content_one.png) no-repeat 0.467rem 0.4rem;
+		background-size: 1.067rem 1.067rem;
+	}
+	.content_two{
+		background: url(../img/example_content_two.png) no-repeat 0.467rem 0.4rem;
+		background-size: 1.067rem 1.067rem;
+	}
+	.content_three{
+		background: url(../img/example_content_three.png) no-repeat 0.467rem 0.4rem;
+		background-size: 1.067rem 1.067rem;
+	}
+	.content_four{
+		background: url(../img/example_content_four.png) no-repeat 0.467rem 0.4rem;
+		background-size: 1.067rem 1.067rem;
+	}
+	p{
+		height: 0.6rem;
+		line-height: 0.6rem;
+		text-indent: 0.467rem;
+	}
+}
+/*第三屏*/
+.example_join{
+	top: 200%;
+	.content{
+		position: relative;
+		margin: 0 0 0.8rem 0.6rem;
+		.join_arr{
+			position: absolute;
+			display: inline-block;
+			height: 0.293rem;
+			width: 0.44rem;
+			left: 50%;
+			top: 2.067rem;
+			background: url(../img/example_arr.png) no-repeat;
+			background-size: 0.44rem 0.293rem;
+		}
+	}
+	.content_left{
+		height: 1.76rem;
+		width: 1.8rem;
+		text-align: center;
+		img{
+			display: inline-block;
+			margin-top: 0.133rem;
+			width: 0.853rem;
+			height: 0.853rem;
+		}
+		p{
+			text-indent: 0;
+			text-align: center;
+			font-size: 0.267rem;
+		}
+	}
+	.content_right{
+		display: inline-block;
+		height: 1.8rem;
+		p{
+			text-indent: 0;
+			height: 0.6rem;
+			line-height: 0.6rem;
+		}
+	}
+	.content_middle{
+		display: inline-block;
+		height: 1.8rem;
+		line-height: 1.8rem;
+	}
+}
+/*二，三屏相同部分*/
+.join_title, .join_footer, .trait_title, .trait_footer{
+	letter-spacing: 0.067rem;
+	font-size: 0.4rem;
+}
+.trait_title, .join_title{
+	height: 0.733rem;
+	margin: 2.667rem 0 0.533rem 0.6rem;
+	line-height: 0.933rem;
+	background: url(../img/example_line.png) no-repeat 0 0;
+	background-size: 0.533rem 0.08rem;
+}
+.trait_footer, .join_footer{
+	width: 10.0rem;
+	text-indent: 0.6rem;
+}
+.footer_bg{
+	height: 4.813rem;
+	width: 10.0rem;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: url(../img/example_footer_bg.png) no-repeat 0 0.5rem;
+	background-size: 10.0rem 4.267rem;
+}
+.content{
+	height: 1.8rem;
+	width: 8.8rem;
+	font-size: 0.347rem;
+	letter-spacing: 0.053rem;
+	background: url(../img/example_content_bg.png) repeat-y;
+
+	div{
+		display: inline-block;
+		vertical-align: top;
+	}
+	.content_right{
+		height: 1.8rem;
+		padding-top: 0.35rem;
+	}
+}
+
+/*球背景*/
+.ball{
+	background-image: url(../img/example_bg_ball.png);
+	background-size: 10.0rem 100%;
+	z-index: 1;
+}
+.section{
+	display: none;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+.section.current{
+	display:inline-block;
+}
+.section.next{
+	display:inline-block;
+	z-index: 2;
+}
+.section.prev{
+	display:inline-block;
+	z-index: 2;
+}

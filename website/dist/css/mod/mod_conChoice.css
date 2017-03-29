@@ -1,0 +1,335 @@
+/*****
+ *@author: linyh
+ *@from: Global style cinChoice module
+ *@description: 何在朋
+ *@date: name (2017.01.09)
+*/
+.choice-search-module {
+  width: 990px;
+  height: 118px;
+  margin: 0 auto;
+  clear: both;
+}
+.choice-search-module .display-none {
+  display: none;
+}
+.choice-search-module .choice-condition-list {
+  color: #333;
+  margin-right: 31px;
+  border-top: 1px solid #eee;
+  float: left;
+}
+.choice-search-module .choice-condition-list dl {
+  width: 720px;
+  line-height: 38px;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+}
+.choice-search-module .choice-condition-list dl dt {
+  float: left;
+  font-size: 14px;
+  font-weight: 600;
+}
+.choice-search-module .choice-condition-list dl dd {
+  float: left;
+  margin-left: 16px;
+}
+.choice-search-module .choice-condition-list dl dd ul li {
+  float: left;
+  padding-right: 10px;
+}
+.choice-search-module .choice-condition-list dl dd ul li a {
+  display: inline-block;
+  line-height: 18px;
+  padding: 0 4px;
+}
+.choice-search-module .choice-condition-list dl dd ul li a:link {
+  color: #333;
+}
+.choice-search-module .choice-condition-list dl dd ul li a:visited {
+  /*color: #fff;*/
+  background-color: #1673d9;
+}
+.choice-search-module .choice-condition-list dl dd ul li a:hover {
+  color: #fff;
+  background-color: #3a8be4;
+}
+.choice-search-module .choice-condition-list dl dd ul li a:active {
+  color: #fff;
+  background-color: #1673d9;
+}
+.choice-search-module .choice-condition-list dl dd ul .filter-choice-search-different a {
+  display: inline-block;
+  text-align: center;
+  line-height: 18px;
+  background-color: #3189e9;
+}
+.choice-search-module .choice-condition-list dl dd ul .filter-choice-search-different a:link {
+  color: #fff;
+}
+.choice-search-module .choice-condition-list dl dd ul .filter-choice-search-different a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+.choice-search-module .choice-condition-list dl dd ul .filter-choice-search-different a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.choice-search-module .choice-condition-list dl dd ul .filter-choice-search-different a:active {
+  color: #fff;
+  text-decoration: none;
+}
+.choice-search-module .choice-condition-list .car-type-list .car-type-item a {
+  margin-left: 9px;
+}
+.choice-search-module .choice-condition-list .car-type-list .car-type-item a:first-child {
+  margin: 0;
+}
+.choice-search-module .search-input {
+  padding-left: 32px;
+  border-left: 1px solid #eee;
+  float: right;
+}
+.choice-search-module .search-input .simulation-select {
+  border: 1px solid #dadada;
+  margin-bottom: 6px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.choice-search-module .search-input .simulation-select span {
+  color: #333;
+  width: 166px;
+  line-height: 30px;
+  display: inline-block;
+  padding-left: 4px;
+  margin: 1px;
+  float: left;
+}
+.choice-search-module .search-input .simulation-select i {
+  display: inline-block;
+  width: 32px;
+  height: 30px;
+  float: right;
+}
+.choice-search-module .search-input .simulation-select i em {
+  display: inline-block;
+  width: 16px;
+  height: 8px;
+  margin: 11px 0 0 11px;
+  background-image: url(../img/icon_all.png);
+  background-position: 0 -18px;
+  background-repeat: no-repeat;
+}
+.choice-search-module .search-input .simulation-select i .search-input-hover {
+  background-position: 0 -67px;
+}
+.choice-search-module .search-input .scroll-box-style {
+  color: #333;
+  height: 470px;
+  border: 1px solid #333;
+  border-bottom: 5px solid #333;
+  background-color: #fff;
+  position: absolute;
+  top: 36px;
+  left: 0;
+  z-index: 1000;
+}
+.choice-search-module .search-input .choice-brand {
+  position: relative;
+}
+.choice-search-module .search-input .choice-brand .choice-brand-input {
+  border: 1px solid #dadada;
+  margin-bottom: 6px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.choice-search-module .search-input .choice-brand .choice-brand-input span {
+  color: #333;
+  width: 166px;
+  line-height: 30px;
+  display: inline-block;
+  padding-left: 4px;
+  margin: 1px;
+  float: left;
+}
+.choice-search-module .search-input .choice-brand .choice-brand-input i {
+  display: inline-block;
+  width: 32px;
+  height: 30px;
+  float: right;
+}
+.choice-search-module .search-input .choice-brand .choice-brand-input i em {
+  display: inline-block;
+  width: 16px;
+  height: 8px;
+  margin: 11px 0 0 11px;
+  background-image: url(../img/icon_all.png);
+  background-position: 0 -18px;
+  background-repeat: no-repeat;
+}
+.choice-search-module .search-input .choice-brand .choice-brand-input i .search-input-hover {
+  background-position: 0 -67px;
+}
+.choice-search-module .search-input .choice-brand .choice-brand-input:hover {
+  border-color: #398be4;
+}
+.choice-search-module .search-input .choice-brand .choice-brand-input:hover em {
+  background-position: 0 -67px;
+}
+.choice-search-module .search-input .choice-brand .color-input-border {
+  border-color: #398be4;
+}
+.choice-search-module .search-input .choice-brand .brand-scroll-list-box {
+  color: #333;
+  height: 470px;
+  border: 1px solid #333;
+  border-bottom: 5px solid #333;
+  background-color: #fff;
+  position: absolute;
+  top: 36px;
+  left: 0;
+  z-index: 1000;
+}
+.choice-search-module .search-input .choice-brand .brand-scroll-list-box .brand-letter-index {
+  float: left;
+  width: 31px;
+  border-right: 1px solid #eee;
+}
+.choice-search-module .search-input .choice-brand .brand-scroll-list-box .brand-letter-index span {
+  display: inline-block;
+  width: 31px;
+  text-align: center;
+  line-height: 18px;
+}
+.choice-search-module .search-input .choice-brand .brand-scroll-list-box .brand-letter-index span:hover a {
+  color: #398be4;
+}
+.choice-search-module .search-input .choice-brand .brand-scroll-list-box .brand-letter-index span:first-child a {
+  color: #398be4;
+}
+.choice-search-module .search-input .choice-brand .brand-scroll-list-box .brand-scroll-list {
+  float: right;
+  height: 470px;
+  overflow: auto;
+}
+.choice-search-module .search-input .choice-brand .brand-scroll-list-box .brand-scroll-list ul {
+  border-top: 1px solid #eee;
+}
+.choice-search-module .search-input .choice-brand .brand-scroll-list-box .brand-scroll-list ul li {
+  padding-left: 8px;
+  width: 164px;
+  line-height: 28px;
+  cursor: pointer;
+}
+.choice-search-module .search-input .choice-brand .brand-scroll-list-box .brand-scroll-list ul li a span {
+  padding-left: 8px;
+}
+.choice-search-module .search-input .choice-brand .brand-scroll-list-box .brand-scroll-list ul li:hover {
+  background-color: #398be4;
+}
+.choice-search-module .search-input .choice-brand .brand-scroll-list-box .brand-scroll-list ul li:hover a {
+  color: #fff;
+}
+.choice-search-module .search-input .choice-car-type {
+  position: relative;
+}
+.choice-search-module .search-input .choice-car-type .dis_hover:hover {
+  border-color: #3a8be4;
+}
+.choice-search-module .search-input .choice-car-type .dis_hover:hover em {
+  background-position: 0 -67px;
+}
+.choice-search-module .search-input .choice-car-type .choice-car-type-input {
+  border: 1px solid #dadada;
+  margin-bottom: 6px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.choice-search-module .search-input .choice-car-type .choice-car-type-input span {
+  color: #333;
+  width: 166px;
+  line-height: 30px;
+  display: inline-block;
+  padding-left: 4px;
+  margin: 1px;
+  float: left;
+}
+.choice-search-module .search-input .choice-car-type .choice-car-type-input i {
+  display: inline-block;
+  width: 32px;
+  height: 30px;
+  float: right;
+}
+.choice-search-module .search-input .choice-car-type .choice-car-type-input i em {
+  display: inline-block;
+  width: 16px;
+  height: 8px;
+  margin: 11px 0 0 11px;
+  background-image: url(../img/icon_all.png);
+  background-position: 0 -18px;
+  background-repeat: no-repeat;
+}
+.choice-search-module .search-input .choice-car-type .choice-car-type-input i .search-input-hover {
+  background-position: 0 -67px;
+}
+.choice-search-module .search-input .choice-car-type .choice-car-type-input span {
+  color: #aaa;
+}
+.choice-search-module .search-input .choice-car-type .color-input-border {
+  border-color: #398be4;
+}
+.choice-search-module .search-input .choice-car-type .car-type-scroll-list {
+  color: #333;
+  height: 470px;
+  border: 1px solid #333;
+  border-bottom: 5px solid #333;
+  background-color: #fff;
+  position: absolute;
+  top: 36px;
+  left: 0;
+  z-index: 1000;
+  overflow: auto;
+}
+.choice-search-module .search-input .choice-car-type .car-type-scroll-list dl {
+  width: 204px;
+  line-height: 28px;
+}
+.choice-search-module .search-input .choice-car-type .car-type-scroll-list dl dt {
+  text-align: center;
+  background-color: #f7f7f7;
+}
+.choice-search-module .search-input .choice-car-type .car-type-scroll-list dl dd {
+  padding-left: 8px;
+  cursor: pointer;
+}
+.choice-search-module .search-input .choice-car-type .car-type-scroll-list dl dd:hover {
+  background-color: #398be4;
+}
+.choice-search-module .search-input .choice-car-type .car-type-scroll-list dl dd:hover a {
+  color: #fff;
+}
+.choice-search-module .search-input .search-submit-btn {
+  font-size: 16px;
+  line-height: 36px;
+  text-align: center;
+}
+.choice-search-module .search-input .search-submit-btn a {
+  width: 206px;
+  color: #fff;
+  background: #fa9e19;
+  display: none;
+}
+.choice-search-module .search-input .search-submit-btn a:hover {
+  background-color: #ff9103;
+}
+.choice-search-module .search-input .search-submit-btn a:active {
+  background-color: #ff8003;
+}
+.choice-search-module .search-input .search-submit-btn span {
+  color: #fff;
+  width: 206px;
+  display: inline-block;
+  background: #fa9e19;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+}

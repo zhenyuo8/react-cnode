@@ -1,0 +1,53 @@
+<!-- 搜索主页面 -->
+    <div class="search_car_page">
+
+		<!-- 搜索框 -->
+		<div class="search_bar clearfix">
+			<div class="search_area">
+				<div class="search_area_bg"></div>
+				<span class="search_btn" id="searchBtn"></span>
+				<input class="search_input" type="text" placeholder="请输入想找的车" autofocus autocomplete="off" v-model="kw" v-on:input="input()">
+                <i class="delete_text" v-show="showList" v-on:click="clearKw()"></i>
+			</div>
+			<router-link class="cancel" id="cancel" :to="'/'" reload>取消</router-link>
+		</div>
+
+		<!-- 热门车型 -->
+		<div class="search_module search_hot" v-show="!showList">
+			<h2 class="search_title">热门车型</h2>
+			<ul class="hot_list clearfix">
+				<li v-for="row in hotserials">
+					<router-link :to="{name:'carserial',query:{serialId:row.id}}" reload>
+						{{row.showname}}
+					</router-link>
+				</li>
+			</ul>
+		</div>
+
+		<!-- 搜索历史 -->
+		<div class="search_module search_history" v-show="!showList">
+			<h2 class="search_title"><a v-on:click="clear()" v-if="history.length">清空</a>搜索历史</h2>
+			<ul class="history_list">
+				<li v-for="row in history">
+					<router-link :to="{name:'carserial',query:{serialId:row.serialId}}" reload>
+						{{row.showName}}
+					</router-link>
+				</li>
+			</ul>
+		</div>
+
+		<!-- 联想词 -->
+		<div class="sh_relevance" style="display: block" v-show="showList">
+			<ul class="result_list" v-if="list.length">
+				<li v-for="row in list" v-on:click="save(row)">
+					<router-link :to="{name:'carserial',query:{serialId:row.serialId}}" reload>
+						{{row.showName}}
+					</router-link>
+				</li>
+			</ul>
+			<div v-if="!loading && list.length==0" class="noresult">
+				<div class="img"></div>
+				<div class="text">没有搜索到相关车型</div>
+			</div>
+		</div>
+    </div>

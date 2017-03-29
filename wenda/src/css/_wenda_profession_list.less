@@ -1,0 +1,276 @@
+@import (reference)"public";
+@import "mod/mod_footer";
+@import "mod/mod_goTop";
+@import "mod/mod_willAsk";
+
+.profession_title{
+    font-size: 36px;
+    font-weight: @font-weight-b;
+    text-align: center;
+    padding:55px 0;
+}
+.header{
+    img{
+        width: 100%;
+    }
+}
+.main{
+    width: 100%;
+    margin: 0 auto;
+    @width0: 900px;
+    @width2: 270px;
+    @height0: 270px;
+    @height1: 290px;
+    font-size: 14px;
+    .profession_special>div {
+        width: 990px;
+        margin: 0 auto;
+        li {
+            -moz-transform: scale(0.8, 0.8);
+            -o-transform: scale(0.8, 0.8);
+            -webkit-transform: scale(0.8, 0.8);
+            background-color: @color-fff;
+            float: left;
+            height: @height1;
+            opacity: 0.6;
+            text-align: center;
+            width: @width2;
+            div {
+                margin: 20px 0;
+                a{
+                    position: relative;
+                    display: block;
+                    width: 100px;
+                    height: 100px;
+                    margin: 0 auto;
+                    img{
+                        width: 100px;
+                        height:100px;
+                    }
+                    .w_photo_mask{
+                        display: inline-block;
+                        height: 103px;
+                        width: 100px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 2;
+                    }
+                }
+            }
+            h3 {
+                font-size: 20px;
+                margin-bottom: 40px;
+            }
+            h4 {
+                a {
+                    background-color: @color-398be4;
+                    color: @color-fff;
+                    display: block;
+                    font-weight: 500;
+                    margin: 0 auto;
+                    padding: 10px 0px;
+                    width: 78%;
+                }
+            }
+            u{
+                display: none;
+                bottom:-14px;
+                left: 120px;
+                width: 28px;
+                height: 14px;
+                background-image: url("../img/white_down.png");
+                background-color: @color-fff;
+            }
+        }
+        .optical {
+            -moz-transform: scale(1, 1);
+            -o-transform: scale(1, 1);
+            -webkit-transform: scale(1, 1);
+            opacity: 1;
+            u{
+                display: block;
+            }
+        }
+    }
+    .profession_special {
+        background-color: @color-f7f7f7;
+        .poster-main {
+            overflow: hidden;
+            height: @height0;
+            position: relative;
+            width: @width0;
+            .poster-list {
+                height: @height0;
+                width: @width0;
+                .poster-item {
+                    left: 0px;
+                    position: absolute;
+                    top: 0px;
+                }
+            }
+            .poster-btn {
+                height: @height1;
+                opacity: 0.5;
+                position: absolute;
+                top: 0px;
+                width:@width2;
+                z-index: 10;
+            }
+            .poster-prev-btn {
+                left: 0px;
+            }
+            .poster-next-btn {
+                right: 0px;
+            }
+        }
+        .behind {
+            margin-top: 60px;
+            .introduce {
+                margin: 0 auto;
+                width: 930px;
+                span {
+                    display: inline-block;
+                    line-height: 24px;
+                    margin: 0 10px;
+                    text-align: center;
+                    width: 850px;
+                }
+                img {
+                    margin-top: 14px;
+                }
+            }
+            .dot {
+                padding: 50px 0 20px 0;
+                text-align: center;
+                p {
+                    -moz-border-radius: 8px;
+                    background-color: @color-fff;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    display: inline-block;
+                    height: 8px;
+                    margin-right: 10px;
+                    width: 8px;
+                    cursor: pointer;
+                }
+                .dot_active {
+                    background-color: @color-398be4;
+                }
+            }
+        }
+    }
+
+    .profession_brilliant{
+        ul{
+            width: 990px;
+            margin: auto;
+        }
+        li{
+            float: left;
+            margin-bottom: 20px;
+            & > div{
+                overflow: hidden;
+                text-overflow:ellipsis;
+                box-sizing: border-box;
+                padding: 10px;
+                border: 1px solid @color-eee;
+                height: 186px;
+                width: 482px;
+                padding-left: 80px;
+                div{
+                    left: 10px;
+                    top: -6px;
+                    background-color: @color-398be4;
+                    width: 54px;
+                    height: 54px;
+                    line-height: 54px;
+                    text-align: center;
+                    font-size: @font-24;
+                    font-weight: 500;
+                    color: @color-fff;
+                    img{
+                        top: 0;
+                        right: -6px;
+                    }
+                }
+                p{
+                    margin-top: 20px;
+                    line-height: 24px;
+                    span{
+                        color:@color-398be4;
+                    }
+                }
+                h3{
+                    font-size: @font-14;
+                    line-height: 24px;
+                }
+            }
+        }
+        .margin-20{
+            margin-right: 20px;
+        }
+    }
+    .profession_all{
+        background-color: @color-f7f7f7;
+        ul{
+            width: 990px;
+            margin: 0 auto;
+            li{
+                width: 190px;
+                height: 254px;
+                float: left;
+                margin-left: 10px;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+                border:1px solid @color-eee;
+                background-color: @color-fff;
+                text-align: center;
+                &:nth-child(5n+1){
+                    margin-left: 0;
+                }
+                div{
+                    margin: 20px 0;
+                    a{
+                        position: relative;
+                        img{
+                            width: 60px;
+                            height: 60px;
+                        }
+                        .w_photo_mask{
+                            display: inline-block;
+                            height: 61px;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            z-index: 2;
+                        }
+                    }
+                }
+                p{
+                    margin-bottom: 30px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    height: 19px;
+                }
+                h3{
+                    height: 19px;
+                    font-size: @font-14;
+                    margin-bottom: 20px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+                h4{
+                    a{
+                        padding: 10px 35px;
+                        background-color: @color-398be4;
+                        color: @color-fff;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}

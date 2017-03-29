@@ -1,0 +1,39 @@
+<div class="city_selector" v-if="visible">
+    <div class="content">
+        <div class="select">
+            <h3>选择城市</h3>
+            <a class="close" v-on:click="close()"></a>
+        </div>
+        <p class="sign_text">当前城市</p>
+        <ul class="city">
+            <li>{{currentCity.cityname}}</li>
+        </ul>
+        <p class="c_sign_text">直辖市</p>
+        <ul class="city">
+            <li>
+                <span v-for="city in plcData" v-bind:class="{current:currentCity.cityid == city.cityid}" v-on:click="selectPlcity(city)">{{city.cityname}}</span>
+            </li>
+        </ul>
+        <template v-for="rows in data">
+        <p class="letter">{{rows.initial}}</p>
+        <ul class="city">
+            <li v-for="province in rows.data" v-on:click="selectProvince(province)">{{province.provincename}}</li>
+        </ul>
+        </template>
+    </div>
+
+    <div class="mask_area" v-on:touchend="hideCity()">
+        <div class="mask"></div> 
+        <div class="mask_jt"></div>
+    </div>
+    <div class="cityDrawer" v-bind:class="{show: cityVisible}">
+        <img src="../../img/drawer.png" class="drawer">
+        <div class="cityBox">
+            <ul class="citys">
+                <li v-for="city in currentProvince" v-on:click="selectCity(city)" v-bind:class="{select:currentCity.cityid == city.cityid}">
+                    <a>{{city.cityname}}</a><span></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

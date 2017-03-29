@@ -1,0 +1,65 @@
+<div>
+	<page-header title="视频详情" page="video"></page-header>
+<!-- 文章详情主页面 -->
+    <div class="art_detail_page">
+
+		<!-- 占位 -->
+		<div class="occupy_seat"></div>
+
+		<!-- 文章内容 -->
+		<div id="youkuplayer"></div>
+		<div class="article_module">
+			<h1 class="art_main_title">{{video.shortTitle}}</h1>
+			<p  class="edit_msg">{{video.publishtime | date('yyyy-MM-dd') }}</p>
+		</div>
+
+		<!-- 点赞分享 -->
+		<div class="share_area">
+			<h5 class="item_title"><i></i>分享至</h5>
+			<ul class="clearfix">
+				<li><a class="good" id="good" v-on:click="vote()" v-bind:class="{isvote:isVoted}"><i></i><em>{{voteNum}}</em></a></li>
+				<li><a class="share" id="share" v-on:click="share()"><i></i><em>分享</em></a></li>
+			</ul>
+		</div>
+
+		<!-- 间隔 -->
+		<div class="jiange"></div>
+
+		<!-- 相关车型 -->
+        <video-related-carserials :id="videoId" type="video"></video-related-carserials>
+
+		<!-- 间隔 -->
+		<div class="jiange"></div>
+
+		<!-- 热门评论 -->
+        <article-comment :id="videoId" type="2"></article-comment>
+
+		<!-- 下载APP -->
+		<div class="down_app" id="down_app">
+			<a href="http://m.qichedaquan.com/app/qcdq.html" target="_blank" v-on:click="download">点击<span>下载汽车大全APP</span>立即评论</a>
+		</div>
+
+		<!-- 间隔 -->
+		<div class="jiange"></div>
+
+		<!-- 相关文章 -->
+        <video-more></video-more>
+
+
+    </div>
+
+	<div class="mask2" id="down_mask" v-on:click="hideDownload()"></div>
+
+	<div class="tips down_app_tip" id="android_tip">
+		<p>1、点击右上角 •••</p>
+		<p>2、选择<img src="../../img/browser.png">在浏览器中打开即可下载<span>汽车大全</span></p>
+		<i></i>
+	</div>
+
+	<div class="tips down_app_tip" id="ios_tip">
+		<p>1、点击右上角 •••</p>
+		<p>2、选择<img src="../../img/safari.png">在Safari中打开即可下载<span>汽车大全</span></p>
+		<i></i>
+	</div>
+
+</div>

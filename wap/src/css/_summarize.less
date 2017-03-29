@@ -1,0 +1,1598 @@
+/*****
+ *@author: jianingning
+ *@from: Global style summarize-zongshu   车型综述页
+ *@description:
+ *@date: name (2017.02.21)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_pubHead.less";
+@import "mod/mod_pubHeadNav.less";
+@import "mod/mod_carNav.less";
+@import "mod/mod_dealer.less";
+@import "mod/mod_selectCity.less";
+@import "mod/mod_footer.less";
+@import "mod/mod_goTop.less";
+@import "mod/mod_shareIcon.less";
+.wrap {
+    width: 100%;
+    background: #f4f5f7;
+
+    // 通栏广告位
+    .ad_bar{
+        width: 100%;
+        background-color: @bg-bar;
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+
+    /*banner*/
+    .zsh_banner {
+        position: relative;
+        width: 100%;
+        height: 6.667rem;
+
+        .zsh_banner {
+            display: inline-block;
+            width: 100%;
+        }
+        .img_title {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: .96rem;
+            line-height: .96rem;
+            background: #000;
+            filter:alpha(opacity=50);
+            opacity:.5;
+
+            span {
+                margin-left: .4rem;
+                font-size: 14px;
+                color: @color-fff;
+            }
+            .moreImg {
+                float: right;
+                margin-right: .4rem;
+                font-size: 14px;
+                color: @color-fff;
+
+                img {
+                    margin: .4rem 0 0 .133rem;
+                    display: inline-block;
+                    width: .12rem;
+                    height: .213rem;
+                }
+            }
+        }
+        .zsh_collect {
+            position: absolute;
+            top: .267rem;
+            right: 1.76rem;
+            display: inline-block;
+            width: .96rem;
+            height: .96rem;
+            background: url(../img/collect.png);
+            background-size: cover;
+        }
+        .zsh_share {
+            position: absolute;
+            top: .267rem;
+            right: .4rem;
+            display: inline-block;
+            width: .96rem;
+            height: .96rem;
+            background: url(../img/share.png);
+            background-size: cover;
+        }
+    }
+    /*车型*/
+    .carType {
+        padding: 0 .4rem;
+        height: 1.867rem;
+        border-bottom: 1px solid #ededed;
+        background: @color-fff;
+
+        .carLogo {
+            float: left;
+            margin-top: .267rem;
+            width: 1.333rem;
+            height: 1.333rem;
+
+            img {
+                width: 100%;
+            }
+        }
+        dd {
+            float: left;
+            margin-left: .267rem;
+            width: 59%;
+        }
+        .carName {
+            margin-top: .4rem;
+            font-size: 16px;
+        }
+        .carPrice {
+            margin-top: .133rem;
+            font-size: 14px;
+            color: #a6a6a6;
+
+            span {
+                color: #ff3131;
+            }
+        }
+        .xundijia {
+            float: right;
+            margin-top: -.4rem;
+            display: inline-block;
+            width: 2.133rem;
+            line-height: .8rem;
+            text-align: center;
+            background: #52adfe;
+            border-radius: 5px;
+            font-size: 13px;
+            color: @color-fff;
+            &:active {
+                background: #2799fe;
+            }
+        }
+    }
+    /*参数配置*/
+    .zsh_parameter {
+        padding: .333rem .4rem .267rem .4rem;
+        background: @color-fff;
+
+        .zsh_parameter_type {
+            margin-bottom: .333rem;
+
+            .zsh_parameter_name {
+                float: left;
+                font-size: 14px;
+                color: #999;
+            }
+            .zsh_parameter_list {
+                margin-left: .267rem;
+                display: inline-block;
+                width: 79.8%;
+                font-size: 14px;
+                color: #666;
+
+                span {
+                    margin-right: .267rem;
+                }
+                .zsh_parameter_content {
+                    margin-right: .4rem;
+                }
+                .gray,
+                .red,
+                .blue,
+                .green,
+                .brown,
+                .black {
+                    display: inline-block;
+                    width: .373rem;
+                    height: .373rem;
+                }
+                .gray {
+                    background: #747474;
+                }
+                .red {
+                    background: #f00;
+                }
+                .blue {
+                    background: #0012ff
+                }
+                .green {
+                    background: #04a300;
+                }
+                .brown {
+                    background: #a36800;
+                }
+                .black {
+                    background: #000;
+                }
+            }
+        }
+        .more {
+            margin-top: .067rem;
+            .more;
+        }
+    }
+    /*在售停售车型*/
+    .zsh_onsellCar {
+        margin-top: .4rem;
+        background: @color-fff;
+        width: 100%;
+        position: relative;
+
+        .onsellCar_list {
+            margin: 0 .4rem;
+            height: 1.147rem;
+            border-bottom: 1px solid #ebedef;
+
+            li {
+                float: left;
+                padding: 0 .08rem;
+                margin-right: .733rem;
+                height: 1.147rem;
+                line-height: 1.147rem;
+                font-size: 15px;
+                color: @color-tab-color;
+            }
+            .onsellCar_active {
+                border-bottom: 1px solid @color-main-blue;
+                color: @color-main-blue;
+            }
+        }
+        .onsellCar_contents {
+            .onsellCar_content {
+                padding-top: .267rem;
+                width: 100%;
+            }
+            .classify {
+                margin-left: .4rem;
+                height: 1.12rem;
+
+                li {
+                    position: relative;
+                    float: left;
+                    margin-right: 2.3%;
+                    width: 30%;
+                    height: .827rem;
+                    text-align: center;
+                    line-height: .827rem;
+                    border: 1px solid #e2e2e2;
+                    border-radius: 5px;
+                    font-size: 13px;
+                    color: #555;
+
+                    &:last-child {
+                        margin-right: none;
+                    }
+                    span {
+                        position: absolute;
+                        bottom: 4px;
+                        right: 4px;
+                        display: inline-block;
+                        width: 0;
+                        height: 0;
+                        border-bottom: .267rem solid #e2e2e2;
+                        border-left: .267rem solid transparent;
+                    }
+                }
+                .current_select {
+                    border-color: #2799fe;
+                    color: #2799fe;
+
+                    span {
+                        position: absolute;
+                        bottom: 4px;
+                        right: 4px;
+                        display: inline-block;
+                        width: 0;
+                        height: 0;
+                        border-bottom: .267rem solid #2799fe;
+                        border-left: .267rem solid transparent;
+                    }
+                }
+            }
+            .zsh_onsellCar_news {
+                background: #f4f5f7;
+
+                .tb_content {
+                    .onsellCar_sign {
+                        padding-left: .4rem;
+                        height: .8rem;
+                        line-height: .8rem;
+                        font-size: 12px;
+                        color: @color-tab-color;
+                        background: #ededed;
+                    }
+                    .onsellCar_news {
+                        margin-bottom: .133rem;
+                        padding-top: .547rem;
+                        background: @color-fff;
+                        overflow: hidden;
+                    }
+                    .onsellCar_news_type {
+                        height: .4rem;
+                        &:first-child {
+                            margin-bottom: .413rem;
+                        }
+                        .os_type {
+                            margin-right: .307rem;
+                            font-size: 16px;
+                            display: inline-block;
+                            width: 6rem;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+
+
+                            &:first-child {
+                                margin-left: .4rem;
+                            }
+                        }
+                        .os_price {
+                            float: right;
+                            margin-right: .4rem;
+                            font-size: 16px;
+                            color: #ff2727;
+                        }
+                        .os_fun {
+                            margin-left: .4rem;
+                            font-size: 13px;
+                            color: #999;
+                            float: left;
+                            margin-right: .2rem;
+                        }
+                        .os_welfare {
+                            float: left;
+                            margin-right: .16rem;
+                            display: inline-block;
+                            width: 1.0rem;
+                            height: .473rem;
+                            text-align: center;
+                            line-height: .473rem;
+                            background: #84c3ff;
+                            font-size: 13px;
+                            color: @color-fff;
+                        }
+                        .os_zhidaojia {
+                            float: right;
+                            margin-right: .4rem;
+                            font-size: 13px;
+                            color: #999;
+                        }
+                        .buyCar_count,
+                        .in_contrast,
+                        .os_xundijia {
+                            font-size: 14px;
+                        }
+                        .in_contrast_disabled {
+                            color: #a4a4a4;
+                        }
+                        .os_xundijia {
+                            color: #2896fe;
+                        }
+                        .onsellCar_link {
+                            display: inline-block;
+                            width: 32.4%;
+                            height: 1.0rem;
+                            text-align: center;
+                            line-height: 1.0rem;
+                            border-right: 1px solid #ebedef;
+                            &:last-child {
+                                border-right: none;
+                            }
+                        }
+                    }
+                }
+            }
+            /*筛选条件为空*/
+            .empty_condition {
+                position: relative;
+                height: 3.933rem;
+                display: none;
+
+                .empty_img {
+                    position: absolute;
+                    left: 50%;
+                    top: .473rem;
+                    margin-left: -3.34rem;
+                    display: inline-block;
+                    width: 2.44rem;
+                    height: 2.733rem;
+                }
+                .empty_text {
+                    position: absolute;
+                    top: 1.0rem;
+                    left: 50%;
+                    margin-left: -.5rem;
+                    display: inline-block;
+                    width: 4.967rem;
+                    font-size: 13px;
+                    color: #555;
+                }
+                .clear_condition {
+                    position: absolute;
+                    left: 50%;
+                    top: 1.9rem;
+                    margin-left: -.5rem;
+                    display: inline-block;
+                    width: 2.667rem;
+                    height: .8rem;
+                    text-align: center;
+                    line-height: .8rem;
+                    background: #52adfe;
+                    font-size: 13px;
+                    color: #fff;
+                    border-radius: 5px;
+                }
+            }
+        }
+        .swiper-wrapper {
+            transform: none;
+        }
+    }
+    /*文章列表*/
+    .zsh_article {
+        margin-top: .4rem;
+        padding: 0 .4rem .4rem .4rem;
+        background: @color-fff;
+
+        .demo_title {
+            height: .747rem /* 56/75 */;
+            padding-top: .32rem /* 24/75 */;
+            span {
+                font-size: 14px;
+                height: .4rem;
+                line-height: .4rem;
+                border-left: .107rem /* 8/75 */ solid #2899ff;
+                padding-left: .16rem;
+                display: inline-block;
+            }
+        }
+        .zsh_article_list {
+
+            li {
+                height: 1.173rem;
+                line-height: 1.173rem;
+                border-top: 1px solid #ebedef;
+
+                .article_type {
+                    float: left;
+                    padding-right: .2rem;
+                    margin-top: .333rem;
+                    display: inline-block;
+                    height: 0.5rem;
+                    line-height: .5rem;
+                    font-size: 14px;
+                    color: #999;
+                    border-right: 2px solid #a4a4a4;
+                }
+                .article_title {
+                    margin-left: .2rem;
+                    display: inline-block;
+                    font-size: 14px;
+                    width: 85%;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+
+                    &:active {
+                        color: #2799fe;
+                    }
+                }
+            }
+        }
+        .more {
+            .more;
+            margin-top: .133rem;
+        }
+    }
+    /*视频列表*/
+    .zsh_video {
+        margin-top: .4rem;
+        padding: 0 .4rem .4rem .4rem;
+        background: @color-fff;
+
+        .demo_title {
+            height: .747rem /* 56/75 */;
+            padding-top: .32rem /* 24/75 */;
+            span {
+                font-size: 14px;
+                height: .4rem;
+                line-height: .4rem;
+                border-left: .107rem /* 8/75 */ solid #2899ff;
+                padding-left: .16rem;
+                display: inline-block;
+            }
+        }
+        dl {
+            float: left;
+            margin-right: 2%;
+            width: 48%;
+
+            dt {
+                position: relative;
+                width: 100%;
+
+                img {
+                    display: inline-block;
+                    width: 100%;
+                    height: 2.933rem;
+                }
+                .playBtn {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    margin: -.4rem 0 0 -.4rem;
+                    display: inline-block;
+                    width: .8rem;
+                    height: .8rem;
+                    background: url(../img/play_btn.png);
+                    background-size: cover;
+                }
+                .time_mask {
+                    position: absolute;
+                    bottom: .08rem;
+                    right: .08rem;
+                    display: block;
+                    width: 1.093rem;
+                    height: .467rem;
+                    border-radius: 5px;
+                    background: #000;
+                    filter:alpha(opacity=60);
+                    opacity:.6;
+                }
+                .zsh_video_time {
+                    position: absolute;
+                    bottom: .08rem;
+                    right: .08rem;
+                    display: block;
+                    width: 1.093rem;
+                    height: .467rem;
+                    text-align: center;
+                    line-height: .467rem;
+                    font-size: 11px;
+                    color: @color-fff;
+                }
+            }
+            dd {
+                margin: .107rem 0 .533rem 0;
+                width: 100%;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                line-height: .507rem;
+                font-size: 15px;
+
+                &:active {
+                    color: #2799fe;
+                }
+            }
+        }
+        .even {
+            margin-right: 0;
+        }
+        .more {
+            .more;
+        }
+    }
+    /*图片列表*/
+    .zsh_imgs {
+        margin-top: .4rem;
+        padding: 0 .4rem .4rem .4rem;
+        background: @color-fff;
+
+        .demo_title {
+            height: .747rem /* 56/75 */;
+            padding-top: .32rem /* 24/75 */;
+            span {
+                font-size: 14px;
+                height: .4rem;
+                line-height: .4rem;
+                border-left: .107rem /* 8/75 */ solid #2899ff;
+                padding-left: .16rem;
+                display: inline-block;
+            }
+        }
+        dl {
+            float: left;
+            margin-right: 2%;
+            width: 48%;
+
+            dt {
+                position: relative;
+                width: 100%;
+
+                img {
+                    display: inline-block;
+                    width: 100%;
+                    height: 2.933rem;
+                }
+            }
+            dd {
+                margin: .107rem 0 .533rem 0;
+                width: 100%;
+                line-height: .507rem;
+                font-size: 15px;
+
+                &:active {
+                    color: #2799fe;
+                }
+            }
+        }
+        .even {
+            margin-right: 0;
+        }
+        .more {
+            .more;
+        }
+    }
+    /*竞品车型*/
+    .zsh_jingpin {
+        margin-top: .4rem;
+        padding: 0 .4rem .133rem .4rem;
+        background: @color-fff;
+
+        .demo_title {
+            height: .747rem /* 56/75 */;
+            padding-top: .32rem /* 24/75 */;
+            span {
+                font-size: 15px;
+                height: .4rem;
+                line-height: .4rem;
+                border-left: .107rem /* 8/75 */ solid #2899ff;
+                padding-left: .16rem;
+                display: inline-block;
+            }
+        }
+        .jingpin_car {
+            float: left;
+            margin: 0 2% .4rem 0;
+            width: 47.75%;
+
+            dt {
+                width: 100%;
+                margin-bottom: .053rem;
+
+                img {
+                    width: 100%;
+                    height: 2.667rem;
+                }
+            }
+            .jingpin_name {
+                font-size: 15px;
+                text-align: center;
+            }
+            .jingpin_price {
+                margin: .267rem 0;
+                font-size: 12px;
+                color: #ff3131;
+                text-align: center;
+            }
+            .jingpin_xundijia {
+                text-align: center;
+                a {
+                    display: inline-block;
+                    width: 2.933rem;
+                    line-height: .8rem;
+                    text-align: center;
+                    background: #52adfe;
+                    font-size: 13px;
+                    color: @color-fff;
+                    border-radius: 5px;
+                    &:active {
+                        background: #2799fe;
+                    }
+                }
+            }
+        }
+        .even {
+            margin-right: 0;
+        }
+    }
+    /*面包屑*/
+    .crumbs {
+        margin-top: .4rem;
+        padding: 0 .4rem;
+        height: 1.067rem;
+        line-height: 1.067rem;
+        border-bottom: 1px solid  #ebedef;
+        background: @color-fff;
+
+        a {
+           font-size: 14px;
+           color: #666;
+
+           &:last-child {
+            color: #999;
+           }
+        }
+        img {
+            margin: .44rem .133rem 0 .133rem;
+            display: inline-block;
+            width: .12rem;
+            height: .213rem;
+        }
+    }
+}
+/*半透明遮罩*/
+.mask2,
+.mask3,
+.zsh_sf_mask,
+.error_mask {
+    position: fixed;
+    top: 1.173rem;
+    left: 0;
+    z-index: 51;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    filter:alpha(opacity=60);
+    opacity:.6;
+    display: none;
+}
+.mask2,.mask3,.error_mask {
+    top: 0;
+}
+.mask3 {
+    z-index: 60;
+}
+.zsh_sf_mask {
+    top: 0;
+    z-index: 4;
+}
+/*获取地理位置失败提示*/
+.address_error {
+    width: 5.333rem;
+    height: 2.667rem;
+    background: #fff;
+    border-radius: 8px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 52;
+    font-size: 14px;
+    margin: -1.336rem 0 0 -2.667rem;
+    display: none;
+
+    .address_error_text {
+        height: 1.333rem;
+        line-height: 1.333rem;
+        text-align: center;
+        border-bottom: 1px solid #f3f3f3;
+    }
+    .address_error_ok {
+        text-align: center;
+        height: 1.333rem;
+        line-height: 1.333rem;
+        cursor: pointer;
+    }
+
+}
+/*收藏成功 取消成功*/
+.collect_success {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -.6rem 0 0 -1.6rem;
+    width: 3.2rem;
+    height: 1.2rem;
+    background: #000;
+    filter:alpha(opacity=60);
+    opacity: .6;
+    border-radius: 8px;
+    display: none;
+}
+.success_text {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -.6rem 0 0 -1.6rem;
+    display: inline-block;
+    width: 3.2rem;
+    height: 1.2rem;
+    text-align: center;
+    line-height: 1.2rem;
+    font-size: 16px;
+    color: @color-fff;
+    display: none;
+}
+/*年款、排量、变速箱抽屉*/
+.slider_btn {
+    position: fixed;
+    top: 50%;
+    left: 1.093rem;
+    margin-top: -.32rem;
+    z-index: 52;
+    width: .693rem;
+    height: .64rem;
+    display: none;
+}
+.zsh_drawer {
+    width: 7.667rem;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: right .5s;
+    z-index: 100;
+    border-left: 1px solid #d2d2d2;
+    background: @color-fff;
+         overflow-y: scroll;
+    &::-webkit-scrollbar{
+        width: 0;
+    }
+
+    .drawerBox {
+        width: 7.667rem;
+        background: @color-fff;
+
+        .drawerList {
+            padding-bottom: 1.333rem;
+            li {
+                padding-left: 0.4rem;
+                height: 1.484rem;
+                border-bottom: 1px solid #f3f3f3;
+                line-height: 1.484rem;
+                font-size: 15px;
+            }
+            .zsh_select {
+                color: #2799fe;
+            }
+        }
+    }
+}
+/*加入对比悬浮菜单*/
+.zsh_comparison {
+    position: fixed;
+    left: 4%;
+    bottom: .267rem;
+    z-index: 50;
+    width: 92%;
+    height: 1.067rem;
+    display: none;
+
+    div {
+        float: left;
+    }
+    .zsh_cps_share,
+    .zsh_cps_duibi{
+        width: 24.8%;
+        height: 1.067rem;
+        text-align: center;
+        line-height: 1.067rem;
+        border-right: 1px solid #fff;
+        background: #ffa903;
+    }
+    .zsh_cps_share {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+
+        img {
+            display: inline-block;
+            width: .387rem;
+            height: .387rem;
+            margin-top: .333rem;
+        }
+        span {
+            font-size: 14px;
+            color: #fff;
+        }
+    }
+    .zsh_cps_duibi {
+        .duibi,
+        .duibiNum {
+            font-size: 14px;
+            color: #fff;
+        }
+        .duibiNum {
+
+        }
+    }
+    .zsh_cps_xundijia{
+        width: 50%;
+        height: 1.067rem;
+        text-align: center;
+        line-height: 1.067rem;
+        background: #2896fe;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+
+        a {
+            font-size: 14px;
+            color: #fff;
+        }
+    }
+}
+/*分享弹层*/
+.zsh_shareLayer {
+    position: fixed;
+    left: 0;
+    bottom: -4.36rem;
+    z-index: 65;
+    width: 100%;
+    height: 4.36rem;
+    background: #fff;
+
+    ul {
+        padding-top: .64rem;
+        li {
+            float: left;
+            width: 20%;
+            height: 1.72rem;
+            text-align: center;
+
+            .zsh_wx,
+            .zsh_pyq,
+            .zsh_qq,
+            .zsh_wb,
+            .zsh_kj {
+                display: block;
+                margin: 0 auto .147rem auto;
+                width: 1.173rem;
+                height: 1.173rem;
+            }
+            .zsh_wx {
+                background: url(../img/wx.png) no-repeat;
+                background-size: contain;
+                &:active {
+                    background: url(../img/wx_press.png) no-repeat;
+                    background-size: contain;
+                }
+            }
+            .zsh_pyq {
+                background: url(../img/pyq.png) no-repeat;
+                background-size: contain;
+                &:active {
+                    background: url(../img/pyq_press.png) no-repeat;
+                    background-size: contain;
+                }
+            }
+            .zsh_qq {
+                background: url(../img/qq.png) no-repeat;
+                background-size: contain;
+                &:active {
+                    background: url(../img/qq_press.png) no-repeat;
+                    background-size: contain;
+                }
+            }
+            .zsh_wb {
+                background: url(../img/wb.png) no-repeat;
+                background-size: contain;
+                &:active {
+                    background: url(../img/wb_press.png) no-repeat;
+                    background-size: contain;
+                }
+            }
+            .zsh_kj {
+                background: url(../img/kj.png) no-repeat;
+                background-size: contain;
+                &:active {
+                    background: url(../img/kj_press.png) no-repeat;
+                    background-size: contain;
+                }
+            }
+            span {
+                font-size: 11px;
+            }
+        }
+    }
+    .zsh_cancel {
+        margin: .627rem 0 0 4%;
+        width: 92%;
+        height: .96rem;
+        text-align: center;
+        line-height: .96rem;
+        background: #edf7ff;
+        font-size: 13px;
+        color: #52adfe;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+    }
+}
+/*微信分享如果是safari浏览器*/
+.zsh_sf_layer {
+    position: fixed;
+    bottom: 3.947rem;
+    left: 4%;
+    z-index: 5;
+    width: 92%;
+    height: 4.933rem;
+    background: #fff;
+    border-radius: 8px;
+    display: none;
+
+    .zsh_sf_arrowDown {
+        position: absolute;
+        bottom: -.173rem;
+        left: .613rem;
+        width: 0px;
+        height: 0px;
+        border-left: .213rem solid transparent;
+        border-right: .213rem solid transparent;
+        border-top: .213rem solid #fff;
+    }
+    .zsh_sf_wx {
+        position: absolute;
+        left: 0;
+        bottom: -1.393rem;
+        display: inline-block;
+        width: 1.173rem;
+        height: 1.173rem;
+        background: url(../img/wx.png);
+        background-size: contain;
+    }
+    p {
+        margin: .3rem 0 0 .627rem;
+        font-size: 13px;
+
+        .share_img1 {
+            display: inline-block;
+            width: 0.44rem;
+            height: 0.613rem;
+        }
+        .share_img2 {
+            display: inline-block;
+            width: 0.587rem;
+            height: 0.587rem;
+        }
+        .share_img3 {
+            display: inline-block;
+            width: 1.0rem;
+            height: 0.6rem;
+        }
+        .share_img4 {
+            display: inline-block;
+            width: 0.587rem;
+            height: 0.587rem;
+        }
+        .share_img5 {
+            display: inline-block;
+            width: 0.6rem;
+            height: 0.587rem;
+        }
+    }
+}
+/*适配文字大小*/
+[data-dpr="2"] .wrap {
+    .zsh_banner {
+        span,
+        .moreImg {
+            font-size: 28px;
+        }
+    }
+    .carType {
+        .carName {
+            font-size: 32px;
+        }
+        .carPrice {
+            font-size: 28px;
+        }
+        .xundijia {
+            font-size: 26px;
+        }
+    }
+    .zsh_parameter {
+        .zsh_parameter_name,
+        .zsh_parameter_list {
+            font-size: 28px;
+        }
+        .more {
+            font-size: 26px;
+        }
+    }
+    .zsh_onsellCar {
+        .onsellCar_list {
+            li {
+                font-size: 30px;
+            }
+        }
+        .onsellCar_content {
+            .classify {
+                li {
+                    font-size: 26px;
+                }
+            }
+            .zsh_onsellCar_news {
+                .tb_content {
+                    .onsellCar_sign {
+                        font-size: 24px;
+                    }
+                    .onsellCar_news_type {
+                        .os_type,
+                        .os_price {
+                            font-size: 32px;
+                        }
+                        .os_fun,
+                        .os_welfare,
+                        .os_zhidaojia {
+                            font-size: 26px;
+                        }
+                        .buyCar_count,
+                        .in_contrast,
+                        .os_xundijia {
+                            font-size: 28px;
+                        }
+                    }
+                }
+            }
+            .empty_condition {
+                .empty_text,
+                .clear_condition{
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+    .zsh_article {
+        .demo_title {
+            span {
+                font-size: 28px;
+            }
+        }
+        .zsh_article_list {
+            li {
+                .article_type,
+                .article_title {
+                    font-size: 28px;
+                }
+            }
+        }
+        .more {
+            font-size: 26px;
+        }
+    }
+    .zsh_video {
+        .demo_title {
+            span {
+                font-size: 28px;
+            }
+        }
+        dl {
+            dt {
+                .zsh_video_time {
+                    font-size: 22px;
+                }
+            }
+            dd {
+                font-size: 30px;
+            }
+        }
+        .more {
+            font-size: 26px;
+        }
+    }
+    .zsh_imgs {
+        .demo_title {
+            span {
+                font-size: 28px;
+            }
+        }
+        dl {
+            dd {
+                font-size: 30px;
+            }
+        }
+        .more {
+            font-size: 26px;
+        }
+    }
+    .zsh_jingpin {
+        .demo_title {
+            span {
+                font-size: 28px;
+            }
+        }
+        .jingpin_car {
+            .jingpin_name {
+                font-size: 30px;
+            }
+            .jingpin_price {
+                font-size: 24px;
+            }
+            .jingpin_xundijia {
+                a {
+                   font-size: 26px;
+                }
+            }
+        }
+    }
+    .crumbs {
+        a {
+            font-size: 28px;
+        }
+    }
+}
+[data-dpr="2"] .success_text {
+    font-size: 32px;
+}
+[data-dpr="2"] .address_error {
+    font-size: 28px;
+}
+[data-dpr="2"] .zsh_drawer {
+    .drawerBox {
+        .drawerList {
+            li {
+                font-size: 30px;
+            }
+        }
+    }
+}
+[data-dpr="2"] .zsh_comparison {
+    .zsh_cps_share {
+        span {
+            font-size: 28px;
+        }
+    }
+    .zsh_cps_duibi {
+        .duibi,
+        .duibiNum {
+            font-size: 28px;
+        }
+    }
+    .zsh_cps_xundijia {
+        a {
+           font-size: 28px;
+        }
+    }
+}
+[data-dpr="2"] .zsh_shareLayer {
+    ul {
+        li {
+            span {
+                font-size: 22px;
+            }
+        }
+    }
+    .zsh_cancel {
+        font-size: 26px;
+    }
+}
+[data-dpr="2"] .zsh_sf_layer {
+    p {
+        font-size: 26px;
+    }
+}
+[data-dpr="3"] .wrap {
+    .zsh_banner {
+        span,
+        .moreImg {
+            font-size: 42px;
+        }
+    }
+    .carType {
+        .carName {
+            font-size: 48px;
+        }
+        .carPrice {
+            font-size: 32px;
+        }
+        .xundijia {
+            font-size: 39px;
+        }
+    }
+    .zsh_parameter {
+        .zsh_parameter_name,
+        .zsh_parameter_list {
+            font-size: 42px;
+        }
+        .more {
+            font-size: 39px;
+        }
+    }
+    .zsh_onsellCar {
+        .onsellCar_list {
+            li {
+                font-size: 45px;
+            }
+        }
+        .onsellCar_content {
+            .classify {
+                li {
+                    font-size: 39px;
+                }
+            }
+            .zsh_onsellCar_news {
+                .tb_content {
+                    .onsellCar_sign {
+                        font-size: 36px;
+                    }
+                    .onsellCar_news_type {
+                        .os_type,
+                        .os_price {
+                            font-size: 48px;
+                        }
+                        .os_fun,
+                        .os_welfare,
+                        .os_zhidaojia {
+                            font-size: 39px;
+                        }
+                        .buyCar_count,
+                        .in_contrast,
+                        .os_xundijia {
+                            font-size: 42px;
+                        }
+                    }
+                }
+            }
+            .empty_condition {
+                .empty_text,
+                .clear_condition {
+                    font-size: 39px;
+                }
+            }
+        }
+    }
+    .zsh_article {
+        .demo_title {
+            span {
+                font-size: 42px;
+            }
+        }
+        .zsh_article_list {
+            li {
+                .article_type,
+                .article_title {
+                    font-size: 42px;
+                }
+            }
+        }
+        .more {
+            font-size: 39px;
+        }
+    }
+    .zsh_video {
+        .demo_title {
+            span {
+                font-size: 42px;
+            }
+        }
+        dl {
+            dt {
+                .zsh_video_time {
+                    font-size: 33px;
+                }
+            }
+            dd {
+                font-size: 45px;
+            }
+        }
+        .more {
+            font-size: 39px;
+        }
+    }
+    .zsh_imgs {
+        .demo_title {
+            span {
+                font-size: 42px;
+            }
+        }
+        dl {
+            dd {
+                font-size: 45px;
+            }
+        }
+        .more {
+            font-size: 39px;
+        }
+    }
+    .zsh_jingpin {
+        .demo_title {
+            span {
+                font-size: 42px;
+            }
+        }
+        .jingpin_car {
+            .jingpin_name {
+                font-size: 45px;
+            }
+            .jingpin_price {
+                font-size: 42px;
+            }
+            .jingpin_xundijia {
+                a {
+                    font-size: 39px;
+                }
+            }
+        }
+    }
+    .crumbs {
+        a {
+            font-size: 42px;
+        }
+    }
+}
+[data-dpr="3"] .success_text {
+    font-size: 48px;
+}
+[data-dpr="3"] .address_error {
+    font-size: 42px;
+}
+[data-dpr="3"] .zsh_drawer {
+    .drawerBox {
+        .drawerList {
+            li {
+                font-size: 45px;
+            }
+        }
+    }
+}
+[data-dpr="3"] .zsh_comparison {
+    .zsh_cps_share {
+        span {
+            font-size: 42px;
+        }
+    }
+    .zsh_cps_duibi {
+        .duibi,
+        .duibiNum {
+            font-size: 42px;
+        }
+    }
+    .zsh_cps_xundijia {
+        a {
+           font-size: 42px;
+        }
+    }
+}
+[data-dpr="3"] .zsh_shareLayer {
+    ul {
+        li {
+            span {
+                font-size: 33px;
+            }
+        }
+    }
+    .zsh_cancel {
+        font-size: 39px;
+    }
+}
+[data-dpr="3"] .zsh_sf_layer {
+    p {
+        font-size: 39px;
+    }
+}
+/*匹配dpr=1 最大320*/
+[data-dpr="1"] .wrap{
+    @media (max-width: 320px){
+        .zsh_parameter {
+            .zsh_parameter_type {
+                .zsh_parameter_list {
+                    width: 78%;
+                }
+            }
+        }
+        .zsh_onsellCar {
+            .onsellCar_contents {
+                .zsh_onsellCar_news {
+                    .tb_content {
+                        .onsellCar_news_type {
+                            a {
+                                width: 32.3%;
+                            }
+                            .os_welfare {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .zsh_article {
+            .zsh_article_list {
+                li {
+                    .article_title {
+                        width: 83%;
+                    }
+                }
+            }
+        }
+        .zsh_video {
+            dl {
+                dt {
+                    .time_mask,
+                    .zsh_video_time {
+                        width: 1.293rem;
+                        height: .537rem;
+                    }
+                }
+            }
+        }
+    }
+}
+[data-dpr="1"] .zsh_comparison {
+    @media (max-width: 320px){
+        .zsh_cps_share,
+        .zsh_cps_duibi {
+            width: 24.5%;
+        }
+    }
+}
+/*匹配dpr=1 320-360*/
+[data-dpr="1"] .zsh_comparison{
+    @media  (max-width: 360px) and (min-width : 330px){
+        .zsh_cps_share,
+        .zsh_cps_duibi {
+            width: 24.5%;
+        }
+    }
+}
+/*匹配dpr=1 360-384*/
+[data-dpr="1"] .zsh_comparison{
+    @media  (max-width: 384px) and (min-width : 370px){
+        .zsh_cps_share,
+        .zsh_cps_duibi {
+            width: 24.5%;
+        }
+    }
+}
+/*匹配dpr=2 iphone4*/
+.wrap {
+    @media (device-height:480px) and (-webkit-min-device-pixel-ratio:2) {
+        .zsh_parameter {
+            .zsh_parameter_type {
+                .zsh_parameter_list {
+                    width: 78%;
+                }
+            }
+        }
+        .zsh_onsellCar {
+            .onsellCar_contents {
+                .zsh_onsellCar_news {
+                    .tb_content {
+                        .onsellCar_news_type {
+                            .os_welfare {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .zsh_article {
+            .zsh_article_list {
+                li {
+                    .article_title {
+                        width: 83%;
+                    }
+                }
+            }
+        }
+    }
+}
+/*匹配dpr=2 iphone5*/
+.wrap {
+    @media (device-height:568px) and (-webkit-min-device-pixel-ratio:2) {
+        .zsh_parameter {
+            .zsh_parameter_type {
+                .zsh_parameter_list {
+                    width: 78%;
+                }
+            }
+        }
+        .zsh_onsellCar {
+            .onsellCar_contents {
+                .zsh_onsellCar_news {
+                    .tb_content {
+                        .onsellCar_news_type {
+                            .os_welfare {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .zsh_article {
+            .zsh_article_list {
+                li {
+                    .article_title {
+                        width: 83%;
+                    }
+                }
+            }
+        }
+    }
+}
+.choice_car{
+    position: fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height: 100%;
+    display: none;
+    background: #fff;
+    z-index: 11;
+}
+.choice_main{height: 100%;overflow: auto}

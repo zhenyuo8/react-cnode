@@ -1,0 +1,56 @@
+<div class="header" v-on:touchmove.stop="fn">
+<!--mask遮罩-->
+    <div class="nav_mask" v-on:click="toggle()" v-bind:class="{nav_mask_show:visible}"></div>
+    <div class="fixbox">
+        <!--mod-nav-->
+        <div class="nav_menu">
+            <ul class="clearfix" v-on:click="toggle()">
+                <li v-bind:class="{nav_active: page=='index' }">
+                    <router-link :to="getNavURL('index')">车型</router-link>
+                </li>
+                <li v-bind:class="{nav_active: page=='price' }">
+                    <router-link :to="getNavURL('price')">报价</router-link>
+                </li>
+                <li v-bind:class="{nav_active: page=='pic' }">
+                    <router-link :to="getNavURL('pic')">图片</router-link>
+                </li>
+                <li v-bind:class="{nav_active: page=='param' }">
+                    <router-link :to="getNavURL('param')">配置</router-link>
+                </li>
+                <li v-bind:class="{nav_active: page=='news' }">
+                    <router-link :to="getNavURL('news')">评测</router-link>
+                </li>
+                <li v-bind:class="{nav_active: page=='dealer' }">
+                    <router-link :to="getNavURL('dealer')">经销商</router-link>
+                </li>
+                <li v-bind:class="{nav_active: page=='tj' }">
+                    <router-link :to="getNavURL('tj')">同级车</router-link>
+                </li>
+                <li v-bind:class="{nav_active: page=='gz' }">
+                    <router-link :to="getNavURL('gz')">关注</router-link>
+                </li>
+            </ul>
+        </div>
+        <!--mod-head-->
+        <div class="head">
+            <h1>{{title}}<slot name="title"></slot></h1>
+            <ul>
+                <slot name="btns"></slot>
+                <li v-bind:bdtag="getBdTag('_ShareButton_Clicked')" v-on:click="share()" v-show="page!=='dealer'"> 
+                    <span class="share_btn"></span> <span>分享</span> 
+                </li>
+                <li v-bind:bdtag="getBdTag('_ChangeButton_Clicked')">
+                    <router-link :to="'/'" reload>
+                        <span class="change_btn"></span> <span>换车</span>
+                    </router-link> 
+                </li>
+                <li v-bind:bdtag="getBdTag('_NavigationButton_Clicked')" v-on:click="toggle()" v-show="!visible" class="nav"> 
+                    <span class="nav_btn"></span> <span>导航</span> 
+                </li>
+                <li v-on:click="toggle()" v-show="visible" class="up"> 
+                    <span class="up_btn"></span> <span>收起</span> 
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

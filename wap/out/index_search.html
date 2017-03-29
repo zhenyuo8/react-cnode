@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="telephone=no,email=no" name="format-detection">
+	<meta name="description" content="汽车大全搜索，汇集各大汽车网站车型大全,最新汽车报价,汽车图片,汽车资讯,汽车论坛,口碑,答疑,经销商,4S店,视频,二手车,汽车网址大全等信息，为您提供最全的汽车大全信息。"/>
+	<meta name="keywords" content="汽车,汽车搜索,汽车搜索网站"/>
+	<script src="js/flexible_css.js"></script>
+	<script src="js/flexible.js"></script>
+	<title>汽车搜索网站｜最新汽车报价｜汽车图片｜汽车口碑-汽车大全搜索</title>
+
+	<link rel="stylesheet" href="http://static.qcdqcdn.com:8888/wap/css/base.css">
+	<link rel="stylesheet" href="http://static.qcdqcdn.com:8888/wap/css/search.css">
+</head>
+
+<body>
+	<!-- 搜索主页面 -->
+    <div class="search_car_page">
+
+		<!-- 搜索框 -->
+		<div class="search_bar clearfix">
+			<div class="search_area">
+                <span class="search_btn" id="searchBtn"></span>
+                <input class="search_input" type="text" placeholder="请输入想找的车">
+				<i class="delete_text"></i>
+			</div>
+			<a class="cancel" id="cancel" href="#">取消</a>
+		</div>
+
+		<!-- 热门车型 -->
+		<div class="search_module search_hot">
+			<h2 class="search_title">热门车型</h2>
+			<ul class="hot_list clearfix">
+				<li><a href="#">哈佛H6</a></li>
+				<li><a href="#">陆风X7</a></li>
+				<li><a href="#">长安CS75</a></li>
+				<li><a href="#">创酷</a></li>
+				<li><a href="#">翼博</a></li>
+				<li><a href="#">荣威X50</a></li>
+			</ul>
+		</div>
+
+		<!-- 搜索历史 -->
+		<div class="search_module search_history">
+			<h2 class="search_title clearfix">
+				<span>搜索历史</span>
+				<a class="delete_history" id="delete_history" href="#">清空</a>
+			</h2>
+			<ul class="history_list">
+				<!-- <li><a href="#">坤宝X25</a></li>
+				<li><a href="#">标志308(进口)</a></li>
+				<li><a href="#">创酷</a></li> -->
+			</ul>
+		</div>
+
+		<!-- 联想词 -->
+		<div class="sh_relevance">
+			<ul class="result_list">
+				<li><a href="#">奥迪Q3</a></li>
+				<li><a href="#">奥迪A4L</a></li>
+				<li><a href="#">奥迪A3</a></li>
+				<li><a href="#">奥迪Q7(进口)</a></li>
+				<li><a href="#">奥迪A8L(进口)</a></li>
+				<li><a href="#">奥迪TT(进口)</a></li>
+				<li><a href="#">奥迪A5(进口)</a></li>
+				<li><a href="#">奥迪Q5(进口)</a></li>
+			</ul>
+            <div class="load_more">
+                <a href="#">加载更多<img src="http://static.qcdqcdn.com:8888/wap/img/down.png"></a>
+            </div>
+			<div class="noresult">
+				<div class="img"></div>
+				<div class="text">没有搜索到相关车型</div>
+			</div>
+		</div>
+    </div>
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/search.js"></script>
+</body>
+</html>

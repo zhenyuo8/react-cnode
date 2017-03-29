@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax列表加载</title>
+</head>
+<body>
+<div class="container">
+
+    <ol class="content"></ol>
+
+    <div class="load_more_module"></div>
+
+</div>
+<script src="../src/js/libs/jquery.js"></script>
+<script src="../src/js/libs/underscore.js"></script>
+<script src="../src/js/components/listAjaxLoad.js"></script>
+<script>
+    $(function(){   
+        new ListAjaxLoad({  
+            ajax: { 
+                url: 'http://cmsdynamic.wanmei.com/webSiteService/articleList/3',
+                data: { 
+                    articleType: 4
+                },
+                dataType: 'jsonp'
+            },
+            params: {   
+                pageSize: 'limit',
+                start: 'offset'
+            },
+            dataFilter: function(data){
+                return {    
+                    totalSize: data.result.total,
+                    data: data.result.rows
+                }
+            },
+            initSize: 10,
+            size: 5,
+            listEl: '.content',
+            moreEl: '.load_more_module',
+            template: function(){
+                return '<% _.each(data, function (item) { %>\
+                <li class="outer">\
+                    <%= item.title %>\
+                </li>\
+            <% }); %>'
+          }
+        })
+    })
+</script>
+</body>
+</html>

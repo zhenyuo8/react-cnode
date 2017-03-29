@@ -1,0 +1,201 @@
+/*****
+ *@author: jianingning
+ *@from: Global style mod_carMenu
+ *@description: 何在朋
+ *@date: name (2017.02.04)
+*/
+@import (reference) "../public";
+
+.imgs_c_top {
+    .imgs_c_crumbs {
+        height: 50px;
+        line-height: 50px;
+        color: @color-999;
+
+        a {
+            .inline-block;
+            margin: 0 8px;
+            color: @color-666;
+
+            &:last-child {
+                color: @color-398be4;
+                cursor: text;
+            }
+            &:hover {
+                color: @color-398be4;
+            }
+        }
+    }
+    .imgs_c_list {
+        height: 42px;
+        padding-top: 20px;
+        border: 1px solid @color-c4;
+        border-bottom: none;
+        padding-left: 12px;
+        position: relative;
+
+        .imgs_car_sign {
+            margin-top: -6px;
+            .inline-block;
+            float: left;
+            img{
+                width:40px;
+                height:40px;
+            }
+        }
+        .imgs_car_name {
+            font-size: @font-20;
+            color: @color-333;
+            font-weight: 700;
+            margin-left: 12px;
+            .inline-block;
+            float: left;
+        }
+        .imgs_car_year {
+            float: left;
+            margin-top: 5px;
+            li {
+                float: left;
+                width: 67px;
+                text-align: center;
+                border-right: 1px solid @color-c4;
+                .cursor;
+                &:hover {
+                    a {
+                        color: @color-398be4;
+                        text-decoration: underline;
+                    }
+                }
+                .imgs_down {
+                    float: right;
+                    margin-top: 5px;
+                    margin-right: 20px;
+                    .inline-block;
+                    width: 9px;
+                    height: 7px;
+                    background-image: url("../img/sprite.png");
+                    background-position: 0px -74px;
+                }
+                .tsYear {
+                    margin-left: 6px;
+                }
+            }
+            .imgs_no_border {
+                border-right: 0px;
+                position: relative;
+                width: 88px;
+                padding-left: 7px;
+                .stop_list_w {
+                    height: 20px;
+                    ol{
+                    position: absolute;
+                    width: 80px;
+                    top: 25px;
+                    left: 4px;
+                    border: 1px solid @color-333;
+                    border-right: none;
+                    border-bottom-width:4px;
+                    background: @color-fff;
+                    z-index: 200;
+                    display:none;
+                    }
+                    .stop_list {
+                        width: 80px;
+                        li {
+                            height: 32px;
+                            width:100%;
+                            line-height: 32px;
+                            border-bottom:1px solid @color-eee;
+                            text-align: center;
+                            border-right: 1px solid @color-333;
+                            a {
+                                color: @color-333;
+                                text-decoration: none;
+                            }
+                            &:hover  {
+                                background: @color-398be4;
+                                a {
+                                    color: @color-fff;
+                                }
+                            }
+                        }
+                        .s_no_border {
+                            border-bottom: none;
+                        }
+                    }
+                }
+                &:hover{
+                    ol{
+                        display: block;
+                    }
+                }
+            }
+            .imgs_year_b {
+                a {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    .imgs_car_type {
+        height: 31px;
+        border-top: @border-b-333;
+        border-bottom: 1px solid @color-c4;
+        background: @color-eee;
+        padding-left: 12px;
+        li {
+            float: left;
+            font-size: @font-16;
+            color: @color-333;
+            height: 31px;
+            line-height: 31px;
+            border-left: 1px solid @color-eee;
+            border-right: 1px solid @color-eee;
+            a {
+                .inline-block;
+                padding: 0 12px;
+
+            }
+            // &:hover{
+            //     border-color: @color-c4;
+            //     background: @color-fff;
+            //     height: 32px;
+            //     a {
+            //         height: 32px;
+            //         border-top: 4px solid @color-1673d9;
+            //         margin-top: -4px;
+            //         color:#333;
+            //     }
+            // }
+            &.no_click{
+                a{
+                    color:#ccc;
+                }
+            }
+        }
+        .imgs_current {
+            border-color: @color-c4;
+            background: @color-fff;
+            height: 32px;
+            a {
+                height: 32px;
+                border-top: 4px solid @color-1673d9;
+                margin-top: -4px;
+                color:#333;
+                cursor: default;
+            }
+        }
+        .no_h:hover{
+            border-color: @color-c4;
+            background: @color-fff;
+            height: 32px;
+            a {
+                height: 32px;
+                border-top: 4px solid @color-1673d9;
+                margin-top: -4px;
+                color:#333;
+                cursor: default;
+            }
+        }
+    }
+}

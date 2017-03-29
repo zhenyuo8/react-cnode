@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>购车计算器｜买车计算器｜购车费用计算器－汽车大全</title>
+    <meta content="购车计算器" name="keywords">
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="js/flexible.js"></script>
+    <script src="js/flexible_css.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/tab.js"></script>
+    <script src="js/pubNav.js"></script>
+    <script src="js/calculator.js"></script>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/calculator_empty.css"/>
+</head>
+<body>
+    <div class="wrap">
+        <!-- 头部 -->
+        {{#include ./mod/mod_pubHead.html?m=购车计算器}}
+
+        <!-- content -->
+        <ul class="calculate_way clearfix" id="calculate_way">
+            <li class="js-menu calculate_active" target="quankuan"><a href="javascript:void(0)">全款计算</a></li>
+            <li class="js-menu" target="daikuan"><a href="javascript:void(0)">贷款计算</a></li>
+        </ul>
+        <div class="calculate_content" id="calculate_content">
+            <!--计算详细（全款）-->
+            <div class="js-con calculate show">
+                <!--重置之后的总价区显示-->
+                <div class="cal_empty">
+                    请选择购买车款或输入裸车价格
+                </div>
+                <p class="cal_type">
+                    <a href="#">
+                        <span class="cal_type_tit">选择车款</span>
+                        <span class="cal_type_con">2017款 40TFSI进取型</span>
+                        <span class="cal_arrow_right"></span>
+                    </a>
+                </p>
+                <p class="cal_type">
+                    <span class="cal_type_tit">裸车价格</span>
+                    <input type="text" class="cal_type_con" value="65,579"/>
+                    <span class="cal_type_editor"></span>
+                </p>
+                <!--开始计算按钮-->
+                <div class="cal_start_btn">
+                    <a href="calculator_jisuanqi.html">开始计算</a>
+                </div>
+            </div>
+            <!--计算详细（贷款）-->
+            <div class="js-con calculate">
+                <!--重置之后的总价区显示-->
+                <div class="cal_empty">
+                    请选择购买车款或输入裸车价格
+                </div>
+                <p class="cal_type">
+                    <a href="#">
+                        <span class="cal_type_tit">选择车款</span>
+                        <span class="cal_type_con">速腾 2017款 40TFSI进取型</span>
+                        <span class="cal_arrow_right"></span>
+                    </a>
+                </p>
+                <p class="cal_type">
+                    <span class="cal_type_tit">裸车价格</span>
+                    <input type="text" class="cal_type_con" value="65,579"/>
+                    <span class="cal_type_editor"></span>
+                </p>
+                <!--间隔区-->
+                <div class="cal_interval2"></div>
+                <!--首付比例、还款年限、贷款利率-->
+                <div class="cal_loan">
+                    <div class="cal_loan_type">
+                        <span class="cal_loan_tit">首付比例</span>
+                        <ul class="cal_loan_detail clearfix">
+                            <li class="cal_loan_active">30%</li>
+                            <li>40%</li>
+                            <li>50%</li>
+                            <li>60%</li>
+                        </ul>
+                    </div>
+                    <div class="cal_loan_type">
+                        <span class="cal_loan_tit">还款年限</span>
+                        <ul class="cal_loan_detail clearfix">
+                            <li>1年</li>
+                            <li>2年</li>
+                            <li class="cal_loan_active">3年</li>
+                            <li>4年</li>
+                            <li>5年</li>
+                        </ul>
+                    </div>
+                    <div class="cal_loan_type">
+                        <span class="cal_loan_tit">贷款利率</span>
+                        <input type="text" class="cal_loan_con" value="6.4%"/>
+                        <span class="cal_loan_editor"></span>
+                    </div>
+                </div>
+                <!--开始计算按钮-->
+                <div class="cal_start_btn">
+                    <a href="calculator_jsqD.html">开始计算</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        {{#include ./mod/mod_footer.html}}
+    </div>
+
+    <!--顶部导航-->
+    {{#include ./mod/mod_pubHeadNav.html}}
+</body>
+<script>
+    $(function(){
+        var key="target=";
+        var mylocation=window.location.href;
+        var pos=mylocation.indexOf(key);
+        var type=mylocation.substr(pos+key.length);
+        if(type=="quankuan") {
+            $('.calculate_way li').eq(0).addClass('calculate_active').siblings().removeClass('calculate_active');
+            $('.calculate').eq(0).addClass('show').siblings().removeClass('show');
+        }else if(type=="daikuan"){
+            $('.calculate_way li').eq(1).addClass('calculate_active').siblings().removeClass('calculate_active');
+            $('.calculate').eq(1).addClass('show').siblings().removeClass('show');
+        }
+    })
+</script>
+</html>

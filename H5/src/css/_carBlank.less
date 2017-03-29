@@ -1,0 +1,70 @@
+@import (reference) "public";
+.nothing_bg{
+    width: 85.6%;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+.nothing_bot{
+    width: 100%;
+    height: 1.333rem /* 100/75 */;
+    background-color: #fff;
+    .top-xiejiao(135deg,-135deg,0.147rem /* 11/75 */,#fff,50.5%,100%,top left,top right);
+    position: absolute;
+    bottom: -1.267rem /* 95/75 */;
+    left: 0;
+}
+.nothing_bg .nothing{
+  .top-xiejiao(45deg,-45deg,0.147rem /* 11/75 */,#fff,50.5%,100%,bottom left,bottom right);
+  padding: 15% 0;
+  /*background-color: #fff;*/
+  position: static;
+  transform: translate(0,0);
+  -webkit-transform: translate(0,0);
+}
+.nothing {
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+.nothing img {
+  display: block;
+  margin: 0 auto;
+  width: 5.76rem;
+  height: 6.0rem;
+}
+.nothing .waiting_text {
+  font-size: 24px;
+  line-height: 1.267rem;
+  text-align: center;
+}
+.nothing .coming {
+  font-size: 15px;
+  line-height: 0.653rem;
+  text-align: center;
+}
+
+[data-dpr="2"] .nothing .waiting_text {
+  font-size: 48px;
+}
+[data-dpr="2"] .nothing .coming {
+  font-size: 30px;
+}
+[data-dpr="3"] .nothing .waiting_text {
+  font-size: 72px;
+}
+[data-dpr="3"] .nothing .coming {
+  font-size: 45px;
+}
+/* 适配iphone4尺寸*/
+[data-dpr="2"] .nothing_bg{
+    @media (max-width: 640px){
+        .nothing{
+            padding: 5% 0;
+        }
+    }
+}

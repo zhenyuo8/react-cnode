@@ -1,0 +1,50 @@
+/*****
+ *@author: jianingning
+ *@from: Global style mod_rotatoHint
+ *@description:
+ *@date: name (2017.02.17)
+*/
+
+@import (reference) '../public.less';
+
+.rotatoHint_mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background: @color-000;
+    filter:alpha(opacity=50);
+    opacity:.5;
+    display: none;
+}
+.rotatoHint {
+    position: fixed;
+    top: 21.9%;
+    left: 16.4%;
+    z-index: 100;
+    width: 63.4%;
+    display: none;
+    img {
+        width: 100%;
+    }
+}
+
+@media all and (orientation : portrait) {
+    .rotatoHint_mask {
+        display: none;
+    }
+    .rotatoHint {
+        display: none;
+    }
+}
+
+@media all and (orientation : landscape) {
+    .rotatoHint_mask {
+        display: block;
+    }
+    .rotatoHint {
+        display: block;
+    }
+}

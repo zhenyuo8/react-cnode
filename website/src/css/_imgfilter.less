@@ -1,0 +1,557 @@
+@import (reference) "public";
+@import "mod/mod_goTop";
+@import "mod/mod_carHot";
+@import "mod/mod_headerTitle";
+@import "mod/mod_headerLogo";
+@import "mod/mod_footer";
+@import "mod/mod_headerCarMenu";
+@import "mod/mod_screenCar";
+@import "mod/mod_leftTree";
+
+.treeMainv1{
+  .treeMainv1;
+}
+.imghome-body{
+  width: 990px;
+  margin: 0 auto;
+  padding-bottom :30px;
+  margin-top: 12px;
+  .con{
+    width: 100%;
+    .select{
+      width: 270px;
+      height: 600px;
+      background: cadetblue;
+    }
+    .fc-db{
+      width: 720px;
+      padding-bottom: 30px;
+      .pos{
+        margin-top: 20px;
+        .now{
+          color: #999999;
+        }
+        .c-f{
+          color: #398BE4;
+        }
+      }
+    }
+  }
+  .head-img{
+    img{
+      width: 990px;
+      height: 100px;
+    }
+  }
+
+  .title{
+    padding-bottom: 13px;
+    border-bottom: 2px solid #333333;
+    font-size: 20px;
+    font-weight: 600;
+    ul{
+      bottom: 2px;
+      right: 0px;
+      li{
+        width: 64px;
+        height: 32px;
+        background: #333333;
+        text-align: center;
+        line-height: 32px;
+        margin-left: 1px;
+        a{
+          color: #FFFFFF;
+        }
+        a:hover{
+          background:#398BE4 ;
+        }
+      }
+    }
+
+    p{
+      font-size: 24px;
+      span{
+        vertical-align: middle;
+        margin: 0 8px;
+      }
+    }
+  }
+  .ft16{
+    font-size: 16px;
+    margin-top: 42px;
+    span{
+      font-weight: normal;
+      font-size: 12px;
+      cursor: pointer;
+      margin-top: 3px;
+      display: inline-block;
+    }
+    .active{
+      font-weight: bold;
+    }
+    .up{
+      background: url(../img/up.png)no-repeat right center;
+      margin-right: 12px;
+      padding-right: 10px;
+    }
+    .cee{
+      color: #eeeeee;
+      font-weight: normal;
+    }
+    .down{
+      background: url(../img/dowm.png)no-repeat right center;
+      margin-left: 12px;
+      padding-right: 10px;
+    }
+  }
+  .mt41{
+    border-bottom: 3px solid #333333;
+  }
+  .bor_bottom{
+    border-bottom: 2px solid #EEEEEE;
+  }
+}
+.dis-b{
+  display:block;
+}
+.fc-db{
+  &>div{
+    .down-up{
+      height: 38px;
+      background-color: #EEEEEE;
+      text-align: center;
+      color: #565555;
+      font-size: 16px;
+      cursor: pointer;
+      .icon-down-t{
+        margin-top: 7px;
+        background: url("../img/up-t.png") no-repeat right center;
+        width: 100px;
+        height: 20px;
+        display: inline-block;
+      }
+      .icon-up-t{
+        width: 100px;
+        height: 20px;
+        margin-top: 7px;
+        display: inline-block;
+        background: url("../img/down-t.png") no-repeat right center;
+      }
+      .icon-up-t:hover{
+        color: #398be4;
+      }
+      .icon-down-t:hover{
+        color: #398be4;
+      }
+    }
+  }
+}
+.search{
+  .hot-car{
+    margin-top: 14px;
+    ul{
+      li{
+        width: 167px;
+        height: 149px;
+        margin: 6px 17px 0 0;
+        cursor: pointer;
+
+        img {
+          display: inline-block;
+          width: 167px;
+          height: 111px;
+        }
+        p{
+          font-size: 14px;
+          font-weight: 600;
+          width: 167px;
+          height: 39px;
+          line-height: 39px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+      li:hover{
+        background-color: #EEEEEE;
+        color: #3C8FE9;
+      }
+    }
+  }
+  .new-car-img{
+    .top{
+      margin-top: 20px;
+      .po-a:hover{
+        background: rgba(57,139,228,.8);
+      }
+      .po-a{
+        bottom: 0px;
+        height: 38px;
+        background: rgba(0,0,0,.8);
+        text-indent: 13px;
+        line-height: 38px;
+        font-size: 16px;
+        width: 100%;
+        color: #FFFEFE;
+        cursor: pointer;
+      }
+    }
+    .bottom{
+      margin-top: 9px;
+      .po-a:hover{
+        background: rgba(57,139,228,.8);
+      }
+      div{
+        display: inline-block;
+        .po-a{
+          bottom: 0px;
+          height: 33px;
+          width: 100%;
+          font-size: 16px;
+          background: rgba(0,0,0,.8);
+          color: #FFFEFE;
+          line-height: 33px;
+          text-indent: 13px;
+          cursor: pointer;
+        }
+      }
+      img{
+        display: inline-block;
+      }
+      .ml5{
+        margin-left:5px;
+      }
+    }
+  }
+  .car-brand{
+    border: 1px solid #EEEEEE;
+    border-right: none;
+    margin-top: 20px;
+    ul{
+      li:hover{
+        background-color: #EEEEEE;
+      }
+      li{
+        width: 142.8px;
+        height: 142px;
+        text-align: center;
+        border-right: 1px solid #EEEEEE;
+        border-bottom:1px solid #EEEEEE;
+        cursor: pointer;
+        p{
+          margin-top: 15px;
+        }
+        div{
+          width: 140px;
+          height: 83px;
+          line-height: 83px;
+          text-align: center;
+          display: table-cell;
+          vertical-align:bottom;
+          text-align:center;
+          *display: block;
+          *font-size: 175px;
+          *font-family:Arial;
+          img{
+            vertical-align:bottom;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+  .select-type-con{
+    .dis-n{
+      display: none;
+    }
+    .overflow{
+      overflow:inherit;
+    }
+    .w267{
+      width: 267px;
+    }
+    &>ul{
+      border-bottom: 1px solid #EEEEEE;
+      height: 38px;
+      line-height: 38px;
+    }
+    .enter{
+      width: 40px;
+      height: 24px;
+      text-align: center;
+      line-height: 24px;
+      background-color: #aaaaaa;
+      color: #FFFFFF;
+      cursor: pointer;
+      margin-top: 6px;
+    }
+    .enter-click{
+      background-color: #ffa904;
+    }
+
+    .input-box{
+      input{
+        width: 46px;
+        height: 22px;
+        border: 1px solid #DADADA;
+        vertical-align: top;
+        margin-top: 6px;
+      }
+    }
+    .suv:hover{
+      .suv-word{
+        color: white;
+        background:#3189E9 url("../img/bule-down.png") right 5px no-repeat;
+      }
+    }
+
+    .suv{
+      .suv-word{
+        background: url("../img/suvx.png") right 5px no-repeat;
+        padding-right: 18px;
+      }
+      .b{
+        background: #ffffff url("../img/suvx.png") right 5px no-repeat;
+      }
+      .c{
+        background:#3189E9 url("../img/bule-down.png") right 5px no-repeat
+      }
+      ul{
+        display: none;
+        background-color: #FFFFFF;
+      }
+    }
+    .z-index100{
+      z-index: 100;
+    }
+    .ml56{
+      margin-left: 58px;
+    }
+    .mr54{
+      margin-right: 90px;
+    }
+    .mr4{
+      margin-right: 4px;
+    }
+    .mr5{
+      margin-right: 5px;
+    }
+    .mr73{
+      margin-right: 73px;
+    }
+    .mr105{
+      margin-right: 141px;
+    }
+    .mr17{
+      margin-right: 17px;
+    }
+    .h{
+      .active{
+        background-color: #3189E9;
+        color: white;
+      }
+      a{
+        padding: 0 3px;
+      }
+      a:hover{
+        color: white;
+        background-color: #3189E9;
+      }
+
+    }
+    .price-hind{
+      top: 34px;
+      right: -15px;
+      width: 152px;
+      border: 1px solid #ffa904;
+      height: 22px;
+      line-height: 22px;
+      padding-left: 29px;
+      background: #FFFFFF url("../img/hind.png")no-repeat;
+      background-position: 8px center;
+      z-index: 20;
+      cursor: pointer;
+    }
+    .mr8{
+      margin-right: 8px;
+    }
+    .mr5{
+      margin-right: 5px;
+    }
+    .mr4{
+      margin-right: 4px;
+    }
+    .dis-n{
+      display: none;
+    }
+    .mr13{
+      margin-right: 13px;
+    }
+    .mr7{
+      margin-right: 5.5px;
+    }
+    .mr5{
+      margin-right: 5px;
+    }
+    .xl{
+      ul{
+        border: 1px solid #333333;
+        border-bottom: 4px solid;
+        left: 0px;
+        top: 26px;
+        li{
+          border-bottom: 1px solid #EEEEEE;
+          height: 28px;
+          padding-left: 20px;
+          line-height: 28px;
+          cursor: pointer;
+          padding-right: 12px;
+          white-space:nowrap;
+          background: url("../img/xd-p.png")no-repeat;
+          background-position: 12px center;
+        }
+        .ho:hover{
+          background-color: #3189ea;
+          color: #fefffd;
+        }
+        .ho{
+          .icon-xd{
+            vertical-align: top;
+            margin-right: 9px;
+            margin-top: 13px;
+          }
+        }
+      }
+    }
+    .w54{
+      width: 54px;
+      a{
+
+        .po-a{
+
+        }
+      }
+    }
+    .w56{
+      a{
+        display: inline-block;
+        line-height: 16px;
+        height: 16px;
+        .po-a{
+          top: 16px;
+          margin-left: 5px;
+        }
+      }
+    }
+    .m0{
+      margin: 0px;
+    }
+    .frist{
+      font-size: 14px;
+      font-weight: 600;
+      word-spacing:8px;
+      margin-right:12px ;
+    }
+
+  }
+
+  /*筛选无结果*/
+  .noResult {
+      width: 100%;
+      padding-top: 50px;
+      display: none;
+
+      dt {
+          float: left;
+          margin-left: 61px;
+      }
+      dd {
+          float: left;
+          margin-left: 26px;
+      }
+
+      .b_hint {
+          width: 247px;
+          font-size: 26px;
+          margin-top:80px;    
+      }
+      .s_hint {   
+          font-size: 18px;
+          color: #b6b6b6;
+          margin-top:20px;
+      }
+  }
+}
+#go-top{
+  cursor: pointer;
+  display: none;
+}
+.po-f{
+  bottom: 135px;
+  left: 50%;
+  margin-left: 513px;
+}
+.search{
+  .page-index{
+    ul{
+      border-top: 1px solid #EEEEEE;
+      padding-top: 14px;
+    }
+    li:hover{
+      background: #3A8BE4;
+      color: #FFFFFF;
+    }
+    .active{
+      background: #3A8BE4;
+      color: #FFFFFF;
+    }
+    .before-page,.after-page{
+      width: 76px;
+      height: 36px;
+      text-align: center;
+      line-height: 36px;
+    }
+    li{
+      height: 36px;
+      width: 36px;
+      text-align: center;
+      line-height: 36px;
+      cursor: pointer;
+      margin-left: 10px;
+      border: 1px solid #E1E1E1;
+      background-color: #F3F3F3;
+    }
+  }
+}
+.search .title .ft14 {
+  font-size: 14px;
+  font-weight: 100;
+  margin-top: 5px;
+  display: none;
+  cursor: pointer;
+}
+.clear_choice:hover{
+  color: #398BE4;
+}
+.search{
+  margin-top: 40px;
+}
+.icon-go-top{
+  background: #eeeeee url("../img/gotop.png")no-repeat center 12px ;
+  width: 66px;
+  height: 66px;
+  border: 1px solid #dadada;
+  display: inline-block;
+  text-align: center;
+  .gotop_word{
+    display: inline-block;
+    margin-top: 42px;
+    color: #989898;
+  }
+}
+.icon-go-top:hover{
+  background: #3a8be4 url("../img/gotop_hover.png")no-repeat center 12px ;
+  .gotop_word{
+    color: #fefefc;
+  }
+}

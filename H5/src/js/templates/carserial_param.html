@@ -1,0 +1,68 @@
+<div class="wrap_bg">
+    <carserial-header title="亮点配置" page="param"></carserial-header>
+    <!-- 亮点配置主页面 -->
+    <div class="lightspot_page" v-if="list.length">
+
+        <!-- 参数列表 -->
+        <div class="para_list" v-if="list.length">
+            <ul class="clearfix">
+                <template  v-for="(row,i) in list">
+                    <li>
+                        <a>
+                            <span><img v-bind:src="'${static_base}/img/icon_p/'+ row.id +'.png'"></span>
+                            <em class="name">{{row.name}}</em>
+                        </a>
+                    </li>
+                    <li class="line" v-if="i==3 || i==7"></li>
+                </template>
+                <li bdtag="ConfigurationPage_AllParametersButton_Clicked">
+                    <router-link class="all_param param_btn" 
+                        :to="{name:'carparam',query:{serialId:serialId}}" reload>
+                        <span><em>全部参数</em></span>
+                        <em class="name"></em>
+                    </router-link>
+                </li>
+                <li bdtag="ConfigurationPage_InquiryButton_Clicked">
+                    <router-link class="xun_price param_btn"
+                        :to="{name:'price',query:{serialId:serialId}}" reload>
+                        <span><em>询底价</em></span>
+                        <em class="name"></em>
+                    </router-link>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="lightspot_no_page" v-if="!loading && list.length===0">
+        <!-- 全部参数 -->
+        <div class="link_btn clearfix">
+            <span class="all_param param_btn"  bdtag="ConfigurationPage_AllParametersButton_Clicked">
+                <router-link :to="{name:'carparam',query:{serialId:serialId}}" reload>
+                        <span><em>全部参数</em></span>
+                    </router-link>
+            </span>
+            <span class="xun_price param_btn" bdtag="ConfigurationPage_InquiryButton_Clicked">
+                <router-link :to="{name:'price',query:{serialId:serialId}}" reload>
+                        <span><em>询底价</em></span>
+                    </router-link>
+            </span>
+        </div>
+
+        <!-- 布可背景 -->
+        <div class="book_brid">
+            <img src="../../img/book_my.png">
+        </div>
+
+        <!-- 提示语 -->
+        <div class="tip">
+            <p>黑科技装配中..</p>
+            <p>让我们拭目以待吧!</p>
+        </div>
+
+        
+
+    </div>
+
+<div class="next_page"></div>
+</div>

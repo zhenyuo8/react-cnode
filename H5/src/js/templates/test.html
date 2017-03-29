@@ -1,0 +1,22 @@
+<div>
+    <button v-on:click="showCitySelector">弹出城市选择</button>
+    <p>{{JSON.stringify(selectedCity)}}</p>
+    <city-selector v-on:select="onSelect" v-bind:initcity="selectedCity" ref="citypicker"></city-selector>
+    <iscroll>
+        1<br>
+        1<br>
+        1<br>
+        1<br>
+        1<br>
+        1<br>
+        1<br>
+        1<br>
+        1<br>
+        1<br>
+        1<br>
+        1<br>
+        1<br>
+        1<br>
+        1<br>
+    </iscroll>
+</div>

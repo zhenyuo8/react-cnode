@@ -1,0 +1,267 @@
+/*****
+*@author: huangzy
+*@from: Global style personal center(个人中心)
+*@description: 陈璐
+*@date: name (2017.03.01)
+*/
+
+
+@import (reference) "public";
+@import "mod/mod_pubHead";
+@import "mod/mod_footer";
+
+  .content_list{
+    background: #f4f5f7;
+    position: relative;
+    height: 13.413333333333334rem;
+    p{
+      // height: 1.3333333333333333rem;
+      font-size: 0.4rem;
+      color: #333;
+      background: #fff;
+      // line-height: 1.3333333333333333rem;
+      border-bottom: 1px dotted #f3f3f3;
+      position: relative;
+      input{
+        padding-left: 0.4533333333333333rem;
+        height: 1.3333333333333333rem;
+        width: 3.2rem;
+      }
+      .error_tip{
+          z-index: 1;
+          display: none;
+          font-size: 12px;
+          color: @color-fff;
+          // display: inline-block;
+          height: .507rem /* 38/75 */;
+          line-height: .507rem /* 38/75 */;
+          padding: 0 .267rem /* 20/75 */;
+          background-color: @red-price;
+          border-radius: .107rem /* 8/75 */;
+          position: absolute;
+          top: 1.04rem /* 78/75 */;
+          left: 20%;
+          strong{
+              display: block;
+              border-left: .267rem /* 20/75 */ solid @red-price;
+              border-bottom:  .267rem /* 20/75 */ solid transparent;
+              transform: rotate(45deg);
+              position: absolute;
+              top: -.133rem /* 10/75 */;
+              left: 20%;
+          }
+      }
+      &.sys_notice{
+        padding: 0.4rem;
+        background-color: #f4f5f7;
+        span{
+          display: block;
+          line-height: 0.5866666666666667rem;
+          font-size: 14px;
+          color: #999;
+          i{
+            color: #666;
+          }
+        }
+      }
+
+      &.code{
+        padding-left: 0.4rem;
+        line-height: 1.3333333333333333rem;
+        em{
+          display: none;
+          position: absolute;
+          right: 4.0rem;
+          top: 0.4rem;
+          width: 0.48rem;
+          height: 0.48rem;
+          // display: inline-block;
+          background: url('../img/input_delete.png') no-repeat center;
+        }
+        .get_code{
+          position: absolute;
+          right: 0.4rem;
+          top:0.293rem;
+          vertical-align: middle;
+          display: inline-block;
+          height: 0.747rem;
+          line-height: 0.747rem;
+          padding: 0 0.133rem /* 10/75 */;
+          border: 0.0267rem solid #2799fe;
+          border-radius: 0.133rem;
+          font-size: 13px;
+          color: #2799fe;
+        }
+      }
+
+      &.bind{
+        width: 92%;
+        margin: 0.533rem /* 40/75 */ 4% 0;
+        height: 1.147rem;
+        span{
+          display: inline-block;
+          color: #fff;
+          font-size: 17px;
+          width: 100%;
+          height: 1.147rem;
+          text-align: center;
+          line-height: 1.147rem;
+          background: #a9d5ff;
+          border-radius: 0.133rem;
+        }
+      }
+
+      &.notice{
+        display: none;
+        color: #c1c1c1;
+        background: #f4f5f7;
+        margin-left: 0.4rem;
+        line-height: 1.333rem;
+        a{
+          text-decoration: underline;
+          color: #c1c1c1;
+        }
+      }
+
+      &.footer{
+          font-size: 14px;
+          width: 92%;
+          padding: 0 4%;
+          height: 1.067rem;
+          line-height: 1.067rem;
+          border: none;
+          border-bottom: 1px solid #d8d8d8;
+          position: absolute;
+          bottom: 0;
+          a{
+            color: #666;
+          }
+          span{
+            color: #999;
+          }
+          i{
+            margin: 0 0.175rem;
+            width: 0.12rem;
+            height: 0.213rem;
+            display: inline-block;
+            background: url('../img/crumbs_arrow1.png') no-repeat;
+            background-size: cover;
+          }
+          em{
+            margin: 0 0.175rem;
+            width: 0.12rem;
+            height: 0.213rem;
+            display: inline-block;
+            background: url('../img/crumbs_arrow2.png') no-repeat;
+            background-size: cover;
+          }
+        }
+
+    }
+
+  }
+
+  // load图标弹层
+  .load_mask{
+    width: 3.733rem /* 280/75 */;
+    height: 2.533rem /* 190/75 */;
+    margin: -1.267rem /* 95/75 */ 0 0 -1.867rem /* 140/75 */;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    display: none;
+    .mask{
+        width: 3.733rem /* 280/75 */;
+        height: 2.533rem /* 190/75 */;
+        background-color: @color-000;
+        border-radius: .107rem /* 8/75 */;
+        filter: alpha(opacity=60);
+        opacity: .6;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .keyframes (all,circleChange,{
+        0%{-webkit-transform:rotate(0deg);}
+        50%{-webkit-transform:rotate(180deg);}
+        100%{-webkit-transform:rotate(360deg);}
+    });
+    img{
+        display: inline-block;
+        width: .813rem /* 61/75 */;
+        height: .867rem /* 65/75 */;
+        margin: -.427rem /* 32/75 */ 0 0 -.4rem /* 30/75 */;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-animation: circleChange 2s linear infinite;
+    }
+  }
+
+
+  /* 字体大小适配 */
+  //dpr=2字体大小
+  [data-dpr="2"] .index_page{
+      .content_list{
+          .error_tip{
+              font-size: 24px;
+          }
+          .sys_notice{
+              span{
+                  font-size: 28px;
+              }
+          }
+          .code{
+              .get_code{
+                  font-size: 26px;
+              }
+          }
+          .voice{
+              font-size: 24px;
+              a{
+                  font-size: 26px;
+              }
+          }
+          .bind{
+              span{
+                  font-size: 34px;
+              }
+          }
+          .footer{
+              font-size: 28px;
+          }
+      }
+  }
+  //dpr=3字体大小
+  [data-dpr="3"] .index_page{
+      .content_list{
+          .error_tip{
+              font-size: 36px;
+          }
+          .sys_notice{
+              span{
+                  font-size: 42px;
+              }
+          }
+          .code{
+              .get_code{
+                  font-size: 39px;
+              }
+          }
+          .voice{
+              font-size: 36px;
+              a{
+                  font-size: 39px;
+              }
+          }
+          .bind{
+              span{
+                  font-size: 51px;
+              }
+          }
+          .footer{
+              font-size: 42px;
+          }
+      }
+  }

@@ -1,0 +1,213 @@
+@import (reference) "../public";
+@width0: 238px; // Appears 4 times
+@width2: 110px; // Appears 2 times
+@width5: 177px; // Appears 5 times
+@width8: 10px; // Appears 2 times
+
+// Height variables (appears count calculates by raw css)
+@height0: 482px; // Appears 4 times
+@height1: 22px; // Appears 2 times
+@height2: 20px; // Appears 3 times
+@height5: 24px; // Appears 7 times
+@height6: 9px; // Appears 2 times
+
+
+.search_select {
+    height: 48px;
+    margin-left: 15px;
+    //padding-top: 12px;
+    input:disabled{
+        background-color: @color-fff;
+    }
+    .i_disabled{
+        color:@color-999 !important;
+    }
+    #for_input_brand {
+        float: left;
+        height: @height5;
+        position: relative;
+        z-index: 102;
+        .car_brand_select {
+            border-bottom: 3px solid @color-333;
+            border: 1px solid @color-333;
+            float: left;
+            height: @height0;
+            left: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 35px;
+            width: @width5;
+            .car_letters {
+                background: #f9f9f9;
+                border-right: 1px solid @color-eee;
+                float: left;
+                font-size: 12px;
+                padding: 6px 0;
+                text-align: center;
+                width: 31px;
+                span {
+                    color: @color-333;
+                    cursor: pointer;
+                    display: block;
+                    height: 16px;
+                    line-height: 16px;
+                    margin: 2px auto;
+                    width: 16px;
+                    &:hover {
+                        color: @color-398be4;
+                    }
+                }
+                span.active {
+                    color: @color-398be4;
+                }
+                span.default {
+                    color: #999999;
+                }
+            }
+            .car_name {
+                background: @color-fff;
+                float: left;
+                font-size: 12px;
+                height: @height0;
+                width: 145px;
+                overflow-y: auto;
+                overflow-x: hidden;
+                .brand_car_name {
+                    background: @color-fff;
+                    height: auto;
+                    width: 206px;
+                    position: relative;
+                    dl {
+                        border-bottom: 1px solid #e1e1e1;
+                        dd {
+                            cursor: pointer;
+                            height: @height2;
+                            line-height: @height2;
+                            padding: 2px 0 2px 0;
+                            a {
+                                display: inline-block;
+                                width: 194px;
+                            }
+                            &:hover {
+                                background: @color-398be4;
+                                a {
+                                    color: @color-fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        input {
+            color: @color-333;
+            font-family: "PingFangSC-Regular","Hiragino Sans GB","Helvetica Neue",Helvetica,Arial,"Microsoft Yahei",sans-serif;
+            height: @height1;
+            margin-right: 20px;
+            padding-left: 8px;
+            border: 1px solid #dfdfdf;
+        }
+        .search_down {
+            display: inline-block;
+            float: right;
+            height: @height6;
+            position: absolute;
+            right: 30px;
+            top: 20px;
+            width: @width8;
+        }
+        .default1 {
+            background: url("../img/triangle_down_default_03.png") no-repeat center;
+        }
+        .hover {
+            background: url("../img/triangle_down_hover_03.png") no-repeat center;
+        }
+    }
+    #for_input_serial {
+        float: left;
+        height: @height5;
+        position: relative;
+        z-index: 102;
+        input {
+            color: #333;
+            font-family: "PingFangSC-Regular","Hiragino Sans GB","Helvetica Neue",Helvetica,Arial,"Microsoft Yahei",sans-serif;
+            height: 22px;
+            margin-right: 20px;
+            padding-left: 8px;
+            border: 1px solid #dfdfdf;
+        }
+        .car_serial_select {
+            background: @color-fff;
+            border-bottom: 3px solid @color-333;
+            border: 1px solid @color-333;
+            float: left;
+            height: @height0;
+            left: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 35px;
+            width: @width5;
+            z-index: 100000;
+            .serial_name {
+                display: inline-block;
+                height:@height0;
+                overflow: auto;
+                .serial_car_name {
+                    background: @color-fff;
+                    height:auto;
+                    width: @width5;
+                    font-size: @font-12;
+                    dl {
+                        margin: 1px 0 0 0;
+                        padding: 0 0 1px 0;
+                        dt {
+                            background: #F7F7F7;
+                            cursor: default;
+                            height: @height2;
+                            line-height: @height2;
+                            text-align: center;
+                            width: @width5;
+                            a {
+                                cursor: default;
+                                display: block;
+                                margin: 0 auto;
+                                width: @width5;
+                            }
+                        }
+                        dd {
+                            padding: 2px 0 2px 10px;
+                            cursor: pointer;
+                            height: @height2;
+                            line-height: @height2;
+                            a {
+                                width: 228px;
+                            }
+                            &:hover {
+                                background: @color-398be4;
+                                a {
+                                    background: @color-398be4;
+                                    color: @color-fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .search_down {
+            background: url("../img/triangle_down_default_03.png") no-repeat center;
+            float: right;
+            height: @height6;
+            position: absolute;
+            right: 30px;
+            top: 20px;
+            width: @width8;
+        }
+        .default1 {
+            background: url("../img/triangle_down_default_03.png") no-repeat center;
+        }
+        .hover {
+            background: url("../img/triangle_down_hover_03.png") no-repeat center;
+        }
+    }
+}

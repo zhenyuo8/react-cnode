@@ -1,0 +1,153 @@
+/*****
+ *@author: jianingning
+ *@from: Global style attention
+ *@description:
+ *@date: name (2017.02.16)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_rotatoHint.less";
+
+.att_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#25a6fe), to(#2e7aff));
+}
+.attention_wrap {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+
+    .content {
+        padding-top: 1.493rem;
+
+        .attention_text {
+            display: block;
+            width: 6.027rem;
+            height: 1.973rem;
+            margin: 0 auto;
+        }
+        .circle {
+            // display: none;
+            position: relative;
+            width: 7.92rem;
+            height: 8.08rem;
+            background: url(../img/circle.png);
+            background-size: cover;
+            margin: 0.787rem auto 0 auto;
+
+            .erweima {
+                width: 4.2rem;
+                height: 4.2rem;
+                margin: 0 auto;
+                position: absolute;
+                top: 1.293rem;
+                left: 2.133rem;
+            }
+            p {
+                width: 7.92rem;
+                font-size: 18px;
+                color: @color-fff;
+                text-align: center;
+            }
+            .text1 {
+                position: absolute;
+                top: 5.533rem;
+                left: 0.067rem;
+            }
+            .text2 {
+                position: absolute;
+                top: 6.133rem;
+                left: 0.067rem;
+            }
+        }
+        .app_show{
+            width: 100%;
+            position: relative;
+            .attention_text{
+                margin-left: 0.933rem;
+            }
+            a{
+                color: @color-fff;
+                width: 2.693rem /* 202/75 */;
+                height: 0.8rem /* 60/75 */;
+                line-height: 0.827rem /* 62/75 */;
+                padding: 0 0.213rem /* 16/75 */ 0 0.933rem /* 70/75 */;
+                border: .03rem solid @color-fff;
+                border-left: 0;
+                border-radius: 0.4rem /* 30/75 */;
+                margin: 0.56rem /* 42/75 */ 0 0 1.067rem /* 80/75 */;
+                display: block;
+                position: relative;
+                i{
+                    .icon_bg(url(../img/loaddown.png), 0.8rem /* 60/75 */,0.8rem /* 60/75 */);
+                    display: block;
+                    position: absolute;
+                    top: -0.027rem /* 2/75 */;
+                    left: 0;
+                }
+            }
+            .phone{
+                display: block;
+                width: 84.4%;
+                height: 8.12rem /* 609/75 */;
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+    .cloud {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 3;
+        width: 100%;
+        height: 3.227rem;
+        background: url(../img/cloud.png);
+        background-size: cover;
+
+        .logo {
+            position: absolute;
+            bottom: 0.56rem;
+            left: 50%;
+            margin-left: -1.727rem;
+            display: block;
+            width: 3.453rem;
+            height: 0.88rem;
+        }
+    }
+}
+
+.erweima_mask{
+                position: absolute;
+                width:100%;
+                height: 100%;
+                left:0;
+                top:0;
+            }
+
+[data-dpr="2"] .attention_wrap {
+    .content {
+        .circle {
+            p {
+                font-size: 36px;
+            }
+        }
+    }
+}
+[data-dpr="3"] .attention_wrap {
+    .content {
+        .circle {
+            p {
+                font-size: 54px;
+            }
+        }
+    }
+}

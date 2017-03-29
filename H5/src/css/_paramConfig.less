@@ -1,0 +1,239 @@
+/*****
+ *@author: linyh
+ *@from: Global style paramConfig
+ *@description: 陈璐
+ *@date: name (2017.02.18)
+*/
+
+
+
+@import (reference) "public";
+
+
+// 文章详情主页面
+.param_config_page{
+    // 占位
+    .params_type{
+        height: 3rem
+    }
+    .occupy_seat{
+        height: 4.3rem /* 100/75 */;
+    }
+
+    // 配置车型列表
+    .param_type_list{
+        position: fixed;
+        left:0;
+        top: 1.333rem;
+        background: #fff;
+        z-index: 10;
+        /*overflow-x: scroll;
+        &::-webkit-scrollbar{
+            height: 0;
+        }*/
+        ul{
+            padding: .4rem /* 30/75 */ 0;
+            display: -webkit-box;
+            -webkit-box-orient: horizontal;
+            li{
+                width: 3rem /* 215/75 */;
+                height: 2.2rem /* 133/75 */;
+                border: 1px solid @result-border;
+                border-radius: .04rem /* 3/75 */;
+                padding: .227rem /* 32/75 */ .267rem /* 20/75 */;
+                margin: 0 .12rem /* 18/75 */;
+                position: relative;
+                .type_name{
+                    height: 1.173rem /* 88/75 */;
+                    line-height: .4rem /* 30/75 */;
+                    margin-bottom: .187rem /* 14/75 */;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 3;
+                }
+                .type_price{
+                    color: @red-price;
+                }
+                em{
+                    .icon_bg(url("../img/delete.png"), .48rem /* 36/75 */, .48rem /* 36/75 */);
+                    position: absolute;
+                    top: -.24rem /* 18/75 */;
+                    right: -.24rem /* 18/75 */;
+                }
+                &:active{
+                    border-color: @item-color;
+                }
+            }
+
+        }
+    }
+
+    .hide_alike{
+                color: @eye-color;
+                background: #fff;
+                width: 3rem /* 230/75 */;
+                text-align: center;
+                padding-top: .72rem /* 54/75 */;
+                margin: 0;
+                border: 0;
+                i{
+                    .icon_bg(url("../img/eye.png"), .867rem /* 65/75 */, .6rem /* 45/75 */);
+                    display: inline-block;
+                }
+                p{
+                    text-align: center;
+                    line-height: .88rem /* 66/75 */;
+                }
+            }
+    .hide_alike.active {
+        i{
+            .icon_bg(url("../img/eye_open.png"), .867rem /* 65/75 */, .6rem /* 45/75 */);
+        }
+        p{
+            color: #2896fe
+        }
+    }
+
+    // 配置目录
+    .param_catalog{
+        position: fixed;
+        right: .133rem /* 10/75 */;
+        bottom: .24rem /* 18/75 */;
+        z-index: 12;
+        ul{
+            .border-jianbian(3px,3px,20px,3px,@catalog-border);
+            width: 5.893rem /* 442/75 */;
+            background-color: @color-fff;
+            border: 1px solid @catalog-border;
+            border-radius: .093rem /* 7/75 */;
+            padding: .24rem /* 18/75 */ .453rem /* 34/75 */ .293rem /* 22/75 */;
+            li{
+                float: left;
+                width: 50%;
+                line-height: .96rem /* 72/75 */;
+            }
+        }
+        span{
+            color: @color-fff;
+            .bg-jianbian(top left,bottom right,@ml-start,@ml-end);
+            .border-jianbian(0,5px,20px,0,@ml-end);
+            border-radius: 50%;
+            width: 1.307rem /* 98/75 */;
+            height: 1.307rem /* 98/75 */;
+            line-height: 1.307rem /* 98/75 */;
+            text-align: center;
+            display: inline-block;
+            position: absolute;
+            right: .32rem /* 24/75 */;
+            bottom: .16rem /* 12/75 */;
+        }
+    }
+}
+
+.param_title{
+            padding: 0 .3rem;
+            background-color: @bg-color;
+            height: .8rem;
+            .title{
+                color: #828282;
+                line-height: .8rem;
+                float: left;
+            }
+            .item{
+                color: @price-item-color;
+                float: right;
+                i{
+                    line-height: .827rem /* 62/75 */;
+                    display: inline-block;
+                    em{
+                        color: @dian-border;
+                        border-radius: 50%;
+                        width: .24rem /* 18/75 */;
+                        height: .24rem /* 18/75 */;
+                        margin: 0 .16rem /* 12/75 */ 0 .373rem /* 28/75 */;
+                        display: inline-block;
+                    }
+                    &:first-child{
+                        em{
+                            background-color: @dian-border;
+                        }
+                    }
+                    &:nth-of-type(2){
+                        em{
+                            border: 1px solid @dian-border;
+                        }
+                    }
+                }
+            }
+}
+
+.param_config_page *{font-size: .35rem}
+.params_type,.param_table{
+    display: table;
+    width: 100%;
+}
+.hide_alike,.param_table_head{
+   /* display: table-cell;*/
+}
+#wrapper-header,.param_table_cont{
+    display: table-cell;
+    position: relative;
+}
+
+
+#wrapper-header,#wrapper-body {
+	width: 100%;
+	overflow: hidden;
+}
+
+#scroller-header,#scroller-body {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+	background: #fff;
+}
+.param_table .title_box th{
+    background: #f3f3f3;
+    text-align: left;
+    padding-left:.3rem;
+    height: .8rem;
+}
+.param_table_head th{
+    border:1px solid #f3f3f3;
+    width: 3rem;
+    height: 1.2rem;
+    background: #fff;
+    background: #fff;
+    color: #828282;
+    font-size: .3rem;
+    font-weight: normal;
+}
+.param_table_cont table td{
+    border:1px solid #f3f3f3;
+    height: 1.2rem;
+}
+.param_table_head{width:3rem;}
+.color_div{padding: 0 .28rem;}
+.color_span{display: inline-block;width:8px;height: 8px;margin:2px;border: 1px solid #ccc;}
+.td_txt{width: 3.24rem;padding: 0 .28rem;line-height:.9rem;font-size: .32rem;color:#555; white-space: nowrap}
+.icon_none,.icon_has,.icon_choose{
+    color: #b7b7b7;
+    border-radius: 50%;
+    width: .24rem;
+    height: .24rem;
+    display: inline-block;}
+.icon_has{    background-color: #b7b7b7;}
+.icon_choose{border: 1px solid #b7b7b7;}
+.same{background: #f4faff}
+
+@media all and (orientation : landscape) {
+    .param_config_page .param_type_list{
+        position: absolute;
+    }
+    .param_config_page .param_catalog ul li{
+        line-height: 1.3
+    }
+}

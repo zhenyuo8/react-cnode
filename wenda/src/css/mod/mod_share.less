@@ -1,0 +1,104 @@
+.share_area{
+    position: absolute;
+    top: 20px;
+    right: -12px;
+    z-index: 200;
+    .share_list{
+        padding-top:12px;
+        border:1px solid @color-333;
+        background-color: @color-fff;
+        li{
+            line-height: 12px;
+            padding:0 12px 12px;
+            a{
+                display: inline-block;
+                width:40px;
+                height:40px;
+                background-image: url("../img/sprite.png");
+            }
+        }
+        .share_wx{
+            position: relative;
+            .erweima{
+                position: absolute;
+                left: 61px;
+                top: -18px;
+                display: none;
+                padding-left: 10px;
+                div{
+                    position: absolute;
+                    top: 100px;
+                    left: 52px;
+                }
+                img{
+                    width: inherit !important;
+                    height: inherit !important;
+                }
+            }
+            .display_n{
+                display: none;
+            }
+            a{
+                background-position: 0px -860px;
+                &:hover{
+                    background-position:0px -1130px;
+                }
+                &:active{
+                    background-position:0px -1355px;
+                }
+            }
+            span{
+                position: absolute;
+                top:-20px;
+                left:80px;
+                z-index: 500;
+                padding-left: 10px;
+                img{
+                    width: inherit !important;
+                    height: inherit !important;
+                }
+            }
+            &:hover{
+                .erweima{
+                    display: block;
+                }
+            }
+        }
+        .share_wb{
+            a{
+                background-position: 0px -1310px;
+                &:hover{
+                    background-position: 0px -1265px;
+                }
+                &:active{
+                    background-position: 0px -1220px;
+                }
+            }
+        }
+        .share_kj{
+            a{
+                background-position: 0px -1040px;
+                &:hover{
+                    background-position: 0px -1085px;
+                }
+                &:active{
+                    background-position: 0px -815px;
+                }
+            }
+        }
+        .share_qq{
+            a{
+                background-position: 0px -905px;
+                &:hover{
+                    background-position: 0px -950px;
+                }
+                &:active{
+                    background-position: 0px -995px;
+                }
+            }
+        }
+    }
+}
+.display_n{
+    display: none;
+}

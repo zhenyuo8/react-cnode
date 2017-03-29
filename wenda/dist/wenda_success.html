@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=8,9,10,11">
+    <title>提交成功</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/wenda_success.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/goTop.js"></script>
+    <script src="js/willAsk.js"></script>
+</head>
+<body>
+<div class="header">
+    <!-- 顶部导航模块 -->
+<div class="header_nav">
+    <div class="header_nav_content">
+        <ul class="header_nav_left">
+            <li class="first"> <span class="default_address"><a href="#" class="bg">北京</a></span> </li>
+            <li class="city_position" id="city_position"> <span class="changeAdd" id="city_position_qie">切换</span> <span class="triangle" id="city_position_triangle"></span>
+                <div class="city_chose" id="city_chose" style="display: none;">
+                    <div class="city_search">
+                        <div class="city_search_input"> <span class="search_btn"> <img src="http://static.qcdqcdn.com/img/search-btn.png" alt=""> </span> <span> <input type="text" value="请输入城市" class="input" id="input_letters"> <div class="input_letters_search" id="input_letters_search" style="display: none;"> <ul id="input_city_search"> <li class="click_to_destiny"> <span><img src="http://static.qcdqcdn.com/img/city_down_select.png" alt=""></span>                            <span>点击直达</span> </li>
+            <li class="city_search_result"> <span class="city_text">北京</span> <span class="city_letters">beijing</span> </li>
+            <li class="city_search_result"> <span class="city_text">上海</span> <span class="city_letters">shanghai</span> </li>
+            <li class="city_search_result"> <span class="city_text">南昌</span> <span class="city_letters">nanchang</span> </li>
+            <li class="city_search_result"> <span class="city_text">深圳</span> <span class="city_letters">shenzhen</span> </li>
+        </ul>
+        </div>
+        </span> <span class="city_hot_search"> <a href="http://beijing.qichedaquan.com" cityid="201">北京</a> <a href="http://shanghai.qichedaquan.com" cityid="2401">上海</a> <a href="http://guangzhou.qichedaquan.com" cityid="501">广州</a> <a href="http://shenzhen.qichedaquan.com" cityid="502">深圳</a> <a href="http://wuhan.qichedaquan.com" cityid="1201">武汉</a> <a href="http://hangzhou.qichedaquan.com" cityid="3001">杭州</a> </span>        <span class="delete_city"> <img src="http://static.qcdqcdn.com/img/delete-btn.png" alt=""> </span> </div>
+        </div>
+        <div class="hot_city_num"> <a href="#" class="">A</a> <a href="#" class="">B</a> <a href="#" class="a_active">C</a> <a href="#" class="">F</a> <a href="#" class="">G</a> <a href="#" class="">H</a> <a href="#" class="">J</a> <a href="#" class="">L</a> <a href="#">N</a>
+            <a
+                href="#">Q</a> <a href="#">S</a> <a href="#">T</a> <a href="#">X</a> <a href="#">Y</a> <a href="#">Z</a> </div>
+        <div class="city_scroll">
+            <div class="city_chose_region" id="city_chose_region" style="margin-top:0;">
+                <!--城市选择模块位置-->
+                <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a cityid="101" href="http://hefei.qichedaquan.com">合肥</a> <a cityid="102" href="http://anqing.qichedaquan.com">安庆</a> <a cityid="103" href="http://bengbu.qichedaquan.com">蚌埠</a> <a cityid="104" href="http://chaohu.qichedaquan.com">巢湖</a>                        <a cityid="105" href="http://chizhou.qichedaquan.com">池州</a> <a cityid="106" href="http://fy.qichedaquan.com">阜阳</a> <a cityid="107" href="http://huaibei.qichedaquan.com">淮北</a> <a cityid="108" href="http://huainan.qichedaquan.com">淮南</a>                        <a cityid="109" href="http://luan.qichedaquan.com">六安</a> <a cityid="110" href="http://maanshan.qichedaquan.com">马鞍山</a> <a cityid="113" href="http://tongling.qichedaquan.com">铜陵</a> <a cityid="114" href="http://wuhu.qichedaquan.com">芜湖</a>                        <a cityid="115" href="http://xuancheng.qichedaquan.com">宣城</a> <a cityid="116" href="http://chuzhou.qichedaquan.com">滁州</a> <a cityid="118" href="http://huangshan.qichedaquan.com">黄山</a> <a cityid="120" href="http://sz.qichedaquan.com">宿州</a>                        <a cityid="125" href="http://bozhou.qichedaquan.com">亳州</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">A</span> <span class="province_num">澳门</span> </dt>
+                    <dd> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">B</span> <span class="province_num">北京</span> </dt>
+                    <dd> <a cityid="201" href="http://beijing.qichedaquan.com">北京</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">C</span> <span class="province_num">重庆</span> </dt>
+                    <dd> <a cityid="3101" href="http://chongqing.qichedaquan.com">重庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">F</span> <span class="province_num">福建</span> </dt>
+                    <dd> <a cityid="301" href="http://fuzhou.qichedaquan.com">福州</a> <a cityid="302" href="http://xiamen.qichedaquan.com">厦门</a> <a cityid="303" href="http://longyan.qichedaquan.com">龙岩</a> <a cityid="305" href="http://zhangzhou.qichedaquan.com">漳州</a>                        <a cityid="306" href="http://putian.qichedaquan.com">莆田</a> <a cityid="307" href="http://quanzhou.qichedaquan.com">泉州</a> <a cityid="314" href="http://nanping.qichedaquan.com">南平</a> <a cityid="315" href="http://ningde.qichedaquan.com">宁德</a>                        <a cityid="318" href="http://sanming.qichedaquan.com">三明</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">G</span> <span class="province_num">甘肃</span> </dt>
+                    <dd> <a cityid="401" href="http://lanzhou.qichedaquan.com">兰州</a> <a cityid="402" href="http://dingxi.qichedaquan.com">定西</a> <a cityid="405" href="http://pingliang.qichedaquan.com">平凉</a> <a cityid="409" href="http://jiuquan.qichedaquan.com">酒泉</a>                        <a cityid="410" href="http://zhangye.qichedaquan.com" style="background: rgb(255, 255, 255); color: rgb(51, 51, 51);">张掖</a> <a cityid="411" href="http://qingyang.qichedaquan.com" style="background: rgb(255, 255, 255); color: rgb(51, 51, 51);">庆阳</a>                        <a cityid="412" href="http://wuwei.qichedaquan.com">武威</a> <a cityid="415" href="http://tianshui.qichedaquan.com">天水</a> <a cityid="416" href="http://jiayuguan.qichedaquan.com">嘉峪关</a> <a cityid="417" href="http://jc.qichedaquan.com">金昌</a>                        <a cityid="418" href="http://baiyin.qichedaquan.com">白银</a> <a cityid="421" href="http://longnan.qichedaquan.com" style="background: rgb(255, 255, 255); color: rgb(51, 51, 51);">陇南</a> <a cityid="422" href="http://gannanzangzuzizhizhou.qichedaquan.com">甘南藏族自治州</a>                        <a cityid="622900" href="http://linxiahuizuzizhizhou.qichedaquan.com" style="background: rgb(255, 255, 255); color: rgb(51, 51, 51);">临夏回族自治州</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">G</span> <span class="province_num">广东</span> </dt>
+                    <dd> <a cityid="501" href="http://guangzhou.qichedaquan.com">广州</a> <a cityid="502" href="http://shenzhen.qichedaquan.com">深圳</a> <a cityid="503" href="http://zhuhai.qichedaquan.com">珠海</a> <a cityid="504" href="http://dongguan.qichedaquan.com">东莞</a>                        <a cityid="505" href="http://zhongshan.qichedaquan.com">中山</a> <a cityid="507" href="http://shantou.qichedaquan.com">汕头</a> <a cityid="510" href="http://chaozhou.qichedaquan.com">潮州</a> <a cityid="511" href="http://shaoguan.qichedaquan.com">韶关</a>                        <a cityid="513" href="http://zhanjiang.qichedaquan.com">湛江</a> <a cityid="514" href="http://zhaoqing.qichedaquan.com">肇庆</a> <a cityid="515" href="http://maoming.qichedaquan.com">茂名</a> <a cityid="516" href="http://meizhou.qichedaquan.com">梅州</a>                        <a cityid="518" href="http://foshan.qichedaquan.com">佛山</a> <a cityid="520" href="http://huizhou.qichedaquan.com">惠州</a> <a cityid="521" href="http://jiangmen.qichedaquan.com">江门</a> <a cityid="522" href="http://jieyang.qichedaquan.com">揭阳</a>                        <a cityid="524" href="http://qingyuan.qichedaquan.com">清远</a> <a cityid="528" href="http://yunfu.qichedaquan.com">云浮</a> <a cityid="532" href="http://yangjiang.qichedaquan.com">阳江</a> <a cityid="535" href="http://heyuan.qichedaquan.com">河源</a>                        <a cityid="552" href="http://shanwei.qichedaquan.com">汕尾</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">G</span> <span class="province_num">广西</span> </dt>
+                    <dd> <a cityid="601" href="http://nanning.qichedaquan.com">南宁</a> <a cityid="602" href="http://liuzhou.qichedaquan.com">柳州</a> <a cityid="603" href="http://guilin.qichedaquan.com">桂林</a> <a cityid="604" href="http://beihai.qichedaquan.com">北海</a>                        <a cityid="605" href="http://baise.qichedaquan.com">百色</a> <a cityid="606" href="http://hezhou.qichedaquan.com">贺州</a> <a cityid="607" href="http://hechi.qichedaquan.com">河池</a> <a cityid="608" href="http://guigang.qichedaquan.com">贵港</a>                        <a cityid="610" href="http://yulin.qichedaquan.com">玉林</a> <a cityid="612" href="http://qinzhou.qichedaquan.com">钦州</a> <a cityid="613" href="http://wuzhou.qichedaquan.com">梧州</a> <a cityid="615" href="http://fangchenggang.qichedaquan.com">防城港</a>                        <a cityid="619" href="http://laibin.qichedaquan.com">来宾</a> <a cityid="621" href="http://chongzuo.qichedaquan.com">崇左</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">G</span> <span class="province_num">贵州</span> </dt>
+                    <dd> <a cityid="701" href="http://guiyang.qichedaquan.com">贵阳</a> <a cityid="702" href="http://zunyi.qichedaquan.com">遵义</a> <a cityid="705" href="http://anshun.qichedaquan.com">安顺</a> <a cityid="708" href="http://liupanshui.qichedaquan.com">六盘水</a>                        <a cityid="714" href="http://qiandongnanmiaozudongzuzizhizhou.qichedaquan.com">黔东南苗族侗族自治州</a> <a cityid="715" href="http://qiannanbuyizumiaozuzizhizhou.qichedaquan.com">黔南布依族苗族自治州</a> <a cityid="717" href="http://bijiediqu.qichedaquan.com">毕节地区</a>                        <a cityid="718" href="http://qianxinanbuyizumiaozuzizhizhou.qichedaquan.com">黔西南布依族苗族自治州</a> <a cityid="719" href="http://tongrendiqu.qichedaquan.com">铜仁地区</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">H</span> <span class="province_num">海南</span> </dt>
+                    <dd> <a cityid="801" href="http://haikou.qichedaquan.com">海口</a> <a cityid="802" href="http://qionghai.qichedaquan.com">琼海</a> <a cityid="803" href="http://sanya.qichedaquan.com">三亚</a> <a cityid="810" href="http://qiongbeidiqu.qichedaquan.com">琼北</a>                        <a cityid="811" href="http://qiongnandiqu.qichedaquan.com">琼南</a> <a cityid="469000" href="http://hainanshengzhixiaxianjixingzhengquhua.qichedaquan.com">省直辖县级行政区划</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">H</span> <span class="province_num">河北</span> </dt>
+                    <dd> <a cityid="901" href="http://shijiazhuang.qichedaquan.com">石家庄</a> <a cityid="902" href="http://tangshan.qichedaquan.com">唐山</a> <a cityid="903" href="http://xingtai.qichedaquan.com">邢台</a> <a cityid="905" href="http://qinhuangdao.qichedaquan.com">秦皇岛</a>                        <a cityid="906" href="http://langfang.qichedaquan.com">廊坊</a> <a cityid="907" href="http://handan.qichedaquan.com">邯郸</a> <a cityid="908" href="http://hengshui.qichedaquan.com">衡水</a> <a cityid="909" href="http://cangzhou.qichedaquan.com">沧州</a>                        <a cityid="910" href="http://baoding.qichedaquan.com">保定</a> <a cityid="911" href="http://zhangjiakou.qichedaquan.com">张家口</a> <a cityid="912" href="http://chengde.qichedaquan.com">承德</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">H</span> <span class="province_num">河南</span> </dt>
+                    <dd> <a cityid="1001" href="http://zhengzhou.qichedaquan.com">郑州</a> <a cityid="1002" href="http://luoyang.qichedaquan.com">洛阳</a> <a cityid="1003" href="http://zhoukou.qichedaquan.com">周口</a> <a cityid="1004" href="http://xinyang.qichedaquan.com">信阳</a>                        <a cityid="1005" href="http://xinxiang.qichedaquan.com">新乡</a> <a cityid="1006" href="http://shangqiu.qichedaquan.com">商丘</a> <a cityid="1007" href="http://sanmenxia.qichedaquan.com">三门峡</a> <a cityid="1008" href="http://puyang.qichedaquan.com">濮阳</a>                        <a cityid="1009" href="http://nanyang.qichedaquan.com">南阳</a> <a cityid="1010" href="http://luohe.qichedaquan.com">漯河</a> <a cityid="1011" href="http://jiaozuo.qichedaquan.com">焦作</a> <a cityid="1013" href="http://kaifeng.qichedaquan.com">开封</a>                        <a cityid="1014" href="http://anyang.qichedaquan.com">安阳</a> <a cityid="1016" href="http://hebi.qichedaquan.com">鹤壁</a> <a cityid="1018" href="http://pingdingshan.qichedaquan.com">平顶山</a> <a cityid="1019" href="http://jiyuan.qichedaquan.com">济源</a>                        <a cityid="1021" href="http://zhumadian.qichedaquan.com">驻马店</a> <a cityid="1023" href="http://xuchang.qichedaquan.com">许昌</a> <a cityid="419000" href="http://henanshengzhixiaxianjixingzhengquhua.qichedaquan.com">省直辖县级行政区划</a>                        </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">H</span> <span class="province_num">黑龙江</span> </dt>
+                    <dd> <a cityid="1101" href="http://haerbin.qichedaquan.com">哈尔滨</a> <a cityid="1102" href="http://daqing.qichedaquan.com">大庆</a> <a cityid="1103" href="http://qiqihaer.qichedaquan.com">齐齐哈尔</a> <a cityid="1104" href="http://hegang.qichedaquan.com">鹤岗</a>                        <a cityid="1106" href="http://jiamusi.qichedaquan.com">佳木斯</a> <a cityid="1107" href="http://jixi.qichedaquan.com">鸡西</a> <a cityid="1108" href="http://mudanjiang.qichedaquan.com">牡丹江</a> <a cityid="1109" href="http://qitaihe.qichedaquan.com">七台河</a>                        <a cityid="1112" href="http://yc.qichedaquan.com">伊春</a> <a cityid="1113" href="http://heihe.qichedaquan.com">黑河</a> <a cityid="1123" href="http://shuangyashan.qichedaquan.com">双鸭山</a> <a cityid="1131" href="http://suihua.qichedaquan.com">绥化</a>                        <a cityid="1136" href="http://daxinganlingdiqu.qichedaquan.com">大兴安岭地区</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">H</span> <span class="province_num">湖北</span> </dt>
+                    <dd> <a cityid="1201" href="http://wuhan.qichedaquan.com">武汉</a> <a cityid="1202" href="http://shiyan.qichedaquan.com">十堰</a> <a cityid="1203" href="http://xiangyang.qichedaquan.com">襄阳</a> <a cityid="1204" href="http://suizhou.qichedaquan.com">随州</a>                        <a cityid="1205" href="http://xiantao.qichedaquan.com">仙桃</a> <a cityid="1206" href="http://tianmen.qichedaquan.com">天门</a> <a cityid="1207" href="http://yichang.qichedaquan.com">宜昌</a> <a cityid="1208" href="http://huangshi.qichedaquan.com">黄石</a>                        <a cityid="1209" href="http://jingmen.qichedaquan.com">荆门</a> <a cityid="1210" href="http://jingzhou.qichedaquan.com">荆州</a> <a cityid="1216" href="http://ezhou.qichedaquan.com">鄂州</a> <a cityid="1217" href="http://xianning.qichedaquan.com">咸宁</a>                        <a cityid="1219" href="http://qianjiang.qichedaquan.com">潜江</a> <a cityid="1229" href="http://xiaogan.qichedaquan.com">孝感</a> <a cityid="1236" href="http://huanggang.qichedaquan.com">黄冈</a> <a cityid="422800" href="http://enshitujiazumiaozuzizhizhou.qichedaquan.com">恩施州</a>                        <a cityid="429000" href="http://hubeishengzhixiaxianjixingzhengquhua.qichedaquan.com">省直辖县级行政区划</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">H</span> <span class="province_num">湖南</span> </dt>
+                    <dd> <a cityid="1301" href="http://changsha.qichedaquan.com">长沙</a> <a cityid="1302" href="http://chenzhou.qichedaquan.com">郴州</a> <a cityid="1303" href="http://changde.qichedaquan.com">常德</a> <a cityid="1304" href="http://hengyang.qichedaquan.com">衡阳</a>                        <a cityid="1305" href="http://huaihua.qichedaquan.com">怀化</a> <a cityid="1306" href="http://loudi.qichedaquan.com">娄底</a> <a cityid="1307" href="http://zhuzhou.qichedaquan.com">株洲</a> <a cityid="1308" href="http://yueyang.qichedaquan.com">岳阳</a>                        <a cityid="1309" href="http://xiangtan.qichedaquan.com">湘潭</a> <a cityid="1310" href="http://shaoyang.qichedaquan.com">邵阳</a> <a cityid="1312" href="http://yongzhou.qichedaquan.com">永州</a> <a cityid="1313" href="http://yiyang.qichedaquan.com">益阳</a>                        <a cityid="1315" href="http://zhangjiajie.qichedaquan.com">张家界</a> <a cityid="1333" href="http://xiangxitujiazumiaozuzizhizhou.qichedaquan.com">湘西土家族苗族自治州</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">J</span> <span class="province_num">吉林</span> </dt>
+                    <dd> <a cityid="1401" href="http://changchun.qichedaquan.com">长春</a> <a cityid="1402" href="http://jilin.qichedaquan.com">吉林</a> <a cityid="1403" href="http://tonghua.qichedaquan.com">通化</a> <a cityid="1405" href="http://liaoyuan.qichedaquan.com">辽源</a>                        <a cityid="1406" href="http://baishan.qichedaquan.com">白山</a> <a cityid="1412" href="http://baicheng.qichedaquan.com">白城</a> <a cityid="1425" href="http://songyuan.qichedaquan.com">松原</a> <a cityid="1428" href="http://yanbianchaoxianzuzizhizhou.qichedaquan.com">延边朝鲜族自治州</a>                        <a cityid="1616" href="http://siping.qichedaquan.com">四平</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">J</span> <span class="province_num">江苏</span> </dt>
+                    <dd> <a cityid="1501" href="http://nanjing.qichedaquan.com">南京</a> <a cityid="1502" href="http://suzhou.qichedaquan.com">苏州</a> <a cityid="1503" href="http://wuxi.qichedaquan.com">无锡</a> <a cityid="1505" href="http://changzhou.qichedaquan.com">常州</a>                        <a cityid="1507" href="http://huaian.qichedaquan.com">淮安</a> <a cityid="1510" href="http://lianyungang.qichedaquan.com">连云港</a> <a cityid="1511" href="http://nantong.qichedaquan.com">南通</a> <a cityid="1512" href="http://yancheng.qichedaquan.com">盐城</a>                        <a cityid="1513" href="http://yangzhou.qichedaquan.com">扬州</a> <a cityid="1515" href="http://zhenjiang.qichedaquan.com">镇江</a> <a cityid="1517" href="http://taizhou.qichedaquan.com">泰州</a> <a cityid="1518" href="http://xuzhou.qichedaquan.com">徐州</a>                        <a cityid="1520" href="http://suqian.qichedaquan.com">宿迁</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">J</span> <span class="province_num">江西</span> </dt>
+                    <dd> <a cityid="1601" href="http://nanchang.qichedaquan.com">南昌</a> <a cityid="1602" href="http://shangrao.qichedaquan.com">上饶</a> <a cityid="1603" href="http://pingxiang.qichedaquan.com">萍乡</a> <a cityid="1604" href="http://xinyu.qichedaquan.com">新余</a>                        <a cityid="1605" href="http://yichun.qichedaquan.com">宜春</a> <a cityid="1606" href="http://jiujiang.qichedaquan.com">九江</a> <a cityid="1607" href="http://ganzhou.qichedaquan.com">赣州</a> <a cityid="1609" href="http://jian.qichedaquan.com">吉安</a>                        <a cityid="1612" href="http://jingdezhen.qichedaquan.com">景德镇</a> <a cityid="1613" href="http://jxfz.qichedaquan.com">抚州</a> <a cityid="1615" href="http://yingtan.qichedaquan.com">鹰潭</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">L</span> <span class="province_num">辽宁</span> </dt>
+                    <dd> <a cityid="1701" href="http://shenyang.qichedaquan.com">沈阳</a> <a cityid="1702" href="http://dandong.qichedaquan.com">丹东</a> <a cityid="1703" href="http://fushun.qichedaquan.com">抚顺</a> <a cityid="1704" href="http://fuxin.qichedaquan.com">阜新</a>                        <a cityid="1705" href="http://huludao.qichedaquan.com">葫芦岛</a> <a cityid="1707" href="http://chaoyang.qichedaquan.com">朝阳</a> <a cityid="1708" href="http://dalian.qichedaquan.com">大连</a> <a cityid="1709" href="http://benxi.qichedaquan.com">本溪</a>                        <a cityid="1710" href="http://anshan.qichedaquan.com">鞍山</a> <a cityid="1711" href="http://jz.qichedaquan.com">锦州</a> <a cityid="1713" href="http://liaoyang.qichedaquan.com">辽阳</a> <a cityid="1714" href="http://yingkou.qichedaquan.com">营口</a>                        <a cityid="1716" href="http://panjin.qichedaquan.com">盘锦</a> <a cityid="1717" href="http://tieling.qichedaquan.com">铁岭</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">N</span> <span class="province_num">内蒙古</span> </dt>
+                    <dd> <a cityid="1801" href="http://huhehaote.qichedaquan.com">呼和浩特</a> <a cityid="1802" href="http://baotou.qichedaquan.com">包头</a> <a cityid="1803" href="http://chifeng.qichedaquan.com">赤峰</a> <a cityid="1804" href="http://tongliao.qichedaquan.com">通辽</a>                        <a cityid="1805" href="http://wuhai.qichedaquan.com">乌海</a> <a cityid="1808" href="http://eerduosi.qichedaquan.com">鄂尔多斯</a> <a cityid="1812" href="http://hulunbeier.qichedaquan.com">呼伦贝尔</a> <a cityid="1814" href="http://xinganmeng.qichedaquan.com">兴安盟</a>                        <a cityid="1824" href="http://bayannaoer.qichedaquan.com">巴彦淖尔</a> <a cityid="1825" href="http://wulanchabu.qichedaquan.com">乌兰察布</a> <a cityid="1829" href="http://xilinguolemeng.qichedaquan.com">锡林郭勒盟</a> <a cityid="1830" href="http://alashanmeng.qichedaquan.com">阿拉善盟</a>                        </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">N</span> <span class="province_num">宁夏</span> </dt>
+                    <dd> <a cityid="1901" href="http://yinchuan.qichedaquan.com">银川</a> <a cityid="1902" href="http://wuzhong.qichedaquan.com">吴忠</a> <a cityid="1903" href="http://guyuan.qichedaquan.com">固原</a> <a cityid="1905" href="http://shizuishan.qichedaquan.com">石嘴山</a>                        <a cityid="1907" href="http://zhongwei.qichedaquan.com">中卫</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">Q</span> <span class="province_num">青海</span> </dt>
+                    <dd> <a cityid="2001" href="http://xining.qichedaquan.com">西宁</a> <a cityid="2023" href="http://haibeicangzuzizhizhou.qichedaquan.com">海北藏族自治州</a> <a cityid="2024" href="http://huangnancangzuzizhizhou.qichedaquan.com">黄南藏族自治州</a> <a cityid="2025"
+                            href="http://guoluocangzuzizhizhou.qichedaquan.com">果洛藏族自治州</a> <a cityid="2026" href="http://yushucangzuzizhizhou.qichedaquan.com">玉树藏族自治州</a> <a cityid="2027" href="http://haiximengguzucangzuzizhizhou.qichedaquan.com">海西蒙古族藏族自治州</a>                        <a cityid="2029" href="http://haidongdiqu.qichedaquan.com">海东地区</a> <a cityid="2030" href="http://hainanzangzuzizhizhou.qichedaquan.com">海南藏族自治州</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">S</span> <span class="province_num">山东</span> </dt>
+                    <dd> <a cityid="1015" href="http://dezhou.qichedaquan.com">德州</a> <a cityid="2101" href="http://jinan.qichedaquan.com">济南</a> <a cityid="2102" href="http://qingdao.qichedaquan.com">青岛</a> <a cityid="2103" href="http://yantai.qichedaquan.com">烟台</a>                        <a cityid="2104" href="http://weihai.qichedaquan.com">威海</a> <a cityid="2105" href="http://weifang.qichedaquan.com" style="background: rgb(255, 255, 255); color: rgb(51, 51, 51);">潍坊</a> <a cityid="2106" href="http://taian.qichedaquan.com"
+                            style="background: rgb(255, 255, 255); color: rgb(51, 51, 51);">泰安</a> <a cityid="2107" href="http://zaozhuang.qichedaquan.com" style="background: rgb(255, 255, 255); color: rgb(51, 51, 51);">枣庄</a> <a cityid="2109" href="http://zibo.qichedaquan.com"
+                            style="background: rgb(255, 255, 255); color: rgb(51, 51, 51);">淄博</a> <a cityid="2110" href="http://dongying.qichedaquan.com" style="background: rgb(255, 255, 255); color: rgb(51, 51, 51);">东营</a> <a cityid="2112" href="http://heze.qichedaquan.com"
+                            style="background: rgb(255, 255, 255); color: rgb(51, 51, 51);">菏泽</a> <a cityid="2113" href="http://binzhou.qichedaquan.com" style="background: rgb(255, 255, 255); color: rgb(51, 51, 51);">滨州</a> <a cityid="2114" href="http://liaocheng.qichedaquan.com"
+                            style="background: rgb(255, 255, 255); color: rgb(51, 51, 51);">聊城</a> <a cityid="2117" href="http://linyi.qichedaquan.com" style="background: rgb(255, 255, 255); color: rgb(51, 51, 51);">临沂</a> <a cityid="2118" href="http://jining.qichedaquan.com"
+                            style="background: rgb(255, 255, 255); color: rgb(51, 51, 51);">济宁</a> <a cityid="2120" href="http://rizhao.qichedaquan.com">日照</a> <a cityid="2126" href="http://yanwei.qichedaquan.com" style="background: rgb(255, 255, 255); color: rgb(51, 51, 51);">烟威</a>                        <a cityid="2132" href="http://laiwu.qichedaquan.com" style="background: rgb(255, 255, 255); color: rgb(51, 51, 51);">莱芜</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">S</span> <span class="province_num">山西</span> </dt>
+                    <dd> <a cityid="2201" href="http://taiyuan.qichedaquan.com">太原</a> <a cityid="2202" href="http://datong.qichedaquan.com">大同</a> <a cityid="2203" href="http://jincheng.qichedaquan.com">晋城</a> <a cityid="2204" href="http://jinzhong.qichedaquan.com">晋中</a>                        <a cityid="2205" href="http://linfen.qichedaquan.com">临汾</a> <a cityid="2206" href="http://changzhi.qichedaquan.com">长治</a> <a cityid="2207" href="http://yuncheng.qichedaquan.com">运城</a> <a cityid="2210" href="http://xinzhou.qichedaquan.com">忻州</a>                        <a cityid="2218" href="http://yangquan.qichedaquan.com">阳泉</a> <a cityid="2219" href="http://shuozhou.qichedaquan.com">朔州</a> <a cityid="2227" href="http://lvliang.qichedaquan.com">吕梁</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">S</span> <span class="province_num">陕西</span> </dt>
+                    <dd> <a cityid="2301" href="http://xian.qichedaquan.com">西安</a> <a cityid="2302" href="http://xianyang.qichedaquan.com">咸阳</a> <a cityid="2303" href="http://weinan.qichedaquan.com">渭南</a> <a cityid="2304" href="http://yl.qichedaquan.com">榆林</a>                        <a cityid="2305" href="http://baoji.qichedaquan.com">宝鸡</a> <a cityid="2306" href="http://ankang.qichedaquan.com">安康</a> <a cityid="2307" href="http://hanzhong.qichedaquan.com">汉中</a> <a cityid="2308" href="http://yanan.qichedaquan.com">延安</a>                        <a cityid="2310" href="http://tongchuan.qichedaquan.com">铜川</a> <a cityid="2313" href="http://shangluo.qichedaquan.com">商洛</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">S</span> <span class="province_num">上海</span> </dt>
+                    <dd> <a cityid="2401" href="http://shanghai.qichedaquan.com">上海</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">S</span> <span class="province_num">四川</span> </dt>
+                    <dd> <a cityid="2501" href="http://chengdu.qichedaquan.com">成都</a> <a cityid="2502" href="http://mianyang.qichedaquan.com">绵阳</a> <a cityid="2503" href="http://suining.qichedaquan.com">遂宁</a> <a cityid="2504" href="http://panzhihua.qichedaquan.com">攀枝花</a>                        <a cityid="2506" href="http://yibin.qichedaquan.com">宜宾</a> <a cityid="2507" href="http://yaan.qichedaquan.com">雅安</a> <a cityid="2508" href="http://zigong.qichedaquan.com">自贡</a> <a cityid="2509" href="http://ziyang.qichedaquan.com">资阳</a>                        <a cityid="2510" href="http://guangyuan.qichedaquan.com">广元</a> <a cityid="2511" href="http://deyang.qichedaquan.com">德阳</a> <a cityid="2512" href="http://leshan.qichedaquan.com">乐山</a> <a cityid="2513" href="http://nanchong.qichedaquan.com">南充</a>                        <a cityid="2514" href="http://meishan.qichedaquan.com">眉山</a> <a cityid="2516" href="http://bazhong.qichedaquan.com">巴中</a> <a cityid="2517" href="http://luzhou.qichedaquan.com">泸州</a> <a cityid="2519" href="http://neijiang.qichedaquan.com">内江</a>                        <a cityid="2530" href="http://guangan.qichedaquan.com">广安</a> <a cityid="2532" href="http://dazhou.qichedaquan.com">达州</a> <a cityid="2535" href="http://abacangzuqiangzuzizhizhou.qichedaquan.com">阿坝藏族羌族自治州</a> <a cityid="2536"
+                            href="http://ganzicangzuzizhizhou.qichedaquan.com">甘孜藏族自治州</a> <a cityid="2537" href="http://liangshanyizuzizhizhou.qichedaquan.com">凉山彝族自治州</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">T</span> <span class="province_num">天津</span> </dt>
+                    <dd> <a cityid="2601" href="http://tianjin.qichedaquan.com">天津</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">T</span> <span class="province_num">台湾</span> </dt>
+                    <dd> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">X</span> <span class="province_num">西藏</span> </dt>
+                    <dd> <a cityid="2701" href="http://lasa.qichedaquan.com">拉萨</a> <a cityid="2703" href="http://rikaze.qichedaquan.com">日喀则地区</a> <a cityid="2704" href="http://shannan.qichedaquan.com">山南地区</a> <a cityid="2705" href="http://naqudiqu.qichedaquan.com">那曲地区</a>                        <a cityid="2707" href="http://alidiqu.qichedaquan.com">阿里地区</a> <a cityid="2708" href="http://shannandiqu.qichedaquan.com">山南地区</a> <a cityid="2709" href="http://changdudiqu.qichedaquan.com">昌都地区</a> <a cityid="2710" href="http://linzhidiqu.qichedaquan.com">林芝地区</a>                        </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">X</span> <span class="province_num">新疆</span> </dt>
+                    <dd> <a cityid="2801" href="http://wulumuqi.qichedaquan.com">乌鲁木齐</a> <a cityid="2803" href="http://kelamayi.qichedaquan.com">克拉玛依</a> <a cityid="2810" href="http://shihezi.qichedaquan.com">石河子</a> <a cityid="2821" href="http://boertalamengguzizhizhou.qichedaquan.com">博尔塔拉蒙古自治州</a>                        <a cityid="2822" href="http://bayinguolengmengguzizhizhou.qichedaquan.com">巴音郭楞蒙古自治州</a> <a cityid="2823" href="http://yilihasakezizhizhou.qichedaquan.com">伊犁哈萨克自治州</a> <a cityid="2828" href="http://kashidiqu.qichedaquan.com">喀什地区</a>                        <a cityid="2829" href="http://akesudiqu.qichedaquan.com">阿克苏地区</a> <a cityid="2830" href="http://hetiandiqu.qichedaquan.com">和田地区</a> <a cityid="2831" href="http://tachengdiqu.qichedaquan.com">塔城地区</a> <a cityid="2832" href="http://tulufandiqu.qichedaquan.com">吐鲁番地区</a>                        <a cityid="2833" href="http://hamidiqu.qichedaquan.com">哈密地区</a> <a cityid="2834" href="http://aletaidiqu.qichedaquan.com">阿勒泰地区</a> <a cityid="2835" href="http://xinjiangkezhou.qichedaquan.com">克孜勒苏柯尔克孜自治州</a> <a cityid="652300"
+                            href="http://changjihuizuzizhizhou.qichedaquan.com">昌吉回族自治州</a> <a cityid="659000" href="http://zizhiquzhixiaxianjixingzhengquhua.qichedaquan.com">自治区直辖县级行政区划</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">X</span> <span class="province_num">香港</span> </dt>
+                    <dd> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">Y</span> <span class="province_num">云南</span> </dt>
+                    <dd> <a cityid="2901" href="http://kunming.qichedaquan.com">昆明</a> <a cityid="2902" href="http://yuxi.qichedaquan.com">玉溪</a> <a cityid="2903" href="http://qujing.qichedaquan.com">曲靖</a> <a cityid="2907" href="http://baoshan.qichedaquan.com">保山</a>                        <a cityid="2911" href="http://lincang.qichedaquan.com">临沧</a> <a cityid="2914" href="http://wenshan.qichedaquan.com">文山壮族苗族自治州</a> <a cityid="2915" href="http://xishuangbanna.qichedaquan.com">西双版纳傣族自治州</a> <a cityid="2918" href="http://zhaotong.qichedaquan.com">昭通</a>                        <a cityid="2922" href="http://lijiang.qichedaquan.com">丽江</a> <a cityid="2923" href="http://honghehanizuyizuzizhizhou.qichedaquan.com">红河哈尼族彝族自治州</a> <a cityid="2925" href="http://dehongdaizujingpozuzizhizhou.qichedaquan.com">德宏傣族景颇族自治州</a>                        <a cityid="2927" href="http://nujianglisuzuzizhizhou.qichedaquan.com">怒江傈僳族自治州</a> <a cityid="2928" href="http://diqingcangzuzizhizhou.qichedaquan.com">迪庆藏族自治州</a> <a cityid="2929" href="http://puer.qichedaquan.com">普洱</a> <a cityid="532300"
+                            href="http://chuxiongyizuzizhizhou.qichedaquan.com">楚雄彝族自治州</a> <a cityid="532900" href="http://dalibaizuzizhizhou.qichedaquan.com">大理白族自治州</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">Z</span> <span class="province_num">浙江</span> </dt>
+                    <dd> <a cityid="3001" href="http://hangzhou.qichedaquan.com">杭州</a> <a cityid="3002" href="http://ningbo.qichedaquan.com">宁波</a> <a cityid="3003" href="http://wenzhou.qichedaquan.com">温州</a> <a cityid="3005" href="http://jiaxing.qichedaquan.com">嘉兴</a>                        <a cityid="3006" href="http://jinhua.qichedaquan.com">金华</a> <a cityid="3009" href="http://lishui.qichedaquan.com">丽水</a> <a cityid="3011" href="http://huzhou.qichedaquan.com">湖州</a> <a cityid="3012" href="http://quzhou.qichedaquan.com">衢州</a>                        <a cityid="3015" href="http://tz.qichedaquan.com">台州</a> <a cityid="3016" href="http://shaoxing.qichedaquan.com">绍兴</a> <a cityid="3020" href="http://zhoushan.qichedaquan.com">舟山</a> <a cityid="339000" href="http://yuci.qichedaquan.com">余慈</a>                        <a cityid="339100" href="http://yueqing.qichedaquan.com">乐清地区</a> </dd>
+                </dl>
+            </div>
+            <div class="scrollbar">
+                <div class="scrollbtn" style="height: 54.7838px; top: 26.0665px;"></div>
+            </div>
+        </div>
+    </div>
+    </li>
+    <li class="nav_line"> <span></span> </li>
+    <li> <span class="others"><a href="javascript:void(0)" target="_blank" id="othersCarId">查看其他地方车市</a></span> </li>
+    </ul>
+    <ul class="header_nav_right">
+        <li class="header_hover" id="app_id"> <span class="app" id="app"> <a href="#" target="_blank">移动应用</a> </span> <span class="triangle"></span> </li>
+        <li class="nav_line nav_line2" id="nav_line"><span></span></li>
+        <li class="header_hover message_notice" style="display:none"> <em></em> <i></i> <span class="message_drop"> <a href="#"><span>我的询价</span> ><i></i></a> <a href="#"><span>我的问答</span> ><i></i></a> <a href="#"><span>我的评论</span> ><i></i></a> <a href="#"><span>消息中心</span> ><i></i></a> </span>
+        </li>
+        <li class=" header_hover login_third" id="login_third"> <span><a href="#">第三方登录</a></span> <span class="triangle1"></span> <span class="login_third_container"> <a href="#" class="wx"><i></i>微信</a> <a href="#" class="wb"><i></i>微博</a> <a href="#" class="tx_qq"><i></i>QQ</a> </span> </li>
+        <li class="nav_line"
+            id="nav_line2"><span></span></li>
+        <li class="header_hover user_name" style="display:none"> <span><a href="#">conan</a></span> <span class="triangle2"></span> <span class="user_drop"> <span class="latest_view"> <a href="#" class="view_res">最近看过的</a> <a href="#">宝马6系</a> <a href="#">奥迪7系</a> <a href="#">英菲尼迪Q70L</a> </span> <span class="sign_out"> <a href="#">我的收藏</a> <a href="#">退出登录</a> </span>            </span>
+        </li>
+        <li class="header_hover" id="register_id"> <span class="register" id="register"><a href="javascript:void (0)" target="_blank">注册</a></span> </li>
+        <li class="bg header_hover" id="login_id"> <span class="login bg"><a href="javascript:void (0)" target="_blank">登录</a></span> </li>
+    </ul>
+</div>
+</div>
+
+    <!--logo model -->
+    <!-- 头部 Logo 及 banner 模块 -->
+<div class="logo">
+    <div class="logo_left">
+        <a href="index.html"> <img src="img/logo_car.png" alt="这是logo图片"> </a>
+    </div>
+    <div class="logo_right">
+        <a href="#">
+            <!-- <img src="img/top-logo-nav.png" alt="这是广告图片"> -->
+            <XYins id="div_a8326c61-5174-49fe-902c-860df07bab64" data-type="ad_play" data-adplay_IP="" data-adplay_AreaName="" data-adplay_CityName="" data-adplay_BrandID="" data-adplay_BrandName="" data-adplay_BrandType="" data-adplay_BlockCode="a8326c61-5174-49fe-902c-860df07bab64">
+            </XYins>
+        </a>
+    </div>
+</div>
+
+    <!--menu model -->
+    <!-- 头部菜单模块 -->
+<div class="total_Nav">
+    <div class="total_Nav_Content" id="total_nav_content">
+        <ul>
+            <li class=""><a href="carTypeIndex.html" target="_blank">车型</a></li>
+            <li><a href="imgHome.html" target="_blank">图片</a></li>
+            <li><a href="video.html" target="_blank">视频</a></li>
+            <li><a href="newCar.html" target="_blank">新车</a></li>
+            <li><a href="evaluatingGuide.html" target="_blank">评测</a></li>
+            <li><a href="shoppingGuide.html" target="_blank">导购</a></li>
+            <li><a href="javascript:void(0)" target="_blank">报价</a></li>
+            <li><a href="javascript:void(0)" target="_blank">降价</a></li>
+            <li><a href="javascript:void(0)" target="_blank">经销商</a></li>
+            <li><a href="javascript:void(0)" target="_blank">问答</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+<div class="main">
+    <div class="success_head relative">
+        <div class="succ_bg">
+            <img src="img/success_bg.jpg" alt="">
+        </div>
+        <div class="succ_content absolute">
+            <h2>恭喜您，问题已发布成功！</h2>
+            <p>您可以 <a href="#">继续提问</a></p>
+            <div><a href="wenda_index.html" class="turnBack">返回问答首页</a>
+                <a href="#" class="justQeustion">查看刚刚的提问</a>
+            </div>
+        </div>
+    </div>
+    <div class="section clearfix">
+        <div class="w_left fl">
+            <!--问题列表-->
+            <div class="quetion_list">
+                <div class="q_title clearfix">
+                    <h2 class="recommend fl">我也来答</h2>
+                </div>
+                <div id="new_question">
+    <ul class="w_question_list js-con ul_hide ul_show ">
+        <li>
+            <div class="q_icon relative ">
+                <div> <img src="img/pic/icon1.png" alt=""> <img src="img/photo_mask.png" class="q_photo_mask">
+                    <div class="info">
+                        <p class="userName"><a href="#">xyuer12345</a></p>
+                        <p class="gray">2月12日 19：43</p>
+                    </div>
+                </div> <img src="img/zhuanjia.png" class="absolute"> </div>
+            <div class="q_content">
+                <p class="limite2"> <a href="#" class="red">[ 精华 ]</a><a href="#" class="blue"> #用车# </a><a href="#" class="q_text">a昨晚车窗没关好，漏了一条昨晚车窗没关好，漏了一条昨晚车窗没关好，漏了一条昨晚车窗没关好，漏了一条昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半</a> </p>
+            </div>
+            <div class="q_image clearfix">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="q_label relative">
+                <div class="label"> <a href="#">奥迪</a> <a href="#">奥迪A4</a> <a href="#">奥迪A4</a> <a href="#">一汽奔腾X80</a> </div>
+                <div class="reply absolute"> 回复（40） </div>
+            </div>
+        </li>
+        <li>
+            <div class="q_icon relative">
+                <div> <img src="img/pic/icon1.png" alt=""> <img src="img/photo_mask.png" class="q_photo_mask">
+                    <div class="info">
+                        <p class="userName"><a href="#">xyuer12345</a></p>
+                        <p class="gray">2月12日 19：43</p>
+                    </div>
+                </div> <img src="img/zhuanjia.png" class="absolute"> </div>
+            <div class="q_content">
+                <p class="limite2"> <a href="#" class="red">[ 精华 ]</a><a href="#" class="blue"> #用车# </a><a href="#" class="q_text">昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半</a>                    </p>
+            </div>
+            <div class="q_image clearfix max-height-210"> <img src="img/pic/pic_11.jpg" alt=""> <img src="img/pic/pic_11.jpg" alt=""> <img src="img/pic/pic_11.jpg" alt=""> </div>
+            <div class="q_label relative">
+                <div class="label"> <a href="#">奥迪</a> <a href="#">奥迪A4</a> <a href="#">奥迪A4</a> <a href="#">一汽奔腾X80</a> </div>
+                <div class="reply absolute"> 回复（40） </div>
+            </div>
+        </li>
+        <li>
+            <div class="q_icon relative">
+                <div> <img src="img/pic/icon1.png" alt=""> <img src="img/photo_mask.png" class="q_photo_mask">
+                    <div class="info">
+                        <p class="userName"><a href="#">xyuer12345</a></p>
+                        <p class="gray">2月12日 19：43</p>
+                    </div>
+                </div> <img src="img/zhuanjia.png" class="absolute"> </div>
+            <div class="q_content">
+                <p class="limite2"> <a href="#" class="red">[ 精华 ]</a><a href="#" class="blue"> #用车# </a><a href="#" class="q_text">昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半</a>                    </p>
+            </div>
+            <div class="q_image clearfix max-height-290"> <img src="img/pic/pic_13.jpg" alt=""> </div>
+            <div class="q_label relative">
+                <div class="label"> <a href="#">奥迪</a> <a href="#">奥迪A4</a> <a href="#">奥迪A4</a> <a href="#">一汽奔腾X80</a> </div>
+                <div class="reply absolute"> 回复（40） </div>
+            </div>
+        </li>
+    </ul>
+    <ul class="w_question_list js-con ul_hide">
+        <li>
+            <div class="q_icon relative">
+                <div> <img src="img/pic/icon1.png" alt=""> <img src="img/photo_mask.png" class="q_photo_mask">
+                    <div class="info">
+                        <p class="userName"><a href="#">xyuer12345</a></p>
+                        <p class="gray">2月12日 19：43</p>
+                    </div>
+                </div> <img src="img/zhuanjia.png" class="absolute"> </div>
+            <div class="q_content">
+                <p class="limite2"> <a href="#" class="red">[ 精华 ]</a><a href="#" class="blue"> #用车# </a><a href="#" class="q_text">昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半</a>                    </p>
+            </div>
+            <div class="q_image clearfix"> <img src="img/pic/pic_03.jpg" alt=""> <img src="img/pic/pic_03.jpg" alt=""> <img src="img/pic/pic_03.jpg" alt=""> <img src="img/pic/pic_03.jpg" alt=""> <img src="img/pic/pic_03.jpg" alt=""> <img src="img/pic/pic_03.jpg" alt=""> <img src="img/pic/pic_03.jpg"
+                    alt=""> <img src="img/pic/pic_03.jpg" alt=""> </div>
+            <div class="q_label relative">
+                <div class="label"> <a href="#">奥迪</a> <a href="#">奥迪A4</a> <a href="#">奥迪A4</a> <a href="#">一汽奔腾X80</a> </div>
+                <div class="reply absolute"> 回复（40） </div>
+            </div>
+        </li>
+        <li>
+            <div class="q_icon relative">
+                <div> <img src="img/pic/icon1.png" alt=""> <img src="img/photo_mask.png" class="q_photo_mask">
+                    <div class="info">
+                        <p class="userName"><a href="#">xyuer12345</a></p>
+                        <p class="gray">2月12日 19：43</p>
+                    </div>
+                </div> <img src="img/zhuanjia.png" class="absolute"> </div>
+            <div class="q_content">
+                <p class="limite2"> <a href="#" class="red">[ 精华 ]</a><a href="#" class="blue"> #用车# </a><a href="#" class="q_text">昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半</a>                    </p>
+            </div>
+            <div class="q_image clearfix max-height-210"> <img src="img/pic/pic_11.jpg" alt=""> <img src="img/pic/pic_11.jpg" alt=""> <img src="img/pic/pic_11.jpg" alt=""> </div>
+            <div class="q_label relative">
+                <div class="label"> <a href="#">奥迪</a> <a href="#">奥迪A4</a> <a href="#">奥迪A4</a> <a href="#">一汽奔腾X80</a> </div>
+                <div class="reply absolute"> 回复（40） </div>
+            </div>
+        </li>
+        <li>
+            <div class="q_icon relative">
+                <div> <img src="img/pic/icon1.png" alt=""> <img src="img/photo_mask.png" class="q_photo_mask">
+                    <div class="info">
+                        <p class="userName"><a href="#">xyuer12345</a></p>
+                        <p class="gray">2月12日 19：43</p>
+                    </div>
+                </div> <img src="img/zhuanjia.png" class="absolute"> </div>
+            <div class="q_content">
+                <p class="limite2"> <a href="#" class="red">[ 精华 ]</a><a href="#" class="blue"> #用车# </a><a href="#" class="q_text">昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半昨晚车窗没关好，漏了一条缝，把我里面坐椅打湿一半</a>                    </p>
+            </div>
+            <div class="q_image clearfix max-height-290"> <img src="img/pic/pic_13.jpg" alt=""> </div>
+            <div class="q_label relative">
+                <div class="label"> <a href="#">奥迪</a> <a href="#">奥迪A4</a> <a href="#">奥迪A4</a> <a href="#">一汽奔腾X80</a> </div>
+                <div class="reply absolute"> 回复（40） </div>
+            </div>
+        </li>
+    </ul>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer model -->
+<!-- 底部 -->
+<div class="footer">
+    <div class="footer_content">
+        <ul>
+            <li class="footer_message"><a href="javascript:void (0)">关于我们</a></li>
+            <li class="footer_message"><a href="javascript:void (0)">联系我们</a></li>
+            <li class="footer_message"><a href="javascript:void (0)">招贤纳士</a></li>
+            <li class="website"><a href="javascript:void (0)">@2004-2016 www .xxx .com All Rights Reserved. xxx所有</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--goTop model -->
+<!-- 返回顶部 -->
+<div class="goTop" id="back_to_top"> <span class="goTop_icon"></span> <span class="goTop_text">返回顶部</span></div>
+<!--我要提问 -->
+<div class="willAsk" id="willAsk"> <span class="willAsk_icon"></span> <span class="willAsk_text">我要提问</span></div>
+<script src="js/wenda_question_list.js"></script>
+<script src="js/limite.js"></script>
+</body>
+</html>

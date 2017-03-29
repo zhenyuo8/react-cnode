@@ -1,0 +1,145 @@
+/*****
+ *@author: jianingning
+ *@from: Global style dealer
+ *@description: 
+ *@date: name (2017.02.15)
+*/
+
+@import (reference) "public";
+@import "mod/mod_nav.less";
+@import "mod/mod_rotatoHint.less";
+
+
+
+    #listWrap_box {
+
+        .listWrap {
+  
+            .dealer_list {
+                background:url(../img/line.png) no-repeat center top;
+                background-size:100% 1px;
+                padding-top: .22rem;
+                margin-bottom: 0.22rem;
+                /*border-bottom: 1px solid #c6c6c6;*/
+                position: relative;
+                min-height: 2.1rem;
+                &:first-child{background: none}
+                dd {
+                    width: 6.4rem;
+                    padding-left: 0.933rem;
+                }
+                .dealer_name {
+                    font-size: 15px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .dealer_address {
+                    font-size: 11px;
+                    color: @color-999;
+                    margin-top: 0.09rem;
+                    line-height: 0.4rem;
+                }
+                .car_price {
+                    font-size: 15px;
+                    color: #de0000; 
+                    margin-top: 0.15rem;
+                    font-weight: 700;
+                }
+                .distance {
+                    font-size: 11px;
+                    margin-top: 0.12rem;
+                    color: @color-999;
+                    span {
+                        /*float: left;*/
+                        margin:0.04rem 0.067rem 0 0; 
+                        display: inline-block;
+                        width: 0.253rem;
+                        height: 0.307rem;
+                        background: url(../img/location.png);
+                        background-size: cover;
+                    }
+                }
+                .floor_price {
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -.8rem;
+                    right: 0.8rem;
+                    width: 1.88rem;
+                    height: 1.88rem;
+                    text-align: center;
+                    line-height: 1.88rem;
+                    font-size: 15px;
+                    color: @color-fff;
+                    background:-webkit-gradient(linear,0% 0%, 0% 100%, from(#279cfe), to(#2c82ff));
+                    border-radius: 50%;
+
+                    &:active {
+                       background:-webkit-gradient(linear,0% 0%, 0% 100%, from(#1b7ffe), to(#1e64ff)); 
+                    }
+                }
+            }
+        }
+    } 
+
+
+[data-dpr="2"] #listWrap_box {
+        .listWrap .dealer_list{
+            .dealer_name {
+                font-size: 30px;
+            }
+            .dealer_address {
+                font-size: 22px;
+            }
+            .car_price {
+                font-size: 30px;
+            }
+            .distance {
+                font-size: 22px;
+            }
+            .floor_price {
+                font-size: 30px;
+            }
+        }
+    }
+[data-dpr="3"] #listWrap_box {
+        .listWrap .dealer_list{
+            .dealer_name {
+                font-size: 45px;
+            }
+            .dealer_address {
+                font-size: 33px;
+            }
+            .car_price {
+                font-size: 45px;
+            }
+            .distance {
+                font-size: 33px;
+            }
+            .floor_price {
+                font-size: 45px;
+            }
+        }
+    }
+[data-dpr="2"] .head {
+    h1 {
+        font-size: 48px;
+        .dealerCity {
+            font-size: 32px;
+        }
+    }
+    ul li span {
+        font-size: 24px;
+    }
+}
+[data-dpr="3"] .head {
+    h1 {
+        font-size: 72px;
+        .dealerCity {
+            font-size: 48px;
+        }
+    }
+    ul li span {
+        font-size: 36px;
+    }
+}

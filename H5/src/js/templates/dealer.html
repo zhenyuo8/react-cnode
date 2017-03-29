@@ -1,0 +1,33 @@
+<div class="wrap">
+    <page-header title="经销商信息" page="dealer"></page-header>
+    <!--content-->
+    <div class="content">
+        <img v-bind:src="info.masterBrandLogo" class="dealer_logo">
+        <p class="dealer_name">{{info.fullName}}</p>
+        <div class="dealer_map">
+            <div class="map" id="allmap"></div>
+            <div class="dealer_address clearfix">
+                <span class="location_icon"><img src="../../img/location_big.png"></span>
+                <p class="address">{{info.address}}</p>
+            </div>
+        </div>
+        <div class="promotion" v-if="newslist.length">
+            <p class="promotionNews"><span></span>促销信息</p>
+            <ul class="promotion_list">
+                <li v-for="row in newslist">
+                    <router-link :to="{
+                        name: 'dealernews',
+                        query: {
+                            dealerId: dealerId,
+                            serialId: serialId,
+                            q_serialId: row.serialId
+                        }
+                    }" reload>
+                        <span class="promotion_sign">SALE</span>
+                        <span class="promotion_text">{{row.newsTitle}}</span>
+                    </router-link>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

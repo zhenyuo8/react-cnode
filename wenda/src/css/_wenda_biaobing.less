@@ -1,0 +1,118 @@
+/*****
+ *@author: jianingning
+ *@from: Global style wenda_biaobing  别人看标兵
+ *@description: 
+ *@date: name (2017.03.09)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_headerTitle.less";
+@import "mod/mod_headerLogo.less";
+@import "mod/mod_headerMenu.less";
+@import "mod/mod_wendaPub.less";
+@import "mod/mod_pagination.less";
+@import "mod/mod_footer.less";
+@import "mod/mod_preview_image";
+
+.biaobing_content {
+	width: 990px;
+	margin: 0 auto;
+
+	/*个人信息*/
+	.biaobing_personal_news {
+		margin-top: 10px;
+		width: 988px;
+		height: 182px;
+		border: 1px solid #dadada;
+
+		.biaobing_per {
+			float: left;
+			margin-top: 25px;
+			width: 328px;
+			height: 115px;
+			border-right: 1px dashed #eee;
+
+			dt {
+				position: relative;
+				float: left;
+				margin: 0 39px 0 40px;
+				width: 100px;
+				height: 100px;
+
+				.biaobing_photo {
+					display: inline-block;
+					width: 100px;
+					height: 100px;
+				}
+
+				.q_photo_mask {
+					position: absolute;
+					top: 0;
+					left: 0;
+					z-index: 2;
+					display: inline-block;
+					width: 100px;
+					height: 100px;
+					background: url(../img/zhj_photo_mask.png);
+					background-size: 100%;
+				}
+
+				.biaobing_identity_sign {
+					position: absolute;
+					left: -8px;
+					bottom: -14px;
+					z-index: 3;
+				}
+			}
+			.biaobing_name {
+				margin-top: 30px;
+				font-size: 24px;
+				font-weight: 700;
+				overflow: hidden;
+				max-width: 231px;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+			.biaobing_identity {
+				margin-top: 17px;
+				font-size: 14px;
+			}
+			p {
+				width: 266px;
+				padding-left: 62px;
+				font-size: 18px;
+
+				span {
+					font-weight: 700;
+				}
+			}
+			.biaobing_num {
+				margin-top: 31px;
+			}
+			.biaobing_num2 {
+				margin-top: 17px;
+			}
+			.biaobing_ans_btn {
+				display: inline-block;
+				margin: 37px 0 0 64px;
+				width: 167px;
+				height: 44px;
+				text-align: center;
+				line-height: 44px;
+				border-radius: 3px;
+				font-size: 16px;
+				font-weight: 700;
+				color: #fff;
+				background: #ffa903;
+			}
+		}
+		.biaobing_noborder {
+			border-right: none;
+		}
+	}
+}
+.footer {
+	margin-top: 48px;
+}

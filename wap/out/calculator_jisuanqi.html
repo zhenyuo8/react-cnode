@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>购车计算器｜买车计算器｜购车费用计算器－汽车大全</title>
+    <meta name="keywords" content="购车计算器" >
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="js/flexible.js"></script>
+    <script src="js/flexible_css.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/tab.js"></script>
+    <script src="js/pubNav.js"></script>
+    <script src="js/public.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/goTop.js"></script>
+    <link rel="stylesheet" href="http://static.qcdqcdn.com:8888/wap/css/base.css"/>
+    <link rel="stylesheet" href="http://static.qcdqcdn.com:8888/wap/css/calculator.css"/>
+</head>
+<body>
+    <div class="wrap">
+        <!-- 头部 -->
+        <div class="pub_head">
+    <a href="#" class="goback_btn" id="goHistory"></a>
+    <a href="http://m.qichedaquan.com/"><img src="http://static.qcdqcdn.com:8888/wap/img/logo_text.png" class="logo_text"></a> <span class="p">●</span> <span class="title_extra">购车计算器</span> <span class="nav_btn">导航</span></div>
+
+        <!-- content -->
+        <ul class="calculate_way clearfix">
+            <li class="calculate_active"><a href="#">全款计算</a></li>
+            <li><a href="calculator_jsqD.html">贷款计算</a></li>
+        </ul>
+        <div class="calculate_content">
+            <!--计算详细（全款）-->
+            <div class="calculate">
+                <div class="cal_totalPrices">
+                    <span class="zj">全款总价（元）</span>
+                    <span class="cal_price">365,871</span>
+                    <a href="#" type="reset" class="cal_reset" target="quankuan">重置</a>
+                </div>
+                <ul class="cal_fenqi">
+                    <li>
+                        <span class="cal_fenqi_text">裸车价（元）</span>
+                        <span class="cal_fenqi_price">126,201</span>
+                    </li>
+                    <li>
+                        <span class="cal_fenqi_text">必要花费（元）</span>
+                        <span class="cal_fenqi_price">6,446</span>
+                    </li>
+                    <li>
+                        <span class="cal_fenqi_text">商业保险（元）</span>
+                        <span class="cal_fenqi_price">21,333</span>
+                    </li>
+                </ul>
+                <p class="cal_type">
+                    <a href="#">
+                        <span class="cal_type_tit">选择车款</span>
+                        <span class="cal_type_con">2017款 40TFSI进取型速腾 2017款 40TFSI进取型速腾2017款 40TFSI进取型速腾</span>
+                        <span class="cal_arrow_right"></span>
+                    </a>
+                </p>
+                <p class="cal_type">
+                    <span class="cal_type_tit">裸车价格</span>
+                    <input type="text" class="cal_type_con" value="65,579"/>
+                    <span class="cal_type_editor"></span>
+                </p>
+                <div class="cal_news">
+                    <p class="cal_gray">
+                        <span class="cal_gray_text">必要花费</span>
+                        <span class="cal_gray_zongji">小计：12,567</span>
+                    </p>
+                    <p class="cal_type">
+                        <span class="cal_type_tit">购置税</span>
+                        <span class="cal_type_con">25,624</span>
+                    </p>
+                    <p class="cal_type rightMenu_jiaoqing" tap="q_jiaoqiang">
+                        <span class="cal_type_tit">交强险</span>
+                        <span class="cal_type_explain">家用6座及以下</span>
+                        <span class="cal_type_con2">950</span>
+                        <span class="cal_arrow_right"></span>
+                    </p>
+                    <p class="cal_type rightMenu_chechuan" tap="q_chechuan">
+                        <span class="cal_type_tit">车船使用税</span>
+                        <span class="cal_type_explain">1.0-1.6L（含）</span>
+                        <span class="cal_type_con2">40</span>
+                        <span class="cal_arrow_right"></span>
+                    </p>
+                    <p class="cal_type">
+                        <span class="cal_type_tit">上牌费用</span>
+                        <input type="text" class="cal_type_con" value="500"/>
+                        <span class="cal_type_editor"></span>
+                    </p>
+                    <p class="cal_gray">
+                        <span class="cal_gray_text">商业保险</span>
+                        <span class="cal_gray_zongji">小计：12,567</span>
+                    </p>
+                    <div class="cal_recommend">
+                        <span>推荐保险套餐</span>
+                        <ul class="cal_insurance clearfix" id="cal_insurance">
+                            <li class="js-menu">基本险</li>
+                            <li class="js-menu">经济险</li>
+                            <li class="js-menu recommend_active">全险</li>
+                        </ul>
+                    </div>
+                    <div class="cal_recommend_type" id="cal_recommend_type">
+                        <ul class="js-con recommend_type">
+                            <li class="rightMenu_disanf" isclick="true" tap="q_disanf">
+                                <span class="inselect cal_select"></span>
+                                <span class="recommend_name1">第三责任险</span>
+                                <span class="recommend_bizozhu">赔付20万</span>
+                                <span class="recommend_price1">1,270</span>
+                                <span class="cal_arrow_right"></span>
+                            </li>
+                            <li>
+                                <span class="inselect cal_select"></span>
+                                <span class="recommend_name2">车辆损失险</span>
+                                <span class="recommend_price2">3,133</span>
+                            </li>
+                            <li>
+                                <span class="inselect cal_select"></span>
+                                <span class="recommend_name2">不计免赔特约险</span>
+                                <span class="recommend_price2">1,589</span>
+                            </li>
+                            <li>
+                                <span class="inselect cal_select_nor"></span>
+                                <span class="recommend_name2">全车盗抢险</span>
+                                <span class="recommend_price2">0</span>
+                            </li>
+                            <li class="rightMenu_boli" isclick="false" tap="q_boli">
+                                <span class="inselect cal_select_nor"></span>
+                                <span class="recommend_name1">玻璃单独破碎险</span>
+                                <span class="recommend_bizozhu">国产玻璃</span>
+                                <span class="recommend_price1">0</span>
+                                <span class="cal_arrow_right"></span>
+                            </li>
+                            <li>
+                                <span class="inselect cal_select_nor"></span>
+                                <span class="recommend_name2">自燃损失险</span>
+                                <span class="recommend_price2">0</span>
+                            </li>
+                            <li>
+                                <span class="inselect cal_select_nor"></span>
+                                <span class="recommend_name2">涉水险/发动机特别损失险</span>
+                                <span class="recommend_price2">0</span>
+                            </li>
+                            <li class="rightMenu_huahen" isclick="false" tap="q_huahen">
+                                <span class="inselect cal_select_nor"></span>
+                                <span class="recommend_name1">车身划痕险</span>
+                                <span class="recommend_bizozhu">赔付5千</span>
+                                <span class="recommend_price1">0</span>
+                                <span class="cal_arrow_right"></span>
+                            </li>
+                            <li class="rightMenu_siji" isclick="false" tap="q_siji">
+                                <span class="inselect cal_select_nor"></span>
+                                <span class="recommend_name1">司机座位责任险</span>
+                                <span class="recommend_bizozhu">赔付2万</span>
+                                <span class="recommend_price1">0</span>
+                                <span class="cal_arrow_right"></span>
+                            </li>
+                            <li class="rightMenu_chengke" isclick="false" tap="q_chengke">
+                                <span class="inselect cal_select_nor"></span>
+                                <span class="recommend_name1">乘客座位责任险</span>
+                                <span class="recommend_bizozhu">赔付2万</span>
+                                <span class="recommend_price1">0</span>
+                                <span class="cal_arrow_right"></span>
+                            </li>
+                        </ul>
+                        <ul class="js-con recommend_type">
+                            <li class="rightMenu_disanf" isclick="true" tap="q_disanf">
+                                <span class="inselect cal_select"></span>
+                                <span class="recommend_name1">第三责任险</span>
+                                <span class="recommend_bizozhu">赔付20万</span>
+                                <span class="recommend_price1">1,270</span>
+                                <span class="cal_arrow_right"></span>
+                            </li>
+                            <li>
+                                <span class="inselect cal_select"></span>
+                                <span class="recommend_name2">车辆损失险</span>
+                                <span class="recommend_price2">3,133</span>
+                            </li>
+                            <li>
+                                <span class="inselect cal_select"></span>
+                                <span class="recommend_name2">不计免赔特约险</span>
+                                <span class="recommend_price2">1,589</span>
+                            </li>
+                            <li>
+                                <span class="inselect cal_select_nor"></span>
+                                <span class="recommend_name2">全车盗抢险</span>
+                                <span class="recommend_price2">570</span>
+                            </li>
+                            <li class="rightMenu_boli" isclick="false" tap="q_boli">
+                                <span class="inselect cal_select_nor"></span>
+                                <span class="recommend_name1">玻璃单独破碎险</span>
+                                <span class="recommend_bizozhu">国产玻璃</span>
+                                <span class="recommend_price1">0</span>
+                                <span class="cal_arrow_right"></span>
+                            </li>
+                            <li>
+                                <span class="inselect cal_select_nor"></span>
+                                <span class="recommend_name2">自燃损失险</span>
+                                <span class="recommend_price2">881</span>
+                            </li>
+                            <li>
+                                <span class="inselect cal_select_nor"></span>
+                                <span class="recommend_name2">涉水险/发动机特别损失险</span>
+                                <span class="recommend_price2">881</span>
+                            </li>
+                            <li class="rightMenu_huahen" isclick="false" tap="q_huahen">
+                                <span class="inselect cal_select_nor"></span>
+                                <span class="recommend_name1">车身划痕险</span>
+                                <span class="recommend_bizozhu">赔付5千</span>
+                                <span class="recommend_price1">0</span>
+                                <span class="cal_arrow_right"></span>
+                            </li>
+                            <li class="rightMenu_siji" isclick="false" tap="q_siji">
+                                <span class="inselect cal_select_nor"></span>
+                                <span class="recommend_name1">司机座位责任险</span>
+                                <span class="recommend_bizozhu">赔付2万</span>
+                                <span class="recommend_price1">0</span>
+                                <span class="cal_arrow_right"></span>
+                            </li>
+                            <li class="rightMenu_chengke" isclick="false" tap="q_chengke">
+                                <span class="inselect cal_select_nor"></span>
+                                <span class="recommend_name1">乘客座位责任险</span>
+                                <span class="recommend_bizozhu">赔付2万</span>
+                                <span class="recommend_price1">0</span>
+                                <span class="cal_arrow_right"></span>
+                            </li>
+                        </ul>
+                        <ul class="js-con recommend_type recommend_show">
+                            <li class="rightMenu_disanf" tap="q_disanf">
+                                <span class="inselect noclick"></span>
+                                <span class="recommend_name1">第三责任险</span>
+                                <span class="recommend_bizozhu">赔付20万</span>
+                                <span class="recommend_price1">1,270</span>
+                                <span class="cal_arrow_right"></span>
+                            </li>
+                            <li>
+                                <span class="inselect cal_select"></span>
+                                <span class="recommend_name2">车辆损失险</span>
+                                <span class="recommend_price2">3,133</span>
+                            </li>
+                            <li>
+                                <span class="inselect cal_select"></span>
+                                <span class="recommend_name2">不计免赔特约险</span>
+                                <span class="recommend_price2">1,589</span>
+                            </li>
+                            <li>
+                                <span class="inselect cal_select"></span>
+                                <span class="recommend_name2">全车盗抢险</span>
+                                <span class="recommend_price2">570</span>
+                            </li>
+                            <li class="rightMenu_boli" isclick="true" tap="q_boli">
+                                <span class="inselect cal_select"></span>
+                                <span class="recommend_name1">玻璃单独破碎险</span>
+                                <span class="recommend_bizozhu">国产玻璃</span>
+                                <span class="recommend_price1">450</span>
+                                <span class="cal_arrow_right"></span>
+                            </li>
+                            <li>
+                                <span class="inselect cal_select"></span>
+                                <span class="recommend_name2">自燃损失险</span>
+                                <span class="recommend_price2">881</span>
+                            </li>
+                            <li>
+                                <span class="inselect cal_select"></span>
+                                <span class="recommend_name2">涉水险/发动机特别损失险</span>
+                                <span class="recommend_price2">881</span>
+                            </li>
+                            <li class="rightMenu_huahen" isclick="true" tap="q_huahen">
+                                <span class="inselect cal_select"></span>
+                                <span class="recommend_name1">车身划痕险</span>
+                                <span class="recommend_bizozhu">赔付5千</span>
+                                <span class="recommend_price1">84</span>
+                                <span class="cal_arrow_right"></span>
+                            </li>
+                            <li class="rightMenu_siji" isclick="true" tap="q_siji">
+                                <span class="inselect cal_select"></span>
+                                <span class="recommend_name1">司机座位责任险</span>
+                                <span class="recommend_bizozhu">赔付2万</span>
+                                <span class="recommend_price1">570</span>
+                                <span class="cal_arrow_right"></span>
+                            </li>
+                            <li class="rightMenu_chengke" isclick="true" tap="q_chengke">
+                                <span class="inselect cal_select"></span>
+                                <span class="recommend_name1">乘客座位责任险</span>
+                                <span class="recommend_bizozhu">赔付2万</span>
+                                <span class="recommend_price1">157</span>
+                                <span class="cal_arrow_right"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="cal_hint clearfix">
+                        <img src="http://static.qcdqcdn.com:8888/wap/img/cal_hint.png">
+                        <span>该车款可享受国家补贴3.33万，地方补贴3.33万</span>
+                    </p>
+                    <p class="hint">以上仅供参考，实际费用以当地缴费为准</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 间隔区-->
+        <div class="cal_interval"></div>
+
+        <!-- footer -->
+        <div class="video_fte">
+    <p> <span class="colora4">©&nbsp;&nbsp;2017&nbsp;&nbsp;汽车大全</span> </p>
+</div>
+    </div>
+
+    <!--黑色半透明遮罩-->
+    <div class="mask2"></div>
+
+    <!--顶部导航-->
+    <div class="pubHeadNav">
+    <div class="logo_box"> <img src="http://static.qcdqcdn.com:8888/wap/img/xylogo.png" class="nav_logo"> <a href="#" class="login">登录</a>
+        <div class="login_photo">
+            <a href="#"><img src="http://static.qcdqcdn.com:8888/wap/img/login_photo.png"></a>
+        </div>
+    </div>
+    <ul class="nav_type clearfix">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="choiceCar.html">选车</a></li>
+        <li><a href="article.html">新车</a></li>
+        <li><a href="article.html">评测</a></li>
+        <li class="pubHeadNav_active"><a href="article.html">导购</a></li>
+        <li><a href="picture.html">图片</a></li>
+        <li><a href="videoindex.html">视频</a></li>
+        <li><a href="summarize_zongshu.html">报价</a></li>
+        <li><a href="summarize_zongshu.html">降价</a></li>
+        <li><a href="carstyle_zongshu.html">经销商</a></li>
+        <li><a href="#">问答</a></li>
+    </ul>
+</div>
+<!--导航下面的半透明遮罩-->
+<div class="nav_mask"></div>
+
+    <!--右侧抽屉-->
+    <img src="http://static.qcdqcdn.com:8888/wap/img/double_jt.png" class="slider_btn">
+    <div class="cal_drawer cal_rm_jiaoqing"  tap="q_jiaoqiang">
+        <div class="drawerBox">
+            <ul class="drawerList">
+                <li class="drawer_select">家用6座以下</li>
+                <li>家用6座及以上</li>
+            </ul>
+        </div>
+    </div>
+    <div class="cal_drawer cal_rm_chechuan" tap="q_chechuan">
+        <div class="drawerBox">
+            <ul class="drawerList">
+                <li class="drawer_select">1.0L（含）以下</li>
+                <li>1.0L-1.6L（含）</li>
+                <li>1.6L-2.0L（含）</li>
+                <li>2.0L-2.5L（含）</li>
+            </ul>
+        </div>
+    </div>
+    <div class="cal_drawer cal_rm_disanf" tap="q_disanf">
+        <div class="drawerBox">
+            <ul class="drawerList">
+                <li class="drawer_select">5万</li>
+                <li>10万</li>
+                <li>20万</li>
+                <li>25万</li>
+            </ul>
+        </div>
+    </div>
+    <div class="cal_drawer cal_rm_boli" tap="q_boli">
+        <div class="drawerBox">
+            <ul class="drawerList">
+                <li class="drawer_select">国产玻璃</li>
+                <li>进口玻璃</li>
+            </ul>
+        </div>
+    </div>
+    <div class="cal_drawer cal_rm_huahen" tap="q_huahen">
+        <div class="drawerBox">
+            <ul class="drawerList">
+                <li class="drawer_select">2千</li>
+                <li>5千</li>
+                <li>1万</li>
+            </ul>
+        </div>
+    </div>
+    <div class="cal_drawer cal_rm_siji" tap="q_siji">
+        <div class="drawerBox">
+            <ul class="drawerList">
+                <li class="drawer_select">2千</li>
+                <li>5千</li>
+                <li>1万</li>
+            </ul>
+        </div>
+    </div>
+    <div class="cal_drawer cal_rm_chengke" tap="q_chengke">
+        <div class="drawerBox">
+            <ul class="drawerList">
+                <li class="drawer_select">2千</li>
+                <li>5千</li>
+                <li>1万</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 回到顶部 -->
+    <!-- 回到顶部 -->
+<div class="go_top" id="goTop"> <span></span> <i></i></div>
+</body>
+</html>

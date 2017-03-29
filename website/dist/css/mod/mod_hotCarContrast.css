@@ -1,0 +1,107 @@
+/*****
+ *@author: linyh
+ *@from: Global style hotCarContrast module
+ *@description: 何在朋
+ *@date: name (2017.02.05)
+*/
+.car_type_contrast {
+  margin-bottom: 36px;
+}
+.car_type_contrast .display_n {
+  display: none;
+}
+.car_type_contrast h1 {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  line-height: 40px;
+}
+.car_type_contrast dl {
+  border: 1px solid #eee;
+}
+.car_type_contrast dl dt {
+  padding-bottom: 4px;
+}
+.car_type_contrast dl dt p {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 34px;
+  text-align: center;
+}
+.car_type_contrast dl dt p:first-child + p {
+  font-size: 12px;
+  color: #e43a3a;
+  line-height: 22px;
+}
+.car_type_contrast dl dd {
+  overflow: hidden;
+  padding: 9px 0 10px;
+  border-top: 1px dashed #eee;
+  background-color: #f7f7f7;
+}
+.car_type_contrast dl dd span {
+  display: inline-block;
+  float: left;
+}
+.car_type_contrast dl dd span i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #333;
+  vertical-align: middle;
+  margin-left: 3px;
+  cursor: pointer;
+}
+.car_type_contrast dl dd span i:hover {
+  border-color: #3a8be4;
+}
+.car_type_contrast dl dd span .checked {
+  border: 0;
+  background-image: url("../img/summar_sprite.png");
+  background-position: -75px -56px;
+  width: 14px;
+  height: 14px;
+}
+.car_type_contrast dl dd span:first-child + span {
+  width: 169px;
+  padding-left: 10px;
+  line-height: 18px;
+}
+.car_type_contrast dl .center span i {
+  vertical-align: -12px;
+}
+.car_type_contrast dl .start_contrast_btn {
+  padding: 12px 60px;
+}
+.car_type_contrast dl .start_contrast_btn .btn_style {
+  color: #fff;
+  font-size: 14px;
+  padding: 0 14px;
+  line-height: 24px;
+  display: inline-block;
+}
+.car_type_contrast dl .start_contrast_btn span {
+  color: #fff;
+  font-size: 14px;
+  padding: 0 14px;
+  line-height: 24px;
+  display: inline-block;
+  background-color: #aaa;
+}
+.car_type_contrast dl .start_contrast_btn a {
+  color: #fff;
+  font-size: 14px;
+  padding: 0 14px;
+  line-height: 24px;
+  display: inline-block;
+  background-color: #ffa903;
+}
+.car_type_contrast dl .start_contrast_btn a:hover {
+  background-color: #ff9103;
+}
+.car_type_contrast dl .start_contrast_btn a:active {
+  background-color: #ff8003;
+}
+.car_type_contrast dl .start_contrast_btn .display_n {
+  display: none;
+}

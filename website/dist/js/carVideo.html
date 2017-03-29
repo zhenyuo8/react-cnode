@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>视频</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="stylesheet"  href="http://127.0.0.1/css/base.css"/>
+    <link rel="stylesheet"  href="http://127.0.0.1/css/car_video.css"/>
+    <link rel="stylesheet"  href="http://127.0.0.1/css/mod/mod_pagination.css"/>
+</head>
+<body>
+<div class="header">
+    <!--nav model -->
+    <!-- 顶部导航模块 -->
+<div class="header_nav">
+    <div class="header_nav_content">
+        <ul class="header_nav_left">
+            <li class="car_all"> <span class="car_all_s"> <a href="index.html" target="_blank" class="bg">汽车大全</a> </span> </li>
+            <li class="address_li"> <span class="default_address"><a href="#">北京</a></span> </li>
+            <li class="city_position" id="city_position"> <span class="changeAdd" id="city_position_qie">切换</span> <span class="triangle" id="city_position_triangle"></span>
+                <div class="city_chose" id="city_chose" style="display: none">
+                    <div class="city_search">
+                        <div class="city_search_input"> <span class="search_btn"> <img src="http://127.0.0.1/img/search-btn.png" alt=""> </span> <span> <input type="text" value="请输入城市" class="input" id="input_letters"> <div class="input_letters_search" id="input_letters_search" style="display: none"> <ul id="input_city_search"> <li class="click_to_destiny"> <span><img src="http://127.0.0.1/img/city_down_select.png" alt=""></span>                            <span>点击直达</span> </li>
+            <li class="city_search_result"> <span class="city_text">北京</span> <span class="city_letters">beijing</span> </li>
+            <li class="city_search_result"> <span class="city_text">上海</span> <span class="city_letters">shanghai</span> </li>
+            <li class="city_search_result"> <span class="city_text">南昌</span> <span class="city_letters">nanchang</span> </li>
+            <li class="city_search_result"> <span class="city_text">深圳</span> <span class="city_letters">shenzhen</span> </li>
+        </ul>
+        </div>
+        </span> <span class="city_hot_search"> <a href="#">北京</a> <a href="#">上海</a> <a href="#">广州</a> <a href="#">深圳</a> <a href="#">武汉</a> <a href="#">杭州</a> </span> <span class="delete_city"> <img src="http://127.0.0.1/img/delete-btn.png" alt=""> </span> </div>
+        </div>
+        <div class="hot_city_num"> <a href="#">A</a> <a href="#">B</a> <a href="#">C</a> <a href="#">N</a> <a href="#">H</a> <a href="#">J</a> <a href="#">X</a> <a href="#">Z</a> </div>
+        <div class="city_chose_region" id="city_chose_region">
+            <!--城市选择模块位置-->
+            <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                    <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+            </dl>
+            <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                    <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+            </dl>
+            <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                    <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+            </dl>
+            <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                    <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+            </dl>
+            <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                    <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+            </dl>
+            <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                    <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+            </dl>
+            <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                    <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+            </dl>
+        </div>
+    </div>
+    </li>
+    <li class="nav_line"> <span></span> </li>
+    <li> <span class="others"><a href="#">查看其他地方车市</a></span> </li>
+    </ul>
+    <ul class="header_nav_right">
+        <li class="header_hover" id="app_id"> <span class="app" id="app"> <a href="#">移动应用</a> </span> <span class="triangle"></span> </li>
+        <li class="nav_line nav_line2" id="nav_line"><span></span></li>
+        <li class="header_hover message_notice" style="display: none"> <em></em> <i></i> <span class="message_drop"> <a href="#"><span>我的询价</span> ><i></i></a> <a href="#"><span>我的问答</span> ><i></i></a> <a href="#"><span>我的评论</span> ><i></i></a> <a href="#"><span>消息中心</span> ><i></i></a> </span>
+        </li>
+        <li class=" header_hover login_third" id="login_third"> <span><a href="#">第三方登录</a></span> <span class="triangle1"></span> <span class="login_third_container"> <a href="#" class="wx"><i></i>微信</a> <a href="#" class="wb"><i></i>微博</a> <a href="#" class="tx_qq"><i></i>QQ</a> </span> </li>
+        <li class="nav_line "
+            id="nav_line2"><span></span></li>
+        <li class="header_hover user_name" style="display: none"> <span><a href="#">conan</a></span> <span class="triangle2"></span> <span class="user_drop"> <span class="latest_view"> <a href="#" class="view_res">最近看过的</a> <a href="#">宝马6系</a> <a href="#">奥迪7系</a> <a href="#">英菲尼迪Q70L</a> </span> <span class="sign_out"> <a href="#">我的收藏</a> <a href="#">退出登录</a> </span>            </span>
+        </li>
+        <li class="header_hover" id="register_id"> <span class="register" id="register"><a href="#">注册</a></span> </li>
+        <li class="bg header_hover" id="login_id"> <span class="login bg"><a href="#">登录</a></span> </li>
+    </ul>
+</div>
+</div>
+    <!--logo model -->
+    <!-- 头部 Logo 及 banner 模块 -->
+<div class="logo">
+    <div class="logo_left">
+        <a href="index.html"> <img src="http://127.0.0.1/img/logo_car.png" alt="这是logo图片"> </a>
+    </div>
+    <div class="logo_right">
+        <a href="#"> <img src="http://127.0.0.1/img/top-logo-nav.png" alt="这是广告图片"> </a>
+    </div>
+</div>
+</div>
+
+<!--content-->
+<div class="carVideo">
+    <!--导航菜单-->
+    <div class="imgs_c_top">
+        <!-- 返回顶部 -->
+<p class="imgs_c_crumbs"> 当前位置： <a href="javascript:void(0);" target="_blank">首页</a>> <a href="javascript:void(0);" target="_blank">车型</a>> <a href="javascript:void(0);" target="_blank">奥迪A3</a>> <a href="javascript:void(0);">视频</a></p>
+
+        <!-- 车型筛选 -->
+<div class="imgs_c_list">
+    <a href="summarize.html" target="_blank" class="imgs_car_sign"><img src="http://127.0.0.1/img/audi-logo.png" /></a> <a href="summarize.html" target="_blank" class="imgs_car_name">奥迪A3</a>
+    <ul class="imgs_car_year clearfix">
+        <li class="imgs_c_y_li imgs_year_b"><a href="javascript:void(0);">全部</a></li>
+        <li class="imgs_c_y_li"><a href="javascript:void(0);">2017款</a></li>
+        <li class="imgs_c_y_li"><a href="javascript:void(0);">2016款</a></li>
+        <li class="imgs_c_y_li"><a href="javascript:void(0);">2015款</a></li>
+        <li class="imgs_no_border"> <span class="tsYear">停售年款</span> <span class="icon-down imgs_down"></span> </li>
+    </ul>
+    <div class="stop_list_w">
+        <ol class="stop_list">
+            <li><a href="#" target="_blank">2013款</a></li>
+            <li><a href="#" target="_blank">2012款</a></li>
+            <li><a href="#" target="_blank">2011款</a></li>
+            <li><a href="#" target="_blank">2010款</a></li>
+            <li><a href="#" target="_blank">2009款</a></li>
+            <li class="s_no_border"><a href="#" target="_blank">2008款</a></li>
+        </ol>
+    </div>
+</div>
+<ul class="imgs_car_type">
+    <li class="no_h"><a href="carTypeSummarize.html">综述</a></li>
+    <li class="no_h"><a href="configPara.html">参数配置</a></li>
+    <li class="no_h"><a href="imgs.html">图片</a></li>
+    <li class="no_h"><a href="carTypeContrast.html">报价</a></li>
+    <li class="no_h"><a href="carTypeContrast.html">降价</a></li>
+    <li class="no_h"><a href="carModelsIntroduce.html">车型详解</a></li>
+    <li class="no_h"><a href="carArticle.html">文章</a></li>
+    <li class="imgs_current"><a href="carVideo.html">视频</a></li>
+</ul>
+    </div>
+
+    <div class="car_v_middle clearfix">
+        <!--视频列表部分-->
+        <div class="car_v_middle_l fl">
+            <div class="car_v_wrap">
+                <ul class="pub-list clearfix">
+                    <li class="fl">
+                        <a href="#" target="_blank">
+                            <dl class="r-dl po-r">
+                                <dt><img src="http://127.0.0.1/img/pic/recommended_img.png" width="226" height="168"/></dt>
+                                <dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+                                <dd class="v-time-wrap"></dd>
+                                <dd class="v-time">00:33</dd>
+                                <dt class="r-play-btn"></dt>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="#" target="_blank">
+                            <dl class="r-dl po-r">
+                                <dt><img src="http://127.0.0.1/img/pic/recommended_img.png" width="226" height="168"/></dt>
+                                <dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+                                <dd class="v-time-wrap"></dd>
+                                <dd class="v-time">00:33</dd>
+                                <dt class="r-play-btn"></dt>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="#" target="_blank">
+                            <dl class="r-dl po-r">
+                                <dt><img src="http://127.0.0.1/img/pic/recommended_img.png" width="226" height="168"/></dt>
+                                <dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+                                <dd class="v-time-wrap"></dd>
+                                <dd class="v-time">00:33</dd>
+                                <dt class="r-play-btn"></dt>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="#" target="_blank">
+                            <dl class="r-dl po-r">
+                                <dt><img src="http://127.0.0.1/img/pic/recommended_img.png" width="226" height="168"/></dt>
+                                <dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+                                <dd class="v-time-wrap"></dd>
+                                <dd class="v-time">00:33</dd>
+                                <dt class="r-play-btn"></dt>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="#" target="_blank">
+                            <dl class="r-dl po-r">
+                                <dt><img src="http://127.0.0.1/img/pic/recommended_img.png" width="226" height="168"/></dt>
+                                <dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+                                <dd class="v-time-wrap"></dd>
+                                <dd class="v-time">00:33</dd>
+                                <dt class="r-play-btn"></dt>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="#" target="_blank">
+                            <dl class="r-dl po-r">
+                                <dt><img src="http://127.0.0.1/img/pic/recommended_img.png" width="226" height="168"/></dt>
+                                <dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+                                <dd class="v-time-wrap"></dd>
+                                <dd class="v-time">00:33</dd>
+                                <dt class="r-play-btn"></dt>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="#" target="_blank">
+                            <dl class="r-dl po-r">
+                                <dt><img src="http://127.0.0.1/img/pic/recommended_img.png" width="226" height="168"/></dt>
+                                <dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+                                <dd class="v-time-wrap"></dd>
+                                <dd class="v-time">00:33</dd>
+                                <dt class="r-play-btn"></dt>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="#" target="_blank">
+                            <dl class="r-dl po-r">
+                                <dt><img src="http://127.0.0.1/img/pic/recommended_img.png" width="226" height="168"/></dt>
+                                <dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+                                <dd class="v-time-wrap"></dd>
+                                <dd class="v-time">00:33</dd>
+                                <dt class="r-play-btn"></dt>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="#" target="_blank">
+                            <dl class="r-dl po-r">
+                                <dt><img src="http://127.0.0.1/img/pic/recommended_img.png" width="226" height="168"/></dt>
+                                <dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+                                <dd class="v-time-wrap"></dd>
+                                <dd class="v-time">00:33</dd>
+                                <dt class="r-play-btn"></dt>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="#" target="_blank">
+                            <dl class="r-dl po-r">
+                                <dt><img src="http://127.0.0.1/img/pic/recommended_img.png" width="226" height="168"/></dt>
+                                <dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+                                <dd class="v-time-wrap"></dd>
+                                <dd class="v-time">00:33</dd>
+                                <dt class="r-play-btn"></dt>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="#" target="_blank">
+                            <dl class="r-dl po-r">
+                                <dt><img src="http://127.0.0.1/img/pic/recommended_img.png" width="226" height="168"/></dt>
+                                <dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+                                <dd class="v-time-wrap"></dd>
+                                <dd class="v-time">00:33</dd>
+                                <dt class="r-play-btn"></dt>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="#" target="_blank">
+                            <dl class="r-dl po-r">
+                                <dt><img src="http://127.0.0.1/img/pic/recommended_img.png" width="226" height="168"/></dt>
+                                <dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+                                <dd class="v-time-wrap"></dd>
+                                <dd class="v-time">00:33</dd>
+                                <dt class="r-play-btn"></dt>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="#" target="_blank">
+                            <dl class="r-dl po-r">
+                                <dt><img src="http://127.0.0.1/img/pic/recommended_img.png" width="226" height="168"/></dt>
+                                <dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+                                <dd class="v-time-wrap"></dd>
+                                <dd class="v-time">00:33</dd>
+                                <dt class="r-play-btn"></dt>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="#" target="_blank">
+                            <dl class="r-dl po-r">
+                                <dt><img src="http://127.0.0.1/img/pic/recommended_img.png" width="226" height="168"/></dt>
+                                <dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+                                <dd class="v-time-wrap"></dd>
+                                <dd class="v-time">00:33</dd>
+                                <dt class="r-play-btn"></dt>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="#" target="_blank">
+                            <dl class="r-dl po-r">
+                                <dt><img src="http://127.0.0.1/img/pic/recommended_img.png" width="226" height="168"/></dt>
+                                <dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+                                <dd class="v-time-wrap"></dd>
+                                <dd class="v-time">00:33</dd>
+                                <dt class="r-play-btn"></dt>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="#" target="_blank">
+                            <dl class="r-dl po-r">
+                                <dt><img src="http://127.0.0.1/img/pic/recommended_img.png" width="226" height="168"/></dt>
+                                <dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+                                <dd class="v-time-wrap"></dd>
+                                <dd class="v-time">00:33</dd>
+                                <dt class="r-play-btn"></dt>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="#" target="_blank">
+                            <dl class="r-dl po-r">
+                                <dt><img src="http://127.0.0.1/img/pic/recommended_img.png" width="226" height="168"/></dt>
+                                <dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+                                <dd class="v-time-wrap"></dd>
+                                <dd class="v-time">00:33</dd>
+                                <dt class="r-play-btn"></dt>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="#" target="_blank">
+                            <dl class="r-dl po-r">
+                                <dt><img src="http://127.0.0.1/img/pic/recommended_img.png" width="226" height="168"/></dt>
+                                <dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+                                <dd class="v-time-wrap"></dd>
+                                <dd class="v-time">00:33</dd>
+                                <dt class="r-play-btn"></dt>
+                            </dl>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tcdPageCode"></div>
+        </div>
+        <!--右侧列表-->
+        <div class="imgs_m_right">
+            <!--猜你喜欢-->
+            <!--猜你喜欢-->
+<h3>猜你喜欢</h3>
+<ul class="imgs_l_car clearfix">
+    <li>
+        <dl>
+            <a href="javascript:void(0);" target="_blank"> <dt><img src="http://127.0.0.1/img/pic/imgs_l_img1.jpg"/></dt>
+                <dd class="imgs_l_name">奥迪A3</dd>
+            </a>
+            <a href="javascript:void(0);" target="_blank">
+                <dd class="imgs_l_price">9.67-18.48万</dd>
+            </a>
+        </dl>
+    </li>
+    <li>
+        <dl>
+            <a href="javascript:void(0);" target="_blank"> <dt><img src="http://127.0.0.1/img/pic/imgs_l_img2.jpg"/></dt>
+                <dd class="imgs_l_name">帕萨特</dd>
+            </a>
+            <a href="javascript:void(0);" target="_blank">
+                <dd class="imgs_l_price">12.02-20.20万</dd>
+            </a>
+        </dl>
+    </li>
+    <li>
+        <dl>
+            <a href="javascript:void(0);" target="_blank"> <dt><img src="http://127.0.0.1/img/pic/imgs_l_img3.jpg"/></dt>
+                <dd class="imgs_l_name">宝马3系</dd>
+            </a>
+            <a href="javascript:void(0);" target="_blank">
+                <dd class="imgs_l_price">20.30-45.60万</dd>
+            </a>
+        </dl>
+    </li>
+    <li>
+        <dl>
+            <a href="javascript:void(0);" target="_blank"> <dt><img src="http://127.0.0.1/img/pic/imgs_l_img4.jpg"/></dt>
+                <dd class="imgs_l_name">奥迪A6L</dd>
+            </a>
+            <a href="javascript:void(0);" target="_blank">
+                <dd class="imgs_l_price">27.00-48.27万</dd>
+            </a>
+        </dl>
+    </li>
+</ul>
+
+            <!--其他车型-->
+            <h3>一汽奥迪其他车型</h3>
+<ul class="imgs_other_car">
+    <li> <span class="imgs_blue_dian"></span> <a href="#" target="_blank">奥迪A3</a> <span class="imgs_other_price">9.67-18.48万</span> </li>
+    <li> <span class="imgs_blue_dian"></span> <a href="#" target="_blank">高尔夫 嘉旋</a> <span class="imgs_other_price">18.48-32.98万</span> </li>
+    <li> <span class="imgs_blue_dian"></span> <a href="#" target="_blank">高尔夫GTI</a> <span class="imgs_other_price">8.19-14.89万</span> </li>
+    <li> <span class="imgs_blue_dian"></span> <a href="#" target="_blank">大众CC</a> <span class="imgs_other_price">18.48-32.98万</span> </li>
+    <li> <span class="imgs_blue_dian"></span> <a href="#" target="_blank">奥迪A3</a> <span class="imgs_other_price">9.67-18.48万</span> </li>
+    <li> <span class="imgs_blue_dian"></span> <a href="#" target="_blank">高尔夫 嘉旋</a> <span class="imgs_other_price">18.48-32.98万</span> </li>
+    <li> <span class="imgs_blue_dian"></span> <a href="#" target="_blank">高尔夫GTI</a> <span class="imgs_other_price">9.67-18.48万</span> </li>
+    <li> <span class="imgs_blue_dian"></span> <a href="#" target="_blank">大众CC</a> <span class="imgs_other_price">18.48-32.98万</span> </li>
+</ul>
+
+            <!--热门车-->
+            <!--热门车-->
+<p class="imgs_hot_title">大家都在买什么车</p>
+<div class="clearfix we-buy">
+    <div class="clearfix bor-to-bo-ri" id="js-tap-warp">
+        <ul class="fl" id='js-left-tap'>
+            <li class="fl-li active js-menu"> 全部 </li>
+            <li class="fl-li js-menu"> 微型 </li>
+            <li class="fl-li js-menu"> 小型 </li>
+            <li class="fl-li js-menu"> 紧凑型 </li>
+            <li class="fl-li js-menu"> 中型 </li>
+            <li class="fl-li js-menu"> 中大型 </li>
+            <li class="fl-li js-menu"> SUV </li>
+            <li class="fl-li js-menu"> MPV </li>
+            <li class="fl-li fl_li_nBoder"> </li>
+            <li class="fl-li fl_li_nBoder"> </li>
+        </ul>
+        <div class="fr clearfix w189" id="js-tab-warp">
+            <ul class="fr js-con js-show">
+                <li class="l-li"> <span class="num bgtop">1</span> <a href="#" target="_blank">迈腾</a> </li>
+                <li class="l-li"> <span class="num bgtop">2</span> <a href="#" target="_blank">宝来</a> </li>
+                <li class="l-li"> <span class="num bgtop">3</span> <a href="#" target="_blank">奥迪A6L</a> </li>
+                <li class="l-li"> <span class="num ">4</span> <a href="#" target="_blank">哈弗H6</a> </li>
+                <li class="l-li"> <span class="num ">5</span> <a href="#" target="_blank">途观</a> </li>
+                <li class="l-li"> <span class="num ">6</span> <a href="#" target="_blank">捷达</a> </li>
+                <li class="l-li"> <span class="num ">7</span> <a href="#" target="_blank">朗逸</a> </li>
+                <li class="l-li"> <span class="num ">8</span> <a href="#" target="_blank">别克GL8</a> </li>
+                <li class="l-li"> <span class="num ">9</span> <a href="#" target="_blank">长安CS75</a> </li>
+                <li class="l-li l-li-nBorder"> <span class="num ">10</span> <a href="#" target="_blank">宝骏730</a> </li>
+            </ul>
+            <ul class="fr js-con">
+                <li class="l-li"> <span class="num bgtop">11</span> <a href="#" target="_blank">迈腾</a> </li>
+                <li class="l-li"> <span class="num bgtop">2</span> <a href="#" target="_blank">宝来</a> </li>
+                <li class="l-li"> <span class="num bgtop">3</span> <a href="#" target="_blank">奥迪A6L</a> </li>
+                <li class="l-li"> <span class="num ">4</span> <a href="#" target="_blank">哈弗H6</a> </li>
+                <li class="l-li"> <span class="num ">5</span> <a href="#" target="_blank">途观</a> </li>
+                <li class="l-li"> <span class="num ">6</span> <a href="#" target="_blank">捷达</a> </li>
+                <li class="l-li"> <span class="num ">7</span> <a href="#" target="_blank">朗逸</a> </li>
+                <li class="l-li"> <span class="num ">8</span> <a href="#" target="_blank">别克GL8</a> </li>
+                <li class="l-li"> <span class="num ">9</span> <a href="#" target="_blank">长安CS75</a> </li>
+                <li class="l-li"> <span class="num ">10</span> <a href="#" target="_blank">宝骏730</a> </li>
+            </ul>
+            <ul class="fr js-con">
+                <li class="l-li"> <span class="num bgtop">12</span> <a href="#" target="_blank">迈腾</a> </li>
+                <li class="l-li"> <span class="num bgtop">2</span> <a href="#" target="_blank">宝来</a> </li>
+                <li class="l-li"> <span class="num bgtop">3</span> <a href="#" target="_blank">奥迪A6L</a> </li>
+                <li class="l-li"> <span class="num ">4</span> <a href="#" target="_blank">哈弗H6</a> </li>
+                <li class="l-li"> <span class="num ">5</span> <a href="#" target="_blank">途观</a> </li>
+                <li class="l-li"> <span class="num ">6</span> <a href="#" target="_blank">捷达</a> </li>
+                <li class="l-li"> <span class="num ">7</span> <a href="#" target="_blank">朗逸</a> </li>
+                <li class="l-li"> <span class="num ">8</span> <a href="#" target="_blank">别克GL8</a> </li>
+                <li class="l-li"> <span class="num ">9</span> <a href="#" target="_blank">长安CS75</a> </li>
+                <li class="l-li l-li-nBorder"> <span class="num ">10</span> <a href="#" target="_blank">宝骏730</a> </li>
+            </ul>
+            <ul class="fr js-con">
+                <li class="l-li"> <span class="num bgtop">14</span> <a href="#" target="_blank">迈腾</a> </li>
+                <li class="l-li"> <span class="num bgtop">2</span> <a href="#" target="_blank">宝来</a> </li>
+                <li class="l-li"> <span class="num bgtop">3</span> <a href="#" target="_blank">奥迪A6L</a> </li>
+                <li class="l-li"> <span class="num ">4</span> <a href="#" target="_blank">哈弗H6</a> </li>
+                <li class="l-li"> <span class="num ">5</span> <a href="#" target="_blank">途观</a> </li>
+                <li class="l-li"> <span class="num ">6</span> <a href="#" target="_blank">捷达</a> </li>
+                <li class="l-li"> <span class="num ">7</span> <a href="#" target="_blank">朗逸</a> </li>
+                <li class="l-li"> <span class="num ">8</span> <a href="#" target="_blank">别克GL8</a> </li>
+                <li class="l-li"> <span class="num ">9</span> <a href="#" target="_blank">长安CS75</a> </li>
+                <li class="l-li l-li-nBorder"> <span class="num ">10</span> <a href="#" target="_blank">宝骏730</a> </li>
+            </ul>
+            <ul class="fr js-con">
+                <li class="l-li"> <span class="num bgtop">15</span> <a href="#" target="_blank">迈腾</a> </li>
+                <li class="l-li"> <span class="num bgtop">2</span> <a href="#" target="_blank">宝来</a> </li>
+                <li class="l-li"> <span class="num bgtop">3</span> <a href="#" target="_blank">奥迪A6L</a> </li>
+                <li class="l-li"> <span class="num ">4</span> <a href="#" target="_blank">哈弗H6</a> </li>
+                <li class="l-li"> <span class="num ">5</span> <a href="#" target="_blank">途观</a> </li>
+                <li class="l-li"> <span class="num ">6</span> <a href="#" target="_blank">捷达</a> </li>
+                <li class="l-li"> <span class="num ">7</span> <a href="#" target="_blank">朗逸</a> </li>
+                <li class="l-li"> <span class="num ">8</span> <a href="#" target="_blank">别克GL8</a> </li>
+                <li class="l-li"> <span class="num ">9</span> <a href="#" target="_blank">长安CS75</a> </li>
+                <li class="l-li l-li-nBorder"> <span class="num ">10</span> <a href="#" target="_blank">宝骏730</a> </li>
+            </ul>
+            <ul class="fr js-con">
+                <li class="l-li"> <span class="num bgtop">1</span> <a href="#" target="_blank">迈腾</a> </li>
+                <li class="l-li"> <span class="num bgtop">2</span> <a href="#" target="_blank">宝来</a> </li>
+                <li class="l-li"> <span class="num bgtop">3</span> <a href="#" target="_blank">奥迪A6L</a> </li>
+                <li class="l-li"> <span class="num ">4</span> <a href="#" target="_blank">哈弗H6</a> </li>
+                <li class="l-li"> <span class="num ">5</span> <a href="#" target="_blank">途观</a> </li>
+                <li class="l-li"> <span class="num ">6</span> <a href="#" target="_blank">捷达</a> </li>
+                <li class="l-li"> <span class="num ">7</span> <a href="#" target="_blank">朗逸</a> </li>
+                <li class="l-li"> <span class="num ">8</span> <a href="#" target="_blank">别克GL8</a> </li>
+                <li class="l-li"> <span class="num ">9</span> <a href="#" target="_blank">长安CS75</a> </li>
+                <li class="l-li l-li-nBorder"> <span class="num ">10</span> <a href="#" target="_blank">宝骏730</a> </li>
+            </ul>
+            <ul class="fr js-con">
+                <li class="l-li"> <span class="num bgtop">11</span> <a href="#" target="_blank">迈腾</a> </li>
+                <li class="l-li"> <span class="num bgtop">2</span> <a href="#" target="_blank">宝来</a> </li>
+                <li class="l-li"> <span class="num bgtop">3</span> <a href="#" target="_blank">奥迪A6L</a> </li>
+                <li class="l-li"> <span class="num ">4</span> <a href="#" target="_blank">哈弗H6</a> </li>
+                <li class="l-li"> <span class="num ">5</span> <a href="#" target="_blank">途观</a> </li>
+                <li class="l-li"> <span class="num ">6</span> <a href="#" target="_blank">捷达</a> </li>
+                <li class="l-li"> <span class="num ">7</span> <a href="#" target="_blank">朗逸</a> </li>
+                <li class="l-li"> <span class="num ">8</span> <a href="#" target="_blank">别克GL8</a> </li>
+                <li class="l-li"> <span class="num ">9</span> <a href="#" target="_blank">长安CS75</a> </li>
+                <li class="l-li l-li-nBorder"> <span class="num ">10</span> <a href="#" target="_blank">宝骏730</a> </li>
+            </ul>
+            <ul class="fr js-con">
+                <li class="l-li"> <span class="num bgtop">12</span> <a href="#" target="_blank">迈腾</a> </li>
+                <li class="l-li"> <span class="num bgtop">2</span> <a href="#" target="_blank">宝来</a> </li>
+                <li class="l-li"> <span class="num bgtop">3</span> <a href="#" target="_blank">奥迪A6L</a> </li>
+                <li class="l-li"> <span class="num ">4</span> <a href="#" target="_blank">哈弗H6</a> </li>
+                <li class="l-li"> <span class="num ">5</span> <a href="#" target="_blank">途观</a> </li>
+                <li class="l-li"> <span class="num ">6</span> <a href="#" target="_blank">捷达</a> </li>
+                <li class="l-li"> <span class="num ">7</span> <a href="#" target="_blank">朗逸</a> </li>
+                <li class="l-li"> <span class="num ">8</span> <a href="#" target="_blank">别克GL8</a> </li>
+                <li class="l-li"> <span class="num ">9</span> <a href="#" target="_blank">长安CS75</a> </li>
+                <li class="l-li l-li-nBorder"> <span class="num ">10</span> <a href="#" target="_blank">宝骏730</a> </li>
+            </ul>
+            <ul class="fr js-con">
+                <li class="l-li"> <span class="num bgtop">14</span> <a href="#" target="_blank">迈腾</a> </li>
+                <li class="l-li"> <span class="num bgtop">2</span> <a href="#" target="_blank">宝来</a> </li>
+                <li class="l-li"> <span class="num bgtop">3</span> <a href="#" target="_blank">奥迪A6L</a> </li>
+                <li class="l-li"> <span class="num ">4</span> <a href="#" target="_blank">哈弗H6</a> </li>
+                <li class="l-li"> <span class="num ">5</span> <a href="#" target="_blank">途观</a> </li>
+                <li class="l-li"> <span class="num ">6</span> <a href="#" target="_blank">捷达</a> </li>
+                <li class="l-li"> <span class="num ">7</span> <a href="#" target="_blank">朗逸</a> </li>
+                <li class="l-li"> <span class="num ">8</span> <a href="#" target="_blank">别克GL8</a> </li>
+                <li class="l-li"> <span class="num ">9</span> <a href="#" target="_blank">长安CS75</a> </li>
+                <li class="l-li l-li-nBorder"> <span class="num ">10</span> <a href="#" target="_blank">宝骏730</a> </li>
+            </ul>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+
+<!--footer model -->
+<!-- 底部 -->
+<div class="footer">
+    <div class="footer_content">
+        <ul>
+            <li class="footer_message"><a href="javascript:void (0)">关于我们</a></li>
+            <li class="footer_message"><a href="javascript:void (0)">联系我们</a></li>
+            <li class="footer_message"><a href="javascript:void (0)">招贤纳士</a></li>
+            <li class="website"><a href="javascript:void (0)">@2004-2016 www .xxx .com All Rights Reserved. xxx所有</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--goTop model -->
+<!-- 返回顶部 -->
+<div class="goTop" id="back_to_top"> <span class="goTop_icon"></span> <span class="goTop_text">返回顶部</span></div>
+
+
+</body>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/tab.js"></script>
+<script src="js/publicMain.js"></script>
+<script src="js/paginationPage.js"></script>
+<script src="js/index.js"></script>
+<script src="js/loginHeader.js"></script>
+<script src="js/goTop.js"></script>
+<script>
+    //tab切换
+    Tab('js-left-tap', 'js-tab-warp', 'active', 'js-show', 'mouseover');
+    $(document).ready(function () {
+        $('.pub-list').find("li:nth-of-type(3n)").css("margin-right", "0");
+    })
+
+    $(".tcdPageCode").createPage({
+        pageCount: 100,
+        current: 1,
+        backFn: function (p) {
+            console.log(p)
+        }
+    });
+</script>
+</html>

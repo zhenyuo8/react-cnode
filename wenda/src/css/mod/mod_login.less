@@ -1,0 +1,104 @@
+
+
+
+@import (reference) "../public";
+ 
+.wenda_login{
+    background: url("../img/wenda_login_bg.png") no-repeat center;
+    background-size: 100%;
+    height:350px;
+    width: 260px;
+    position: absolute;
+    top:0px;
+    right:0px;
+    padding:  20px;
+    box-sizing: border-box;
+    font-weight: @font-weight-b;
+    .person_title{
+        padding: 30px 0;
+        border-bottom: 1px solid @color-eee;
+        font-weight: @font-weight-b;
+        & > span{
+            float: left;
+            vertical-align: middle;
+        }
+        .icon{
+            padding: 0 10px;
+            img {
+                display: inline-block;
+                width: 60px;
+                height: 60px;
+                border-radius: 60px;
+            }
+            .w_photo_mask {
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                left: 12px;
+                z-index: 2;
+            }
+            .absolute{
+                width: 69px;
+                height: 16px;
+                bottom:-6px;
+                left: 6px;
+                z-index: 3;
+            }
+        }
+        .name{
+            width:120px;
+            margin-top: 10px;
+            word-break: break-all;
+            word-wrap: break-word;
+            max-height: 80px;
+            overflow-y: hidden;
+        }
+    }
+    .person_sec{
+        padding: 20px 0;
+        .quetion{
+            & > li{
+                line-height: 20px;
+                width: 70px;
+                box-sizing: border-box;
+                text-align: center;
+                p{
+                    font-weight: @font-weight-b;
+                }
+            }
+            .ask{
+                border-right: 1px solid @color-eee;
+            }
+            .answer{
+                border-right: 1px solid @color-eee;
+            }
+        }
+    }
+    .wenda_btn{
+        font-weight: @font-weight-b;
+        margin-top: 40px;
+        & > a{
+            color:@color-fff;
+        }
+        .put_que_answer{
+            display:inline-block;
+            width: 93px;
+            height: 44px;
+            text-align: center;
+            line-height: 44px;
+            background-color: @color-ffa903;
+            float: left;
+            border-radius: 2px;
+        }
+        .check{
+            display: inline-block;
+            width: 123px;
+            height: 44px;
+            text-align: center;
+            line-height: 44px;
+            background-color: @color-398be4;
+            float: right;
+            border-radius: 2px;
+        }
+    }
+}

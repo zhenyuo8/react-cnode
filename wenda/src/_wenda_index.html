@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=8,9,10,11">
+    <title>问答首页</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/goTop.js"></script>
+    <script src="js/willAsk.js"></script>
+    <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+
+</head>
+<body>
+    <div class="header">
+        {{#include ./mod/mod_headerTitle.html}}
+
+        <!--logo model -->
+        {{#include ./mod/mod_headerLogo.html}}
+
+        <!--menu model -->
+        {{#include ./mod/mod_headerMenu.html}}
+    </div>
+    <div class="main">
+        <div class="wenda_title clearfix relative">
+            <div class="wenda_banner fl" id="banner">
+                <!--标题背景-->
+                <!--标题-->
+
+                <div id="banner_list" class="bd clearfix">
+                    <div><a href="#"><img src="img/pic/banner1_01.jpg"/><p>购买新车，这些钱不用花1</p></a></div>
+                    <div><a href="#"><img src="img/pic/banner1_03.jpg"/><p>购买新车，这些钱不用花2</p></a></div>
+                    <div><a href="#"><img src="img/pic/banner1_03.jpg"/><p>购买新车，这些钱不用花3</p></a></div>
+                    <div><a href="#"><img src="img/pic/banner1_03.jpg"/><p>购买新车，这些钱不用花4</p></a></div>
+                </div>
+                <div class="banner_dot">
+                    <ul class="hd clearfix">
+                        <li class="on"alt="1"><span></span></li>
+                        <li alt="2"><span></span></li>
+                        <li alt="3"><span></span></li>
+                        <li alt="4"><span></span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--问答_普通人-->
+            <!--{{#include ./mod/mod_login_common.html}}-->
+
+            <!--问答_-专家-->
+            {{#include ./mod/mod_login.html}}
+
+            <!--问答_未登录-->
+            <!--{{#include ./mod/mod_login_not.html}}-->
+
+        </div>
+        <div class="section clearfix">
+            <div class="w_left fl">
+                <!--专家列表-->
+                <div class="profession">
+                    <div class="pro_title clearfix">
+                        <h3 class="fl">专家团</h3>
+                        <div class="update fr">
+                            <a href="#">
+                                <img src="img/update.png" alt="">
+                            </a>
+                            <a href="#" class="change">换一换</a>
+                            <a href="#" class="all">全部</a>
+                        </div>
+                    </div>
+                    <div class="pro_section clearfix">
+                        <dl>
+                            <dt>
+                                <img src="img/pic/icon1.png" alt="">
+                                <img src="img/photo_mask.png" class="photo_mask">
+                            </dt>
+                            <dd>
+                                <h3>淑鸿伟</h3>
+                                <p>全能型汽车技术专家</p>
+                                <div><a href="#">向他提问</a></div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <img src="img/pic/icon1.png" alt="">
+                                <img src="img/photo_mask.png" class="photo_mask">
+                            </dt>
+                            <dd>
+                                <h3>淑鸿伟</h3>
+                                <p>全能型汽车技术专家</p>
+                                <div><a href="#">向他提问</a></div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <img src="img/pic/icon1.png" alt="">
+                                <img src="img/photo_mask.png" class="photo_mask">
+                            </dt>
+                            <dd>
+                                <h3>淑鸿伟</h3>
+                                <p>全能型汽车技术专家</p>
+                                <div><a href="#">向他提问</a> </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <img src="img/pic/icon1.png">
+                                <img src="img/photo_mask.png" class="photo_mask">
+                            </dt>
+                            <dd>
+                                <h3>淑鸿伟</h3>
+                                <p>全能型汽车技术专家</p>
+                                <div><a href="#">向他提问</a></div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <img src="img/pic/icon1.png">
+                                <img src="img/photo_mask.png" class="photo_mask">
+                            </dt>
+                            <dd>
+                                <h3>淑鸿伟</h3>
+                                <p>全能型汽车技术专家</p>
+                                <div><a href="#">向他提问</a></div>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <!--问题列表-->
+                <div class="quetion_list">
+                    <div class="q_title clearfix" id="q_choose">
+                        <h2 class="js-menu recommend fl t_active">推荐</h2>
+                        <h2 class="js-menu q_new fl">最新</h2>
+                        <div class="check_all fr"><a href="#">查看全部问题>></a></div>
+                    </div>
+                    {{#include ./mod/mod_question_list.html}}
+                    <!--加载更多-->
+                    {{#include ./mod/mod_loadMore.html}}
+                </div>
+            </div>
+            <div class="w_right fr">
+                <!--公告-->
+                <div class="tip">
+                    {{#include ./mod/mod_small_head.html?m=公告}}
+                    <div class="tip_sec">
+                        <ul>
+                            <li><p><a href="#">问答标兵火热招募中！</a></p></li>
+                            <li><p><a href="#">问答标兵火热招募中！</a></p></li>
+                            <li>
+                                <p><a href="#">问答标兵火热招募中！</a></p>
+                            </li>
+                            <li>
+                                <p><a href="#">问答标兵火热招募中！</a></p>
+                            </li>
+                            <li>
+                                <p><a href="#">问答标兵火热招募中！</a></p>
+                            </li>
+                            <li>
+                                <p><a href="#">问答标兵火热招募中！</a></p>
+                            </li>
+                            <li>
+                                <p><a href="#">问答标兵火热招募中！</a></p>
+                            </li>
+                            <li>
+                                <p><a href="#">问答标兵火热招募中！</a></p>
+                            </li>
+                            <li>
+                                <p><a href="#">问答标兵火热招募中！</a></p>
+                            </li>
+                            <li>
+                                <p><a href="#">问答标兵火热招募中！</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--热门-->
+                <div class="hot">
+                    {{#include ./mod/mod_small_head.html?m=热门}}
+                    <div id="tagscloud">
+                        <a href="#" class="tagc1">奥迪A4</a>
+                        <a href="#" class="tagc2">奥迪A4</a>
+                        <a href="#" class="tagc2">奥迪A4</a>
+                        <a href="#" class="tagc3">奥迪A4</a>
+                        <a href="#" class="tagc3">奥迪A4</a>
+                        <a href="#" class="tagc3">奥迪A4</a>
+                        <a href="#" class="tagc1">奥迪A4</a>
+                        <a href="#" class="tagc2">奥迪A4</a>
+                        <a href="#" class="tagc2">奥迪A4</a>
+                        <a href="#" class="tagc3">奥迪A4</a>
+                        <a href="#" class="tagc3">奥迪A4</a>
+                        <a href="#" class="tagc3">奥迪A4</a>
+                        <a href="#" class="tagc1">奥迪A4</a>
+                        <a href="#" class="tagc2">奥迪A4</a>
+                        <a href="#" class="tagc2">奥迪A4</a>
+                        <a href="#" class="tagc3">奥迪A4</a>
+                        <a href="#" class="tagc3">奥迪A4</a>
+                        <a href="#" class="tagc3">奥迪A4</a>
+                    </div>
+                </div>
+                <!--优秀标兵-->
+
+                <div class="example">
+                    {{#include ./mod/mod_small_head.html?m=优秀标兵展示}}
+                    <ul class="clearfix">
+                        <li>
+                            <div class="exa_icon fl">
+                                <img src="img/pic/iconf_1_07.jpg" alt="">
+                            </div>
+                            <div class="exa_sec fl">
+                                <h3>汉库克</h3>
+                                <p class="gray">全能型汽车技术专家</p>
+                                <p><a href="#">向ta提问>></a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="exa_icon fl">
+                                <img src="img/pic/iconf_1_07.jpg" alt="">
+                            </div>
+                            <div class="exa_sec fl">
+                                <h3>汉库克</h3>
+                                <p class="gray">全能型汽车技术专家</p>
+                                <p><a href="#">向ta提问>></a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="exa_icon fl">
+                                <img src="img/pic/iconf_1_07.jpg" alt="">
+                            </div>
+                            <div class="exa_sec fl">
+                                <h3>汉库克</h3>
+                                <p class="gray">全能型汽车技术专家</p>
+                                <p><a href="#">向ta提问>></a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer model -->
+    {{#include ./mod/mod_footer.html}}
+
+    <!--goTop model -->
+    {{#include ./mod/mod_goTop.html}}
+    <!--我要提问 -->
+    {{#include ./mod/mod_willAsk.html}}
+    <script src="js/tab.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/limite.js"></script>
+    <script src="js/tagscloud.js"></script>
+    <script>
+	    jQuery("#banner").slide({effect:"fold",autoPlay:true,easing:"swing",delayTime:400,triggerTime:0});   
+    </script>
+</body>
+</html>

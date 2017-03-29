@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>更改头像</title>
+    <link rel="stylesheet" href="http://172.16.0.135:8888/passport/0/css/base.css">
+    <link rel="stylesheet" href="http://172.16.0.135:8888/passport/0/css/changeUserImg.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/accountTab.js"></script>
+</head>
+<body>
+<div class="main">
+    <div class="header">
+        <div class="header_con">
+            <p class="fl">
+                <a href="#"><img src="http://172.16.0.135:8888/passport/0/img/personCenter_logo.png" alt="logo"></a>
+            </p>
+            <p class="fr">
+                <a href="#" class="user_img"><img src="http://172.16.0.135:8888/passport/0/img/pic/user_img_03.png" alt="用户头像"> </a>
+                <a href="#" class="user_name">conan <em></em></a>
+            </p>
+        </div>
+    </div>
+    <div class="content clearfix">
+        <div class="left_tab_menu clearfix">
+            <ul>
+                <li class="bg"><a href="personalCenter.html">账号管理</a></li>
+                <li><a href="myCollect.html">我的收藏</a></li>
+                <li><a href="myPrice.html">我的询价</a></li>
+                <li><a href="#">我的问答</a></li>
+                <li><a href="myComment.html">我的评论</a></li>
+                <li><a href="messageSystem.html">消息中心</a></li>
+            </ul>
+        </div>
+        <div class="right_content clearfix">
+            <div class="account_m">
+                <ul  class="account_tab" id="js_account_tab">
+                    <li><a href="javascript:void (0)" class="active">个人资料</a></li>
+                    <li class="cur"><a href="javascript:void (0)">修改头像</a></li>
+                    <li><a href="javascript:void (0)">修改密码</a></li>
+                </ul>
+                <div class="account_con clearfix">
+                    <div class="content">
+                        <div class="clearfix" style="height: 170px">
+                            <div class="fl">
+                                <p>使用新头像</p>
+                                <p>你可以上传JPG、PNG、JPGE文件，文件需小于3MB</p>
+                                <div class="upLoad">
+                                    <div>
+                                        <span>上传头像</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="fr" style="display: none">
+                                <div class="cur_img_text">
+                                    <p>当前头像</p>
+                                </div>
+                                <div class="cur_img">
+                                    <img src="http://172.16.0.135:8888/passport/0/img/user_cur_img.png" alt="当前头像">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="upload_img clearfix">
+                            <div class="upload_img_left clearfix">
+                                <div class="cut_img">
+                                   <!-- <table class="css_table" cellspacing="0" cellpadding="0" unselectable="on">
+                                        <tbody>
+                                        <tr class="top">
+                                            <td class="top_td"></td>
+                                        </tr>
+                                        <tr class="middle">
+                                            <td class="middle_left"></td>
+                                            <td class="middle_center"></td>
+                                            <td class="middle_right"></td>
+                                        </tr>
+                                        <tr class="bottom">
+                                            <td class="bottom_td"></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>-->
+                                </div>
+
+                                <div class="size_change">
+                                    <em></em>
+                                    <span><i></i></span>
+                                    <em></em>
+                                </div>
+
+                                <div class="save_cancel">
+                                    <span class="save">保存头像</span>
+                                    <span class="cancel">取消</span>
+                                </div>
+                            </div>
+                            <div class="cur_img_right clearfix">
+                                <p>系统会根据 您上传的图片生成3种尺寸的头像，如图所示。</p>
+                                <div class="three_img clearfix">
+                                    <div class="size_left clearfix">
+                                        <div class="size_120 clearfix"> <span><img src="http://172.16.0.135:8888/passport/0/img/change_img.png" alt=""></span></div>
+                                        <p>120*120px</p>
+                                    </div>
+                                    <div class="size_right clearfix">
+                                        <div class="size_div1">
+                                            <div class="size_30"><span><img src="http://172.16.0.135:8888/passport/0/img/change_img.png" alt=""></span></div>
+                                            <p>30*30px</p>
+                                        </div>
+                                        <div class="size_div2">
+                                            <div class="size_60"><span><img src="http://172.16.0.135:8888/passport/0/img/change_img.png" alt=""></span></div>
+                                            <p>60*60px</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--底部结构-->
+    <div class="footer clearfix">
+        <div class="footer_content">
+            <ul>
+                <li class="footer_message"><a href="#">关于我们</a></li>
+                <li class="footer_message"><a href="#">联系我们</a></li>
+                <li class="footer_message"><a href="#">招贤纳士</a></li>
+                <li class="website"><a href="#">@2004-2016 www.xingyuanauto.com All Rights Reserved.
+                    行圆汽车所有</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

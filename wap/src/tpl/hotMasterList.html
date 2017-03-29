@@ -1,0 +1,6 @@
+
+<ul class="clearfix">
+	{{ for (var i = 0, l = it.length; i < l; i++) { }}
+	<li data-id="{{=it[i].id}}" data-img="{{=it[i].img100}}"><a href="#"><img src="{{=it[i].img100}}"><span>{{=it[i].name}}</span></a></li>
+	{{ } }}
+</ul>

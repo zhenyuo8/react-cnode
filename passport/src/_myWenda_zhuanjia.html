@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>我的问答</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/myWenda_zhuanjia.css">
+</head>
+<body>
+<div class="wrap">
+	<!--head-->
+	{{#include ./mod/mod_header.html}}
+
+	<!--content-->
+	<div class="content clearfix">
+		<!--左侧个人中心模块列表-->
+		<ul class="left_tab_menu">
+	        <li><a href="personalCenter.html">账号管理</a></li>
+	        <li><a href="myCollect.html">我的收藏</a></li>
+	        <li><a href="myPrice.html">我的询价</a></li>
+	        <li class="bg"><a href="myWenda_zhuanjia.html">我的问答</a></li>
+	        <li><a href="myComment.html">我的评论</a></li>
+	        <li class="message_sys">
+	        	<a href="messageSystem.html" id="message_sys_a">
+	        		消息中心 
+	        		<em></em>
+	        	</a>
+	        </li>
+	    </ul>
+
+		<!--右侧我的问答内容-->
+		<div class="wenda_content">
+			<!--个人信息-->
+			<div class="zhj_personal_news">
+				<div class="zhj_personal">
+					<dl class="zhj_per">
+						<dt>
+							<img src="img/pic/zhj_photo.jpg" class="zhj_photo">
+							<!--照片默认-->
+							<!-- <img src="" class="zhj_photo_nor">-->
+							<span class="zhj_photo_mask"></span>
+							<img src="img/answer_expert.png" class="zhj_identity_sign"> 
+						</dt>
+						<dd class="zhj_name">韩智孝</dd>
+						<dd class="zhj_identity">全能型技术专家</dd>
+						<dd class="zhj_city">北京</dd>
+					</dl>
+					<div class="zhj_news">
+						专家简介：自九十年代初开始从事车辆数据监测与研究，多次参与多品牌多型号特种车辆定型测试，参与国内首次引进电脑调漆系统的汉化和测试工作。熟悉从化油漆到缸内直喷各种发动机技术，以及从无同步器到CVT各种变速箱技术。
+					</div>
+				</div>
+				<span class="zhj_ans_l_numbers"></span>
+				<span class="zhj_ans_r_numbers"></span>
+				<div class="zhj_ans_numbers">
+					<p class="zhj_num">总计答题数：<span>19000</span></p>
+					<p class="zhj_num zhj_zong">本周回答：<span>190</span></p>
+				</div>
+			</div>
+
+			<!--问答tab-->
+			<div class="wenda_tab">
+				<ul class="wenda_tab_type clearfix" id="wenda_tab_type">
+					<li class="js-menu wenda_current"><a href="javascript:void(0);">我的提问</a></li>
+					<li class="js-menu"><a href="javascript:void(0);">我的回答</a></li>
+					<li class="js-menu"><a href="javascript:void(0);">我的关注</a></li>
+					<li class="js-menu"><a href="javascript:void(0);">待解决问题</a></li>
+				</ul>
+				<div class="wenda_tab_content" id="wenda_tab_content">
+					<!--提问-->
+					<div class="js-con wenda_tab_con wenda_tab_show">
+						{{#include ./mod/mod_answer.html}}
+						<div class="tcdPageCode"></div>
+					</div>
+					<!--回答-->
+					<div class="js-con wenda_tab_con">
+						{{#include ./mod/mod_response.html}}
+						<div class="tcdPageCode"></div>
+					</div>
+					<!--关注-->
+					<div class="js-con wenda_tab_con">
+						{{#include ./mod/mod_answer.html}}
+						<div class="tcdPageCode"></div>
+					</div>
+					<!--待解决-->
+					<div class="js-con wenda_tab_con">
+						{{#include ./mod/mod_problem.html}}
+						<div class="tcdPageCode"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--footer-->
+	{{#include ./mod/mod_footer.html}}
+</div>
+</body>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/paginationPage.js"></script>
+<script src="js/myWenda.js"></script>
+<script>
+	$(".tcdPageCode").createPage({
+        pageCount: 4,
+        current: 1,
+        backFn: function (p) {
+            console.log(p)
+        }
+    });
+</script>
+</html>

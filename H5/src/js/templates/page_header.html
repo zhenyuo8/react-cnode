@@ -1,0 +1,61 @@
+
+<div class="page-header">
+<!--mask遮罩-->
+    <div class="nav_mask" v-on:click="toggle()" v-bind:class="{nav_mask_show:visible}"></div>
+    <div class="fixbox">
+        <!--mod-nav-->
+        <div class="nav_menu">
+            <ul class="clearfix">
+                <li>
+                    <router-link :to="'/'" reload>选车</router-link>
+                </li>
+                <li>
+                    <router-link :to="getNavURL('index')" reload>车型</router-link>
+                </li>
+                <li v-bind:class="{nav_active: page=='price' }">
+                    <router-link :to="getNavURL('price')" reload>报价</router-link>
+                </li>
+                <li v-bind:class="{nav_active: page=='pic' }">
+                    <router-link :to="getNavURL('pic')" reload>图片</router-link>
+                </li>
+                <li v-bind:class="{nav_active: page=='param' }">
+                    <router-link :to="getNavURL('param')" reload>配置</router-link>
+                </li>
+                <li v-bind:class="{nav_active: page=='news' }">
+                    <router-link :to="getNavURL('news')" reload>评测</router-link>
+                </li>
+                <li v-bind:class="{nav_active: page=='dealer' }">
+                    <router-link :to="getNavURL('dealer')" reload>经销商</router-link>
+                </li>
+                <li>
+                    <router-link :to="getNavURL('tj')" reload>同级车</router-link>
+                </li>
+                <li>
+                    <router-link :to="getNavURL('gz')" reload>关注</router-link>
+                </li>
+            </ul>
+        </div>
+
+        <div class="img_listhead cf" v-if="page=='pic'">
+            <h2 class="fl">图片列表</h2>
+            <ul class="nav_list fr">
+                <!-- class="active" -->
+                <slot name="btns"></slot>
+                <li v-on:click="toggle()" v-show="!visible">
+                    <span class="s3"></span>
+                    <strong>导航</strong>
+                </li>
+                <li v-on:click="toggle()" v-show="visible">
+                    <span class="s4"></span>
+                    <strong>收起</strong>
+                </li>
+            </ul>
+        </div>
+        <div class="title_bar clearfix" v-else>
+            <a class="title_name">{{title}}</a>
+            <span class="more_btn" v-on:click="toggle()" v-show="!visible" v-if="serialId"></span>
+            <span class="up_btn" v-on:click="toggle()" v-show="visible"></span>
+        </div>
+
+    </div>
+</div>

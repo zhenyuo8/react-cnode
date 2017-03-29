@@ -1,0 +1,460 @@
+.config_para {
+  margin-top: 20px;
+}
+.config_para .peizhi_filter {
+  width: 990px;
+  height: 40px;
+  border: 1px solid #999999;
+  line-height: 40px;
+  background-color: #f7f7f7;
+  margin: 0 auto;
+}
+.config_para .peizhi_filter .pub ul li {
+  margin-right: 16px;
+  cursor: pointer;
+}
+.config_para .peizhi_filter .pub ul li .bg_icon {
+  vertical-align: middle;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #999999;
+  margin-right: 6px;
+  margin-top: -3px;
+  border-radius: 2px;
+  background-color: #FFFFFF;
+}
+.config_para .peizhi_filter .pub ul li .active {
+  width: 12px;
+  height: 12px;
+  background: url('../img/right_icon.png') center;
+  border: none;
+}
+.config_para .peizhi_filter .year {
+  margin-left: 20px;
+}
+.config_para .peizhi_filter .year ul li:first-child {
+  color: #666666;
+}
+.config_para .peizhi_filter .speed_box {
+  margin-left: 40px;
+}
+.config_para .peizhi_filter .speed_box ul li:first-child {
+  color: #666666;
+}
+.config_para .peizhi_filter .engine {
+  margin-left: 50px;
+}
+.config_para .peizhi_filter .engine ul li:first-child {
+  color: #666666;
+}
+.main_box {
+  width: 990px;
+  margin: 0 auto;
+  position: relative;
+  zoom: 1;
+}
+.main_box .car_compare_con {
+  width: 100%;
+}
+.main_box .car_compare_con table {
+  width: 100%;
+  border-collapse: separate;
+  border-top: 1px solid #dadada;
+  border-left: 1px solid #dadada ;
+}
+.main_box .car_compare_con table .first_tr th h3 {
+  height: 20px;
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+.main_box .car_compare_con table .f_price td {
+  text-align: center;
+}
+.main_box .car_compare_con table .m_price .f_w {
+  font-weight: 600;
+}
+.main_box .car_compare_con table .m_price td {
+  text-align: center;
+  color: #e43a3a;
+}
+.main_box .car_compare_con table .m_price td span {
+  color: #ffffff ;
+  display: inline-block;
+  width: 52px;
+  height: 22px;
+  line-height: 22px;
+  background-color: #ffa903;
+  cursor: pointer;
+  margin-left: 11px;
+  font-weight: normal;
+}
+.main_box .car_compare_con table th {
+  width: 175px;
+  font-weight: normal;
+  padding-left: 22px;
+  text-align: left;
+  border-right: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+  position: relative;
+}
+.main_box .car_compare_con table th div:first-child {
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+.main_box .car_compare_con table th .color_999 {
+  color: #999999;
+}
+.main_box .car_compare_con table th div {
+  line-height: 32px;
+}
+.main_box .car_compare_con table th div .active {
+  width: 12px;
+  height: 12px;
+  background: url('../img/right_icon.png') center;
+  border: none;
+}
+.main_box .car_compare_con table th p {
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+.main_box .car_compare_con table th .bg_icon {
+  vertical-align: middle;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #999999;
+  margin-right: 6px;
+  margin-top: -3px;
+  border-radius: 2px;
+  background-color: #FFFFFF;
+}
+.main_box .car_compare_con table th .bp_icon {
+  width: 12px;
+  height: 12px;
+  background: url('../img/biaopei_icon.png') no-repeat center;
+  border: none;
+}
+.main_box .car_compare_con table th .xp_icon {
+  width: 12px;
+  height: 12px;
+  background: url('../img/xuanpei_icon.png') no-repeat center;
+  border: none;
+}
+.main_box .car_compare_con table th .null_icon {
+  width: 12px;
+  height: 4px;
+  background: url('../img/null_icon.png') no-repeat center;
+  border: none;
+}
+.main_box .car_compare_con table .line_hi_31 {
+  height: 31px;
+}
+.main_box .car_compare_con table .v_top {
+  vertical-align: top;
+}
+.main_box .car_compare_con table td {
+  width: 197px;
+  border-right: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+}
+.main_box .car_compare_con table td .close_btn {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  background: url("../img/close_icon.png") no-repeat center;
+  top: 0px;
+  right: 0px;
+}
+.main_box .car_compare_con table td .car_select_input_box {
+  width: 100%;
+  margin-top: 12px;
+}
+.main_box .car_compare_con table td .car_select_input_box .car_brand {
+  width: 145px;
+  height: 25px;
+  border: 1px solid #dadada;
+  margin: 0 auto;
+  margin-bottom: 8px;
+  line-height: 25px;
+  text-indent: 8px;
+  padding-right: 10px;
+  background: url("../img/select_down.png") no-repeat 140px center;
+  cursor: pointer;
+}
+.main_box .car_compare_con table td .car_select_input_box .car_type {
+  width: 145px;
+  height: 25px;
+  border: 1px solid #dadada;
+  margin: 0 auto;
+  margin-bottom: 8px;
+  line-height: 25px;
+  text-indent: 8px;
+  padding-right: 10px;
+  background: url("../img/select_down.png") no-repeat 140px center;
+  cursor: pointer;
+}
+.main_box .car_compare_con table td .car_select_input_box .car_year {
+  width: 145px;
+  height: 25px;
+  border: 1px solid #dadada;
+  margin: 0 auto;
+  margin-bottom: 8px;
+  line-height: 25px;
+  text-indent: 8px;
+  padding-right: 10px;
+  background: url("../img/select_down.png") no-repeat 140px center;
+  cursor: pointer;
+}
+.main_box .car_compare_con table td .car_select_input_box .car_brand:hover {
+  border: 1px solid #398be4;
+  background: url("../img/select_b_down.png") no-repeat 141px center;
+}
+.main_box .car_compare_con table td .car_select_input_box .car_type:hover {
+  border: 1px solid #398be4;
+  background: url("../img/select_b_down.png") no-repeat 141px center;
+}
+.main_box .car_compare_con table td .car_select_input_box .car_year:hover {
+  border: 1px solid #398be4;
+  background: url("../img/select_b_down.png") no-repeat 141px center;
+}
+.main_box .car_compare_con table td .img_box {
+  text-align: center;
+  margin-top: 14px;
+}
+.main_box .car_compare_con table td .img_box img {
+  margin: 0 auto;
+}
+.main_box .car_compare_con table td .car_des {
+  padding: 0px 28px;
+  text-align: center;
+  margin-top: 11px;
+  line-height: 18px;
+}
+.main_box .car_compare_con table td .duibi_btn {
+  text-align: center;
+  bottom: 18px;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+}
+.main_box .car_compare_con table td .duibi_btn div {
+  margin: 0 auto;
+}
+.main_box .car_compare_con table td .duibi_btn span {
+  display: inline-block;
+  border: 1px solid #dadada;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.main_box .car_compare_con table td .duibi_btn .icon_left {
+  width: 24px;
+  height: 24px;
+  background: url("../img/duibi_left_icon.png") no-repeat center;
+}
+.main_box .car_compare_con table td .duibi_btn .icon_right {
+  width: 24px;
+  height: 24px;
+  background: url("../img/duibi_right_icon.png") no-repeat center;
+  margin-right: 0px;
+}
+.main_box .car_compare_con table td .duibi_btn .title {
+  width: 31px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0 6px;
+  background: url("../img/delete_bule.png") no-repeat center;
+}
+.main_box .car_compare_con table td .duibi_btn .left_move {
+  width: 54px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+}
+.main_box .car_compare_con table td .duibi_btn .right_move {
+  width: 54px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+}
+.main_box .car_compare_con table td .duibi_btn .add_car {
+  display: inline-block;
+  width: 155px;
+  height: 24px;
+  line-height: 24px;
+  border: 1px solid #398be4;
+  color: #398be4;
+  cursor: pointer;
+  background: url("../img/addcar.png") no-repeat 37px center;
+}
+.main_box .car_compare_con table .h73 td {
+  padding-left: 20px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  line-height: 26px;
+}
+.main_box .car_compare_con table .h73 td span {
+  display: inline-block;
+  width: 18px ;
+  height: 8px;
+  border: 1px solid #dadada;
+  margin-right: 8px;
+}
+.main_box .car_compare_con table .h73 td span:nth-of-type(odd) {
+  background-color: cyan;
+}
+.main_box .car_compare_con table .h73 td span:nth-of-type(even) {
+  background-color: lightcoral;
+}
+.main_box .car_compare_con table .safety_con_tr td .bg_icon {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: none;
+}
+.main_box .car_compare_con table .safety_con_tr td .bp_icon {
+  background: url(../img/biaopei_icon.png) no-repeat center;
+}
+.main_box .car_compare_con table .safety_con_tr td .xuanpei_icon {
+  background: url(../img/xuanpei_icon.png) no-repeat center;
+}
+.main_box .car_compare_con table .safety_con_tr td .null_icon {
+  background: url(../img/null_icon.png) no-repeat center;
+}
+.main_box .car_compare_con table .h48 {
+  text-align: center;
+}
+.main_box .car_compare_con table .h48 .font_b {
+  font-weight: 600;
+  padding: 5px 27px;
+  line-height: 18px;
+}
+.main_box .car_compare_con table .h36:hover {
+  background: #a5d0ff;
+}
+.main_box .car_compare_con table .car_name:hover {
+  background: #a5d0ff;
+}
+.main_box .car_compare_con table .f_price:hover {
+  background: #a5d0ff;
+}
+.main_box .car_compare_con table .m_price:hover {
+  background: #a5d0ff;
+}
+.main_box .car_compare_con table .h73:hover {
+  background: #a5d0ff;
+}
+.main_box .car_compare_con table .h36 {
+  height: 36px;
+}
+.main_box .car_compare_con table .h36 td {
+  padding-left: 20px;
+}
+.main_box .car_compare_con table .h36 .color_999 {
+  color: #999999;
+}
+.main_box .car_compare_con table .title_box {
+  background-color: #f7f7f7;
+}
+.main_box .car_compare_con table .title_box td {
+  padding-left: 22px;
+  border-right: none;
+  height: 40px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.main_box .hint_mes_box {
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 46px;
+}
+.main_box .hint_mes_box .c_999 {
+  color: #999999;
+}
+.main_box .hint_mes_box .bg_icon {
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  vertical-align: middle;
+  margin: 0 9px;
+}
+.main_box .hint_mes_box .hint_icon {
+  background: url("../img/hint_icon.png") no-repeat center;
+}
+.main_box .po_left_nav {
+  top: 258px;
+  left: 50%;
+  margin-left: -654px;
+  background-color: #FFFFFF;
+}
+.main_box .po_left_nav ul {
+  padding-right: 8px;
+  border-right: 2px solid #dadada;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.main_box .po_left_nav ul .top_icon {
+  width: 10px;
+  height: 10px;
+  background: url("../img/status_icon_top.png") no-repeat center;
+  right: -4px;
+  top: -7px;
+}
+.main_box .po_left_nav ul .bot_icon {
+  width: 10px;
+  height: 10px;
+  background: url("../img/status_icon_top.png") no-repeat center;
+  right: -4px;
+  bottom: -7px;
+}
+.main_box .po_left_nav ul li {
+  line-height: 34px;
+  font-size: 0px;
+  text-align: right;
+}
+.main_box .po_left_nav ul li a {
+  display: inline-block;
+  height: 24px;
+  padding-left: 12px;
+  padding-right: 8px;
+  line-height: 24px;
+  vertical-align: middle;
+  font-size: 12px;
+  background-color: #ffffff;
+  color: #666666;
+  font-size: 16px;
+}
+.main_box .po_left_nav ul li .active_a {
+  background-color: #398be4;
+  color: #f3f8fd;
+}
+.main_box .po_left_nav ul li .bg_icon {
+  display: inline-block;
+  width: 12px;
+  height: 24px;
+  background-color: #ffffff;
+  vertical-align: middle;
+}
+.main_box .po_left_nav ul li .active {
+  background: url("../img/point_to_icon.png") no-repeat center;
+}
+.main_box .po_left_nav ul li .status_icon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url("../img/status_icon.png") no-repeat center;
+  right: -14px;
+  top: 50%;
+  margin-top: -5px;
+}
+.main_box .po_left_nav ul li .status_n_icon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url("../img/status_n_icon.png") no-repeat center;
+  right: -14px;
+  top: 50%;
+  margin-top: -5px;
+}

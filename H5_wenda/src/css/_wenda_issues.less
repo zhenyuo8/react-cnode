@@ -1,0 +1,447 @@
+/*****
+ *@author: linyh
+ *@from: Global style wenda_issues(问题库)
+ *@description: 陈璐
+ *@date: name (2017.03.02)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_pubHeadNav";
+@import "mod/mod_pubHead";
+@import "mod/mod_issue";
+@import "mod/mod_smallnav";
+@import "mod/mod_footer";
+@import "mod/mod_goTop";
+
+// 灰色间隔条
+.bg_bar{
+    width: 100%;
+    height: .4rem /* 30/75 */;
+    background-color: @bg-bar;
+}
+
+// 问题库
+.issues_page{
+
+    // nav
+    .nav_list{
+        width: 92%;
+        padding: 0 4%;
+        border-bottom: 1px solid @bg-bar;
+        a{
+            font-size: 13px;
+            color: @color-555;
+            width: 39.567%;
+            line-height: .827rem /* 62/75 */;
+            text-align: center;
+            border: 1px solid @condition-border;
+            border-radius: .053rem /* 4/75 */;
+            margin: .4rem /* 30/75 */ 2.899% .4rem /* 30/75 */ 0;
+            float: left;
+            position: relative;
+            i{
+                display: inline-block;
+                border-bottom: .187rem /* 14/75 */ solid @condition-border;
+                border-left: .187rem /* 14/75 */ solid transparent;
+                position: absolute;
+                right: .053rem /* 4/75 */;
+                bottom: .053rem /* 4/75 */;
+            }
+        }
+        .checked{
+            color: @color-main-blue;
+            border-color: @color-main-blue;
+            i{
+                border-bottom-color: @color-main-blue;
+            }
+        }
+        .reset{
+            width: 13.043%;
+            margin-right: 0;
+        }
+        .disable {
+            background: #eee;
+            color: #999;
+        }
+    }
+
+    // 推荐内容
+    .recommend_content{
+        .load_more_module{
+            width: 92%;
+            margin: 0 4% .267rem /* 20/75 */;
+            .load_more{
+                .load_more;
+            }
+            .loading{
+                .loading;
+                display: none;
+            }
+            .more{
+                .more;
+                display: none;
+            }
+        }
+    }
+
+    // 提问按钮
+    .ask_btn{
+        font-size: 15px;
+        .bg-jianbian(top left,bottom right,@ml-start,@ml-end);
+        .border-jianbian(0,5px,20px,0,@ml-end);
+        border-radius: 50%;
+        width: 1.333rem /* 100/75 */;
+        height: 1.333rem /* 100/75 */;
+        line-height: 1.333rem /* 100/75 */;
+        text-align: center;
+        position: fixed;
+        bottom: 2.853rem /* 214/75 */;
+        right: .267rem /* 20/75 */;
+        z-index: 99;
+        a{
+            display: block;
+            color: @color-fff;
+            text-decoration: none;
+            outline: none;
+        }
+    }
+
+}
+
+// 按品牌遮罩层
+.mask_area{
+    display: none;
+    .mask{
+        width: 100%;
+        height: 100%;
+        background-color: @mask-bg;
+        filter:alpha(opacity=50);
+        opacity: .5;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .mask_jt{
+        background-image: url("../img/double_jt.png");
+        background-size: cover;
+        width: .693rem /* 52/75 */;
+        height: .64rem /* 48/75 */;
+        position: fixed;
+        top: 48%;
+        left: 10.93%;
+        z-index: 999;
+    }
+}
+
+// 右侧box相同样式
+.right_box{
+    width: 76.667%;
+    height: 100%;
+    background-color: @color-fff;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 999;
+    &::-webkit-scrollbar{
+        width: 0;
+    }
+}
+
+// 右侧抽屉品牌
+.right_brand_module{
+    .right_box;
+    //字母所在行公共样式
+    .module_title{
+        color: @sub-brand-name;
+        font-size: 13px;
+        line-height: .72rem /* 54/75 */;
+        background-color: @bg-color;
+        padding-left: .4rem /* 30/75 */;
+    }
+    .brand_type{
+        position: relative;
+        .brand_list{
+            .letter_title{
+                .module_title;
+                font-size: 14px;
+                padding-left: .667rem /* 50/75 */;
+            }
+            .brand_box{
+                font-size: 15px;
+                li{
+                    overflow: hidden;
+                    a{
+                        line-height: 1.427rem /* 107/75 */;
+                        display: block;
+                        overflow: hidden;
+                        i{
+                            float: left;
+                            padding: 0 .507rem /* 38/75 */;
+                            img{
+                                width: .987rem /* 74/75 */;
+                                height: .987rem /* 74/75 */;
+                                margin: .173rem /* 13/75 */;
+                                vertical-align: middle;
+                                display: inline-block;
+                            }
+                        }
+                        .brand_name{
+                            width: 68%;
+                            border-bottom: 1px solid @list-border;
+                            float: left;
+                        }
+                    }
+                }
+            }
+        }
+        .letter_list{
+            display: none;
+            position: absolute;
+            top: .747rem /* 56/75 */;
+            right: 0;
+            z-index: 1;
+            li{
+                width: .8rem /* 60/75 */;
+                line-height: .48rem /* 36/75 */;
+                text-align: center;
+                .checked{
+                    color: @color-main-blue;
+                }
+            }
+        }
+        .letter_list_fix{
+            position: fixed;
+            top: 1.76rem /* 132/75 */;
+            right: 0;
+            z-index: 99;
+        }
+        .letter_alert{
+            font-size: 50px;
+            width: 1.867rem /* 140/75 */;
+            height: 1.867rem /* 140/75 */;
+            border: 1px solid @letter-alert-border;
+            background-color: @letter-alert-bg;
+            border-radius: .133rem /* 10/75 */;
+            text-align: center;
+            margin-top: -.933rem /* 70/75 */;
+            margin-left: -.933rem /* 70/75 */;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            z-index: 999;
+            display: none;
+            span{
+                color: @color-888;
+                line-height: 1.867rem /* 140/75 */;
+            }
+        }
+    }
+}
+
+// 右侧抽屉车款
+.right_type_module{
+    .right_box;
+    width: 74.667%;
+    z-index: 1000;
+    .car_type_module{
+        .type_brand{
+            font-size: 16px;
+            line-height: 1.413rem /* 106/75 */;
+            .type_brand_logo{
+                background-image: url("../img/pic/aodi_logo.png");
+                background-size: 100% 100%;
+                width: .96rem /* 72/75 */;
+                height: .96rem /* 72/75 */;
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0 .4rem /* 30/75 */;
+            }
+        }
+        .type_msg_list{
+            .sub_brand_name{
+                font-size: 13px;
+                color: @sub-brand-name;
+                line-height: .72rem /* 54/75 */;
+                background-color: @bg-bar;
+                padding: 0 .32rem /* 24/75 */
+            }
+            ul{
+                font-size: 15px;
+                li{
+                    margin-left: .4rem /* 30/75 */;
+                    border-bottom: 1px solid @list-border;
+                    a{
+                        line-height: 2.053rem /* 154/75 */;
+                        display: block;
+                        overflow: hidden;
+                        img{
+                            float: left;
+                            width: 1.88rem /* 141/75 */;
+                            height: 1.253rem /* 94/75 */;
+                            margin: .347rem /* 26/75 */ .267rem /* 20/75 */ 0 0;
+                        }
+                        span{
+                            float: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 右侧问题类型
+.right_issues_module{
+    .right_box;
+    .issues_list{
+        font-size: 16px;
+        ul{
+            li{
+                margin: 0 .4rem /* 30/75 */;
+                line-height: 1.32rem /* 99/75 */;
+                border-bottom: 1px solid @list-border;
+                a{
+                    display: block;
+                }
+                .current{
+                    color: @color-main-blue;
+                }
+            }
+        }
+    }
+}
+
+
+/* 字体大小适配 */
+//dpr=2字体大小
+[data-dpr="2"] .issues_page{
+    // nav
+    .nav_list{
+        a{
+            font-size: 26px;
+        }
+    }
+    // 推荐内容
+    .recommend_content{
+        .load_more_module{
+            .load_more{
+                font-size: 26px;
+            }
+            .more{
+                font-size: 26px;
+            }
+        }
+    }
+    // 提问按钮
+    .ask_btn{
+        font-size: 30px;
+    }
+}
+//dpr=3字体大小
+[data-dpr="3"] .issues_page{
+    // nav
+    .nav_list{
+        a{
+            font-size: 39px;
+        }
+    }
+    // 推荐内容
+    .recommend_content{
+        .load_more_module{
+            .load_more{
+                font-size: 39px;
+            }
+            .more{
+                font-size: 39px;
+            }
+        }
+    }
+    // 提问按钮
+    .ask_btn{
+        font-size: 45px;
+    }
+}
+
+//dpr=2字体大小（右侧品牌抽屉）
+[data-dpr="2"] .right_brand_module{
+    .brand_type{
+        .brand_list{
+            .letter_title{
+                font-size: 28px;
+            }
+            .brand_box{
+                font-size: 30px;
+            }
+        }
+        .letter_alert{
+            font-size: 100px;
+        }
+    }
+}
+//dpr=3字体大小（右侧品牌抽屉）
+[data-dpr="3"] .right_brand_module{
+    .brand_type{
+        .brand_list{
+            .letter_title{
+                font-size: 42px;
+            }
+            .brand_box{
+                font-size: 45px;
+            }
+        }
+        .letter_alert{
+            font-size: 150px;
+        }
+    }
+}
+
+//dpr=2 字体大小（右侧车型抽屉）
+[data-dpr="2"] .right_type_module{
+    .car_type_module{
+        .type_brand{
+            font-size: 32px;
+        }
+        .type_msg_list{
+            .sub_brand_name{
+                font-size: 26px;
+            }
+            ul{
+                font-size: 30px;
+            }
+        }
+    }
+}
+//dpr=3 字体大小（右侧车型抽屉）
+[data-dpr="3"] .right_type_module{
+    .car_type_module{
+        .type_brand{
+            font-size: 48px;
+        }
+        .type_msg_list{
+            .sub_brand_name{
+                font-size: 39px;
+            }
+            ul{
+                font-size: 45px;
+            }
+        }
+    }
+}
+
+//dpr=2 字体大小（右侧问题类型）
+[data-dpr="2"] .right_issues_module{
+    .issues_list{
+        font-size: 32px;
+    }
+}
+//dpr=3 字体大小（右侧问题类型）
+[data-dpr="3"] .right_issues_module{
+    .issues_list{
+        font-size: 48px;
+    }
+}

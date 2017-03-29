@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>汽车大全-子品牌视频</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/videoHomePage.css">
+    <link rel="stylesheet" href="css/leftTree.css">
+    <link rel="stylesheet" href="css/carModel.css">
+    <link rel="stylesheet"  href="css/mod/mod_pagination.css"/>
+    <link rel="stylesheet" href="css/articleCommentPage.css">
+    <link rel="stylesheet" href="css/headerTitle.css">
+    <link rel="stylesheet" href="css/headerLogo.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/mod/mod_headerCarMenu.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/paginationPage.js"></script>
+
+</head>
+<body>
+<div class="main">
+    <!--header模块-->
+    <div class="header">
+        <!--nav model -->
+        {{#include ./mod/mod_headerTitle2.html}}
+
+        <!--logo model -->
+        {{#include ./mod/mod_headerBanner.html}}
+    </div>
+    
+    <!--视频内容结构-->
+    <div class="video_content relative ">
+        <!--标题&&导航-->
+        <div class="video_content_nav ">
+            <!--carMenu model -->
+            {{#include ./mod/mod_headerCarMenu.html?tab=3}}
+
+        </div>
+        <!--视频展示区域-->
+        <div class="video_content_detail cf relative">
+            <!--品牌选择-->
+            <!--左侧树形-->
+            <div id="leftNav" class="fl">
+
+            </div>
+            <!--视频区-->
+            <div class="fr rightTree">
+                <div class="video_text">
+                    <div class="location_cur">
+                        <span>当前位置：</span>
+                        <a href="javascript:void (0)" class="web_title">汽车大全</a> >
+                        <a href="javascript:void (0)" class="">视频</a> >
+                        <a href="javascript:void (0)" class="a_video">奥迪</a>
+                    </div>
+                    <div class="new_video">
+                        <span>奥迪</span>
+                    </div>
+                </div>
+                <div class="new-video-box" id="new-video-box">
+                    <div class="js-con new-video-type clearfix show">
+                        <ul class="pub-list clearfix">
+                            <li class="fl first">
+                                <a href="#" target="_blank" >
+                                    <dl class="r-dl po-r">
+                                        <dt><img src="img/newest_image_03.png" width="226" height="168"/></dt>
+                                        <dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+                                        <dd class="v-time">00:33</dd>
+                                        <dt class="icon-r_play_button1 r-play-btn"></dt>
+                                    </dl>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <dl class="r-dl po-r">
+                                        <dt><img src="img/newest_image_03.png" width="226" height="168"/></dt>
+                                        <dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+                                        <dd class="v-time">00:33</dd>
+                                        <dt class="icon-r_play_button1 r-play-btn"></dt>
+                                    </dl>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <dl class="r-dl po-r">
+                                        <dt><img src="img/newest_image_03.png" width="226" height="168"/></dt>
+                                        <dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+                                        <dd class="v-time">00:33</dd>
+                                        <dt class="icon-r_play_button1 r-play-btn"></dt>
+                                    </dl>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <dl class="r-dl po-r">
+                                        <dt><img src="img/newest_image_03.png" width="226" height="168"/></dt>
+                                        <dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+                                        <dd class="v-time">00:33</dd>
+                                        <dt class="icon-r_play_button1 r-play-btn"></dt>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li class="fl first">
+                                <a href="#" target="_blank" >
+                                    <dl class="r-dl po-r">
+                                        <dt><img src="img/newest_image_03.png" /></dt>
+                                        <dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+                                        <dd class="v-time">00:33</dd>
+                                        <dt class="icon-r_play_button1 r-play-btn"></dt>
+                                    </dl>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <dl class="r-dl po-r">
+                                        <dt><img src="img/newest_image_03.png" width="226" height="168"/></dt>
+                                        <dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+                                        <dd class="v-time">00:33</dd>
+                                        <dt class="icon-r_play_button1 r-play-btn"></dt>
+                                    </dl>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <dl class="r-dl po-r">
+                                        <dt><img src="img/newest_image_03.png" width="226" height="168"/></dt>
+                                        <dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+                                        <dd class="v-time">00:33</dd>
+                                        <dt class="icon-r_play_button1 r-play-btn"></dt>
+                                    </dl>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <dl class="r-dl po-r">
+                                        <dt><img src="img/newest_image_03.png" width="226" height="168"/></dt>
+                                        <dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+                                        <dd class="v-time">00:33</dd>
+                                        <dt class="icon-r_play_button1 r-play-btn"></dt>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li class="fl first_fl">
+                                <a href="#" target="_blank">
+                                    <dl class="r-dl po-r">
+                                        <dt><img src="img/newest_image_03.png" /></dt>
+                                        <dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+                                        <dd class="v-time">00:33</dd>
+                                        <dt class="icon-r_play_button1 r-play-btn"></dt>
+                                    </dl>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <dl class="r-dl po-r">
+                                        <dt><img src="img/newest_image_03.png" width="226" height="168"/></dt>
+                                        <dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+                                        <dd class="v-time">00:33</dd>
+                                        <dt class="icon-r_play_button1 r-play-btn"></dt>
+                                    </dl>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <dl class="r-dl po-r">
+                                        <dt><img src="img/newest_image_03.png" width="226" height="168"/></dt>
+                                        <dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+                                        <dd class="v-time">00:33</dd>
+                                        <dt class="icon-r_play_button1 r-play-btn"></dt>
+                                    </dl>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <dl class="r-dl po-r">
+                                        <dt><img src="img/newest_image_03.png" width="226" height="168"/></dt>
+                                        <dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+                                        <dd class="v-time">00:33</dd>
+                                        <dt class="icon-r_play_button1 r-play-btn"></dt>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tcdPageCode"></div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+   
+   <!--footer model -->
+    {{#include ./mod/mod_footer.html}}
+
+</div>
+
+<script src="data/lefttree.js"></script>
+<script src="js/leftnav.js"></script>
+<script src="js/carModel.js"></script>
+<script src="js/loginHeader.js"></script>
+<script>
+    $(".tcdPageCode").createPage({
+        pageCount: 100,
+        current: 1,
+        backFn: function (p) {
+            console.log(p)
+        }
+    });
+</script>
+
+</body>
+</html>

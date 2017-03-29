@@ -1,0 +1,397 @@
+/*****
+ *@author: jianingning
+ *@from: Global style wenda_zhuanjilist  专家专题
+ *@description:
+ *@date: name (2017.03.07)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_footer.less";
+
+.line {
+	margin: 0 auto;
+	width: 6.693rem;
+	height: 2px;
+	background: #e6e6e6;
+}
+.invite_expert {
+	position: absolute;
+	left: 50%;
+	top: .537rem;
+	margin-left: -1.043rem;
+	width: 2.287rem;
+	height: .533rem;
+	line-height: .533rem;
+	background: #f4f5f7;
+	padding: 0 .293rem;
+	font-size: 18px;
+	font-weight: 700;
+	color: #333;
+}
+.wrap {
+	width: 100%;
+	background: #f4f5f7;
+
+	/*banner*/
+	.expertList_banner {
+		width: 100%;
+		height: 4.0rem;
+
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+	/*特邀专家*/
+	.invite {
+		position: relative;
+		height: 7.6rem;
+		padding-top: .893rem;
+
+		.line {
+			.line;
+		}
+		.invite_expert {
+			.invite_expert;
+		}
+		.invite_expert_box {
+			width: 100%;
+			position: relative;
+			.swiper-button-next,.swiper-button-prev{
+				position: absolute;
+				width: 2.68rem;
+				height: 3.34rem;
+				opacity: 0;
+				top:1.3rem;
+			}
+			.swiper-button-next{
+				left: 0;
+			}
+			.swiper-button-prev{
+				left: 7rem;
+			}
+		}
+		.invite_expert_ul {
+			padding-top: 0.533rem;
+			.invite_li {
+				float: left;
+				position: relative;
+				width: 2.68rem;
+				height: 3.34rem;
+				padding-top: 0.44rem;
+				text-align: center;
+				background: #fff;
+				filter:alpha(opacity=60);
+    			opacity:.6;
+    			transition: transform .5s;
+                -moz-transition: -moz-transform .5s;
+                -webkit-transition: -webkit-transform .5s;
+                -o-transition: -o-transform .5s;
+
+				dt {
+					position: relative;
+					width: 1.6rem;
+					height: 1.6rem;
+					margin: 0 auto;
+
+					img {
+						display: block;
+						width: 100%;
+						&:first-child{
+							height: 100%;
+							border-radius: 50%;
+						}
+					}
+					.expert_sign {
+						position: absolute;
+						left: 50%;
+						top: 1.32rem;
+						margin-left: -0.54rem;
+						display: block;
+						width: 1.08rem;
+						height: 0.413rem
+					}
+				}
+				.invite_expert_name {
+					margin-top: 0.2rem;
+					font-size: 14px;
+					color: #333;
+				}
+				.invite_answer_btn {
+					width: 1.6rem;
+					height: 0.64rem;
+					background: #52adfe;
+					font-size: 13px;
+					color: #fff;
+					text-align: center;
+					line-height: .64rem;
+					border :none;
+					outline: none;
+					border-radius: 8px;
+					margin-top: 0.193rem;
+				}
+				.arrow-down {
+					position: absolute;
+					bottom: -0.247rem;
+					left: 50%;
+					margin-left: -0.203rem;
+				    width:0;
+				    height:0;
+				    border-left: .267rem solid transparent;
+				    border-right: .267rem solid transparent;
+				    border-top: .267rem solid #fff;
+				    display: none;
+
+				}
+				.sc-content {
+					display: none;
+				}
+			}
+			.normal {
+				transform:scale(1,1);
+                -ms-transform:scale(1,1); /* IE 9 */
+                -moz-transform:scale(1,1); /* Firefox */
+                -webkit-transform:scale(1,1); /* Safari and Chrome */
+                -o-transform:scale(1,1); /* Opera */
+			}
+			.current {
+				width: 3.36rem;
+				height: 3.6rem;
+				filter:alpha(opacity=100);
+    			opacity:1;
+    			z-index: 2;
+            	transform:scale(1.1,1.1);
+                -ms-transform:scale(1.1,1.1); /* IE 9 */
+                -moz-transform:scale(1.1,1.1); /* Firefox */
+                -webkit-transform:scale(1.1,1.1); /* Safari and Chrome */
+                -o-transform:scale(1.1,1.1); /* Opera */
+
+    			.invite_answer_btn {
+    				margin-top: 0.293rem;
+    			}
+    			.arrow-down {
+    				display: block;
+    			}
+			}
+		}
+		.expert_news {
+			.expert_news_text1 {
+				display: block;
+				margin-top: .627rem;
+				font-size: 14px;
+				color: #333;
+				text-align: center;
+			}
+			.left_sign,
+			.right_sign {
+				display: inline-block;
+				width: .32rem;
+				height: .28rem;
+				float: left;
+				margin-top: .447rem;
+			}
+			.left_sign {
+				background: url(../img/left_sign.png);
+				background-size: cover;
+				margin-left: .627rem;
+			}
+			.right_sign {
+				background: url(../img/right_sign.png);
+				background-size: cover;
+				margin-left: .367rem;
+			}
+			.expert_news_text2 {
+				float: left;
+				margin: .347rem 0 0 .467rem;
+				width: 73%;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 2;
+				font-size: 13px;
+				color: #333;
+			}
+		}
+	}
+	/*专家招募*/
+	.expert_recruit {
+
+		.recruit_img {
+			display: block;
+			width: 100%;
+			height: 1.493rem;
+		}
+		.list {
+			position: relative;
+			padding-top: .893rem;
+
+			.line {
+				.line;
+			}
+			.invite_expert {
+				.invite_expert;
+			}
+		}
+		.list_content {
+			padding: .507rem 0 0 0;
+			li {
+				width: 50%;
+				height: 5.06rem;
+				background: #f4f5f7;
+				box-sizing: border-box;
+				margin-bottom: .4rem;
+				&:nth-child(even){
+					float: right;
+					padding-right: 0.533rem;
+					padding-left: 0.2rem;
+				}
+				&:nth-child(odd){
+					float: left;
+					padding-left: 0.533rem;
+					padding-right: 0.2rem;
+				}
+
+				a {
+					display: block;
+					background: #fff;
+					height: 4.62rem;
+					padding-top: 0.44rem;
+					text-align: center;
+					box-shadow: 5px 8px 10px #eee;
+				}
+				img {
+					display: block;
+					width: 1.88rem;
+					height: 1.88rem;
+					border-radius: 50%;
+					margin:0 auto;
+				}
+				.expert_name {
+					display: block;
+					margin-top: 0.267rem;
+					text-align: center;
+					font-size: 14px;
+					color: #333;
+				}
+				.expert_position {
+					display: block;
+					padding: 0 .4rem;
+					margin-top: 0.213rem;
+					text-align: center;
+					overflow: hidden;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					font-size: 12px;
+					color: #666;
+				}
+				.answer_btn {
+					width: 1.6rem;
+					height: 0.64rem;
+					background: #52adfe;
+					font-size: 13px;
+					color: #fff;
+					text-align: center;
+					line-height: .64rem;
+					border :none;
+					outline: none;
+					border-radius: 8px;
+					margin-top: 0.293rem;
+				}
+			}
+		}
+	}
+}
+/*字号大小适配*/
+[data-dpr="2"] .wrap {
+	.invite {
+		.invite_expert {
+			font-size: 36px;
+		}
+		.invite_expert_ul {
+			li {
+				.invite_expert_name {
+					font-size: 28px;
+				}
+				.invite_answer_btn {
+					font-size: 26px;
+				}
+			}
+		}
+		.expert_news {
+			.expert_news_text1 {
+				font-size: 28px;
+			}
+			.expert_news_text2 {
+				font-size: 26px;
+			}
+		}
+	}
+	.expert_recruit {
+		.list {
+			.invite_expert {
+				font-size: 36px;
+			}
+		}
+		.list_content {
+			li {
+				.expert_name {
+					font-size: 28px;
+				}
+				.expert_position {
+					font-size: 24px;
+				}
+				.answer_btn {
+					font-size: 26px;
+				}
+			}
+		}
+	}
+}
+[data-dpr="3"] .wrap {
+	.invite {
+		.invite_expert {
+			font-size: 54px;
+		}
+		.invite_expert_ul {
+			li {
+				.invite_expert_name {
+					font-size: 42px;
+				}
+				.invite_answer_btn {
+					font-size: 39px;
+				}
+			}
+		}
+		.expert_news {
+			.expert_news_text1 {
+				font-size: 42px;
+			}
+			.expert_news_text2 {
+				font-size: 39px;
+			}
+		}
+	}
+	.expert_recruit {
+		.list {
+			.invite_expert {
+				font-size: 54px;
+			}
+		}
+		.list_content {
+			li {
+				.expert_name {
+					font-size: 42px;
+				}
+				.expert_position {
+					font-size: 36px;
+				}
+				.answer_btn {
+					font-size: 39px;
+				}
+			}
+		}
+	}
+}

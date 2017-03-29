@@ -1,0 +1,57 @@
+<div class="wrap">
+    <page-header title="促销信息" page="dealer"></page-header>
+    <div class="content">
+        <p class="pro_title">{{newsTitle}}</p>
+        <div class="pro_text" v-html="newsSummary"></div>
+    </div>
+
+    <div v-if="cars.length>1">
+    <div class="mod_list clearfix" v-for="el in cars">
+            <div class="car_typeBox">
+                <p class="car_type">
+                    <span>{{el.carYearDesc}}</span>
+                    <span class="car_typing">{{el.carName}}</span>
+                </p>
+                <p class="car_price">
+                    <span class="ruling_price">{{el.favorabledPrice}}万</span>
+                    <span class="original_price">{{el.referPrice}}万</span>
+                    <span class="depreciate" v-show="el.favorablePrice>0">
+                        <img src="../../img/down1.png" alt="">
+                        {{el.favorablePrice}}万
+                    </span>
+                    <span class="abundant" v-show="el.storeDesc">{{el.storeDesc}}</span>
+                </p>
+                <p class="addition" v-show="el.additionalDesc">附加条件：{{el.additionalDesc}}</p>
+            </div>
+            <div class="car_btnBox">
+                <router-link bdtag="DealerPage_DealerInformationPage_PromotionDetailsPage_InquiryButton_Clicked"
+                :to="{
+                    name: 'price',
+                    query: {
+                        carId: el.carId,
+                        dealerId: dealerId,
+                        serialId: serialId,
+                        q_serialId: el.q_serialId
+                    }
+                }"
+                class="car_price_btn" reload>询底价</router-link>
+            </div>
+    </div>
+    </div>
+
+
+    <div class="btn_wrap" v-if="cars.length==1">
+
+        <router-link v-for="el in cars" bdtag="DealerPage_DealerInformationPage_PromotionDetailsPage_InquiryButton_Clicked"
+                :to="{
+                    name: 'price',
+                    query: {
+                        carId: el.carId,
+                        dealerId: dealerId,
+                        serialId: serialId,
+                        q_serialId: q_serialId
+                    }
+                }"
+        class="button" reload>询底价</router-link>
+    </div>
+</div>

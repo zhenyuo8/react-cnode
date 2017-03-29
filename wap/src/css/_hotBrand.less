@@ -1,0 +1,112 @@
+/*****
+ *@author: linyh
+ *@from: Global style index-hotBrand(首页-热门品牌)
+ *@description: 陈璐
+ *@date: name (2017.02.23)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_pubHeadNav";
+@import "mod/mod_pubHead";
+@import "mod/mod_footer";
+@import "mod/mod_goTop";
+
+
+// 热门品牌页
+.hot_brand_page{
+
+    // 灰色间隔条
+    .bg_bar{
+        width: 100%;
+        height: .4rem /* 30/75 */;
+        background-color: @bg-bar;
+    }
+
+    // 车型信息列表
+    .type_msg_module{
+        .type_msg_list{
+            .type_msg_demo;
+            .sub_brand_name{
+                font-size: 14px;
+                color: @city-scroll-title-color;
+                padding: 0 .4rem /* 30/75 */;
+            }
+            dl{
+                margin-left: 0;
+                padding: .213rem /* 16/75 */ .4rem /* 30/75 */ .267rem /* 20/75 */;
+            }
+        }
+    }
+
+    // 面包屑导航
+    .small_nav{
+        font-size: 14px;
+        width: 92%;
+        margin: 0 4%;
+        line-height: 1.067rem /* 80/75 */;
+        border-bottom: 1px solid @list-border;
+        a{
+            color: @color-666;
+        }
+        i{
+            .icon_bg(url(../img/small_rightjt.png), .12rem /* 9/75 */, .213rem /* 16/75 */);
+            margin: 0 .213rem /* 16/75 */;
+            display: inline-block;
+        }
+        span{
+            color: @color-999;
+        }
+    }
+
+}
+
+
+/*字体适配*/
+//dpr=2字体大小
+[data-dpr="2"] .hot_brand_page{
+    // 车型信息列表
+    .type_msg_module{
+        .type_msg_list{
+            .sub_brand_name{
+                font-size: 28px;
+            }
+            dl{
+                .type_name{
+                    font-size: 30px;
+                }
+                .type_price{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    // 面包屑导航
+    .small_nav{
+        font-size: 28px;
+    }
+}
+//dpr=3字体大小
+[data-dpr="3"] .hot_brand_page{
+    // 车型信息列表
+    .type_msg_module{
+        .type_msg_list{
+            .sub_brand_name{
+                font-size: 42px;
+            }
+            dl{
+                .type_name{
+                    font-size: 45px;
+                }
+                .type_price{
+                    font-size: 45px;
+                }
+            }
+        }
+    }
+    // 面包屑导航
+    .small_nav{
+        font-size: 42px;
+    }
+}

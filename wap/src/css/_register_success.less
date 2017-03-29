@@ -1,0 +1,89 @@
+/*****
+ *@author: linyh
+ *@from: Global style register_success(注册成功)
+ *@description: 陈璐
+ *@date: name (2017.03.01)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_pubHead";
+
+
+html,body{
+    height: 100%;
+}
+
+// 注册成功
+.register_success{
+    height: 100%;
+    background-color: @bg-bar;
+    .book_bg{
+        display: block;
+        width: 3.653rem /* 274/75 */;
+        height: 3.147rem /* 236/75 */;
+        margin: 1.733rem /* 130/75 */ auto .267rem /* 20/75 */;
+    }
+    .success_tips{
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.173rem /* 88/75 */;
+    }
+    .tips_name_msg{
+        color: @edit-color;
+        text-align: center;
+        line-height: .64rem /* 48/75 */;
+    }
+    .user_name{
+        .tips_name_msg;
+    }
+    .change_name_tip{
+        .tips_name_msg;
+        a{
+            font-size: 14px;
+            color: @color-main-blue;
+        }
+    }
+    .iknow{
+        font-size: 16px;
+        color: @color-fff;
+        width: 50.667%;
+        text-align: center;
+        line-height: 1.067rem /* 80/75 */;
+        background-color: @color-main-blue;
+        border-radius: .107rem /* 8/75 */;
+        margin: .373rem /* 28/75 */ auto 0;
+        display: block;
+    }
+}
+
+/* 字体大小适配 */
+//dpr=2字体大小
+[data-dpr="2"] .register_success{
+    .success_tips{
+        font-size: 36px;
+    }
+    .change_name_tip{
+        a{
+            font-size: 28px;
+        }
+    }
+    .iknow{
+        font-size: 32px;
+    }
+}
+//dpr=3字体大小
+[data-dpr="3"] .register_success{
+    .success_tips{
+        font-size: 54px;
+    }
+    .change_name_tip{
+        a{
+            font-size: 42px;
+        }
+    }
+    .iknow{
+        font-size: 48px;
+    }
+}

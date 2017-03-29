@@ -1,0 +1,44 @@
+环境配置：
+1、安装nodejs 5.x 版本,配置资源包系统变量
+
+   这个环境变量能够让项目在任何地方找到公用模块
+   NODE_PATH   C:\Users\xxx\AppData\Roaming\npm\node_modules\
+   Path 必须包含
+        C:\Users\xxx\AppData\Roaming\npm
+        E:\Program Files\nodejs\
+
+2、全局安装如下nodejs模块，用于项目的管理和构建
+   如果不能安装，主要原因是国外源码服务器被墙，可以将安装源切换到阿里的源，命令行为： npm config set registry https://registry.npm.taobao.org
+
+    gulp               用于任务流处理
+    gulp-browserify    用于js代码合并
+    through2           用于gulp节点生成
+    gulp-htmlclean     用于html代码清理,清理换行注释等所有废弃的东东
+    gulp-concat        用于文件合并
+    gulp-less          用于less文件编译
+    gulp-autoprefixer  用于css样式兼容性自动处理
+    browser-sync       服务和自动更新程序
+    gulp-imagemin      用于图片压缩
+    gulp-rename        用户文件重命名
+    gulp-uglify        用于代码格式化
+    stream-combiner2   用于stream流错误监控处理
+    dot                用于html模板引擎
+
+
+3、安装git和 TortoiseGit 用于依赖包管理，设置环境变量：Path-> E:\Program Files\Git\cmd
+   https://git-scm.com/download/
+   https://tortoisegit.org/
+
+4、目前自带了几个简单的公共模块，在lib下面
+
+
+5、将dot模版引擎集成进了项目，可以使用dot模版语言开发界面
+
+更新记录（2017.02.13）:
+1、将模版生成部分的一大堆格式化了，因部分代码写的太不规范，连格式化工具都不能自动整理，部分格式化的不完整
+2、新增了一个out输出目录，里面存放自动生成的修改了连接的页面，里面所有的img和link连接被修改成绝对地址了
+3、以前的图片压缩task节点路由有问题，修正完毕
+
+需要先安装全局依赖： js-beautify   mkdirp
+
+哈哈，快去搞个项目试试吧

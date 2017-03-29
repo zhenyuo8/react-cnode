@@ -1,0 +1,453 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-bannerLeft-btn-default{
+  background-image: url("../img/sprite3.png");
+  background-position: 0px -29px;
+  width: 40px;
+  height: 80px;
+  display: inline-block;
+}
+.icon-bannerLeft-btn-hover{
+  background-image: url("../img/sprite3.png");
+  background-position: 0px -114px;
+  width: 40px;
+  height: 80px;
+  display: inline-block;
+}
+.icon-bannerLeft-btn-press{
+  background-image: url("../img/sprite3.png");
+  background-position: -45px -114px;
+  width: 40px;
+  height: 80px;
+  display: inline-block;
+}
+.icon-bannerRight-btn-default{
+  background-image: url("../img/sprite3.png");
+  background-position: -45px -29px;
+  width: 40px;
+  height: 80px;
+  display: inline-block;
+}
+.icon-bannerRight-btn-hover{
+  background-image: url("../img/sprite3.png");
+  background-position: -90px -29px;
+  width: 40px;
+  height: 80px;
+  display: inline-block;
+}
+.icon-bannerRight-btn-press{
+  background-image: url("../img/sprite3.png");
+  background-position: -162px 0px;
+  width: 40px;
+  height: 80px;
+  display: inline-block;
+}
+.icon-bg{
+  background-image: url("../img/sprite3.png");
+  background-position: -207px 0px;
+  width: 126px;
+  height: 20px;
+  display: inline-block;
+}
+.icon-city_down{
+  background-image: url("../img/sprite3.png");
+  background-position: -289px -102px;
+  width: 9px;
+  height: 7px;
+  display: inline-block;
+}
+.icon-dayu{
+  background-image: url("../img/sprite3.png");
+  background-position: -135px -46px;
+  width: 10px;
+  height: 12px;
+  display: inline-block;
+}
+.icon-dujia{
+  background-image: url("../img/sprite3.png");
+  background-position: -207px -25px;
+  width: 45px;
+  height: 46px;
+  display: inline-block;
+}
+.icon-five-m{
+  background-image: url("../img/sprite3.png");
+  background-position: 0px 0px;
+  width: 157px;
+  height: 24px;
+  display: inline-block;
+}
+.icon-go-top{
+  background-image: url("../img/sprite3.png");
+  background-position: -298px -25px;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+}
+.icon-hhc-hover{
+  background-image: url("../img/sprite3.png");
+  background-position: -141px -140px;
+  width: 46px;
+  height: 17px;
+  display: inline-block;
+}
+.icon-hhc-norme{
+  background-image: url("../img/sprite3.png");
+  background-position: -90px -140px;
+  width: 46px;
+  height: 17px;
+  display: inline-block;
+}
+.icon-hhc-press{
+  background-image: url("../img/sprite3.png");
+  background-position: -134px -114px;
+  width: 46px;
+  height: 17px;
+  display: inline-block;
+}
+.icon-jcc-hover{
+  background-image: url("../img/sprite3.png");
+  background-position: -135px -221px;
+  width: 41px;
+  height: 16px;
+  display: inline-block;
+}
+.icon-jcc-norme{
+  background-image: url("../img/sprite3.png");
+  background-position: -89px -221px;
+  width: 41px;
+  height: 16px;
+  display: inline-block;
+}
+.icon-jcc-press{
+  background-image: url("../img/sprite3.png");
+  background-position: -43px -221px;
+  width: 41px;
+  height: 16px;
+  display: inline-block;
+}
+.icon-mbc-hover{
+  background-image: url("../img/sprite3.png");
+  background-position: -295px -170px;
+  width: 38px;
+  height: 20px;
+  display: inline-block;
+}
+.icon-mbc-norme{
+  background-image: url("../img/sprite3.png");
+  background-position: 0px -221px;
+  width: 38px;
+  height: 20px;
+  display: inline-block;
+}
+.icon-mbc-press{
+  background-image: url("../img/sprite3.png");
+  background-position: -295px -143px;
+  width: 38px;
+  height: 20px;
+  display: inline-block;
+}
+.icon-mvp-hover{
+  background-image: url("../img/sprite3.png");
+  background-position: -289px -76px;
+  width: 41px;
+  height: 21px;
+  display: inline-block;
+}
+.icon-mvp-norme{
+  background-image: url("../img/sprite3.png");
+  background-position: -253px -117px;
+  width: 41px;
+  height: 21px;
+  display: inline-block;
+}
+.icon-mvp-press{
+  background-image: url("../img/sprite3.png");
+  background-position: -207px -117px;
+  width: 41px;
+  height: 21px;
+  display: inline-block;
+}
+.icon-p{
+  background-image: url("../img/sprite3.png");
+  background-position: -257px -66px;
+  width: 3px;
+  height: 3px;
+  display: inline-block;
+}
+.icon-pcc-hover{
+  background-image: url("../img/sprite3.png");
+  background-position: 0px -199px;
+  width: 45px;
+  height: 17px;
+  display: inline-block;
+}
+.icon-pcc-norme{
+  background-image: url("../img/sprite3.png");
+  background-position: -90px -162px;
+  width: 45px;
+  height: 17px;
+  display: inline-block;
+}
+.icon-pcc-press{
+  background-image: url("../img/sprite3.png");
+  background-position: -140px -162px;
+  width: 45px;
+  height: 17px;
+  display: inline-block;
+}
+.icon-pkc-hover{
+  background-image: url("../img/sprite3.png");
+  background-position: -90px -114px;
+  width: 39px;
+  height: 21px;
+  display: inline-block;
+}
+.icon-pkc-norme{
+  background-image: url("../img/sprite3.png");
+  background-position: -162px -85px;
+  width: 39px;
+  height: 21px;
+  display: inline-block;
+}
+.icon-pkc-press{
+  background-image: url("../img/sprite3.png");
+  background-position: -251px -170px;
+  width: 39px;
+  height: 21px;
+  display: inline-block;
+}
+.icon-play-hover{
+  background-image: url("../img/sprite3.png");
+  background-position: -248px -76px;
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+}
+.icon-play-norme{
+  background-image: url("../img/sprite3.png");
+  background-position: -257px -25px;
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+}
+.icon-play-press{
+  background-image: url("../img/sprite3.png");
+  background-position: -207px -76px;
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+}
+.icon-refresh{
+  background-image: url("../img/sprite3.png");
+  background-position: -135px -29px;
+  width: 15px;
+  height: 12px;
+  display: inline-block;
+}
+.icon-suv-hover{
+  background-image: url("../img/sprite3.png");
+  background-position: -207px -143px;
+  width: 39px;
+  height: 22px;
+  display: inline-block;
+}
+.icon-suv-norme{
+  background-image: url("../img/sprite3.png");
+  background-position: -207px -170px;
+  width: 39px;
+  height: 22px;
+  display: inline-block;
+}
+.icon-suv-press{
+  background-image: url("../img/sprite3.png");
+  background-position: -251px -143px;
+  width: 39px;
+  height: 22px;
+  display: inline-block;
+}
+.icon-wxc-hover{
+  background-image: url("../img/sprite3.png");
+  background-position: -299px -117px;
+  width: 30px;
+  height: 17px;
+  display: inline-block;
+}
+.icon-wxc-norme{
+  background-image: url("../img/sprite3.png");
+  background-position: -225px -246px;
+  width: 30px;
+  height: 17px;
+  display: inline-block;
+}
+.icon-wxc-press{
+  background-image: url("../img/sprite3.png");
+  background-position: -260px -246px;
+  width: 30px;
+  height: 17px;
+  display: inline-block;
+}
+.icon-xny-hover{
+  background-image: url("../img/sprite3.png");
+  background-position: -120px -246px;
+  width: 30px;
+  height: 17px;
+  display: inline-block;
+}
+.icon-xny-norme{
+  background-image: url("../img/sprite3.png");
+  background-position: -155px -246px;
+  width: 30px;
+  height: 17px;
+  display: inline-block;
+}
+.icon-xny-press{
+  background-image: url("../img/sprite3.png");
+  background-position: -190px -246px;
+  width: 30px;
+  height: 17px;
+  display: inline-block;
+}
+.icon-xxc-hover{
+  background-image: url("../img/sprite3.png");
+  background-position: -222px -221px;
+  width: 36px;
+  height: 16px;
+  display: inline-block;
+}
+.icon-xxc-norme{
+  background-image: url("../img/sprite3.png");
+  background-position: -263px -221px;
+  width: 36px;
+  height: 16px;
+  display: inline-block;
+}
+.icon-xxc-press{
+  background-image: url("../img/sprite3.png");
+  background-position: -181px -221px;
+  width: 36px;
+  height: 16px;
+  display: inline-block;
+}
+.icon-yhc-hover{
+  background-image: url("../img/sprite3.png");
+  background-position: 0px -246px;
+  width: 35px;
+  height: 18px;
+  display: inline-block;
+}
+.icon-yhc-norme{
+  background-image: url("../img/sprite3.png");
+  background-position: -40px -246px;
+  width: 35px;
+  height: 18px;
+  display: inline-block;
+}
+.icon-yhc-press{
+  background-image: url("../img/sprite3.png");
+  background-position: -80px -246px;
+  width: 35px;
+  height: 18px;
+  display: inline-block;
+}
+.icon-zdxc-hover{
+  background-image: url("../img/sprite3.png");
+  background-position: -148px -199px;
+  width: 44px;
+  height: 17px;
+  display: inline-block;
+}
+.icon-zdxc-norme{
+  background-image: url("../img/sprite3.png");
+  background-position: -50px -199px;
+  width: 44px;
+  height: 17px;
+  display: inline-block;
+}
+.icon-zdxc-press{
+  background-image: url("../img/sprite3.png");
+  background-position: -99px -199px;
+  width: 44px;
+  height: 17px;
+  display: inline-block;
+}
+.icon-zxc-hover{
+  background-image: url("../img/sprite3.png");
+  background-position: -244px -199px;
+  width: 42px;
+  height: 16px;
+  display: inline-block;
+}
+.icon-zxc-norme{
+  background-image: url("../img/sprite3.png");
+  background-position: -197px -199px;
+  width: 42px;
+  height: 16px;
+  display: inline-block;
+}
+.icon-zxc-press{
+  background-image: url("../img/sprite3.png");
+  background-position: -291px -199px;
+  width: 42px;
+  height: 16px;
+  display: inline-block;
+}
+
+.icon-bannerBigTipBlue_03 {
+  background-image: url(../img/spriteLight.png);
+  background-position: 0px 0px;
+  width: 64px;
+  height: 4px;
+}
+.icon-bannerTipDefault_03 {
+  background-image: url(../img/spriteLight.png);
+  background-position: 0px -14px;
+  width: 64px;
+  height: 4px;
+}
+.icon-delete-btn {
+  background-image: url(../img/spriteLight.png);
+  background-position: 0px -28px;
+  width: 16px;
+  height: 16px;
+}
+.icon-search-btn {
+  background-image: url(../img/spriteLight.png);
+  background-position: -26px -28px;
+  width: 16px;
+  height: 16px;
+}
+.icon-select-default_03 {
+  background-image: url(../img/spriteLight.png);
+  background-position: -52px -28px;
+  width: 12px;
+  height: 13px;
+}
+.icon-select-hover_03 {
+  background-image: url(../img/spriteLight.png);
+  background-position: -74px 0px;
+  width: 12px;
+  height: 13px;
+}
+.icon-select-press_03 {
+  background-image: url(../img/spriteLight.png);
+  background-position: -74px -23px;
+  width: 12px;
+  height: 13px;
+}

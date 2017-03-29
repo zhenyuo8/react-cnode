@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/imghome.css">
+    <title>图片找车</title>
+</head>
+<body>
+<div class="header">
+    <!--nav model -->
+    {{#include ./mod/mod_headerTitle2.html}}
+
+    <!--logo model -->
+    {{#include ./mod/mod_headerBanner.html}}
+</div>
+    <div class="imghome-body po-r clearfix">
+        <!--carMenu model -->
+        {{#include ./mod/mod_headerCarMenu.html?tab=2}}
+            <!--内容开始左侧 搜索     右侧为按条件查找图片  -->
+        <div class="con relative clearfix">
+            <!--左侧树形-->
+            <div id="leftNav" class="fl">
+            </div>
+            <div class="fr fc-db">
+                <p class="pos">
+                    <span class="now">当前位置：</span><a href="#">汽车大全</a>&nbsp;&gt;&nbsp<a href="#" class="c-f">图片</a>
+                </p>
+                <div class="search Js-search">
+                    <div class="condition-tro">
+                        <p class="title mt40">
+                            按条件找图片
+                            <span class="fr ft14 clear_choice">清空条件</span>
+                        </p>
+                        {{#include ./mod/mod_screenCar.html}}
+                        {{#include ./mod/mod_downUp.html}}
+                    </div>
+                    <p class="title mt40">热门品牌</p>
+                    <div class="car-brand clearfix">
+                        <ul class="clearfix">
+                            <li class="fl">
+                                <div>
+                                    <img src="img/pic/bmw.png" alt="">
+                                </div>
+                                <p>宝马</p>
+                            </li>
+                            <li class="fl">
+                                <div><img src="img/pic/xdc.png" alt=""></div>
+                                <p>现代</p>
+                            </li>
+                            <li class="fl">
+                                <div><img src="img/pic/ft.png" alt=""></div>
+                                <p>福特</p>
+                            </li>
+                            <li class="fl">
+                                <div><img src="img/pic/qiya.png" alt=""></div>
+                                <p>起亚</p>
+                            </li>
+                            <li class="fl bor-no">
+                                <div><img src="img/pic/bieke.png" alt=""></div>
+                                <p>别克</p>
+                            </li>
+                            <li class="fl">
+                                <div><img src="img/pic/cc.png" alt=""></div>
+                                <p>长城</p>
+                            </li>
+                            <li class="fl">
+                                <div><img src="img/pic/aodi.png" alt=""></div>
+                                <p>奥迪</p>
+                            </li>
+                            <li class="fl">
+                                <div><img src="img/pic/ca.png" alt=""></div>
+                                <p>长安</p>
+                            </li>
+                            <li class="fl">
+                                <div><img src="img/pic/byd.png" alt=""></div>
+                                <p>比亚迪</p>
+                            </li>
+                            <li class="fl bor-no">
+                                <div><img src="img/pic/xufulai.png" alt=""></div>
+                                <p>雪佛兰</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="title">最新汽车图片</p>
+                    <div class="new-car-img">
+                        <div class="fl po-r">
+                            <a href="#" target="_blank"><img src="img/pic/32new.png" alt="" width="356" height="238"></a>
+                            <p class="po-a">超级跑车</p>
+                        </div>
+                        <div class="fr po-r">
+                            <a href="#" target="_blank"><img src="img/pic/32new.png" alt="" width="356" height="238"></a>
+                            <p class="po-a">超级跑车</p>
+                        </div>
+                        <div class="fl po-r">
+                            <a href="#" target="_blank"><img src="img/pic/32new.png" alt="" width="356" height="238"></a>
+                            <p class="po-a">超级跑车</p>
+                        </div>
+                        <div class="fr po-r">
+                            <a href="#" target="_blank"><img src="img/pic/32new.png" alt="" width="356" height="238"></a>
+                            <p class="po-a">超级跑车</p>
+                        </div>
+                    </div>
+                    <p class="title">最新热门车型</p>
+                    <div class="hot-car">
+                        <ul class="clearfix">
+                            <li class="fl">
+                                <a href="#" target="_blank"><img src="img/pic/hot-car.png" alt="" width="160" height="111"></a>
+                                <p>速腾</p>
+                            </li>
+                            <li class="fl">
+                                <a href="#" target="_blank"><img src="img/pic/hot-car.png" alt="" width="160" height="111"></a>
+                                <p>速腾</p>
+                            </li>
+                            <li class="fl">
+                                <a href="#" target="_blank"><img src="img/pic/hot-car.png" alt="" width="160" height="111"></a>
+                                <p>速腾</p>
+                            </li>
+                            <li class="fl ">
+                                <a href="#" target="_blank"><img src="img/pic/hot-car.png" alt="" width="160" height="111"></a>
+                                <p>速腾</p>
+                            </li>
+                            <li class="fl">
+                                <a href="#" target="_blank"><img src="img/pic/hot-car.png" alt="" width="160" height="111"></a>
+                                <p>速腾</p>
+                            </li>
+                            <li class="fl">
+                                <a href="#" target="_blank"><img src="img/pic/hot-car.png" alt="" width="160" height="111"></a>
+                                <p>速腾</p>
+                            </li>
+                            <li class="fl">
+                                <a href="#" target="_blank"><img src="img/pic/hot-car.png" alt="" width="160" height="111"></a>
+                                <p>速腾</p>
+                            </li>
+                            <li class="fl ">
+                                <a href="#" target="_blank"><img src="img/pic/hot-car.png" alt="" width="160" height="111"></a>
+                                <p>速腾</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="page-index " style="display: none">
+                        <ul class="clearfix">
+                            <li class="fl before-page active">上一页</li>
+                            <li class="fl active">1</li>
+                            <li class="fl">2</li>
+                            <li class="fl">3</li>
+                            <li class="fl">4</li>
+                            <li class="fl">5</li>
+                            <li class="fl">6</li>
+                            <li class="fl">7</li>
+                            <li class="fl">8</li>
+                            <li class="fl">9</li>
+                            <li class="fl">...</li>
+                            <li class="fl">31</li>
+                            <li class="fl after-page">下一页</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--goTop model -->
+    {{#include ./mod/mod_goTop.html}}
+    <!--footer model -->
+    {{#include ./mod/mod_footer.html}}
+</body>
+<script src="data/lefttree.js"></script>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/imghome.js"></script>
+<script src="js/goTop.js"></script>
+<script src="js/leftnav.js"></script>
+<script src="js/index.js"></script>
+<script src="js/carModel.js"></script>
+</html>

@@ -1,0 +1,237 @@
+.big_image {
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+.big_image .article_header {
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  z-index: 100000;
+  background: #fff;
+}
+.big_image .article_header ul {
+  width: 1000px;
+  height: 60px;
+  margin: 0 auto;
+}
+.big_image .article_header ul span {
+  cursor: pointer;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+}
+.big_image .article_header ul h2 {
+  display: inline-block;
+  font-weight: 600;
+  margin-right: 10px;
+}
+.big_image .article_header ul h2.first {
+  margin-left: 25px;
+}
+.big_image .article_header ul .left span {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 60px;
+}
+.big_image .article_header ul .left span.countPages {
+  margin-left: 30px;
+}
+.big_image .article_header ul .left span.countPages span {
+  font-size: 24px;
+}
+.big_image .article_header ul .left span.countPages span.total {
+  color: #aaa;
+}
+.big_image .article_header ul .left h2:hover a {
+  color: #398BE4;
+}
+.big_image .article_header ul .right {
+  height: 60px;
+}
+.big_image .article_header ul .right span {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 60px;
+  cursor: pointer;
+}
+.big_image .article_header ul .right span.comment_part {
+  display: inline-block;
+  float: left;
+}
+.big_image .article_header ul .right span.comment_part .icon_pos,
+.big_image .article_header ul .right span.comment_part .text {
+  display: inline-block;
+  float: left;
+  line-height: 60px;
+  margin-left: 5px;
+}
+.big_image .article_header ul .right span.comment_part .icon_pos .icon {
+  margin-top: 22px;
+}
+.big_image .article_header ul .right span.delete_btn {
+  width: 70px;
+  height: 60px;
+  line-height: 60px;
+  border-right: 1px solid #dadada;
+  border-left: 1px solid #dadada;
+  margin-left: 36px;
+}
+.big_image .article_header ul .right span.delete_btn .delete_bg {
+  width: 20px;
+  height: 20px;
+  margin: 20px 25px;
+  background: url("../img/delete_default_032.png") no-repeat center;
+}
+.big_image .article_header ul .right span.delete_btn .delete_bg:hover {
+  background: url("../img/delete_hover&&pess_03.png") no-repeat center;
+  cursor: pointer;
+}
+.big_image .article_header ul .right span.delete_btn .delete_bg:hover .text {
+  color: #333;
+}
+.big_image .article_img {
+  width: 100%;
+  height: 100%;
+  background: #333;
+  border-bottom: 1px solid #dadada;
+  border-top: 1px solid #dadada;
+  float: left;
+  position: relative;
+}
+.big_image .article_img .img_box {
+  max-width: 800px;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+.big_image .article_img .img_box .img_inner {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+.big_image .article_img .img_box .img_inner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  vertical-align: middle;
+  margin: auto;
+  text-align: center;
+  float: left;
+  max-width: 800px;
+}
+.big_image .article_img .img_box .img_inner img.active {
+  display: block;
+}
+.big_image .btn_box {
+  width: 100%;
+  height: 67px;
+  position: fixed;
+  display: block;
+}
+.big_image .btn_box .btn_width {
+  width: 800px;
+  margin: auto;
+  position: relative;
+}
+.big_image .btn_box .btn_width a {
+  position: absolute;
+  width: 34px;
+  height: 67px;
+  cursor: pointer;
+}
+.big_image .btn_box .btn_width a:hover {
+  display: block;
+}
+.big_image .btn_box .btn_width a.left_btn {
+  left: 20px;
+  background: url("../img/article_left_btn_03.png") no-repeat center;
+}
+.big_image .btn_box .btn_width a.right_btn {
+  right: 20px;
+  background: url("../img/article_right_btn_03.png") no-repeat center;
+}
+.big_image .article_footer {
+  width: 100%;
+  height: 70px;
+  background: #fff;
+}
+.big_image .article_footer .footer_content {
+  width: 1000px;
+  height: 70px;
+  margin: 0 auto;
+}
+.big_image .article_footer .footer_content .left_article {
+  height: 70px;
+  line-height: 70px;
+}
+.big_image .article_footer .footer_content span.car_brand {
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 25px;
+}
+.big_image .article_footer .footer_content span.car_constructor_price {
+  font-size: 18px;
+  margin-left: 20px;
+}
+.big_image .article_footer .footer_content span.car_constructor_price span {
+  color: #e43a3a;
+}
+.big_image .article_footer .footer_content .right_article {
+  height: 70px;
+  line-height: 70px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+}
+.big_image .article_footer .footer_content .right_article a {
+  display: inline-block;
+  font-size: 16px;
+  width: 106px;
+  height: 36px;
+  margin-top: 17px;
+  line-height: 36px;
+  text-align: center;
+  cursor: pointer;
+}
+.big_image .article_footer .footer_content .right_article a.ask_price {
+  background: #ffa903;
+  margin-right: 30px;
+  color: #ffffff;
+}
+.big_image .article_footer .footer_content .right_article a.ask_price:hover {
+  background: #ff9103;
+}
+.big_image .article_footer .footer_content .right_article a.ask_price.active {
+  background: #ff8003;
+}
+.big_image .article_footer .footer_content .right_article a.try_drive,
+.big_image .article_footer .footer_content .right_article a.change {
+  background: #eee;
+  height: 34px;
+  border: 1px solid #dadada;
+}
+.big_image .article_footer .footer_content .right_article a.try_drive:hover,
+.big_image .article_footer .footer_content .right_article a.change:hover {
+  background: #398BE4;
+  color: #ffffff;
+  border: 1px solid transparent;
+}
+.big_image .article_footer .footer_content .right_article a.active {
+  background: #126acc;
+}
+.big_image .article_footer .footer_content .right_article a.try_drive {
+  margin-right: 30px;
+}

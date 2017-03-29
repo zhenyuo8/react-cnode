@@ -1,0 +1,26 @@
+.load_more {
+  height: 0.96rem;
+  background-color: #edf7ff;
+  text-align: center;
+  line-height: 0.96rem;
+  font-size: 13px;
+  color: #52adfe;
+}
+.load_more .icon {
+  display: inline-block;
+  height: 10px;
+  width: 18px;
+  background: url("../img/video_load_more_icon.png") no-repeat;
+  background-size: cover;
+}
+.load_more .dot-bottom {
+  margin-left: 0.12rem;
+  display: inline-block;
+  width: 0.16rem;
+  height: 0.16rem;
+  border-color: #52adfe;
+  border-top: 1px solid;
+  border-left: 1px solid;
+  transform: rotate(225deg);
+  vertical-align: super;
+}

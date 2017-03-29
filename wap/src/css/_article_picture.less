@@ -1,0 +1,116 @@
+/*****
+ *@author: linyh
+ *@from: Global style article-picture(文章-查看大图)
+ *@description: 陈璐
+ *@date: name (2017.02.28)
+*/
+
+
+
+@import (reference) "public";
+
+
+html,body{
+    height: 100%;
+    position:relative;
+}
+
+.show_picture{
+    width: 100%;
+    height: 100%;
+    background-color: @big-img-bg;
+    position: fixed;
+    left:0;
+    top:0;
+    .swiper-container{
+        width:100%;
+        height:100%;
+        .top{
+            font-size: 16px;
+            color: @color-fff;
+            background-color: @color-000;
+            width: 100%;
+            height: 1.173rem /* 88/75 */;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            span{
+                display: inline-block;
+                width: 6.08rem /* 456/75 */;
+                line-height: 1.173rem /* 88/75 */;
+                .ellipsis;
+            }
+            i{
+                .icon_bg(url("../img/close_btn.png"), .4rem /* 30/75 */, .4rem /* 30/75 */);
+                margin: .4rem /* 30/75 */ .4rem /* 30/75 */ 0 0;
+                float: right;
+            }
+        }
+        .swiper-slide{
+            text-align:center;
+            font-size:18px;
+            img{
+                width:auto;
+                height:auto;
+                max-width:100%;
+                max-height:100%;
+                -ms-transform:translate(-50%,-50%);
+                -webkit-transform:translate(-50%,-50%);
+                -moz-transform:translate(-50%,-50%);
+                transform:translate(-50%,-50%);
+                position:absolute;
+                left:50%;
+                top:50%;
+            }
+        }
+        .footer{
+            font-size: 16px;
+            color: @color-666;
+            width: 100%;
+            line-height: 1.347rem /* 101/75 */;
+            text-align: center;
+            background-color: @color-000;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 10;
+            .page_num{
+                i{
+                    color: @color-fff;
+                }
+            }
+            .down_load{
+                .icon_bg(url("../img/down_load.png"), .507rem /* 38/75 */, .64rem /* 48/75 */);
+                margin: .347rem /* 26/75 */ 0 0 .667rem /* 50/75 */;
+                float: left;
+            }
+            .share{
+                .icon_bg(url("../img/share_btn.png"), .64rem /* 48/75 */, .667rem /* 50/75 */);
+                margin: .347rem /* 26/75 */ .613rem /* 46/75 */ 0 0;
+                float: right;
+            }
+        }
+    }
+}
+
+/* 字体大小适配 */
+//dpr=2字体大小
+[data-dpr="2"] .show_picture{
+    .top{
+        font-size: 32px;
+    }
+    .footer{
+        font-size: 32px;
+    }
+}
+//dpr=3字体大小
+[data-dpr="3"] .show_picture{
+    .top{
+        font-size: 48px;
+    }
+    .footer{
+        font-size: 48px;
+    }
+}

@@ -1,0 +1,106 @@
+<div>
+	<page-header title="文章详情" page="news"></page-header>
+<!-- 文章详情主页面 -->
+    <div class="art_detail_page">
+
+		<!-- 占位 -->
+		<div class="occupy_seat"></div>
+
+		<!-- 文章内容 -->
+		<div class="article_module">
+			<h1 class="art_main_title" id="pos_0">{{article.shorttitle}}</h1>
+			<p  class="edit_msg">{{article.sourcename}}<span>{{article.author}}</span>{{article.publish_time | date('yyyy-MM-dd')}}</p>
+			<div class="article_content" v-if="article.pagecount>1">
+				<div class="first_page" v-html="article.contents[0]"></div>
+				<div class="more_page" v-show="isMoreVisible">
+					<template v-for="i in article.pagecount" v-if="i<article.pagecount">
+					<div class="article_page_title" :id="'pos_'+i">
+						<em>{{i+1}}</em>
+						<span>{{article.pagetitles[i]}}</span>
+					</div>
+					<div v-html="article.contents[i]"></div>
+					</template>
+				</div>
+			</div>
+			<div class="article_content" v-else v-html="article.newscontent"></div>
+			<div class="load_more" v-if="article.pagecount>1" v-show="!isMoreVisible">
+				<p class="load_mask"></p>
+				<p class="load_btn" v-on:click="showMore()">加载更多(共{{article.pagecount}}页)<i></i></p>
+			</div>
+		</div>
+
+		<!-- 点赞分享 -->
+		<div class="share_area">
+			<h5 class="item_title"><i></i>分享至</h5>
+			<ul class="clearfix">
+				<li>
+					<a class="good" id="good" v-on:click="vote()" v-bind:class="{isvote:isVoted}"><i></i><em>{{voteNum}}</em></a>
+				</li>
+				<li bdtag="NewsPage_DetailsPage_ShareButton_Clicked">
+					<a class="share" id="share" v-on:click="share()"><i></i><em>分享</em></a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- 间隔 -->
+		<div class="jiange"></div>
+
+		<!-- 相关车型 -->
+		<article-related-carserials></article-related-carserials>
+
+		<!-- 间隔 -->
+		<div class="jiange"></div>
+
+		<!-- 热门评论 -->
+		<article-comment :id="newsId" type="1"></article-comment>
+
+		<!-- 下载APP -->
+		<div class="down_app" id="down_app" bdtag="NewsPage_DetailsPage_DownloadButton_Clicked">
+			<a href="http://m.qichedaquan.com/app/qcdq.html" target="_blank" v-on:click="download">点击<span>下载汽车大全APP</span>立即评论</a>
+		</div>
+
+		<!-- 间隔 -->
+		<div class="jiange"></div>
+
+		<!-- 相关文章 -->
+		<article-more></article-more>
+
+		<!-- 目录 -->
+		<div class="catalog" id="catalog" v-show="isCateVisible" v-on:click="showCate()">
+			<span>目录</span>
+		</div>
+
+    </div>
+
+	<!-- 返回顶部 -->
+	<div class="go_top" id="goTop"> <span></span> <i></i></div>
+
+	<!-- 遮罩层 -->
+	<div class="mask2" id="cate_mask" v-on:click="hideCate()"></div>
+
+	<!-- 目录列表 -->
+	<div class="catalog_area"  id="catalog_area">
+		<ul class="catalog_list">
+			<li v-for="(el,i) in article.pagetitles" v-on:click="goToPos(i)"><a>第{{i+1}}页：{{el}}</a></li>
+		</ul>
+		<div class="zhanwei"></div>
+		<p class="cancle" id="cancle_turn" v-on:click="hideCate()"><span>取消</span></p>
+	</div>
+
+	<div class="mask2" id="down_mask" v-on:click="hideDownload()"></div>
+
+	<div class="tips down_app_tip" id="android_tip">
+		<p>1、点击右上角 •••</p>
+		<p>2、选择<img src="../../img/browser.png">在浏览器中打开即可下载<span>汽车大全</span></p>
+		<i></i>
+	</div>
+
+	<div class="tips down_app_tip" id="ios_tip">
+		<p>1、点击右上角 •••</p>
+		<p>2、选择<img src="../../img/safari.png">在Safari中打开即可下载<span>汽车大全</span></p>
+		<i></i>
+	</div>
+
+
+
+</div>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="telephone=no,spanail=no" name="format-detection">
+	<script src="js/flexible_css.js"></script>
+	<script src="js/flexible.js"></script>
+	<title>汽车大全-查看评论图片</title>
+
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/wenda_answerImg.css">
+	<link rel="stylesheet" href="css/swiper-3.4.1.min.css">
+
+</head>
+
+<body>
+    <div class="show_picture">
+		<div class="swiper-container">
+	        <div class="top">
+	            <i></i>
+	        </div>
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img data-src="http://lorempixel.com/1600/1200/nature/1" class="swiper-lazy">
+					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="http://lorempixel.com/1600/1200/nature/2" class="swiper-lazy">
+					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="http://lorempixel.com/1600/1200/nature/3" class="swiper-lazy">
+					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="http://lorempixel.com/1600/1200/nature/4" class="swiper-lazy">
+					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="http://lorempixel.com/1600/1200/nature/5" class="swiper-lazy">
+					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="http://lorempixel.com/1600/1200/nature/6" class="swiper-lazy">
+					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+				</div>
+			</div>
+	        <div class="footer">
+	            <span class="page_num"><i>1</i>/18</span>
+	        </div>
+		</div>
+    </div>
+
+	<script src="js/components/swiper.js"></script>
+	<script>
+	    var swiper = new Swiper('.swiper-container', {
+	        pagination: '.page_num',
+	        paginationType: 'fraction',
+	        paginationFractionRender: function (swiper, currentClassName, totalClassName) {
+	            return '<i class="' + currentClassName + '"></i> / <span class="' + totalClassName + '"></span>'
+	        },
+	        preloadImages: false,
+	        lazyLoading: true,
+	        onInit: function(){
+
+	        },
+	        onSlideChangeEnd: function(swiper){
+	            console.log(swiper.activeIndex)
+	        }
+	    });
+	</script>
+</body>
+</html>

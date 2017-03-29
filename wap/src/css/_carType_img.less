@@ -1,0 +1,392 @@
+/*****
+ *@author: linyh
+ *@from: Global style cartype_img(车型图片)
+ *@description: 陈璐
+ *@date: name (2017.02.25)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_pubHeadNav";
+@import "mod/mod_pubHead";
+@import "mod/mod_carNav.less";
+@import "mod/mod_footer";
+@import "mod/mod_goTop";
+
+
+// 车型图片主页面
+.cartype_img{
+
+    // 灰色间隔条
+    .bg_bar{
+        width: 100%;
+        height: .4rem /* 30/75 */;
+        background-color: @bg-bar;
+    }
+
+    // 条件选择
+    .condition_choice{
+        width: 92%;
+        margin: 0 4%;
+        p{
+            font-size: 15px;
+            line-height: 1.333rem /* 100/75 */;
+            border-bottom: 1px solid @list-border;
+            span{
+                float: left;
+            }
+            a{
+                color: @color-999;
+                float: right;
+                i{
+                    .icon_bg( url("../img/rightjt.png"), .2rem /* 15/75 */, .36rem /* 27/75 */);
+                    vertical-align: middle;
+                    margin-left: .347rem /* 26/75 */;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    // 图片切换模块
+    .img_module{
+        .tab_title_box{
+            width: 92%;
+            margin: 0 4%;
+            border-bottom: 2px solid @color-tab-border;
+            overflow-x: scroll;
+            &::-webkit-scrollbar{
+                height: 0;
+            }
+            .tab_title{
+                font-size: 15px;
+                display: -webkit-box;
+                -webkit-box-orient: horizontal;
+                li{
+                    width: 18%;
+                    line-height: 1.053rem /* 79/75 */;
+                    a{
+                        color: @color-tab-color;
+                        height: 100%;
+                        text-align: center;
+                        margin: 0 20%;
+                        display: block;
+                    }
+                    .current{
+                        color: @color-main-blue;
+                        border-bottom: 2px solid @color-main-blue;
+                    }
+                }
+            }
+        }
+        .img_module_box{
+            overflow: hidden;
+            .img_module{
+                width: 700%;
+                overflow: hidden;
+                position: relative;
+                .swiper_box{
+                    width: 14.285%;
+                    float: left;
+                    .demo_title{
+                        .demo_title;
+                        a{
+                            font-size: 14px;
+                            color: @color-tab-color;
+                            float: right;
+                            i{
+                                .icon_bg(url("../img/rightjt.png"),.133rem /* 10/75 */,.24rem /* 18/75 */);
+                                vertical-align: middle;
+                                margin-left: .133rem /* 10/75 */;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                    ul{
+                        padding: .4rem /* 30/75 */ 2.667% .133rem /* 10/75 */;
+                        li{
+                            float: left;
+                            width: 50%;
+                            a{
+                                display: block;
+                                margin: 0 2.817% /* 10 */ 5.436% /* 20 */;
+                                img{
+                                    display: block;
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                    .load_more_module{
+                        width: 92%;
+                        margin: 0 4% .267rem /* 20/75 */;
+                        .load_more{
+                            .load_more;
+                        }
+                        .loading{
+                            .loading;
+                            display: none;
+                        }
+                        .more{
+                            .more;
+                            display: none;
+                        }
+                    }
+                }
+                .all_img_box{
+                    ul{
+                        padding-top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    // 面包屑导航
+    .small_nav{
+        font-size: 14px;
+        width: 92%;
+        margin: 0 4%;
+        line-height: 1.067rem /* 80/75 */;
+        border-bottom: 1px solid @color-tab-border;
+        a{
+            color: @color-666;
+        }
+        img{
+            width: .133rem /* 10/75 */;
+            height: .213rem /* 16/75 */;
+            vertical-align: middle;
+            margin: 0 .213rem /* 16/75 */;
+            display: inline-block;
+        }
+        span{
+            color: @color-999;
+        }
+    }
+}
+
+// 遮罩层
+.mask_area{
+    display: none;
+    .mask{
+        width: 100%;
+        height: 100%;
+        background-color: @mask-bg;
+        filter:alpha(opacity=50);
+        opacity: .5;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .mask_jt{
+        background-image: url("../img/double_jt.png");
+        background-size: cover;
+        width: .693rem /* 52/75 */;
+        height: .64rem /* 48/75 */;
+        position: fixed;
+        top: 48%;
+        left: 10.93%;
+        z-index: 999;
+    }
+}
+
+// 右侧模块
+.right_module{
+    width: 76.667%;
+    height: 100%;
+    background-color: @color-fff;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 999;
+    .car_msg_module{
+        .current_msg{
+            font-size: 16px;
+            line-height: 1.333rem /* 100/75 */;
+            padding-left: .4rem /* 30/75 */;
+        }
+        .sub_brand{
+            color: @sub-brand-name;
+            font-size: 13px;
+            width:100%;
+            line-height: .72rem /* 54/75 */;
+            background-color: @news-bg;
+            padding-left: .4rem /* 30/75 */;
+        }
+        .car_type_list{
+            font-size: 15px;
+            li{
+                margin-left: .4rem /* 30/75 */;
+                border-bottom: 1px solid @list-border;
+                a{
+                    display: block;
+                    padding: .2rem /* 15/75 */ .4rem /* 30/75 */ .16rem /* 12/75 */ 0;
+                    p{
+                        line-height: .72rem /* 54/75 */;
+                    }
+                    .type_price{
+                        color: @red-price;
+                        i{
+                            float: right;
+                            font-size: 12px;
+                            color: @time-color;
+                        }
+                    }
+                }
+            }
+        }
+        .car_color_list{
+            font-size: 15px;
+            li{
+                margin-left: .4rem /* 30/75 */;
+                border-bottom: 1px solid @list-border;
+                a{
+                    display: block;
+                    line-height: 1.333rem /* 100/75 */;
+                    i{
+                        display: inline-block;
+                        width: .347rem /* 26/75 */;
+                        height: .347rem /* 26/75 */;
+                        vertical-align: middle;
+                        margin-right: .147rem /* 11/75 */;
+                        border: 1px solid @border-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* 字体大小适配 */
+//dpr=2字体大小
+[data-dpr="2"] .cartype_img{
+    // 条件选择
+    .condition_choice{
+        p{
+            font-size: 30px;
+        }
+    }
+    // 图片切换模块
+    .img_module{
+        .tab_title{
+            font-size: 30px;
+        }
+        .img_module_box{
+            .img_module{
+                .demo_title{
+                    span{
+                        font-size: 30px;
+                    }
+                    a{
+                        font-size: 28px;
+                    }
+                }
+                .load_more_module{
+                    .load_more{
+                        font-size: 26px;
+                    }
+                    .more{
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+    }
+    // 面包屑导航
+    .small_nav{
+        font-size: 28px;
+    }
+}
+//dpr=2 字体大小（按品牌右侧抽屉）
+[data-dpr="2"] .right_module{
+    .current_msg{
+        font-size: 32px;
+    }
+    .sub_brand{
+        font-size: 26px;
+    }
+    .car_type_list{
+        font-size: 30px;
+        li{
+            a{
+                .type_price{
+                    i{
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+    .car_color_list{
+        font-size: 30px;
+    }
+}
+
+//dpr=3字体大小
+[data-dpr="3"] .cartype_img{
+    // 条件选择
+    .condition_choice{
+        p{
+            font-size: 45px;
+        }
+    }
+    // 图片切换模块
+    .img_module{
+        .tab_title{
+            font-size: 45px;
+        }
+        .img_module_box{
+            .img_module{
+                .demo_title{
+                    span{
+                        font-size: 45px;
+                    }
+                    a{
+                        font-size: 42px;
+                    }
+                }
+                .load_more_module{
+                    .load_more{
+                        font-size: 39px;
+                    }
+                    .more{
+                        font-size: 39px;
+                    }
+                }
+            }
+        }
+    }
+    // 面包屑导航
+    .small_nav{
+        font-size: 42px;
+    }
+}
+//dpr=3 字体大小（按品牌右侧抽屉）
+[data-dpr="3"] .right_module{
+    .current_msg{
+        font-size: 48px;
+    }
+    .sub_brand{
+        font-size: 39px;
+    }
+    .car_type_list{
+        font-size: 45px;
+        li{
+            a{
+                .type_price{
+                    i{
+                        font-size: 36px;
+                    }
+                }
+            }
+        }
+    }
+    .car_color_list{
+        font-size: 45px;
+    }
+}

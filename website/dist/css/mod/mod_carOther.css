@@ -1,0 +1,37 @@
+/*****
+ *@author: jianingning
+ *@from: Global style mod_carOther
+ *@description: 何在朋
+ *@date: name (2017.02.04)
+*/
+.imgs_other_car {
+  margin-bottom: 23px;
+}
+.imgs_other_car li {
+  line-height: 28px;
+}
+.imgs_other_car li .imgs_blue_dian {
+  display: inline-block;
+  margin-right: 7px;
+  background-image: url("../img/sprite.png");
+  background-position: 0px -23px;
+  width: 3px;
+  height: 3px;
+  float: left;
+  margin-top: 12px;
+}
+.imgs_other_car li .imgs_other_price {
+  float: right;
+  color: #999;
+}
+.imgs_other_car li a {
+  color: #333;
+}
+.imgs_other_car li a:hover {
+  color: #126acc;
+  text-decoration: underline;
+}
+.imgs_other_car li a:active {
+  color: #1064c1;
+  text-decoration: underline;
+}

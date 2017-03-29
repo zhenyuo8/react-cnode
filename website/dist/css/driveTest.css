@@ -1,0 +1,323 @@
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+  border: none;
+}
+a {
+  text-decoration: none;
+  color: #333333;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+  zoom: 1;
+}
+.clearfix {
+  overflow: hidden;
+}
+.new-Car-Com {
+  width: 990px;
+  height: 610px;
+  font-size: 12px;
+  margin: 0 auto;
+}
+.new-Car-Com-logo img {
+  width: 100%;
+  display: block;
+}
+.icon-p {
+  background-image: url("../img/sprite.png");
+  background-position: 0px 0px;
+  width: 3px;
+  height: 3px;
+}
+.icon-bg {
+  background-image: url("../img/sprite.png");
+  background-position: 0px -295px;
+  width: 126px;
+  height: 20px;
+}
+.icon-dayu {
+  background-image: url("../img/sprite.png");
+  background-position: 0px -8px;
+  width: 10px;
+  height: 12px;
+}
+body,
+div,
+ol,
+ul,
+li,
+p,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+dl,
+dt,
+dd,
+table,
+tr,
+td,
+th,
+select,
+option {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li,
+ol {
+  list-style: none;
+}
+img,
+table,
+tr,
+td,
+th {
+  border: none;
+}
+img,
+input {
+  vertical-align: middle;
+}
+img {
+  display: block;
+}
+textarea,
+input {
+  outline: none;
+  border: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #333;
+}
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+table td {
+  empty-cells: show;
+}
+body {
+  font-family: "Microsoft YaHei", "微软雅黑";
+  font-size: 12px;
+}
+.clearfix:after {
+  content: '';
+  visibility: hidden;
+  display: block;
+  clear: both;
+  zoom: 1;
+}
+.clearfix {
+  overflow: hidden;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.po-r {
+  position: relative;
+}
+.po-a {
+  position: absolute;
+}
+.po-f {
+  position: fixed;
+}
+.mT22 {
+  margin-top: 22px;
+}
+.new-Car-Com-Con {
+  width: 100%;
+  padding-top: 41px;
+  padding-bottom: 44px;
+}
+.new-Car-Com-Con .new-Car-Con {
+  width: 750px;
+  float: left;
+}
+.new-Car-Com-Con .new-Car-Con .item {
+  float: left;
+  width: 50%;
+}
+.new-Car-Com-Con .new-Car-Con .item .p {
+  height: 18px;
+  line-height: 18px;
+  border-left: 2px solid  #FFA903;
+  padding-left: 4px;
+  font-size: 18px;
+}
+.new-Car-Com-Con .new-Car-Con .item .p .icon-dayu {
+  display: inline-block;
+}
+.new-Car-Com-Con .new-Car-Con .item .desCon {
+  margin-top: 15px;
+}
+.new-Car-Com-Con .new-Car-Con .item .desCon dt {
+  float: left;
+  margin-right: 14px;
+}
+.new-Car-Com-Con .new-Car-Con .item .desCon .desTitle {
+  font-size: 14px;
+  font-weight: bold;
+}
+.new-Car-Com-Con .new-Car-Con .item .desCon .desTitle a {
+  color: #333333;
+}
+.new-Car-Com-Con .new-Car-Con .item .desCon .desWord {
+  font-size: 14px;
+  margin-top: 14px;
+  padding-right: 25px;
+  line-height: 18px;
+  height: 39px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.new-Car-Com-Con .new-Car-Con .item .desCon .desWord a {
+  color: #333333;
+}
+.new-Car-Com-Con .new-Car-Con .item .quick {
+  list-style: none;
+}
+.new-Car-Com-Con .new-Car-Con .item .quick li {
+  line-height: 26px;
+}
+.new-Car-Com-Con .new-Car-Con .item .quick .quick-item {
+  font-size: 0;
+  position: relative;
+  overflow: hidden;
+  padding-left: 10px;
+}
+.new-Car-Com-Con .new-Car-Con .item .quick .quick-item .icon-p {
+  display: inline-block;
+  position: absolute;
+  top: 13px;
+  left: 0;
+}
+.new-Car-Com-Con .new-Car-Con .item .quick .quick-item a {
+  display: inline-block;
+  font-size: 12px;
+  color: #333333;
+}
+.new-Car-Com-Con .new-Car-Con .item .quick .quick-item a .q-s {
+  color: #666666;
+  margin-right: 10px;
+  display: inline-block;
+}
+.new-Car-Com-Con .new-Car-Con .item .quick .quick-item a .q-w {
+  color: #333333;
+  display: inline-block;
+  margin-left: 10px;
+  width: 192px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+}
+.new-Car-Com-Con .new-Car-Con .will-car .will-car-title {
+  margin-top: 14px;
+}
+.new-Car-Com-Con .new-Car-Con .will-car .will-car-title .car-Name {
+  font-size: 14px;
+  font-weight: bold;
+}
+.new-Car-Com-Con .new-Car-Con .will-car .will-car-title a {
+  color: #333333;
+}
+.new-Car-Com-Con .new-Car-Con .will-car .will-car-title .will-time {
+  font-size: 14px;
+  display: inline-block;
+  text-align: center;
+  float: right;
+  line-height: 20px;
+  margin-right: 20px;
+  color: #FFFFFF;
+}
+.new-Car-Com-Con .new-Car-Con .will-car .will-car-des {
+  line-height: 18px;
+  padding-right: 20px;
+  margin-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  height: 36px;
+}
+.new-Car-Com-Con .new-Car-Con .will-car .will-car-des a {
+  color: #999999;
+}
+.new-Car-Com-Con .new-car-hot {
+  overflow-x: hidden;
+  width: 207px;
+  float: left;
+  padding-left: 32px;
+  border-left: 1px solid #EEEEEE;
+}
+.new-Car-Com-Con .new-car-hot .title {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 20px 0px 13px;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.hot-list .fl {
+  list-style: none;
+}
+.hot-list .fl li {
+  width: 62px;
+  height: 33px;
+  border-bottom: 1px solid #EEEEEE;
+  background-color: #F7F7F7;
+  text-align: center;
+  line-height: 33px;
+  cursor: pointer;
+}
+.hot-list .fl .active {
+  border-left: 1px solid #FFA903;
+  background-color: #FFFFFF;
+}
+.hot-list .fr li {
+  width: 140px;
+  height: 23px;
+  border-bottom: 1px solid #EEEEEE;
+  padding-top: 10px;
+  cursor: pointer;
+}
+.hot-list .fr li .num {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  line-height: 16px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #C4C4C4;
+  margin: 0 10px 0 5px;
+  color: #FFFFFF;
+}
+.hot-list .fr li .active {
+  background: #FFA903;
+}
+.hot-list .bor {
+  border: 1px solid #EEEEEE ;
+}

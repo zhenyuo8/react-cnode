@@ -1,0 +1,1136 @@
+.iframe_content {
+  /*
+  Copyright (c) 2003-2011, CKSource - Frederico Knabben. All rights reserved.
+  For licensing, see LICENSE.html or http://ckeditor.com/license
+  */
+  /*
+          Just uncomment the following block if you want to avoid spaces between
+          paragraphs. Remember to apply the same style in your output front end page.
+      */
+  /*
+      p, ul, li
+      {
+          margin-top: 0px;
+          margin-bottom: 0px;
+      }
+      */
+  /*
+          The following are some sample styles used in the "Styles" toolbar command.
+          You should instead remove them, and include the styles used by the site
+          you are using the editor in.
+      */
+  /*reset*/
+  /*a strong { color:#c00; }*/
+  /* maint service */
+  /*20121212 新闻页改版新样式 Start*/
+  /*20121102 文字标红*/
+  /*==================左中内容区域 20121024整理================*/
+  /*p { margin: 0 auto 20px; clear: both; width: 570px; text-indent: 2em; }*/
+  /*左中标题*/
+  /*左中布局*/
+  /*左中关键字*/
+  /*p a.keywordl:link, p a.keywordl:visited { color: #164A84; }
+      p a.keywordl:hover { color: #c00; }*/
+  /*左中图片*/
+  /*左中表格*/
+  /*左中表格-段落*/
+  /*左中表格-单元格*/
+  /*间隔色*/
+  /*左中 行情表格-参数*/
+  /*间隔色*/
+  /*.data_table td.left, .table_news th.left { text-align: left; }*/
+  /*左中多图表格*/
+  /*table.table_pics td{ padding:5px;} */
+  /*左中摘要*/
+  /*左中 表格底部作者信息*/
+  /*左中 图片下的名片*/
+  /*左中 表格下灰色文字提示20110922*/
+  /*左中 我要置换 按钮*/
+  /*左中 内容中插入flash*/
+  /*20121212 新闻页改版新样式 End*/
+  /*20140519 网友互动样式 */
+  /*20140525 营销样式 */
+  /*m*/
+  /*pc*/
+  /*移动站补丁*/
+  /*.yingxiao_m .yingxiao_box span em{
+      background: url(icon_comment.png) no-repeat 0 1px;
+        background-size: 13px auto;
+
+      }*/
+}
+.iframe_content body {
+  background-color: #ffffff;
+  padding: 5px 5px 5px 5px;
+  margin: 0px;
+}
+.iframe_content body,
+.iframe_content td {
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 14px;
+}
+.iframe_content a[href] {
+  color: -moz-hyperlinktext !important;
+  /* For Firefox... mark as important, otherwise it becomes black */
+  text-decoration: -moz-anchor-decoration;
+  /* For Firefox 3, otherwise no underline will be used */
+}
+.iframe_content ol,
+.iframe_content ul,
+.iframe_content dl {
+  /* IE7: reset rtl list margin. (#7334) */
+  *margin-right: 0px;
+  /* preserved spaces for rtl list item bullets. (#6249)*/
+  padding-right: 40px;
+}
+.iframe_content .Bold {
+  font-weight: bold;
+}
+.iframe_content .Title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #cc3300;
+}
+.iframe_content .Code {
+  border: #8b4513 1px solid;
+  padding-right: 5px;
+  padding-left: 5px;
+  color: #000066;
+  font-family: 'Courier New', Monospace;
+  background-color: #ff9933;
+}
+.view p {
+  text-indent: 2em;
+}
+.view p img {
+  position: relative;
+  left: -2em;
+}
+.iframe_content body,
+.iframe_content div,
+.iframe_content dl,
+.iframe_content dt,
+.iframe_content dd,
+.iframe_content ul,
+.iframe_content ol,
+.iframe_content li,
+.iframe_content h1,
+.iframe_content h2,
+.iframe_content h3,
+.iframe_content h5,
+.iframe_content h6,
+.iframe_content pre,
+.iframe_content form,
+.iframe_content fieldset,
+.iframe_content input,
+.iframe_content textarea,
+.iframe_content blockquote,
+.iframe_content th,
+.iframe_content td {
+  margin: 0;
+}
+.iframe_content body {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  line-height: 150%;
+  *margin-top: 0px;
+  _margin-top: 0px;
+}
+.iframe_content table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.iframe_content fieldset,
+.iframe_content img {
+  border: 0;
+}
+.iframe_content legend {
+  display: none;
+}
+.iframe_content ol,
+.iframe_content ul {
+  list-style: none;
+}
+.iframe_content caption,
+.iframe_content th {
+  text-align: left;
+}
+.iframe_content h1,
+.iframe_content h2,
+.iframe_content h3,
+.iframe_content h4,
+.iframe_content h5,
+.iframe_content h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+.iframe_content q:before,
+.iframe_content q:after {
+  content: '';
+}
+.iframe_content abbr,
+.iframe_content acronym {
+  border: 0;
+}
+.iframe_content a:link,
+.iframe_content a:visited {
+  color: #164a84;
+  text-decoration: none;
+}
+.iframe_content a:hover {
+  color: #c00;
+  text-decoration: underline;
+}
+.iframe_content .bt_page {
+  width: 950px;
+  margin: 0 auto;
+  text-align: left;
+}
+.iframe_content .clear {
+  clear: both;
+  width: 670px;
+  height: 30;
+  background: #EFEFEF url(images/newsdivclearcss.png) no-repeat center;
+  overflow: hidden;
+  margin: 0 auto 0;
+}
+.iframe_content p {
+  font-size: 16px;
+  line-height: 34px;
+  text-indent: 2em;
+  word-wrap: break-word;
+}
+.iframe_content .img_notextident {
+  text-indent: 0;
+  text-align: center;
+}
+.iframe_content p:first-child {
+  margin-top: 20px;
+}
+.iframe_content .pic_car_info {
+  border: 1px #dee3e7 solid;
+  background: #fff;
+  border-top: 0;
+  width: 560px;
+  height: 50px;
+  margin: 0px auto 7px;
+  *margin: -10px 30px auto 25px;
+  clear: both;
+  color: #666;
+  overflow: hidden;
+  padding: 7px 0;
+}
+.iframe_content .pic_car_info dt {
+  width: 120px;
+  padding: 0 0 0 50px;
+  height: 50px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: bold;
+  background: url(http://image.bitautoimg.com/uimg/news/images/news_all.png) repeat-y 100% -359px;
+}
+.iframe_content .pic_car_info dt strong {
+  font-weight: 800;
+  font-size: 14px;
+}
+.iframe_content .pic_car_info dt span {
+  display: block;
+  font-weight: 400;
+}
+.iframe_content .pic_car_info dt span a:link,
+.iframe_content .pic_car_info dt span a:visited {
+  color: #666;
+}
+.iframe_content .pic_car_info dt span a:hover {
+  color: #c00;
+}
+.iframe_content .pic_car_info dl dt {
+  height: 20px;
+  width: auto;
+  padding: 0 0 0 15px;
+  border: none;
+  font-weight: normal;
+  background: none;
+}
+.iframe_content .pic_car_info dt,
+.iframe_content .pic_car_info dd {
+  float: left;
+}
+.iframe_content .pic_car_info dd {
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+}
+.iframe_content .pic_car_info .carprice {
+  padding: 0 0 0 15px;
+}
+.iframe_content .pic_car_info .carprice small {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0 0 0 5px;
+}
+.iframe_content .pic_car_info .carprice small a:link,
+.iframe_content .pic_car_info .carprice small a:visited {
+  color: #164a84;
+  font-weight: 400;
+}
+.iframe_content .pic_car_info .carprice small a:hover {
+  color: #c00;
+}
+.iframe_content .pic_car_info .carprice a {
+  color: #c00;
+  font-weight: bold;
+}
+.iframe_content .pic_car_info .carprice a.newest {
+  color: #164A84;
+  font-weight: normal;
+}
+.iframe_content .pic_car_info .carbrand {
+  padding: 0 0 0 10px;
+}
+.iframe_content .pic_car_info .carinfo {
+  width: 388px;
+  height: 18px;
+  padding: 3px 0 0 0;
+  *padding: 4px 0 0 0;
+  padding: 4px 0 0 0\0;
+}
+.iframe_content .pic_car_info dl dd {
+  padding: 0 8px;
+  border-right: 1px #dee3e7 solid;
+}
+.iframe_content .pic_car_info dl dd.f {
+  padding: 0 8px 0 0;
+}
+.iframe_content .pic_car_info dl dd.l {
+  border: none;
+}
+.iframe_content .pic_car_info .carinfo dt,
+.iframe_content .pic_car_info .carinfo dd {
+  height: 14px;
+  line-height: 14px;
+}
+.iframe_content .imgborder {
+  border: 1px #dee3e7 solid;
+  padding: 5px;
+  background: #fff;
+}
+.iframe_content h4 {
+  font-weight: bold;
+  margin: 0 0 1em 0;
+}
+.iframe_content .fckVendorCss {
+  clear: both;
+  width: 670px;
+  height: 276px;
+  background: #EFEFEF url(images/fckvendor.png) no-repeat center;
+  overflow: hidden;
+}
+.iframe_content div#bt_pagebreak {
+  width: 680px;
+  font-weight: bold;
+  background: #069;
+  color: #fff;
+  text-align: center;
+}
+.iframe_content div#bt_newsPicBlock {
+  background-color: #EFEFEF;
+}
+.iframe_content .con_reading {
+  margin: 0 0 15px 0;
+}
+.iframe_content .con_reading h4 {
+  margin: 0 0 15px 40px;
+}
+.iframe_content .con_reading ul.reading_ul1 li {
+  margin-bottom: 10px;
+  height: 37px;
+  overflow: hidden;
+}
+.iframe_content .con_reading ul.reading_ul1 li a {
+  display: block;
+}
+.iframe_content .con_reading ul.reading_ul1 li a.links {
+  font-size: 12px;
+  line-height: 14px;
+}
+.iframe_content .con_reading ul.reading_ul2 {
+  width: 400px;
+  color: #656766;
+}
+.iframe_content .con_reading ul.reading_ul2 li {
+  background: url(http://image.bitautoimg.com/themes/2009/common/images/icon_dot.png) no-repeat scroll 0 9px;
+  font-size: 14px;
+  height: 22px;
+  line-height: 22px;
+  padding: 0 0 0 13px;
+  position: relative;
+}
+.iframe_content .con_reading ul.reading_ul2 li span {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.iframe_content .mbox {
+  border: 1px solid #DEE3E7;
+  overflow: hidden;
+  position: relative;
+  width: 620px;
+  border-width: 1px 1px 0 1px;
+  background: #eef2f5;
+}
+.iframe_content .mbox h2 {
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  padding-left: 10px;
+  font-weight: bold;
+}
+.iframe_content .data_table p {
+  margin: 0;
+  text-indent: 0;
+}
+.iframe_content .data_table {
+  width: 622px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  font-size: 12px;
+}
+.iframe_content .data_table table {
+  border-collapse: collapse;
+  width: 622px;
+}
+.iframe_content .data_table table th {
+  border: 1px solid #e0e0e0;
+  background: #EDEFF1;
+}
+.iframe_content .data_table table th span {
+  padding: 5px 0 0;
+  display: block;
+  background: #f3f7fa;
+  color: #666;
+  font-weight: normal;
+  line-height: 15px;
+  text-align: center;
+  height: 34px;
+}
+.iframe_content .data_table table th span p {
+  margin: 0;
+  text-indent: 0;
+}
+.iframe_content .data_table table .data_table_spth {
+  width: 175px;
+  background: url(http://image.bitautoimg.com/themes/2009/common/images/table_hr_line.png) no-repeat;
+  position: relative;
+}
+.iframe_content .data_table table .data_table_spth i,
+.iframe_content .data_table table .data_table_spth q {
+  font-style: normal;
+  position: absolute;
+}
+.iframe_content .data_table table .data_table_spth i {
+  left: 8px;
+  bottom: 5px;
+}
+.iframe_content .data_table table .data_table_spth q {
+  top: 5px;
+  right: 2px;
+}
+.iframe_content .data_table table td {
+  border: 1px solid #DEE3E7;
+  padding: 0 10px;
+  text-align: center;
+  height: 29px;
+}
+.iframe_content .data_table table i.f14 {
+  color: #333;
+  color: #666;
+  font-size: 14px;
+  font-family: "";
+  font-style: normal;
+}
+.iframe_content .editor_pricetable {
+  background-image: url(images/pricetable.jpg);
+  background-position: center;
+  text-align: center;
+  color: Red;
+  font-weight: bold;
+  font-size: 16px;
+  width: 564px;
+  height: 186px;
+}
+.iframe_content .editor_vendorcard {
+  clear: both;
+  width: 670px;
+  height: auto;
+  background: #EFEFEF url(images/fckvendor.png) no-repeat center;
+  overflow: hidden;
+  text-align: center;
+  color: Red;
+  font-weight: bold;
+  font-size: 16px;
+}
+.iframe_content .point_text,
+.iframe_content .table_news th.point_text,
+.iframe_content .table_news td.point_text {
+  color: #c00;
+}
+.iframe_content .point_text a:link,
+.iframe_content .point_text a:visited {
+  color: #c00;
+}
+.iframe_content .point_text a:hover {
+  color: #c00;
+}
+.iframe_content hr {
+  margin: 20px 0;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #e9e9e9;
+  height: 0;
+  overflow: hidden;
+  display: block;
+}
+.iframe_content #content_bit .con_main {
+  width: 570px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 28px;
+}
+.iframe_content b {
+  font-weight: bold;
+}
+.iframe_content strong {
+  font-weight: bold;
+}
+.iframe_content h4 {
+  font-weight: bold;
+  /*margin: 1em 0 0 0 ;*/
+  display: block;
+}
+.iframe_content h5 {
+  margin: -1.5em 0 1em 0;
+  display: block;
+  text-align: center;
+}
+.iframe_content p.center {
+  text-align: center;
+  text-indent: 0;
+}
+.iframe_content p.align_r {
+  text-align: right;
+  text-indent: 0;
+}
+.iframe_content p.align_l {
+  text-align: left;
+  text-indent: 0;
+}
+.iframe_content p.keyword {
+  text-indent: 0;
+}
+.iframe_content p.keyword a {
+  margin: 0 10px 0 0;
+}
+.iframe_content p a.baikekeyl:link,
+.iframe_content p a.baikekeyl:visited {
+  border-bottom: 1px dotted #999;
+  color: #333;
+}
+.iframe_content p a.baikekeyl:hover {
+  border: 0;
+  color: #c00;
+}
+.iframe_content a img,
+.iframe_content img.imgborder {
+  border: 1px #e9e9e9 solid;
+  margin: 0 auto 5px auto;
+  padding: 9px;
+  background: #fff;
+}
+.iframe_content table {
+  margin: 0 auto 15px;
+  border-top: 3px #e9e9e9 solid;
+}
+.iframe_content .table_news {
+  /*border: 1px #e9e9e9 solid;*/
+  line-height: 22px;
+  text-align: center;
+  background: #fff;
+  width: 570px;
+  font-family: simSun, Arial, Helvetica, sans-serif;
+}
+.iframe_content table p {
+  width: auto;
+  margin: 0;
+  text-indent: 0;
+}
+.iframe_content .table_news p {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  width: auto;
+}
+.iframe_content .table_news p img.imgborder {
+  border: 0;
+  padding: 0;
+  margin: 0 auto;
+}
+.iframe_content .table_news thead {
+  background: #f7f7f7;
+  color: #000;
+}
+.iframe_content .table_news th {
+  font-weight: bold;
+  text-align: center;
+  color: #666;
+  background: #f7f7f7;
+}
+.iframe_content .table_news td,
+.iframe_content .table_news th {
+  /*padding: 4px 8px;*/
+  border: 1px #e9e9e9 solid;
+  font-size: 12px;
+  /*color: #999;*/
+  padding: 10px 8px;
+}
+.iframe_content .table_news tr.change {
+  background: #f7f7f7;
+}
+.iframe_content .table_news td.made {
+  text-align: center;
+  padding: 0 10px 0 0;
+}
+.iframe_content .table_news td.up {
+  color: #D01D19;
+}
+.iframe_content .table_news td.align_l,
+.iframe_content .table_news th.align_l {
+  text-align: left;
+}
+.iframe_content .table_news td.align_r,
+.iframe_content .table_news th.align_r {
+  text-align: right;
+}
+.iframe_content .table_news td.down {
+  color: #018000;
+}
+.iframe_content .mbox {
+  width: 570px;
+  margin: 0 auto;
+}
+.iframe_content .data_table {
+  margin: 0 auto;
+  line-height: 22px;
+  text-align: center;
+  background: #fff;
+  font-family: simSun, Arial, Helvetica, sans-serif;
+}
+.iframe_content .data_table table {
+  width: 100%;
+  margin: 0 auto 15px;
+}
+.iframe_content .data_table col {
+  width: 100px;
+}
+.iframe_content .data_table thead {
+  background: #f7f7f7;
+  color: #000;
+}
+.iframe_content .data_table th {
+  font-weight: bold;
+  text-align: center;
+  color: #666;
+  background: #f7f7f7;
+}
+.iframe_content .data_table td,
+.iframe_content .data_table th {
+  border: 1px #e9e9e9 solid;
+  font-size: 12px;
+  /*color: #333;*/
+  padding: 5px;
+}
+.iframe_content .data_table th {
+  padding: 0;
+}
+.iframe_content .data_table tr.change {
+  background: #F2F8FA;
+}
+.iframe_content .data_table td.made {
+  text-align: center;
+  padding: 0 10px 0 0;
+}
+.iframe_content .data_table td.up {
+  color: #D01D19;
+}
+.iframe_content .data_table td.down {
+  color: #018000;
+}
+.iframe_content .data_table p {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+}
+.iframe_content .data_table td i {
+  font-style: normal;
+}
+.iframe_content .fckVendorCss {
+  width: 570px;
+  margin: 0 auto;
+}
+.iframe_content .data_table table th span {
+  /*padding: 5px 0 0;*/
+  display: block;
+  /*background: #EDEFF1;
+          color: #666;*/
+  font-weight: normal;
+  line-height: 15px;
+  text-align: center;
+  height: 34px;
+  padding: 5px 0 0;
+}
+.iframe_content .data_table table .data_table_spth {
+  width: 175px;
+  background: url(http://image.bitautoimg.com/uimg/index120401/news_detail/images/data_table_th.png) -167px -263px no-repeat;
+  position: relative;
+}
+.iframe_content .data_table table td i.f14 {
+  font-size: 14px;
+}
+.iframe_content .data_table table .data_table_spth i {
+  left: 8px;
+  bottom: 5px;
+  position: absolute;
+  font-style: normal;
+}
+.iframe_content .data_table table .data_table_spth q {
+  top: 5px;
+  right: 2px;
+  position: absolute;
+}
+.iframe_content table.table_pics {
+  margin: 0 auto 1em auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  padding: 10px ;
+  border: 1px solid #e9e9e9;
+  background: #fff;
+  width: 570px;
+}
+.iframe_content table.table_pics p {
+  width: auto;
+  margin: 0;
+  text-indent: 0;
+  padding: 0;
+}
+.iframe_content table.table_pics img.imgborder {
+  width: auto;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+}
+.iframe_content .con_focus {
+  background: #fff;
+  padding: 15px;
+  margin: 0 auto 20px;
+  border: 1px #e9e9e9 solid;
+  width: 538px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #666;
+}
+.iframe_content .con_focus p {
+  margin: 0;
+  width: auto;
+  text-indent: 0;
+}
+.iframe_content .table_made {
+  text-align: right;
+  padding: 5px 0 0 0;
+  margin: -15px auto 1em auto;
+  font-size: 12px;
+  color: #9fa0a0;
+}
+.iframe_content table.table_made1 {
+  color: #9FA0A0;
+  font-size: 12px;
+  margin: -15px auto 25px;
+  padding: 5px 0 0;
+  width: 564px;
+}
+.iframe_content table.table_made1 td {
+  text-align: right;
+}
+.iframe_content .pic_car_info {
+  border: 1px #e9e9e9 solid;
+  background: #fff;
+  border-top: 0;
+  width: 568px;
+  height: 45px;
+  margin: -27px auto 25px;
+  *margin: -33px auto 25px;
+  clear: both;
+  color: #666;
+  overflow: hidden;
+  padding: 7px 0;
+  position: relative;
+}
+.iframe_content .pic_car_info dt {
+  width: 160px;
+  padding: 8px 0 0 10px;
+  height: 38px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  border-right: 1px #e9e9e9 solid;
+  /* background: url(http://image.bitautoimg.com/uimg/news/images/news_all.png) repeat-y 100% -359px;*/
+}
+.iframe_content .pic_car_info dt a {
+  line-height: 34px;
+}
+.iframe_content .pic_car_info dt strong {
+  font-weight: 800;
+  font-size: 14px;
+  display: block;
+}
+.iframe_content .pic_car_info dt strong a {
+  line-height: 18px;
+}
+.iframe_content .pic_car_info dt span {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+.iframe_content .pic_car_info dt span a {
+  line-height: 18px;
+}
+.iframe_content .pic_car_info dt span a:link,
+.iframe_content .pic_car_info dt span a:visited {
+  color: #666;
+}
+.iframe_content .pic_car_info dt span a:hover {
+  color: #c00;
+}
+.iframe_content .pic_car_info dl dt {
+  height: 20px;
+  width: auto;
+  padding: 0 0 0 15px;
+  border: none;
+  font-weight: normal;
+  background: none;
+  font-size: 12px;
+}
+.iframe_content .pic_car_info dt,
+.iframe_content .pic_car_info dd {
+  float: left;
+}
+.iframe_content .pic_car_info dd {
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+}
+.iframe_content .pic_car_info .carprice {
+  padding: 0 0 0 15px;
+  margin: 5px 0 0;
+}
+.iframe_content .pic_car_info .carbrand {
+  margin: 5px 0 0;
+}
+.iframe_content .pic_car_info .carprice small {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0 0 0 5px;
+}
+.iframe_content .pic_car_info .carprice small a:link,
+.iframe_content .pic_car_info .carprice small a:visited {
+  color: #164a84;
+  font-weight: 400;
+}
+.iframe_content .pic_car_info .carprice small a:hover {
+  color: #c00;
+}
+.iframe_content .pic_car_info .carprice a {
+  color: #c00;
+  font-weight: bold;
+}
+.iframe_content .pic_car_info .carprice a.newest {
+  color: #164A84;
+  font-weight: normal;
+}
+.iframe_content .pic_car_info .carbrand {
+  padding: 0 0 0 10px;
+}
+.iframe_content .pic_car_info .carinfo {
+  width: 388px;
+  height: 18px;
+  padding: 3px 0 0 0;
+  *padding: 4px 0 0 0;
+  padding: 4px 0 0 0\0;
+}
+.iframe_content .pic_car_info dl dd {
+  padding: 0 8px;
+  border-right: 1px #e9e9e9 solid;
+}
+.iframe_content .pic_car_info dl dd.f {
+  padding: 0 8px 0 0;
+}
+.iframe_content .pic_car_info dl dd.l {
+  border: none;
+}
+.iframe_content .pic_car_info .carinfo dt,
+.iframe_content .pic_car_info .carinfo dd {
+  height: 14px;
+  line-height: 14px;
+}
+.iframe_content .table_news_b {
+  color: #999;
+}
+.iframe_content .table_news_b a:link,
+.iframe_content .table_news_b a:visited {
+  color: #999;
+}
+.iframe_content .table_news_b a:hover {
+  color: c00;
+}
+.iframe_content .table_news_l {
+  float: left;
+  padding-left: 10px;
+  width: 545px;
+  text-align: left;
+}
+.iframe_content .table_news_r {
+  float: right;
+  padding-right: 10px;
+  width: 545px;
+  text-align: right;
+}
+.iframe_content .select_b_x {
+  font-size: 14px;
+  cursor: pointer;
+  background: #eb7e0e url(http://image.bitauto.com/uimg/index120401/images2/btn_bg.jpg) 0 -80px repeat-x;
+  border: 1px #d37205 solid;
+  color: #fff;
+  height: 26px;
+  line-height: 24px;
+  font-weight: bold;
+  padding: 0 20px;
+  overflow: visible;
+  margin: 0 auto;
+  _height: 21px;
+  _line-height: 21px;
+  _width: 0;
+}
+.iframe_content .select_b_div {
+  margin: 0 auto;
+  width: 105px;
+}
+.iframe_content p.video embed {
+  border: 1px #e9e9e9 solid;
+  display: block;
+  margin: 0 auto 5px auto;
+  padding: 9px;
+  background: #fff;
+}
+.iframe_content p.video {
+  background-image: url("http://admin.bitauto.com/support/utils/ckeditor/plugins/flash/images/placeholder.png?t=B5GJ5GG");
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 1px solid #A9A9A9;
+  margin: 0 auto;
+  height: 402px;
+  width: 630px;
+}
+.iframe_content .iComment {
+  background: url("../../images/wyhd.png");
+  width: 630px;
+  height: 309px;
+}
+.iframe_content .yingxiao {
+  margin: 10px 0;
+}
+.iframe_content .yingxiao span.title {
+  color: #999;
+  display: block;
+  margin: 10px 0;
+  font-size: 12px;
+}
+.iframe_content .yingxiao .yingxiao_bg {
+  border: 1px solid #ececec;
+  padding: 10px 0 20px 0;
+  position: relative;
+}
+.iframe_content .yingxiao .yingxiao_bg .more {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 12px;
+}
+.iframe_content .yingxiao h5 {
+  margin: 0 0 15px;
+  font-size: 12px;
+  background: #3369b1;
+  color: #e0e6f1;
+  width: 101px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  border-radius: 0 10px 10px 0;
+  font-weight: normal;
+}
+.iframe_content .yingxiao h5 a:link,
+.iframe_content .yingxiao h5 a:visited,
+.iframe_content .yingxiao h5 a:hover {
+  color: #fff;
+}
+.iframe_content #content_bit .con_main .yingxiao h5 {
+  margin: 0 0 15px;
+  font-size: 12px;
+  background: #3369b1;
+  color: #e0e6f1;
+  width: 101px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  border-radius: 0 10px 10px 0;
+  font-weight: normal;
+}
+.iframe_content .yingxiao_img {
+  float: left;
+  margin-left: 20px;
+  display: inline;
+  /*height: 60px;*/
+}
+.iframe_content .yingxiao_box {
+  float: left;
+  margin-left: 20px;
+}
+.iframe_content .yingxiao_box h6 {
+  font-family: "microsoft yahei";
+  font-size: 16px;
+}
+.iframe_content .yingxiao_box span {
+  font-size: 12px;
+  color: #999;
+}
+.iframe_content .yingxiao_box span em {
+  /*background: url(icon_comment.png) 0 0 no-repeat; width: 13px; height: 11px; */
+  padding: 0 0 0 17px;
+  background: url(http://img1.bitauto.com/uimg/index2014/images2/yingxiao/icon_comment_s.png) no-repeat 0 1px;
+  width: 13px;
+  height: 11px;
+}
+.iframe_content .yingxiao_box span.cheyou em {
+  padding: 0;
+  margin: 10px 2px 0 0;
+  background: url(http://img1.bitauto.com/uimg/index2014/images2/yingxiao/icon_star.png) 0 0 no-repeat;
+  width: 11px;
+  height: 12px;
+  display: block;
+  float: left;
+}
+.iframe_content .yingxiao_box span.cheyou {
+  padding: 0 10px 0 0;
+}
+.iframe_content .yingxiao_b_box {
+  clear: both;
+  padding: 16px 0 0 0;
+  margin: 0 20px;
+  _padding: 6px 0 0 0;
+  /*height: 68px;*/
+}
+.iframe_content .yingxiao_b_box img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+.iframe_content .yingxiao_b_box .yingxiao_c {
+  border-top: 2px #f2f2f2 solid;
+  background: #f7f7f7;
+  position: relative;
+  zoom: 1;
+}
+.iframe_content .yingxiao_b_box .yingxiao_c img {
+  float: left;
+  margin: 10px 0 15px 15px !important;
+}
+.iframe_content .yingxiao_b_box .yingxiao_c div.blockquote {
+  float: left;
+  width: 515px;
+  margin: 0 0 0 15px;
+  line-height: 22px;
+  padding: 8px 0 0 0;
+}
+.iframe_content .yingxiao_b_box .yingxiao_c em {
+  font-size: 12px;
+  color: #999;
+}
+.iframe_content .yingxiao_b_box .yingxiao_c div.blockquote blockquote {
+  padding-bottom: 10px;
+  overflow: hidden;
+  font-family: "microsoft yahei";
+  text-indent: 0;
+}
+.iframe_content .yingxiao_b_box .yingxiao_c i {
+  display: block;
+  height: 1px;
+  overflow: hidden;
+  border: 6px solid #fff;
+  border-color: #f2f2f2 #fff;
+  border-width: 0 10px 10px 10px;
+  width: 0;
+  position: absolute;
+  top: -12px;
+  left: 35px;
+  zoom: 1;
+}
+.iframe_content .yingxiao_m .yingxiao_box h6 {
+  font-size: 14px;
+}
+.iframe_content .yingxiao_m .yingxiao_img {
+  margin: 0 10px;
+}
+.iframe_content .yingxiao_m .yingxiao_box {
+  float: none;
+  margin: 0 10px;
+  display: f;
+}
+.iframe_content .yingxiao_m .yingxiao_box span {
+  display: block;
+}
+.iframe_content .yingxiao_m .yingxiao_bg {
+  padding: 10px 0 10px 0;
+}
+.iframe_content .yingxiao_m .yingxiao_b_box .yingxiao_c {
+  line-height: 20px;
+  padding: 10px 5px 0 0;
+}
+.iframe_content .yingxiao_m .yingxiao_b_box .yingxiao_c div.blockquote {
+  float: none;
+  padding: 3px 0 0 0;
+  margin: 0;
+  line-height: 1;
+  width: auto;
+}
+.iframe_content .yingxiao_m .yingxiao_b_box .yingxiao_c div.blockquote blockquote {
+  /* display: inline; */
+  /* height: 30px; */
+  overflow: hidden;
+  padding: 0 0 10px 0;
+  line-height: 22px;
+  font-size: 12px;
+}
+.iframe_content .yingxiao_m .yingxiao_b_box .yingxiao_c img {
+  float: left;
+  margin: 0 10px 15px;
+}
+.iframe_content .yingxiao_m .yingxiao_box span.cheyou em {
+  margin-top: 2px;
+}
+.iframe_content .yingxiao_m .yingxiao_box span.cheyou {
+  padding: 3px 10px 0 0;
+}
+.iframe_content .yingxiao_m .yingxiao_b_box {
+  margin: 0 10px;
+}

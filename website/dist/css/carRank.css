@@ -1,0 +1,224 @@
+.car_rank {
+  width: 100%;
+}
+.car_rank .main-total-rank {
+  width: 990px;
+  height: 304px;
+  margin: 10px auto 48px;
+  color: #333;
+}
+.car_rank .main-total-rank a {
+  display: inline-block;
+}
+.car_rank .main-total-rank h1 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 44px;
+  border-bottom: 4px solid #333;
+}
+.car_rank .main-total-rank .total-rank-content {
+  margin-top: 12px;
+  height: 292px;
+}
+.car_rank .main-total-rank .total-rank-content .rank-style {
+  border-right: 1px solid #eee;
+  padding: 0 32px;
+}
+.car_rank .main-total-rank .total-rank-content .rank-style h2 {
+  font-weight: 400;
+  font-size: 16px;
+  padding-bottom: 12px;
+}
+.car_rank .main-total-rank .total-rank-content .rank-style ul li {
+  font-size: 12px;
+  width: 282px;
+  margin-bottom: 16px;
+  line-height: 16px;
+}
+.car_rank .main-total-rank .total-rank-content .rank-style ul li span {
+  display: inline-block;
+  width: 16px;
+  line-height: 16px;
+  text-align: center;
+  border: 1px solid #eee;
+  margin-right: 6px;
+}
+.car_rank .main-total-rank .total-rank-content .rank-style ul li a {
+  color: #333;
+  width: 258px;
+  line-height: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: -3px;
+}
+.car_rank .main-total-rank .total-rank-content .rank-style ul li a:hover {
+  color: #f00;
+  text-decoration: underline;
+}
+.car_rank .main-total-rank .total-rank-content .rank-style ul li:last-child {
+  margin-bottom: 8px;
+}
+.car_rank .main-total-rank .total-rank-content .rank-style ul .great-rank span {
+  border: none;
+  color: #fff;
+  background: #ffa903;
+  line-height: 16px;
+}
+.car_rank .main-total-rank .total-rank-content .article-rank {
+  float: left;
+  border-right: 1px solid #eee;
+  padding: 0 32px;
+  padding-left: 0;
+}
+.car_rank .main-total-rank .total-rank-content .article-rank h2 {
+  font-weight: 400;
+  font-size: 16px;
+  padding-bottom: 12px;
+}
+.car_rank .main-total-rank .total-rank-content .article-rank ul li {
+  font-size: 12px;
+  width: 282px;
+  margin-bottom: 16px;
+  line-height: 16px;
+}
+.car_rank .main-total-rank .total-rank-content .article-rank ul li span {
+  display: inline-block;
+  width: 16px;
+  line-height: 16px;
+  text-align: center;
+  border: 1px solid #eee;
+  margin-right: 6px;
+}
+.car_rank .main-total-rank .total-rank-content .article-rank ul li a {
+  color: #333;
+  width: 258px;
+  line-height: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: -3px;
+}
+.car_rank .main-total-rank .total-rank-content .article-rank ul li a:hover {
+  color: #f00;
+  text-decoration: underline;
+}
+.car_rank .main-total-rank .total-rank-content .article-rank ul li:last-child {
+  margin-bottom: 8px;
+}
+.car_rank .main-total-rank .total-rank-content .article-rank ul .great-rank span {
+  border: none;
+  color: #fff;
+  background: #ffa903;
+  line-height: 16px;
+}
+.car_rank .main-total-rank .total-rank-content .video-rank {
+  float: left;
+  border-right: 1px solid #eee;
+  padding: 0 32px;
+}
+.car_rank .main-total-rank .total-rank-content .video-rank h2 {
+  font-weight: 400;
+  font-size: 16px;
+  padding-bottom: 12px;
+}
+.car_rank .main-total-rank .total-rank-content .video-rank ul li {
+  font-size: 12px;
+  width: 282px;
+  margin-bottom: 16px;
+  line-height: 16px;
+}
+.car_rank .main-total-rank .total-rank-content .video-rank ul li span {
+  display: inline-block;
+  width: 16px;
+  line-height: 16px;
+  text-align: center;
+  border: 1px solid #eee;
+  margin-right: 6px;
+}
+.car_rank .main-total-rank .total-rank-content .video-rank ul li a {
+  color: #333;
+  width: 258px;
+  line-height: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: -3px;
+}
+.car_rank .main-total-rank .total-rank-content .video-rank ul li a:hover {
+  color: #f00;
+  text-decoration: underline;
+}
+.car_rank .main-total-rank .total-rank-content .video-rank ul li:last-child {
+  margin-bottom: 8px;
+}
+.car_rank .main-total-rank .total-rank-content .video-rank ul .great-rank span {
+  border: none;
+  color: #fff;
+  background: #ffa903;
+  line-height: 16px;
+}
+.car_rank .main-total-rank .total-rank-content .concern-rank {
+  float: left;
+  border-right: 1px solid #eee;
+  padding: 0 32px;
+  padding-right: 11px;
+  border: none;
+}
+.car_rank .main-total-rank .total-rank-content .concern-rank h2 {
+  font-weight: 400;
+  font-size: 16px;
+  padding-bottom: 12px;
+}
+.car_rank .main-total-rank .total-rank-content .concern-rank ul li {
+  font-size: 12px;
+  width: 282px;
+  margin-bottom: 16px;
+  line-height: 16px;
+}
+.car_rank .main-total-rank .total-rank-content .concern-rank ul li span {
+  display: inline-block;
+  width: 16px;
+  line-height: 16px;
+  text-align: center;
+  border: 1px solid #eee;
+  margin-right: 6px;
+}
+.car_rank .main-total-rank .total-rank-content .concern-rank ul li a {
+  color: #333;
+  width: 258px;
+  line-height: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: -3px;
+}
+.car_rank .main-total-rank .total-rank-content .concern-rank ul li a:hover {
+  color: #f00;
+  text-decoration: underline;
+}
+.car_rank .main-total-rank .total-rank-content .concern-rank ul li:last-child {
+  margin-bottom: 8px;
+}
+.car_rank .main-total-rank .total-rank-content .concern-rank ul .great-rank span {
+  border: none;
+  color: #fff;
+  background: #ffa903;
+  line-height: 16px;
+}
+.car_rank .main-total-rank .total-rank-content .concern-rank ul li {
+  width: 284px;
+  overflow: hidden;
+}
+.car_rank .main-total-rank .total-rank-content .concern-rank ul li p {
+  float: left;
+}
+.car_rank .main-total-rank .total-rank-content .concern-rank ul li p a {
+  width: 140px;
+}
+.car_rank .main-total-rank .total-rank-content .concern-rank ul li i {
+  display: inline-block;
+  float: right;
+  color: #999;
+  font-style: normal;
+}

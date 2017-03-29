@@ -1,0 +1,295 @@
+.public {
+  float: left;
+  position: relative;
+  z-index: 102;
+}
+.car_select {
+  width: 990px;
+  height: 152px;
+  margin: 0 auto;
+}
+.car_select .car_select_detail {
+  width: 990px;
+  background: #eee;
+  height: 48px;
+}
+.car_select .car_select_detail .search_select {
+  margin-left: 20px;
+  padding-top: 12px;
+  height: 48px;
+}
+.car_select .car_select_detail .search_select #for_input_brand {
+  height: 24px;
+  float: left;
+  position: relative;
+  z-index: 102;
+}
+.car_select .car_select_detail .search_select #for_input_brand .car_brand_select {
+  position: absolute;
+  width: 220px;
+  height: 482px;
+  border: 1px solid #333;
+  border-bottom: 3px solid #333;
+  float: left;
+  top: 23px;
+  left: 0;
+  overflow: hidden;
+  display: block;
+}
+.car_select .car_select_detail .search_select #for_input_brand .car_brand_select .car_letters {
+  width: 31px;
+  border-right: 1px solid #eee;
+  float: left;
+  padding: 6px 0;
+  text-align: center;
+  font-size: 12px;
+  background: #f9f9f9;
+}
+.car_select .car_select_detail .search_select #for_input_brand .car_brand_select .car_letters span {
+  display: block;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  margin: 2px auto;
+  color: #333;
+}
+.car_select .car_select_detail .search_select #for_input_brand .car_brand_select .car_letters span:hover,
+.car_select .car_select_detail .search_select #for_input_brand .car_brand_select .car_letters span.active {
+  color: #398be4;
+}
+.car_select .car_select_detail .search_select #for_input_brand .car_brand_select .car_letters span.default {
+  color: #999;
+}
+.car_select .car_select_detail .search_select #for_input_brand .car_brand_select .car_name {
+  width: 188px;
+  float: left;
+  background: #fff;
+  height: 482px;
+  display: inline-block;
+  font-size: 12px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+.car_select .car_select_detail .search_select #for_input_brand .car_brand_select .car_name .brand_car_name {
+  width: 188px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.car_select .car_select_detail .search_select #for_input_brand .car_brand_select .car_name .brand_car_name dl {
+  border-bottom: 1px solid #e1e1e1;
+}
+.car_select .car_select_detail .search_select #for_input_brand .car_brand_select .car_name .brand_car_name dl dd {
+  height: 30px;
+  line-height: 30px;
+  padding: 2px 0 2px 0;
+  cursor: pointer;
+}
+.car_select .car_select_detail .search_select #for_input_brand .car_brand_select .car_name .brand_car_name dl dd:hover {
+  background: #398be4;
+}
+.car_select .car_select_detail .search_select #for_input_brand .car_brand_select .car_name .brand_car_name dl dd:hover a {
+  color: #fff;
+}
+.car_select .car_select_detail .search_select #for_input_brand input {
+  height: 22px;
+  color: #fff;
+  margin-right: 20px;
+  padding-left: 8px;
+  font-family: "Microsoft YaHei", "微软雅黑";
+}
+.car_select .car_select_detail .search_select #for_input_brand input.search_brand,
+.car_select .car_select_detail .search_select #for_input_brand input.search_serial {
+  width: 238px;
+  border: 1px solid #dadada;
+  background: white;
+  color: #333!important;
+}
+.car_select .car_select_detail .search_select #for_input_brand .search_down {
+  position: absolute;
+  top: 9px;
+  right: 30px;
+  display: inline-block;
+  float: right;
+}
+.car_select .car_select_detail .search_select #for_input_serial {
+  height: 24px;
+  float: left;
+  position: relative;
+  z-index: 102;
+}
+.car_select .car_select_detail .search_select #for_input_serial .car_serial_select {
+  position: absolute;
+  width: 220px;
+  height: 482px;
+  border: 1px solid #333;
+  border-bottom: 3px solid #333;
+  float: left;
+  top: 23px;
+  left: 0;
+  display: inline-block;
+  background: #fff;
+  overflow: hidden;
+}
+.car_select .car_select_detail .search_select #for_input_serial .car_serial_select .serial_name {
+  display: inline-block;
+}
+.car_select .car_select_detail .search_select #for_input_serial .car_serial_select .serial_name .serial_car_name {
+  width: 220px;
+  height: 482px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.car_select .car_select_detail .search_select #for_input_serial .car_serial_select .serial_name .serial_car_name dl {
+  margin: 1px 0 0 0;
+  padding: 0 0 1px 0;
+}
+.car_select .car_select_detail .search_select #for_input_serial .car_serial_select .serial_name .serial_car_name dl dt {
+  height: 28px;
+  width: 220px;
+  line-height: 28px;
+  background: #F7F7F7;
+  text-align: center;
+}
+.car_select .car_select_detail .search_select #for_input_serial .car_serial_select .serial_name .serial_car_name dl dt a {
+  margin: 0;
+  padding: 0;
+}
+.car_select .car_select_detail .search_select #for_input_serial .car_serial_select .serial_name .serial_car_name dl dd {
+  height: 28px;
+  line-height: 28px;
+}
+.car_select .car_select_detail .search_select #for_input_serial .car_serial_select .serial_name .serial_car_name dl dd:hover {
+  background: #398be4;
+}
+.car_select .car_select_detail .search_select #for_input_serial .car_serial_select .serial_name .serial_car_name dl dd:hover a {
+  color: #fff;
+}
+.car_select .car_select_detail .search_select #for_input_serial input {
+  height: 22px;
+  color: #fff;
+  margin-right: 20px;
+  padding-left: 8px;
+  border: 1px solid #eee;
+  font-family: "Microsoft YaHei", "微软雅黑";
+}
+.car_select .car_select_detail .search_select #for_input_serial input.search_brand,
+.car_select .car_select_detail .search_select #for_input_serial input.search_serial {
+  width: 238px;
+  border: 1px solid #dadada;
+  background: white;
+  color: #333!important;
+}
+.car_select .car_select_detail .search_select #for_input_serial .search_down {
+  position: absolute;
+  top: 9px;
+  right: 30px;
+  display: inline-block;
+  float: right;
+}
+.car_select .car_select_detail .search_select .search_new {
+  width: 110px;
+  border: none;
+  height: 24px;
+  color: #fff;
+  float: left;
+  margin-right: 20px;
+  padding: 0px 0 0 8px;
+  font-family: "Microsoft YaHei", "微软雅黑";
+  background: #ffa904;
+  cursor: pointer;
+}
+.car_select .car_select_detail .search_select .search_new:hover {
+  background: #ff9103;
+}
+.car_select .car_select_detail .search_select a {
+  margin-left: 20px;
+  display: inline-block;
+  position: relative;
+}
+.car_select .car_select_detail .search_select a img {
+  display: inline-block;
+  position: absolute;
+  top: -12px;
+}
+.car_select .car_select_detail .search_select .for_select {
+  width: 100px;
+  height: 24px;
+  float: left;
+  position: relative;
+  top: 5px;
+  margin-left: 20px;
+}
+.car_select .car_select_detail .search_select .for_select span {
+  float: left;
+  text-align: center;
+  line-height: 24px;
+  background: url("../../src/images/select-default_03.png") no-repeat center;
+}
+.car_select .car_select_detail .search_select .for_select .for_conditional {
+  width: 70px;
+  height: 24px;
+  margin-left: 4px;
+  font-size: 14px;
+  line-height: 10px;
+  font-family: "Microsoft YaHei", "微软雅黑";
+  color: #666;
+  text-decoration: underline;
+}
+.car_select .car_select_detail .search_select .for_select:hover span {
+  background: url("../../src/images/select-hover_03.png") no-repeat center;
+}
+.car_select .car_select_detail .search_select .for_select:hover .for_conditional {
+  color: #3a8be4;
+}
+.car_select .car_intro {
+  width: 990px;
+  height: 100px;
+  margin-top: 4px;
+  overflow: hidden;
+  clear: both;
+}
+.car_select .car_intro ul {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.car_select .car_intro ul li {
+  width: 120px;
+  height: 100px;
+  float: left;
+  overflow: hidden;
+  cursor: pointer;
+}
+.car_select .car_intro ul li .img {
+  width: 118px;
+  height: 78px;
+  border: 1px solid #eee;
+  display: block;
+  overflow: hidden;
+}
+.car_select .car_intro ul li .img img {
+  width: 100px;
+  height: 67px;
+}
+.car_select .car_intro ul li.one {
+  float: left;
+  margin-right: 4.25px;
+}
+.car_select .car_intro ul li.two {
+  float: right;
+}
+.car_select .car_intro ul li .car_select_bg {
+  height: 20px;
+  width: 120px;
+  display: inline-block;
+  text-align: center;
+  line-height: 20px;
+  background: #eee;
+}
+.car_select .car_intro ul li:hover .car_select_bg {
+  background: #398be4;
+  color: #fff;
+}

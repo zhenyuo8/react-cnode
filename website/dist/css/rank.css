@@ -1,0 +1,25 @@
+.cursor {
+  cursor: pointer;
+}
+.float_l {
+  float: left;
+}
+.float_r {
+  float: right;
+}
+.carMarket {
+  width: 990px;
+  height: 447px;
+  margin: 28px auto 0;
+}
+.carMarket_left {
+  width: 751px;
+  height: 447px;
+  float: left;
+}
+.carMarket_left .carMarket_left_title {
+  height: 44px;
+  line-height: 44px;
+  border-bottom: 4px solid #333;
+  position: relative;
+}

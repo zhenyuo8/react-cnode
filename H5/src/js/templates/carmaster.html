@@ -1,0 +1,137 @@
+<div>
+<div class="choice_car_page">
+
+		<!-- 搜索框 -->
+		<div class="search_bar clearfix" v-bind:class="{noban_search:adFocus.length===0}">
+			<a class="logo" href="/"></a>
+			<div class="search_area">
+				<input class="search_input" type="text">
+				<span class="search_btn"></span>
+				<router-link :to="{name:'carsearch'}" bdtag="HomePage_Search_Clicked" reload></router-link>
+			</div>
+		</div>
+
+		<!-- banner图 -->
+		<div class="banner" v-show="adFocus.length">
+			<swiper :options="swiperOption" ref="focusSwiper">
+				<swiper-slide v-for="el in adFocus">
+					<a v-bind:href="el.Link" target="_blank">
+						<img v-bind:src="el.ImageUrl">
+					</a>
+				</swiper-slide>
+			</swiper>
+		</div>
+
+		<!-- 条件选车 -->
+		<div class="condition_choice_area">
+			<router-link class="condition_choice" :to="{name:'carselect'}" bdtag="HomePage_Condition_Clicked" reload>
+				<span class="condi"><i></i>条件选车</span>
+				<span class="more_type">共{{carSerialTotal}}个车型<i></i></span>
+			</router-link>
+		</div>
+
+		<!-- 热门品牌 -->
+		<div class="hot_brand">
+			<h2 class="hot_title"><i></i>热门品牌</h2>
+			<div class="hot_list">
+				<ul>
+					<li v-for="el in adBrand">
+						<a v-bind:href="el.Link" target="_blank">
+							<img v-bind:src="el.ImageUrl">
+							<span>{{el.Text}}</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- 推荐车型 -->
+		<div class="recom_type">
+			<h2 class="recom_title"><i></i>推荐车型</h2>
+			<div class="recom_list">
+				<ul>
+					<li v-for="el in adCars">
+						<a v-bind:href="el.Link" target="_blank">
+							<img v-bind:src="el.ImageUrl"><span>{{el.Text}}</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- 品牌车型列表 -->
+		<div class="brand_type">
+			<div class="brand_list">
+				<template v-for="el in masterlist">
+				<div class="letter_title" v-bind:id="'letter-'+el.initial"><span>{{el.initial}}</span></div>
+				<div class="brand_box">
+					<ul>
+						<li v-for="row in el.data ">
+							<a v-on:click="showSerial(row)">
+								<span class="brand_logo">
+									<img v-bind:src="row.img100">
+								</span>
+								<span class="brand_name">{{row.name}}</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				</template>
+			</div>
+			<div class="letter_list">
+				<ul v-on:touchmove.prevent="moveToPos(event)">
+					<li><a v-on:click="scrollToPos()">#</a></li>
+					<li v-for="l in letters">
+						<a v-on:click="scrollToPos(l)">{{l}}</a>
+					</li>
+				</ul>
+			</div>
+			<div class="letter_alert">
+				<span>{{currentLetter}}</span>
+			</div>
+		</div>
+    </div>
+
+	<!-- 遮罩层 -->
+	<div class="mask_area" v-on:touchend="closeSerial()">
+		<div class="mask"></div>
+		<div class="mask_jt"></div>
+	</div>
+
+	<!-- 右侧车款模块 -->
+	<div class="right_module">
+		<div class="cbl"></div>
+		<div class="car_type_module">
+			<div class="type_brand">
+				<span class="type_brand_logo"><img v-bind:src="currentMaster.img100"></span>
+				<span class="type_brand_name">{{currentMaster.name}}</span>
+			</div>
+			<template v-for="brand in currentMaster.brandList">
+			<div class="sub_brand" v-show="brand.carSerialList.length">
+				<span>{{brand.name}}</span>
+			</div>
+			<div class="car_type_list">
+				<ul>
+					<li v-for="row in brand.carSerialList">
+						<router-link :to="{name:'carserial',query:{serialId:row.id}}" reload>
+							<dl>
+								<dt><img v-bind:src="row.logo"></dt>
+								<dd class="type_msg">
+									<p class="type_name">{{row.showname}}</p>
+									<p class="type_price">
+										<font v-if="row.dealerminprice">
+										{{row.dealerminprice}}-{{row.dealermaxprice}}万
+										</font>
+										<font v-else>暂无报价</font>
+									</p>
+								</dd>
+							</dl>
+						</router-link>
+					</li>
+				</ul>
+			</div>
+			</template>
+		</div>
+	</div>
+
+</div>

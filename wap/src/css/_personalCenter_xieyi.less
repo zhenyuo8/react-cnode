@@ -1,0 +1,63 @@
+/*****
+ *@author: jianingning
+ *@from: Global style mywenda_biaobing  我的问答-标兵
+ *@description:
+ *@date: name (2017.03.04)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_pubHead";
+@import "mod/mod_goTop";
+
+// 协议内容
+.xieyi_page{
+    width: 100%;
+    .xieyi_content{
+        width: 92%;
+        margin: 0 4%;
+        h3{
+            font-size: 18px;
+            font-weight: 700;
+            text-indent: 10.435%;
+            line-height: 1.173rem /* 88/75 */;
+            width: 100%;
+        }
+        p{
+            font-size: 16px;
+            text-indent: 9.275%;
+            line-height: 0.64rem /* 48/75 */;
+            width: 100%;
+            margin-bottom: 0.2rem /* 15/75 */;
+            span{
+                display: block;
+                text-indent: 18.55%;
+                margin-top: 0.2rem /* 15/75 */;
+            }
+        }
+    }
+}
+
+/*字号大小适配*/
+[data-dpr="2"] .xieyi_page{
+    .xieyi_content{
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 32px;
+        }
+    }
+}
+
+[data-dpr="3"] .xieyi_page{
+    .xieyi_content{
+        h3{
+            font-size: 54px;
+        }
+        p{
+            font-size: 48px;
+        }
+    }
+}

@@ -1,0 +1,108 @@
+/*****
+ *@author: dongbo
+ *@from: Global style videoIndex
+ *@description:
+ *@date: name (2017.02.22)
+*/
+
+
+.list{
+    width: 100%;
+        li{
+            width: 50%;
+            box-sizing: border-box;
+            a{
+                display: block;
+                .img_box{
+                    width: 100%;
+                    height: 2.96rem;
+                    background-color:#7c7c7c;
+                    img{
+                        width: 100%;
+                        height: 2.96rem;
+                    }
+                    .time_title{
+                        right: 6px;
+                        bottom: 6px;
+                        display: inline-block;
+                        height: 0.467rem;
+                        width:1.093rem;
+                        text-align: center;
+                        line-height: 0.467rem;
+                        background-color:#000;
+                        color: #fff;
+                        font-size: 12px;
+                        border-radius: 6px;
+                    }
+                    .play_btn{
+                        width: 0.8rem;
+                        height: 0.8rem;
+                        top: 0px;
+                        left: 0px;
+                        right: 0px;
+                        bottom: 0px;
+                        margin: auto;
+                        img{
+                            width: 0.8rem;
+                            height: 0.8rem;
+                        }
+                    }
+                }
+                .video_des{
+                    width: 100%;
+                    line-height: 0.533rem;
+                    height:1.067rem;
+                    font-size: 15px;
+                    color: #333;
+                    margin-bottom: 0.4rem;
+                    margin-top: 0.227rem;
+                    overflow:hidden;
+                    display:-webkit-box;
+                    -webkit-box-orient:vertical;
+                    -webkit-line-clamp:2;
+                }
+            }
+        }
+        li:nth-child(even){
+
+        }
+        li:nth-child(odd){
+            padding-right: 0.2rem;
+        }
+        li:nth-child(even){
+            padding-left: 0.2rem;
+        }
+
+}
+[data-dpr="2"] body{
+        .list{
+            li{
+                a{
+                    .video_des{
+                        font-size: 30px;
+                    }
+                    .img_box{
+                        .time_title{
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+[data-dpr="3"] body{
+        .list{
+                li{
+                    a{
+                        .video_des{
+                            font-size: 45px;
+                        }
+                        .img_box{
+                            .time_title{
+                                font-size: 34px;
+                            }
+                        }
+                    }
+                }
+            }
+    }

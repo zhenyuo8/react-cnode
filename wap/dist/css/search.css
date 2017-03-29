@@ -1,0 +1,220 @@
+/*****
+ *@author: linyh
+ *@from: Global style index-search(首页-搜索)
+ *@description: 陈璐
+ *@date: name (2017.02.23)
+*/
+.search_car_page .search_bar {
+  font-size: 14px;
+  width: 92%;
+  padding: 0 4%;
+}
+.search_car_page .search_bar .search_area {
+  width: 86.087%;
+  height: 0.933rem /* 70/75 */;
+  border: 1px solid #2799fe;
+  border-radius: 0.427rem /* 32/75 */;
+  margin: 0.267rem /* 20/75 */ 0.267rem /* 20/75 */ 0.267rem /* 20/75 */ 0;
+  float: left;
+}
+.search_car_page .search_bar .search_area .search_btn {
+  background-image: url("../img/search_fdj.png");
+  background-size: 100% 100%;
+  width: 0.56rem;
+  height: 0.573rem;
+  vertical-align: middle;
+  margin: 0 0.16rem /* 12/75 */ 0 0.373rem /* 28/75 */;
+  display: inline-block;
+}
+.search_car_page .search_bar .search_area .search_input {
+  color: #999;
+  background-color: transparent;
+  width: 72%;
+  height: 100%;
+}
+.search_car_page .search_bar .search_area .search_input::-webkit-input-placeholder {
+  color: #999;
+}
+.search_car_page .search_bar .search_area .search_input:-moz-placeholder {
+  color: #999;
+}
+.search_car_page .search_bar .search_area .search_input::-moz-placeholder {
+  color: #999;
+}
+.search_car_page .search_bar .search_area .search_input::-ms-input-placeholder {
+  color: #999;
+}
+.search_car_page .search_bar .search_area .delete_text {
+  background-image: url("../img/delete.png");
+  background-size: 100% 100%;
+  width: 0.48rem;
+  height: 0.48rem;
+  vertical-align: middle;
+  display: none;
+}
+.search_car_page .search_bar .cancel {
+  color: #2799fe;
+  line-height: 1.493rem /* 112/75 */;
+  float: right;
+}
+.search_car_page .module_title {
+  font-size: 13px;
+  color: #828282;
+  line-height: 0.747rem /* 56/75 */;
+  padding: 0 0.4rem /* 30/75 */;
+  background-color: #f3f3f3;
+}
+.search_car_page .search_module {
+  font-size: 13px;
+  width: 100%;
+}
+.search_car_page .search_module .search_title {
+  font-size: 13px;
+  color: #828282;
+  line-height: 0.747rem /* 56/75 */;
+  padding: 0 0.4rem /* 30/75 */;
+  background-color: #f3f3f3;
+}
+.search_car_page .search_module .search_title span {
+  float: left;
+}
+.search_car_page .search_module .search_title a {
+  color: #999;
+  float: right;
+  display: none;
+}
+.search_car_page .search_hot .hot_list {
+  padding: 0.4rem /* 30/75 */ 2% s;
+}
+.search_car_page .search_hot .hot_list li {
+  width: 28.527%;
+  height: 0.827rem /* 62/75 */;
+  border: 1px solid #e2e2e2;
+  border-radius: 0.053rem /* 4/75 */;
+  float: left;
+  margin: 2.084%;
+}
+.search_car_page .search_hot .hot_list li a {
+  width: 100%;
+  line-height: 0.827rem /* 62/75 */;
+  text-align: center;
+  display: inline-block;
+}
+.search_car_page .search_hot .hot_list li a:active {
+  background-color: #2799fe;
+  color: #fff;
+}
+.search_car_page .search_history .history_list {
+  font-size: 15px;
+  padding: 0 4%;
+}
+.search_car_page .search_history .history_list li {
+  line-height: 1.32rem /* 99/75 */;
+  padding-left: 0.267rem /* 20/75 */;
+  border-bottom: 1px solid #f3f3f3;
+}
+.search_car_page .search_history .history_list li a {
+  color: #666;
+  display: block;
+}
+.search_car_page .search_history .history_list li a:active {
+  color: #2799fe;
+}
+.search_car_page .sh_relevance {
+  display: none;
+}
+.search_car_page .sh_relevance .result_list {
+  font-size: 15px;
+  padding: 0 4%;
+}
+.search_car_page .sh_relevance .result_list li {
+  line-height: 1.32rem /* 99/75 */;
+  padding-left: 0.267rem /* 20/75 */;
+  border-bottom: 1px solid #f3f3f3;
+}
+.search_car_page .sh_relevance .result_list li a {
+  color: #666;
+  display: block;
+}
+.search_car_page .sh_relevance .result_list li a:active {
+  color: #2799fe;
+}
+.search_car_page .sh_relevance .load_more {
+  font-size: 13px;
+  color: #52adfe;
+  display: inline-block;
+  width: 100%;
+  height: 0.96rem /* 72/75 */;
+  line-height: 0.96rem /* 72/75 */;
+  text-align: center;
+  background-color: #edf7ff;
+  border-radius: 0.107rem /* 8/75 */;
+}
+.search_car_page .sh_relevance .load_more img {
+  display: inline-block;
+  width: 0.24rem /* 18/75 */;
+  height: 0.16rem /* 12/75 */;
+  vertical-align: middle;
+  margin-left: .16rem;
+}
+.search_car_page .sh_relevance .noresult {
+  font-size: 13px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  width: 4.82rem;
+  transform: translateX(-50%);
+}
+.search_car_page .sh_relevance .noresult .img {
+  width: 4.82rem;
+  height: 4.32rem;
+  background: url(../img/search_noresult.png) no-repeat;
+  background-size: cover;
+  margin-bottom: .2rem;
+}
+.search_car_page .sh_relevance .noresult .text {
+  text-align: center;
+  color: #666;
+}
+[data-dpr="2"] .search_car_page .search_bar {
+  font-size: 28px;
+}
+[data-dpr="2"] .search_car_page .search_module {
+  font-size: 26px;
+}
+[data-dpr="2"] .search_car_page .search_module .search_title {
+  font-size: 26px;
+}
+[data-dpr="2"] .search_car_page .search_module .history_list {
+  font-size: 30px;
+}
+[data-dpr="2"] .search_car_page .sh_relevance .result_list {
+  font-size: 30px;
+}
+[data-dpr="2"] .search_car_page .sh_relevance .load_more {
+  font-size: 26px;
+}
+[data-dpr="2"] .search_car_page .sh_relevance .noresult {
+  font-size: 26px;
+}
+[data-dpr="3"] .search_car_page .search_bar {
+  font-size: 42px;
+}
+[data-dpr="3"] .search_car_page .search_module {
+  font-size: 39px;
+}
+[data-dpr="3"] .search_car_page .search_module .search_title {
+  font-size: 39px;
+}
+[data-dpr="3"] .search_car_page .search_module .history_list {
+  font-size: 45px;
+}
+[data-dpr="3"] .search_car_page .sh_relevance .result_list {
+  font-size: 45px;
+}
+[data-dpr="3"] .search_car_page .sh_relevance .load_more {
+  font-size: 39px;
+}
+[data-dpr="3"] .search_car_page .sh_relevance .noresult {
+  font-size: 39px;
+}

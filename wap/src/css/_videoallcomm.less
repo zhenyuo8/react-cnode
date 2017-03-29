@@ -1,0 +1,350 @@
+/*****
+ *@author: dongbo
+ *@from: Global style videoIndex
+ *@description:
+ *@date: name (2017.02.24)
+*/
+
+@import "mod/mod_videoIndexTop.less";
+@import "mod/mod_footer.less";
+@import "mod/mod_videoloadmorebtn.less";
+@import "mod/mod_pubHeadNav";
+body{
+    background-color:#f4f5f7;
+    width: 100%;
+    overflow: hidden;
+}
+.swiper-wrapper ul{
+    padding: 0 0.4rem;
+    box-sizing: border-box;
+}
+.comm_box{
+    background-color: #fff;
+    .tab_box{
+        border-bottom: 1px solid #ebedef;
+        margin-bottom: 0.587rem;
+        ul{
+            li{
+                width: 50%;
+                height: 1.147rem;
+                line-height: 1.147rem;
+                text-align: center;
+                font-size: 15px;
+                span{
+                    position: relative;
+                    display: inline-block;
+                    height: 1.147rem;
+                }
+            }
+            .active:after{
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -2px;
+                width: 100%;
+                height: 2px;
+                background-color: #2e99fe;
+            }
+            .active{
+                color: #2e99fe;
+            }
+        }
+    }
+    .comm_box{
+        .comm_item{
+            padding-bottom: 0.507rem;
+            .user_img{
+                img{
+                    width: 0.933rem;
+                    height: 0.933rem;
+                    border-radius: 50%
+                }
+            }
+            .uer_comm{
+                margin-left: 0.933rem;
+                padding-left: 27px;
+                .user_name_box{
+                    font-size: 14px;
+                    color:#333;
+                    .floor_num{
+                        font-size: 12px;
+                        color: #b7b7b7;
+                    }
+                }
+                .comm_text{
+                    margin-top: 0.4rem;
+                    font-size: 15px;
+                    line-height: 0.56rem;
+                    color: #333;
+                }
+                .reply_box{
+                    font-size: 12px;
+                    color: #6a6a6a;
+                    padding: 0.267rem 0.32rem;
+                    background-color: #f3f3f3;
+                    .reply_comm{
+                        margin-top: 0.24rem;
+                        line-height: 0.507rem;
+                    }
+                }
+                .comm_status{
+                    height: 0.693rem;
+                    color: #b7b7b7;
+                    padding-bottom: 0.187rem;
+                    margin-top: 0.133rem;
+                    border-bottom:1px solid #ebedef;
+                    span{
+                        display: inline-block;
+                        height: 0.693rem;
+                        line-height: 0.693rem;
+                    }
+                    .comm_mum{
+                        padding-left: 0.533rem;
+                        margin-right: 0.3rem;
+                    }
+                     .no_zan{
+                        background: url('../img/comment_zan.png')no-repeat left center;
+                        background-size: 0.413rem 0.373rem;
+                    }
+                    .yi_zan{
+                        background: url('../img/zan_c_03.png') no-repeat left center;
+                        background-size: 0.413rem 0.373rem;
+                    }
+                    .reply_btn{
+                        width: 0.587rem;
+                        height: 0.693rem;
+                        background: url('../img/huifu.png')no-repeat center center;
+                        background-size: 0.4rem 0.36rem;
+                    }
+                }
+            }
+        }
+    }
+}
+.bottom_page_index{
+    padding: 0.0rem 0.4rem;
+    background-color: #ffffff;
+    p{
+        border-bottom: 1px solid #ebedef;
+        height: 1.053rem;
+        line-height: 1.053rem;
+        font-size:13px;
+        .color666{
+            color: #666;
+        }
+        .colora4{
+            color: #a4a4a4;
+        }
+        .p{
+            margin:9px 0px;
+        }
+    }
+}
+.float_bottom{
+    padding: 0.213rem 0.4rem;
+    background-color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0px;
+    box-shadow: 0px 0px 22px 12px #ededed;
+    -webkit-box-shadow:0px 0px 22px 12px #ededed;
+  -moz-box-shadow:0px 0px 22px 12px #ededed;
+  z-index: 10;
+    p{
+        height: 0.853rem;
+        border:1px solid #f4f5f7;
+        border-radius: 3px;
+        background-color: #fafafa;
+        text-indent:0.293rem;
+        line-height: 0.853rem;
+        font-size:30px;
+    }
+}
+.comm_mark{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 300;
+}
+.comm_form_box{
+    position: fixed;
+    bottom: -100%;
+    width: 100%;
+    z-index: 999;
+    .comm_box{
+        width: 100%;
+        padding: 0.0rem 0.4rem;
+        bottom: 0px;
+        box-sizing: border-box;
+        background: #fff;
+        border-bottom: 1px solid #ccc;
+    }
+    .top{
+        height: 1.067rem;
+        span{
+            font-size: 15px;
+            padding: 0.347rem 0;
+        }
+        .cancel{
+            color: #848484;
+        }
+        .submit{
+            color:#ccc;
+        }
+    }
+    .user_name{
+        height: 1.067rem;
+        line-height: 1.067rem;
+        font-size: 15px;
+        color: #333;
+    }
+    .textarea_box{
+        position: relative;
+        textarea{
+            width: 100%;
+            height: 3.52rem;
+            background: #f4f5f7;
+            padding: 10px 20px;
+            display: block;
+            -webkit-appearance: none;
+            border: none;
+            box-sizing: border-box;
+            font-size: 14px;
+            color: #333;
+        }
+        p{
+            position: absolute;
+            bottom: 3px;
+            right: 13px;
+        }
+    }
+}
+[data-dpr="2"] body{
+    .comm_form_box{
+        .top{
+            span{
+                font-size: 30px;
+            }
+        }
+        .user_name{
+            font-size: 30px;
+        }
+        .textarea_box{
+            textarea{
+                font-size: 28px;
+            }
+        }
+    }
+    .comm_box{
+        .comm_box{
+            .uer_comm{
+                .user_name_box{
+                    font-size: 28px;
+                    .floor_num{
+                        font-size: 24px;
+                    }
+                }
+                .comm_text{
+                    font-size: 30px;
+                }
+                .reply_box{
+                    font-size: 24px;
+                }
+            }
+        }
+        .tab_box{
+            ul{
+                li{
+                    font-size: 30px;
+                }
+            }
+        }
+
+    }
+    .bottom_page_index{
+            p{
+                font-size: 26px;
+            }
+    }
+    .float_bottom_comm_panel{
+        .we_s{
+            p{
+                font-size: 30px;
+            }
+        }
+        .icon_box{
+            div:nth-child(1){
+                span{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+[data-dpr="3"] body{
+     .comm_form_box{
+        .top{
+            span{
+                font-size: 45px;
+            }
+        }
+        .user_name{
+            font-size: 45px;
+        }
+        .textarea_box{
+            textarea{
+                font-size: 42px;
+            }
+        }
+    }
+    .comm_box{
+        .comm_box{
+            .uer_comm{
+                .user_name_box{
+                    font-size: 42px;
+                    .floor_num{
+                        font-size: 24px;
+                    }
+                }
+                .comm_text{
+                    font-size: 45px;
+                }
+                .reply_box{
+                    font-size: 36px;
+                }
+            }
+        }
+        .tab_box{
+            ul{
+                li{
+                    font-size: 45px;
+                }
+            }
+        }
+
+    }
+    .bottom_page_index{
+            p{
+                font-size: 39px;
+            }
+    }
+    .float_bottom_comm_panel{
+        .we_s{
+            p{
+                font-size:15px;
+            }
+        }
+        .icon_box{
+            div:nth-child(1){
+                span{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

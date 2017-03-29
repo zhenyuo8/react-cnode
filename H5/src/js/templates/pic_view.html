@@ -1,0 +1,38 @@
+<div class="large_img swiper-container-fp">
+        
+    <swiper :options="swiperOption" ref="imageSwiper">
+        <swiper-slide v-for="row in list">
+            <img v-bind:data-src="row.imgUrl" class="swiper-lazy">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+        </swiper-slide>
+    </swiper>
+
+    <div class="name">
+        <p class="p1">{{carinfo.serialname}}  {{carinfo.caryear}}款 {{carinfo.name}} </p>
+        <p>{{cateName}} {{index+1}}/{{list.length}}</p>
+    </div>
+
+    <router-link class="morepic" v-if="$route.query.from == 'share'" :to="{  
+                name: 'piclist',
+                query: {
+                    serialId: serialId,
+                    categoryId: categoryId
+                }
+            }"
+        reload>查看更多图片</router-link>
+    
+    <div class="info">
+    
+        <strong>{{carinfo.dealerminprice && carinfo.dealerminprice != '0.00' ? carinfo.dealerminprice + '万起' : '暂无报价' }}</strong>
+        <router-link bdtag="ImagePage_ListPage_PicturePage_InquiryButton_Clicked" class="enquiry_a"
+            :to="{  
+                name: 'price',
+                query: {
+                    serialId: serialId,
+                    carId: carId
+                }
+            }"
+        reload>询底价</router-link>
+    </div>
+
+</div>

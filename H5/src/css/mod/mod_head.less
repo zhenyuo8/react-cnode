@@ -1,0 +1,301 @@
+/*****
+ *@author: jianingning
+ *@from: Global style mod/mod_head
+ *@description:
+ *@date: name (2017.02.13)
+*/
+
+
+
+@import (reference) "../public";
+
+.header{
+    width:100%;
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: 9;
+}
+
+.nav_mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 98;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    filter: alpha(opacity=50);
+    opacity: .5;
+    display: none;
+}
+
+.nav_mask_show{
+    display: block
+}
+
+.head {
+    width: 100%;
+    height: 2.627rem;
+    background: url(../img/head_bg.png);
+    background-size: cover;
+    margin-top: -1px;
+
+    h1 {
+        display: inline-block;
+        float: left;
+        margin: 0.6rem 0 0 0.84rem;
+        font-size: 24px;
+        color: @color-fff;
+    }
+    ul {
+        float: right;
+        margin: 0.493rem 0.547rem 0 0;
+        li {
+            float: left;
+            margin-right: 0.267rem;
+            width: 0.84rem;
+            text-align: center;
+            span {
+               font-size: 12px;
+               color: @color-fff;
+            }
+        }
+        .share_btn {
+            display: block;
+            width: 0.853rem;
+            height: 0.853rem;
+            margin-bottom: 0.133rem;
+            background: url(../img/share.png);
+            background-size: cover;
+            &:active {
+               background: url(../img/share_press.png);
+               background-size: cover;
+            }
+        }
+        .change_btn {
+            display: block;
+            width: 0.853rem;
+            height: 0.853rem;
+            margin-bottom: 0.133rem;
+            background: url(../img/change.png);
+            background-size: cover;
+            &:active {
+               background: url(../img/change_press.png);
+               background-size: cover;
+            }
+        }
+        .nav_btn {
+            display: block;
+            width: 0.853rem;
+            height: 0.853rem;
+            margin-bottom: 0.133rem;
+            background: url(../img/nav.png);
+            background-size: cover;
+            &:active {
+               background: url(../img/nav_press.png);
+               background-size: cover;
+            }
+        }
+        .up {
+            .up_btn {
+                display: block;
+                width: 0.853rem;
+                height: 0.853rem;
+                margin-bottom: 0.133rem;
+                background: url(../img/up.png);
+                background-size: cover;
+                &:active {
+                   background: url(../img/up_press.png);
+                   background-size: cover;
+                }
+            }
+        }
+    }
+}
+[data-dpr="2"] .head {
+    h1 {
+        font-size: 48px;
+    }
+    ul li span {
+        font-size: 24px;
+    }
+}
+[data-dpr="3"] .head {
+    h1 {
+        font-size: 72px;
+    }
+    ul li span {
+        font-size: 36px;
+    }
+}
+.mask{}
+
+.fixbox {
+    /*width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;*/
+    position: relative;
+    z-index: 99;
+
+    .head {
+        width: 100%;
+        height: 2.627rem;
+        background: url(../img/head_bg.png);
+        background-size: cover;
+        margin-top: -1px;
+
+        h1 {
+            display: inline-block;
+            float: left;
+            margin: 0.6rem 0 0 0.84rem;
+            font-size: 24px;
+            color: @color-fff;
+
+            .dealerCity {
+                margin-left: 0.24rem;
+                display: inline-block;
+                height: 0.44rem;
+                line-height: 0.44rem;
+                border-left: 3px solid #fff;
+                padding-left: 0.2rem;
+                font-size: 16px;
+                color: @color-fff;
+
+                img {
+                    display: inline-block;
+                    width: 0.213rem;
+                    height: 0.347rem;
+                    margin-top: 0.067rem;
+                }
+            }
+            a{color:#fff}
+        }
+        ul {
+            float: right;
+            margin: 0.493rem 0.3rem 0 0;
+            li {
+                float: left;
+                img {
+                    display: block;
+                    width: 0.84rem;
+                    height: 0.84rem;
+                    margin: 0 auto 0.133rem auto;
+                }
+                span {
+                   display: block;
+                   font-size: 12px;
+                   color: @color-fff;
+                   /*width: 1.187rem;*/
+                   text-align: center;
+                   white-space: nowrap;
+                }
+            }
+            .active .sort_btn{
+                background: url(../img/pri_sort_h.png);
+                background-size: cover;
+            }
+            .active span{color:#fff193}
+            .sort_btn {
+                display: block;
+                width: 0.853rem;
+                height: 0.853rem;
+                background: url(../img/pri_sort.png);
+                background-size: cover;
+                margin: 0 auto 0.133rem auto;
+            }
+            .sort_press {
+                background: url(../img/pri_sort_h.png);
+                background-size: cover;
+            }
+            .change_btn {
+                display: block;
+                width: 0.853rem;
+                height: 0.853rem;
+                margin: 0 auto 0.133rem auto;
+                background: url(../img/change.png);
+                background-size: cover;
+                &:active {
+                   background: url(../img/change_press.png);
+                   background-size: cover;
+                }
+            }
+            .nav_btn {
+                display: block;
+                width: 0.853rem;
+                height: 0.853rem;
+                margin: 0 auto 0.133rem auto;
+                background: url(../img/nav.png);
+                background-size: cover;
+                &:active {
+                   background: url(../img/nav_press.png);
+                   background-size: cover;
+                }
+            }
+            .up {
+                .up_btn {
+                    display: block;
+                    width: 0.853rem;
+                    height: 0.853rem;
+                    margin: 0 auto 0.133rem auto;
+                    background: url(../img/up.png);
+                    background-size: cover;
+                    &:active {
+                       background: url(../img/up_press.png);
+                       background-size: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+.sort_btn_w span{
+    margin-left:-.05rem;
+}
+
+.page-header{
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    z-index: 99;
+}
+.page-header .fixbox{background: #25a5fe;}
+.page-header .nav_menu{
+    height: auto;
+    background: none;
+}
+.title_bar{
+        /*.bg-jianbian(left,right,@result-blue-bar,@item-color);*/
+        width: 100%;
+        height: 1.333rem /* 100/75 */;
+        padding: 0 4%;
+        /*position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;*/
+        .title_name{
+            color: @color-fff;
+            font-size: .5rem;
+            line-height: 1.333rem /* 100/75 */;
+            float: left;
+        }
+        .more_btn{
+            background-image: url("../img/nav.png");
+            background-size: cover;
+            width: .827rem /* 62/75 */;
+            height: .827rem /* 62/75 */;
+            margin-top: .253rem /* 19/75 */;
+            float: right;
+        }
+        .up_btn{
+            background-image: url("../img/up.png");
+            background-size: cover;
+            width: .827rem /* 62/75 */;
+            height: .827rem /* 62/75 */;
+            margin-top: .253rem /* 19/75 */;
+            float: right;
+        }
+    }

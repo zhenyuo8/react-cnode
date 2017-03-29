@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>汽车大全-视频详情页</title>
+    <link rel="stylesheet" href="http://172.16.0.135:8888/website/css/base.css">
+    <link rel="stylesheet" href="http://172.16.0.135:8888/website/css/videoDetail.css">
+    <link rel="stylesheet" href="http://172.16.0.135:8888/website/css/articleCommentPage.css">
+    <link rel="stylesheet"  href="http://172.16.0.135:8888/website/css/mod/mod_pagination.css"/>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/paginationPage.js"></script>
+    <script src="js/articleComment.js"></script>
+</head>
+<body>
+<div class="main">
+    <!-- header模块 -->
+    <div class="header">
+        <!--nav model -->
+        <!-- 顶部导航模块 -->
+<div class="header_nav">
+    <div class="header_nav_content">
+        <ul class="header_nav_left">
+            <li class="car_all"> <span class="car_all_s"> <a href="index.html" target="_blank" class="bg">汽车大全</a> </span> </li>
+            <li class="address_li"> <span class="default_address"><a href="#">北京</a></span> </li>
+            <li class="city_position" id="city_position"> <span class="changeAdd" id="city_position_qie">切换</span> <span class="triangle" id="city_position_triangle"></span>
+                <div class="city_chose" id="city_chose" style="display: none">
+                    <div class="city_search">
+                        <div class="city_search_input"> <span class="search_btn"> <img src="http://172.16.0.135:8888/website/img/search-btn.png" alt=""> </span> <span> <input type="text" value="请输入城市" class="input" id="input_letters"> <div class="input_letters_search" id="input_letters_search" style="display: none"> <ul id="input_city_search"> <li class="click_to_destiny"> <span><img src="http://172.16.0.135:8888/website/img/city_down_select.png" alt=""></span>                            <span>点击直达</span> </li>
+            <li class="city_search_result"> <span class="city_text">北京</span> <span class="city_letters">beijing</span> </li>
+            <li class="city_search_result"> <span class="city_text">上海</span> <span class="city_letters">shanghai</span> </li>
+            <li class="city_search_result"> <span class="city_text">南昌</span> <span class="city_letters">nanchang</span> </li>
+            <li class="city_search_result"> <span class="city_text">深圳</span> <span class="city_letters">shenzhen</span> </li>
+        </ul>
+        </div>
+        </span> <span class="city_hot_search"> <a href="#">北京</a> <a href="#">上海</a> <a href="#">广州</a> <a href="#">深圳</a> <a href="#">武汉</a> <a href="#">杭州</a> </span> <span class="delete_city"> <img src="http://172.16.0.135:8888/website/img/delete-btn.png" alt=""> </span> </div>
+        </div>
+        <div class="hot_city_num"> <a href="#">A</a> <a href="#">B</a> <a href="#">C</a> <a href="#">N</a> <a href="#">H</a> <a href="#">J</a> <a href="#">X</a> <a href="#">Z</a> </div>
+        <div class="city_chose_region" id="city_chose_region">
+            <!--城市选择模块位置-->
+            <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                    <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+            </dl>
+            <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                    <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+            </dl>
+            <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                    <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+            </dl>
+            <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                    <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+            </dl>
+            <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                    <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+            </dl>
+            <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                    <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+            </dl>
+            <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                    <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+            </dl>
+        </div>
+    </div>
+    </li>
+    <li class="nav_line"> <span></span> </li>
+    <li> <span class="others"><a href="#">查看其他地方车市</a></span> </li>
+    </ul>
+    <ul class="header_nav_right">
+        <li class="header_hover" id="app_id"> <span class="app" id="app"> <a href="#">移动应用</a> </span> <span class="triangle"></span> </li>
+        <li class="nav_line nav_line2" id="nav_line"><span></span></li>
+        <li class="header_hover message_notice" style="display: none"> <em></em> <i></i> <span class="message_drop"> <a href="#"><span>我的询价</span> ><i></i></a> <a href="#"><span>我的问答</span> ><i></i></a> <a href="#"><span>我的评论</span> ><i></i></a> <a href="#"><span>消息中心</span> ><i></i></a> </span>
+        </li>
+        <li class=" header_hover login_third" id="login_third"> <span><a href="#">第三方登录</a></span> <span class="triangle1"></span> <span class="login_third_container"> <a href="#" class="wx"><i></i>微信</a> <a href="#" class="wb"><i></i>微博</a> <a href="#" class="tx_qq"><i></i>QQ</a> </span> </li>
+        <li class="nav_line "
+            id="nav_line2"><span></span></li>
+        <li class="header_hover user_name" style="display: none"> <span><a href="#">conan</a></span> <span class="triangle2"></span> <span class="user_drop"> <span class="latest_view"> <a href="#" class="view_res">最近看过的</a> <a href="#">宝马6系</a> <a href="#">奥迪7系</a> <a href="#">英菲尼迪Q70L</a> </span> <span class="sign_out"> <a href="#">我的收藏</a> <a href="#">退出登录</a> </span>            </span>
+        </li>
+        <li class="header_hover" id="register_id"> <span class="register" id="register"><a href="#">注册</a></span> </li>
+        <li class="bg header_hover" id="login_id"> <span class="login bg"><a href="#">登录</a></span> </li>
+    </ul>
+</div>
+</div>
+    </div>
+
+    <div class="body_nav">
+        <div class="body_nav_container">
+            <div class="location_cur">
+                <span>当前位置：</span>
+                <a href="javascript:void (0)" class="web_title">汽车大全</a> >
+                <a href="javascript:void (0)" class="a_active">网友评论</a>
+            </div>
+        </div>
+        <div class="body_content">
+            <div class="fl body_left">
+                <div class="text_art">
+                    <div class="title">
+                        <h2>东风悦达起亚K2 车型亮点展示Rap版</h2>
+                        <span>[查看原文]</span>
+                    </div>
+                    <form class="my_form">
+                        <textarea class="text_area" placeholder="文明上网，理智发言"></textarea>
+                        <p>
+                            您好，<span class="self-name">张金月</span>
+                            <a href="#" class="exit">【退出】</a>
+                            <input type="button" value="发布" class="submit fr"/>
+                        </p>
+                    </form>
+                </div>
+                <div class="comment_area">
+                    <div class="comment_title">
+                        <ul class="comment_title_ul">
+                            <li class="fl all_comment">全部评论</li>
+                            <li class="fr latest">
+                                <span>最新</span>
+                                <span class="article_line">|</span>
+                                <span>最热</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="comments-con">
+                    <div class="comments-type clearfix">
+                        <dl class="clearfix">
+                            <dt class="fl photo-box po-r">
+                                <img src="http://172.16.0.135:8888/website/img/pic/photo.png" width="60" height="60"/>
+                                <span class="photo-mask"></span>
+                                <span class="floor">120楼</span>
+                            </dt>
+                            <dd class="fr">
+                                <p class="fl nt">
+                                    <span class="c-name">泛滥的极限</span>
+                                    <span class="c-time">前天 04:08</span>
+                                </p>
+                                <p class="c-con fl">
+                                    H1太小，H2太贵，所以除了个H2S来填补产品的空白，倒不如叫H1 PLUS来得更贴切，反正我是没在这辆车上看到长城的诚意，更多的还是商人的逐利。
+                                </p>
+                                <p class="c-zan fr">
+                                    <span class="fl zan_wrap">
+                                        <span class="icon-fine_norme fl"><img src="http://172.16.0.135:8888/website/img/zan_c_03.png" alt=""></span>
+                                        <span class="c-zan-num fl">（33）</span>
+                                    </span>
+                                    <span class="icon-text_norme reply-btn fl"><img src="http://172.16.0.135:8888/website/img/messge_03.png" alt=""></span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="comments-type clearfix">
+                        <dl class="clearfix">
+                            <dt class="fl photo-box po-r">
+                                <img src="http://172.16.0.135:8888/website/img/pic/photo.png" width="60" height="60"/>
+                                <span class="photo-mask"></span>
+                                <span class="floor">120楼</span>
+                            </dt>
+                            <dd class="fr">
+                                <p class="fl nt">
+                                    <span class="c-name">评论者的名称</span>
+                                    <span class="c-time">前天 04:06</span>
+                                </p>
+                                <div class="r_box">
+                                    <div class="c-borderB fl">
+                                        <p>
+                                            <span class="c-borderB-new">苦海发布于2016-12-19 发表在21楼</span>
+                                            <span class="c-borderB-con">2价格太贵，还是选择宝马</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="c-con fl">
+                                    这里是评论的内容这里是评论的内容这里是评论的内容这里是评论的内容这里是评论的内容
+                                </p>
+                                <p class="c-zan fr">
+                                    <span class="fl zan_wrap">
+                                        <span class="icon-fine_norme fl"><img src="http://172.16.0.135:8888/website/img/zan_c_03.png" alt=""></span>
+                                        <span class="c-zan-num fl">（33）</span>
+                                    </span>
+                                    <span class="icon-text_norme reply-btn fl"><img src="http://172.16.0.135:8888/website/img/messge_03.png" alt=""></span>
+                                    <textarea class="reply-box" placeholder="回复："></textarea>
+                                    <input type="button" value="发布" class="reply-release fr"/>
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="comments-type clearfix">
+                        <dl class="clearfix">
+                            <dt class="fl photo-box po-r">
+                                <img src="http://172.16.0.135:8888/website/img/pic/photo.png" width="60" height="60"/>
+                                <span class="photo-mask"></span>
+                                <span class="floor">120楼</span>
+                            </dt>
+                            <dd class="fr">
+                                <p class="fl nt">
+                                    <span class="c-name">评论者的名称</span>
+                                    <span class="c-time">前天 04:06</span>
+                                </p>
+                                <p class="c-con fl">
+                                    这里是评论的内容这里是评论的内容这里是评论的内容这里是评论的内容这里是评论的内容
+                                </p>
+                                <p class="c-zan fr">
+                                    <span class="fl zan_wrap">
+                                        <span class="icon-fine_norme fl"><img src="http://172.16.0.135:8888/website/img/zan_c_03.png" alt=""></span>
+                                        <span class="c-zan-num fl">（33）</span>
+                                    </span>
+                                    <span class="icon-text_norme reply-btn fl"><img src="http://172.16.0.135:8888/website/img/messge_03.png" alt=""></span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="comments-type clearfix">
+                        <dl class="clearfix">
+                            <dt class="fl photo-box po-r">
+                                <img src="http://172.16.0.135:8888/website/img/pic/photo.png" width="60" height="60"/>
+                                <span class="photo-mask"></span>
+                                <span class="floor">120楼</span>
+                            </dt>
+                            <dd class="fr">
+                                <p class="fl nt">
+                                    <span class="c-name">评论者的名称</span>
+                                    <span class="c-time">前天 04:06</span>
+                                </p>
+                                <p class="c-con fl">
+                                    这里是评论的内容这里是评论的内容这里是评论的内容这里是评论的内容这里是评论的内容
+                                </p>
+                                <p class="c-zan fr">
+                                    <span class="fl zan_wrap">
+                                        <span class="icon-fine_norme fl"><img src="http://172.16.0.135:8888/website/img/zan_c_03.png" alt=""></span>
+                                        <span class="c-zan-num fl">（33）</span>
+                                    </span>
+                                    <span class="icon-text_norme reply-btn fl"><img src="http://172.16.0.135:8888/website/img/messge_03.png" alt=""></span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="comments-type clearfix">
+                        <dl class="clearfix">
+                            <dt class="fl photo-box po-r">
+                                <img src="http://172.16.0.135:8888/website/img/pic/photo.png" width="60" height="60"/>
+                                <span class="photo-mask"></span>
+                                <span class="floor">120楼</span>
+                            </dt>
+                            <dd class="fr">
+                                <p class="fl nt">
+                                    <span class="c-name">评论者的名称</span>
+                                    <span class="c-time">前天 04:06</span>
+                                </p>
+                                <p class="c-con fl">
+                                    这里是评论的内容这里是评论的内容这里是评论的内容这里是评论的内容这里是评论的内容
+                                </p>
+                                <p class="c-zan fr">
+                                    <span class="fl zan_wrap">
+                                        <span class="icon-fine_norme fl"><img src="http://172.16.0.135:8888/website/img/zan_c_03.png" alt=""></span>
+                                        <span class="c-zan-num fl">（33）</span>
+                                    </span>
+                                    <span class="icon-text_norme reply-btn fl"><img src="http://172.16.0.135:8888/website/img/messge_03.png" alt=""></span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="comments-type clearfix">
+                        <dl class="clearfix">
+                            <dt class="fl photo-box po-r">
+                                <img src="http://172.16.0.135:8888/website/img/pic/photo.png" width="60" height="60"/>
+                                <span class="photo-mask"></span>
+                                <span class="floor">123楼</span>
+                            </dt>
+                            <dd class="fr">
+                                <p class="fl nt">
+                                    <span class="c-name">评论者的名称</span>
+                                    <span class="c-time">前天 04:06</span>
+                                </p>
+                                <div class="r_box">
+                                    <div class="c-borderB fl">
+                                        <p>
+                                            <span class="c-borderB-new">苦海发布于2016-12-19 发表在21楼</span>
+                                            <span class="c-borderB-con">2价格太贵，还是选择宝马</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="c-con fl">
+                                    这里是评论的内容这里是评论的内容这里是评论的内容这里是评论的内容这里是评论的内容
+                                </p>
+                                <p class="c-zan fr">
+                                    <span class="fl zan_wrap">
+                                        <span class="icon-fine_norme fl"><img src="http://172.16.0.135:8888/website/img/zan_c_03.png" alt=""></span>
+                                        <span class="c-zan-num fl">（33）</span>
+                                    </span>
+                                    <span class="icon-text_norme reply-btn fl"><img src="http://172.16.0.135:8888/website/img/messge_03.png" alt=""></span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="comments-type clearfix">
+                        <dl class="clearfix">
+                            <dt class="fl photo-box po-r">
+                                <img src="http://172.16.0.135:8888/website/img/pic/photo.png" width="60" height="60"/>
+                                <span class="photo-mask"></span>
+                                <span class="floor">120楼</span>
+                            </dt>
+                            <dd class="fr">
+                                <p class="fl nt">
+                                    <span class="c-name">评论者的名称</span>
+                                    <span class="c-time">前天 04:06</span>
+                                </p>
+                                <p class="c-con fl">
+                                    这里是评论的内容这里是评论的内容这里是评论的内容这里是评论的内容这里是评论的内容
+                                </p>
+                                <p class="c-zan fr">
+                                    <span class="fl zan_wrap">
+                                        <span class="icon-fine_norme fl"><img src="http://172.16.0.135:8888/website/img/zan_c_03.png" alt=""></span>
+                                        <span class="c-zan-num fl">（33）</span>
+                                    </span>
+                                    <span class="icon-text_norme reply-btn fl"><img src="http://172.16.0.135:8888/website/img/messge_03.png" alt=""></span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="comments-type clearfix">
+                        <dl class="clearfix">
+                            <dt class="fl photo-box po-r">
+                                <img src="http://172.16.0.135:8888/website/img/pic/photo.png" width="60" height="60"/>
+                                <span class="photo-mask"></span>
+                                <span class="floor">120楼</span>
+                            </dt>
+                            <dd class="fr">
+                                <p class="fl nt">
+                                    <span class="c-name">评论者的名称</span>
+                                    <span class="c-time">前天 04:06</span>
+                                </p>
+                                <div class="r_box">
+                                    <div class="c-borderB fl">
+                                        <p>
+                                            <span class="c-borderB-new">苦海发布于2016-12-19 发表在21楼</span>
+                                            <span class="c-borderB-con">2价格太贵，还是选择宝马</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="c-con fl">
+                                    这里是评论的内容这里是评论的内容这里是评论的内容这里是评论的内容这里是评论的内容
+                                </p>
+                                <p class="c-zan fr">
+                                    <span class="fl zan_wrap">
+                                        <span class="icon-fine_norme fl"><img src="http://172.16.0.135:8888/website/img/zan_c_03.png" alt=""></span>
+                                        <span class="c-zan-num fl">（33）</span>
+                                    </span>
+                                    <span class="icon-text_norme reply-btn fl"><img src="http://172.16.0.135:8888/website/img/messge_03.png" alt=""></span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="comments-type clearfix">
+                        <dl class="clearfix">
+                            <dt class="fl photo-box po-r">
+                                <img src="http://172.16.0.135:8888/website/img/pic/photo.png" width="60" height="60"/>
+                                <span class="photo-mask"></span>
+                                <span class="floor">120楼</span>
+                            </dt>
+                            <dd class="fr">
+                                <p class="fl nt">
+                                    <span class="c-name">评论者的名称</span>
+                                    <span class="c-time">前天 04:06</span>
+                                </p>
+                                <p class="c-con fl">
+                                    H1太小，H2太贵，所以除了个H2S来填补产品的空白，倒不如叫H1 PLUS来得更贴切，反正我是没在这辆车上看到长城的诚意，更多的还是商人的逐利。
+                                </p>
+                                <p class="c-zan fr">
+                                    <span class="fl zan_wrap">
+                                        <span class="icon-fine_norme fl"><img src="http://172.16.0.135:8888/website/img/zan_c_03.png" alt=""></span>
+                                        <span class="c-zan-num fl">（33）</span>
+                                    </span>
+                                    <span class="icon-text_norme reply-btn fl"><img src="http://172.16.0.135:8888/website/img/messge_03.png" alt=""></span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="comments-type clearfix">
+                        <dl class="clearfix">
+                            <dt class="fl photo-box po-r">
+                                <img src="http://172.16.0.135:8888/website/img/pic/photo.png" width="60" height="60"/>
+                                <span class="photo-mask"></span>
+                                <span class="floor">120楼</span>
+                            </dt>
+                            <dd class="fr">
+                                <p class="fl nt">
+                                    <span class="c-name">评论者的名称</span>
+                                    <span class="c-time">前天 04:06</span>
+                                </p>
+                                <p class="c-con fl">
+                                    这里是评论的内容这里是评论的内容这里是评论的内容这里是评论的内容这里是评论的内容
+                                </p>
+                                <p class="c-zan fr">
+                                    <span class="fl zan_wrap">
+                                        <span class="icon-fine_norme fl"><img src="http://172.16.0.135:8888/website/img/zan_c_03.png" alt=""></span>
+                                        <span class="c-zan-num fl">（33）</span>
+                                    </span>
+                                    <span class="icon-text_norme reply-btn fl"><img src="http://172.16.0.135:8888/website/img/messge_03.png" alt=""></span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="comments-type clearfix">
+                        <dl class="clearfix">
+                            <dt class="fl photo-box po-r">
+                                <img src="http://172.16.0.135:8888/website/img/pic/photo.png" width="60" height="60"/>
+                                <span class="photo-mask"></span>
+                                <span class="floor">120楼</span>
+                            </dt>
+                            <dd class="fr">
+                                <p class="fl nt">
+                                    <span class="c-name">评论者的名称</span>
+                                    <span class="c-time">前天 04:06</span>
+                                </p>
+                                <div class="r_box">
+                                    <div class="c-borderB fl">
+                                        <p>
+                                            <span class="c-borderB-new">苦海发布于2016-12-19 发表在21楼</span>
+                                            <span class="c-borderB-con">2价格太贵，还是选择宝马</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="c-con fl">
+                                    这里是评论的内容这里是评论的内容这里是评论的内容这里是评论的内容这里是评论的内容
+                                </p>
+                                <p class="c-zan fr">
+                                    <span class="fl zan_wrap">
+                                        <span class="icon-fine_norme fl"><img src="http://172.16.0.135:8888/website/img/zan_c_03.png" alt=""></span>
+                                        <span class="c-zan-num fl">（33）</span>
+                                    </span>
+                                    <span class="icon-text_norme reply-btn fl"><img src="http://172.16.0.135:8888/website/img/messge_03.png" alt=""></span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="comments-type clearfix">
+                        <dl class="clearfix">
+                            <dt class="fl photo-box po-r">
+                                <img src="http://172.16.0.135:8888/website/img/pic/photo.png" width="60" height="60"/>
+                                <span class="photo-mask"></span>
+                                <span class="floor">120楼</span>
+                            </dt>
+                            <dd class="fr">
+                                <p class="fl nt">
+                                    <span class="c-name">评论者的名称</span>
+                                    <span class="c-time">前天 04:06</span>
+                                </p>
+                                <p class="c-con fl">
+                                    这里是评论的内容这里是评论的内容这里是评论的内容这里是评论的内容这里是评论的内容
+                                </p>
+                                <p class="c-zan fr">
+                                    <span class="fl zan_wrap">
+                                        <span class="icon-fine_norme fl"><img src="http://172.16.0.135:8888/website/img/zan_c_03.png" alt=""></span>
+                                        <span class="c-zan-num fl">（33）</span>
+                                    </span>
+                                    <span class="icon-text_norme reply-btn fl"><img src="http://172.16.0.135:8888/website/img/messge_03.png" alt=""></span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="tcdPageCode"></div>
+            </div>
+            <div class="fr body_right">
+                <div class="v-ranking">
+                    <div class="ranking-lis" id="ranking-lis">
+                        <span class="ranking-title fl">视频播放排行</span>
+                        <p>
+                            <span class="js-menu month fr">月</span>
+                            <span class="js-menu weeks fr blue_text">周</span>
+                        </p>
+                    </div>
+                    <div id="ranking-con-box" class="ranking-con-box">
+                        <div class="js-con ranking-con">
+                            <div class="ranking-play po-r">
+                                <a href="#" target="_blank">
+                                    <img src="http://172.16.0.135:8888/website/img/pic/ranking_img.jpg" width="252" height="168"/>
+                                    <span class="ranking-time-wrap"></span>
+                                    <span class="ranking-time">00:33</span>
+                                    <span class="ranking-play-btn"></span>
+                                </a>
+                            </div>
+                            <ul class="ranking-list">
+                                <li><a href="#" target="_blank"><span class="fl orange">1</span>月饰很“宝马” 实力派7涡轮增压后期保养</a></li>
+                                <li><a href="#" target="_blank"><span class="fl orange">2</span>内饰很“宝马” 实力派7涡轮增压后期保养</a></li>
+                                <li><a href="#" target="_blank"><span class="fl orange">3</span>内饰很“宝马” 实力派7涡轮增压后期保养</a></li>
+                                <li><a href="#" target="_blank"><span class="fl normal">4</span>内饰很“宝马” 实力派7涡轮增压后期保养</a></li>
+                                <li><a href="#" target="_blank"><span class="fl normal">5</span>内饰很“宝马” 实力派7涡轮增压后期保养</a></li>
+                                <li><a href="#" target="_blank"><span class="fl normal">6</span>内饰很“宝马” 实力派7涡轮增压后期保养</a></li>
+                                <li><a href="#" target="_blank"><span class="fl normal">7</span>内饰很“宝马” 实力派7涡轮增压后期保养</a></li>
+                                <li><a href="#" target="_blank"><span class="fl normal">8</span>内饰很“宝马” 实力派7涡轮增压后期保养</a></li>
+                                <li><a href="#" target="_blank"><span class="fl normal">9</span>内饰很“宝马” 实力派7涡轮增压后期保养</a></li>
+                                <li><a href="#" target="_blank"><span class="fl normal">10</span>内饰很“宝马” 实力派7涡轮增压后期保养</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--footer model -->
+    <!-- 底部 -->
+<div class="footer">
+    <div class="footer_content">
+        <ul>
+            <li class="footer_message"><a href="http://www.xingyuanauto.com/" target="_blank">关于我们</a></li>
+            <li class="footer_message"><a href="http://www.xingyuanauto.com/" target="_blank">联系我们</a></li>
+            <li class="footer_message"><a href="http://www.xingyuanauto.com/html/recruitment.html?newtarget=technology" target="_blank">招贤纳士</a></li>
+            <li class="footer_message"><a href="dealer.xingyuanauto.com" target="_blank">行圆智慧云</a></li>
+            <li class="website"><a href="javascript:void (0)">@2016-2017 www .qichedaquan .com All Rights Reserved. 北京行圆汽车信息技术有限公司所有</a></li>
+        </ul>
+    </div>
+</div>
+    <!--goTop model -->
+    <!-- 返回顶部 -->
+<div class="goTop" id="back_to_top"> <span class="goTop_icon"></span> <span class="goTop_text">返回顶部</span></div>
+
+</div>
+<script>
+    $(".tcdPageCode").createPage({
+        pageCount: 100,
+        current: 1,
+        backFn: function (p) {
+            console.log(p)
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>视频</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="stylesheet"  href="http://172.16.0.135:8888/website/css/base.css"/>
+	<link rel="stylesheet"  href="http://172.16.0.135:8888/website/css/video.css"/>
+</head>
+
+<body>
+<!-- header模块 -->
+<div class="header">
+    <!--nav model -->
+    <!-- 顶部导航模块 -->
+<div class="header_nav">
+    <div class="header_nav_content">
+        <ul class="header_nav_left">
+            <li class="first"> <span class="default_address"><a href="javascript:void(0);" class="bg">北京</a></span> </li>
+            <li class="city_position" id="city_position"> <span class="changeAdd" id="city_position_qie">切换</span> <span class="triangle clearfix" id="city_position_triangle"></span>
+                <div class="city_chose clearfix" id="city_chose" style="display: none">
+                    <div class="city_search">
+                        <div class="city_search_input"> <span class="search_btn"> <img src="http://172.16.0.135:8888/website/img/search-btn.png" alt=""> </span> <span> <input type="text" value="请输入城市" class="input" id="input_letters"> <div class="input_letters_search" id="input_letters_search" style="display: none"> <ul id="input_city_search"> <li class="click_to_destiny"> <span><img src="http://172.16.0.135:8888/website/img/city_down_select.png" alt=""></span>                            <span>点击直达</span> </li>
+            <li class="city_search_result"> <span class="city_text">北京</span> <span class="city_letters">beijing</span> </li>
+            <li class="city_search_result"> <span class="city_text">上海</span> <span class="city_letters">shanghai</span> </li>
+            <li class="city_search_result"> <span class="city_text">南昌</span> <span class="city_letters">nanchang</span> </li>
+            <li class="city_search_result"> <span class="city_text">深圳</span> <span class="city_letters">shenzhen</span> </li>
+        </ul>
+        </div>
+        </span> <span class="city_hot_search"> <a href="javascript:void(0);">北京</a> <a href="javascript:void(0);">上海</a> <a href="javascript:void(0);">广州</a> <a href="javascript:void(0);">深圳</a> <a href="javascript:void(0);">武汉</a> <a href="javascript:void(0);">杭州</a> </span>        <span class="delete_city"> <img src="http://172.16.0.135:8888/website/img/delete-btn.png" alt=""> </span> </div>
+        </div>
+        <div class="hot_city_num"> <a href="javascript:void(0);">A</a> <a href="javascript:void(0);">B</a> <a href="javascript:void(0);">C</a> <a href="javascript:void(0);">E</a> <a href="javascript:void(0);">F</a> <a href="javascript:void(0);">G</a> <a href="javascript:void(0);">H</a>            <a href="javascript:void(0);">I</a> <a href="javascript:void(0);">J</a> <a href="javascript:void(0);">K</a> <a href="javascript:void(0);">L</a> <a href="javascript:void(0);">M</a> <a href="javascript:void(0);">N</a> <a href="javascript:void(0);">O</a>            <a href="javascript:void(0);">P</a> <a href="javascript:void(0);">Q</a> <a href="javascript:void(0);">R</a> <a href="javascript:void(0);">S</a> <a href="javascript:void(0);">T</a> <a href="javascript:void(0);">U</a> <a href="javascript:void(0);">W</a>            <a href="javascript:void(0);">X</a> <a href="javascript:void(0);">Y</a> <a href="javascript:void(0);">Z</a> </div>
+        <div class="city_scroll">
+            <div class="city_chose_region" id="city_chose_region">
+                <!--城市选择模块位置-->
+                <dl> <dt> <span class="province_tx">A</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)" cityid="101">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a>                        <a href="javascript:void (0)">六安</a> <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">B</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">C</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">D</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">E</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">F</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">G</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">H</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">I</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">J</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">K</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">L</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">L</span> <span class="province_num">临川</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">M</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">N</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">O</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">P</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">Q</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">R</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">S</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">T</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">U</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">V</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">W</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">X</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">Y</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">X</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+                <dl> <dt> <span class="province_tx">Z</span> <span class="province_num">安徽</span> </dt>
+                    <dd> <a href="javascript:void (0)">合肥</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">芜湖</a> <a href="javascript:void (0)">淮南</a> <a href="javascript:void (0)">马鞍山</a> <a href="javascript:void (0)">黄山</a> <a href="javascript:void (0)">六安</a>                        <a href="javascript:void (0)">池州</a> <a href="javascript:void (0)">宣城</a> <a href="javascript:void (0)">铜陵</a> <a href="javascript:void (0)">安庆</a> </dd>
+                </dl>
+            </div>
+            <div class="scrollbar">
+                <div class="scrollbtn"></div>
+            </div>
+        </div>
+    </div>
+    </li>
+    <li class="nav_line"> <span></span> </li>
+    <li> <span class="others"><a href="javascript:void(0)" target="_blank" id="othersCarId">查看其他地方车市</a></span> </li>
+    </ul>
+    <ul class="header_nav_right">
+        <li class="header_hover" id="app_id"> <span class="app" id="app"> <a href="javascript:void(0);" target="_blank">移动应用</a> </span> <span class="triangle"></span> </li>
+        <li class="nav_line nav_line2" id="nav_line"><span></span></li>
+        <li class="header_hover message_notice" style="display: none"> <em></em> <i></i> <span class="message_drop"> <a href="javascript:void(0);"><span>我的询价</span> ><i></i></a> <a href="javascript:void(0);"><span>我的问答</span> ><i></i></a> <a href="javascript:void(0);"><span>我的评论</span> ><i></i></a> <a href="javascript:void(0);"><span>消息中心</span> ><i></i></a>            </span>
+        </li>
+        <li class=" header_hover login_third" id="login_third"> <span><a href="javascript:void(0);">第三方登录</a></span> <span class="triangle1"></span> <span class="login_third_container"> <a href="javascript:void(0);" class="wx"><i></i>微信</a> <a href="javascript:void(0);" class="wb"><i></i>微博</a> <a href="javascript:void(0);" class="tx_qq"><i></i>QQ</a> </span>            </li>
+        <li class="nav_line" id="nav_line2"><span></span></li>
+        <li class="header_hover user_name" style="display: none"> <span><a href="javascript:void(0);">conan</a></span> <span class="triangle2"></span> <span class="user_drop"> <span class="latest_view"> <a href="javascript:void(0);" class="view_res">最近看过的</a> <a href="javascript:void(0);">宝马6系</a> <a href="javascript:void(0);">奥迪7系</a> <a href="javascript:void(0);">英菲尼迪Q70L</a> </span>            <span class="sign_out"> <a href="javascript:void(0);">我的收藏</a> <a href="javascript:void(0);">退出登录</a> </span> </span>
+        </li>
+        <li class="header_hover" id="register_id"> <span class="register" id="register"><a href="javascript:void (0)" target="_blank">注册</a></span> </li>
+        <li class="bg header_hover" id="login_id"> <span class="login bg"><a href="javascript:void (0)" target="_blank">登录</a></span> </li>
+    </ul>
+</div>
+</div>
+
+    <!--logo model -->
+    <!-- 头部 Logo 及 banner 模块 -->
+<div class="logo">
+    <div class="logo_left">
+        <a href="index.html"> <img src="http://172.16.0.135:8888/website/img/logo_car.png" alt="这是logo图片"> </a>
+    </div>
+    <div class="logo_right">
+        <a href="#">
+            <!-- <img src="http://172.16.0.135:8888/website/img/top-logo-nav.png" alt="这是广告图片"> -->
+            <XYins id="div_a8326c61-5174-49fe-902c-860df07bab64" data-type="ad_play" data-adplay_IP="" data-adplay_AreaName="" data-adplay_CityName="" data-adplay_BrandID="" data-adplay_BrandName="" data-adplay_BrandType="" data-adplay_BlockCode="a8326c61-5174-49fe-902c-860df07bab64">
+            </XYins>
+        </a>
+    </div>
+</div>
+	
+	<!-- 对联广告模块 -->
+    <!-- 广告对联栏 -->
+<div class="ad_duilian_wrap">
+    <!-- <div class="duilian_ad"> <div class="left_ad"> <img src="http://172.16.0.135:8888/website/img/pic/duilian_ad.jpg" alt=""> <a href="javascript:;">点击关闭</a> </div> <div class="right_ad"> <img src="http://172.16.0.135:8888/website/img/pic/duilian_ad.jpg" alt=""> <a href="javascript:;">点击关闭</a> </div> </div> -->
+    <XYins id="div_6fbb66b7-4bbb-4749-9a4e-9363c283aa0c" data-type="ad_play" data-adplay_IP="" data-adplay_AreaName="" data-adplay_CityName="" data-adplay_BrandID="" data-adplay_BrandName="" data-adplay_BrandType="" data-adplay_BlockCode="6fbb66b7-4bbb-4749-9a4e-9363c283aa0c">
+    </XYins>
+</div>
+    <!--menu model -->
+    <!-- 头部菜单模块 -->
+<div class="total_Nav">
+    <div class="total_Nav_Content" id="total_nav_content">
+        <ul>
+            <li class=""><a href="carTypeIndex.html" target="_blank">车型</a></li>
+            <li><a href="imgHome.html" target="_blank">图片</a></li>
+            <li><a href="video.html" target="_blank">视频</a></li>
+            <li><a href="newCar.html" target="_blank">新车</a></li>
+            <li><a href="evaluatingGuide.html" target="_blank">评测</a></li>
+            <li><a href="shoppingGuide.html" target="_blank">导购</a></li>
+            <li><a href="javascript:void(0)" target="_blank">报价</a></li>
+            <li><a href="javascript:void(0)" target="_blank">降价</a></li>
+            <li><a href="javascript:void(0)" target="_blank">经销商</a></li>
+            <li><a href="javascript:void(0)" target="_blank">问答</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+
+<!--content-->
+<div class="videoWrap">
+	<div class="v-title">汽车大全<span>·</span>视频</div>
+    <!--banner视频-->
+	<div class="v-play">
+		<div class="play-l fl" id="js-play-l">
+				<div class="js-con video po-r show">
+					<img src="http://172.16.0.135:8888/website/img/pic/play_big_img1.png" width="736" height="490"/>
+					<a href="videoNews.html" target="_blank"></a>
+				</div>
+				<div class="js-con video po-r">
+					<img src="http://172.16.0.135:8888/website/img/pic/vn-play-img.jpg" width="736" height="490"/>
+					<a href="videoNews.html" target="_blank"></a>
+				</div>
+				<div class="js-con video po-r">
+					<img src="http://172.16.0.135:8888/website/img/pic/play_big_img1.png" width="736" height="490"/>
+					<a href="videoNews.html" target="_blank"></a>
+				</div>
+				<div class="js-con video po-r">
+					<img src="http://172.16.0.135:8888/website/img/pic/vn-play-img.jpg" width="736" height="490"/>
+					<a href="videoNews.html" target="_blank"></a>
+				</div>
+				<div class="js-con video po-r">
+					<img src="http://172.16.0.135:8888/website/img/pic/play_big_img1.png" width="736" height="490"/>
+					<a href="videoNews.html" target="_blank"></a>
+				</div>
+				<div class="js-con video po-r">
+					<img src="http://172.16.0.135:8888/website/img/pic/vn-play-img.jpg" width="736" height="490"/>
+					<a href="videoNews.html" target="_blank"></a>
+				</div>
+				<div class="js-con video po-r">
+					<img src="http://172.16.0.135:8888/website/img/pic/play_big_img1.png" width="736" height="490"/>
+					<a href="videoNews.html" target="_blank"></a>
+				</div>
+				<div class="js-con video po-r">
+					<img src="http://172.16.0.135:8888/website/img/pic/vn-play-img.jpg" width="736" height="490"/>
+					<a href="videoNews.html" target="_blank"></a>
+				</div>
+				<div class="js-con video po-r">
+					<img src="http://172.16.0.135:8888/website/img/pic/play_big_img1.png" width="736" height="490"/>
+					<a href="videoNews.html" target="_blank"></a>
+				</div>
+				<div class="js-con video po-r">
+					<img src="http://172.16.0.135:8888/website/img/pic/vn-play-img.jpg" width="736" height="490"/>
+					<a href="videoNews.html" target="_blank"></a>
+				</div>
+				<div class="js-con video po-r">
+					<img src="http://172.16.0.135:8888/website/img/pic/play_big_img1.png" width="736" height="490"/>
+					<a href="videoNews.html" target="_blank"></a>
+				</div>
+				<div class="js-con video po-r">
+					<img src="http://172.16.0.135:8888/website/img/pic/vn-play-img.jpg" width="736" height="490"/>
+					<a href="videoNews.html" target="_blank"></a>
+				</div>
+		</div>
+		<div class="play-r fr" id="js-play-r">
+			<ul>
+				<li class="js-menu po-r blue_bg">
+					<a href="videoNews.html" target="_blank">
+						<span class="play-r-lis" title="壮汉-雪佛兰科罗拉多ZH2概念车">壮汉-雪佛兰科罗拉多ZH2概念车</span>
+						<span class="play-r-sign"></span>
+					</a>
+				</li>
+				<li class="js-menu po-r">
+					<a href="videoNews.html" target="_blank">
+						<span class="play-r-lis" title="">五分钟带你看懂新车起亚新K2</span>
+						<span class="play-r-sign"></span>
+					</a>
+				</li>
+				<li class="js-menu po-r">
+					<a href="videoNews.html" target="_blank">
+						<span class="play-r-lis" title="">车型亮点展示Rap版</span>
+						<span class="play-r-sign"></span>
+					</a>
+				</li>
+				<li class="js-menu po-r">
+					<a href="videoNews.html" target="_blank">
+						<span class="play-r-lis" title="">2017款科雷傲车型解析</span>
+						<span class="play-r-sign"></span>
+					</a>
+				</li>
+				<li class="js-menu po-r">
+					<a href="videoNews.html" target="_blank">
+						<span class="play-r-lis" title="">壮汉-雪佛兰科罗拉多ZH2概念车</span>
+						<span class="play-r-sign"></span>
+					</a>
+				</li>
+				<li class="js-menu po-r">
+					<a href="videoNews.html" target="_blank">
+						<span class="play-r-lis" title="">五分钟带你看懂新车起亚新K2</span>
+						<span class="play-r-sign"></span>
+					</a>
+				</li>
+				<li class="js-menu po-r">
+					<a href="videoNews.html" target="_blank">
+						<span class="play-r-lis" title="">车型亮点展示Rap版</span>
+						<span class="play-r-sign"></span>
+					</a>
+				</li>
+				<li class="js-menu po-r">
+					<a href="videoNews.html" target="_blank">
+						<span class="play-r-lis" title="">2017款科雷傲车型解析</span>
+						<span class="play-r-sign"></span>
+					</a>
+				</li>
+				<li class="js-menu po-r">
+					<a href="videoNews.html" target="_blank">
+						<span class="play-r-lis" title="">壮汉-雪佛兰科罗拉多ZH2概念车</span>
+						<span class="play-r-sign"></span>
+					</a>
+				</li>
+				<li class="js-menu po-r">
+					<a href="videoNews.html" target="_blank">
+						<span class="play-r-lis" title="">五分钟带你看懂新车起亚新K2</span>
+						<span class="play-r-sign"></span>
+					</a>
+				</li>
+				<li class="js-menu po-r">
+					<a href="videoNews.html" target="_blank">
+						<span class="play-r-lis" title="">车型亮点展示Rap版</span>
+						<span class="play-r-sign"></span>
+					</a>
+				</li>
+				<li class="js-menu po-r">
+					<a href="videoNews.html" target="_blank">
+						<span class="play-r-lis" title="">2017款科雷傲车型解析</span>
+						<span class="play-r-sign"></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--中间内容-->
+	<div class="v-content clearfix">
+	    <div class="v-content-l fl">
+	    	<!--每日推荐-->
+		    <div class="v-recommended clearfix">
+		    	<p class="recommended-title">每日推荐</p>
+		    	<ul class="pub-list  clearfix">
+		    		<li class="fl">
+		    			<a href="videoNews.html" target="_blank">
+			    			<dl class="r-dl po-r">
+			    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+			    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+			    				<dd class="v-time-wrap"></dd>
+			    				<dd class="v-time">00:33</dd>
+			    				<dt class="r-play-btn"></dt>
+			    			</dl>
+			    		</a>
+		    		</li>
+		    		<li class="fl">
+		    		    <a href="videoNews.html" target="_blank">
+			    			<dl class="r-dl po-r">
+			    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+			    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+			    				<dd class="v-time-wrap"></dd>
+			    				<dd class="v-time">00:33</dd>
+			    				<dt class="r-play-btn"></dt>
+			    			</dl>
+			    		</a>
+		    		</li>
+		    		<li class="fl">
+		    			<a href="videoNews.html" target="_blank">
+			    			<dl class="r-dl po-r">
+			    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+			    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+			    				<dd class="v-time-wrap"></dd>
+			    				<dd class="v-time">00:33</dd>
+			    				<dt class="r-play-btn"></dt>
+			    			</dl>
+			    		</a>
+		    		</li>
+		    	</ul>
+		    </div>
+		    <!--最新视频-->
+		    <div class="new-video po-r">
+		    	<ul class="v-list" id="js-v-list">
+		    		<li class="js-menu fl blue_text" newtarget="new_v" id="new_v">最新视频</li>
+		    		<li class="js-menu fl" newtarget="original_v" id="original_v">原创试车</li>
+		    		<li class="js-menu fl" newtarget="advertising_v" id="advertising_v">广告赏析</li>
+		    		<li class="js-menu fl" newtarget="media_v" id="media_v">合作媒体</li>
+		    		<li class="js-menu fl" newtarget="qipa_v" id="qipa_v">奇葩视频</li>
+		    		<li class="js-menu fl" newtarget="official_v" id="official_v">官方视频</li>
+		    	</ul>
+		    	<div class="new-video-box" id="js-new-video-box">
+		    		<div class="js-con new-video-type clearfix show">
+		    			<ul class="pub-list clearfix">
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小1</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    	</ul>
+				    	<div class="load-more">加载更多</div>
+		    		</div>
+		    		<div class="js-con new-video-type clearfix">
+		    			<ul class="pub-list  clearfix">
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    	</ul>
+				    	<div class="load-more">加载更多</div>
+		    		</div>
+		    		<div class="js-con new-video-type clearfix">
+		    			<ul class="pub-list  clearfix">
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    	</ul>
+				    	<div class="load-more">加载更多</div>
+		    		</div>
+		    		<div class="js-con new-video-type clearfix">
+		    			<ul class="pub-list  clearfix">
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    	</ul>
+				    	<div class="load-more">加载更多</div>
+		    		</div>
+		    		<div class="js-con new-video-type clearfix">
+		    			<ul class="pub-list  clearfix">
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    	</ul>
+				    	<div class="load-more">加载更多</div>
+		    		</div>
+		    		<div class="js-con new-video-type clearfix">
+		    			<ul class="pub-list  clearfix">
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" ></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    		<li class="fl">
+				    			<a href="videoNews.html" target="_blank">
+					    			<dl class="r-dl po-r">
+					    				<dt><img src="http://172.16.0.135:8888/website/img/pic/recommended_img.png" /></dt>
+					    				<dd class="v-small-tit">价格不高不低尺寸不大不小</dd>
+					    				<dd class="v-time-wrap"></dd>
+			    						<dd class="v-time">00:33</dd>
+					    				<dt class="r-play-btn"></dt>
+					    			</dl>
+					    		</a>
+				    		</li>
+				    	</ul>
+				    	<div class="load-more">加载更多</div>
+		    		</div>
+		    	</div>
+		    </div>
+	    </div>
+	    <!--视频播放排行-->
+	    <div class="v-ranking fr">
+	    	<!--视频播放排行-->
+<div class="ranking-lis" id="ranking-lis"> <span class="ranking-title fl">视频播放排行</span>
+    <!-- <p> <span class="js-menu month fr">月</span> <span class="js-menu weeks fr blue_text">周</span> </p> -->
+</div>
+<div id="ranking-con-box" class="ranking-con-box">
+    <!-- <div class="js-con ranking-con"> <div class="ranking-play po-r"> <a href="videoNews.html" target="_blank"> <img src="http://172.16.0.135:8888/website/img/pic/ranking_img.jpg" width="252" height="168"/> <span class="ranking-time-wrap"></span> <span class="ranking-time">00:33</span> <span class="ranking-play-btn"></span> </a> </div> <ul class="ranking-list"> <li class="ranking_f_li"> <span class="fl orange">1</span> <a href="videoNews.html" target="_blank">月月月月月 实力派7涡轮增压后期保养</a> </li> <li> <span class="fl orange">2</span> <a href="videoNews.html" target="_blank">内饰很“宝马” 实力派7涡轮增压后期保养</a> </li> <li> <span class="fl orange">3</span> <a href="videoNews.html" target="_blank">内饰很“宝马” 实力派7涡轮增压后期保养</a> </li> <li> <span class="fl">4</span>                 <a href="videoNews.html" target="_blank">内饰很“宝马”实力派7涡轮增压后期保养</a> </li> <li> <span class="fl">5</span>                 <a href="videoNews.html" target="_blank">内饰很“宝马”实力派7涡轮增压后期保养</a> </li> <li> <span class="fl">6</span> <a href="videoNews.html" target="_blank">内饰很“宝马” 实力派7涡轮增压后期保养</a> </li> <li> <span class="fl">7</span> <a href="videoNews.html" target="_blank">内饰很“宝马” 实力派7涡轮增压后期保养</a> </li> <li> <span class="fl">8</span> <a href="videoNews.html" target="_blank">内饰很“宝马” 实力派7涡轮增压后期保养</a> </li> <li> <span class="fl">9</span> <a href="videoNews.html" target="_blank">内饰很“宝马” 实力派7涡轮增压后期保养</a> </li> <li> <span class="fl">10</span> <a href="videoNews.html" target="_blank">内饰很“宝马” 实力派7涡轮增压后期保养</a> </li> </ul> </div> -->
+    <div class="js-con ranking-con show">
+        <div class="ranking-play  po-r">
+            <a href="videoNews.html" target="_blank"> <img src="http://172.16.0.135:8888/website/img/pic/ranking_img.jpg" width="252" height="168" /> <span class="ranking-time-wrap"></span> <span class="ranking-time">00:33</span> <span class="ranking-play-btn"></span> </a>
+        </div>
+        <ul class="ranking-list">
+            <li class="ranking_f_li"> <span class="fl orange">1</span> <a href="videoNews.html" target="_blank">周饰很“宝马” 实力派7涡轮增压后期保养</a> </li>
+            <li> <span class="fl orange">2</span> <a href="videoNews.html" target="_blank">内饰很“宝马” 实力派7涡轮增压后期保养</a> </li>
+            <li> <span class="fl orange">3</span> <a href="videoNews.html" target="_blank">内饰很“宝马” 实力派7涡轮增压后期保养</a> </li>
+            <li> <span class="fl">4</span> <a href="videoNews.html" target="_blank">内饰很“宝马”实力派7涡轮增压后期保养</a> </li>
+            <li> <span class="fl">5</span> <a href="videoNews.html" target="_blank">内饰很“宝马”实力派7涡轮增压后期保养</a> </li>
+            <li> <span class="fl">6</span> <a href="videoNews.html" target="_blank">内饰很“宝马” 实力派7涡轮增压后期保养</a> </li>
+            <li> <span class="fl">7</span> <a href="videoNews.html" target="_blank">内饰很“宝马” 实力派7涡轮增压后期保养</a> </li>
+            <li> <span class="fl">8</span> <a href="videoNews.html" target="_blank">内饰很“宝马” 实力派7涡轮增压后期保养</a> </li>
+            <li> <span class="fl">9</span> <a href="videoNews.html" target="_blank">内饰很“宝马” 实力派7涡轮增压后期保养</a> </li>
+            <li> <span class="fl">10</span> <a href="videoNews.html" target="_blank">内饰很“宝马” 实力派7涡轮增压后期保养</a> </li>
+        </ul>
+    </div>
+</div>
+	    </div>
+	</div>
+</div>
+<!-- 通栏广告模块 -->
+    <div class="car_ad_mod">
+        <a href="#">
+        <!-- <img src="http://172.16.0.135:8888/website/img/car_nav_pg.png" alt=""> -->
+        	<XYins id="div_72b3a99c-dfda-4392-a46a-003f028d8557" data-type="ad_play" data-adplay_IP="" data-adplay_AreaName="" data-adplay_CityName="" data-adplay_BrandID="" data-adplay_BrandName="" data-adplay_BrandType="" data-adplay_BlockCode="72b3a99c-dfda-4392-a46a-003f028d8557"> </XYins>
+        </a>
+    </div>
+<!--footer model -->
+<!-- 底部 -->
+<div class="footer">
+    <div class="footer_content">
+        <ul>
+            <li class="footer_message"><a href="http://www.xingyuanauto.com/" target="_blank">关于我们</a></li>
+            <li class="footer_message"><a href="http://www.xingyuanauto.com/" target="_blank">联系我们</a></li>
+            <li class="footer_message"><a href="http://www.xingyuanauto.com/html/recruitment.html?newtarget=technology" target="_blank">招贤纳士</a></li>
+            <li class="footer_message"><a href="dealer.xingyuanauto.com" target="_blank">行圆智慧云</a></li>
+            <li class="website"><a href="javascript:void (0)">@2016-2017 www .qichedaquan .com All Rights Reserved. 北京行圆汽车信息技术有限公司所有</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--goTop model -->
+<!-- 返回顶部 -->
+<div class="goTop" id="back_to_top"> <span class="goTop_icon"></span> <span class="goTop_text">返回顶部</span></div>
+
+</body>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/video-page-main.js"></script>
+<script src="js/tab.js"></script>
+ <script src="js/underscore.js"></script>
+<script src="js/index.js"></script>
+<script src="js/goTop.js"></script> 
+<script src="js/move.js"></script>
+<script type="text/javascript" src="http://gimg.xingyuanauto.com/js/forwarder.js"></script>
+<script>
+	//tab切换
+	Tab('js-play-r','js-play-l','blue_bg','show','mouseover');
+	Tab('js-v-list','js-new-video-box','blue_text','show','click');
+	//Tab('ranking-lis','ranking-con-box','blue_text','show','click');
+</script>
+</html>

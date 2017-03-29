@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="telephone=no,email=no" name="format-detection">
+	<meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+	<script src="js/flexible_css.js"></script>
+	<script src="js/flexible.js"></script>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/loginIn.js"></script>
+	<title>汽车大全-登录</title>
+
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/loginIn.css">
+</head>
+
+<body>
+
+    <!-- 登录页 -->
+    <div class="login_in">
+		<!-- 标题 -->
+		<div class="pub_head">
+    <a href="javascript:history.back(-1)" class="goback_btn"></a>
+    <a href="http://172.16.0.135:8888/wap/out/index.html"><img src="img/logo_text.png" class="logo_text"></a> <span class="p">●</span> <span class="title_extra">登录</span> <span class="nav_btn"><a href="http://172.16.0.135:8888/wap/out/register.html">注册</a></span></div>
+
+		<!-- 页面tab切换 -->
+		<div class="login_main">
+			<ul class="tab_title clearfix">
+				<li><a class="current" href="#">动态密码登录</a></li>
+				<li><a href="#">账号登录</a></li>
+			</ul>
+			<div class="input_module">
+				<!-- 动态密码登录 -->
+				<div class="trends_password login_swiper">
+					<!-- 输入框 -->
+			        <div class="input_msg">
+			            <p class="phone_num">
+			                <i>手机号：</i>
+			                <input type="text" placeholder="请输入11位手机号" class="phone_input" id="phone_input" maxlength="11">
+							<span class="error_tip phone_error">
+								请输入正确手机号<em></em>
+							</span>
+			                <img src="img/input_delete.png" class="delete delete_phone_num">
+			            </p>
+			            <p class="yzm_num">
+			                <i>验证码：</i>
+			                <input type="text" placeholder="请输入验证码" class="yzm_input" maxlength="4" id="yzm_input">
+							<span class="error_tip yzm_error">
+								请输入正确验证码<em></em>
+							</span>
+							<img src="img/input_delete.png" class="delete delete_yzm_num">
+			                <button class="get_yzm" id="get_yzm">获取验证码</button>
+			                <span class="count_time">60s后重新获取</span>
+			            </p>
+			        </div>
+
+			        <!-- 登录按钮 -->
+			        <div class="login_area">
+						<p class="no_reg_tip">未注册的手机号码将自动创建账号</p>
+			            <a href="#" class="login_btn" id="login">登&nbsp;&nbsp;录</a>
+			        </div>
+
+					<!-- 第三方登录 -->
+					<div class="third_party">
+						<span class="third_title">第三方账号登录</span>
+						<ul class="clearfix">
+							<li class="login_wb">
+								<a href="#">
+									<img src="img/wb.png">
+									<em>微博</em>
+								</a>
+							</li>
+							<li class="login_qq">
+								<a href="#">
+									<img src="img/qq.png">
+									<em>QQ</em>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 账号登录 -->
+				<div class="account_login login_swiper">
+					<!-- 输入框 -->
+			        <div class="input_msg">
+			            <p class="phone_num">
+			                <i>手机号：</i>
+			                <input type="text" placeholder="请输入11位手机号" class="phone_input" maxlength="11" id="account_input">
+							<span class="error_tip phone_error">
+								请输入正确手机号<em></em>
+							</span>
+			                <img src="img/input_delete.png" class="delete delete_phone_num">
+			            </p>
+			            <p class="password_num">
+			                <i>密码：</i>
+			                <input type="password" placeholder="请输入您的密码" minlength="6" maxlength="16" class="password_input password_input_hide" id="input_password">
+							<span class="error_tip password_error">
+								手机号或密码输入错误，请确认后输入<em></em>
+							</span>
+							<img src="img/input_delete.png" class="delete delete_password_num">
+			          		<a href="#" class="eyes">
+								<i class="close"></i>
+							</a>
+			            </p>
+			        </div>
+
+			        <!-- 登录按钮 -->
+			        <div class="login_area">
+			            <a href="#" class="login_btn" id="accountLogin">登&nbsp;&nbsp;录</a>
+						<p class="search_back_pw"><a href="http://172.16.0.135:8888/wap/out/searchback_password.html">找回密码</a></p>
+			        </div>
+
+					<!-- 第三方登录 -->
+					<div class="third_party">
+						<span class="third_title">第三方账号登录</span>
+						<ul class="clearfix">
+							<li class="login_wb">
+								<a href="#">
+									<img src="img/wb.png">
+									<em>微博</em>
+								</a>
+							</li>
+							<li class="login_qq">
+								<a href="#">
+									<img src="img/qq.png">
+									<em>QQ</em>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+</body>
+</html>

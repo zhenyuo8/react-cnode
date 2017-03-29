@@ -1,0 +1,65 @@
+<div class="wrap_bg">
+<carserial-header title="经销商" page="dealer">
+    <span class="dealerCity" slot="title">
+        <a v-on:click="showCitySelector">{{selectedCity.cityname}}</a> <img src="../../img/left_white.png">
+    </span>
+    <div class="fl sort_btn_w" slot="btns" v-if="geoAccess">
+        <li v-bind:class="{active:sortByDistance}" v-on:click="sortByDistance=!sortByDistance" bdtag="DealerPage_DistanceButton_Clicked">
+            <span class="sort_btn"></span>
+            <span>按距离</span>
+        </li>
+    </div>
+</carserial-header>
+<city-selector v-on:select="onSelect" v-bind:initcity="selectedCity" ref="citypicker"></city-selector>
+<div class="wrap">
+    <!--content-->
+    <div id="listWrap_box">
+        <div class="listWrap">
+            <swiper :options="swiperOption" ref="imageSwiper">
+                <swiper-slide  v-for="row in rows">
+                    <dl class="dealer_list clearfix" v-for="el in row">
+                        <router-link bdtag="DealerPage_InquiryButton_Clicked"
+                        :to="{
+                            name: 'price',
+                            query: {
+                                serialId: serialId,
+                                dealerId: el.dealerId
+                            }
+                        }" reload>
+                        <dt class="floor_price">询底价</dt>
+                        </router-link>
+                        <router-link :to="{
+                            name: 'dealer',
+                            query: {
+                                serialId: serialId,
+                                dealerId: el.dealerId
+                            }
+                        }" reload>
+                            <dd class="dealer_name">
+                                [{{el.modelName}}] {{el.shortName}}
+                            </dd>
+                            <dd class="dealer_address">{{el.address}}</dd>
+                            <dd class="car_price">{{el.minSerialPriceDesc}}</dd>
+                            <dd class="distance" v-if="geoAccess && el.distance">
+                                <span></span>距您{{el.distance | formatDistance}}
+                            </dd>   
+                        </a>
+                    </dl>
+                </swiper-slide>
+                <div class="swiper-pagination"  slot="pagination" v-show="rows.length>1"></div>
+            </swiper>
+        </div>
+
+    </div>
+
+    <div class="nothing" v-if="!loading && originData.length===0">
+        <img src="../../img/waiting.png">
+        <p class="waiting_text">数据完善中…</p>
+        <p class="coming">敬请期待</p>
+    </div>
+
+
+
+</div>
+    <div class="next_page"></div>
+</div>

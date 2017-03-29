@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>汽车大全-问答</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="stylesheet"  href="css/base.css"/>
+	<link rel="stylesheet"  href="css/wenda_putong.css"/>
+</head>
+<body>
+<!-- header模块 -->
+<div class="header">
+    <!--nav model -->
+    {{#include ./mod/mod_headerTitle.html}}
+
+    <!--logo model -->
+    {{#include ./mod/mod_headerLogo.html}}
+	
+    <!--menu model -->
+    {{#include ./mod/mod_headerMenu.html}}
+</div>
+
+<!--content-->
+<div class="pt_content">
+	<!--个人信息-->
+	<div class="pt_personal_news">
+		<dl class="pt_per">
+			<dt>
+				<img src="img/pic/zhj_photo.jpg" class="pt_photo">
+				<!--照片默认-->
+				<!-- <img src="" class="pt_photo_nor">-->
+				<span class="pt_photo_mask"></span>
+			</dt>
+			<dd class="pt_name">韩智孝</dd>
+		</dl>
+		<div class="pt_per pt_noborder">
+			<p class="pt_num">总计答题数：<span>19000</span></p>
+			<p class="pt_num pt_num2">本周回答：<span>190</span></p>
+		</div>
+	</div>
+	<!--Ta的提问，问答-->
+	<div class="zhj_answer_box">
+		<ul class="zhj_answer_type" id="zhj_answer_type">
+			<li class="js-menu zhj_first_li zhj_active">Ta的提问</li>
+			<li class="js-menu">Ta的回答</li>
+		</ul>
+		<div class="zhj_answer_content" id="zhj_answer_content">
+			<!--提问-->
+			<div class="js-con zhj_con zhj_show">
+				<div class="zhj_list_wrap">
+					<div class="zhj_con_list">
+						<div class="zhj_text_wrap">
+							<p class="zhj_con_text">
+								昨晚车窗没关好，露了一条缝，刚好下雨，把我里面座椅打湿一半，窗边按钮也打湿到，音响上有小水珠，我拿干毛巾擦干了按钮的水，请问这样昨晚车窗没关好，露了一条缝，刚好下雨，把我里面座椅打湿一半，窗边按钮也打湿到，音响上有小水珠，我拿干毛巾擦干了按钮的水，请问这样昨晚车窗没关好，露了一条缝，刚好下雨，把我里面座椅打湿一半，窗边按钮也打湿到，音响上有小水珠，我拿干毛巾擦干了按钮的水，请问这样啊
+							</p>
+						</div>
+						<p class="zhj_con_sign">
+							<span class="zhj_time">提问时间：<i>2017年1月12日</i></span>
+							<span class="zhj_reply">回复<i>（40）</i></span>
+						</p>
+					</div>
+					<div class="zhj_con_list">
+						<div class="zhj_text_wrap">
+							<p class="zhj_con_text">
+								昨晚车窗没关好，露了一条缝，刚好下雨，把我里面座椅打湿一半，窗边按钮也打湿到，音响上有小水珠，我拿干毛巾擦干了按钮的水
+							</p>
+						</div>
+						<div class="q_image clearfix car-type-introduce-con">
+							<div></div>
+						</div>
+						<p class="zhj_con_sign">
+							<span class="zhj_time">提问时间：<i>2017年1月12日</i></span>
+							<span class="zhj_reply">回复<i>（40）</i></span>
+						</p>
+					</div>
+					<div class="zhj_con_list">
+						<div class="zhj_text_wrap">
+							<p class="zhj_con_text">
+								昨晚车窗没关好，露了一条缝，刚好下雨，把我里面座椅打湿一半，窗边按钮也打湿到，音响上有小水珠，我拿干毛巾擦干了按钮的水
+							</p>
+						</div>
+						<p class="zhj_con_sign">
+							<span class="zhj_time">提问时间：<i>2017年1月12日</i></span>
+							<span class="zhj_reply">回复<i>（40）</i></span>
+						</p>
+					</div>
+					<div class="zhj_con_list">
+						<div class="zhj_text_wrap">
+							<p class="zhj_con_text">
+								昨晚车窗没关好，露了一条缝，刚好下雨，把我里面座椅打湿一半，窗边按钮也打湿到，音响上有小水珠，我拿干毛巾擦干了按钮的水
+							</p>
+						</div>
+						<p class="zhj_con_sign">
+							<span class="zhj_time">提问时间：<i>2017年1月12日</i></span>
+							<span class="zhj_reply">回复<i>（40）</i></span>
+						</p>
+					</div>
+				</div>
+				<!--内容为空时显示-->
+				<div class="zhj_empty">
+					<img src="img/zhj_empty.png">
+				</div>
+			</div>
+			<!--回答-->
+			<div class="js-con zhj_con">
+				<div class="zhj_list_wrap">
+					<div class="zhj_con_list">
+						<p class="zhj_con_text">
+							只要擦擦就好了
+						</p>
+						<span class="zhj_down">展开全文<img src="img/zhj_down.png"></span>
+						<a href="#">
+							<div class="zhj_con_quote">
+								<p>
+									<i>yuser12345发布的内容：</i>
+									<span>
+									“昨晚车窗没关好，露了一条缝，刚好下雨，把我里面座椅打湿一半，窗边按钮也打湿到，音响上有小水珠，我拿干毛巾擦干了按钮的水”“昨晚车窗没关好，露了一条缝，刚好下雨，把我里面座椅打湿一半，窗边按钮也打湿到，音响上有小水珠，我拿干毛巾擦干了按钮的水”
+									</span>
+								</p>
+							</div>
+						</a>
+						<p class="zhj_con_sign">
+							<span class="zhj_time">回答时间：<i>2017年1月12日</i></span>
+							<span class="zhj_zan"><span class="zhj_zan_icon"></span>有用（<i>40</i>）</span>
+						</p>
+					</div>
+					<div class="zhj_con_list">
+						<div class="q_image clearfix car-type-introduce-con">
+							<div></div>
+						</div>
+						<a href="#">
+							<div class="zhj_con_quote">
+								<p>
+									<i>yuser12345发布的内容：</i>
+									<span>
+									“昨晚车窗没关好，露了一条缝，刚好下雨，把我里面座椅打湿一半，窗边按钮也打湿到，音响上有小水珠，我拿干毛巾擦干了按钮的水”
+									</span>
+								</p>
+							</div>
+						</a>
+						<p class="zhj_con_sign">
+							<span class="zhj_time">回答时间：<i>2017年1月12日</i></span>
+							<span class="zhj_zan"><span class="zhj_zan_icon"></span>有用（<i>40</i>）</span>
+						</p>
+					</div>
+					<div class="zhj_con_list">
+						<p class="zhj_con_text">
+							只要擦擦就好了
+						</p>
+						<a href="#">
+							<div class="zhj_con_quote">
+								<p>
+									<i>yuser12345发布的内容：</i>
+									<span>
+								“昨晚车窗没关好，露了一条缝，刚好下雨，把我里面座椅打湿一半，窗边按钮也打湿到，音响上有小水珠，我拿干毛巾擦干了按钮的水”
+									</span>
+								</p>
+							</div>
+						</a>
+						<p class="zhj_con_sign">
+							<span class="zhj_time">回答时间：<i>2017年1月12日</i></span>
+							<span class="zhj_zan"><span class="zhj_zan_icon"></span>有用（<i>40</i>）</span>
+						</p>
+					</div>
+					<div class="zhj_con_list">
+						<p class="zhj_con_text">
+							只要擦擦就好了
+						</p>
+						<a href="#">
+							<div class="zhj_con_quote">
+								<p>
+									<i>yuser12345发布的内容：</i>
+									<span>
+								“昨晚车窗没关好，露了一条缝，刚好下雨，把我里面座椅打湿一半，窗边按钮也打湿到，音响上有小水珠，我拿干毛巾擦干了按钮的水”
+									</span>
+								</p>
+							</div>
+						</a>
+						<p class="zhj_con_sign">
+							<span class="zhj_time">回答时间：<i>2017年1月12日</i></span>
+							<span class="zhj_zan"><span class="zhj_zan_icon"></span>有用（<i>40</i>）</span>
+						</p>
+					</div>
+				</div>
+				<!--分页-->
+				<div class="tcdPageCode"></div>
+				<!--内容为空时显示-->
+				<div class="zhj_empty">
+					<img src="img/zhj_empty.png">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--footer-->
+{{#include ./mod/mod_footer.html}}
+
+</body>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/pagination.js"></script>
+<script src="js/tab.js"></script>
+<script src="js/wenda_zhj.js"></script>
+<script>
+$(function(){
+	$(".tcdPageCode").createPage({
+        pageCount: 31,
+        current: 1,
+        backFn: function (p) {
+            console.log(p)
+        }
+    });
+})
+</script>
+</html>

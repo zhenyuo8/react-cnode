@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>车型大图</title>
+    <script src="../src/js/flexible.js"></script>
+    <link rel="stylesheet" href="../dist/css/base.css">
+	<link rel="stylesheet" href="../dist/css/carType_bigimg.css"/>
+        <link rel="stylesheet" href="../dist/css/swiper-3.4.1.min.css">
+    <style>
+    html,body{position:relative;height:100%;}
+    .swiper-container{width:100%;height:100%;}
+    .swiper-slide{text-align:center;font-size:18px;}
+    .swiper-slide img{width:auto;height:auto;max-width:100%;max-height:100%;-ms-transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);transform:translate(-50%,-50%);position:absolute;left:50%;top:50%;}
+    .cartype_large_img{position: fixed;left:0;top:0; width: 100%}
+    .cartype_large_img .top,.cartype_large_img .footer{z-index: 10}
+    .cartype_large_img .footer{position: absolute;left:0;bottom:0;width:100%}
+    .large_img{display: block}
+    </style>
+
+</head>
+
+<body>
+<div class="cartype_large_img ">
+
+    <div class="swiper-container large_img">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img data-src="http://lorempixel.com/1600/1200/nature/1" class="swiper-lazy">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="http://lorempixel.com/1600/1200/nature/2" class="swiper-lazy">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="http://lorempixel.com/1600/1200/nature/3" class="swiper-lazy">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="http://lorempixel.com/1600/1200/nature/4" class="swiper-lazy">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="http://lorempixel.com/1600/1200/nature/5" class="swiper-lazy">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="http://lorempixel.com/1600/1200/nature/6" class="swiper-lazy">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+        </div>
+
+    <div class="top">
+        <a href="#" class="back"></a>
+        <b>外观</b>（<span class="page_num"></span>）
+        <span class="function">
+            <a href="#" class="down_load" download=""></a>
+            <a href="#" class="share"></a>
+        </span>
+
+    </div>
+    <div class="footer">
+        <strong>17.93万起</strong>
+        <a href="javascript:void(0);" class="enquiry_a">询底价</a>
+    </div>
+
+    </div>
+</div>
+
+<script src="../src/js/components/swiper.js"></script>
+<script>
+
+    var swiper = new Swiper('.swiper-container', {
+        //nextButton: '.swiper-button-next',
+        //prevButton: '.swiper-button-prev',
+        pagination: '.page_num',
+        paginationType: 'fraction',
+        paginationFractionRender: function (swiper, currentClassName, totalClassName) {
+            return '<i class="' + currentClassName + '"></i> / <i class="' + totalClassName + '"></i>'
+        },
+        preloadImages: false,
+        lazyLoading: true,
+        onInit: function(){
+
+        },
+        onSlideChangeEnd: function(swiper){
+            console.log(swiper.activeIndex)
+        }
+    });
+    </script>
+</body>
+</html>

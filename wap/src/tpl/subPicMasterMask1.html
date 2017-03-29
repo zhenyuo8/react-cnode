@@ -1,0 +1,31 @@
+
+<div class="car_type_module">
+		
+	<div class="type_brand">
+		<span class="type_brand_logo"><img src="" alt=""></span>
+		<span class="type_brand_name">{{=it.mastername?it.mastername:''}}</span>
+	</div>
+	{{if(it.brandList) {}}
+	{{ for (var i = 0, l = it.brandList.length; i < l; i++) { }}
+	<div class="type_msg_list">
+		<h5 class="sub_brand_name">{{=it.brandList[i].name}}</h5>
+		{{ for (var j = 0, k = it.brandList[i].carSerialList.length; j < k; j++) { }}
+		<dl data-urlspell="{{=it.brandList[i].carSerialList[j].urlspell}}">							
+			<a href="#">
+				<dt>
+					<img src="{{=it.brandList[i].carSerialList[j].logo}}">
+				</dt>
+				<dd>
+					<p class="type_name">{{=it.brandList[i].carSerialList[j].showname}}</p>
+					<p class="type_price">{{=it.brandList[i].carSerialList[j].dealerminprice}}-{{=it.brandList[i].carSerialList[j].dealermaxprice}}万</p>
+					<p class="type_zd_price">指导价：{{=it.brandList[i].carSerialList[j].minprice}}-{{=it.brandList[i].carSerialList[j].maxprice}}万</p>
+				</dd>
+			</a>
+		</dl>
+		{{ } }}
+	</div>
+	{{ } }}
+	{{ } }}
+</div>
+
+

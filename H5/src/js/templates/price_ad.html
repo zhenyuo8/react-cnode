@@ -1,0 +1,107 @@
+<div class="wrap">
+
+    <div class="page-header">
+        <div class="fixbox">
+            <div class="title_bar clearfix">
+                <img src="../../img/xylogo.png" style="vertical-align:-.04rem;width:2.06rem"> 
+                <a class="title_name" style="float: none"><b class="ball">·</b> 询底价</a> 
+                <a href="http://m.qichedaquan.com/app/qcdq.html" target="_blank" class="p_dl">下载APP</a>
+            </div>
+        </div>
+    </div>
+
+    <!--content-->
+    <div class="content">
+        <div class="car_model">
+            <dl v-on:click="showCarLayer()">
+                <dt><img v-bind:src="carpic"></dt>
+                <dd><b>{{carinfo.serialname}}</b><br>{{carinfo.caryear}}款 {{carinfo.name}}</dd>
+            </dl>
+            <span class="right_btn"></span>
+        </div>
+        <p class="prompt">输入以下信息，商家会尽快与您电话联系</p>
+        <form class="carM_form" v-on:submit.prevent="submit()">
+            <div class="userNews">
+                <span class="condition">姓　名：</span>
+                <label for="userName"><input type="text" class="f_input" name="username" v-model="username" v-on:focus="hideError('username')" v-on:blur="check('username')" /></label>
+                <div class="error_tip" v-show="isUsernameError">
+                    <span class="warn">请输入正确的姓名（1-6个汉字）</span>
+                    <span class="arrow_up"></span>
+                </div>
+            </div>
+            <div class="userNews">
+                <span class="condition">手机号：</span>
+                <label for="tel"><input type="tel" class="f_input" name="phone" maxlength="11" v-model="phone" v-on:focus="hideError('phone')" v-on:blur="check('phone')" /></label>
+                <div class="error_tip" v-show="isPhoneError">
+                    <span class="warn">请输入有效的手机号</span>
+                    <span class="arrow_up"></span>
+                </div>
+            </div>
+            <div class="userNews" v-if="needCode">
+                <span class="condition">验证码：</span>
+                <label for="yz"><input type="number" class="f_input yzm_input" name="yzm" v-model="code"  v-on:focus="hideError('code')" v-on:blur="check('code')" /></label>
+                <button type="button" class="yz_code" v-on:click="sendCode()" v-html="sendCode_text"></button>
+                <div class="error_tip" v-show="isCodeError">
+                    <span class="warn">请输入正确的验证码</span>
+                    <span class="arrow_up"></span>
+                </div>
+            </div>
+            <div class="userNews" v-on:click="showCitySelector" v-show="!dealerId">
+                <span class="condition">购车城市：</span>
+                <label for="buyCity">{{selectedCity.cityname}}</label>
+                <a class="change"><span>更换城市</span><img src="../../img/right.png"></a>
+                <city-selector v-on:select="onSelect" v-bind:initcity="selectedCity" ref="citypicker"></city-selector>
+            </div>
+            <p class="select_prompt" v-if="dealerId">经销商</p>
+            <p class="select_prompt" v-else>最多可选5家经销商（已选<span>{{selectedDealers.length}}</span>家）</p>
+            <ul class="dealer_list">
+                <li class="clearfix" v-for="(el,i) in dealerlist">
+                    <span class="checkbox" v-bind:class="{checkbox_selet:el.selected}" v-on:click="selectDealer(el)"></span>
+                    <a>
+                        <div class="dealer_news">
+                            <p class="dealer">[{{el.modelName}}] {{el.shortName}}<span>{{el.saleArea}}</span></p>
+                            <p class="address">{{el.address}}</p>
+                        </div>
+                        <span class="d_price" v-if="el.price">{{el.price}}万</span>
+                    </a>
+                </li>
+            </ul>
+            <!--footer-->
+            <div class="footer_price">
+                <input type="submit" class="submit" value="提交" bdtag="Inquirypage_OneToOne_SubmitButton_Clicked" v-if="dealerId" />
+                <input type="submit" class="submit" value="提交" bdtag="Inquirypage_OneToMore_SubmitButton_Clicked" v-else />
+            </div>
+        </form>
+    </div>
+
+    <!-- 成功 -->
+    <div class="submit_success2">
+        <p class="tit">提交成功
+        <small class="sub_tit">经销商会尽快与您联系！</small></p>
+        <p class="img"><img src="../../img/p_submit_success.png"></p>
+        <a href="" class="more">查看更多车型</a>
+    </div>
+
+    <!--车款抽屉-->
+    <div class="mask_area" id="mask_area2" v-on:click="hideCarLayer()">
+        <div class="mask"></div>
+        <div class="mask_jt"></div>
+    </div>
+    <div class="cityDrawer clearfix" v-bind:class="{show: carlayerVisible}">
+        <div class="carModels_box">
+            <div class="carModels">
+                <template v-for="row in carlist">
+                    <p class="year_car">{{row.caryear}}款</p>
+                    <template v-for="list in row.data">
+                        <p class="year_carType">{{list.level}}</p>
+                        <ul class="carModels_list">
+                            <li v-for="el in list.data" v-bind:class="{select:carId==el.id}" v-on:click="selectCar(el)"><a>{{el.name}}</a><span></span></li>
+                        </ul>
+                    </template>
+                </template>
+            </div>
+            <img src="../../img/drawer.png" class="drawer">
+        </div>
+    </div>
+
+</div>

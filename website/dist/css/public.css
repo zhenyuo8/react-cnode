@@ -1,0 +1,56 @@
+.background-size {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.a-state:hover {
+  color: #3a8be4;
+  text-decoration: underline;
+}
+.a-state:active {
+  color: #1673d9;
+  text-decoration: underline;
+}
+.text-clip {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: clip;
+}
+.text-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.cursor {
+  cursor: pointer;
+}
+.inline-block {
+  display: inline-block;
+}
+.float_l {
+  float: left;
+}
+.float_r {
+  float: right;
+}
+.position_r {
+  position: relative;
+}
+.position_a {
+  position: absolute;
+}
+.position_f {
+  position: fixed;
+}
+.display_n {
+  display: none;
+}
+.display_b {
+  display: block;
+}
+.display_in {
+  display: inline;
+}
+.display_inB {
+  display: inline-block;
+}

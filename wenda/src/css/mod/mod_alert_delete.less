@@ -1,0 +1,40 @@
+@import (reference)"../public";
+.alert_delete{
+    position: fixed;
+    display: none;
+    left: 0;
+    top:0;
+    width: 100%;
+    height:100%;
+    background-color: rgba(0,0,0,0);
+    & > div{
+        width: 360px;
+        height:180px;
+        margin:0 auto;
+        margin-top: 20%;
+        background-color: @color-fff;
+        border: 1px solid @color-333;
+        border-bottom: @border-b-333;
+        text-align: center;
+        h2{
+            font-weight: 500;
+            margin-top: 50px;
+        }
+        div{
+            margin: 55px 0 20px 0;
+            span{
+                padding: 5px 0;
+            }
+            a{
+                padding: 8px 60px;
+            }
+            .confirm{
+                background-color: @color-eee;
+            }
+            .cancel{
+                background-color: @color-ffa903;
+                color:@color-fff;
+            }
+        }
+    }
+}

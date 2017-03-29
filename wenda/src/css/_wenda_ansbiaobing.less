@@ -1,0 +1,107 @@
+/*****
+ *@author: jianingning
+ *@from: Global style wenda_ansbiaobing.html   向标兵提问
+ *@description: 
+ *@date: name (2017.03.10)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_headerTitle.less";
+@import "mod/mod_headerLogo.less";
+@import "mod/mod_headerMenu.less";
+@import "mod/mod_wendaAnswer.less";
+@import "mod/mod_footer.less";
+
+.lj_content {
+	width: 990px;
+	height: 811px;
+	margin: 0 auto;
+
+	.lj_in {
+		.lj_text {
+			i {
+				margin: 0 10px;
+				font-weight: 700;
+			}
+		}
+	}
+
+	/*右边标兵简介*/
+	.zhj_intro {
+		position: relative;
+		float: right;
+		width: 259px;
+		margin-top: 53px;
+
+		dl {
+			width: 271px;
+			height: 91px;
+			border: 2px solid #eee;
+
+			dt {
+				position: relative;
+				float: left;
+				margin: 15px 13px 0 24px;
+				width: 60px;
+				height: 60px;
+
+				.zhj_photo {
+					display: inline-block;
+					width: 60px;
+					height: 60px;
+				}
+
+				.zhj_photo_mask {
+					position: absolute;
+					top: 0;
+					left: 0;
+					z-index: 2;
+					display: inline-block;
+					width: 60px;
+					height: 60px;
+					background: url(../img/photo_mask.png);
+					&:hover{
+						cursor: pointer;
+					}
+				}
+
+				.zhj_identity_sign {
+					position: absolute;
+					left: -4px;
+					bottom: -8px;
+					z-index: 3;
+				}
+			} 
+			.zhj_name {
+				margin-top: 27px;
+				font-size: 16px;
+				font-weight: 700;
+			}
+			.zhj_identity {
+				margin-top: 5px;
+				font-size: 14px;
+			}
+		}
+		.ans_left_sign {
+			position: absolute;
+			top: 95px;
+			left: 0px;
+		}
+		.ans_right_sign {
+			position: absolute;
+			top: 95px;
+			right: -15px;
+		}
+		.zhj_intro_text {
+			width: 233px;
+			padding: 10px;
+			margin-left: 10px;
+			border: 1px solid #eee;
+			border-top: none;
+			font-size: 12px;
+			line-height: 20px;
+		}
+	}
+}

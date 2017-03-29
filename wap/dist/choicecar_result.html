@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="telephone=no,spanail=no" name="format-detection">
+	<meta name="description" content="选车工具，汽车大全车型频道为您提供按条件选车工具,包括按汽车价格、汽车级别、国产进口、变速方式、汽车排量等方式帮您选择适合并喜欢的汽车品牌……"/>
+	<meta name="keywords" content="选车,选车工具,汽车大全"/>
+	<script src="js/flexible_css.js"></script>
+	<script src="js/flexible.js"></script>
+	<title>选车工具|选车中心｜汽车车型大全-手机汽车大全</title>
+
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/choiceCar_result.css">
+
+</head>
+<body>
+
+	<!--顶部导航-->
+    <div class="pubHeadNav">
+    <div class="logo_box"> <img src="img/xylogo.png" class="nav_logo"> <a href="#" class="login">登录</a>
+        <div class="login_photo">
+            <a href="#"><img src="img/login_photo.png"></a>
+        </div>
+    </div>
+    <ul class="nav_type clearfix">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="choiceCar.html">选车</a></li>
+        <li><a href="article.html">新车</a></li>
+        <li><a href="article.html">评测</a></li>
+        <li class="pubHeadNav_active"><a href="article.html">导购</a></li>
+        <li><a href="picture.html">图片</a></li>
+        <li><a href="videoindex.html">视频</a></li>
+        <li><a href="summarize_zongshu.html">报价</a></li>
+        <li><a href="summarize_zongshu.html">降价</a></li>
+        <li><a href="carstyle_zongshu.html">经销商</a></li>
+        <li><a href="#">问答</a></li>
+    </ul>
+</div>
+<!--导航下面的半透明遮罩-->
+<div class="nav_mask"></div>
+
+    <!-- 筛选结果页 -->
+    <div class="choice_result">
+
+		<!-- 标题 -->
+		<div class="pub_head">
+    <a href="#" class="goback_btn" id="goHistory"></a>
+    <a href="http://m.qichedaquan.com/"><img src="img/logo_text.png" class="logo_text"></a> <span class="p">●</span> <span class="title_extra">筛选结果</span> <span class="nav_btn">导航</span></div>
+
+        <!-- 筛选条件列表 -->
+        <div class="select_condition_nav">
+            <ul class="clearfix">
+                <li data-name="p" data-target="#carPrice"><a><span>价格</span><em></em></a></li>
+                <li data-name="l" data-target="#carLevel"><a><span>级别</span><em></em></a></li>
+                <li data-name="b" data-target="#carBody"><a><span>车身</span><em></em></a></li>
+                <li data-name="c" data-target="#carCountry"><a><span>国别</span><em></em></a></li>
+                <li data-name="d" data-target="#carOutput"><a><span>排放</span><em></em></a></li>
+                <li data-name="t" data-target="#carBiansu"><a><span>变速箱</span><em></em></a></li>
+                <li data-name="more" data-target="#carConfig"><a><span>配置</span><em></em></a></li>
+                <li data-name="other" data-target="#carMore"><a><span>更多</span><em></em></a></li>
+            </ul>
+            <p class="brand_select clearfix">
+                <span class="delete_all_c"><img src="img/delete_ljt.png">清除条件</span>
+                <a href="http://car.m.qichedaquan.com/selbrands" class="brand_s_b">品牌选车<img src="img/back_rightjt.png"></a>
+            </p>
+        </div>
+
+        <!-- 间隔条 -->
+        <div class="bg_bar"></div>
+
+        <!-- 筛选结果列表tab -->
+        <div class="select_result_tab">
+            <ul class="tab_title clearfix">
+                <li data-param="s" data-val="1"><a class="current">关注度</a></li>
+                <li data-param="s" data-val="3"><a>最便宜</a></li>
+                <li data-param="s" data-val="4"><a>最贵</a></li>
+            </ul>
+            <div class="result_module">
+                <div class="sort_swiper high_attention">
+                    <ul></ul>
+                    <div class="load_more_module">
+                        <a class="load_more">加载更多<img src="img/down.png"></a>
+                        <a class="loading"><img src="img/load_icon.png"></a>
+                        <a class="no_more">没有更多了...</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 筛选结果为空 -->
+        <div class="select_resule_none">
+            <img src="img/book_empty.png">
+            <p class="tips">抱歉没有符合条件的车型</p>
+            <p class="clear_condition">清除条件</p>
+        </div>
+
+        <!-- 间隔条 -->
+        <div class="bg_bar"></div>
+
+        <!-- 面包屑导航 -->
+        <div class="small_nav">
+            <a>首页</a><img src="img/back_rightjt.png">
+            <a>条件选车</a><img src="img/rightjt.png">
+            <span>筛选结果</span>
+        </div>
+
+        <!-- 底部版权 -->
+        <div class="video_fte">
+		    <p> <span class="colora4">©&nbsp;&nbsp;2017&nbsp;&nbsp;汽车大全</span> </p>
+		</div>
+
+    </div>
+
+	<!-- 回到顶部 -->
+	<!-- 回到顶部 -->
+<div class="go_top" id="goTop"> <span></span> <i></i></div>
+
+    <!-- 按品牌遮罩层 -->
+    <div class="mask_area">
+        <div class="mask"></div>
+        <div class="mask_jt"></div>
+    </div>
+
+    <!-- 抽屉 -->
+    <div class="chouti">
+        <!-- 第一层 -->
+        <!-- 价格 -->
+        <div class="car_price right_module_odd" id="carPrice">
+            <div class="car_price_list odd_list">
+                <ul>
+                    <li data-param="p" data-val="0" data-text="价格"><a>不限</a></li>
+                    <li data-param="p" data-val="0-5"><a>5万以下</a></li>
+                    <li data-param="p" data-val="5-8"><a>5-8万</a></li>
+                    <li data-param="p" data-val="8-12"><a>8-12万</a></li>
+                    <li data-param="p" data-val="12-18"><a>12-18万</a></li>
+                    <li data-param="p" data-val="18-25"><a>18-25万</a></li>
+                    <li data-param="p" data-val="25-40"><a>25-40万</a></li>
+                    <li data-param="p" data-val="40-80"><a>40-80万</a></li>
+                    <li data-param="p" data-val="80-9999"><a>80万以上</a></li>
+                </ul>
+                <p class="price_area">
+                    <span class="set_price">
+                        <input type="text" placeholder="最低" name="minprice">
+                        <i>—</i>
+                        <input type="text" placeholder="最高" name="maxprice">
+                        <em>万</em>
+                    </span>
+                    <a class="sure_price">确定</a>
+                </p>
+            </div>
+        </div>
+        <!-- 车身 -->
+        <div class="car_body right_module_odd" id="carBody">
+            <div class="car_body_list odd_list">
+                <ul>
+                    <li data-param="b" data-val="0" data-text="车身"><a>不限</a></li>
+                    <li data-param="b" data-val="1"><a>两厢</a></li>
+                    <li data-param="b" data-val="2"><a>三厢</a></li>
+                    <li data-param="b" data-val="3"><a>旅行版</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 国别 -->
+        <div class="car_country right_module_odd" id="carCountry">
+            <div class="car_country_list odd_list">
+                <ul>
+                    <li data-param="c" data-val="0" data-text="国别"><a>不限</a></li>
+                    <li data-param="c" data-val="6"><a>中国</a></li>
+                    <li data-param="c" data-val="1"><a>德系</a></li>
+                    <li data-param="c" data-val="2"><a>日系</a></li>
+                    <li data-param="c" data-val="3"><a>韩系</a></li>
+                    <li data-param="c" data-val="4"><a>美系</a></li>
+                    <li data-param="c" data-val="5"><a>欧系</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 排量 -->
+        <div class="car_output right_module_odd" id="carOutput">
+            <div class="car_output_list odd_list">
+                <ul>
+                    <li data-param="d" data-val="0" data-text="排量"><a>不限</a></li>
+                    <li data-param="d" data-val="0-1.3"><a>1.3L以下</a></li>
+                    <li data-param="d" data-val="1.3-1.6"><a>1.3-1.6L</a></li>
+                    <li data-param="d" data-val="1.7-2.0"><a>1.7-2.0L</a></li>
+                    <li data-param="d" data-val="2.1-3.0"><a>2.1-3.0L</a></li>
+                    <li data-param="d" data-val="3.1-5.0"><a>3.1-5.0L</a></li>
+                    <li data-param="d" data-val="5.0-9"><a>5.0L以上</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 级别 -->
+        <div class="car_level right_module_odd" id="carLevel">
+            <div class="car_output_list odd_list">
+                <ul>
+                    <li data-param="l" data-val="0" data-text="级别"><a>不限</a></li>
+                    <li>
+                        <a data-param="l" data-val="1">轿车</a>
+                        <div class="sub_list">
+                            <a data-param="l" data-val="2">微型车</a>
+                            <a data-param="l" data-val="3">小型车</a>
+                            <a data-param="l" data-val="4">紧凑型车</a>
+                            <a data-param="l" data-val="5">中型车</a>
+                            <a data-param="l" data-val="6">中大型车</a>
+                            <a data-param="l" data-val="7">豪华车</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-param="l" data-val="9">SUV</a>
+                        <div class="sub_list">
+                            <a data-param="l" data-val="10">小型SUV</a>
+                            <a data-param="l" data-val="11">紧凑型SUV</a>
+                            <a data-param="l" data-val="12">中型SUV</a>
+                            <a data-param="l" data-val="13">中大型SUV</a>
+                            <a data-param="l" data-val="14">大型SUV</a>
+                        </div>
+                    </li>
+                    <li data-param="l" data-val="8"><a>MVP</a></li>
+                    <li data-param="l" data-val="15"><a>跑车</a></li>
+                    <li data-param="l" data-val="16"><a>面包车</a></li>
+                    <li data-param="l" data-val="17"><a>皮卡</a></li>
+                    <li data-param="l" data-val="18"><a>客车</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 变速箱 -->
+        <div class="car_biansu right_module_odd" id="carBiansu">
+            <div class="car_biansu_list odd_list">
+                <ul>
+                    <li data-param="t" data-val="0" data-text="变速箱"><a>不限</a></li>
+                    <li data-param="t" data-val="1"><a>手动</a></li>
+                    <li>
+                        <a data-param="t" data-val="2">自动</a>
+                        <div class="sub_list">
+                            <a data-param="t" data-val="3">半自动(AMT)</a>
+                            <a data-param="t" data-val="4">自动(AT)</a>
+                            <a data-param="t" data-val="5">手自一体</a>
+                            <a data-param="t" data-val="6">无极变速</a>
+                            <a data-param="t" data-val="7">双离合</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 配置 -->
+        <div class="car_config right_module_odd" id="carConfig">
+            <div class="car_config_list odd_list">
+                <ul>
+                    <li data-param="more" data-val="0"><a><i></i>天窗</a></li>
+                    <li data-param="more" data-val="1"><a><i></i>GPS导航</a></li>
+                    <li data-param="more" data-val="2"><a><i></i>倒车倒影</a></li>
+                    <li data-param="more" data-val="3"><a><i></i>儿童锁</a></li>
+                    <li data-param="more" data-val="4"><a><i></i>涡轮增压</a></li>
+                    <li data-param="more" data-val="5"><a><i></i>无钥匙启动</a></li>
+                    <li data-param="more" data-val="6"><a><i></i>四轮碟刹</a></li>
+                    <li data-param="more" data-val="7"><a><i></i>真皮座椅</a></li>
+                    <li data-param="more" data-val="8"><a><i></i>ESP</a></li>
+                    <li data-param="more" data-val="9"><a><i></i>疝气大灯</a></li>
+                    <li data-param="more" data-val="10"><a><i></i>定速巡航</a></li>
+                    <li data-param="more" data-val="11"><a><i></i>自动空调</a></li>
+                    <li data-param="more" data-val="12"><a><i></i>胎压监测</a></li>
+                    <li data-param="more" data-val="13"><a><i></i>自动泊车</a></li>
+                    <li data-param="more" data-val="14"><a><i></i>空气净化器</a></li>
+                    <li data-param="more" data-val="15"><a><i></i>换挡拨片</a></li>
+                    <li data-param="more" data-val="16"><a><i></i>电动座椅</a></li>
+                    <li data-param="more" data-val="17"><a><i></i>儿童座椅接口</a></li>
+                </ul>
+                <div class="fixed_btn clearfix">
+                    <span class="delete_all">清空</span>
+                    <a class="finished">完成</a>
+                </div>
+            </div>
+        </div>
+        <!-- 更多 -->
+        <div class="car_more right_module_odd" id="carMore">
+            <div class="car_more_list odd_list">
+                <ul>
+                    <li data-name="dt" data-target="#carQudong"><a>驱动<span><b></b><i></i></span></a></li>
+                    <li data-name="f" data-target="#carRanliao"><a>燃料<span><b></b><i></i></span></a></li>
+                    <li data-name="pf" data-target="#carPaifang"><a>排放<span><b></b><i></i></span></a></li>
+                    <li data-name="dr" data-target="#carChemeng"><a>车门数<span><b></b><i></i></span></a></li>
+                    <li data-name="zw" data-target="#carZuowei"><a>座位数<span><b></b><i></i></span></a></li>
+                </ul>
+                <div class="fixed_btn clearfix">
+                    <span class="delete_all">清空</span>
+                    <a class="finished">完成</a>
+                </div>
+            </div>
+        </div>
+        <!-- 第二层 -->
+        <!-- 驱动 -->
+        <div class="car_qudong right_module_even" id="carQudong">
+            <div class="car_qudong_list even_list">
+                <div class="condition_name"><i></i>驱动</div>
+                <ul>
+                    <li data-param="dt" data-val="0" data-change="false"><a>不限</a></li>
+                    <li data-param="dt" data-val="1" data-change="false"><a>前驱</a></li>
+                    <li data-param="dt" data-val="2" data-change="false"><a>后驱</a></li>
+                    <li>
+                        <a data-param="dt" data-val="3" data-change="false">四驱</a>
+                        <div class="sub_list">
+                            <a data-param="dt" data-val="4" data-change="false">全时四驱</a>
+                            <a data-param="dt" data-val="5" data-change="false">分时四驱</a>
+                            <a data-param="dt" data-val="6" data-change="false">适时四驱</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 燃料 -->
+        <div class="car_ranliao right_module_even" id="carRanliao">
+            <div class="car_ranliao_list even_list">
+                <div class="condition_name"><i></i>燃料</div>
+                <ul>
+                    <li data-param="f" data-val="0" data-change="false"><a>不限</a></li>
+                    <li data-param="f" data-val="1" data-change="false"><a>汽油</a></li>
+                    <li data-param="f" data-val="2" data-change="false"><a>柴油</a></li>
+                    <li data-param="f" data-val="3" data-change="false"><a>纯电动</a></li>
+                    <li data-param="f" data-val="4" data-change="false"><a>油电混动</a></li>
+                    <li data-param="f" data-val="5" data-change="false"><a>油气混动</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 排放 -->
+        <div class="car_paifang right_module_even" id="carPaifang">
+            <div class="car_paifang_list even_list">
+                <div class="condition_name"><i></i>排放</div>
+                <ul>
+                    <li data-param="pf" data-val="0" data-change="false"><a>不限</a></li>
+                    <li data-param="pf" data-val="1" data-change="false"><a>国4</a></li>
+                    <li data-param="pf" data-val="2" data-change="false"><a>国5</a></li>
+                    <li data-param="pf" data-val="3" data-change="false"><a>京5</a></li>
+                    <li data-param="pf" data-val="6" data-change="false"><a>欧4/欧5</a></li>
+                    <li data-param="pf" data-val="7" data-change="false"><a>国5/京5</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 车门数 -->
+        <div class="car_chemeng right_module_even" id="carChemeng">
+            <div class="car_chemeng_list even_list">
+                <div class="condition_name"><i></i>车门数</div>
+                <ul>
+                    <li data-param="dr" data-val="0" data-change="false"><a>不限</a></li>
+                    <li data-param="dr" data-val="1" data-change="false"><a>2-3门</a></li>
+                    <li data-param="dr" data-val="2" data-change="false"><a>4-6门</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 座位数 -->
+        <div class="car_zuowei right_module_even" id="carZuowei">
+            <div class="car_zuowei_list even_list">
+                <div class="condition_name"><i></i>座位数</div>
+                <ul>
+                    <li data-param="zw" data-val="0" data-change="false"><a>不限</a></li>
+                    <li data-param="zw" data-val="1" data-change="false"><a>2座</a></li>
+                    <li data-param="zw" data-val="2" data-change="false"><a>4-5座</a></li>
+                    <li data-param="zw" data-val="3" data-change="false"><a>6座</a></li>
+                    <li data-param="zw" data-val="4" data-change="false"><a>7座</a></li>
+                    <li data-param="zw" data-val="5" data-change="false"><a>7座以上</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- n个车款符合 -->
+        <div class="right_style_module" id="rightStyle">
+            <div class="car_style_module" id="car_style_module">
+
+            </div>
+        </div>
+    </div>
+
+<script type="text/template" id="listTpl">
+{{each DataList as item index}}
+<li>
+    <a href="http://car.m.qichedaquan.com/carSerialSummary/{{ item.urlspell }}">
+        <img src="{{ item.imgurl }}">
+        <div class="type_msg">
+            <p class="type_name">{{ item.showname }}</p>
+            <p class="price_msg clearfix">
+                <span>{{ item.dealerminprice }}-{{ item.dealermaxprice }}万</span>
+                <del class="del_p">{{ item.minprice }}-{{ item.maxprice }}万</del>
+            </p>
+        </div>
+    </a>
+    <p class="more_type_sure clearfix" data-ids="{{ item.caridlist }}" data-urlspell="{{ item.urlspell}}">
+        <span>{{ item.carnum }}款车符合条件</span>
+        <i></i>
+    </p>
+</li>
+{{/each}}
+
+</script>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/libs/template.js"></script>
+<!-- <script src="js/components/carSelectQuery.js"></script> -->
+<script src="js/choiseCarResult.js"></script>
+<script src="js/pubNav.js"></script>
+<script src="js/goTop.js"></script>
+
+</body>
+</html>

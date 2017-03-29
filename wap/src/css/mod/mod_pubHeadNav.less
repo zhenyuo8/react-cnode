@@ -1,0 +1,155 @@
+/*****
+ *@author: jianingning
+ *@from: Global style mod_pubHeadNav   顶部公共导航
+ *@description:
+ *@date: name (2017.02.23)
+*/
+
+
+
+.pubHeadNav {
+    position: absolute;
+    top: 1.173rem;
+    left: 0;
+    z-index: 10002;
+    width: 100%;
+    height: 5.803rem;
+    background: #fff;
+    display: none;
+
+    .logo_box {
+        margin-top: -.187rem;
+        width: 100%;
+        height: 2.293rem;
+        background: url(../img/pubHeadNav_bg.png);
+        background-size: cover;
+
+        .nav_logo {
+            float: left;
+            margin: .88rem 0 0 .4rem;
+            display: inline-block;
+            width: 2.8rem;
+            height: .707rem;
+        }
+        .login {
+            float: right;
+            margin: .813rem .4rem 0 0;
+            display: inline-block;
+            width: 2.0rem;
+            height: .853rem;
+            text-align: center;
+            line-height: .853rem;
+            border: 1px solid #2799fe;
+            border-radius: 5px;
+            background: #fff;
+            font-size: 15px;
+            color: #2799fe;
+            display: none;
+        }
+        .login_photo {
+            float: right;
+            margin: .733rem .4rem 0 0;
+            width: 1.093rem;
+            height: 1.107rem;
+
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+    }
+    .nav_type {
+        li {
+            float: left;
+            width: 24.8%;
+            height: 1.2rem;
+            text-align: center;
+            line-height: 1.2rem;
+            border-right: 1px solid #f3f3f3;
+            border-bottom: 1px solid #f3f3f3;
+
+            a {
+                font-size: 14px;
+                display: block;
+            }
+
+        }
+        .pubHeadNav_active {
+            a {
+                color: #2799fe;
+            }
+        }
+    }
+}
+.nav_mask {
+    position: fixed;
+    top: 1.173rem;
+    left: 0;
+    z-index: 10001;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    filter:alpha(opacity=60);
+    opacity:.6;
+    display: none;
+}
+[data-dpr="2"] .pubHeadNav {
+    .logo_box {
+        .login {
+            font-size: 30px;
+        }
+    }
+    .nav_type {
+        li {
+            a {
+                font-size: 28px;
+            }
+        }
+    }
+}
+[data-dpr="3"] .pubHeadNav {
+    .logo_box {
+        .login {
+            font-size: 45px;
+        }
+    }
+    .nav_type {
+        li {
+            a {
+                font-size: 42px;
+            }
+        }
+    }
+}
+/*匹配dpr=1 320*/
+[data-dpr="1"] .pubHeadNav{
+    @media (max-width: 320px){
+        .nav_type {
+            li {
+                width: 24.6%;
+            }
+        }
+    }
+}
+/*匹配dpr=1 320-360*/
+[data-dpr="1"] .pubHeadNav{
+    @media  (max-width: 360px) and (min-width : 330px){
+        .nav_type {
+            li {
+                width: 24.7%;
+            }
+        }
+    }
+}
+/*匹配dpr=1 360-384*/
+[data-dpr="1"] .pubHeadNav{
+    @media  (max-width: 384px) and (min-width : 370px){
+        .nav_type {
+            li {
+                width: 24.7%;
+            }
+        }
+    }
+}

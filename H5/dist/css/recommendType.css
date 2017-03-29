@@ -1,0 +1,141 @@
+/*****
+ *@author: linyh
+ *@from: Global style recommendType
+ *@description: 陈璐
+ *@date: name (2017.02.18)
+*/
+.recommend_page {
+  height: 100%;
+  position: relative;
+  z-index: 9;
+}
+.recommend_page .page_title {
+  width: 100%;
+  color: #fff;
+}
+.recommend_page .page_title .title {
+  color: #fff;
+  font-size: 24px;
+  line-height: 2.213rem /* 166/75 */;
+  padding-left: 8.267%;
+  float: left;
+}
+.recommend_page .page_title ul {
+  margin: 0.493rem /* 37/75 */ 6.667% 0 0;
+  float: right;
+}
+.recommend_page .page_title ul li {
+  text-align: center;
+  margin: 0 0.133rem /* 10/75 */;
+  float: left;
+}
+.recommend_page .page_title ul li img {
+  width: 0.827rem /* 62/75 */;
+  height: 0.84rem /* 63/75 */;
+  display: block;
+}
+.recommend_page .page_title ul li span {
+  line-height: 0.613rem /* 46/75 */;
+}
+.recommend_page .recommend_main {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: 1rem;
+}
+.recommend_page .recommend_main .recommend_car {
+  font-size: 15px;
+  width: 85.6%;
+  margin: 0 7.2% -0.027rem /* 2/75 */;
+  background-color: #fff;
+  background: linear-gradient(45deg, transparent 11px, #fff 0) bottom left, linear-gradient(-45deg, transparent 11px, #fff 0) bottom right;
+  background-repeat: no-repeat;
+  background-size: 50.5% 100%;
+}
+.recommend_page .recommend_main .recommend_car dl {
+  padding: 0.24rem /* 18/75 */ 0.187rem /* 14/75 */;
+}
+.recommend_page .recommend_main .recommend_car dl a {
+  display: block;
+  padding-bottom: 0.533rem /* 40/75 */;
+}
+.recommend_page .recommend_main .recommend_car dl a img {
+  display: block;
+  margin: 0 auto;
+}
+.recommend_page .recommend_main .recommend_car dl a p {
+  line-height: 0.48rem /* 36/75 */;
+  text-align: center;
+}
+.recommend_page .recommend_main .recommend_car dl a .type_price {
+  color: #de0000;
+  font-weight: 700;
+}
+.recommend_page .recommend_main .recommend_car dl dt img {
+  width: 7.333rem /* 550/75 */;
+  height: 4.88rem /* 366/75 */;
+}
+.recommend_page .recommend_main .recommend_car dl dd a {
+  float: left;
+  width: 50%;
+}
+.recommend_page .recommend_main .recommend_car dl dd a img {
+  width: 4rem /* 300/75 */;
+  height: 2.667rem /* 200/75 */;
+}
+.recommend_page .recommend_main .turn_page {
+  width: 85.6%;
+  height: 1rem /* 75/75 */;
+  text-align: center;
+  margin: 0 7.2%;
+  background-color: #fff;
+  background: linear-gradient(135deg, transparent 11px, #fff 0) top left, linear-gradient(-135deg, transparent 11px, #fff 0) top right;
+  background-repeat: no-repeat;
+  background-size: 50.5% 100%;
+}
+.recommend_page .recommend_main .turn_page i {
+  background-color: #c8c8c8;
+  border: 1px solid #b7b7b7;
+  border-radius: 50%;
+  width: 0.187rem /* 14/75 */;
+  height: 0.187rem /* 14/75 */;
+  display: inline-block;
+  margin: .507rem .053rem 0;
+}
+.recommend_page .recommend_main .turn_page .checked_page {
+  background-color: #2b86ff;
+  width: 0.213rem /* 16/75 */;
+  height: 0.213rem /* 16/75 */;
+  margin-top: 0.493rem /* 37/75 */;
+}
+.recommend_page .next_page {
+  background-image: url("../img/double_down.png");
+  background-size: 100% 100%;
+  width: 0.813rem /* 61/75 */;
+  height: 0.44rem /* 33/75 */;
+  margin-left: -0.4rem /* 30/75 */;
+  position: absolute;
+  left: 50%;
+  bottom: 0.6rem /* 45/75 */;
+}
+/* 字体大小适配 */
+[data-dpr="2"] .recommend_page .page_title .title {
+  font-size: 48px;
+}
+[data-dpr="2"] .recommend_page .recommend_main .recommend_car {
+  font-size: 30px;
+}
+[data-dpr="3"] .recommend_page .page_title .title {
+  font-size: 72px;
+}
+[data-dpr="3"] .recommend_page .recommend_main .recommend_car {
+  font-size: 45px;
+}
+/* 适配iphone4尺寸*/
+@media (max-width: 640px) {
+  [data-dpr="2"] .recommend_page .recommend_car dl {
+    padding: 0;
+  }
+}

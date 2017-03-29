@@ -1,0 +1,143 @@
+/*****
+ *@author: jianingning
+ *@from: 用于视频播放排行
+ *@description: 
+ *@date: name (2017.02.07)
+*/
+.v-ranking .ranking-lis {
+  color: #333;
+  height: 34px;
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: 4px solid #333;
+  margin-bottom: 4px;
+}
+.v-ranking .ranking-lis .ranking-title {
+  display: inline-block;
+}
+.v-ranking .ranking-lis .weeks,
+.v-ranking .ranking-lis .month {
+  font-size: 16px;
+  display: inline-block;
+  cursor: pointer;
+}
+.v-ranking .ranking-lis .weeks {
+  height: 16px;
+  width: 42px;
+  text-align: center;
+  line-height: 16px;
+  margin-right: 12px;
+  margin-top: 8px;
+  border-right: 1px solid #eee;
+}
+.v-ranking .ranking-lis .blue_text {
+  color: #1673D9;
+}
+.v-ranking .ranking-lis .month {
+  margin-top: 5px;
+}
+.v-ranking .ranking-con {
+  display: none;
+}
+.v-ranking .ranking-con .ranking-play {
+  margin-top: 10px;
+  width: 252px;
+  height: 168px;
+  cursor: pointer;
+}
+.v-ranking .ranking-con .ranking-play a .ranking-time-wrap {
+  position: absolute;
+  top: 146px;
+  right: 4px;
+  width: 44px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+  z-index: 2;
+  background: #3a2a25;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.v-ranking .ranking-con .ranking-play a .ranking-time {
+  color: #fff;
+  width: 44px;
+  height: 18px;
+  line-height: 18px;
+  position: absolute;
+  top: 146px;
+  right: 0px;
+  z-index: 3;
+  font-size: 14px;
+}
+.v-ranking .ranking-con .ranking-play a .ranking-play-btn {
+  display: inline-block;
+  background-image: url("../img/sprite.png");
+  background-position: 0px -1400px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -25px;
+  margin-top: -25px;
+  display: none;
+}
+.v-ranking .ranking-con .ranking-play a .ranking-play-btn:hover {
+  background-position: 0px -1455px;
+}
+.v-ranking .show {
+  display: block;
+}
+.v-ranking .ranking-list {
+  width: 252px;
+  height: auto;
+  margin-top: 5px;
+}
+.v-ranking .ranking-list li {
+  line-height: 33px;
+  height: 33px;
+  width: 252px;
+}
+.v-ranking .ranking-list li span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 15px;
+  border: 1px solid #eee;
+  margin-right: 5px;
+  margin-top: 8px;
+}
+.v-ranking .ranking-list li .orange {
+  background: #FFA904;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  line-height: 16px;
+  border: none;
+  color: #fff;
+}
+.v-ranking .ranking-list li a {
+  font-size: 12px;
+  color: #333;
+  display: inline-block;
+  line-height: 33px;
+  height: 33px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.v-ranking .ranking-list li a:hover {
+  text-decoration: underline;
+  color: #126acc;
+}
+.v-ranking .ranking-list li a:active {
+  text-decoration: underline;
+  color: #1064c1;
+}
+.v-ranking .ranking-list li .a_hover {
+  text-decoration: underline;
+  color: #126acc;
+}

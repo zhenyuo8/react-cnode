@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="telephone=no,spanail=no" name="format-detection">
+	<script src="js/flexible_css.js"></script>
+	<script src="js/flexible.js"></script>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/personalCenter_settings.js"></script>
+	<title>汽车大全-个人资料设置</title>
+
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/personalCenter_settings.css">
+</head>
+
+<body>
+	<!-- 首页主页面 -->
+	<div class="index_page">
+			<!-- 头部logo -->
+	    <div class="pub_head">
+	        <a href="javascript:history.back(-1)" class="goback_btn"></a>
+	        <a href="http://172.16.0.135:8888/wap/out/index.html"><img src="img/logo_text.png" class="logo_text"></a>
+	        <span class="p">●</span>
+	        <span class="title_extra">个人资料设置</span>
+	    </div>
+		<div class="content_list clearfix">
+			<!-- 进入个人中心设置默认页面 -->
+			<ul class="default_sys clearfix">
+				<li class="header_image clearfix" id="img_li">
+					<p>
+						<span class="left clearfix">头像</span>
+						<span class="right first_icon icon_right clearfix" ><img src="img/icon_right_03.png" alt=""></span>
+						<span class="right first_img clearfix" id="first_img"><img src="img/wd_user.jpg" alt=""></span>
+					</p>
+				</li>
+				<li class="nick_name name clearfix" id="nick_name">
+					<p>
+						<span class="left clearfix">昵称</span>
+						<span class=" right icon clearfix"><img src="img/icon_settings.png" alt=""></span>
+						<span class="right for_nick clearfix">小白兔</span>
+
+					</p>
+				</li>
+				<li class="true_name name clearfix" id="true_name">
+					<p>
+						<span class="left">真实姓名</span>
+						<span class=" right icon"><img src="img/icon_settings.png" alt=""></span>
+						<span class="right for_name">项羽</span>
+
+					</p>
+				</li>
+				<li class="sex" id="sex_select">
+					<p>
+						<span class="left">性别</span>
+						<span class="right icon_right clearfix" ><img src="img/icon_right_03.png" alt=""></span>
+						<span class="right same_margin" id="sex_id">男</span>
+					</p>
+				</li>
+				<li class="age" id="age_select">
+					<p>
+						<span class="left">年龄</span>
+						<span class="right icon_right clearfix" ><img src="img/icon_right_03.png" alt=""></span>
+						<span class="right same_margin" id="age_id">22</span>
+					</p>
+				</li>
+				<li class="phone">
+					<p>
+						<a href="personalCenter_bindPhone.html">
+							<span class="left">手机号未绑定</span>
+							<span class="right icon_right clearfix" ><img src="img/icon_right_03.png" alt=""></span>
+							<span class="right same_margin">去绑定</span>
+						</a>
+					</p>
+				</li>
+				<li class="third_account">
+					<p>
+						<span class="left"><img src="img/wd_user.jpg" alt=""></span>
+						<span class=" account_name">小白兔</span>
+						<span class="right">新浪微博已绑定</span>
+					</p>
+				</li>
+				<li class="signout">
+					<p>退出登录</p>
+				</li>
+			</ul>
+			<!--更改昵称-->
+			<div class="modify_nick" id="modify_nick">
+				<p class="title">修改昵称</p>
+				<p class="input_p">
+					<input type="text" name="" value="" placeholder="限1-16位汉字,英文，数字，或其组合" maxlength="16">
+					<i></i>
+					<span class="error_msg">昵称要求1-16位汉字,英文，数字，或其组合</span>
+					<span class="error_msg">昵称不能为空</span>
+				</p>
+				<!-- <p class="error_msg"></p> -->
+				<p class="do_p"><span class="cancel" id="cancel">取消</span><span class="confirm" id="confirm">确认</span></p>
+			</div>
+			<!-- 更改真实姓名-->
+			<div class="modify_nick" id="modify_true">
+				<p class="title">真实姓名</p>
+				<p class="input_p">
+					<input type="text" name="" value="" placeholder="限1-6位汉字" maxlength="6">
+					<i></i>
+					<span class="error_msg">真实姓名限1-6位汉字</span>
+				</p>
+				<!-- <p class="error_msg"></p> -->
+				<p class="do_p"><span class="cancel" id="cancel1">取消</span><span class="confirm" id="confirm1">确认</span></p>
+			</div>
+			<!-- 更改性别 -->
+			<div class="modify_sex clearfix">
+				<div class="right clearfix">
+					<ul class="sex_container clearfix">
+						<li>男<i></i></li>
+						<li class="bg">女<i></i></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 更改年龄 -->
+			<div class="modify_age">
+				<div class="right">
+					<ul class="age_container">
+						<li>18</li>
+						<li>19</li>
+						<li class="bg">20 <i></i></li>
+						<li>18</li>
+						<li>19</li>
+						<li>18</li>
+						<li>19</li>
+						<li>18</li>
+						<li>19</li>
+						<li>18</li>
+						<li>19</li>
+						<li>18</li>
+						<li>19</li>
+						<li>18</li>
+						<li>19</li>
+
+					</ul>
+				</div>
+			</div>
+			<!-- 更改头像 -->
+			<div class="header_photo">
+				<div class="photo_chose">
+					<p class="take_photo"><span>拍照</span><i></i></p>
+					<p class="image_storage"><span>照片图库</span><i></i></p>
+				</div>
+				<div class="cancel">
+					<span>取消</span>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="set_footer">
+		<div class="small_nav">
+			<a href="http://172.16.0.135:8888/wap/out/index.html">首页</a>
+			<img src="img/rightjt.png">
+			<a href="http://172.16.0.135:8888/wap/out/personalCenter_index.html">个人中心</a>
+			<img src="img/rightjt.png">
+			<span>个人资料设置</span>
+		</div>
+		{{#include ./mod/mod_footer.html}}
+	</div>
+	<div class="user_img_up">
+		<div class="camera_warp h88">
+		<span class="text_btn po-a">拍照</span>
+		<span class="fr icon po-a">
+			<img src="img/camera.png">
+		</span>
+		<input type="file" accept="image/*" capture="camera" value="" id="camera_input">
+		</div>
+		<div class="img_warp h88">
+		<span class="text_btn po-a">照片图库</span>
+		<span class="fr icon po-a">
+			<img src="img/icon_imageStorage.png">
+		</span>
+			<input type="file" name="">
+		</div>
+		<div class="cancel ">
+		取消
+		</div>
+	</div>
+
+	<!-- 回到顶部 -->
+ 	{{#include mod/mod_goTop.html}}
+
+	<!-- 遮罩层 -->
+	<div class="mask_nojt"></div>
+
+	<!-- load图标弹层 -->
+	<div class="load_mask">
+		<span class="mask"></span>
+		<img src="img/load_w.png">
+	</div>
+
+	<!-- 遮罩层 -->
+	<div class="mask_area">
+		<div class="mask"></div>
+		<div class="mask_jt"></div>
+	</div>
+
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+
+</body>
+</html>

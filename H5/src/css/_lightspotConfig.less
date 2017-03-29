@@ -1,0 +1,121 @@
+/*****
+ *@author: linyh
+ *@from: Global style article
+ *@description: 陈璐
+ *@date: name (2017.02.17)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_head.less";
+
+
+// 亮点配置主页面
+.lightspot_page{
+    padding-top: 32%;
+
+    // 参数列表
+    .para_list{
+        padding: 0 5.2%;
+        font-size: 13px;
+        ul{
+            li{
+                /*border-bottom: 1px solid @border-c6;*/
+                float: left;
+                width: 25%;
+                &.line{
+                    float: none;
+                    clear: left;
+                    width: 100%;
+                    padding: 5%;
+                    background: url(../img/line.png) no-repeat center center;
+                    background-size: 100% 1px; 
+                }
+                a{
+                    display: block;
+                    span{
+                        display: block;
+                        width: 1.68rem /* 126/75 */;
+                        height: 1.68rem /* 126/75 */;
+                        margin: 0 auto;
+                        img{
+                            .img-size;
+                        }
+                    }
+                    em.name{
+                        display: block;
+                        text-align: center;
+                        /*overflow: hidden;
+                        text-overflow:ellipsis;
+                        white-space: nowrap;*/
+                        padding-top: .2rem;
+                        line-height: .4rem;
+                    }
+                }
+                .param_btn{
+                    font-size: 15px;
+                    span{
+                        color: @color-fff;
+                        .bg-jianbian( left top, right bottom, @param-btn-start, @param-btn-end);
+                        border-radius: 50%;
+                        width: 1.76rem /* 132/75 */;
+                        height: 1.76rem /* 132/75 */;
+                    }
+                }
+                .all_param{
+                    em{
+                        display: block;
+                        text-align: center;
+                        width: 60%;
+                        line-height: .48rem /* 36/75 */;
+                        margin: 0 auto;
+                        padding-top: .4rem /* 30/75 */;
+                    }
+                }
+                .xun_price{
+                    em{
+                        display: block;
+                        text-align: center;
+                        line-height: .747rem;
+                        padding-top: .507rem /* 38/75 */;
+                    }
+                }
+            }
+        }
+    }
+
+    // 翻页箭头
+    .next_page{
+        .icon_bg( url("../img/down.png"), .813rem /* 61/75 */, .44rem /* 33/75 */);
+        margin-left: -.4rem /* 30/75 */;
+        position: absolute;
+        left: 50%;
+        bottom: .6rem /* 45/75 */;
+    }
+}
+
+
+/* 字体大小适配 */
+//dpr=2字体大小
+[data-dpr="2"] .lightspot_page{
+    // 参数列表
+    .para_list{
+        font-size: 28px;
+        .param_btn{
+            font-size: 30px;
+        }
+    }
+}
+
+//dpr=3字体大小
+[data-dpr="3"] .lightspot_page{
+    // 参数列表
+    .para_list{
+        font-size: 42px;
+        .param_btn{
+            font-size: 45px;
+        }
+    }
+}
+

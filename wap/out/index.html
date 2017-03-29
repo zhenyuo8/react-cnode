@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="telephone=no,spanail=no" name="format-detection">
+	<meta name="description" content="汽车大全，行圆汽车为您提供最新汽车报价、汽车图片、汽车论坛、汽车评测等精彩内容，同时支持在线询价、底价买车，
+	购车贷款、以旧换新服务。"/>
+	<meta name="keywords" content="汽车，汽车网站，汽车报价，汽车大全，汽车图片，汽车论坛，行圆汽车"/>
+	<script src="js/flexible_css.js"></script>
+	<script src="js/flexible.js"></script>
+	<title>汽车网站｜汽车大全｜汽车报价｜汽车图片｜汽车评测-手机汽车大全,行圆汽车</title>
+
+	<link rel="stylesheet" href="http://static.qcdqcdn.com:8888/wap/css/base.css">
+	<link rel="stylesheet" href="http://static.qcdqcdn.com:8888/wap/css/swiper-3.4.1.min.css">
+	<link rel="stylesheet" href="http://static.qcdqcdn.com:8888/wap/css/index.css">
+
+</head>
+
+<body>
+	<!-- 首页主页面 -->
+	<div class="index_page">
+		<!-- 头部logo -->
+		<header>
+			<a class="logo" href="index.html"><img src="http://static.qcdqcdn.com:8888/wap/img/xylogo.png"></a>
+			<a class="login_in" href="#">
+				<span class="user_out">登录</span>
+				<span class="user_in"><img src="http://static.qcdqcdn.com:8888/wap/img/pic/photo.png"></span>
+			</a>
+		</header>
+
+		<!--首页顶部的蓝色导航-->
+		<ul class="nav">
+    <li class="nav_demo"><a href="choiceCar.html">选车</a></li>
+    <li class="nav_demo"><a href="article.html">新车</a></li>
+    <li class="nav_demo"><a href="article.html">评测</a></li>
+    <li class="nav_demo"><a href="article.html">导购</a></li>
+    <li class="nav_demo no_r"><a href="wenda_index.html">问答</a></li>
+    <li class="nav_demo no_b"><a href="picture.html">图片</a></li>
+    <li class="nav_demo no_b"><a href="videoindex.html">视频</a></li>
+    <li class="nav_demo no_b"><a href="summarize_zongshu.html">报价</a></li>
+    <li class="nav_demo no_b"><a href="summarize_zongshu.html">降价</a></li>
+    <li class="nav_demo no_r no_b"><a href="carstyle_zongshu.html">经销商</a></li>
+</ul>
+
+		<!-- 搜索框 -->
+		<div class="search_bar clearfix">
+			<input type="text" placeholder="请您输入您想找的车">
+			<i></i>
+		</div>
+
+		<!-- tab切换排序 -->
+		<div class="tab_sort">
+			<ul class="tab_title clearfix" id="sortTabTitle">
+				<li><a class="current" href="#">按品牌</a></li>
+				<li><a href="#">按价格</a></li>
+				<li><a href="#">按级别</a></li>
+				<li><a href="#">按热门</a></li>
+			</ul>
+			<div class="tab_module sort_module clearfix" id="sort_module">
+				<div class="swiper_box sort_swiper_box">
+					<ul class="brand_sort clearfix">
+						<li><a href="#"><img src="http://static.qcdqcdn.com:8888/wap/img/pic/bmwlogo.png"><span>宝骏</span></a></li>
+						<li><a href="#"><img src="http://static.qcdqcdn.com:8888/wap/img/pic/bmwlogo.png"><span>宝马宝马宝马</span></a></li>
+						<li><a href="#"><img src="http://static.qcdqcdn.com:8888/wap/img/pic/bmwlogo.png"><span>红旗</span></a></li>
+						<li><a href="#"><img src="http://static.qcdqcdn.com:8888/wap/img/pic/bmwlogo.png"><span>现代</span></a></li>
+						<li><a href="#"><img src="http://static.qcdqcdn.com:8888/wap/img/pic/bmwlogo.png"><span>丰田</span></a></li>
+						<li><a href="#"><img src="http://static.qcdqcdn.com:8888/wap/img/pic/bmwlogo.png"><span>奇瑞</span></a></li>
+						<li><a href="#"><img src="http://static.qcdqcdn.com:8888/wap/img/pic/bmwlogo.png"><span>大众</span></a></li>
+						<li><a href="#"><img src="http://static.qcdqcdn.com:8888/wap/img/pic/bmwlogo.png"><span>福特</span></a></li>
+						<li><a href="#"><img src="http://static.qcdqcdn.com:8888/wap/img/pic/bmwlogo.png"><span>日产</span></a></li>
+						<li><a href="#"><img src="http://static.qcdqcdn.com:8888/wap/img/pic/bmwlogo.png"><span>别克</span></a></li>
+					</ul>
+				</div>
+				<div class="swiper_box sort_swiper_box">
+					<ul class="price_sort clearfix">
+						<li><a href="#">5万以下</a></li>
+						<li><a href="#">5-8万</a></li>
+						<li><a href="#">8-12万</a></li>
+						<li><a href="#">12-18万</a></li>
+						<li><a href="#">18-25万</a></li>
+						<li><a href="#">25-40万</a></li>
+						<li><a href="#">40-48万</a></li>
+						<li><a href="#">80万以上</a></li>
+						<li><a href="#">更多<img src="http://static.qcdqcdn.com:8888/wap/img/back_rightjt.png"></a></li>
+					</ul>
+				</div>
+				<div class="swiper_box sort_swiper_box">
+					<ul class="level_sort clearfix">
+						<li><a href="#">两厢车</a></li>
+						<li><a href="#">三厢车</a></li>
+						<li><a href="#">SUV</a></li>
+						<li><a href="#">MVP</a></li>
+						<li><a href="#">电动车</a></li>
+						<li><a href="#">面包车</a></li>
+						<li><a href="#">皮卡</a></li>
+						<li><a href="#">跑车</a></li>
+						<li><a href="#">更多<img src="http://static.qcdqcdn.com:8888/wap/img/back_rightjt.png"></a></li>
+					</ul>
+				</div>
+				<div class="swiper_box sort_swiper_box">
+					<ul class="hot_sort clearfix">
+						<li><a href="#"><img src="http://static.qcdqcdn.com:8888/wap/img/pic/tab_hotcar.png"><span>荣威RX5</span></a></li>
+						<li><a href="#"><img src="http://static.qcdqcdn.com:8888/wap/img/pic/tab_hotcar.png"><span>最多六个汉字</span></a></li>
+						<li><a href="#"><img src="http://static.qcdqcdn.com:8888/wap/img/pic/tab_hotcar.png"><span>奥迪A6</span></a></li>
+						<li><a href="#"><img src="http://static.qcdqcdn.com:8888/wap/img/pic/tab_hotcar.png"><span>荣威RX5</span></a></li>
+						<li><a href="#"><img src="http://static.qcdqcdn.com:8888/wap/img/pic/tab_hotcar.png"><span>汉兰达</span></a></li>
+						<li><a href="#"><img src="http://static.qcdqcdn.com:8888/wap/img/pic/tab_hotcar.png"><span>奥迪A6</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- 广告banner -->
+		<div class="ad_banner">
+			<div class="banner_box swiper-container">
+				<ul class="swiper-wrapper clearfix">
+					<li class="swiper-slide">
+						<a href="#">
+							<img src="http://static.qcdqcdn.com:8888/wap/img/pic/ad_banner.png">
+							<p class="mask_bar"></p>
+							<p class="text_bar">瑞虎新车型售万万元售瑞虎新车型售万万元售</p>
+						</a>
+					</li>
+					<li class="swiper-slide">
+						<a href="#">
+							<img src="http://static.qcdqcdn.com:8888/wap/img/pic/ad_banner.png">
+							<p class="mask_bar"></p>
+							<p class="text_bar">222瑞虎3X新车型售7.69万/8.39万元</p>
+						</a>
+					</li>
+					<li class="swiper-slide">
+						<a href="#">
+							<img src="http://static.qcdqcdn.com:8888/wap/img/pic/ad_banner.png">
+							<p class="mask_bar"></p>
+							<p class="text_bar">333瑞虎3X新车型售7.69万/8.39万元</p>
+						</a>
+					</li>
+					<li class="swiper-slide">
+						<a href="#">
+							<img src="http://static.qcdqcdn.com:8888/wap/img/pic/ad_banner.png">
+							<p class="mask_bar"></p>
+							<p class="text_bar">444瑞虎3X新车型售7.69万/8.39万元</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="swiper_num"></div>
+		</div>
+
+		<!-- 轮播图 -->
+
+		<!-- 新闻模块 -->
+		<div class="news_module">
+			<ul class="tab_title clearfix" id="newsTabTitle">
+				<li><a class="current" href="javascript:void(0);">最新</a></li>
+				<li><a href="javascript:void(0);">新车</a></li>
+				<li><a href="javascript:void(0);">评测</a></li>
+				<li><a href="javascript:void(0);">导购</a></li>
+			</ul>
+			<div class="tab_module news_content" id="news_content">
+				<div class="swiper_box news_swiper_box">
+					<div class="swiper_news newest_news">
+						<div class="news_list">
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">最新最新最新最新最新最新 起亚GT预告片再次发布  </dd>
+								    <dd class="minor">
+								        <span class="date ad_logo">广告</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+						</div>
+						<div class="load_more_module">
+							<a href="#" class="load_more">加载更多<img src="http://static.qcdqcdn.com:8888/wap/img/down.png"></a>
+							<a href="#" class="loading"><img src="http://static.qcdqcdn.com:8888/wap/img/load_icon.png"></a>
+							<a href="#" class="more">进入文章频道页<img src="http://static.qcdqcdn.com:8888/wap/img/arrow_right_blue.png"></a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper_box news_swiper_box">
+					<div class="swiper_news newcar_news">
+						<div class="news_list">
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">新车新车新车新车新车 起亚GT预告片再次发布  </dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+						</div>
+						<div class="load_more_module">
+							<a href="#" class="load_more">加载更多<img src="http://static.qcdqcdn.com:8888/wap/img/down.png"></a>
+							<a href="#" class="loading"><img src="http://static.qcdqcdn.com:8888/wap/img/load_icon.png"></a>
+							<a href="#" class="more">进入文章频道页<img src="http://static.qcdqcdn.com:8888/wap/img/arrow_right_blue.png"></a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper_box news_swiper_box">
+					<div class="swiper_news evaluating_news">
+						<div class="news_list">
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">评测评测评测评测评测评测 起亚GT预告片再次发布  </dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+						</div>
+						<div class="load_more_module">
+							<a href="#" class="load_more">加载更多<img src="http://static.qcdqcdn.com:8888/wap/img/down.png"></a>
+							<a href="#" class="loading"><img src="http://static.qcdqcdn.com:8888/wap/img/load_icon.png"></a>
+							<a href="#" class="more">进入文章频道页<img src="http://static.qcdqcdn.com:8888/wap/img/arrow_right_blue.png"></a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper_box news_swiper_box">
+					<div class="swiper_news shopping_guide_news">
+						<div class="news_list">
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">导购导购导购导购导购导购 起亚GT预告片再次发布  </dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+							<dl class="article_list clearfix">
+								<a href="#">
+									<dt><img src="http://static.qcdqcdn.com:8888/wap/img/pic/img1.jpg"></dt>
+								    <dd class="synopsis">起亚GT预告片再次发布 有望北美车展亮相</dd>
+								    <dd class="minor">
+								        <span class="date">10-16</span>
+								        <span class="pinlun">355评论</span>
+								    </dd>
+								</a>
+							</dl>
+						</div>
+						<div class="load_more_module">
+							<a href="#" class="load_more">加载更多<img src="http://static.qcdqcdn.com:8888/wap/img/down.png"></a>
+							<a href="#" class="loading"><img src="http://static.qcdqcdn.com:8888/wap/img/load_icon.png"></a>
+							<a href="#" class="more">进入文章频道页<img src="http://static.qcdqcdn.com:8888/wap/img/arrow_right_blue.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 通栏广告位 -->
+		<div class="ad_bar"><a href="#"><img src="http://static.qcdqcdn.com:8888/wap/img/pic/index_ad1.jpg"></a></div>
+
+		<!-- 视频模块 -->
+		<div class="video_module">
+			<h3 class="module_title"><span>汽车视频</span></h3>
+			<div class="video_list clearfix">
+				<dl>
+					<a href="#">
+						<dt>
+							<img src="http://static.qcdqcdn.com:8888/wap/img/pic/video_car.png">
+							<span></span>
+							<i>03:05</i>
+						</dt>
+						<dd>2017款东风本田杰德 搭全新1.5T发动机</dd>
+					</a>
+				</dl>
+				<dl>
+					<a href="#">
+						<dt>
+							<img src="http://static.qcdqcdn.com:8888/wap/img/pic/video_car.png">
+							<span></span>
+							<i>03:05</i>
+						</dt>
+						<dd>2017款东风本田杰德 搭全新1.5T发动机</dd>
+					</a>
+				</dl>
+				<dl>
+					<a href="#">
+						<dt>
+							<img src="http://static.qcdqcdn.com:8888/wap/img/pic/video_car.png">
+							<span></span>
+							<i>03:05</i>
+						</dt>
+						<dd>2017款东风本田杰德 搭全新1.5T发动机</dd>
+					</a>
+				</dl>
+				<dl>
+					<a href="#">
+						<dt>
+							<img src="http://static.qcdqcdn.com:8888/wap/img/pic/video_car.png">
+							<span></span>
+							<i>03:05</i>
+						</dt>
+						<dd>2017款东风本田杰德 搭全新1.5T发动机</dd>
+					</a>
+				</dl>
+			</div>
+			<div class="load_more_module">
+				<a href="videoindex.html" class="more">查看更多视频<img src="http://static.qcdqcdn.com:8888/wap/img/arrow_right_blue.png"></a>
+			</div>
+		</div>
+
+		<!-- 间隔条 -->
+		<div class="bg_bar"></div>
+
+		<!-- 猜你喜欢 -->
+		<div class="guess_like">
+			<h3 class="module_title guess_like_title">
+				<span>猜你喜欢</span>
+				<a href="javascript:void(0);" id="changeLike"><em></em>换一换</a>
+			</h3>
+			<div class="guess_like_list clearfix">
+				<dl>
+					<a href="#">
+						<dt>
+							<img src="http://static.qcdqcdn.com:8888/wap/img/pic/guess_like_car.png">
+						</dt>
+						<dd>
+							<p class="type_name">奥迪A4L11111</p>
+							<p class="type_price"><span class="start_pri">16.57万起</span><span class="down_pri"><i></i>2.95万</span></p>
+						</dd>
+					</a>
+					<a class="question_price_link" href="#">询底价</a>
+				</dl>
+				<dl>
+					<a href="#">
+						<dt>
+							<img src="http://static.qcdqcdn.com:8888/wap/img/pic/guess_like_car.png">
+						</dt>
+						<dd>
+							<p class="type_name">奥迪A4L</p>
+							<p class="type_price"><span class="start_pri">16.57万起</span><span class="down_pri"><i></i>2.95万</span></p>
+						</dd>
+					</a>
+					<a class="question_price_link" href="#">询底价</a>
+				</dl>
+				<dl>
+					<a href="#">
+						<dt>
+							<img src="http://static.qcdqcdn.com:8888/wap/img/pic/guess_like_car.png">
+						</dt>
+						<dd>
+							<p class="type_name">奥迪A4L</p>
+							<p class="type_price"><span class="start_pri">16.57万起</span><span class="down_pri"><i></i>2.95万</span></p>
+						</dd>
+					</a>
+					<a class="question_price_link" href="#">询底价</a>
+				</dl>
+				<dl>
+					<a href="#">
+						<dt>
+							<img src="http://static.qcdqcdn.com:8888/wap/img/pic/guess_like_car.png">
+						</dt>
+						<dd>
+							<p class="type_name">奥迪A4L</p>
+							<p class="type_price"><span class="start_pri">16.57万起</span><span class="down_pri"><i></i>2.95万</span></p>
+						</dd>
+					</a>
+					<a class="question_price_link" href="#">询底价</a>
+				</dl>
+				<dl>
+					<a href="#">
+						<dt>
+							<img src="http://static.qcdqcdn.com:8888/wap/img/pic/guess_like_car.png">
+						</dt>
+						<dd>
+							<p class="type_name">奥迪A4L222222</p>
+							<p class="type_price"><span class="start_pri">16.57万起</span><span class="down_pri"><i></i>2.95万</span></p>
+						</dd>
+					</a>
+					<a class="question_price_link" href="#">询底价</a>
+				</dl>
+				<dl>
+					<a href="#">
+						<dt>
+							<img src="http://static.qcdqcdn.com:8888/wap/img/pic/guess_like_car.png">
+						</dt>
+						<dd>
+							<p class="type_name">奥迪A4L</p>
+							<p class="type_price"><span class="start_pri">16.57万起</span><span class="down_pri"><i></i>2.95万</span></p>
+						</dd>
+					</a>
+					<a class="question_price_link" href="#">询底价</a>
+				</dl>
+				<dl>
+					<a href="#">
+						<dt>
+							<img src="http://static.qcdqcdn.com:8888/wap/img/pic/guess_like_car.png">
+						</dt>
+						<dd>
+							<p class="type_name">奥迪A4L</p>
+							<p class="type_price"><span class="start_pri">16.57万起</span><span class="down_pri"><i></i>2.95万</span></p>
+						</dd>
+					</a>
+					<a class="question_price_link" href="#">询底价</a>
+				</dl>
+				<dl>
+					<a href="#">
+						<dt>
+							<img src="http://static.qcdqcdn.com:8888/wap/img/pic/guess_like_car.png">
+						</dt>
+						<dd>
+							<p class="type_name">奥迪A4L</p>
+							<p class="type_price"><span class="start_pri">16.57万起</span><span class="down_pri"><i></i>2.95万</span></p>
+						</dd>
+					</a>
+					<a class="question_price_link" href="#">询底价</a>
+				</dl>
+			</div>
+		</div>
+
+		<!-- 通栏广告位 -->
+		<div class="ad_bar"><a href="#"><img src="http://static.qcdqcdn.com:8888/wap/img/pic/index_ad2.jpg"></a></div>
+
+		<!-- 上市新车 -->
+		<div class="market_newcar">
+			<h3 class="module_title market_title">
+				<span>上市新车</span>
+				<a href="#">更多<em></em></a>
+			</h3>
+			<div class="newcar_list">
+				<ul>
+					<li>
+						<a href="#">
+							<img src="http://static.qcdqcdn.com:8888/wap/img/pic/marketcar.png">
+							<p class="type_name">奥迪A4L</p>
+							<p class="type_price">16.57万起</p>
+							<p class="type_time">12月15日 新上市</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="http://static.qcdqcdn.com:8888/wap/img/pic/marketcar.png">
+							<p class="type_name">奥迪A4L</p>
+							<p class="type_price">16.57万起</p>
+							<p class="type_time">12月15日 新上市</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="http://static.qcdqcdn.com:8888/wap/img/pic/marketcar.png">
+							<p class="type_name">奥迪A4L</p>
+							<p class="type_price">16.57万起</p>
+							<p class="type_time">12月15日 新上市</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="http://static.qcdqcdn.com:8888/wap/img/pic/marketcar.png">
+							<p class="type_name">奥迪A4L</p>
+							<p class="type_price">16.57万起</p>
+							<p class="type_time">12月15日 新上市</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="http://static.qcdqcdn.com:8888/wap/img/pic/marketcar.png">
+							<p class="type_name">奥迪A4L</p>
+							<p class="type_price">16.57万起</p>
+							<p class="type_time">12月15日 新上市</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="market_news">
+				<a href="#"><em></em><i>2月14日</i><span>四款15万做偶遇紧凑车型推荐</span></a>
+				<a href="#"><em></em><i>2月14日</i><span>四款15万做偶遇紧凑车型推荐遇紧凑车型推荐</span></a>
+				<a href="#"><em></em><i>2月14日</i><span>四款15万做偶遇紧凑车型推荐</span></a>
+				<a href="#"><em></em><i>2月14日</i><span>四款15万做偶遇紧凑车型推荐</span></a>
+			</div>
+		</div>
+
+		<!-- 间隔条 -->
+		<div class="bg_bar"></div>
+
+		<!-- 车市 -->
+		<div class="car_city">
+			<h3 class="module_title city_title">
+				<span>北京车市</span>
+				<a id="choice_city" href="javascript:void(0);">切换城市<em></em></a>
+			</h3>
+			<div class="city_tab_title_box">
+				<ul class="tab_title city_tab_title" id="cityTabTitle">
+					<li><a class="current" href="javascript:void(0);">5万以下</a></li>
+					<li><a href="javascript:void(0);">5-8万</a></li>
+					<li><a href="javascript:void(0);">8-12万</a></li>
+					<li><a href="javascript:void(0);">12-18万</a></li>
+					<li><a href="javascript:void(0);">18-25万</a></li>
+					<li><a href="javascript:void(0);">25-40万</a></li>
+					<li><a href="javascript:void(0);">40万以上</a></li>
+				</ul>
+			</div>
+			<div class="city_main_box">
+				<div class="city_main clearfix" id="city_main">
+					<div class="city_swiper_box">
+						<ul>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">5万以下</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">奥迪A4L</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">奥迪A4L</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">奥迪A4L</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">奥迪A4L</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+						</ul>
+					</div>
+					<div class="city_swiper_box">
+						<ul>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">5-8万</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">奥迪A4L</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">奥迪A4L</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">奥迪A4L</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">奥迪A4L</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+						</ul>
+					</div>
+					<div class="city_swiper_box">
+						<ul>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">8-12万</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">奥迪A4L</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">奥迪A4L</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">奥迪A4L</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">奥迪A4L</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+						</ul>
+					</div>
+					<div class="city_swiper_box">
+						<ul>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">12-18万</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">奥迪A4L</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">奥迪A4L</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">奥迪A4L</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">奥迪A4L</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+						</ul>
+					</div>
+					<div class="city_swiper_box">
+						<ul>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">18-25万</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">奥迪A4L</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">奥迪A4L</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">奥迪A4L</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">奥迪A4L</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+						</ul>
+					</div>
+					<div class="city_swiper_box">
+						<ul>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">25-40万</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">奥迪A4L</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">奥迪A4L</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">奥迪A4L</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">奥迪A4L</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+						</ul>
+					</div>
+					<div class="city_swiper_box">
+						<ul>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">40万以上</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">奥迪A4L</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">奥迪A4L</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">奥迪A4L</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+							<li class="clearfix">
+								<a class="car_msg" href="#">
+									<img src="http://static.qcdqcdn.com:8888/wap/img/pic/citycar.png">
+									<span class="main_msg">
+										<i class="type_name">奥迪A4L</i>
+										<i class="type_price">9.93-15.36万</i>
+									</span>
+									<span class="down_price"><em></em>3.95</span>
+								</a>
+								<a class="que_price" href="#">询底价</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 通栏广告位 -->
+		<div class="ad_bar"><a href="#"><img src="http://static.qcdqcdn.com:8888/wap/img/pic/index_ad3.jpg"></a></div>
+
+		<!-- 底部 -->
+		<footer>
+			<p class="link_pc"><a href="#"><i></i>访问电脑版</a></p>
+			<p>© 2017 汽车大全</p>
+		</footer>
+	</div>
+
+	<!-- 回到顶部 -->
+	<!-- 回到顶部 -->
+<div class="go_top" id="goTop"> <span></span> <i></i></div>
+
+	<!-- 遮罩层 -->
+	<div class="mask_area">
+		<div class="mask"></div>
+		<div class="mask_jt"></div>
+	</div>
+
+	<!-- 右侧省份层 -->
+	<div class="right_module_province">
+		<div class="province_scroll_module">
+			<dl class="current_province">
+				<dt>当前定位城市</dt>
+				<dd>安徽</dd>
+			</dl>
+			<dl class="zxs_province">
+				<dt>直辖市</dt>
+				<dd><span>北京</span><span>天津</span><span>上海</span><span>重庆</span></dd>
+			</dl>
+			<div class="other_province" id="otherProvince">
+				<dl>
+					<dt>A</dt>
+					<dd><span>安徽</span><i></i></dd>
+				</dl>
+				<dl>
+					<dt>B</dt>
+					<dd><span class="zxs">北京</span></dd>
+				</dl>
+				<dl>
+					<dt>C</dt>
+					<dd><span class="zxs">重庆</span></dd>
+				</dl>
+				<dl>
+					<dt>F</dt>
+					<dd><span>福建</span><i></i></dd>
+				</dl>
+				<dl>
+					<dt>G</dt>
+					<dd><span id="gz">贵州</span><i></i></dd>
+					<dd><span>甘肃</span><i></i></dd>
+					<dd><span>广东</span><i></i></dd>
+					<dd><span>广西</span><i></i></dd>
+				</dl>
+				<dl>
+					<dt>H</dt>
+					<dd><span>湖北</span><i></i></dd>
+					<dd><span>湖南</span><i></i></dd>
+					<dd><span>河北</span><i></i></dd>
+					<dd><span>河南</span><i></i></dd>
+					<dd><span>海南</span><i></i></dd>
+					<dd><span>黑龙江</span><i></i></dd>
+				</dl>
+				<dl>
+					<dt>J</dt>
+					<dd><span>江西</span><i></i></dd>
+					<dd><span>江苏</span><i></i></dd>
+					<dd><span>吉林</span><i></i></dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+
+	<!-- 右侧市层-->
+	<div class="right_module_city">
+		<ul>
+			<li class="checked_province"><a href="#"><i></i>安徽</a></li>
+			<li><a href="#">合肥</a></li>
+			<li><a href="#">安庆</a></li>
+			<li><a href="#">阜阳</a></li>
+			<li><a href="#">蚌埠</a></li>
+			<li><a href="#">六安</a></li>
+			<li><a href="#">淮北</a></li>
+			<li><a href="#">淮南</a></li>
+			<li><a href="#">芜湖</a></li>
+			<li><a href="#">黄山</a></li>
+			<li><a href="#">宿州</a></li>
+			<li><a href="#">池州</a></li>
+			<li><a href="#">马鞍山</a></li>
+			<li><a href="#">滁州</a></li>
+			<li><a href="#">宣城</a></li>
+			<li><a href="#">铜陵</a></li>
+			<li><a href="#">亳州</a></li>
+		</ul>
+	</div>
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/goTop.js"></script>
+	<script type="text/javascript" src='js/swiper-3.4.1.min.js'></script>
+	<script type="text/javascript">
+        var swiper = new Swiper('.swiper-container', {
+                    autoplay: 3000,//可选选项，自动滑动,
+					loop: true,
+                    pagination: '.swiper_num',
+                    paginationType: 'fraction',
+					paginationElement : 'span',
+					paginationFractionRender: function (swiper, currentClassName, totalClassName) {
+					   return '<span class="' + currentClassName + '"></span> / <span class="' + totalClassName + '"></span>'
+				   }
+        });
+    </script>
+</body>
+</html>

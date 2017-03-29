@@ -1,0 +1,2906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=8,9,10,11">
+    <title>汽车大全—行圆汽车</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/indexModule.css">
+    <link rel="stylesheet" href="css/spriteLight.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/carBanner.js"></script>
+    <script src="js/carSearch.js"></script>
+    <script src="js/tab.js"></script>
+    <script src="js/goTop.js"></script>
+
+</head>
+<body>
+
+<div class="main">
+    <!-- header模块 -->
+    <div class="header">
+        <!--nav model -->
+        {{#include ./mod/mod_headerTitle.html}}
+
+        <!--logo model -->
+        {{#include ./mod/mod_headerLogo.html}}
+
+        <!-- 对联广告模块 -->
+        {{#include ./mod/mod_advert.html}}
+
+        <!--menu model -->
+        {{#include ./mod/mod_headerMenu.html}}
+    </div>
+
+    <!--carIcons模块-->
+    <div class="carIcons">
+        <div class="carIcons_detail">
+            <ul id="carIcon_detail_ul" class="carIcon_detail_ul">
+                <li>
+                    <a href="#"><span class="icons ">
+                        <i class="icon-wxc-norme"></i>
+                    </span>
+                        <span class="ver_line">|</span>
+                        <span class="icon_text">微型车</span></a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icons">
+                        <i class="icon-xxc-norme"></i>
+                    </span>
+                        <span class="ver_line">|</span>
+                        <span class="icon_text">小型车</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                         <span class="icons">
+                        <i class="icon-jcc-norme"></i>
+                    </span>
+                        <span class="ver_line">|</span>
+                        <span class="icon_text">紧凑型车</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                          <span class="icons">
+                        <i class="icon-zxc-norme"></i>
+                    </span>
+                        <span class="ver_line">|</span>
+                        <span class="icon_text">中型车</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#">
+                          <span class="icons">
+                        <i class="icon-zdxc-norme"></i>
+                    </span>
+                        <span class="ver_line">|</span>
+                        <span class="icon_text">大中型车</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#">
+                         <span class="icons">
+                        <i class="icon-hhc-norme"></i>
+                    </span>
+                        <span class="ver_line">|</span>
+                        <span class="icon_text">豪华车</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                         <span class="icons">
+                        <i class="icon-suv-norme"></i>
+                    </span>
+                        <span class="ver_line">|</span>
+                        <span class="icon_text">SUV</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                         <span class="icons ">
+                        <i class="icon-mvp"></i>
+                    </span>
+                        <span class="ver_line">|</span>
+                        <span class="icon_text">MPV</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#">
+                         <span class="icons">
+                        <i class="icon-pcc-norme"></i>
+                    </span>
+                        <span class="ver_line">|</span>
+                        <span class="icon_text">跑车</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icons ">
+                        <i class="icon-mbc-norme"></i>
+                    </span>
+                        <span class="ver_line">|</span>
+                        <span class="icon_text">面包车</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icons">
+                        <i class="icon-xny-norme"></i>
+                    </span>
+                        <span class="ver_line">|</span>
+                        <span class="icon_text">电动车</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icons ">
+                        <i class="icon-yhc-norme"></i>
+                    </span>
+                        <span class="ver_line">|</span>
+                        <span class="icon_text">混动车</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                       <span class="icons">
+                        <i class="icon-pkc-norme"></i>
+                    </span>
+                        <span class="icon_text">皮卡</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--carClass模块-->
+    <div class="car_class">
+        <div class="car_class_content" id="car_class_content">
+            <!--车型分类切换-->
+            <ul class="car_class_tab" id="car_class_tab clearfix">
+                <li class="on hover1 hover_first"><a href="#">热门车</a></li>
+                <li class="hover1"><a href="#">新车</a></li>
+                <li class="hover1"><a href="#">推荐车</a></li>
+                <li class="hover1"><a href="#">豪华车</a></li>
+                <li class="hover1"><a href="#">商用车</a></li>
+                <li class="hover1"><a href="#">8万以下</a></li>
+                <li class="hover1"><a href="#">8-12万</a></li>
+                <li class="hover1"><a href="#">12-18万</a></li>
+                <li class="hover1"><a href="#">18-25万</a></li>
+                <li class="hover1"><a href="#">25-40万</a></li>
+                <li class="hover1"><a href="#">40万以上</a></li>
+                <li id="beijing_market" class="beijing_market"><a href="#">本地车市>></a></li>
+            </ul>
+            <!--车型分类详情-->
+            <div class="car_class_content_detail" id="tab_car">
+                <div class="show show_content">
+                    <ul class="show_content_ul">
+                        <dl class=" first car_class_detail1">
+                            <dt class="dt_left"><a href="#">紧凑型车 ></a></dt>
+                            <dd><a href="#">英朗</a></dd>
+                            <dd><a href="#">速腾</a></dd>
+                            <dd><a href="#">科鲁兹</a></dd>
+                            <dd><a href="#">卡罗拉</a></dd>
+                            <dd><a href="#">思域</a></dd>
+                            <dd><a href="#">QQ</a></dd>
+                        </dl>
+                        <dl class=" second car_class_detail1">
+                            <dt class="dt_left"><a href="#">中型车 ></a></dt>
+                            <dd><a href="#">新蒙迪欧</a></dd>
+                            <dd><a href="#">奥迪A4L</a></dd>
+                            <dd><a href="#">雪铁龙</a></dd>
+                            <dd><a href="#">奔驰C级</a></dd>
+                            <dd><a href="#">速派</a></dd>
+                            <dd><a href="#">帕萨特</a></dd>
+                        </dl>
+                        <dl class=" third car_class_detail1">
+                            <dt class="dt_left"><a href="#">SUV ></a></dt>
+                            <dd><a href="#">哈佛H6</a></dd>
+                            <dd><a href="#">瑞虎</a></dd>
+                            <dd><a href="#">汉兰达</a></dd>
+                            <dd><a href="#">路虎</a></dd>
+                            <dd><a href="#">普拉达</a></dd>
+                            <dd><a href="#">宝马X6</a></dd>
+                        </dl>
+                    </ul>
+                    <!--bestCar图片展示-->
+                    <ul class="show_content_photo">
+                        <li class="show_content_photo2">
+                            <a href="imgHome.html" class="show_content_photo3"><img
+                                    src="img/pic/img_best_car_03.jpg" alt="热门车"></a>
+                            <ul class="show_content_detail">
+                                <li  class="car_name">
+                                    <a href="#">进口途锐</a></li>
+                                <li  class="car_price">
+                                    <a href="#">41.66-48.88万</a>
+                                </li>
+                                <li class="car_paras">
+                                    <a href="#">官网</a>
+                                    <span>|</span>
+                                    <a href="#">配置</a>
+                                    <span>|</span>
+                                    <a href="#" class="last_a">图片</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="show_content">
+                    <ul class="show_content_ul">
+                        <dl class=" first car_class_detail1">
+                            <dt><a href="#">桑塔纳</a></dt>
+                            <dd><a href="#">英朗</a></dd>
+                            <dd><a href="#">速腾</a></dd>
+                            <dd><a href="#">科鲁兹</a></dd>
+                            <dd><a href="#">卡罗拉</a></dd>
+                            <dd><a href="#">思域</a></dd>
+                            <dd><a href="#">QQ</a></dd>
+                        </dl>
+                        <dl class=" second car_class_detail1">
+                            <dt><a href="#">凯美瑞</a></dt>
+                            <dd><a href="#">新蒙迪欧</a></dd>
+                            <dd><a href="#">奥迪A4L</a></dd>
+                            <dd><a href="#">雪铁龙</a></dd>
+                            <dd><a href="#">奔驰C级</a></dd>
+                            <dd><a href="#">速派</a></dd>
+                            <dd><a href="#">帕萨特</a></dd>
+                        </dl>
+                        <dl class=" third car_class_detail1">
+                            <dt><a href="#">悍马</a></dt>
+                            <dd><a href="#">哈佛H6</a></dd>
+                            <dd><a href="#">瑞虎</a></dd>
+                            <dd><a href="#">汉兰达</a></dd>
+                            <dd><a href="#">路虎</a></dd>
+                            <dd><a href="#">普拉达</a></dd>
+                            <dd><a href="#">宝马X6</a></dd>
+                        </dl>
+                    </ul>
+                    <!--bestCar图片展示-->
+                    <ul class="show_content_photo">
+                        <li class="show_content_photo2">
+                            <a href="imgHome.html" class="show_content_photo3"><img
+                                    src="img/pic/img_best_car2_03.jpg" alt="热门车"></a>
+                            <ul class="show_content_detail">
+                                <li  class="car_name">
+                                    <a href="#">宝马X4</a></li>
+                                <li  class="car_price">
+                                    <a href="#">41.66-48.88万</a>
+                                </li>
+                                <li class="car_paras">
+                                    <a href="#">官网</a>
+                                    <span>|</span>
+                                    <a href="#">配置</a>
+                                    <span>|</span>
+                                    <a href="#" class="last_a">图片</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="show_content">
+                    <ul class="show_content_ul">
+                        <dl class=" first car_class_detail1">
+                            <dt class="dt_left"><a href="#">东风雪铁龙 ></a></dt>
+                            <dd><a href="#">英朗</a></dd>
+                            <dd><a href="#">速腾</a></dd>
+                            <dd><a href="#">科鲁兹</a></dd>
+                            <dd><a href="#">卡罗拉</a></dd>
+                            <dd><a href="#">思域</a></dd>
+                            <dd><a href="#">QQ</a></dd>
+                        </dl>
+                        <dl class=" second car_class_detail1">
+                            <dt class="dt_left"><a href="#">一汽丰田 ></a></dt>
+                            <dd><a href="#">新蒙迪欧</a></dd>
+                            <dd><a href="#">奥迪A4L</a></dd>
+                            <dd><a href="#">雪铁龙</a></dd>
+                            <dd><a href="#">奔驰C级</a></dd>
+                            <dd><a href="#">速派</a></dd>
+                            <dd><a href="#">帕萨特</a></dd>
+                        </dl>
+                        <dl class=" third car_class_detail1">
+                            <dt class="dt_left"><a href="#">一汽大众 ></a></dt>
+                            <dd><a href="#">哈佛H6</a></dd>
+                            <dd><a href="#">瑞虎</a></dd>
+                            <dd><a href="#">汉兰达</a></dd>
+                            <dd><a href="#">路虎</a></dd>
+                            <dd><a href="#">普拉达</a></dd>
+                            <dd><a href="#">宝马X6</a></dd>
+                        </dl>
+                    </ul>
+                    <!--bestCar图片展示-->
+                    <ul class="show_content_photo">
+                        <li class="show_content_photo2">
+                            <a href="imgHome.html" class="show_content_photo3"><img
+                                    src="img/pic/img_best_car2_03.jpg" alt="热门车"></a>
+                            <ul class="show_content_detail">
+                                <li  class="car_name">
+                                    <a href="#">进口途锐</a></li>
+                                <li  class="car_price">
+                                    <a href="#">41.66-48.88万</a>
+                                </li>
+                                <li class="car_paras">
+                                    <a href="#">官网</a>
+                                    <span>|</span>
+                                    <a href="#">配置</a>
+                                    <span>|</span>
+                                    <a href="#" class="last_a">图片</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="show_content">
+                    <ul class="show_content_ul">
+                        <dl class=" first car_class_detail1">
+                            <dt><a href="#">桑塔纳</a></dt>
+                            <dd><a href="#">英朗</a></dd>
+                            <dd><a href="#">速腾</a></dd>
+                            <dd><a href="#">科鲁兹</a></dd>
+                            <dd><a href="#">卡罗拉</a></dd>
+                            <dd><a href="#">思域</a></dd>
+                            <dd><a href="#">QQ</a></dd>
+                        </dl>
+                        <dl class=" second car_class_detail1">
+                            <dt><a href="#">凯美瑞</a></dt>
+                            <dd><a href="#">新蒙迪欧</a></dd>
+                            <dd><a href="#">奥迪A4L</a></dd>
+                            <dd><a href="#">雪铁龙</a></dd>
+                            <dd><a href="#">奔驰C级</a></dd>
+                            <dd><a href="#">速派</a></dd>
+                            <dd><a href="#">帕萨特</a></dd>
+                        </dl>
+                        <dl class=" third car_class_detail1">
+                            <dt><a href="#">悍马</a></dt>
+                            <dd><a href="#">哈佛H6</a></dd>
+                            <dd><a href="#">瑞虎</a></dd>
+                            <dd><a href="#">汉兰达</a></dd>
+                            <dd><a href="#">路虎</a></dd>
+                            <dd><a href="#">普拉达</a></dd>
+                            <dd><a href="#">宝马X6</a></dd>
+                        </dl>
+                    </ul>
+                    <!--bestCar图片展示-->
+                    <ul class="show_content_photo">
+                        <li class="show_content_photo2">
+                            <a href="imgHome.html" class="show_content_photo3"><img
+                                    src="img/pic/img_best_car2_03.jpg" alt="热门车"></a>
+                            <ul class="show_content_detail">
+                                <li  class="car_name">
+                                    <a href="#">进口途锐</a></li>
+                                <li  class="car_price">
+                                    <a href="#">41.66-48.88万</a>
+                                </li>
+                                <li class="car_paras">
+                                    <a href="#">官网</a>
+                                    <span>|</span>
+                                    <a href="#">配置</a>
+                                    <span>|</span>
+                                    <a href="#" class="last_a">图片</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="show_content">
+                    <ul class="show_content_ul">
+                        <dl class=" first car_class_detail1">
+                            <dt><a href="#">桑塔纳</a></dt>
+                            <dd><a href="#">英朗</a></dd>
+                            <dd><a href="#">速腾</a></dd>
+                            <dd><a href="#">科鲁兹</a></dd>
+                            <dd><a href="#">卡罗拉</a></dd>
+                            <dd><a href="#">思域</a></dd>
+                            <dd><a href="#">QQ</a></dd>
+                        </dl>
+                        <dl class=" second car_class_detail1">
+                            <dt><a href="#">凯美瑞</a></dt>
+                            <dd><a href="#">新蒙迪欧</a></dd>
+                            <dd><a href="#">奥迪A4L</a></dd>
+                            <dd><a href="#">雪铁龙</a></dd>
+                            <dd><a href="#">奔驰C级</a></dd>
+                            <dd><a href="#">速派</a></dd>
+                            <dd><a href="#">帕萨特</a></dd>
+                        </dl>
+                        <dl class=" third car_class_detail1">
+                            <dt><a href="#">悍马</a></dt>
+                            <dd><a href="#">哈佛H6</a></dd>
+                            <dd><a href="#">瑞虎</a></dd>
+                            <dd><a href="#">汉兰达</a></dd>
+                            <dd><a href="#">路虎</a></dd>
+                            <dd><a href="#">普拉达</a></dd>
+                            <dd><a href="#">宝马X6</a></dd>
+                        </dl>
+                    </ul>
+                    <!--bestCar图片展示-->
+                    <ul class="show_content_photo">
+                        <li class="show_content_photo2">
+                            <a href="imgHome.html" class="show_content_photo3"><img
+                                    src="img/pic/img_best_car2_03.jpg" alt="热门车"></a>
+                            <ul class="show_content_detail">
+                                <li  class="car_name">
+                                    <a href="#">进口途锐</a></li>
+                                <li  class="car_price">
+                                    <a href="#">41.66-48.88万</a>
+                                </li>
+                                <li class="car_paras">
+                                    <a href="#">官网</a>
+                                    <span>|</span>
+                                    <a href="#">配置</a>
+                                    <span>|</span>
+                                    <a href="#" class="last_a">图片</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="show_content">
+                    <ul class="show_content_ul">
+                        <dl class=" first car_class_detail1">
+                            <dt><a href="#">桑塔纳</a></dt>
+                            <dd><a href="#">英朗</a></dd>
+                            <dd><a href="#">速腾</a></dd>
+                            <dd><a href="#">科鲁兹</a></dd>
+                            <dd><a href="#">卡罗拉</a></dd>
+                            <dd><a href="#">思域</a></dd>
+                            <dd><a href="#">QQ</a></dd>
+                        </dl>
+                        <dl class=" second car_class_detail1">
+                            <dt><a href="#">凯美瑞</a></dt>
+                            <dd><a href="#">新蒙迪欧</a></dd>
+                            <dd><a href="#">奥拓</a></dd>
+                            <dd><a href="#">雪铁龙</a></dd>
+                            <dd><a href="#">奔驰C级</a></dd>
+                            <dd><a href="#">速派</a></dd>
+                            <dd><a href="#">帕萨特</a></dd>
+                        </dl>
+                        <dl class=" third car_class_detail1">
+                            <dt><a href="#">悍马</a></dt>
+                            <dd><a href="#">哈佛H6</a></dd>
+                            <dd><a href="#">瑞虎</a></dd>
+                            <dd><a href="#">汉兰达</a></dd>
+                            <dd><a href="#">路虎</a></dd>
+                            <dd><a href="#">普拉达</a></dd>
+                            <dd><a href="#">宝马X6</a></dd>
+                        </dl>
+                    </ul>
+                    <!--bestCar图片展示-->
+                    <ul class="show_content_photo">
+                        <li class="show_content_photo2">
+                            <a href="imgHome.html" class="show_content_photo3"><img
+                                    src="img/pic/img_best_car2_03.jpg" alt="热门车"></a>
+                            <ul class="show_content_detail">
+                                <li  class="car_name">
+                                    <a href="#">进口途锐</a></li>
+                                <li  class="car_price">
+                                    <a href="#">41.66-48.88万</a>
+                                </li>
+                                <li class="car_paras">
+                                    <a href="#">官网</a>
+                                    <span>|</span>
+                                    <a href="#">配置</a>
+                                    <span>|</span>
+                                    <a href="#" class="last_a">图片</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="show_content">
+                    <ul class="show_content_ul">
+                        <dl class=" first car_class_detail1">
+                            <dt><a href="#">桑塔纳</a></dt>
+                            <dd><a href="#">英朗</a></dd>
+                            <dd><a href="#">速腾</a></dd>
+                            <dd><a href="#">科鲁兹</a></dd>
+                            <dd><a href="#">卡罗拉</a></dd>
+                            <dd><a href="#">思域</a></dd>
+                            <dd><a href="#">QQ</a></dd>
+                        </dl>
+                        <dl class=" second car_class_detail1">
+                            <dt><a href="#">凯美瑞</a></dt>
+                            <dd><a href="#">新蒙迪欧</a></dd>
+                            <dd><a href="#">奥迪A4L</a></dd>
+                            <dd><a href="#">雪铁龙</a></dd>
+                            <dd><a href="#">奔驰C级</a></dd>
+                            <dd><a href="#">速派</a></dd>
+                            <dd><a href="#">帕萨特</a></dd>
+                        </dl>
+                        <dl class=" third car_class_detail1">
+                            <dt><a href="#">悍马</a></dt>
+                            <dd><a href="#">哈佛H6</a></dd>
+                            <dd><a href="#">瑞虎</a></dd>
+                            <dd><a href="#">汉兰达</a></dd>
+                            <dd><a href="#">路虎</a></dd>
+                            <dd><a href="#">普拉达</a></dd>
+                            <dd><a href="#">宝马X6</a></dd>
+                        </dl>
+                    </ul>
+                    <!--bestCar图片展示-->
+                    <ul class="show_content_photo">
+                        <li class="show_content_photo2">
+                            <a href="imgHome.html" class="show_content_photo3"><img
+                                    src="img/pic/img_best_car2_03.jpg" alt="热门车"></a>
+                            <ul class="show_content_detail">
+                                <li  class="car_name">
+                                    <a href="#">进口途锐</a></li>
+                                <li  class="car_price">
+                                    <a href="#">41.66-48.88万</a>
+                                </li>
+                                <li class="car_paras">
+                                    <a href="#">官网</a>
+                                    <span>|</span>
+                                    <a href="#">配置</a>
+                                    <span>|</span>
+                                    <a href="#" class="last_a">图片</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="show_content">
+                    <ul class="show_content_ul">
+                        <dl class=" first car_class_detail1">
+                            <dt><a href="#">桑塔纳</a></dt>
+                            <dd><a href="#">英朗</a></dd>
+                            <dd><a href="#">速腾</a></dd>
+                            <dd><a href="#">科鲁兹</a></dd>
+                            <dd><a href="#">卡罗拉</a></dd>
+                            <dd><a href="#">思域</a></dd>
+                            <dd><a href="#">QQ</a></dd>
+                        </dl>
+                        <dl class=" second car_class_detail1">
+                            <dt><a href="#">凯美瑞</a></dt>
+                            <dd><a href="#">新蒙迪欧</a></dd>
+                            <dd><a href="#">奥迪A4L</a></dd>
+                            <dd><a href="#">雪铁龙</a></dd>
+                            <dd><a href="#">奔驰C级</a></dd>
+                            <dd><a href="#">速派</a></dd>
+                            <dd><a href="#">帕萨特</a></dd>
+                        </dl>
+                        <dl class=" third car_class_detail1">
+                            <dt><a href="#">悍马</a></dt>
+                            <dd><a href="#">哈佛H6</a></dd>
+                            <dd><a href="#">瑞虎</a></dd>
+                            <dd><a href="#">汉兰达</a></dd>
+                            <dd><a href="#">路虎</a></dd>
+                            <dd><a href="#">普拉达</a></dd>
+                            <dd><a href="#">宝马X6</a></dd>
+                        </dl>
+                    </ul>
+                    <!--bestCar图片展示-->
+                    <ul class="show_content_photo">
+                        <li class="show_content_photo2">
+                            <a href="imgHome.html" class="show_content_photo3"><img
+                                    src="img/pic/img_best_car2_03.jpg" alt="热门车"></a>
+                            <ul class="show_content_detail">
+                                <li  class="car_name">
+                                    <a href="#">进口途锐</a></li>
+                                <li  class="car_price">
+                                    <a href="#">41.66-48.88万</a>
+                                </li>
+                                <li class="car_paras">
+                                    <a href="#">官网</a>
+                                    <span>|</span>
+                                    <a href="#">配置</a>
+                                    <span>|</span>
+                                    <a href="#" class="last_a">图片</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="show_content">
+                    <ul class="show_content_ul">
+                        <dl class=" first car_class_detail1">
+                            <dt><a href="#">桑塔纳</a></dt>
+                            <dd><a href="#">英朗</a></dd>
+                            <dd><a href="#">速腾</a></dd>
+                            <dd><a href="#">科鲁兹</a></dd>
+                            <dd><a href="#">卡罗拉</a></dd>
+                            <dd><a href="#">思域</a></dd>
+                            <dd><a href="#">QQ</a></dd>
+                        </dl>
+                        <dl class=" second car_class_detail1">
+                            <dt><a href="#">凯美瑞</a></dt>
+                            <dd><a href="#">新蒙迪欧</a></dd>
+                            <dd><a href="#">奥迪A4L</a></dd>
+                            <dd><a href="#">雪铁龙</a></dd>
+                            <dd><a href="#">奔驰C级</a></dd>
+                            <dd><a href="#">速派</a></dd>
+                            <dd><a href="#">帕萨特</a></dd>
+                        </dl>
+                        <dl class=" third car_class_detail1">
+                            <dt><a href="#">悍马</a></dt>
+                            <dd><a href="#">哈佛H6</a></dd>
+                            <dd><a href="#">瑞虎</a></dd>
+                            <dd><a href="#">汉兰达</a></dd>
+                            <dd><a href="#">路虎</a></dd>
+                            <dd><a href="#">普拉达</a></dd>
+                            <dd><a href="#">宝马X6</a></dd>
+                        </dl>
+                    </ul>
+                    <!--bestCar图片展示-->
+                    <ul class="show_content_photo">
+                        <li class="show_content_photo2">
+                            <a href="imgHome.html" class="show_content_photo3"><img
+                                    src="img/pic/img_best_car2_03.jpg" alt="热门车"></a>
+                            <ul class="show_content_detail">
+                                <li  class="car_name">
+                                    <a href="#">进口途锐</a></li>
+                                <li  class="car_price">
+                                    <a href="#">41.66-48.88万</a>
+                                </li>
+                                <li class="car_paras">
+                                    <a href="#">官网</a>
+                                    <span>|</span>
+                                    <a href="#">配置</a>
+                                    <span>|</span>
+                                    <a href="#" class="last_a">图片</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="show_content">
+                    <ul class="show_content_ul">
+                        <dl class=" first car_class_detail1">
+                            <dt><a href="#">桑塔纳</a></dt>
+                            <dd><a href="#">英朗</a></dd>
+                            <dd><a href="#">速腾</a></dd>
+                            <dd><a href="#">科鲁兹</a></dd>
+                            <dd><a href="#">卡罗拉</a></dd>
+                            <dd><a href="#">思域</a></dd>
+                            <dd><a href="#">QQ</a></dd>
+                        </dl>
+                        <dl class=" second car_class_detail1">
+                            <dt><a href="#">凯美瑞</a></dt>
+                            <dd><a href="#">新蒙迪欧</a></dd>
+                            <dd><a href="#">奥迪A4L</a></dd>
+                            <dd><a href="#">雪铁龙</a></dd>
+                            <dd><a href="#">奔驰C级</a></dd>
+                            <dd><a href="#">速派</a></dd>
+                            <dd><a href="#">帕萨特</a></dd>
+                        </dl>
+                        <dl class=" third car_class_detail1">
+                            <dt><a href="#">悍马</a></dt>
+                            <dd><a href="#">哈佛H6</a></dd>
+                            <dd><a href="#">瑞虎</a></dd>
+                            <dd><a href="#">汉兰达</a></dd>
+                            <dd><a href="#">路虎</a></dd>
+                            <dd><a href="#">普拉达</a></dd>
+                            <dd><a href="#">宝马X6</a></dd>
+                        </dl>
+                    </ul>
+                    <!--bestCar图片展示-->
+                    <ul class="show_content_photo">
+                        <li class="show_content_photo2">
+                            <a href="imgHome.html" class="show_content_photo3"><img
+                                    src="img/pic/img_best_car2_03.jpg" alt="热门车"></a>
+                            <ul class="show_content_detail">
+                                <li  class="car_name">
+                                    <a href="#">进口途锐</a></li>
+                                <li  class="car_price">
+                                    <a href="#">41.66-48.88万</a>
+                                </li>
+                                <li class="car_paras">
+                                    <a href="#">官网</a>
+                                    <span>|</span>
+                                    <a href="#">配置</a>
+                                    <span>|</span>
+                                    <a href="#" class="last_a">图片</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="show_content">
+                    <ul class="show_content_ul">
+                        <dl class=" first car_class_detail1">
+                            <dt><a href="#">桑塔纳</a></dt>
+                            <dd><a href="#">英朗</a></dd>
+                            <dd><a href="#">速腾</a></dd>
+                            <dd><a href="#">科鲁兹</a></dd>
+                            <dd><a href="#">卡罗拉</a></dd>
+                            <dd><a href="#">思域</a></dd>
+                            <dd><a href="#">QQ</a></dd>
+                        </dl>
+                        <dl class=" second car_class_detail1">
+                            <dt><a href="#">凯美瑞</a></dt>
+                            <dd><a href="#">新蒙迪欧</a></dd>
+                            <dd><a href="#">奥迪A4L</a></dd>
+                            <dd><a href="#">雪铁龙</a></dd>
+                            <dd><a href="#">奔驰C级</a></dd>
+                            <dd><a href="#">速派</a></dd>
+                            <dd><a href="#">帕萨特</a></dd>
+                        </dl>
+                        <dl class=" third car_class_detail1">
+                            <dt><a href="#">悍马</a></dt>
+                            <dd><a href="#">哈佛H6</a></dd>
+                            <dd><a href="#">瑞虎</a></dd>
+                            <dd><a href="#">汉兰达</a></dd>
+                            <dd><a href="#">路虎</a></dd>
+                            <dd><a href="#">普拉达</a></dd>
+                            <dd><a href="#">宝马X6</a></dd>
+                        </dl>
+                    </ul>
+                    <!--bestCar图片展示-->
+                    <ul class="show_content_photo">
+                        <li class="show_content_photo2">
+                            <a href="imgHome.html" class="show_content_photo3"><img
+                                    src="img/pic/img_best_car2_03.jpg" alt="热门车"></a>
+                            <ul class="show_content_detail">
+                                <li  class="car_name">
+                                    <a href="#">进口途锐</a></li>
+                                <li  class="car_price">
+                                    <a href="#">41.66-48.88万</a>
+                                </li>
+                                <li class="car_paras">
+                                    <a href="#">官网</a>
+                                    <span>|</span>
+                                    <a href="#">配置</a>
+                                    <span>|</span>
+                                    <a href="#" class="last_a">图片</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--carSelect模块-->
+    <div class="car_select">
+        <div class="car_select_detail">
+            <div class="car_search_brand">
+                <div class="search_select">
+                    <div class="for_input" id="for_input_brand">
+                        <input type="text" class="search_brand" id="search_brand" placeholder="请选择品牌" readonly="readonly">
+                        <span class="search_down default1" id="search_down"></span>
+                        <div id="car_brand_select" class="car_brand_select" style="visibility:hidden">
+                            <!--underscore模板绑定车品牌首字母-->
+                            <div class="car_letters" id="car_letters">
+                                <span class="active">A</span>
+                                <span>B</span>
+                                <span>C</span>
+                                <span>D</span>
+                                <span class="default">E</span>
+                                <span>F</span>
+                                <span>G</span>
+                                <span>H</span>
+                                <span class="default">I</span>
+                                <span>J</span>
+                                <span>K</span>
+                                <span>L</span>
+                                <span>M</span>
+                                <span>N</span>
+                                <span>O</span>
+                                <span>P</span>
+                                <span>Q</span>
+                                <span>R</span>
+                                <span>S</span>
+                                <span>T</span>
+                                <span class="default">U</span>
+                                <span class="default">V</span>
+                                <span>W</span>
+                                <span>X</span>
+                                <span>Y</span>
+                                <span>Z</span>
+                            </div>
+                            <div class="car_name" id="car_name">
+                                <!--车品牌名称及id绑定-->
+                                <div class="brand_car_name" id="brand_car_name">
+
+                                    <dl id="letters_A">
+
+                                        <dd class=""><a href="#" data-char="9">A 奥迪</a></dd>
+
+                                        <dd class=""><a href="#" data-char="97">A 阿斯顿·马丁</a></dd>
+
+                                        <dd class=""><a href="#" data-char="92">A 阿尔法·罗密欧</a></dd>
+
+                                        <dd class=""><a href="#" data-char="151">A 阿尔特</a></dd>
+
+                                        <dd class=""><a href="#" data-char="180">A AC Schnitzer</a>
+                                        </dd>
+
+                                        <dd class=""><a href="#" data-char="228">A Artega</a></dd>
+
+                                        <dd class=""><a href="#" data-char="12">A 奥克斯</a></dd>
+
+                                    </dl>
+
+                                    <dl id="letters_B">
+
+                                        <dd class=""><a href="#" data-char="26">B 本田</a></dd>
+
+                                        <dd class=""><a href="#" data-char="2">B 奔驰</a></dd>
+
+                                        <dd class=""><a href="#" data-char="127">B 别克</a></dd>
+
+                                        <dd class=""><a href="#" data-char="3">B 宝马</a></dd>
+
+                                        <dd class=""><a href="#" data-char="157">B 宝骏</a></dd>
+
+                                        <dd class=""><a href="#" data-char="5">B 标致</a></dd>
+
+                                        <dd class=""><a href="#" data-char="15">B 比亚迪</a></dd>
+
+                                        <dd class=""><a href="#" data-char="82">B 保时捷</a></dd>
+
+                                        <dd class=""><a href="#" data-char="211">B 北汽幻速</a></dd>
+
+                                        <dd class=""><a href="#" data-char="163">B 北京</a></dd>
+
+                                        <dd class=""><a href="#" data-char="195">B 北汽绅宝</a></dd>
+
+                                        <dd class=""><a href="#" data-char="59">B 奔腾</a></dd>
+
+                                        <dd class=""><a href="#" data-char="236">B 宝沃</a></dd>
+
+                                        <dd class=""><a href="#" data-char="85">B 宾利</a></dd>
+
+                                        <dd class=""><a href="#" data-char="14">B 北汽制造</a></dd>
+
+                                        <dd class=""><a href="#" data-char="168">B 北汽威旺</a></dd>
+
+                                        <dd class=""><a href="#" data-char="135">B 布加迪</a></dd>
+
+                                        <dd class=""><a href="#" data-char="172">B 巴博斯</a></dd>
+
+                                        <dd class=""><a href="#" data-char="216">B 北汽新能源</a></dd>
+
+                                        <dd class=""><a href="#" data-char="263">B 比速汽车</a></dd>
+
+                                        <dd class=""><a href="#" data-char="184">B 保斐利</a></dd>
+
+                                        <dd class=""><a href="#" data-char="261">B 北汽瑞丽</a></dd>
+
+                                        <dd class=""><a href="#" data-char="68">B 宝龙</a></dd>
+
+                                    </dl>
+
+                                    <dl id="letters_C">
+
+                                        <dd class=""><a href="#" data-char="136">C 长安轿车</a></dd>
+
+                                        <dd class=""><a href="#" data-char="159">C 长安商用</a></dd>
+
+                                        <dd class=""><a href="#" data-char="21">C 长城</a></dd>
+
+                                        <dd class=""><a href="#" data-char="129">C 昌河</a></dd>
+
+                                        <dd class=""><a href="#" data-char="230">C 长安跨越</a></dd>
+
+                                        <dd class=""><a href="#" data-char="231">C 长城华冠</a></dd>
+
+                                        <dd class=""><a href="#" data-char="221">C 成功</a></dd>
+
+                                        <dd class=""><a href="#" data-char="250">C 长久汽车</a></dd>
+
+                                    </dl>
+
+                                    <dl id="letters_D">
+
+                                        <dd class=""><a href="#" data-char="8">D 大众</a></dd>
+
+                                        <dd class=""><a href="#" data-char="115">D 东风风行</a></dd>
+
+                                        <dd class=""><a href="#" data-char="141">D 东风风神</a></dd>
+
+                                        <dd class=""><a href="#" data-char="29">D 东南</a></dd>
+
+                                        <dd class=""><a href="#" data-char="253">D 东风风光</a></dd>
+
+                                        <dd class=""><a href="#" data-char="113">D 道奇</a></dd>
+
+                                        <dd class=""><a href="#" data-char="179">D DS</a></dd>
+
+                                        <dd class=""><a href="#" data-char="197">D 东风风度</a></dd>
+
+                                        <dd class=""><a href="#" data-char="205">D 东风小康</a></dd>
+
+                                        <dd class=""><a href="#" data-char="235">D 东风·郑州日产</a></dd>
+
+                                        <dd class=""><a href="#" data-char="215">D 东风御风</a></dd>
+
+                                        <dd class=""><a href="#" data-char="27">D 东风</a></dd>
+
+                                        <dd class=""><a href="#" data-char="256">D 东风风诺</a></dd>
+
+                                        <dd class=""><a href="#" data-char="192">D 底特律电动车</a></dd>
+
+                                        <dd class=""><a href="#" data-char="106">D 大宇</a></dd>
+
+                                        <dd class=""><a href="#" data-char="66">D 大迪</a></dd>
+
+                                    </dl>
+
+                                    <dl id="letters_F">
+
+                                        <dd class=""><a href="#" data-char="7">F 丰田</a></dd>
+
+                                        <dd class=""><a href="#" data-char="17">F 福特</a></dd>
+
+                                        <dd class=""><a href="#" data-char="128">F 福田</a></dd>
+
+                                        <dd class=""><a href="#" data-char="91">F 法拉利</a></dd>
+
+                                        <dd class=""><a href="#" data-char="40">F 菲亚特</a></dd>
+
+                                        <dd class=""><a href="#" data-char="67">F 福迪</a></dd>
+
+                                        <dd class=""><a href="#" data-char="208">F 福汽启腾</a></dd>
+
+                                        <dd class=""><a href="#" data-char="199">F 飞驰商务车</a></dd>
+
+                                        <dd class=""><a href="#" data-char="187">F Faralli
+                                            Mazzanti</a></dd>
+
+                                        <dd class=""><a href="#" data-char="164">F 菲斯克</a></dd>
+
+                                        <dd class=""><a href="#" data-char="61">F 富奇</a></dd>
+
+                                    </dl>
+
+                                    <dl id="letters_G">
+
+                                        <dd class=""><a href="#" data-char="147">G 广汽传祺</a></dd>
+
+                                        <dd class=""><a href="#" data-char="182">G 观致汽车</a></dd>
+
+                                        <dd class=""><a href="#" data-char="109">G GMC</a></dd>
+
+                                        <dd class=""><a href="#" data-char="63">G 广汽吉奥</a></dd>
+
+                                        <dd class=""><a href="#" data-char="252">G 广汽中兴</a></dd>
+
+                                        <dd class=""><a href="#" data-char="110">G 光冈</a></dd>
+
+                                        <dd class=""><a href="#" data-char="237">G GTA</a></dd>
+
+                                        <dd class=""><a href="#" data-char="133">G 广汽日野</a></dd>
+
+                                    </dl>
+
+                                    <dl id="letters_H">
+
+                                        <dd class=""><a href="#" data-char="196">H 哈弗</a></dd>
+
+                                        <dd class=""><a href="#" data-char="32">H 海马</a></dd>
+
+                                        <dd class=""><a href="#" data-char="58">H 红旗</a></dd>
+
+                                        <dd class=""><a href="#" data-char="259">H 汉腾</a></dd>
+
+                                        <dd class=""><a href="#" data-char="112">H 华泰</a></dd>
+
+                                        <dd class=""><a href="#" data-char="108">H 悍马</a></dd>
+
+                                        <dd class=""><a href="#" data-char="52">H 黄海</a></dd>
+
+                                        <dd class=""><a href="#" data-char="31">H 哈飞</a></dd>
+
+                                        <dd class=""><a href="#" data-char="225">H 华颂</a></dd>
+
+                                        <dd class=""><a href="#" data-char="251">H 华泰新能源</a></dd>
+
+                                        <dd class=""><a href="#" data-char="149">H 海马商用车</a></dd>
+
+                                        <dd class=""><a href="#" data-char="170">H 海格</a></dd>
+
+                                        <dd class=""><a href="#" data-char="44">H 华普</a></dd>
+
+                                        <dd class=""><a href="#" data-char="45">H 汇众</a></dd>
+
+                                        <dd class=""><a href="#" data-char="181">H 恒天汽车</a></dd>
+
+                                        <dd class=""><a href="#" data-char="124">H 黑豹</a></dd>
+
+                                        <dd class=""><a href="#" data-char="262">H 华凯</a></dd>
+
+                                        <dd class=""><a href="#" data-char="119">H 汉江</a></dd>
+
+                                        <dd class=""><a href="#" data-char="70">H 航天圆通</a></dd>
+
+                                    </dl>
+
+                                    <dl id="letters_J">
+
+                                        <dd class=""><a href="#" data-char="34">J 吉利汽车</a></dd>
+
+                                        <dd class=""><a href="#" data-char="4">J Jeep</a></dd>
+
+                                        <dd class=""><a href="#" data-char="35">J 江淮</a></dd>
+
+                                        <dd class=""><a href="#" data-char="98">J 捷豹</a></dd>
+
+                                        <dd class=""><a href="#" data-char="39">J 金杯</a></dd>
+
+                                        <dd class=""><a href="#" data-char="37">J 江铃</a></dd>
+
+                                        <dd class=""><a href="#" data-char="57">J 金龙</a></dd>
+
+                                        <dd class=""><a href="#" data-char="38">J 江南</a></dd>
+
+                                        <dd class=""><a href="#" data-char="152">J 九龙</a></dd>
+
+                                        <dd class=""><a href="#" data-char="224">J 江铃集团轻汽</a></dd>
+
+                                        <dd class=""><a href="#" data-char="161">J 金旅客车</a></dd>
+
+                                        <dd class=""><a href="#" data-char="74">J 金程</a></dd>
+
+                                        <dd class=""><a href="#" data-char="121">J 吉林江北</a></dd>
+
+                                    </dl>
+
+                                    <dl id="letters_K">
+
+                                        <dd class=""><a href="#" data-char="107">K 凯迪拉克</a></dd>
+
+                                        <dd class=""><a href="#" data-char="150">K 开瑞</a></dd>
+
+                                        <dd class=""><a href="#" data-char="220">K 凯翼</a></dd>
+
+                                        <dd class=""><a href="#" data-char="51">K 克莱斯勒</a></dd>
+
+                                        <dd class=""><a href="#" data-char="241">K 康迪全球鹰电动汽车</a></dd>
+
+                                        <dd class=""><a href="#" data-char="218">K 科瑞斯的</a></dd>
+
+                                        <dd class=""><a href="#" data-char="213">K 卡威</a></dd>
+
+                                        <dd class=""><a href="#" data-char="145">K 科尼赛克</a></dd>
+
+                                        <dd class=""><a href="#" data-char="188">K 卡尔森</a></dd>
+
+                                        <dd class=""><a href="#" data-char="212">K KTM</a></dd>
+
+                                    </dl>
+
+                                    <dl id="letters_L">
+
+                                        <dd class=""><a href="#" data-char="96">L 路虎</a></dd>
+
+                                        <dd class=""><a href="#" data-char="94">L 雷克萨斯</a></dd>
+
+                                        <dd class=""><a href="#" data-char="36">L 陆风</a></dd>
+
+                                        <dd class=""><a href="#" data-char="16">L 铃木</a></dd>
+
+                                        <dd class=""><a href="#" data-char="95">L 林肯</a></dd>
+
+                                        <dd class=""><a href="#" data-char="153">L 猎豹汽车</a></dd>
+
+                                        <dd class=""><a href="#" data-char="99">L 雷诺</a></dd>
+
+                                        <dd class=""><a href="#" data-char="76">L 力帆</a></dd>
+
+                                        <dd class=""><a href="#" data-char="86">L 兰博基尼</a></dd>
+
+                                        <dd class=""><a href="#" data-char="80">L 劳斯莱斯</a></dd>
+
+                                        <dd class=""><a href="#" data-char="229">L 雷丁电动</a></dd>
+
+                                        <dd class=""><a href="#" data-char="146">L 莲花</a></dd>
+
+                                        <dd class=""><a href="#" data-char="83">L 路特斯</a></dd>
+
+                                        <dd class=""><a href="#" data-char="200">L 蓝海房车</a></dd>
+
+                                        <dd class=""><a href="#" data-char="166">L 理念</a></dd>
+
+                                        <dd class=""><a href="#" data-char="249">L 陆地方舟</a></dd>
+
+                                        <dd class=""><a href="#" data-char="255">L LeSEE</a></dd>
+
+                                        <dd class=""><a href="#" data-char="223">L 领志</a></dd>
+
+                                        <dd class=""><a href="#" data-char="227">L 朗世</a></dd>
+
+                                        <dd class=""><a href="#" data-char="101">L 罗孚</a></dd>
+
+                                    </dl>
+
+                                    <dl id="letters_M">
+
+                                        <dd class=""><a href="#" data-char="18">M 马自达</a></dd>
+
+                                        <dd class=""><a href="#" data-char="79">M MG</a></dd>
+
+                                        <dd class=""><a href="#" data-char="93">M 玛莎拉蒂</a></dd>
+
+                                        <dd class=""><a href="#" data-char="81">M MINI</a></dd>
+
+                                        <dd class=""><a href="#" data-char="183">M 迈凯伦</a></dd>
+
+                                        <dd class=""><a href="#" data-char="88">M 迈巴赫</a></dd>
+
+                                        <dd class=""><a href="#" data-char="201">M 摩根</a></dd>
+
+                                        <dd class=""><a href="#" data-char="55">M 美亚</a></dd>
+
+                                    </dl>
+
+                                    <dl id="letters_N">
+
+                                        <dd class=""><a href="#" data-char="155">N 纳智捷</a></dd>
+
+                                        <dd class=""><a href="#" data-char="234">N Noble</a></dd>
+
+                                    </dl>
+
+                                    <dl id="letters_O">
+
+                                        <dd class=""><a href="#" data-char="84">O 讴歌</a></dd>
+
+                                        <dd class=""><a href="#" data-char="104">O 欧宝</a></dd>
+
+                                        <dd class=""><a href="#" data-char="171">O 欧朗</a></dd>
+
+                                        <dd class=""><a href="#" data-char="243">O 欧联</a></dd>
+
+                                    </dl>
+
+                                    <dl id="letters_P">
+
+                                        <dd class=""><a href="#" data-char="185">P 帕加尼</a></dd>
+
+                                        <dd class=""><a href="#" data-char="210">P 皮特比尔特卡车</a></dd>
+
+                                        <dd class=""><a href="#" data-char="191">P PGO</a></dd>
+
+                                        <dd class=""><a href="#" data-char="105">P 旁蒂克</a></dd>
+
+                                    </dl>
+
+                                    <dl id="letters_Q">
+
+                                        <dd class=""><a href="#" data-char="28">Q 起亚</a></dd>
+
+                                        <dd class=""><a href="#" data-char="42">Q 奇瑞</a></dd>
+
+                                        <dd class=""><a href="#" data-char="156">Q 启辰</a></dd>
+
+                                        <dd class=""><a href="#" data-char="43">Q 庆铃</a></dd>
+
+                                        <dd class=""><a href="#" data-char="226">Q 乔治·巴顿</a></dd>
+
+                                    </dl>
+
+                                    <dl id="letters_R">
+
+                                        <dd class=""><a href="#" data-char="30">R 日产</a></dd>
+
+                                        <dd class=""><a href="#" data-char="78">R 荣威</a></dd>
+
+                                        <dd class=""><a href="#" data-char="142">R 瑞麒</a></dd>
+
+                                    </dl>
+
+                                    <dl id="letters_S">
+
+                                        <dd class=""><a href="#" data-char="10">S 斯柯达</a></dd>
+
+                                        <dd class=""><a href="#" data-char="25">S 三菱</a></dd>
+
+                                        <dd class=""><a href="#" data-char="111">S 斯巴鲁</a></dd>
+
+                                        <dd class=""><a href="#" data-char="165">S 上汽大通MAXUS</a></dd>
+
+                                        <dd class=""><a href="#" data-char="89">S smart</a></dd>
+
+                                        <dd class=""><a href="#" data-char="102">S 双龙</a></dd>
+
+                                        <dd class=""><a href="#" data-char="260">S 斯威</a></dd>
+
+                                        <dd class=""><a href="#" data-char="209">S 山姆</a></dd>
+
+                                        <dd class=""><a href="#" data-char="50">S 双环</a></dd>
+
+                                        <dd class=""><a href="#" data-char="242">S STARTECH</a></dd>
+
+                                        <dd class=""><a href="#" data-char="239">S 赛麟SALEEN</a></dd>
+
+                                        <dd class=""><a href="#" data-char="137">S 世爵</a></dd>
+
+                                        <dd class=""><a href="#" data-char="169">S 陕汽通家</a></dd>
+
+                                        <dd class=""><a href="#" data-char="103">S 萨博</a></dd>
+
+                                        <dd class=""><a href="#" data-char="117">S 三星</a></dd>
+
+                                        <dd class=""><a href="#" data-char="244">S 上喆汽车</a></dd>
+
+                                        <dd class=""><a href="#" data-char="73">S 顺旅</a></dd>
+
+                                    </dl>
+
+                                    <dl id="letters_T">
+
+                                        <dd class=""><a href="#" data-char="189">T 特斯拉</a></dd>
+
+                                        <dd class=""><a href="#" data-char="202">T 泰卡特</a></dd>
+
+                                        <dd class=""><a href="#" data-char="175">T 腾势</a></dd>
+
+                                        <dd class=""><a href="#" data-char="54">T 天马</a></dd>
+
+                                        <dd class=""><a href="#" data-char="56">T 通田</a></dd>
+
+                                    </dl>
+
+                                    <dl id="letters_W">
+
+                                        <dd class=""><a href="#" data-char="48">W 五菱</a></dd>
+
+                                        <dd class=""><a href="#" data-char="19">W 沃尔沃</a></dd>
+
+                                        <dd class=""><a href="#" data-char="132">W 五十铃</a></dd>
+
+                                        <dd class=""><a href="#" data-char="207">W 潍柴英致</a></dd>
+
+                                        <dd class=""><a href="#" data-char="270">W WEY</a></dd>
+
+                                        <dd class=""><a href="#" data-char="266">W 蔚来</a></dd>
+
+                                        <dd class=""><a href="#" data-char="140">W 威麟</a></dd>
+
+                                        <dd class=""><a href="#" data-char="247">W 潍柴欧睿</a></dd>
+
+                                        <dd class=""><a href="#" data-char="186">W 威兹曼</a></dd>
+
+                                        <dd class=""><a href="#" data-char="46">W 万丰</a></dd>
+
+                                    </dl>
+
+                                    <dl id="letters_X">
+
+                                        <dd class=""><a href="#" data-char="13">X 现代</a></dd>
+
+                                        <dd class=""><a href="#" data-char="49">X 雪佛兰</a></dd>
+
+                                        <dd class=""><a href="#" data-char="6">X 雪铁龙</a></dd>
+
+                                        <dd class=""><a href="#" data-char="174">X 星客特</a></dd>
+
+                                        <dd class=""><a href="#" data-char="71">X 新凯</a></dd>
+
+                                        <dd class=""><a href="#" data-char="87">X 西雅特</a></dd>
+
+                                        <dd class=""><a href="#" data-char="264">X 小鹏汽车</a></dd>
+
+                                        <dd class=""><a href="#" data-char="62">X 新雅途</a></dd>
+
+                                        <dd class=""><a href="#" data-char="65">X 新大地</a></dd>
+
+                                    </dl>
+
+                                    <dl id="letters_Y">
+
+                                        <dd class=""><a href="#" data-char="53">Y 一汽</a></dd>
+
+                                        <dd class=""><a href="#" data-char="100">Y 英菲尼迪</a></dd>
+
+                                        <dd class=""><a href="#" data-char="258">Y 驭胜</a></dd>
+
+                                        <dd class=""><a href="#" data-char="138">Y 野马汽车</a></dd>
+
+                                        <dd class=""><a href="#" data-char="41">Y 依维柯</a></dd>
+
+                                        <dd class=""><a href="#" data-char="178">Y 宇通</a></dd>
+
+                                        <dd class=""><a href="#" data-char="75">Y 永源</a></dd>
+
+                                        <dd class=""><a href="#" data-char="238">Y 御捷</a></dd>
+
+                                        <dd class=""><a href="#" data-char="245">Y 游侠汽车</a></dd>
+
+                                        <dd class=""><a href="#" data-char="268">Y 雅宾纳</a></dd>
+
+                                        <dd class=""><a href="#" data-char="194">Y 扬州亚星客车</a></dd>
+
+                                        <dd class=""><a href="#" data-char="118">Y 云豹</a></dd>
+
+                                        <dd class=""><a href="#" data-char="126">Y 云雀</a></dd>
+
+                                        <dd class=""><a href="#" data-char="47">Y 仪征</a></dd>
+
+                                    </dl>
+
+                                    <dl id="letters_Z">
+
+                                        <dd class=""><a href="#" data-char="77">Z 众泰</a></dd>
+
+                                        <dd class=""><a href="#" data-char="60">Z 中华</a></dd>
+
+                                        <dd class=""><a href="#" data-char="233">Z 知豆</a></dd>
+
+                                        <dd class=""><a href="#" data-char="33">Z 中兴</a></dd>
+
+                                        <dd class=""><a href="#" data-char="167">Z 中欧奔驰房车</a></dd>
+
+                                        <dd class=""><a href="#" data-char="203">Z 之诺</a></dd>
+
+                                        <dd class=""><a href="#" data-char="214">Z 浙江卡尔森</a></dd>
+
+                                        <dd class=""><a href="#" data-char="204">Z 中通客车</a></dd>
+
+                                        <dd class=""><a href="#" data-char="246">Z 重汽王牌</a></dd>
+
+                                        <dd class=""><a href="#" data-char="72">Z 中顺</a></dd>
+
+                                        <dd class=""><a href="#" data-char="64">Z 中客华北</a></dd>
+
+                                    </dl>
+
+                                </div>
+                                <div class="scrollbar">
+                                    <div class="scrollbtn"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="for_input" id="for_input_serial">
+                        <input type="text" class="search_serial" id="search_serial" placeholder="请选择车型" readonly="readonly">
+                        <span class="search_down default1" id="serial_search_down"></span>
+                        <div class="car_serial_select" style="visibility:hidden">
+                            <div class="serial_name" id="serial_name">
+                                <!--carData bind&&refresh for select-->
+                                <div class="serial_car_name" id="car_brand_container">
+                                    <dl>
+                                        <dt><a href="#" >一汽奥迪</a></dt>
+                                        <dd><a href="#" class="serial_confirm" data-char="audiA3">奥迪A3</a></dd>
+                                        <dd><a href="#" class="serial_confirm" data-char="audiA3">奥迪A4L</a></dd>
+                                        <dd><a href="#" class="serial_confirm" data-char="audiA3">奥迪A6L</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪Q3</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪Q5</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪A4</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪100</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪200</a></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">进口奥迪</a></dt>
+                                        <dd><a href="#" class="serial_confirm">奥迪A1(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪A3(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">A3 e-tron</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪A4 allroad</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪A5(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪A6(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪A6 allroad</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪A7(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪A8L(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪S8(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪Q3(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪Q5(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪Q7(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪R8(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪S3</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪S5(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪S6(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪S7(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪SQ5(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪TT(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪A4(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪Q1(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪Q2</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪Q8</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪S1(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪S4</a></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">进口奥迪</a></dt>
+                                        <dd><a href="#" class="serial_confirm">奥迪A1(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪A3(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">A3 e-tron</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪A4 allroad</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪A5(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪A6(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪A6 allroad</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪A7(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪A8L(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪S8(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪Q3(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪Q5(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪Q7(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪R8(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪S3</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪S5(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪S6(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪S7(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪SQ5(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪TT(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪A4(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪Q1(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪Q2</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪Q8</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪S1(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪S4</a></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">进口奥迪RS</a></dt>
+                                        <dd><a href="#" class="serial_confirm">奥迪RS5(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪RS6(进口)</a></dd>
+                                        <dd><a href="#" class="serial_confirm">奥迪RS7(进口)</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="scrollbar_serial">
+                                    <div class="scrollbtn_serial"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="search_new_a"><button class="search_new1" id="search_new">找新车</button></a>
+                    <div class="for_select">
+                        <span class="icon-select-default_03 default1"></span>
+                        <a href="carCondition.html" target="_blank" class="for_conditional">按条件选车</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="car_intro">
+            <ul>
+                <li class="one">
+                    <a href="#" class="img">
+                        <img src="img/car_select_png.jpg" alt="">
+                    </a>
+                    <a href="#" class="car_select_bg">雪铁龙</a>
+                    <div class="img_box">
+                        <a href="#" class="">
+                            <img src="img/pic/car_facaed.png" alt="">
+                        </a>
+                        <span></span>
+                        <p></p>
+                    </div>
+                </li>
+                <li class="one">
+                    <a href="#" class="img">
+                        <img src="img/pic/car_select2.jpg" alt="">
+                    </a>
+
+                    <a href="#" class="car_select_bg">摩托</a>
+                    <div class="img_box">
+                        <a href="#" class="">
+                            <img src="img/pic/car_facaed.png" alt="">
+                            <b>广告</b>
+                        </a>
+                        <span></span>
+                        <p></p>
+                    </div>
+                </li>
+                <li class="one">
+                    <a href="#" class="img">
+                       <img src="img/pic/car_select1.jpg" alt="">
+                    </a>
+                    <a href="#" class="car_select_bg">奥迪</a>
+                    <div class="img_box">
+                        <a href="#" class="">
+                            <img src="img/pic/car_facaed.png" alt="">
+                        </a>
+                        <span></span>
+                        <p></p>
+                    </div>
+                </li>
+                <li class="one">
+                    <a href="#" class="img">
+                         <img src="img/pic/car_select2.jpg" alt="">
+                    </a>
+
+                    <a href="#" class="car_select_bg">东南</a>
+                    <div class="img_box">
+                        <a href="#" class="">
+                            <img src="img/pic/car_facaed.png" alt="">
+                        </a>
+                        <span></span>
+                        <p></p>
+                    </div>
+                </li>
+                <li class="one">
+                    <a href="#" class="img">
+                        <img src="img/pic/car_select3.jpg" alt="">
+                    </a>
+
+                    <a href="#" class="car_select_bg">君越</a>
+                    <div class="img_box">
+                        <a href="#" class="">
+                            <img src="img/pic/car_facaed.png" alt="">
+                        </a>
+                        <span></span>
+                        <p></p>
+                    </div>
+                </li>
+                <li class="one">
+                    <a href="#" class="img">
+                        <img src="img/pic/car_select14.jpg" alt="">
+                    </a>
+
+                    <a href="#" class="car_select_bg">瑞风</a>
+                    <div class="img_box">
+                        <a href="#" class="">
+                            <img src="img/pic/car_facaed.png" alt="">
+                        </a>
+                        <span></span>
+                        <p></p>
+                    </div>
+                </li>
+                <li class="one">
+                    <a href="#" class="img">
+                        <img src="img/pic/car_select5.jpg" alt="">
+                    </a>
+                    <a href="#" class="car_select_bg">起亚K2</a>
+                    <div class="img_box">
+                        <a href="#" class="">
+                            <img src="img/pic/car_facaed.png" alt="">
+                        </a>
+                        <span></span>
+                        <p></p>
+                    </div>
+                </li>
+                <li class="two">
+                    <a href="#" class="img">
+                        <img src="img/pic/car_select6.jpg" alt="">
+                    </a>
+                    <a href="#" class="car_select_bg">宝马X1</a>
+                    <div class="img_box">
+                        <a href="#" class="">
+                            <img src="img/pic/car_facaed.png" alt="">
+                        </a>
+                        <span></span>
+                        <p></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--carBanner模块-->
+    <div class="car_banner">
+        <div class="swiper-container" id="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="car_big_img">
+                        <a href="#">
+                            <img src="img/pic/bannerBigImg_03.jpg" alt="big image">
+                            <span class="img_description"><span class="text">雪佛兰科罗拉 ZH2 概念车</span></span>
+                        </a>
+                    </div>
+                    <div class="car_small_img">
+                        <ul class="top">
+                            <li class="first">
+                                <a href="#" class="first_a">
+                                    <span><img src="img/pic/bannerSmallImg_03.jpg" alt=""></span>
+                                    <span class="img_description"><span class="text">雪佛兰科罗拉 ZH2 概念车</span></span>
+                                </a>
+                                <a href="#">
+                                    <span><img src="img/pic/bannerSmallImg_06.jpg" alt=""></span>
+                                    <span class="img_description">壮汉—雪佛兰科罗拉概念车</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="first_a">
+                                    <span><img src="img/pic/bannerSmallImg_10.jpg" alt=""></span>
+                                    <span class="img_description">壮汉—雪佛兰 ZH2 概念车</span>
+                                </a>
+                                <a href="#">
+                                    <span><img src="img/pic/bannerSmallImg_11.jpg" alt=""></span>
+                                    <span class="img_description">壮汉—雪佛兰科罗拉 ZH2 概念车</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="car_big_img">
+                        <a href="#">
+                          <XYins id="div_1426bf82-4849-453a-a467-bf4cd98d6bd1" data-type="ad_play" data-adplay_IP="" data-adplay_AreaName="" data-adplay_CityName="" data-adplay_BrandID="" data-adplay_BrandName="" data-adplay_BrandType="" data-adplay_BlockCode="1426bf82-4849-453a-a467-bf4cd98d6bd1"> </XYins>
+
+                            <!-- <img src="img/pic/bannerBigImg_03.jpg" alt="big image"> -->
+                            <!-- <span class="img_description">1壮汉—雪佛兰科罗拉 ZH2 概念车</span> -->
+                        </a>
+                    </div>
+                    <div class="car_small_img">
+                        <ul class="top">
+                            <li class="first">
+                                <div class="advise">
+                                    <!-- <span><img src="img/pic/bannerSmallImg_03.jpg" alt=""></span> -->
+                                    <XYins id="div_6fc5c977-fc47-4ae5-890a-8d99be2fc582" data-type="ad_play" data-adplay_IP="" data-adplay_AreaName="" data-adplay_CityName="" data-adplay_BrandID="" data-adplay_BrandName="" data-adplay_BrandType="" data-adplay_BlockCode="6fc5c977-fc47-4ae5-890a-8d99be2fc582"> </XYins>
+
+                                    <!-- <span class="img_description">雪佛兰科罗拉 ZH2 概念车</span> -->
+                                </div>
+                                <div class="advise">
+                                    <!-- <span><img src="img/pic/bannerSmallImg_06.jpg" alt=""></span> -->
+                                    <XYins id="div_fbc53380-22b2-4498-9460-2dc1930b7e13" data-type="ad_play" data-adplay_IP="" data-adplay_AreaName="" data-adplay_CityName="" data-adplay_BrandID="" data-adplay_BrandName="" data-adplay_BrandType="" data-adplay_BlockCode="fbc53380-22b2-4498-9460-2dc1930b7e13"> </XYins>
+
+                                    <!-- <span class="img_description">壮汉—雪佛兰科罗拉概念车</span> -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="advise">
+                                    <!-- <span><img src="img/pic/bannerSmallImg_11.jpg" alt=""></span> -->
+                                    <XYins id="div_70e225c0-f5da-4f33-bdef-760a364fa924" data-type="ad_play" data-adplay_IP="" data-adplay_AreaName="" data-adplay_CityName="" data-adplay_BrandID="" data-adplay_BrandName="" data-adplay_BrandType="" data-adplay_BlockCode="70e225c0-f5da-4f33-bdef-760a364fa924"> </XYins>
+
+                                    <!-- <span class="img_description">壮汉—雪佛兰科罗拉 ZH2 概念车</span> -->
+                                </div>
+                                <div class="advise">
+                                    <!-- <span><img src="img/pic/bannerSmallImg_10.jpg" alt=""></span> -->
+                                    <XYins id="div_7524a539-d392-4151-9a5b-a78a85e83616" data-type="ad_play" data-adplay_IP="" data-adplay_AreaName="" data-adplay_CityName="" data-adplay_BrandID="" data-adplay_BrandName="" data-adplay_BrandType="" data-adplay_BlockCode="7524a539-d392-4151-9a5b-a78a85e83616"> </XYins>
+
+                                    <!-- <span class="img_description">壮汉—雪佛兰 ZH2 概念车</span> -->
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="car_big_img">
+                        <a href="#">
+                            <img src="img/pic/bannerBigImg_03.jpg" alt="big image">
+                            <span class="img_description">1壮汉—雪佛兰科罗拉 ZH2 概念车</span>
+                        </a>
+                    </div>
+                    <div class="car_small_img">
+                        <ul class="top">
+                            <li class="first">
+                                <a href="#" class="first_a">
+                                    <span><img src="img/pic/bannerSmallImg_03.jpg" alt=""></span>
+                                    <span class="img_description">雪佛兰科罗拉 ZH2 概念车</span>
+                                </a>
+                                <a href="#">
+                                    <span><img src="img/pic/bannerSmallImg_06.jpg" alt=""></span>
+                                    <span class="img_description">壮汉—雪佛兰科罗拉概念车</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="first_a">
+                                    <span><img src="img/pic/bannerSmallImg_10.jpg" alt=""></span>
+                                    <span class="img_description">壮汉—雪佛兰 ZH2 概念车</span>
+                                </a>
+                                <a href="#">
+                                    <span><img src="img/pic/bannerSmallImg_11.jpg" alt=""></span>
+                                    <span class="img_description">壮汉—雪佛兰科罗拉 ZH2 概念车</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="car_big_img">
+                        <a href="#">
+                            <img src="img/pic/bannerBigImg_03.jpg" alt="big image">
+                            <span class="img_description">1壮汉—雪佛兰科罗拉 ZH2 概念车</span>
+                        </a>
+                    </div>
+                    <div class="car_small_img">
+                        <ul class="top">
+                            <li class="first">
+                                <a href="#" class="first_a">
+                                    <span><img src="img/pic/bannerSmallImg_03.jpg" alt=""></span>
+                                    <span class="img_description">雪佛兰科罗拉 ZH2 概念车</span>
+                                </a>
+                                <a href="#">
+                                    <span><img src="img/pic/bannerSmallImg_06.jpg" alt=""></span>
+                                    <span class="img_description">壮汉—雪佛兰科罗拉概念车</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="first_a">
+                                    <span><img src="img/pic/bannerSmallImg_10.jpg" alt=""></span>
+                                    <span class="img_description">壮汉—雪佛兰 ZH2 概念车</span>
+                                </a>
+                                <a href="#">
+                                    <span><img src="img/pic/bannerSmallImg_11.jpg" alt=""></span>
+                                    <span class="img_description">壮汉—雪佛兰科罗拉 ZH2 概念车</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="icon-bannerLeft-btn-default left"></a>
+            <a href="javascript:void(0)" class="icon-bannerRight-btn-default right"></a>
+            <div class="banner_tip">
+                <span class="icon-bannerBigTipBlue_03"></span>
+                <span class="icon-bannerTipDefault_03"></span>
+                <span class="icon-bannerTipDefault_03"></span>
+                <span class="icon-bannerTipDefault_03"></span>
+            </div>
+        </div>
+    </div>
+    <!--carNews模块-->
+    <div class="main-car-news clearfix">
+        <div class="car-news-area clearfix">
+            <div class="car-news-left clearfix">
+                <div class="news-left-con clearfix">
+                    <div class="news-con-title">
+                        <h1>哈弗H2S购车手册 红标蓝标都是精英型划算</h1>
+                        <p>
+                            <a href="#">宝马1系三厢版</a><span>|</span>
+                            <a href="#">柯迪亚克</a><span>|</span>
+                            <a href="#">全新指南者</a><span>|</span>
+                            <a href="#">雪佛兰探界者</a>
+                        </p>
+                    </div>
+                    <div class="news-con-content">
+                        <p>
+                            <a href="#" class="first">直击洛杉矶车展兰博基尼之夜首发实拍加长版之夜你好不好很好哈哈</a>
+                        </p>
+                        <p>
+                            <a href="#" class="first">COUNTRYMAN</a>/<a href="#">新CX-5</a>/<a
+                                href="#">宝骏510</a>/<a href="#">Stelvio</a>/<a
+                                href="#">本田新思域讴歌</a>
+                        </p>
+                        <p>
+                            <a href="#" class="first">直击广州车展 奔驰Z级假想图 国产E级标休</a>/<a href="#">新发现亮相之夜</a>
+                        </p>
+                        <p>
+                            <a href="#" class="first">COUNTRYMAN</a>/<a href="#">新CX-5</a>/<a
+                                href="#">宝骏510</a>/<a href="#">Stelvio</a>/<a
+                                href="#">本田新思域讴歌</a>
+                        </p>
+                        <p>
+                            <a href="#" class="first">COUNTRYMAN</a>/<a href="#">新CX-5</a>/<a
+                                href="#">宝骏510</a>/<a href="#">Stelvio</a>/<a
+                                href="#">本田新思域讴歌</a>
+                        </p>
+                        <p>
+                            <a href="#" class="first">COUNTRYMAN</a>/<a href="#">新CX-5</a>/<a
+                                href="#">宝骏510</a>/<a href="#">Stelvio</a>/<a
+                                href="#">本田新思域讴歌</a>
+                        </p>
+                        <p>
+                            <a href="#" class="first">COUNTRYMAN</a>/<a href="#">新CX-5</a>/<a
+                                href="#">宝骏510</a>/<a href="#">Stelvio</a>/<a
+                                href="#">本田新思域讴歌</a>
+                        </p>
+                        <p>
+                            <a href="#" class="first">COUNTRYMAN</a>/<a href="#">新CX-5</a>/<a
+                                href="#">宝骏510</a>/<a href="#">Stelvio</a>/<a
+                                href="#">本田新思域讴歌</a>
+                        </p>
+                        <p>
+                            <a href="#" class="first">COUNTRYMAN</a>/<a href="#">新CX-5</a>/<a
+                                href="#">宝骏510</a>/<a href="#">Stelvio</a>/<a
+                                href="#">本田新思域讴歌</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="news-left-list clearfix">
+                    <ul>
+                        <li><a href="#" class="first">直击洛杉矶车展 兰博基尼之夜首发 实拍Panamera加长版之夜</a></li>
+                        <li><a href="#" class="first">COUNTRYMAN</a>/<a href="#">新CX-5</a>/<a
+                                href="#">宝骏510</a>/<a href="#">Stelvio</a>/<a
+                                href="#">本田新思域讴歌</a></li>
+                        <li><a href="#" class="first">直击洛杉矶车展 兰博基尼之夜首发 实拍Panamera加长版之夜</a></li>
+                        <li><a href="#" class="first">拍：AMG E 63</a>/<a href="#">V90 CC</a>/<a
+                                href="#">宝骏510</a>/<a href="#">Stelvio</a>/<a
+                                href="#">本田新思域讴歌</a></li>
+                        <li><a href="#" class="first">直击洛杉矶车展 兰博基尼之夜首发 实拍Panamera加长版之夜</a></li>
+                        <li><a href="#" class="first">直击洛杉矶车展 兰博基尼之夜首发 实拍Panamera加长版之夜</a></li>
+                        <li><a href="#" class="first">COUNTRYMAN</a>/<a href="#">新CX-5</a>/<a
+                                href="#">宝骏510</a>/<a href="#">Stelvio</a>/<a
+                                href="#">本田新思域讴歌</a></li>
+                        <li><a href="#" class="first">直击洛杉矶车展 兰博基尼之夜首发 实拍Panamera加长版之夜</a></li>
+                        <li><a href="#" class="first">拍：AMG E 63</a>/<a href="#">V90 CC</a>/<a
+                                href="#">宝骏510</a>/<a href="#">Stelvio</a>/<a
+                                href="#">本田新思域讴歌</a></li>
+                        <li><a href="#" class="first">直击洛杉矶车展 兰博基尼之夜首发 实拍Panamera加长版之夜</a></li>
+                        <li><a href="#" class="first">拍：AMG E 63</a>/<a href="#">V90 CC</a>/<a
+                                href="#">宝骏510</a>/<a href="#">Stelvio</a>/<a
+                                href="#">本田新思域讴歌</a></li>
+                        <li><a href="#" class="first">直击洛杉矶车展 兰博基尼之夜首发 实拍Panamera加长版之夜</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="car-news-right clearfix">
+                <h1>精彩推荐</h1>
+                <ul>
+                    <li> <a href="#" class="first">COUNTRYMAN</a>/<a href="#">新CX-5</a>/<a
+                            href="#">宝</a>/<a href="#">Stelvio</a></li>
+                    <li><a href="#" class="first">直击洛杉矶车展</a>/<a href="#">兰博基尼之</a></li>
+                    <li> <a href="#" class="first">COUNTRYMAN</a>/<a href="#">新CX-5</a></li>
+                    <li><a href="#" class="first">直击洛杉矶车展</a>/<a href="#">兰博基尼之</a></li>
+                    <li><a href="#" class="first">拍：AMG E 63</a>/<a href="#">V90 CC</a></li>
+                    <li><a href="#" class="first">直击洛杉矶车展 兰博基尼之</a></li>
+                    <li><a href="#" class="first">拍：AMG E 63</a>/<a href="#">V90 CC</a></li>
+                    <li><a href="#" class="first">直击洛杉矶车展 兰博基尼之</a></li>
+                    <li><a href="#" class="first">直击洛杉矶车展</a>/<a href="#">宝马车展</a></li>
+                    <li><a href="#" class="first">直击洛杉矶车展</a>/<a href="#">丰田车展中</a></li>
+                    <li><a href="#" class="first">直击洛杉矶车展</a>/<a href="#">凯迪拉克你好</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--driveTest模块-->
+    <div class="new-Car-Com">
+        <div class="new-Car-Com-logo">
+            <a href="#">
+            <!-- <img src="img/car_nav_pg.png" alt=""> -->
+                <XYins id="div_df7f4530-4c26-435f-a3c7-2b112e10bb3b" data-type="ad_play" data-adplay_IP="" data-adplay_AreaName="" data-adplay_CityName="" data-adplay_BrandID="" data-adplay_BrandName="" data-adplay_BrandType="" data-adplay_BlockCode="df7f4530-4c26-435f-a3c7-2b112e10bb3b"> </XYins>
+            </a>
+        </div>
+        <div class="new-Car-Com-Con cf">
+            <div class="new-Car-Con cf">
+                <div class="clearfix">
+
+                    <div class="ad_textwrap item">
+                        <div class="test-com">
+                            <p class="p"><a href="evaluatingGuide.html" target="_blank">新车上市 >></a></p>
+                            <div class="new_arr">
+                                <dl class="cf desCon">
+                                    <dt>
+                                        <a href="evaluatingGuide.html" target="_blank"><img src="img/car.png" alt=""></a>
+                                    </dt>
+                                    <dd class="desTitle"><a href="evaluatingGuide.html" target="_blank">广汽三菱欧蓝德长测内功篇</a></dd>
+                                    <dd class="desWord"><p>经过几天的体验后，终于可以看看他的内功如何了...经过几天的体验后，终于可以看看他的内功如何了...经过几天的体验后，终于可以看看他的内功如何了...</p>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <ul class="quick">
+                                <li class="quick-item">
+                                    <span class="icon-p"></span>
+                                    <a href="evaluatingGuide.html" target="_blank"><span class="q-s">抢先</span></a>|<a href="evaluatingGuide.html"><span
+                                            class="q-w">"双百"电动胶囊 测众泰大迈芝麻E30"双百"电动胶囊 测众泰大迈芝麻E30</span></a>
+                                </li>
+                                <li class="quick-item">
+                                    <span class="icon-p"></span>
+                                    <a href="evaluatingGuide.html" target="_blank"><span class="q-s">抢先</span></a>|<a href="evaluatingGuide.html"><span
+                                        class="q-w">"双百"电动胶囊 测众泰大迈芝麻E30"双百"电动胶囊 测众泰大迈芝麻E30</span></a>
+                                </li>
+                                <li class="quick-item">
+                                    <span class="icon-p"></span>
+                                    <a href="evaluatingGuide.html" target="_blank"><span class="q-s">抢先</span></a>|<a href="evaluatingGuide.html"><span
+                                        class="q-w">"双百"电动胶囊 测众泰大迈芝麻E30"双百"电动胶囊 测众泰大迈芝麻E30</span></a>
+                                </li>
+                                <li class="quick-item">
+                                    <span class="icon-p"></span>
+                                    <a href="evaluatingGuide.html" target="_blank"><span class="q-s">抢先</span></a>|<a href="evaluatingGuide.html"><span
+                                        class="q-w">"双百"电动胶囊 测众泰大迈芝麻E30"双百"电动胶囊 测众泰大迈芝麻E30</span></a>
+                                </li>
+                                <li class="quick-item">
+                                    <span class="icon-p"></span>
+                                    <a href="evaluatingGuide.html" target="_blank"><span class="q-s">抢先</span></a>|<a href="evaluatingGuide.html"><span
+                                        class="q-w">"双百"电动胶囊 测众泰大迈芝麻E30"双百"电动胶囊 测众泰大迈芝麻E30</span></a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <a href="javascript:;" class="ad_text_list">
+                            <XYins id="div_a7aaf678-ea52-48a0-a03e-1e8bb30481a0" data-type="ad_play" data-adplay_IP="" data-adplay_AreaName="" data-adplay_CityName="" data-adplay_BrandID="" data-adplay_BrandName="" data-adplay_BrandType="" data-adplay_BlockCode="a7aaf678-ea52-48a0-a03e-1e8bb30481a0"> </XYins>
+                        <span>广告</span>
+                        </a>
+                    </div>
+                    <div class="ad_textwrap item">
+                        <div class="test-com will-car">
+                            <p class="p"><a href="newCar.html" target="_blank">即将上市 >></a></p>
+                            <div>
+                                <p class="will-car-title"><a href="newCar.html" target="_blank"><span class="car-Name">观之3</span><span
+                                        class="will-time icon-bg">2016年12月29日</span></a></p>
+                                <p class="will-car-des"><span>观致汽车是一家创自中国、具备行业领先水准的中国汽车公司，汇集国际及中国汽车业高端团队观致汽车是一家创自中国、具备行业领先水准的中国汽车公司，汇集国际及中国汽车业高端团</span>
+                                </p>
+                            </div>
+                            <div>
+                                <p class="will-car-title"><a href="newCar.html" target="_blank"><span class="car-Name">观之3</span><span
+                                        class="will-time icon-bg">2016年12月29日</span></a></p>
+                                <p class="will-car-des"><span>观致汽车是一家创自中国、具备行业领先水准的中国汽车公司，汇集国际及中国汽车业高端团队观致汽车是一家创自中国、具备行业领先水准的中国汽车公司，汇集国际及中国汽车业高端团</span>
+                                </p>
+                            </div>
+                            <div>
+                                <p class="will-car-title"><a href="#"><span class="car-Name">观之3</span><span
+                                        class="will-time icon-bg">2016年12月29日</span></a></p>
+                                <p class="will-car-des"><span>观致汽车是一家创自中国、具备行业领先水准的中国汽车公司，汇集国际及中国汽车业高端团队观致汽车是一家创自中国、具备行业领先水准的中国汽车公司，汇集国际及中国汽车业高端团</span>
+                                </p>
+                            </div>
+
+                        </div>
+                        <a href="javascript:;" class="ad_text_list">
+                            <XYins id="div_78475308-3f50-491c-b638-39fb6e318b61" data-type="ad_play" data-adplay_IP="" data-adplay_AreaName="" data-adplay_CityName="" data-adplay_BrandID="" data-adplay_BrandName="" data-adplay_BrandType="" data-adplay_BlockCode="78475308-3f50-491c-b638-39fb6e318b61"> </XYins>
+                        <span>广告</span></a>
+                    </div>
+
+                </div>
+                <div class="clearfix">
+
+                    <div class="ad_textwrap item">
+                        <div class="test-com mT22">
+                            <p class="p"><a href="evaluatingGuide.html" target="_blank">试驾评测 >></a></p>
+                            <div>
+                                <dl class="clearfix desCon">
+                                    <dt>
+                                        <a href="evaluatingGuide.html" target="_blank"><img src="img/car.png" alt=""></a>
+                                    </dt>
+                                    <dd class="desTitle"><a href="evaluatingGuide.html" target="_blank">广汽三菱欧蓝德长测内功篇</a></dd>
+                                    <dd class="desWord"><p>经过几天的体验后，终于可以看看他的内功如何了...经过几天的体验后，终于可以看看他的内功如何了...经过几天的体验后，终于可以看看他的内功如何了...</p>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <ul class="quick">
+                                <li class="quick-item">
+                                    <span class="icon-p"></span>
+                                    <a href="evaluatingGuide.html" target="_blank"><span class="q-s">抢先</span></a>|<a href="evaluatingGuide.html"><span
+                                        class="q-w">"双百"电动胶囊 测众泰大迈芝麻E30"双百"电动胶囊 测众泰大迈芝麻E30</span></a>
+                                </li>
+                                <li class="quick-item">
+                                    <span class="icon-p"></span>
+                                    <a href="evaluatingGuide.html" target="_blank"><span class="q-s">抢先</span></a>|<a href="evaluatingGuide.html"><span
+                                        class="q-w">"双百"电动胶囊 测众泰大迈芝麻E30"双百"电动胶囊 测众泰大迈芝麻E30</span></a>
+                                </li>
+                                <li class="quick-item">
+                                    <span class="icon-p"></span>
+                                    <a href="evaluatingGuide.html" target="_blank"><span class="q-s">抢先</span></a>|<a href="evaluatingGuide.html"><span
+                                        class="q-w">"双百"电动胶囊 测众泰大迈芝麻E30"双百"电动胶囊 测众泰大迈芝麻E30</span></a>
+                                </li>
+                                <li class="quick-item">
+                                    <span class="icon-p"></span>
+                                    <a href="evaluatingGuide.html" target="_blank"><span class="q-s">抢先</span></a>|<a href="evaluatingGuide.html"><span
+                                        class="q-w">"双百"电动胶囊 测众泰大迈芝麻E30"双百"电动胶囊 测众泰大迈芝麻E30</span></a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <a href="javascript:;" class="ad_text_list">
+                            <XYins id="div_4db1d8ad-45d4-43f6-8a11-a579c239d3b3" data-type="ad_play" data-adplay_IP="" data-adplay_AreaName="" data-adplay_CityName="" data-adplay_BrandID="" data-adplay_BrandName="" data-adplay_BrandType="" data-adplay_BlockCode="4db1d8ad-45d4-43f6-8a11-a579c239d3b3"> </XYins>
+                        <span>广告</span></a>
+
+                    </div>
+                    <div class="ad_textwrap item">
+                        <div class="test-com mT22">
+                            <p class="p"><a href="evaluatingGuide.html" target="_blank">车型导购 >></a></p>
+                            <div>
+                                <dl class="clearfix desCon">
+                                    <dt>
+                                        <a href="evaluatingGuide.html" target="_blank"><img src="img/car.png" alt=""></a>
+                                    </dt>
+                                    <dd class="desTitle"><a href="evaluatingGuide.html" target="_blank">广汽三菱欧蓝德长测内功篇</a></dd>
+                                    <dd class="desWord"><p>经过几天的体验后，终于可以看看他的内功如何了...经过几天的体验后，终于可以看看他的内功如何了...经过几天的体验后，终于可以看看他的内功如何了...</p>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <ul class="quick">
+                                <li class="quick-item">
+                                    <span class="icon-p"></span>
+                                    <a href="evaluatingGuide.html" target="_blank"><span class="q-s">抢先</span></a>|<a href="evaluatingGuide.html"><span
+                                        class="q-w">"双百"电动胶囊 测众泰大迈芝麻E30"双百"电动胶囊 测众泰大迈芝麻E30</span></a>
+                                </li>
+                                <li class="quick-item">
+                                    <span class="icon-p"></span>
+                                    <a href="evaluatingGuide.html" target="_blank"><span class="q-s">抢先</span></a>|<a href="evaluatingGuide.html"><span
+                                        class="q-w">"双百"电动胶囊 测众泰大迈芝麻E30"双百"电动胶囊 测众泰大迈芝麻E30</span></a>
+                                </li>
+                                <li class="quick-item">
+                                    <span class="icon-p"></span>
+                                    <a href="evaluatingGuide.html" target="_blank"><span class="q-s">抢先</span></a>|<a href="evaluatingGuide.html"><span
+                                        class="q-w">"双百"电动胶囊 测众泰大迈芝麻E30"双百"电动胶囊 测众泰大迈芝麻E30</span></a>
+                                </li>
+                                <li class="quick-item">
+                                    <span class="icon-p"></span>
+                                    <a href="evaluatingGuide.html" target="_blank"><span class="q-s">抢先</span></a>|<a href="evaluatingGuide.html"><span
+                                        class="q-w">"双百"电动胶囊 测众泰大迈芝麻E30"双百"电动胶囊 测众泰大迈芝麻E30</span></a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <a href="javascript:;" class="ad_text_list">
+                            <XYins id="div_2387fd94-2609-4c61-8756-ec415adb7459" data-type="ad_play" data-adplay_IP="" data-adplay_AreaName="" data-adplay_CityName="" data-adplay_BrandID="" data-adplay_BrandName="" data-adplay_BrandType="" data-adplay_BlockCode="2387fd94-2609-4c61-8756-ec415adb7459"> </XYins>
+                        <span>广告</span></a>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="new-car-hot">
+                <div><img src="img/rightCar.png" alt=""></div>
+                <div class="hot-list">
+                    {{#include ./mod/mod_carHot.html}}
+                </div>
+            </div>
+        </div>
+        <div class="new-Car-Com-logo">
+            <a href="#">
+            <!-- <img src="img/car_nav_pg.png" alt=""> -->
+                <XYins id="div_cedb3acb-7826-4a74-a2df-b2f48af59ae5" data-type="ad_play" data-adplay_IP="" data-adplay_AreaName="" data-adplay_CityName="" data-adplay_BrandID="" data-adplay_BrandName="" data-adplay_BrandType="" data-adplay_BlockCode="cedb3acb-7826-4a74-a2df-b2f48af59ae5"> </XYins>
+            </a>
+        </div>
+    </div>
+    <!--carVideo模块-->
+    <div class="car_video_area">
+        <div class="car_video_nav">
+            <p class="title">汽车视频</p>
+            <p>
+                <span>|</span>
+                <a href="video.html/#original_v">原创试车</a>
+                <span>|</span>
+            </p>
+            <p>
+                <a href="#" id="advertising_v">广告欣赏</a>
+                <span>|</span>
+            </p>
+            <p>
+                <a href="#" id="media_v">合作媒体</a>
+                <span>|</span>
+            </p>
+            <p>
+                <a href="#" id="qipa_v">奇葩视频</a>
+                <span>|</span>
+            </p>
+            <p>
+                <a href="#" id="official_v">官方视频</a>
+                <span>|</span>
+            </p>
+            <p class="car_video_rightMore fr"><a href="#">更多精彩视频 ></a></p>
+
+        </div>
+
+        <div class="car_video_content cf">
+            <div class="car_video-left">
+                <a href="#"><img src="img/pic/bannerBigImg_03.jpg"></a>
+                <span class="black_bar"></span>
+                <p><a href="video.html">壮汉雪佛兰科罗拉多你好你好你你你你你你</a></p>
+                <span class="iconSpan iconSpan1 icon-dujia"></span>
+                <span class="iconSpan iconSpan2 top-right-bg"></span>
+                <span class="iconSpan iconSpan2 top-right-showtime">00:33</span>
+                <a href="#"><span class="iconSpan iconSpan3 icon-play"></span></a>
+            </div>
+            <div class="car_video-right">
+                <ul>
+                    <li>
+                        <a href="#"><img src="img/pic/bannerSmallImg_06.jpg"></a>
+                        <span class="black_bar"></span>
+                        <p><a href="video.html">东本哥瑞带您秒杀全系</a></p>
+                        <span class="iconSpan iconSpan1 icon-dujia"></span>
+                        <span class="iconSpan iconSpan2 top-right-bg"></span>
+                        <span class="iconSpan iconSpan2 top-right-showtime">00:33</span>
+                        <a href="#"><span class="iconSpan iconSpan3 icon-play"></span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/pic/bannerSmallImg_03.jpg"></a>
+                        <span class="black_bar"></span>
+                        <p><a href="video.html">东本哥瑞带您秒杀全系</a></p>
+                        <span class="iconSpan iconSpan1 icon-dujia"></span>
+                        <span class="iconSpan iconSpan2 top-right-bg"></span>
+                        <span class="iconSpan iconSpan2 top-right-showtime">00:33</span>
+                        <a href="#"><span class="iconSpan iconSpan3 icon-play"></span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/pic/bannerSmallImg_10.jpg"></a>
+                        <span class="black_bar"></span>
+                        <p><a href="video.html">东本哥瑞带您秒杀全系</a></p>
+                        <span class="iconSpan iconSpan1 icon-dujia"></span>
+                        <span class="iconSpan iconSpan2 top-right-bg"></span>
+                        <span class="iconSpan iconSpan2 top-right-showtime">00:33</span>
+                        <a href="#"><span class="iconSpan iconSpan3 icon-play"></span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/pic/bannerSmallImg_11.jpg"></a>
+                        <span class="black_bar"></span>
+                        <p><a href="video.html">东本哥瑞带您秒杀全系</a></p>
+                        <span class="iconSpan iconSpan1 icon-dujia"></span>
+                        <span class="iconSpan iconSpan2 top-right-bg"></span>
+                        <span class="iconSpan iconSpan2 top-right-showtime">00:33</span>
+                        <a href="#"><span class="iconSpan iconSpan3 icon-play"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--车市信息selectCity-->
+    <div class="carMarket" id="carMarket">
+        <div class="carMarket_left">
+            <div class="carMarket_left_title">
+                <a href="#" class="bj_car">北京车市</a>
+                <a href="#" target="_blank" class="city" id="city">查看本地车市</a>
+            </div>
+            <div class="carMarket_left_tab">
+                <ul class="price_list">
+                    <li class="bg"><a href="">猜您喜欢</a></li>
+                    <li><a href="#">5万以下</a></li>
+                    <li><a href="#">5-8万</a></li>
+                    <li><a href="#">8-12万</a></li>
+                    <li><a href="#">12-18万</a></li>
+                    <li><a href="#">18-25万</a></li>
+                    <li><a href="#">25-40万</a></li>
+                    <li><a href="#">40万以上</a></li>
+                </ul>
+                <div class="carMarket_left_tab_container">
+                    <div class="carMarket_left_tab_content show">
+                        <div class="carMarket_tab1">
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">迈腾</a></li>
+                                    <li class="address"><a href="#">北京大通远鑫北京大通远鑫</a></li>
+                                    <li><a href="#" class="gift">送礼包</a></li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">哈佛H6</a></li>
+                                    <li class="address"><a href="#">北京鑫利宝</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>3.30万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">明锐Combi</a></li>
+                                    <li class="address"><a href="#">北京隆晟通达吉利</a></li>
+                                    <li><a href="#" class="gift">7000元送礼包</a></li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">逸致</a></li>
+                                    <li class="address"><a href="#">北京华鑫丰盛</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>2.00万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">奔驰A级（进口</a></li>
+                                    <li class="address"><a href="#">北京佳远伟业</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>3.00万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">楼兰</a></li>
+                                    <li class="address"><a href="#">北京隆晟骏通</a></li>
+                                    <li><a href="#" class="gift">送礼包</a></li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">标致RCZ</a></li>
+                                    <li class="address"><a href="#">北京驰盛丰</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>3.30万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">宝马X1</a></li>
+                                    <li class="address"><a href="#">北京大通远鑫</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>2.00万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carMarket_left_tab_content">
+                        <div class="carMarket_tab1">
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">迈腾2</a></li>
+                                    <li class="address"><a href="#">北京大通远鑫</a></li>
+                                    <li><a href="#" class="gift">送礼包</a></li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">哈佛H7</a></li>
+                                    <li class="address"><a href="#">北京鑫利宝</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>3.30万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">明锐Combi</a></li>
+                                    <li class="address"><a href="#">北京隆晟通达吉利</a></li>
+                                    <li><a href="#" class="gift">7000元送礼包</a></li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">逸致</a></li>
+                                    <li class="address"><a href="#">北京华鑫丰盛</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>2.00万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">奔驰A级（进口)</a></li>
+                                    <li class="address"><a href="#">北京佳远伟业</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>3.00万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">楼兰</a></li>
+                                    <li class="address"><a href="#">北京隆晟骏通</a></li>
+                                    <li><a href="#" class="gift">送礼包</a></li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">标致RCZ</a></li>
+                                    <li class="address"><a href="#">北京驰盛丰</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>3.30万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">宝马X1</a></li>
+                                    <li class="address"><a href="#">北京大通远鑫</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>2.00万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carMarket_left_tab_content">
+                        <div class="carMarket_tab1">
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">迈腾</a></li>
+                                    <li class="address"><a href="#">北京大通远鑫</a></li>
+                                    <li><a href="#" class="gift">送礼包</a></li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">哈佛H6</a></li>
+                                    <li class="address"><a href="#">北京鑫利宝</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>3.30万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">明锐Combi</a></li>
+                                    <li class="address"><a href="#">北京隆晟通达吉利</a></li>
+                                    <li><a href="#" class="gift">7000元送礼包</a></li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">逸致</a></li>
+                                    <li class="address"><a href="#">北京华鑫丰盛</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>2.00万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">奔驰A级（进口）</a></li>
+                                    <li class="address"><a href="#">北京佳远伟业</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>3.00万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">楼兰</a></li>
+                                    <li class="address"><a href="#">北京隆晟骏通</a></li>
+                                    <li><a href="#" class="gift">送礼包</a></li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">标致RCZ</a></li>
+                                    <li class="address"><a href="#">北京驰盛丰</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>3.30万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">宝马X1</a></li>
+                                    <li class="address"><a href="#">北京大通远鑫</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>2.00万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carMarket_left_tab_content">
+                        <div class="carMarket_tab1">
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">迈腾12</a></li>
+                                    <li class="address"><a href="#">北京大通远鑫</a></li>
+                                    <li><a href="#" class="gift">送礼包</a></li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">哈佛H3</a></li>
+                                    <li class="address"><a href="#">北京鑫利宝</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>3.30万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">明锐Combi</a></li>
+                                    <li class="address"><a href="#">北京隆晟通达吉利</a></li>
+                                    <li><a href="#" class="gift">7000元送礼包</a></li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">逸致</a></li>
+                                    <li class="address"><a href="#">北京华鑫丰盛</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>2.00万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">奔驰A级（进口）</a></li>
+                                    <li class="address"><a href="#">北京佳远伟业</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>3.00万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">楼兰</a></li>
+                                    <li class="address"><a href="#">北京隆晟骏通</a></li>
+                                    <li><a href="#" class="gift">送礼包</a></li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">标致RCZ</a></li>
+                                    <li class="address"><a href="#">北京驰盛丰</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>3.30万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">宝马X1</a></li>
+                                    <li class="address"><a href="#">北京大通远鑫</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>2.00万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carMarket_left_tab_content">
+                        <div class="carMarket_tab1">
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">迈腾</a></li>
+                                    <li class="address"><a href="#">北京大通远鑫</a></li>
+                                    <li><a href="#" class="gift">送礼包</a></li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">哈佛H6</a></li>
+                                    <li class="address"><a href="#">北京鑫利宝</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>3.30万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">明锐Combi</a></li>
+                                    <li class="address"><a href="#">北京隆晟通达吉利</a></li>
+                                    <li><a href="#" class="gift">7000元送礼包</a></li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">逸致</a></li>
+                                    <li class="address"><a href="#">北京华鑫丰盛</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>2.00万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">奔驰A级（进口）</a></li>
+                                    <li class="address"><a href="#">北京佳远伟业</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>3.00万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">楼兰</a></li>
+                                    <li class="address"><a href="#">北京隆晟骏通</a></li>
+                                    <li><a href="#" class="gift">送礼包</a></li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">标致RCZ</a></li>
+                                    <li class="address"><a href="#">北京驰盛丰</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>3.30万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">宝马X1</a></li>
+                                    <li class="address"><a href="#">北京大通远鑫</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>2.00万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carMarket_left_tab_content">
+                        <div class="carMarket_tab1">
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">迈腾</a></li>
+                                    <li class="address"><a href="#">北京大通远鑫</a></li>
+                                    <li><a href="#" class="gift">送礼包</a></li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">哈佛H6</a></li>
+                                    <li class="address"><a href="#">北京鑫利宝</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>3.30万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">明锐Combi</a></li>
+                                    <li class="address"><a href="#">北京隆晟通达吉利</a></li>
+                                    <li><a href="#" class="gift">7000元送礼包</a></li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">逸致</a></li>
+                                    <li class="address"><a href="#">北京华鑫丰盛</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>2.00万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">奔驰A级（进口</a></li>
+                                    <li class="address"><a href="#">北京佳远伟业</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>3.00万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">楼兰</a></li>
+                                    <li class="address"><a href="#">北京隆晟骏通</a></li>
+                                    <li><a href="#" class="gift">送礼包</a></li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">标致RCZ</a></li>
+                                    <li class="address"><a href="#">北京驰盛丰</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>3.30万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">宝马X1</a></li>
+                                    <li class="address"><a href="#">北京大通远鑫</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>2.00万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carMarket_left_tab_content">
+                        <div class="carMarket_tab1">
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">迈腾</a></li>
+                                    <li class="address"><a href="#">北京大通远鑫</a></li>
+                                    <li><a href="#" class="gift">送礼包</a></li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">哈佛H6</a></li>
+                                    <li class="address"><a href="#">北京鑫利宝</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>3.30万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">明锐Combi</a></li>
+                                    <li class="address"><a href="#">北京隆晟通达吉利</a></li>
+                                    <li><a href="#" class="gift">7000元送礼包</a></li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">逸致</a></li>
+                                    <li class="address"><a href="#">北京华鑫丰盛</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>2.00万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">奔驰A级（进口</a></li>
+                                    <li class="address"><a href="#">北京佳远伟业</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>3.00万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">楼兰</a></li>
+                                    <li class="address"><a href="#">北京隆晟骏通</a></li>
+                                    <li><a href="#" class="gift">送礼包</a></li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">标致RCZ</a></li>
+                                    <li class="address"><a href="#">北京驰盛丰</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>3.30万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">宝马X1</a></li>
+                                    <li class="address"><a href="#">北京大通远鑫</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>2.00万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carMarket_left_tab_content">
+                        <div class="carMarket_tab1">
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">迈腾</a></li>
+                                    <li class="address"><a href="#">北京大通远鑫</a></li>
+                                    <li><a href="#" class="gift">送礼包</a></li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">哈佛H6</a></li>
+                                    <li class="address"><a href="#">北京鑫利宝</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>3.30万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">明锐Combi</a></li>
+                                    <li class="address"><a href="#">北京隆晟通达吉利</a></li>
+                                    <li><a href="#" class="gift">7000元送礼包</a></li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">逸致</a></li>
+                                    <li class="address"><a href="#">北京华鑫丰盛</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>2.00万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">奔驰A级（进口）</a></li>
+                                    <li class="address"><a href="#">北京佳远伟业</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>3.00万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">楼兰</a></li>
+                                    <li class="address"><a href="#">北京隆晟骏通</a></li>
+                                    <li><a href="#" class="gift">送礼包</a></li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">标致RCZ</a></li>
+                                    <li class="address"><a href="#">北京驰盛丰</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>3.30万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_news">
+                                <ul>
+                                    <li><a href="#">宝马X1</a></li>
+                                    <li class="address"><a href="#">北京大通远鑫</a></li>
+                                    <li><a href="#" class="gift"><img src="img/price_down.png"/>2.00万</a>
+                                    </li>
+                                    <li><a href="#" class="price">32.69万</a></li>
+                                    <li class="priceButton"><a href="#"><button class="floor_price_button">询底价</button></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="carMarket_right">
+            <div class="rightsm_ad_mod">
+                <img src="img/img1.jpg"/>
+            </div>
+
+            <p>
+                <span class="promotion">4s店促销</span><i>|</i> 
+                <span class="refresh">换一换</span>
+            </p>
+            <ul>
+                <li><a href="#">COUNTRYMAN/新CX-5/宝</a></li>
+                <li><a href="#">直击广州车展 解读柯迪亚克国</a></li>
+                <li><a href="#">新款高尔夫电动版 讴歌NSX香</a></li>
+                <li><a href="#">拍:AMG E63/迈巴赫S 650敞</a></li>
+                <li><a href="#">拍:AMG E63/迈巴赫S 650敞</a></li>
+                <li><a href="#">直击洛杉矶车展 兰博基尼之夜</a></li>
+                <li><a href="#">COUNTRYMAN/新CX-5/宝</a></li>
+                <li><a href="#">直击广州车展 解读柯迪亚克国</a></li>
+                <li><a href="#">拍:AMG E63/迈巴赫S 650</a></li>
+                <li><a href="#">拍:AMG E63/迈巴赫S 650</a></li>
+                <li><a href="#">拍:AMG E63/迈巴赫S 650</a></li>
+                <li><a href="#">拍:AMG E63/迈巴赫S 650</a></li>
+                <li><a href="#">拍:AMG E63/迈巴赫S 650</a></li>
+                <li><a href="#">拍:AMG E63/迈巴赫S 650</a></li>
+                <li><a href="#">拍:AMG E63/迈巴赫S 650</a></li>
+                <li><a href="#">拍:AMG E63/迈巴赫S 650</a></li>
+                <li><a href="#">拍:AMG E63/迈巴赫S 650</a></li>
+                <li><a href="#">拍:AMG E63/迈巴赫S 650</a></li>
+                <li><a href="#">拍:AMG E63/迈巴赫S 650</a></li>
+                <li><a href="#">拍:AMG E63/迈巴赫S 650</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- 通栏广告模块 -->
+    <div class="car_ad_mod">
+        <a href="#">
+        <!-- <img src="img/car_nav_pg.png" alt=""> -->
+            <XYins id="div_7bd80093-2da4-47f4-852a-77bfa099485a" data-type="ad_play" data-adplay_IP="" data-adplay_AreaName="" data-adplay_CityName="" data-adplay_BrandID="" data-adplay_BrandName="" data-adplay_BrandType="" data-adplay_BlockCode="7bd80093-2da4-47f4-852a-77bfa099485a"> </XYins>
+        </a>
+    </div>
+    <!--carRank模块-->
+    <div class="car_rank">
+        <div class="main-total-rank">
+            <h1>综合排行</h1>
+            <div class="total-rank-content">
+                <div class="article-rank">
+                    <h2>文章排行</h2>
+                    <ul>
+                        <li class="great-rank"><span>1</span><a href="article.html" target="_blank">内饰很“宝马”实力派7渥涡轮增压后期保养维涡轮啊啊</a>
+                        </li>
+                        <li class="great-rank"><span>2</span><a href="article.html" target="_blank">内饰很“宝马”实力派7渥涡轮增压后期保养维涡轮啊啊</a>
+                        </li>
+                        <li class="great-rank"><span>3</span><a href="article.html" target="_blank">内饰很“宝马”实力派7渥涡轮增压后期保养维涡轮啊啊</a>
+                        </li>
+                        <li class="normal"><span>4</span><a href="article.html" target="_blank">内饰很“宝马”实力派7渥涡轮增压后期保养维涡轮啊啊</a>
+                        </li>
+                        <li class="normal"><span>5</span><a href="article.html" target="_blank">内饰很“宝马”实力派7渥涡轮增压后期保养维涡轮啊啊</a>
+                        </li>
+                        <li class="normal"><span>6</span><a href="article.html" target="_blank">内饰很“宝马”实力派7渥涡轮增压后期保养维涡轮啊啊</a>
+                        </li>
+                        <li class="normal"><span>7</span><a href="article.html" target="_blank">内饰很“宝马”实力派7渥涡轮增压后期保养维涡轮啊啊</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="video-rank">
+                    <h2>视频排行</h2>
+                    <ul>
+                        <li class="great-rank"><span>1</span><a href="videoHomePage.html" target="_blank">内饰很“宝马”实力派7渥涡轮增压后期保养维涡轮啊啊</a>
+                        </li>
+                        <li class="great-rank"><span>2</span><a href="videoHomePage.html" target="_blank">内饰很“宝马”实力派7渥涡轮增压后期保养维涡轮啊啊</a>
+                        </li>
+                        <li class="great-rank"><span>3</span><a href="videoHomePage.html" target="_blank">内饰很“宝马”实力派7渥涡轮增压后期保养维涡轮啊啊</a>
+                        </li>
+                        <li class="normal"><span>4</span><a href="videoHomePage.html" target="_blank">内饰很“宝马”实力派7渥涡轮增压后期保养维涡轮啊啊</a>
+                        </li>
+                        <li class="normal"><span>5</span><a href="videoHomePage.html" target="_blank">内饰很“宝马”实力派7渥涡轮增压后期保养维涡轮啊啊</a>
+                        </li>
+                        <li class="normal"><span>6</span><a href="videoHomePage.html" target="_blank">内饰很“宝马”实力派7渥涡轮增压后期保养维涡轮啊啊</a>
+                        </li>
+                        <li class="normal"><span>7</span><a href="videoHomePage.html" target="_blank">内饰很“宝马”实力派7渥涡轮增压后期保养维涡轮啊啊</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="concern-rank">
+                    <h2>车系关注排行</h2>
+                    <ul>
+                        <li class="great-rank"><p><span>1</span><a href="#">凯美瑞</a></p>
+                            <i>18.48-32.98万</i></li>
+                        <li class="great-rank"><p><span>2</span><a href="#">卡罗拉</a></p>
+                            <i>18.48-32.98万</i></li>
+                        <li class="great-rank"><p><span>3</span><a href="#">长安CS35</a></p><i>18.48-32.98万</i>
+                        </li>
+                        <li class="normal"><p><span>4</span><a href="#">卡罗拉</a></p><i>18.48-32.98万</i>
+                        </li>
+                        <li class="normal"><p><span>5</span><a href="#">凯美瑞</a></p><i>18.48-32.98万</i>
+                        </li>
+                        <li class="normal"><p><span>6</span><a href="#">长安CS35</a></p>
+                            <i>18.48-32.98万</i></li>
+                        <li class="normal"><p><span>7</span><a href="#">凯美瑞</a></p><i>18.48-32.98万</i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 通栏广告模块 -->
+    <div class="car_ad_mod">
+        <a href="#">
+        <!-- <img src="img/car_nav_pg.png" alt=""> -->
+            <XYins id="div_2983d293-da99-4438-b9d6-f23b8cd15197" data-type="ad_play" data-adplay_IP="" data-adplay_AreaName="" data-adplay_CityName="" data-adplay_BrandID="" data-adplay_BrandName="" data-adplay_BrandType="" data-adplay_BlockCode="2983d293-da99-4438-b9d6-f23b8cd15197"> </XYins>
+        </a>
+    </div>
+    <!--footer model -->
+    {{#include ./mod/mod_footer.html}}
+
+
+    <!--goTop model -->
+    {{#include ./mod/mod_goTop.html}}
+</div>
+<script type="text/javascript">
+
+    $('#car_class_tab li').on('click',function () {
+        console.log(1213)
+    })
+    <!--图片轮播new实例banner-->
+    var banner = new Banner({
+        id: '#swiper-container'
+    });
+
+
+var currentCityId = '201';//当前城市ID
+var currentcityName = '北京';//当前城市名称
+//广告请求
+if (typeof (currentCityId) != 'undefined') {
+    document.write('<scr' + 'ipt type="text/javascript" src="http://g.xingyuanauto.com/cityindex.ashx?cityid=' + currentCityId + '" charset="utf-8"></scr' + 'ipt>');
+}
+</script>
+
+</body>
+<script type="text/javascript" src="http://gimg.xingyuanauto.com/js/forwarder.js"></script>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="telephone=no,spanail=no" name="format-detection">
+	<script src="js/flexible_css.js"></script>
+	<script src="js/flexible.js"></script>
+	<title>汽车大全-个人资料设置</title>
+
+	<link rel="stylesheet" href="http://static.qcdqcdn.com:8888/wap/css/base.css">
+	<link rel="stylesheet" href="http://static.qcdqcdn.com:8888/wap/css/personalCenter_modifyPhoneS.css">
+</head>
+
+<body>
+<!-- 首页主页面 -->
+<div class="index_page">
+		<!-- 头部logo -->
+    <div class="pub_head">
+        <a href="javascript:history.back(-1)" class="goback_btn"></a>
+        <a href=" http://172.16.0.135:8888/wap/out/index.html"><img src="http://static.qcdqcdn.com:8888/wap/img/logo_text.png" class="logo_text"></a>
+        <span class="p">●</span>
+        <span class="title_extra">更换手机号</span>
+    </div>
+	<div class="content_list">
+		<!-- 进入个人中心设置默认页面 -->
+	    <p class="phone">
+	        <i>手机号 :</i>
+	        <input type="text" name="" value="" placeholder="请输入手机号" maxlength="11" id="phone_input">
+			<span class="error_tip phone_error">
+				请输入正确手机号<strong></strong>
+			</span>
+	        <em></em>
+	    </p>
+	    <p class="code">
+	        <i>手机号 :</i>
+	        <input type="text" name="" value="" placeholder="请输入验证码" maxlength="4" id="yzm_input">
+			<span class="error_tip yzm_error">
+				请输入正确验证码<strong></strong>
+			</span>
+	        <em></em>
+	        <span class="get_code">获取验证码</span>
+	    </p>
+	    <p class="bind">
+	        <span id="bind">完&nbsp;&nbsp;成</span>
+	    </p>
+
+	    <p class="footer">
+	        <a href="http://172.16.0.135:8888/wap/out/index.html">首页</a><i></i>
+			<a href="http://172.16.0.135:8888/wap/out/personalCenter_index.html">个人中心</a><i></i>
+			<a href="http://172.16.0.135:8888/wap/out/personalCenter_settings.html">个人资料设置</a><em></em>
+			<span class="cur">更换手机号</span>
+	    </p>
+	</div>
+
+	<!-- 更改手机号失败提示 -->
+    <div class="modify_fail">
+      <div class="fail_img">
+        <img src="http://static.qcdqcdn.com:8888/wap/img/icon_circle.png" alt="">
+      </div>
+      <div class="fail_text">
+        <span>更换号码失败，请稍后再试!</span>
+      </div>
+    </div>
+</div>
+
+<div class="video_fte">
+    <p> <span class="colora4">©&nbsp;&nbsp;2017&nbsp;&nbsp;汽车大全</span> </p>
+</div>
+
+<!-- 回到顶部 -->
+<!-- 回到顶部 -->
+<div class="go_top" id="goTop"> <span></span> <i></i></div>
+
+<!-- 遮罩层 -->
+<div class="mask_area">
+	<div class="mask"></div>
+	<div class="mask_jt"></div>
+</div>
+
+<!-- load图标弹层 -->
+<div class="load_mask">
+	<span class="mask"></span>
+	<img src="http://static.qcdqcdn.com:8888/wap/img/load_w.png">
+</div>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/personalCenter_modifyPhoneS.js"></script>
+
+</body>
+</html>

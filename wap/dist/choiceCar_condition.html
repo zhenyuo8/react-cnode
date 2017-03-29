@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="telephone=no,email=no" name="format-detection">
+	<meta name="description" content="行圆汽车，手机汽车大全车型大全频道为您提供各种汽车品牌型号信息,包括汽车报价,汽车标志,汽车图片,汽车经销商,
+	汽车油耗,汽车资讯,汽车点评,汽车问答,汽车论坛等等。"/>
+	<meta name="keywords" content="汽车大全,汽车标志,车型大全,汽车标志大全"/>
+	<script src="js/flexible_css.js"></script>
+	<script src="js/flexible.js"></script>
+	<title>汽车大全|汽车标志｜汽车标志大全｜热门车型大全-手机汽车大全</title>
+
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/choiceCar_condition.css">
+</head>
+
+<body>
+
+	<!--顶部导航-->
+    <div class="pubHeadNav">
+    <div class="logo_box"> <img src="img/xylogo.png" class="nav_logo"> <a href="#" class="login">登录</a>
+        <div class="login_photo">
+            <a href="#"><img src="img/login_photo.png"></a>
+        </div>
+    </div>
+    <ul class="nav_type clearfix">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="choiceCar.html">选车</a></li>
+        <li><a href="article.html">新车</a></li>
+        <li><a href="article.html">评测</a></li>
+        <li class="pubHeadNav_active"><a href="article.html">导购</a></li>
+        <li><a href="picture.html">图片</a></li>
+        <li><a href="videoindex.html">视频</a></li>
+        <li><a href="summarize_zongshu.html">报价</a></li>
+        <li><a href="summarize_zongshu.html">降价</a></li>
+        <li><a href="carstyle_zongshu.html">经销商</a></li>
+        <li><a href="#">问答</a></li>
+    </ul>
+</div>
+<!--导航下面的半透明遮罩-->
+<div class="nav_mask"></div>
+
+	<!-- 选车 -->
+	<div class="choice_car">
+
+		<!-- 标题 -->
+	    <div class="pub_head">
+    <a href="#" class="goback_btn" id="goHistory"></a>
+    <a href="http://m.qichedaquan.com/"><img src="img/logo_text.png" class="logo_text"></a> <span class="p">●</span> <span class="title_extra">选车</span> <span class="nav_btn">导航</span></div>
+
+        <!-- 页面主体 -->
+		<div class="choice_main">
+
+			<ul class="tab_title clearfix">
+				<li><a href="choiceCar_brand.html">按品牌</a></li>
+				<li><a href="choiceCar_condition.html" class="current">按条件</a></li>
+			</ul>
+
+			<div class="choice_swiper">
+
+				<!-- 按条件选车主页面 -->
+				<div class="choice_car_swiper condition_page">
+					<!-- 选择价格区间 -->
+					<div class="condition_list">
+						<h2 class="condition_title">价格</h2>
+						<ul class="clearfix">
+							<li data-param="p" data-val="0-5"><a>5万以下</a></li>
+							<li data-param="p" data-val="5-8"><a>5-8万</a></li>
+							<li data-param="p" data-val="8-12"><a>8-12万</a></li>
+							<li data-param="p" data-val="12-18"><a>12-18万</a></li>
+							<li data-param="p" data-val="18-25"><a>18-25万</a></li>
+							<li data-param="p" data-val="25-40"><a>25-40万</a></li>
+							<li data-param="p" data-val="40-80"><a>40-80万</a></li>
+							<li data-param="p" data-val="80-9999"><a>80万以上</a></li>
+						</ul>
+					</div>
+
+					<!-- 级别 -->
+					<div class="level_list">
+						<h2 class="level_title">级别</h2>
+						<ul class="clearfix">
+							<li data-param="l" data-val="2"><a class="car_logo"><span class="weixing_car"></span><em>微型车</em></a></li>
+							<li data-param="l" data-val="3"><a class="car_logo"><span class="xiaoxing_car"></span><em>小型车</em></a></li>
+							<li data-param="l" data-val="4"><a class="car_logo"><span class="jincou_car"></span><em>紧凑型</em></a></li>
+							<li data-param="l" data-val="5"><a class="car_logo"><span class="zhongxing_car"></span>中型车<em></em></a></li>
+							<li data-param="l" data-val="6"><a class="car_logo"><span class="big_car"></span><em>中大型</em></a></li>
+							<li data-param="l" data-val="7"><a class="car_logo"><span class="haohua_car"></span><em>豪华型</em></a></li>
+							<li data-param="l" data-val="8"><a class="car_logo"><span class="mpv_car"></span><em>MPV</em></a></li>
+							<li data-param="l" class="more_condi suv">
+								<a class="car_logo"><span class="suv_car"></span><em>SUV</em></a>
+								<div class="more_condi_list suv_list">
+									<span class="up_blue suv_up"></span>
+									<div class="more_condi_item suv_item">
+										<a data-param="l" data-val="9">全部</a>
+										<a data-param="l" data-val="10">小型SUV</a>
+										<a data-param="l" data-val="11">紧凑型SUV</a>
+										<a data-param="l" data-val="12">中型SUV</a>
+										<a data-param="l" data-val="13">中大型SUV</a>
+										<a data-param="l" data-val="14">大型SUV</a>
+									</div>
+								</div>
+							</li>
+							<li data-param="l" data-val="15"><a class="car_logo"><span class="pao_car"></span><em>跑车</em></a></li>
+							<li data-param="l" data-val="16"><a class="car_logo"><span class="pika_car"></span><em>皮卡</em></a></li>
+							<li data-param="l" data-val="17"><a class="car_logo"><span class="mianbao_car"></span>面包车<em></em></a></li>
+							<li data-param="l" data-val="18"><a class="car_logo"><span class="ke_car"></span><em>客车</em></a></li>
+						</ul>
+					</div>
+
+					<!-- 国别 -->
+					<div class="condition_list country_list">
+						<h2 class="condition_title">国别</h2>
+						<ul class="clearfix">
+							<li data-param="c" data-val="6"><a>中国</a></li>
+							<li data-param="c" data-val="1"><a>德国</a></li>
+							<li data-param="c" data-val="4"><a>美国</a></li>
+							<li data-param="c" data-val="2"><a>日本</a></li>
+							<li data-param="c" data-val="3"><a>韩国</a></li>
+							<li data-param="c" data-val="5"><a>欧系</a></li>
+						</ul>
+					</div>
+
+					<!-- 车身 -->
+					<div class="condition_list">
+						<h2 class="condition_title">车身</h2>
+						<ul class="clearfix">
+							<li data-param="b" data-val="1"><a>两厢</a></li>
+							<li data-param="b" data-val="2"><a>三厢</a></li>
+							<li data-param="b" data-val="3"><a>旅行版</a></li>
+						</ul>
+					</div>
+
+					<!-- 燃料 -->
+					<div class="condition_list">
+						<h2 class="condition_title">燃料</h2>
+						<ul class="clearfix">
+							<li data-param="f" data-val="1"><a>汽油</a></li>
+							<li data-param="f" data-val="2"><a>柴油</a></li>
+							<li data-param="f" data-val="3"><a>纯电动</a></li>
+							<li data-param="f" data-val="4"><a>油电混合</a></li>
+							<li data-param="f" data-val="5"><a>油气混合</a></li>
+						</ul>
+					</div>
+
+					<!-- 厂商 -->
+					<div class="condition_list">
+						<h2 class="condition_title">厂商</h2>
+						<ul class="clearfix">
+							<li data-param="g" data-val="1"><a>自主</a></li>
+							<li data-param="g" data-val="2"><a>合资</a></li>
+							<li data-param="g" data-val="3"><a>进口</a></li>
+						</ul>
+					</div>
+
+					<!-- 变速箱 -->
+					<div class="condition_list speed_box">
+						<h2 class="condition_title">变速箱</h2>
+						<ul class="clearfix">
+							<li data-param="t" data-val="1"><a>手动挡</a></li>
+							<li data-param="t" class="more_condi zd">
+								<a>自动挡</a>
+								<div class="more_condi_list zd_list">
+									<span class="up_blue zd_up"></span>
+									<div class="more_condi_item zd_item">
+										<a data-param="t" data-val="2">全部</a>
+										<a data-param="t" data-val="3">半自动(AMT)</a>
+										<a data-param="t" data-val="4">自动(AT)</a>
+										<a data-param="t" data-val="5">手自一体</a>
+										<a data-param="t" data-val="6">无极变速(CVT)</a>
+										<a data-param="t" data-val="7">双离合(DSG)</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<!-- 排量 -->
+					<div class="condition_list">
+						<h2 class="condition_title">排量</h2>
+						<ul class="clearfix">
+							<li data-param="d" data-val="0-1.3"><a>1.3L以下</a></li>
+							<li data-param="d" data-val="1.3-1.6"><a>1.3L-1.6L</a></li>
+							<li data-param="d" data-val="1.7-2.0"><a>1.7L-2.0L</a></li>
+							<li data-param="d" data-val="2.1-3.0"><a>2.1L-3.0L</a></li>
+							<li data-param="d" data-val="3.1-5.0"><a>3.1L-5.0L</a></li>
+							<li data-param="d" data-val="5.0-9"><a>5.0L以上</a></li>
+						</ul>
+					</div>
+
+					<!-- 驱动 -->
+					<div class="condition_list drive_box">
+						<h2 class="condition_title">驱动</h2>
+						<ul class="clearfix">
+							<li data-param="dt" data-val="1"><a>前驱</a></li>
+							<li data-param="dt" data-val="2"><a>后驱</a></li>
+							<li data-param="dt" class="more_condi siqu">
+								<a>四驱</a>
+								<div class="more_condi_list siqu_list">
+									<span class="up_blue siqu_up"></span>
+									<div class="more_condi_item siqu_item">
+										<a data-param="dt" data-val="3">全部</a>
+										<a data-param="dt" data-val="4">全时四驱</a>
+										<a data-param="dt" data-val="5">分时四驱</a>
+										<a data-param="dt" data-val="6">实时四驱</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<!-- 排放 -->
+					<div class="condition_list">
+						<h2 class="condition_title">排放</h2>
+						<ul class="clearfix">
+							<li data-param="pf" data-val="1"><a>国4</a></li>
+							<li data-param="pf" data-val="2"><a>国5</a></li>
+							<li data-param="pf" data-val="3"><a>京5</a></li>
+							<li data-param="pf" data-val="4"><a>欧4</a></li>
+							<li data-param="pf" data-val="5"><a>欧5</a></li>
+							<li data-param="pf" data-val="6"><a>国4/欧4</a></li>
+							<li data-param="pf" data-val="7"><a>国5/欧5</a></li>
+						</ul>
+					</div>
+
+					<!-- 座位数 -->
+					<div class="condition_list">
+						<h2 class="condition_title">座位数</h2>
+						<ul class="clearfix">
+							<li data-param="zw" data-val="1"><a>2座</a></li>
+							<li data-param="zw" data-val="2"><a>4-5座</a></li>
+							<li data-param="zw" data-val="3"><a>6座</a></li>
+							<li data-param="zw" data-val="4"><a>7座</a></li>
+							<li data-param="zw" data-val="5"><a>7座以上</a></li>
+						</ul>
+					</div>
+
+					<!-- 配置选项 -->
+					<div class="condition_list">
+						<h2 class="condition_title">
+							<span>配置选项</span>
+							<a class="clear_more"><i></i>清空配置</a>
+                        </h2>
+						<ul class="clearfix">
+							<li data-param="more" data-val="1"><a>天窗</a></li>
+							<li data-param="more" data-val="2"><a>GPS导航</a></li>
+							<li data-param="more" data-val="3"><a>倒车影像</a></li>
+							<li data-param="more" data-val="4"><a>儿童锁</a></li>
+							<li data-param="more" data-val="5"><a>旋涡增压</a></li>
+							<li data-param="more" data-val="6"><a>无钥匙启动</a></li>
+							<li data-param="more" data-val="7"><a>四轮碟刹</a></li>
+							<li data-param="more" data-val="8"><a>真皮座椅</a></li>
+							<li data-param="more" data-val="9"><a>ESP</a></li>
+							<li data-param="more" data-val="10"><a>疝气大灯</a></li>
+							<li data-param="more" data-val="11"><a>定速巡航</a></li>
+							<li data-param="more" data-val="12"><a>自动空调</a></li>
+							<li data-param="more" data-val="13"><a>胎压监测</a></li>
+							<li data-param="more" data-val="14"><a>自动泊车</a></li>
+							<li data-param="more" data-val="15"><a>空气进化器</a></li>
+							<li data-param="more" data-val="16"><a>换挡拨片</a></li>
+							<li data-param="more" data-val="17"><a>电动座椅</a></li>
+							<li data-param="more" data-val="18"><a>儿童座椅接口</a></li>
+						</ul>
+					</div>
+
+					<!-- 重置 -->
+					<div class="reset_bar clearfix">
+						<span class="reset_btn">重置</span>
+						<a class="fit_standard">
+							共有<b></b>个车型<em></em>个车款符合条件
+							<img src="img/arrow_right_white.png">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 间隔条 -->
+		<div class="bg_bar"></div>
+
+		<!-- 面包屑导航 -->
+		<div class="small_nav">
+			<a href="#">首页</a><img src="img/rightjt.png">
+			<span>选车</span>
+		</div>
+
+		<!-- 底部版权 -->
+		<div class="video_fte">
+    <p> <span class="colora4">©&nbsp;&nbsp;2017&nbsp;&nbsp;汽车大全</span> </p>
+</div>
+
+	</div>
+
+	<!-- 回到顶部 -->
+	<!-- 回到顶部 -->
+<div class="go_top" id="goTop"> <span></span> <i></i></div>
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/components/carSelectQuery.js"></script>
+    <script src="js/pages/carSelect.js"></script>
+	<script src="js/pubNav.js"></script>
+	<script src="js/goTop.js"></script>
+</body>
+</html>

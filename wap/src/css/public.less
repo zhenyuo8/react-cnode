@@ -1,0 +1,532 @@
+/* h5 start */
+@color-999:#999;
+@color-333:#333;
+@color-000:#000;
+@color-fff: #fff;
+@color-555: #555;
+@color-666: #666;
+@color-888: #888;
+@color-eee: #eee;
+@color-ccc: #ccc;
+@bg-color: #f3f3f3;
+@border-color: #ededed;
+@letter-alert-border: #d3d3d3;
+@letter-alert-bg: #fafafa;
+@top-bar-color: #000;
+@search-start-color: #23aefe;
+@search-end-color: #3071ff;
+@item-color: #2896fe;
+@mask-bg: #000;
+@sub-brand-name: #6a6a6a;
+@sub-brand-bg: #f7f7f7;
+@red-price: #ff3131;
+@condition-border: #e2e2e2;
+@price-item-color: #848484;
+@price-border: #e9e9e9;
+@price-item-border: #d2d2d2;
+@price-blue-border: #50aaff;
+@price-yel-bg: #ffb20e;
+@result-blue-bar: #24aafe;
+@result-border: #dcdcdc;
+@result-price: #de0000;
+
+// article
+@bg-blue-start: #24abfe;
+@bg-blue-end: #2f74ff;
+@dian-bg: #c8c8c8;
+@dian-c-bg: #2b86ff;
+@dian-border: #b7b7b7;
+
+//articleDetial
+@main-title-color: #222;
+@edit-color: #c1c1c1;
+@load-color: #52adfe;
+@load-bg: #edf7ff;
+@zan-before: #ffbe31;
+@zan-after: #ffd67e;
+@share-bg: #48acfa;
+@ml-start: #099ffa;
+@ml-end: #217bfa;
+@cancle-bg: #ecf7fe;
+
+// lightspotConfig
+@border-c6: #c6c6c6;
+@nav-active: #269ffe;
+@param-btn-start: #26a0fe;
+@param-btn-end: #2d7eff;
+
+//paramConfig
+@eye-color: #828282;
+@table-bg: #f4faff;
+@gang-color: #a3a3a3;
+@catalog-border: #c1c5c8;
+
+/* h5 end*/
+
+@color-f3: #f3f3f3;/*页面中所有列表的间隔线*/
+@color-main-blue: #2799fe;/*页面通用蓝色,询底价按钮鼠标滑过时的颜色，列表文字滑过的颜色*/
+@color-tab-color: #848484;/*tab标题默认灰色*/
+@color-tab-border: #ebedef;/*页面中所有tab的间隔线*/
+@news-bg: #f4f5f7;/*新闻模块点击背景颜色*/
+@blue-btn-bg: #edf7ff;/*询底价按钮的默认背景颜色*/
+@blue-btn-color: #52adfe;/*询底价按钮的默认字体颜色*/
+@bg-bar: #f4f5f7;/*模块间隔背景颜色*/
+@red-price: #ff3131;/*价格字体颜色（红）*/
+@down-price: #06b313;/*降价字体颜色（绿）*/
+@time-color: #a4a4a4;/*上市字体颜色（灰）*/
+@list-border: #f3f3f3;/*页面中所有列表的间隔线*/
+@market-item-two-color: #ff5003;
+@market-item-three-color: #ff7a03;
+@market-item-four-color: #ffa903;
+@pc-h: #4c4c4c;
+@mask-bg: #000;
+@city-scroll-title-color: #828282;
+@search-border: #e2e2e2;
+@delete-border: #e6e6e6;
+@input-border: #e7e7e7;
+@big-img-bg: #151515;
+@input-color: #d8d8d8;
+@register-bg: #a9d5ff;
+@jing-bg: #ff4747;
+@show_more: #d5d4d4;
+@alert-border: #dadada;
+@loadimg: #ddd;
+@reply_area_bor: #c4c9ce;
+@sc-h-color: #ff9103;
+
+.clip{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+}
+
+.ellipsis{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+// 多行文本省略
+.rows-ellipsis(@maxRow){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @maxRow;
+}
+
+//input框字体颜色
+.placeholder-color(@color){
+    &::-webkit-input-placeholder{
+        color: @color;
+    }
+    &:-moz-placeholder{
+        color: @color;
+    }
+    &::-moz-placeholder{
+        color: @color;
+    }
+    &::-ms-input-placeholder{
+        color: @color;
+    }
+}
+
+.img-size{
+    display: inline-block;
+    width: 100%;
+}
+
+// 图标背景
+.icon_bg(@url,@w,@h){
+    background-image: @url ;
+    background-size: 100% 100%;
+    width: @w;
+    height: @h;
+}
+
+// 边框渐变
+.border-jianbian(@x,@y,@r,@k-r,@color){
+    // X轴偏移量 Y轴偏移量 阴影模糊半径 阴影扩展半径 阴影颜色
+    -webkit-box-shadow: @x @y @r @k-r @color;
+       -moz-box-shadow: @x @y @r @k-r @color;
+            box-shadow: @x @y @r @k-r @color;
+}
+
+//背景线性渐变
+.bg-jianbian(@start,@end,@scolor,@ecolor){
+    background: -webkit-linear-gradient(@start,@scolor,@ecolor);
+    background: -moz-linear-gradient(@start,@scolor,@ecolor);
+    background: -o-linear-gradient(@start,@scolor,@ecolor);
+    background: linear-gradient(to @end,@scolor,@ecolor);
+}
+
+//背景径向渐变（圆心）
+.bg-radial-jianbian(@shape,@scolor,@ecolor){
+    background: -webkit-gradient(radial, center center, 0, center center, 750, from(@scolor), to(@ecolor));
+    background: -webkit-radial-gradient(@shape,@scolor,@ecolor);
+    background: -moz-radial-gradient(@shape,@scolor,@ecolor);
+}
+
+//四角斜角效果
+.xiejiao(@size,@color,@width,@height){
+    background-color: @color;
+    background: linear-gradient(135deg, transparent @size, @color 0) top left,
+                linear-gradient(-135deg, transparent @size, @color 0) top right,
+                linear-gradient(-45deg, transparent @size, @color 0) bottom right,
+                linear-gradient(45deg, transparent @size, @color 0) bottom left;
+    background-repeat: no-repeat;
+    background-size: @width @height;
+}
+
+//左上右上或左下右下斜角
+.top-xiejiao(@zdeg,@fdeg,@size,@color,@width,@height,@fx1,@fx2){
+    // 角度 角宽度 颜色 宽度 高度 方向
+    background-color: @color;
+    background: linear-gradient(@zdeg, transparent @size, @color 0) @fx1,
+                linear-gradient(@fdeg, transparent @size, @color 0) @fx2;
+    background-repeat: no-repeat;
+    background-size: @width @height;
+}
+
+/**
+* animation(360度无限旋转动画)
+*/
+.keyframes (@prefix,@name,@content) when (@prefix=def) {
+        @keyframes @name {
+        @content();
+    }
+}
+.keyframes (@prefix,@name,@content) when (@prefix=moz) {
+  @-moz-keyframes @name {
+    @content();
+  }
+}
+.keyframes (@prefix,@name,@content) when (@prefix=o) {
+        @-o-keyframes @name {
+        @content();
+    }
+}
+.keyframes (@prefix,@name,@content) when (@prefix=webkit) {
+        @-webkit-keyframes  @name{
+        @content();
+    }
+}
+.keyframes (@prefix,@name,@content) when (@prefix=all) {
+    .keyframes(moz,@name,@content);
+    .keyframes(o,@name,@content);
+    .keyframes(webkit,@name,@content);
+    .keyframes(def,@name,@content);
+}
+
+
+//demo_style
+.load_more{
+    font-size: 13px;
+    color: @blue-btn-color;
+    display: inline-block;
+    width: 100%;
+    height: .96rem /* 72/75 */;
+    line-height: .96rem /* 72/75 */;
+    text-align: center;
+    background-color: @blue-btn-bg;
+    border-radius: .107rem /* 8/75 */;
+    img{
+        display: inline-block;
+        width: .24rem /* 18/75 */;
+        height: .16rem /* 12/75 */;
+        vertical-align: middle;
+        margin-left: .16rem;
+    }
+}/*页面中通用加载更多浅蓝色背景的按钮*/
+
+
+
+.loading{
+    display: inline-block;
+    width: 100%;
+    line-height: .96rem;
+    text-align: center;
+    background: @blue-btn-bg;
+    border-radius: 8px;
+    .keyframes (all,circleChange,{
+        0%{-webkit-transform:rotate(0deg);}
+        50%{-webkit-transform:rotate(180deg);}
+        100%{-webkit-transform:rotate(360deg);}
+    });
+
+    img{
+        display: inline-block;
+        width: .413rem /* 31/75 */;
+        height: .44rem /* 33/75 */;
+        vertical-align: middle;
+         -webkit-animation: circleChange 2s linear infinite;
+    }
+}
+.more{
+    display: inline-block;
+    width: 100%;
+    height: .96rem;
+    line-height: .96rem;
+    text-align: center;
+    background: #edf7ff;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    margin: 0 auto;
+    font-size: 13px;
+    color: #52adfe;
+
+    img {
+        display: inline-block;
+        width: .12rem;
+        height: .213rem;
+        margin-left: .16rem;
+        vertical-align: middle;
+    }
+}/*页面中通用查看更多浅蓝色背景的按钮*/
+.no_more{
+    display: inline-block;
+    width: 100%;
+    height: .96rem;
+    line-height: .96rem;
+    text-align: center;
+    background: @bg-bar;
+    border-radius: 8px;
+    margin: 0 auto;
+    font-size: 13px;
+    color: @time-color;
+}
+.floorPrice_btn {
+    width: 1.867rem;
+    height: 0.8rem;
+    background: #52adfe;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    color: #fff;
+    border-radius: 8px;
+}/*140*60的询底价按钮*/
+.demo_title {
+    width: 92%;
+    height: .747rem /* 56/75 */;
+    margin: 0 4%;
+    padding-top: .32rem /* 24/75 */;
+    span {
+        font-size: 15px;
+        font-weight: 700;
+        height: .4rem;
+        line-height: .4rem;
+        border-left: .107rem /* 8/75 */ solid #2899ff;
+        padding-left: .16rem;
+        display: inline-block;
+    }
+}/*页面中通用的模块标题（前面带蓝色块的）*/
+.goTop {
+    position: fixed;
+    bottom: .4rem;
+    right: .4rem;
+    z-index: 10;
+    width: .773rem;
+    height: .827rem;
+    padding: .293rem 0 0 .347rem;
+    background: #666;
+    border-radius: 50%;
+    filter:alpha(opacity=60);
+    opacity:.6;
+
+    img {
+        display: block;
+        width: .4rem;
+        height: .507rem;
+    }
+}/*返回顶部*/
+.float_menu {
+    position: fixed;
+    right: .4rem;
+    bottom: 2.0rem;
+    width: .96rem;
+    height: .88rem;
+    padding: .453rem 0 0 .373rem;
+    background:-webkit-linear-gradient(top,#23aeff,#2f77ff);
+    border-radius: 50%;
+    -webkit-box-shadow: 0 15px 15px rgba(39, 157, 254, .3);
+       -moz-box-shadow: 0 15px 15px rgba(39, 157, 254, .3);
+            box-shadow: 0 15px 15px rgba(39, 157, 254, .3);
+
+    img {
+        display: block;
+        width: .587rem;
+        height: .48rem;
+    }
+    .menu_show {
+        //display: none;
+    }
+    .menu_close {
+        display: none;
+    }
+
+}/*车型详解页中的悬浮菜单*/
+.share {
+    width: 100%;
+    height: 1.693rem;
+
+    .share_type {
+        float: left;
+        width: 20%;
+        text-align: center;
+
+        span {
+            display: block;
+            background-size: 100% 100%;
+            width: 1.067rem /* 80/75 */;
+            height: 1.067rem /* 80/75 */;
+            margin: 0 auto .173rem /* 13/75 */ auto;
+        }
+    }
+    .wx{
+        span{
+            background-image: url("../img/wx.png");
+        }
+        &:active{
+            span{
+                background-image: url("../img/wx_press.png");
+            }
+        }
+    }
+    .pyq{
+        span{
+            background-image: url("../img/pyq.png");
+        }
+        &:active{
+            span{
+                background-image: url("../img/pyq_press.png");
+            }
+        }
+    }
+    .qq{
+        span{
+            background-image: url("../img/qq.png");
+        }
+        &:active{
+            span{
+                background-image: url("../img/qq_press.png");
+            }
+        }
+    }
+    .wb{
+        span{
+            background-image: url("../img/wb.png");
+        }
+        &:active{
+            span{
+                background-image: url("../img/wb_press.png");
+            }
+        }
+    }
+    .kj{
+        span{
+            background-image: url("../img/kj.png");
+        }
+        &:active{
+            span{
+                background-image: url("../img/kj_press.png");
+            }
+        }
+    }
+}/*分享*/
+.article_list {
+    a{
+        display: block;
+        margin-left: 0.4rem;
+        margin-right: 0.4rem;
+        height: 2.4rem;
+        border-bottom: 1px solid #f3f3f3;
+        dt {
+            float: left;
+            width: 2.4rem;
+            height: 1.6rem;
+            margin-top: 0.4rem;
+
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        dd {
+            width: 69%;
+            float: right;
+            margin-left: 0.4rem;
+        }
+        .synopsis {
+            font-size: 15px;
+            margin-top: 0.4rem;
+            height: 1.067rem;
+            word-break: break-all;
+            .rows-ellipsis(2);
+        }
+        .minor {
+            margin-top: 0.16rem;
+            font-size: 12px;
+            color: #a4a4a4;
+            .ad_logo{
+                display: inline-block;
+                width: 0.8rem /* 60/75 */;
+                line-height: 0.373rem /* 28/75 */;
+                text-align: center;
+                border: 1px solid #a4a4a4;
+            }
+            .pinlun {
+                float: right;
+            }
+        }
+    }
+    &:active{
+        background-color: @news-bg;
+    }
+}/*阅读列表（左图右文字）*/
+.type_msg_demo{
+    .sub_brand_name{
+        font-size: 13px;
+        color: @sub-brand-name;
+        line-height: .72rem /* 54/75 */;
+        background-color: @bg-bar;
+        padding: 0 .32rem /* 24/75 */
+    }
+    dl{
+        padding: .213rem /* 16/75 */ 0 .267rem /* 20/75 */;
+        margin-left: .4rem /* 30/75 */;
+        border-bottom: 1px solid @list-border;
+        a{
+            display: block;
+            overflow: hidden;
+        }
+        dt{
+            float: left;
+            width: 1.88rem /* 141/75 */;
+            height: 1.253rem /* 94/75 */;
+            margin: .347rem /* 26/75 */ .267rem /* 20/75 */ .293rem /* 22/75 */ 0;
+            img{
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        dd{
+            float: left;
+            .type_name{
+                font-size: 15px;
+                line-height: .693rem /* 52/75 */;
+            }
+            .type_price{
+                font-size: 15px;
+                color: @red-price;
+                line-height: .667rem /* 50/75 */;
+            }
+            .type_zd_price{
+                color: @time-color;
+                line-height: .533rem /* 40/75 */;
+            }
+        }
+    }
+}/* 车型信息 */

@@ -1,0 +1,905 @@
+/*****
+ *@author: jianingning
+ *@from: Global style calculator_jisuanqi   购车计算器
+ *@description:
+ *@date: name (2017.02.25)
+*/
+/*****
+ *@author: jianingning
+ *@from: Global style mod_pubHead.html   公共的带返回的头部
+ *@description:
+ *@date: name (2017.02.21)
+*/
+.pub_head {
+  height: 1.173rem;
+  text-align: center;
+  background: -webkit-linear-gradient(left, #23a6fe, #2484fa);
+}
+.pub_head .goback_btn {
+  float: left;
+  margin: .4rem 0 0 .4rem;
+  display: inline-block;
+  width: .227rem;
+  height: .4rem;
+  background: url(../img/goback_btn.png);
+  background-size: cover;
+}
+.pub_head .logo_text {
+  display: inline-block;
+  width: 1.813rem;
+  height: .427rem;
+  vertical-align: middle;
+  margin-top: -0.12rem;
+}
+.pub_head .p {
+  margin: 0 .12rem;
+  height: 1.173rem;
+  line-height: 1.173rem;
+  color: #fff;
+  font-size: 10px;
+}
+.pub_head .title_extra {
+  margin-top: .28rem;
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+}
+.pub_head .nav_btn {
+  float: right;
+  margin-right: .4rem;
+  margin-top: .28rem;
+  font-size: 16px;
+  color: #fff;
+}
+.pub_head .nav_btn a {
+  color: #fff;
+}
+[data-dpr="2"] .pub_head .title_extra {
+  font-size: 32px;
+}
+[data-dpr="2"] .pub_head .p {
+  font-size: 20px;
+}
+[data-dpr="2"] .pub_head .nav_btn {
+  font-size: 32px;
+}
+[data-dpr="3"] .pub_head .title_extra {
+  font-size: 48px;
+}
+[data-dpr="3"] .pub_head .p {
+  font-size: 30px;
+}
+[data-dpr="3"] .pub_head .nav_btn {
+  font-size: 48px;
+}
+/*****
+ *@author: jianingning
+ *@from: Global style mod_pubHeadNav   顶部公共导航
+ *@description:
+ *@date: name (2017.02.23)
+*/
+.pubHeadNav {
+  position: absolute;
+  top: 1.173rem;
+  left: 0;
+  z-index: 10002;
+  width: 100%;
+  height: 5.803rem;
+  background: #fff;
+  display: none;
+}
+.pubHeadNav .logo_box {
+  margin-top: -0.187rem;
+  width: 100%;
+  height: 2.293rem;
+  background: url(../img/pubHeadNav_bg.png);
+  background-size: cover;
+}
+.pubHeadNav .logo_box .nav_logo {
+  float: left;
+  margin: .88rem 0 0 .4rem;
+  display: inline-block;
+  width: 2.8rem;
+  height: .707rem;
+}
+.pubHeadNav .logo_box .login {
+  float: right;
+  margin: .813rem .4rem 0 0;
+  display: inline-block;
+  width: 2.0rem;
+  height: .853rem;
+  text-align: center;
+  line-height: .853rem;
+  border: 1px solid #2799fe;
+  border-radius: 5px;
+  background: #fff;
+  font-size: 15px;
+  color: #2799fe;
+  display: none;
+}
+.pubHeadNav .logo_box .login_photo {
+  float: right;
+  margin: .733rem .4rem 0 0;
+  width: 1.093rem;
+  height: 1.107rem;
+}
+.pubHeadNav .logo_box .login_photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.pubHeadNav .nav_type li {
+  float: left;
+  width: 24.8%;
+  height: 1.2rem;
+  text-align: center;
+  line-height: 1.2rem;
+  border-right: 1px solid #f3f3f3;
+  border-bottom: 1px solid #f3f3f3;
+}
+.pubHeadNav .nav_type li a {
+  font-size: 14px;
+  display: block;
+}
+.pubHeadNav .nav_type .pubHeadNav_active a {
+  color: #2799fe;
+}
+.nav_mask {
+  position: fixed;
+  top: 1.173rem;
+  left: 0;
+  z-index: 10001;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  filter: alpha(opacity=60);
+  opacity: .6;
+  display: none;
+}
+[data-dpr="2"] .pubHeadNav .logo_box .login {
+  font-size: 30px;
+}
+[data-dpr="2"] .pubHeadNav .nav_type li a {
+  font-size: 28px;
+}
+[data-dpr="3"] .pubHeadNav .logo_box .login {
+  font-size: 45px;
+}
+[data-dpr="3"] .pubHeadNav .nav_type li a {
+  font-size: 42px;
+}
+/*匹配dpr=1 320*/
+@media (max-width: 320px) {
+  [data-dpr="1"] .pubHeadNav .nav_type li {
+    width: 24.6%;
+  }
+}
+/*匹配dpr=1 320-360*/
+@media (max-width: 360px) and (min-width: 330px) {
+  [data-dpr="1"] .pubHeadNav .nav_type li {
+    width: 24.7%;
+  }
+}
+/*匹配dpr=1 360-384*/
+@media (max-width: 384px) and (min-width: 370px) {
+  [data-dpr="1"] .pubHeadNav .nav_type li {
+    width: 24.7%;
+  }
+}
+/*****
+ *@author: jianingning
+ *@from: Global style mod_footer
+ *@description:
+ *@date: name (2017.02.20)
+*/
+.video_fte {
+  background-color: #ffffff;
+  height: 1.36rem;
+  text-align: center;
+  line-height: 1.36rem;
+  font-size: 12px;
+}
+.video_fte .colora4 {
+  color: #a4a4a4;
+}
+[data-dpr="2"] .video_fte {
+  font-size: 24px;
+}
+[data-dpr="3"] .video_fte {
+  font-size: 36px;
+}
+/*****
+ *@author: linyh
+ *@from: Global style goTop
+ *@description: 陈璐
+ *@date: name (2017.02.22)
+*/
+.go_top {
+  display: none;
+  width: 1.333rem /* 100/75 */;
+  height: 1.333rem /* 100/75 */;
+  position: fixed;
+  bottom: 0.987rem /* 74/75 */;
+  right: 0.267rem /* 20/75 */;
+  z-index: 99;
+}
+.go_top span {
+  background: #000;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  filter: alpha(opacity=60);
+  opacity: .6;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.go_top i {
+  background-image: url("../img/goTop.png");
+  background-size: 100% 100%;
+  width: 0.4rem;
+  height: 0.48rem;
+  display: inline-block;
+  position: absolute;
+  top: 0.427rem /* 32/75 */;
+  left: 0.467rem /* 35/75 */;
+}
+html {
+  background: #f3f3f3;
+}
+.wrap {
+  width: 100%;
+  background: #f3f3f3;
+  /*content*/
+}
+.wrap .calculate_way {
+  height: 1.173rem;
+  line-height: 1.173rem;
+  background: #fff;
+}
+.wrap .calculate_way li {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.wrap .calculate_way li a {
+  font-size: 15px;
+  color: #848484;
+}
+.wrap .calculate_way .calculate_active a {
+  color: #2799fe;
+}
+.wrap .calculate_content {
+  background: #fff;
+}
+.wrap .calculate {
+  padding-bottom: .293rem;
+  /*首付比例、还款年限、贷款利率*/
+}
+.wrap .calculate .cal_totalPrices {
+  padding: .72rem .4rem 0 .4rem;
+  height: 2.439rem;
+  background: -webkit-linear-gradient(left, #23a1fd, #248bfb);
+}
+.wrap .calculate .cal_totalPrices .zj {
+  display: block;
+  font-size: 15px;
+  color: #fff43f;
+}
+.wrap .calculate .cal_totalPrices .cal_price {
+  margin-top: 0.293rem;
+  font-size: 40px;
+  color: #fff43f;
+}
+.wrap .calculate .cal_totalPrices .cal_reset {
+  float: right;
+  width: 1.627rem;
+  height: .747rem;
+  text-align: center;
+  line-height: .747rem;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  background: transparent;
+  font-size: 13px;
+  color: #fff;
+}
+.wrap .calculate .cal_fenqi {
+  margin-top: -1px;
+  height: 1.76rem;
+  background: -webkit-linear-gradient(left, #219aee, #2284ec);
+}
+.wrap .calculate .cal_fenqi li {
+  float: left;
+  padding-top: .427rem;
+  width: 33.333%;
+  text-align: center;
+}
+.wrap .calculate .cal_fenqi li span {
+  display: block;
+  color: #fff;
+}
+.wrap .calculate .cal_fenqi li .cal_fenqi_text {
+  font-size: 14px;
+}
+.wrap .calculate .cal_fenqi li .cal_fenqi_price {
+  font-size: 16px;
+}
+.wrap .calculate .cal_type {
+  margin-left: .4rem;
+  padding-right: .4rem;
+  height: 1.333rem;
+  line-height: 1.333rem;
+  border-bottom: 1px solid #f3f3f3;
+}
+.wrap .calculate .cal_type .cal_type_tit,
+.wrap .calculate .cal_type .cal_type_con,
+.wrap .calculate .cal_type .cal_type_con2 {
+  font-size: 15px;
+}
+.wrap .calculate .cal_type .cal_type_tit {
+  display: inline-block;
+  width: 23.5%;
+  float: left;
+}
+.wrap .calculate .cal_type .cal_type_con {
+  display: inline-block;
+  width: 69.5%;
+  text-align: right;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.wrap .calculate .cal_type .cal_arrow_right {
+  float: right;
+  margin-top: .53rem;
+  display: inline-block;
+  width: .16rem;
+  height: .293rem;
+  background: url(../img/arrow_right_gray.png);
+  background-size: cover;
+}
+.wrap .calculate .cal_type .cal_type_editor {
+  float: right;
+  margin-top: .4rem;
+  display: inline-block;
+  width: .453rem;
+  height: .507rem;
+  background: url(../img/editor.png);
+  background-size: cover;
+}
+.wrap .calculate .cal_type .cal_type_explain {
+  display: inline-block;
+  width: 50.5%;
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+}
+.wrap .calculate .cal_type .cal_type_con2 {
+  display: inline-block;
+  width: 17.5%;
+  text-align: right;
+}
+.wrap .calculate .cal_gray {
+  padding: 0 .4rem;
+  height: .907rem;
+  line-height: .907rem;
+  background: #f4f5f7;
+}
+.wrap .calculate .cal_gray .cal_gray_text,
+.wrap .calculate .cal_gray .cal_gray_zongji {
+  font-size: 14px;
+  color: #999;
+}
+.wrap .calculate .cal_gray .cal_gray_text {
+  display: inline-block;
+  width: 18.5%;
+}
+.wrap .calculate .cal_gray .cal_gray_zongji {
+  display: inline-block;
+  width: 75.5%;
+  text-align: right;
+}
+.wrap .calculate .cal_interval2 {
+  height: .4rem;
+  background: #f3f3f3;
+}
+.wrap .calculate .cal_recommend {
+  margin-left: .4rem;
+  padding-right: .8rem;
+  height: 1.36rem;
+  border-bottom: 1px solid #f3f3f3;
+}
+.wrap .calculate .cal_recommend span {
+  float: left;
+  margin-top: .46rem;
+  font-size: 15px;
+  color: #555;
+}
+.wrap .calculate .cal_recommend .cal_insurance {
+  float: right;
+  margin-top: .43rem;
+}
+.wrap .calculate .cal_recommend .cal_insurance li {
+  float: left;
+  margin-right: .347rem;
+  width: 1.347rem;
+  height: .507rem;
+  text-align: center;
+  line-height: .507rem;
+  border: 1px solid  #e2e2e2;
+  font-size: 12px;
+}
+.wrap .calculate .cal_recommend .cal_insurance li:last-child {
+  margin-right: 0;
+}
+.wrap .calculate .cal_recommend .cal_insurance .recommend_active {
+  border-color: #2799fe;
+  color: #2799fe;
+}
+.wrap .calculate .recommend_type {
+  margin-left: .4rem;
+  display: none;
+}
+.wrap .calculate .recommend_type li {
+  height: 1.32rem;
+  line-height: 1.32rem;
+  border-bottom: 1px solid #e2e2e2;
+  position: relative;
+}
+.wrap .calculate .recommend_type li .cal_select,
+.wrap .calculate .recommend_type li .cal_select_nor,
+.wrap .calculate .recommend_type li .noclick {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -0.3rem;
+  margin-right: 0.267rem;
+  display: inline-block;
+  width: .533rem;
+  height: .533rem;
+}
+.wrap .calculate .recommend_type li .cal_select {
+  background: url(../img/cal_select2.png);
+  background-size: cover;
+}
+.wrap .calculate .recommend_type li .cal_select_nor {
+  background: url(../img/cal_select.png);
+  background-size: cover;
+}
+.wrap .calculate .recommend_type li .noclick {
+  background: url(../img/cal_select.png);
+  background-size: cover;
+}
+.wrap .calculate .recommend_type li .recommend_name1,
+.wrap .calculate .recommend_type li .recommend_name2 {
+  float: left;
+  margin-left: .8rem;
+  font-size: 14px;
+  color: #858585;
+}
+.wrap .calculate .recommend_type li .recommend_name1 {
+  width: 29%;
+}
+.wrap .calculate .recommend_type li .recommend_name2 {
+  width: 51%;
+}
+.wrap .calculate .recommend_type li .recommend_bizozhu {
+  float: left;
+  display: inline-block;
+  width: 25%;
+  font-size: 14px;
+  color: #ff981f;
+  text-align: center;
+}
+.wrap .calculate .recommend_type li .recommend_price1,
+.wrap .calculate .recommend_type li .recommend_price2 {
+  display: inline-block;
+  text-align: right;
+  font-size: 15px;
+}
+.wrap .calculate .recommend_type li .recommend_price1 {
+  width: 29%;
+}
+.wrap .calculate .recommend_type li .recommend_price2 {
+  width: 32%;
+}
+.wrap .calculate .recommend_type li .cal_arrow_right {
+  float: right;
+  margin-top: .53rem;
+  margin-right: .4rem;
+  display: inline-block;
+  width: .16rem;
+  height: .293rem;
+  background: url(../img/arrow_right_gray.png);
+  background-size: cover;
+}
+.wrap .calculate .recommend_type li:last-child {
+  border-bottom: 0;
+}
+.wrap .calculate .recommend_show {
+  display: block;
+}
+.wrap .calculate .cal_hint {
+  line-height: .6rem;
+  padding: .2rem .4rem;
+  font-size: 14px;
+  color: #ff981f;
+}
+.wrap .calculate .cal_hint img {
+  float: left;
+  margin: .15rem .267rem 0 0;
+  display: inline-block;
+  width: .413rem;
+  height: .453rem;
+  vertical-align: middle;
+}
+.wrap .calculate .cal_hint span {
+  display: inline-block;
+  float: left;
+  width: 91%;
+}
+.wrap .calculate .hint {
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  font-size: 12px;
+  color: #b6b6b6;
+  background: #fff;
+}
+.wrap .calculate .cal_loan {
+  height: 4.04rem;
+}
+.wrap .calculate .cal_loan .cal_loan_type {
+  margin-left: .4rem;
+  padding-right: .4rem;
+  height: 1.333rem;
+  line-height: 1.333rem;
+  border-bottom: 1px solid #f3f3f3;
+}
+.wrap .calculate .cal_loan .cal_loan_type .cal_loan_tit {
+  display: inline-block;
+  width: 23.5%;
+  font-size: 15px;
+}
+.wrap .calculate .cal_loan .cal_loan_type .cal_loan_detail {
+  display: inline-block;
+  float: right;
+  margin-top: .373rem;
+}
+.wrap .calculate .cal_loan .cal_loan_type .cal_loan_detail li {
+  float: left;
+  margin-right: .213rem;
+  width: 1.12rem;
+  height: .507rem;
+  text-align: center;
+  line-height: .507rem;
+  border: 2px solid #e2e2e2;
+  font-size: 12px;
+}
+.wrap .calculate .cal_loan .cal_loan_type .cal_loan_detail li:last-child {
+  margin-right: 0;
+}
+.wrap .calculate .cal_loan .cal_loan_type .cal_loan_detail .cal_loan_active {
+  border-color: #2896fe;
+  border-radius: 2px;
+}
+.wrap .calculate .cal_loan .cal_loan_type .cal_loan_con {
+  display: inline-block;
+  width: 69.5%;
+  text-align: right;
+  font-size: 15px;
+}
+.wrap .calculate .cal_loan .cal_loan_type .cal_loan_editor {
+  float: right;
+  margin-top: .4rem;
+  display: inline-block;
+  width: .453rem;
+  height: .507rem;
+  background: url(../img/editor.png);
+  background-size: cover;
+}
+.wrap .cal_interval {
+  height: .427rem;
+  background: #f3f3f3;
+}
+/*半透明遮罩*/
+.mask2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  filter: alpha(opacity=60);
+  opacity: .6;
+  display: none;
+}
+/*右侧抽屉*/
+.slider_btn {
+  position: fixed;
+  top: 50%;
+  left: 1.093rem;
+  margin-top: -0.32rem;
+  z-index: 3;
+  width: .693rem;
+  height: .64rem;
+  display: none;
+}
+.cal_drawer {
+  width: 7.667rem;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  transition: right .5s;
+  z-index: 100;
+  border-left: 1px solid #d2d2d2;
+  background: #fff;
+  overflow-y: scroll;
+}
+.cal_drawer::-webkit-scrollbar {
+  width: 0;
+}
+.cal_drawer .drawerBox {
+  width: 7.667rem;
+  background: #fff;
+}
+.cal_drawer .drawerBox .drawerList {
+  padding-bottom: 1.333rem;
+}
+.cal_drawer .drawerBox .drawerList li {
+  margin-left: 0.4rem;
+  height: 1.333rem;
+  border-bottom: 1px solid #f3f3f3;
+  line-height: 1.484rem;
+  font-size: 16px;
+}
+.cal_drawer .drawerBox .drawerList .drawer_select {
+  color: #2799fe;
+}
+/*字号适配*/
+[data-dpr="2"] .wrap .calculate_way li a {
+  font-size: 30px;
+}
+[data-dpr="2"] .wrap .calculate .cal_totalPrices .zj {
+  font-size: 30px;
+}
+[data-dpr="2"] .wrap .calculate .cal_totalPrices .cal_price {
+  font-size: 80px;
+}
+[data-dpr="2"] .wrap .calculate .cal_totalPrices .cal_reset {
+  font-size: 26px;
+}
+[data-dpr="2"] .wrap .calculate .cal_fenqi li .cal_fenqi_text {
+  font-size: 28px;
+}
+[data-dpr="2"] .wrap .calculate .cal_fenqi li .cal_fenqi_price {
+  font-size: 32px;
+}
+[data-dpr="2"] .wrap .calculate .cal_type .cal_type_tit,
+[data-dpr="2"] .wrap .calculate .cal_type .cal_type_con,
+[data-dpr="2"] .wrap .calculate .cal_type .cal_type_con2 {
+  font-size: 30px;
+}
+[data-dpr="2"] .wrap .calculate .cal_type .cal_type_explain {
+  font-size: 28px;
+}
+[data-dpr="2"] .wrap .calculate .cal_gray .cal_gray_text,
+[data-dpr="2"] .wrap .calculate .cal_gray .cal_gray_zongji {
+  font-size: 28px;
+}
+[data-dpr="2"] .wrap .calculate .cal_recommend span {
+  font-size: 30px;
+}
+[data-dpr="2"] .wrap .calculate .cal_recommend .cal_insurance li {
+  font-size: 24px;
+}
+[data-dpr="2"] .wrap .calculate .recommend_type li .recommend_name1,
+[data-dpr="2"] .wrap .calculate .recommend_type li .recommend_bizozhu,
+[data-dpr="2"] .wrap .calculate .recommend_type li .recommend_name2 {
+  font-size: 28px;
+}
+[data-dpr="2"] .wrap .calculate .recommend_type li .recommend_price1,
+[data-dpr="2"] .wrap .calculate .recommend_type li .recommend_price2 {
+  font-size: 30px;
+}
+[data-dpr="2"] .wrap .calculate .cal_hint {
+  font-size: 28px;
+}
+[data-dpr="2"] .wrap .calculate .hint {
+  font-size: 24px;
+}
+[data-dpr="2"] .wrap .calculate .cal_loan .cal_loan_type .cal_loan_tit,
+[data-dpr="2"] .wrap .calculate .cal_loan .cal_loan_type .cal_loan_con {
+  font-size: 30px;
+}
+[data-dpr="2"] .wrap .calculate .cal_loan .cal_loan_type .cal_loan_detail li {
+  font-size: 24px;
+}
+[data-dpr="2"] .cal_drawer .drawerBox .drawerList li {
+  font-size: 32px;
+}
+[data-dpr="3"] .wrap .calculate_way li a {
+  font-size: 45px;
+}
+[data-dpr="3"] .wrap .calculate .cal_totalPrices .zj {
+  font-size: 45px;
+}
+[data-dpr="3"] .wrap .calculate .cal_totalPrices .cal_price {
+  font-size: 120px;
+}
+[data-dpr="3"] .wrap .calculate .cal_totalPrices .cal_reset {
+  font-size: 39px;
+}
+[data-dpr="3"] .wrap .calculate .cal_fenqi li .cal_fenqi_text {
+  font-size: 42px;
+}
+[data-dpr="3"] .wrap .calculate .cal_fenqi li .cal_fenqi_price {
+  font-size: 48px;
+}
+[data-dpr="3"] .wrap .calculate .cal_type .cal_type_tit,
+[data-dpr="3"] .wrap .calculate .cal_type .cal_type_con,
+[data-dpr="3"] .wrap .calculate .cal_type .cal_type_con2 {
+  font-size: 45px;
+}
+[data-dpr="3"] .wrap .calculate .cal_type .cal_type_explain {
+  font-size: 42px;
+}
+[data-dpr="3"] .wrap .calculate .cal_gray .cal_gray_text,
+[data-dpr="3"] .wrap .calculate .cal_gray .cal_gray_zongji {
+  font-size: 42px;
+}
+[data-dpr="3"] .wrap .calculate .cal_recommend span {
+  font-size: 45px;
+}
+[data-dpr="3"] .wrap .calculate .cal_recommend .cal_insurance li {
+  font-size: 36px;
+}
+[data-dpr="3"] .wrap .calculate .recommend_type li .recommend_name1,
+[data-dpr="3"] .wrap .calculate .recommend_type li .recommend_bizozhu,
+[data-dpr="3"] .wrap .calculate .recommend_type li .recommend_name2 {
+  font-size: 42px;
+}
+[data-dpr="3"] .wrap .calculate .recommend_type li .recommend_price1,
+[data-dpr="3"] .wrap .calculate .recommend_type li .recommend_price2 {
+  font-size: 45px;
+}
+[data-dpr="3"] .wrap .calculate .cal_hint {
+  font-size: 42px;
+}
+[data-dpr="3"] .wrap .calculate .hint {
+  font-size: 36px;
+}
+[data-dpr="3"] .wrap .calculate .cal_loan .cal_loan_type .cal_loan_tit,
+[data-dpr="3"] .wrap .calculate .cal_loan .cal_loan_type .cal_loan_con {
+  font-size: 45px;
+}
+[data-dpr="3"] .wrap .calculate .cal_loan .cal_loan_type .cal_loan_detail li {
+  font-size: 36px;
+}
+[data-dpr="3"] .cal_drawer .drawerBox .drawerList li {
+  font-size: 48px;
+}
+/*匹配dpr=1 最大320*/
+@media (max-width: 320px) {
+  [data-dpr="1"] .wrap .calculate .cal_type .cal_type_tit {
+    width: 25.5%;
+  }
+  [data-dpr="1"] .wrap .calculate .cal_type .cal_type_con {
+    width: 67.5%;
+  }
+  [data-dpr="1"] .wrap .calculate .cal_type .cal_type_con2 {
+    width: 16.5%;
+  }
+  [data-dpr="1"] .wrap .calculate .cal_gray .cal_gray_text {
+    width: 19.5%;
+  }
+  [data-dpr="1"] .wrap .calculate .cal_gray .cal_gray_zongji {
+    width: 73.5%;
+  }
+  [data-dpr="1"] .wrap .calculate .recommend_type li .recommend_name1 {
+    width: 34%;
+  }
+  [data-dpr="1"] .wrap .calculate .recommend_type li .recommend_name2 {
+    width: 57%;
+  }
+  [data-dpr="1"] .wrap .calculate .recommend_type li .recommend_bizozhu {
+    width: 25%;
+  }
+  [data-dpr="1"] .wrap .calculate .recommend_type li .recommend_price1 {
+    width: 24%;
+  }
+  [data-dpr="1"] .wrap .calculate .recommend_type li .recommend_price2 {
+    width: 27%;
+  }
+  [data-dpr="1"] .wrap .calculate .cal_loan .cal_loan_type .cal_loan_tit {
+    width: 22.5%;
+  }
+}
+/*匹配dpr=2 iphone4*/
+@media (device-height: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .wrap .calculate .cal_type .cal_type_tit {
+    width: 25.5%;
+  }
+  .wrap .calculate .cal_type .cal_type_con {
+    width: 67.5%;
+  }
+  .wrap .calculate .cal_type .cal_type_con2 {
+    width: 16.5%;
+  }
+  .wrap .calculate .cal_gray .cal_gray_text {
+    width: 19.5%;
+  }
+  .wrap .calculate .cal_gray .cal_gray_zongji {
+    width: 73.5%;
+  }
+  .wrap .calculate .recommend_type li .cal_select {
+    margin-top: -0.27rem;
+  }
+  .wrap .calculate .recommend_type li .recommend_name1 {
+    width: 34%;
+  }
+  .wrap .calculate .recommend_type li .recommend_name2 {
+    width: 57%;
+  }
+  .wrap .calculate .recommend_type li .recommend_bizozhu {
+    width: 25%;
+  }
+  .wrap .calculate .recommend_type li .recommend_price1 {
+    width: 24%;
+  }
+  .wrap .calculate .recommend_type li .recommend_price2 {
+    width: 27%;
+  }
+}
+/*匹配dpr=2 iphone5*/
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .wrap .calculate .cal_type .cal_type_tit {
+    width: 25.5%;
+  }
+  .wrap .calculate .cal_type .cal_type_con {
+    width: 67.5%;
+  }
+  .wrap .calculate .cal_type .cal_type_con2 {
+    width: 16.5%;
+  }
+  .wrap .calculate .cal_gray .cal_gray_text {
+    width: 19.5%;
+  }
+  .wrap .calculate .cal_gray .cal_gray_zongji {
+    width: 73.5%;
+  }
+  .wrap .calculate .recommend_type li .cal_select {
+    margin-top: -0.27rem;
+  }
+  .wrap .calculate .recommend_type li .recommend_name1 {
+    width: 34%;
+  }
+  .wrap .calculate .recommend_type li .recommend_name2 {
+    width: 57%;
+  }
+  .wrap .calculate .recommend_type li .recommend_bizozhu {
+    width: 25%;
+  }
+  .wrap .calculate .recommend_type li .recommend_price1 {
+    width: 24%;
+  }
+  .wrap .calculate .recommend_type li .recommend_price2 {
+    width: 27%;
+  }
+}
+/*匹配dpr=2 iphone6*/
+@media (device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .wrap .calculate .recommend_type li .cal_select {
+    margin-top: -0.27rem;
+  }
+}
+/*匹配dpr=3 iphone6 plus*/
+@media (device-height: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  .wrap .calculate .recommend_type li .cal_select {
+    margin-top: -0.27rem;
+  }
+}

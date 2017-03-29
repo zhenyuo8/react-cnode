@@ -1,0 +1,123 @@
+/*****
+ *@author: jianingning
+ *@from: Global style attention
+ *@description:
+ *@date: name (2017.02.16)
+*/
+/*****
+ *@author: jianingning
+ *@from: Global style mod_rotatoHint
+ *@description:
+ *@date: name (2017.02.17)
+*/
+.rotatoHint_mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  filter: alpha(opacity=50);
+  opacity: .5;
+  display: none;
+}
+.rotatoHint {
+  position: fixed;
+  top: 21.9%;
+  left: 16.4%;
+  z-index: 100;
+  width: 63.4%;
+  display: none;
+}
+.rotatoHint img {
+  width: 100%;
+}
+.att_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#25a6fe), to(#2e7aff));
+}
+.wrap {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+.wrap .content {
+  padding-top: 1.493rem;
+}
+.wrap .content .attention_text {
+  display: block;
+  width: 6.027rem;
+  height: 1.973rem;
+  margin: 0 auto;
+}
+.wrap .content .circle {
+  position: relative;
+  width: 7.92rem;
+  height: 8.08rem;
+  background: url(../img/circle.png);
+  background-size: cover;
+  margin: 0.787rem auto 0 auto;
+}
+.wrap .content .circle .erweima {
+  display: inline-block;
+  width: 4.013rem;
+  height: 4.0rem;
+  position: absolute;
+  top: 1.293rem;
+  left: 2.133rem;
+}
+.wrap .content .circle p {
+  width: 7.92rem;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+.wrap .content .circle .text1 {
+  position: absolute;
+  top: 5.533rem;
+  left: 0.067rem;
+}
+.wrap .content .circle .text2 {
+  position: absolute;
+  top: 6.133rem;
+  left: 0.067rem;
+}
+.wrap .cloud {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  width: 100%;
+  height: 3.227rem;
+  background: url(../img/cloud.png);
+  background-size: cover;
+}
+.wrap .cloud .logo {
+  position: absolute;
+  bottom: 0.56rem;
+  left: 50%;
+  margin-left: -1.727rem;
+  display: block;
+  width: 3.453rem;
+  height: 0.88rem;
+}
+[data-dpr="2"] .wrap .content .circle p {
+  font-size: 36px;
+}
+[data-dpr="3"] .wrap .content .circle p {
+  font-size: 54px;
+}
+@media all and (orientation: landscape) {
+  .rotatoHint_mask {
+    display: block;
+  }
+  .rotatoHint {
+    display: block;
+  }
+}

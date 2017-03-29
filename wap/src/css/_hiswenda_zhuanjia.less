@@ -1,0 +1,373 @@
+/*****
+ *@author: jianingning
+ *@from: Global style hiswenda_zhuanjia  TA的问答-专家
+ *@description:
+ *@date: name (2017.03.03)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_pubHead.less";
+@import "mod/mod_pubHeadNav.less";
+@import "mod/mod_answer.less";
+@import "mod/mod_footer.less";
+@import "mod/mod_goTop.less";
+@import "mod/mod_shareIcon.less";
+.wrap {
+	width: 100%;
+	background: #f4f5f7;
+	/*问答专家*/
+	.ans_Expert {
+		padding: .4rem;
+		background: #fff;
+
+		dl {
+			dt {
+				position: relative;
+				float: left;
+				margin-right: .4rem;
+				width: 1.867rem;
+				height: 1.867rem;
+
+				img {
+					display: block;
+					width: 100%;
+					height: 100%;
+                    border-radius: 50%;
+				}
+				.ans_expert_sign {
+					position: absolute;
+					bottom: -.097rem;
+					left: -.067rem;
+					display: inline-block;
+					width: 2.0rem;
+					height: .48rem;
+					background: url(../img/wenda_expert.png);
+					background-size: cover;
+				}
+			}
+			dd {
+				float: left;
+				margin-bottom: .103rem;
+				width: 75%;
+			}
+			.ans_expert_news {
+				font-size: 13px;
+				color: #666;
+			}
+			.ans_first_dd {
+				margin-top: .113rem;
+				margin-bottom: .18rem;
+                height: .533rem;
+                line-height: .533rem;
+			}
+			.ans_expert_name {
+				font-size: 15px;
+				color: #333;
+			}
+			.ans_expert_city {
+                padding-left: .213rem;
+                margin: -.05rem 0 0 .213rem;
+                display: inline-block;
+                height: .343rem;
+                line-height: .333rem;
+                border-left: 1px solid #ebedef;
+                color: #999;
+			}
+			.ans_expert_share {
+				float: right;
+				display: inline-block;
+				width: .48rem;
+				height: .507rem;
+			}
+			.ans_total {
+				margin-right: .407rem;
+			}
+		}
+		.ans_expert_introduce {
+			width: 100%;
+			margin-top: .147rem;
+			line-height: .573rem;
+			font-size: 13px;
+			color: #666;
+		}
+		.ans_over {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 2;
+		}
+	}
+    /*面包屑*/
+    .crumbs {
+        margin-top: .4rem;
+        padding: 0 .4rem;
+        height: 1.067rem;
+        line-height: 1.067rem;
+        border-bottom: 1px solid  #ebedef;
+        background: @color-fff;
+
+        a {
+           font-size: 14px;
+           color: #666;
+
+           &:last-child {
+            color: #999;
+           }
+        }
+        img {
+            margin: .44rem .133rem 0 .133rem;
+            display: inline-block;
+            width: .12rem;
+            height: .213rem;
+        }
+    }
+}
+/*半透明遮罩*/
+.mask2,
+.zsh_sf_mask {
+    position: fixed;
+    top: 1.173rem;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    filter:alpha(opacity=60);
+    opacity:.6;
+    display: none;
+}
+.mask2 {
+    top: 0;
+}
+.zsh_sf_mask {
+    top: 0;
+    z-index: 4;
+}
+/*分享弹层*/
+.zsh_shareLayer {
+    position: fixed;
+    left: 0;
+    bottom: -4.36rem;
+    z-index: 4;
+    width: 100%;
+    height: 4.36rem;
+    background: #fff;
+
+    ul {
+        padding-top: .64rem;
+        li {
+            float: left;
+            width: 20%;
+            height: 1.72rem;
+            text-align: center;
+
+            .zsh_wx,
+            .zsh_pyq,
+            .zsh_qq,
+            .zsh_wb,
+            .zsh_kj {
+                display: block;
+                margin: 0 auto .147rem auto;
+                width: 1.173rem;
+                height: 1.173rem;
+            }
+            .zsh_wx {
+                background: url(../img/wx.png) no-repeat;
+                background-size: contain;
+                &:active {
+                    background: url(../img/wx_press.png) no-repeat;
+                    background-size: contain;
+                }
+            }
+            .zsh_pyq {
+                background: url(../img/pyq.png) no-repeat;
+                background-size: contain;
+                &:active {
+                    background: url(../img/pyq_press.png) no-repeat;
+                    background-size: contain;
+                }
+            }
+            .zsh_qq {
+                background: url(../img/qq.png) no-repeat;
+                background-size: contain;
+                &:active {
+                    background: url(../img/qq_press.png) no-repeat;
+                    background-size: contain;
+                }
+            }
+            .zsh_wb {
+                background: url(../img/wb.png) no-repeat;
+                background-size: contain;
+                &:active {
+                    background: url(../img/wb_press.png) no-repeat;
+                    background-size: contain;
+                }
+            }
+            .zsh_kj {
+                background: url(../img/kj.png) no-repeat;
+                background-size: contain;
+                &:active {
+                    background: url(../img/kj_press.png) no-repeat;
+                    background-size: contain;
+                }
+            }
+            span {
+                font-size: 11px;
+            }
+        }
+    }
+    .zsh_cancel {
+        margin: .627rem 0 0 4%;
+        width: 92%;
+        height: .96rem;
+        text-align: center;
+        line-height: .96rem;
+        background: #edf7ff;
+        font-size: 13px;
+        color: #52adfe;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+    }
+}
+/*微信分享如果是safari浏览器*/
+.zsh_sf_layer {
+    position: fixed;
+    bottom: 3.947rem;
+    left: 4%;
+    z-index: 5;
+    width: 92%;
+    height: 4.933rem;
+    background: #fff;
+    border-radius: 8px;
+    display: none;
+
+    .zsh_sf_arrowDown {
+        position: absolute;
+        bottom: -.173rem;
+        left: .613rem;
+        width: 0px;
+        height: 0px;
+        border-left: .213rem solid transparent;
+        border-right: .213rem solid transparent;
+        border-top: .213rem solid #fff;
+    }
+    .zsh_sf_wx {
+        position: absolute;
+        left: 0;
+        bottom: -1.393rem;
+        display: inline-block;
+        width: 1.173rem;
+        height: 1.173rem;
+        background: url(../img/wx.png);
+        background-size: contain;
+    }
+    p {
+        margin: .3rem 0 0 .627rem;
+        font-size: 13px;
+
+        .share_img1 {
+            display: inline-block;
+            width: 0.44rem;
+            height: 0.613rem;
+        }
+        .share_img2 {
+            display: inline-block;
+            width: 0.587rem;
+            height: 0.587rem;
+        }
+        .share_img3 {
+            display: inline-block;
+            width: 1.0rem;
+            height: 0.6rem;
+        }
+        .share_img4 {
+            display: inline-block;
+            width: 0.587rem;
+            height: 0.587rem;
+        }
+        .share_img5 {
+            display: inline-block;
+            width: 0.6rem;
+            height: 0.587rem;
+        }
+    }
+}
+/*字号大小适配*/
+[data-dpr="2"] .wrap {
+	.ans_Expert {
+		dl {
+			.ans_expert_name {
+				font-size: 30px;
+			}
+			.ans_expert_news {
+				font-size: 26px;
+			}
+		}
+		.ans_expert_introduce {
+			font-size: 26px;
+		}
+	}
+    .crumbs {
+        a {
+            font-size: 28px;
+        }
+    }
+}
+[data-dpr="2"] .zsh_shareLayer {
+    ul {
+        li {
+            span {
+                font-size: 22px;
+            }
+        }
+    }
+    .zsh_cancel {
+        font-size: 26px;
+    }
+}
+[data-dpr="2"] .zsh_sf_layer {
+    p {
+        font-size: 26px;
+    }
+}
+[data-dpr="3"] .wrap {
+	.ans_Expert {
+		dl {
+			.ans_expert_name {
+				font-size: 45px;
+			}
+			.ans_expert_news {
+				font-size: 39px;
+			}
+		}
+		.ans_expert_introduce {
+			font-size: 39px;
+		}
+	}
+    .crumbs {
+        a {
+            font-size: 42px;
+        }
+    }
+}
+[data-dpr="3"] .zsh_shareLayer {
+    ul {
+        li {
+            span {
+                font-size: 33px;
+            }
+        }
+    }
+    .zsh_cancel {
+        font-size: 39px;
+    }
+}
+[data-dpr="3"] .zsh_sf_layer {
+    p {
+        font-size: 39px;
+    }
+}

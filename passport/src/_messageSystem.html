@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>消息中心</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/messageSystem.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/messageSystem.js"></script>
+    <script src="js/pagination.js"></script>
+</head>
+<body>
+<div class="main">
+    {{#include ./mod/mod_header.html}}
+    <div class="content clearfix">
+        <div class="left_tab_menu clearfix">
+            <ul>
+                <li><a href="personalCenter.html">账号管理</a></li>
+                <li><a href="myCollect.html">我的收藏</a></li>
+                <li><a href="myPrice.html">我的询价</a></li>
+                <li><a href="myWenda.html">我的问答</a></li>
+                <li><a href="myComment.html">我的评论</a></li>
+                <li class="bg message_sys"><a href="messageSystem.html" id="message_sys_a">消息中心 <em></em></a></li>
+            </ul>
+        </div>
+        <div class="right_content clearfix">
+            <div class="account_m">
+                <ul  class="account_tab" id="js_account_tab">
+                    <li class="tab comment_msg"><a href="javascript:void (0)" class="active" id="comment_msg">问答消息（3）<em style="display: none"></em></a></li>
+                    <li class="tab system_msg"><a href="javascript:void (0)" id="system_msg">系统消息（5）<em></em></a> </li>
+                    <li class="delete" id="delete_id">
+                        <a href="javascript:void (0)" id="delete_a">删除所选</a>
+                        <a href="javascript:void (0)" id="clear_a" class="clear_aq_message">清空问答消息</a>
+                        <a href="javascript:void (0)" id="clear_aa" class="clear_sys_message">清空系统消息</a>
+                    </li>
+                </ul>
+                <div class="cancel_confirm_delete" id="cancel_confirm_delete">
+                    <p>您确定要删除所有消息吗？</p>
+                    <p><input type="button" value="取消" class="cancel" id="js_cancel"> <input type="button" id="js_confirm" value="确定" class="confirm"></p>
+                </div>
+                <div class="account_con clearfix">
+                    <div class="content_490 qa_message clearfix" id="js_content_490">
+                        <div class="container">
+                            <div class="fl img_container">
+                                <span><i></i></span>
+                                <img src="img/message.png" alt="">
+                            </div>
+                            <div class="des_container">
+                                <a href="#" class="message_notice"><span>来自【汽车大全】问答消息</span> <span>2017年1月28日</span></a>
+                                <p>亲爱的汽车大全用户，欢迎加入汽车大全网这个大家庭，您已成为注册汽车大全 ，可以前往个人中心 修改用户名，祝您在这里玩的愉快</p>
+                            </div>
+                            <em></em>
+                            <span class="cancel_collection">删除信息</span>
+                        </div>
+                        <div class="container">
+                            <div class="fl img_container">
+                                <span><i></i></span>
+                                <img src="img/message.png" alt="">
+                            </div>
+                            <div class="des_container">
+                                <a href="#" class="message_notice"><span>来自【汽车大全】问答消息</span> <span>2017年1月28日</span></a>
+                                <p>亲爱的汽车大全用户，欢迎加入汽车大全网这个大家庭，您已成为注册汽车大全 ，可以前往个人中心 修改用户名，祝您在这里玩的愉快</p>
+                            </div>
+                            <em></em>
+                            <span class="cancel_collection">删除信息</span>
+                        </div>
+                        <div class="container">
+                            <div class="fl img_container">
+                                <span><i></i></span>
+                                <img src="img/message.png" alt="">
+                            </div>
+                            <div class="des_container">
+                                <a href="#" class="message_notice"><span>来自【汽车大全】问答消息</span> <span>2017年1月28日</span></a>
+                                <p>亲爱的汽车大全用户，欢迎加入汽车大全网这个大家庭，您已成为注册汽车大全 ，可以前往个人中心 修改用户名，祝您在这里玩的愉快</p>
+                            </div>
+                            <em></em>
+                            <span class="cancel_collection">删除信息</span>
+                        </div>
+                        <div class="container">
+                            <div class="fl img_container">
+                                <span><i></i></span>
+                                <img src="img/message.png" alt="">
+                            </div>
+                            <div class="des_container">
+                                <a href="#" class="message_notice"><span>来自【汽车大全】问答消息</span> <span>2017年1月28日</span></a>
+                                <p>亲爱的汽车大全用户，欢迎加入汽车大全网这个大家庭，您已成为注册汽车大全 ，可以前往个人中心 修改用户名，祝您在这里玩的愉快</p>
+                            </div>
+                            <em></em>
+                            <span class="cancel_collection">删除信息</span>
+                        </div>
+                        <div class="container">
+                            <div class="fl img_container">
+                                <span><i></i></span>
+                                <img src="img/message.png" alt="">
+                            </div>
+                            <div class="des_container">
+                                <a href="#" class="message_notice"><span>来自【汽车大全】问答消息</span> <span>2017年1月28日</span></a>
+                                <p>亲爱的汽车大全用户，欢迎加入汽车大全网这个大家庭，您已成为注册汽车大全 ，可以前往个人中心 修改用户名，祝您在这里玩的愉快</p>
+                            </div>
+                            <em></em>
+                            <span class="cancel_collection">删除信息</span>
+                        </div>
+                        <div class="container">
+                            <div class="fl img_container">
+                                <span><i></i></span>
+                                <img src="img/message.png" alt="">
+                            </div>
+                            <div class="des_container">
+                                <a href="#" class="message_notice"><span>来自【汽车大全】问答消息</span> <span>2017年1月28日</span></a>
+                                <p>亲爱的汽车大全用户，欢迎加入汽车大全网这个大家庭，您已成为注册汽车大全 ，可以前往个人中心 修改用户名，祝您在这里玩的愉快</p>
+                            </div>
+                            <em></em>
+                            <span class="cancel_collection">删除信息</span>
+                        </div>
+                        <div class="container">
+                            <div class="fl img_container">
+                                <span><i></i></span>
+                                <img src="img/message.png" alt="">
+                            </div>
+                            <div class="des_container">
+                                <a href="#" class="message_notice"><span>来自【汽车大全】问答消息</span> <span>2017年1月28日</span></a>
+                                <p>亲爱的汽车大全用户，欢迎加入汽车大全网这个大家庭，您已成为注册汽车大全 ，可以前往个人中心 修改用户名，祝您在这里玩的愉快</p>
+                            </div>
+                            <em></em>
+                            <span class="cancel_collection">删除信息</span>
+                        </div>
+                        <!--分页-->
+                        <div class="tcdPageCode"></div>
+                    </div>
+                    <div class="content_490 sys_message clearfix" id="js_content_sys" style="display: none">
+                        <div class="container">
+                            <div class="fl img_container">
+                                <span><i></i></span>
+                                <img src="img/message.png" alt="">
+                            </div>
+                            <div class="des_container">
+                                <a href="#" class="message_notice"><span>来自【汽车大全】的系统消息</span> <span>2017年1月28日</span></a>
+                                <p>亲爱的汽车大全用户，欢迎加入汽车大全网这个大家庭，您已成为注册汽车大全 ，可以前往个人中心 修改用户名，祝您在这里玩的愉快</p>
+                            </div>
+                            <em></em>
+                            <span class="cancel_collection">删除信息</span>
+                        </div>
+                        <div class="container">
+                            <div class="fl img_container">
+                                <span><i></i></span>
+                                <img src="img/message.png" alt="">
+                            </div>
+                            <div class="des_container">
+                                <a href="#" class="message_notice"><span>来自【汽车大全】的系统消息</span> <span>2017年1月28日</span></a>
+                                <p>亲爱的汽车大全用户，欢迎加入汽车大全网这个大家庭，您已成为注册汽车大全 ，可以前往个人中心 修改用户名，祝您在这里玩的愉快</p>
+                            </div>
+                            <em></em>
+                            <span class="cancel_collection">删除信息</span>
+                        </div>
+                        <div class="container">
+                            <div class="fl img_container">
+                                <span><i></i></span>
+                                <img src="img/message.png" alt="">
+                            </div>
+                            <div class="des_container">
+                                <a href="#" class="message_notice"><span>来自【汽车大全】的系统消息</span> <span>2017年1月28日</span></a>
+                                <p>亲爱的汽车大全用户，欢迎加入汽车大全网这个大家庭，您已成为注册汽车大全 ，可以前往个人中心 修改用户名，祝您在这里玩的愉快</p>
+                            </div>
+                            <em></em>
+                            <span class="cancel_collection">删除信息</span>
+                        </div>
+                        <div class="container">
+                            <div class="fl img_container">
+                                <span><i></i></span>
+                                <img src="img/message.png" alt="">
+                            </div>
+                            <div class="des_container">
+                                <a href="#" class="message_notice"><span>来自【汽车大全】的系统消息</span> <span>2017年1月28日</span></a>
+                                <p>亲爱的汽车大全用户，欢迎加入汽车大全网这个大家庭，您已成为注册汽车大全 ，可以前往个人中心 修改用户名，祝您在这里玩的愉快</p>
+                            </div>
+                            <em></em>
+                            <span class="cancel_collection">删除信息</span>
+                        </div>
+                        <div class="container">
+                            <div class="fl img_container">
+                                <span><i></i></span>
+                                <img src="img/message.png" alt="">
+                            </div>
+                            <div class="des_container">
+                                <a href="#" class="message_notice"><span>来自【汽车大全】的系统消息</span> <span>2017年1月28日</span></a>
+                                <p>亲爱的汽车大全用户，欢迎加入汽车大全网这个大家庭，您已成为注册汽车大全 ，可以前往个人中心 修改用户名，祝您在这里玩的愉快</p>
+                            </div>
+                            <em></em>
+                            <span class="cancel_collection">删除信息</span>
+                        </div>
+                        <div class="container">
+                        <div class="fl img_container">
+                            <span><i></i></span>
+                            <img src="img/message.png" alt="">
+                        </div>
+                        <div class="des_container">
+                            <a href="#" class="message_notice"><span>来自【汽车大全】的系统消息</span> <span>2017年1月28日</span></a>
+                            <p>亲爱的汽车大全用户，欢迎加入汽车大全网这个大家庭，您已成为注册汽车大全 ，可以前往个人中心 修改用户名，祝您在这里玩的愉快</p>
+                        </div>
+                        <em></em>
+                        <span class="cancel_collection">删除信息</span>
+                    </div>
+                        <div class="container">
+                            <div class="fl img_container">
+                                <span><i></i></span>
+                                <img src="img/message.png" alt="">
+                            </div>
+                            <div class="des_container">
+                                <a href="#" class="message_notice"><span>来自【汽车大全】的系统消息</span> <span>2017年1月28日</span></a>
+                                <p>亲爱的汽车大全用户，欢迎加入汽车大全网这个大家庭，您已成为注册汽车大全 ，可以前往个人中心 修改用户名，祝您在这里玩的愉快</p>
+                            </div>
+                            <em></em>
+                            <span class="cancel_collection">删除信息</span>
+                        </div>
+                        <div class="container">
+                            <div class="fl img_container">
+                                <span><i></i></span>
+                                <img src="img/message.png" alt="">
+                            </div>
+                            <div class="des_container">
+                                <a href="#" class="message_notice"><span>来自【汽车大全】的系统消息</span> <span>2017年1月28日</span></a>
+                                <p>亲爱的汽车大全用户，欢迎加入汽车大全网这个大家庭，您已成为注册汽车大全 ，可以前往个人中心 修改用户名，祝您在这里玩的愉快</p>
+                            </div>
+                            <em></em>
+                            <span class="cancel_collection">删除信息</span>
+                        </div>
+                        <div class="container">
+                            <div class="fl img_container">
+                                <span><i></i></span>
+                                <img src="img/message.png" alt="">
+                            </div>
+                            <div class="des_container">
+                                <a href="#" class="message_notice"><span>来自【汽车大全】的系统消息</span> <span>2017年1月28日</span></a>
+                                <p>亲爱的汽车大全用户，欢迎加入汽车大全网这个大家庭，您已成为注册汽车大全 ，可以前往个人中心 修改用户名，祝您在这里玩的愉快</p>
+                            </div>
+                            <em></em>
+                            <span class="cancel_collection">删除信息</span>
+                        </div>
+                        <!--分页-->
+                        <div class="tcdPageCode"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    {{#include ./mod/mod_footer.html}}
+</div>
+
+
+<script>
+
+$(document).ready(function () {
+    $(".tcdPageCode").createPage({
+        pageCount: 5,
+        current: 1,
+        backFn: function (p) {
+            console.log(p)
+        }
+    });
+})
+
+</script>
+</body>
+</html>

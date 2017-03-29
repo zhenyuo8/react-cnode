@@ -1,0 +1,549 @@
+/*****
+ *@author: jianingning
+ *@from: Global style carType_peizhi  车款配置
+ *@description:
+ *@date: name (2017.02.28)
+*/
+
+
+
+@import (reference) "public";
+@import "mod/mod_pubHead.less";
+@import "mod/mod_pubHeadNav.less";
+@import "mod/mod_footer.less";
+@import "mod/mod_goTop.less";
+
+.wrap {
+    width: 100%;
+
+    /*content*/
+    .carType_tab {
+        height: 1.2rem;
+        line-height: 1.2rem;
+        border-bottom: 1px solid #e2e2e2;
+        background: #fff;
+
+        li {
+            float: left;
+            width: 33.12%;
+            text-align: center;
+            border-right: 1px solid #e2e2e2;
+            font-size: 15px;
+
+            a {
+                color: #666;
+            }
+            &:last-child {
+                border-right: none;
+            }
+        }
+        .carType_active  a{
+            color: #2799fe; 
+        }
+    }
+    .carType_list {
+        height: 1.307rem;
+        padding-left: .4rem;
+
+        .cal_type_tit {
+            display: inline-block;
+            width: 29%;
+            height: 1.307rem;
+            line-height: 1.307rem;
+            font-size: 15px;
+            float: left;
+        }
+        .cal_type_con {
+            display: inline-block;
+            margin-right: 2%;
+            width: 63%;
+            float: left;
+            height: 1.307rem;
+            line-height: 1.307rem;
+            text-align: right;
+            font-size: 15px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .cal_arrow_right {
+            display: inline-block;
+            width: .16rem;
+            height: .293rem;
+            background: url(../img/arrow_right_gray.png);
+            background-size: cover;
+            float: right;
+            margin-right: 0.4rem;
+            margin-top: 0.55rem;
+        }
+    }
+    .pzh_type_title {
+        height: .907rem;
+        padding: 0 .4rem;
+        background: #f4f5f7;
+
+        h4 {
+            display: inline-block;
+            float: left;
+            padding-right: .4rem;
+            width: 25%;
+            height: .907rem;
+            line-height: .907rem;
+            font-size: 14px;
+            color: #999;
+        }
+        .pzh_sign {
+            display: inline-block;
+            float: left;
+            width: 70%;
+            height: .907rem;
+            line-height: .907rem;
+            text-align: right;
+            font-size: 11px;
+            color: #999;
+
+            span {
+                width: 1.1rem;
+                height: .907rem;
+                display: table;
+                float: right;
+                margin-right: 0.16rem;
+                .s_yuan,
+                .k_yuan,
+                .line {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                .s_text {
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+                .s_yuan {
+                    width: .24rem;
+                    height: .24rem;
+                    background: #999;
+                    border-radius: 50%;
+                }
+                .k_yuan {
+                    
+                    width: .213rem;
+                    height: .213rem;
+                    border: 1px solid #999;
+                    border-radius: 50%;
+                    background: #fff;
+                }
+                .line {
+                    width: .24rem;
+                    height: .067rem;
+                    background: #999;
+                    border-radius: 5px;
+                }
+            }
+        }
+        .pzh_type_title_con {
+            display: inline-block;
+            height: .907rem;
+            line-height: .907rem;
+            font-size: 11px;
+            color: #999;
+            margin-left: .3rem;
+        }
+    }
+    .pzh_type_list {
+        li {
+            height: 1.307rem;
+            padding: 0 .4rem;
+            border-bottom: 1px solid #f3f3f3; 
+
+            .pzh_tit,
+            .pzh_con,
+            .pzh_price,
+            .pzh_jisuanqi,
+            .pzh_xundijia {
+                display: inline-block;
+            }
+            .pzh_tit {
+                 float: left;
+                 padding: .4rem .4rem 0 0;
+                 width: 25%;
+                 height: .907rem;
+                 border-right: 1px solid #f3f3f3;
+                 font-size: 12px;
+                 color: #999;
+            }
+            .pzh_tit2 {
+                 height: 1.107rem;
+                 padding-top: .2rem;
+            }
+            .pzh_con {
+                 height: .907rem;
+                 padding: .4rem 0 0 .4rem;
+                 font-size: 14px;
+
+                 .line {
+                    display: inline-block;
+                    width: .24rem;
+                    height: .067rem;
+                    background: #999;
+                    border-radius: 5px;
+                 }
+                 .s_yuan {
+                    display: inline-block;
+                    width: .24rem;
+                    height: .24rem;
+                    background: #999;
+                    border-radius: 50%;
+                }
+                .k_yuan {
+                    display: inline-block;
+                    width: .213rem;
+                    height: .213rem;
+                    border: 1px solid #999;
+                    border-radius: 50%;
+                    background: #fff;
+                }
+            }
+            .pzh_price {
+                 width: 25%;
+                 height: .907rem;
+                 padding: .4rem 0 0 .4rem;
+                 font-size: 14px;
+                 color: #ff3131;
+            }
+            .pzh_jisuanqi {
+                 float: right;
+                 margin-top: .28rem;
+                 width: 2.347rem;
+                 height: .747rem;
+                 text-align: center;
+                 line-height: .747rem;
+                 border: 1px solid #52adfe;
+                 font-size: 13px;
+                 color: #52adfe;
+                 border-radius: 4px;    
+            }
+            .pzh_xundijia {
+                 float: right;
+                 margin-top: .28rem;
+                 width: 2.4rem;
+                 height: .8rem;
+                 text-align: center;
+                 line-height: .8rem;
+                 font-size: 13px;
+                 color: #fff;
+                 background: #52adfe;
+                 border-radius: 4px;
+            }
+            table {
+                width: 100%;
+
+                tr {
+                    height: 1.307rem;
+                    vertical-align: middle;
+                    .pzh_t_tit {
+                        width: 29.5%;
+                        border-right: 1px solid #f3f3f3;
+                        font-size: 12px;
+                        color: #999;
+                    }
+                    .pzh_t_con {
+                        padding-left: .4rem;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .interval {
+        height: .4rem;
+        background: #f4f5f7;
+    }
+    .crumbs {
+        margin-top: .4rem;
+        padding: 0 .4rem;
+        height: 1.067rem;
+        line-height: 1.067rem;
+        border-bottom: 1px solid  #ebedef;
+        background: @color-fff;
+
+        a {
+           font-size: 14px;
+           color: #666;
+
+           &:last-child {
+            color: #999;
+           }
+        }
+        img {
+            margin: .44rem .07rem 0 .07rem;
+            display: inline-block;
+            width: .12rem;
+            height: .213rem;
+        }
+    }
+}
+/*半透明遮罩*/
+.mask2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    filter:alpha(opacity=60);
+    opacity:.6;
+    display: none;
+}
+.slider_btn {
+    position: fixed;
+    top: 50%;
+    left: 1.093rem;
+    margin-top: -.32rem;
+    z-index: 3;
+    width: .693rem;
+    height: .64rem;
+    display: none;
+}
+/*右侧模块*/
+.right_module{
+    width: 76.667%;
+    height: 100%;
+    background-color: @color-fff;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 999;
+    .car_msg_module{
+        .current_msg{
+            font-size: 16px;
+            line-height: 1.333rem /* 100/75 */;
+            padding-left: .4rem /* 30/75 */;
+        }
+        .sub_brand{
+            color: @sub-brand-name;
+            font-size: 13px;
+            width:100%;
+            line-height: .72rem /* 54/75 */;
+            background-color: @news-bg;
+            padding-left: .4rem /* 30/75 */;
+        }
+        .car_type_list{
+            font-size: 15px;
+            li{
+                margin-left: .4rem /* 30/75 */;
+                border-bottom: 1px solid @list-border;
+                a{
+                    display: block;
+                    padding: .2rem /* 15/75 */ .4rem /* 30/75 */ .16rem /* 12/75 */ 0;
+                    p{
+                        line-height: .72rem /* 54/75 */;
+                    }
+                    .type_price{
+                        color: @red-price;
+                        i{
+                            float: right;
+                            font-size: 12px;
+                            color: @time-color;
+                        }
+                    }
+                }
+            }
+        }
+        .car_color_list{
+            font-size: 15px;
+            li{
+                margin-left: .4rem /* 30/75 */;
+                border-bottom: 1px solid @list-border;
+                a{
+                    display: block;
+                    line-height: 1.333rem /* 100/75 */;
+                    i{
+                        display: inline-block;
+                        width: .347rem /* 26/75 */;
+                        height: .347rem /* 26/75 */;
+                        vertical-align: middle;
+                        margin-right: .147rem /* 11/75 */;
+                        border: 1px solid @border-color;
+                    }
+                }
+            }
+        }
+    }
+}
+/*固定菜单*/
+.float_menu {
+   .float_menu;
+   z-index: 3;
+}
+.param_catalog {
+    display: none;
+    position: fixed;
+    right: .2rem;
+    bottom: 1.6rem;
+    z-index: 2;
+    .border-jianbian(3px,3px,20px,3px,@catalog-border);
+    width: 5.893rem /* 442/75 */;
+    background-color: @color-fff;
+    border: 1px solid @catalog-border;
+    border-radius: .093rem /* 7/75 */;
+    padding: .24rem /* 18/75 */ .453rem /* 34/75 */ .293rem /* 22/75 */;
+    li{
+        float: left;
+        width: 50%;
+        line-height: .96rem /* 72/75 */;
+    }
+}
+/*适配字号大小*/
+[data-dpr="2"] .wrap {
+    .carType_tab {
+        li {
+            font-size: 30px;
+        }
+    }
+    .carType_list {
+        .cal_type_tit,
+        .cal_type_con {
+            font-size: 30px;
+        }
+    }
+    .pzh_type_title {
+        h4 {
+            font-size: 28px;
+        }
+        .pzh_sign,
+        .pzh_type_title_con {
+            font-size: 22px;
+        }
+    }
+    .pzh_type_list {
+        li {
+            .pzh_tit {
+                 font-size: 24px;
+            }
+            .pzh_con,
+            .pzh_price  {
+                 font-size: 28px;
+            }
+            .pzh_jisuanqi,
+            .pzh_xundijia  {
+                 font-size: 26px;
+            }
+            table {
+                tr {
+                    .pzh_t_tit {
+                        font-size: 24px;
+                    }
+                    .pzh_t_con {
+                        font-size: 28px;
+                    }
+                }
+            }
+        }
+    }
+    .crumbs {
+        a {
+            font-size: 28px;
+        }
+    }
+}
+[data-dpr="2"] .right_module{
+    .current_msg{
+        font-size: 32px;
+    }
+    .sub_brand{
+        font-size: 26px;
+    }
+    .car_type_list{
+        font-size: 30px;
+        li{
+            a{
+                .type_price{
+                    i{
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+    .car_color_list{
+        font-size: 30px;
+    }
+}
+[data-dpr="3"] .wrap {
+    .carType_tab {
+        li {
+            font-size: 45px;
+        }
+    }
+    .carType_list {
+        .cal_type_tit,
+        .cal_type_con {
+            font-size: 45px;
+        }
+    }
+    .pzh_type_title {
+        h4 {
+            font-size: 42px;
+        }
+        .pzh_sign,
+        .pzh_type_title_con  {
+            font-size: 33px;
+        }
+    }
+    .pzh_type_list {
+        li {
+            .pzh_tit {
+                 font-size: 36px;
+            }
+            .pzh_con,
+            .pzh_price {
+                 font-size: 42px;
+            }
+            .pzh_jisuanqi,
+            .pzh_xundijia {
+                 font-size: 39px;
+            }
+            table {
+                tr {
+                    .pzh_t_tit {
+                        font-size: 36px;
+                    }
+                    .pzh_t_con {
+                        font-size: 42px;
+                    }
+                }
+            }
+        }
+    }
+    .crumbs {
+        a {
+            font-size: 42px;
+        }
+    }
+}
+[data-dpr="3"] .right_module{
+    .current_msg{
+        font-size: 48px;
+    }
+    .sub_brand{
+        font-size: 39px;
+    }
+    .car_type_list{
+        font-size: 45px;
+        li{
+            a{
+                .type_price{
+                    i{
+                        font-size: 36px;
+                    }
+                }
+            }
+        }
+    }
+    .car_color_list{
+        font-size: 45px;
+    }
+}

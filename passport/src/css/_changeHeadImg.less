@@ -1,0 +1,290 @@
+.content_img{
+  width: 758px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+  background: #fff;
+  padding-bottom: 60px;
+  //更改头像独立样式开始
+  .fl{
+    float: left;
+    //padding-top: 44px;
+    padding-left: 20px;
+    p{
+      font-size: 14px;
+      &:first-child {
+        color: #999;
+        margin-top: 40px;
+        margin-bottom: 32px;
+      }
+      &:first-child +p{
+        color: #999;
+        margin-bottom: 40px;
+      }
+      &.use_photo{
+        color: #333;
+        margin: 25px 0;
+      }
+      &.alert_for_IE{
+        margin-top: 40px;
+      }
+      &:nth-child(3){
+        color: #999;
+      }
+    }
+
+    .upload_img_left{
+      //display: none;
+      margin-top: 40px;
+      span{
+        width: 126px;
+        height: 32px;
+        display: inline-block;
+        border: 1px solid #dadada;
+        background: #eee;
+        cursor: pointer;
+        text-align: center;
+        line-height: 32px;
+        line-height: 32px\9;
+        color: #333;
+        font-size: 14px;
+        font-family: "Microsoft YaHei", "微软雅黑";
+      }
+      p{
+        display: none;
+        color: #e43a3a;
+        margin-top: 12px;
+        margin-bottom: 20px;
+      }
+      form{
+        display: none;
+        .fileSelect{
+          float: left;
+        }
+        .submit_css{
+          margin-top: 40px;
+          display: inline-block;
+          width: 96px;
+          height: 32px;
+          text-align: center;
+          line-height: 32px;
+          line-height: 32px\9;
+          background: #ffa903;
+          color: #fff;
+          font-size: 14px;
+          font-family: "Microsoft YaHei", "微软雅黑";
+          float: left;
+          &:hover{
+            cursor: pointer;
+            background: #ff9103;
+          }
+        }
+        .button_css{
+          font-size: 14px;
+          font-family: "Microsoft YaHei", "微软雅黑";
+          margin-top: 40px;
+          display: inline-block;
+          width: 96px;
+          height: 32px;
+          margin-left: 10px;
+          float: left;
+          text-align: center;
+          line-height: 32px;
+          line-height: 32px\9;
+          background: #eee;
+          color: #333;
+          &:hover{
+            cursor: pointer;
+            background: #dadada;
+          }
+        }
+      }
+    }
+  }
+
+  .cur_img_right {
+    display: none;
+    width: 320px;
+    float: left;
+    margin-top: 240px;
+    margin-left: 86px;
+    p {
+      font-size: 14px;
+      width: 232px;
+      color: #aaa;
+      text-wrap: normal;
+    }
+    .three_img {
+      margin-top: 20px;
+      float: left;
+
+      .size_left {
+        float: left;
+        div {
+          width: 118px;
+          height: 118px;
+          border: 1px solid #dadada;
+          border-radius: 4px;
+          position: relative;
+          span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            border: 1px dashed #dadada;
+            border-radius: 4px;
+            margin: auto;
+            text-align: center;
+            background: #eee;
+
+            img {
+              display: inline-block;
+              width: 77px;
+              height: 75px;
+              margin: 12px auto;
+              vertical-align: middle;
+            }
+          }
+        }
+        p {
+          width: 120px;
+          text-align: center;
+        }
+
+      }
+      .size_right {
+        float: left;
+        width: 60px;
+        height: 120px;
+        margin-left: 40px;
+
+        .size_div1 {
+          float: left;
+
+          .size_30 {
+            width: 28px;
+            height: 28px;
+            margin: auto 15px;
+            border: 1px solid #dadada;
+            border-radius: 2px;
+            position: relative;
+            span {
+              position: absolute;
+              display: inline-block;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 0;
+              width: 24px;
+              height: 24px;
+              border: 1px dashed #dadada;
+              border-radius: 2px;
+              margin: auto;
+              text-align: center;
+              img {
+                width: 20px;
+                height: 18px;
+                display: inline-block;
+                vertical-align: middle;
+                margin: 3px auto;
+              }
+            }
+          }
+          p {
+            width: 60px;
+            text-align: center;
+          }
+        }
+        .size_div2 {
+          float: left;
+          margin-top: 12px;
+
+          .size_60 {
+            position: relative;
+            width: 58px;
+            height: 58px;
+            border: 1px solid #dadada;
+            border-radius: 2px;
+            span {
+              display: inline-block;
+              position: absolute;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 0;
+              width: 48px;
+              height: 48px;
+              border: 1px dashed #dadada;
+              border-radius: 2px;
+              margin: auto;
+              text-align: center;
+              img {
+                width: 39px;
+                height: 37px;
+                display: inline-block;
+                vertical-align: middle;
+                margin: 6px auto;
+              }
+            }
+          }
+          p {
+            width: 60px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .fr{
+    float: right;
+    width: 240px;
+    div{
+      p{
+        margin-top: 40px;
+        font-size: 14px;
+        color: #333;
+        font-family: "Microsoft YaHei", "微软雅黑";
+      }
+      &.cur_img{
+        width: 138px;
+        height: 138px;
+        margin-top: 20px;
+        margin-bottom: 60px;
+        position: relative;
+        border: 1px solid #dadada;
+        img{
+          position: absolute;
+          left: 0;
+          top:0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          width: 109px;
+          height: 109px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .upload_msg{
+    display: none;
+    height: 60px;
+    width: 220px;
+    position: absolute;
+    display: inline-block;
+    border: 1px solid #dadada;
+    text-align: center;
+    margin: 100px 86px;
+    line-height: 60px;
+    line-height: 60px\9;
+    font-size: 18px;
+    background: #fff;
+    font-family: "Microsoft YaHei", "微软雅黑";
+    color: #333;
+
+  }
+}

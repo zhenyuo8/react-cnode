@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心页面</title>
+    <link rel="stylesheet" href="http://172.16.0.135:8888/passport/0/css/base.css">
+    <!--<link rel="stylesheet" href="http://172.16.0.135:8888/passport/0/css/jquery.Jcrop.css">-->
+    <link rel="stylesheet" href="http://172.16.0.135:8888/passport/0/css/personalCenter.css">
+    <link rel="stylesheet" href="http://172.16.0.135:8888/passport/0/css/changeHeadImg.css">
+    <link rel="stylesheet" href="http://172.16.0.135:8888/passport/0/css/changePassword.css">
+    <link rel="stylesheet" href="http://172.16.0.135:8888/passport/0/css/modifyMessage.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.Jcrop.js"></script>
+    <script src="js/accountTab.js"></script>
+    <script src="js/replaceDotted.js"></script>
+    <script src="js/bindPhone.js"></script>
+    <script src="js/modifyMessage.js"></script>
+    <script src="js/findPassword.js"></script>
+</head>
+<body>
+<div class="main">
+    <div class="header">
+    <div class="header_con clearfix">
+        <div class="fl clearfix">
+            <a href="#"><img src="http://172.16.0.135:8888/passport/0/img/personCenter_logo.png" alt="logo"></a>
+        </div>
+        <div class="fr clearfix">
+            <a href="#" class="user_img"> <img src="http://172.16.0.135:8888/passport/0/img/pic/user_img_03.png" alt="用户头像"> <img src="http://172.16.0.135:8888/passport/0/img/photo_mask.png" class="photo_mask"> </a>
+            <div href="#" class="user_name"> <span class="name">conan</span> <em></em> <span class="message_drop"> <a href="myPrice.html"><span>我的询价</span> ><i></i></a> <a href="#"><span>我的问答</span> ><i></i></a> <a href="myComment.html"><span>我的评论</span> ><i></i></a> <a href="messageSystem.html"><span>消息中心</span> ><i></i></a>                <a href="#"><span>退出登录</span> ><i></i></a> </span>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="content clearfix">
+        <div class="left_tab_menu clearfix">
+            <ul>
+                <li class="bg"><a href="personalCenter.html">账号管理</a></li>
+                <li><a href="myCollect.html">我的收藏</a></li>
+                <li><a href="myPrice.html">我的询价</a></li>
+                <li><a href="myWenda.html">我的问答</a></li>
+                <li><a href="myComment.html">我的评论</a></li>
+                <li class="message_sys"><a href="messageSystem.html" id="comment_msg">消息中心<em></em></a></li>
+            </ul>
+        </div>
+        <div class="right_content clearfix">
+            <div class="account_m">
+                <ul  class="account_tab">
+                    <li  class="cur"><a href="personalCenter_profile.html">个人资料</a></li>
+                    <li><a href="personalCenter_image.html">修改头像</a></li>
+                    <li><a href="personalCenter_password.html">修改密码</a></li>
+                </ul>
+                <div class="account_con clearfix">
+                    <div class="content_per tab">
+                        <div class="" id="home_page">
+                            <ul id="home_page_message">
+                                <li class="basic_msg clearfix">
+                                    <span>基本信息</span>
+                                    <a href="#" id="go_to_modify_message">修改资料></a>
+                                </li>
+                                <li class="promise_t clearfix">
+                                    完善个人资料，享受专属服务（请放心，您的个人信息不会泄露)
+                                </li>
+                                <li class="user nick_name">
+                                    <p class="js_nick_name"><i>昵称</i><strong>:</strong><span>conan</span></p>
+                                    <p class="js_true_name"><i>真实姓名</i><strong>:</strong><span>何在朋</span></p>
+                                    <p class="js_sex"><i>性别</i><strong>:</strong><span>男</span></p>
+                                    <p class="js_age"><i>年龄</i><strong>:</strong><span>18</span></p>
+                                    <a href="#" class="biao_bin"><img src="http://172.16.0.135:8888/passport/0/img/qa_soldier.png" alt=""></a>
+                                </li>
+                            </ul>
+                            <ul id="modify_message" style="display:none;">
+                                <li class="basic_msg clearfix">
+                                    <span>基本信息</span>
+                                    <a href="#" style="display: none">修改资料></a>
+                                </li>
+                                <li class="promise_t clearfix">
+                                    完善个人资料，享受专属服务（请放心，您的个人信息不会泄露)
+                                </li>
+                                <li class="user nick_name" id="js_nick_name">
+                                    <p class="name nick"><i>昵称</i><strong>:</strong><input type="text" placeholder="请输入昵称"></p>
+                                    <span class="error_msg1"><i></i>昵称要求1-16位，支持中英文、数字!</span>
+                                    <p class="name true"><i>真实姓名</i><strong>:</strong><input type="text"></p>
+                                    <p class="select" id="select_sex">
+                                        <i>性别</i><strong>:</strong>
+                                        <input type="text" value="男" readonly="readonly">
+                                        <em></em>
+                                        <span class="select_span_sex" id="select_span_sex">
+                                            <span>女</span>
+                                            <span class="last">男</span>
+                                        </span>
+                                    </p>
+                                    <p class="select" id="select_age">
+                                        <i>年龄</i><strong>:</strong>
+                                        <input type="text" value="请选择" readonly="readonly">
+                                        <em></em>
+                                        <span class="select_span_age" id="select_span_age">
+                                            <!--年龄选择生成-->
+                                        </span>
+                                    </p>
+                                </li>
+                                <li class="save_cancel_settings">
+                                    <p>
+                                        <input type="button" value="保存设置" class="save">
+                                        <input type="button" value="取消" class="cancel">
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="js_bind_phone">
+                            <ul class="bind_default" >
+                                <li class="bind_account" >
+                                    <p><a href="#">账号绑定</a></p>
+                                </li>
+                                <li class="bind_safe">
+                                    <p>绑定账号，登录无忧，账号更安全！</p>
+                                </li>
+                                <!--未绑定手机号码-->
+                                <li class="bind_phone none"  >
+                                    <p>
+                                        <i>手机</i><strong>:</strong>未绑定手机账号 <span class="js_go_bind">去绑定</span>
+                                    </p>
+                                </li>
+                                <li class="bind_society">
+                                    <p>
+                                        <i>绑定社交账号：</i>
+                                        <img src="http://172.16.0.135:8888/passport/0/img/bind_img.png" alt="">
+                                        <span>conan</span>
+                                    </p>
+                                </li>
+                            </ul>
+                            <ul class="bind_phone" style="display: none">
+                                <li class="bind_account bind">
+                                    <p class="bind"><a href="#">账号绑定</a> > <a href="#">绑定手机号</a></p>
+                                </li>
+                                <li class="sys_msg_do change">
+                                    <p>你正在进行绑定操作哟(*^_^*)</p>
+                                </li>
+                                <li class="input_phone clearfix" >
+                                    <p>
+                                        <i>手机号</i><strong>:</strong><input type="text" class="js_bind_phone" id="js_bind_phone"><em></em>
+                                    </p>
+                                </li>
+                                <li class="input_msg_code clearfix" >
+                                    <p>
+                                        <i>校验码</i><strong>:</strong><input type="text" class="input_msg_input" > <input type="button" class="get_msg_code" value="获取校验码">
+                                    </p>
+                                </li>
+                                <li class="error_msg">
+                                    <p class=""><i></i><span>校验码错误，请重新输入</span></p>
+                                </li>
+                                <li class="step clearfix">
+                                    <input type="button" class="save_step" id="save_step" value="保存">
+                                </li>
+                            </ul>
+                            <ul class="bind_phone_already" style="display: none">
+                                <!--已经绑定手机号-->
+                                <li class="bind_account">
+                                    <p><a href="#">账号绑定</a></p>
+                                </li>
+                                <li class="bind_phone_done" >
+                                    <p>
+                                        <i>手机</i><strong>:</strong><a href="javascript:void (0)" id="phone_con">135****9889</a><span>更改号码</span>
+                                    </p>
+                                </li>
+                            </ul>
+                            <ul class="js_change_phone" style="display: none">
+                                <li class="bind_account change">
+                                    <p class="modify" ><a href="#">账号绑定</a> > <a href="#">更改手机号</a></p>
+                                </li>
+                                <li class="sys_msg_do change">
+                                    <p>你正在更改之前绑定的手机号码(*^_^*)</p>
+                                    <p>汽车大全将给您181**9022手机发送验证码，请填您填写，30分钟内有效</p>
+                                </li>
+                                <li class="input_phone clearfix" id="input_phone">
+                                    <p>
+                                        <i>手机号</i><strong>:</strong><input type="text" class="js_change_phone">
+                                    </p>
+                                </li>
+                                <li class="input_msg_code clearfix" id="input_msg_code">
+                                    <p>
+                                        <i>校验码</i><strong>:</strong><input type="text" class="input_msg_input" id="input_msg_input1"> <input type="button" class="get_msg_code" value="获取校验码">
+                                    </p>
+                                </li>
+                                <li class="step clearfix" id="save_phone">
+                                    <input type="button" class="save_step" value="保存">
+                                </li>
+                            </ul>
+                            <ul class="bind_new_phone" style="display: none">
+                                <li class="bind_account">
+                                    <p class="bind"><a href="#">账号绑定</a> > <a href="#">绑定新手机号</a></p>
+                                </li>
+                                <li class="sys_msg_do">
+                                    <p>请绑定新的手机号</p>
+                                </li>
+                                <li class="input_phone clearfix">
+                                    <p>
+                                        <i>手机号</i><strong>:</strong><input type="text">
+                                    </p>
+                                </li>
+                                <li class="input_msg_code clearfix">
+                                    <p>
+                                        <i>校验码</i><strong>:</strong><input type="text" class="input_msg_input"> <input type="button" class="get_msg_code" value="获取校验码">
+                                    </p>
+                                </li>
+                                <li class="step clearfix">
+                                    <input type="button" class="save_step" value="保存">
+                                </li>
+                            </ul>
+                            <ul class="modify_new_phone" style="display: none">
+                                <li class="bind_account">
+                                    <p class="modify"><a href="#">账号绑定</a> > <a href="#">更改手机号</a></p>
+                                </li>
+                                <li class="sys_msg">
+                                    <p>你正在更改您之前绑定的手机号码</p>
+                                    <p>汽车大全将给您181****6898的手机发送验证码，请您填写，30分钟内有效</p>
+                                </li>
+                                <li class="input_phone clearfix">
+                                    <p>
+                                        <i>手机号</i><strong>:</strong><input type="text">
+                                    </p>
+                                </li>
+                                <li class="input_msg_code clearfix">
+                                    <p>
+                                        <i>验证码</i><strong>:</strong><input type="text" class="input_msg_input"> <input type="button" class="get_msg_code" value="获取校验码">
+                                    </p>
+                                </li>
+                                <li class="step clearfix">
+                                    <input type="button"  class="next_step" id="js_next_step" value="下一步">
+                                </li>
+                            </ul>
+                            <ul class="input_new_phone" style="display: none">
+                                <li class="bind_account">
+                                    <p class="modify"><a href="#">账号绑定</a> > <a href="#">绑定新手机号</a></p>
+                                </li>
+                                <li class="sys_msg">
+                                    <p>请绑定新手机号</p>
+                                </li>
+                                <li class="input_phone clearfix">
+                                    <p>
+                                        <i>手机号</i><strong>:</strong><input type="text" id="input_new_phone">
+                                    </p>
+                                </li>
+                                <li class="input_msg_code clearfix">
+                                    <p>
+                                        <i>校验码</i><strong>:</strong><input type="text" class="input_msg_input"> <input type="button" class="get_msg_code" value="获取校验码">
+                                    </p>
+                                </li>
+                                <li class="step clearfix">
+                                    <input type="button"  class="next_step" id="js_next_step2" value="保存">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content" style="display: none">
+                            <ul>
+                                <li class="bind_account">
+                                    <p class="modify" style="display: none"><a href="#">账号绑定</a> > <a href="#">更改手机号</a></p>
+                                    <p class="bind"><a href="#">账号绑定</a> > <a href="#">绑定手机号</a></p>
+                                </li>
+                                <li class="sys_msg">
+                                    <p>你正在更改您之前绑定的手机号码</p>
+                                    <p>汽车大全将给您181****6898的手机发送验证码，请您填写，30分钟内有效</p>
+                                </li>
+                                <li class="input_phone clearfix">
+                                    <p>
+                                        <i>手机号</i><strong>:</strong><input type="text">
+                                    </p>
+                                </li>
+                                <li class="input_msg_code clearfix">
+                                    <p>
+                                        <i>校验码</i><strong>:</strong><input type="text" class="input_msg_input"> <input type="button" class="get_msg_code" value="获取校验码">
+                                    </p>
+                                </li>
+                                <li class="step clearfix">
+                                    <input type="button"  class="next_step" style="display: none" value="下一步">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content_img tab" style="display: none">
+                        <div class="fl">
+                            <p>使用新头像</p>
+                            <p>你可以上传JPG、PNG、JPGE文件，文件需小于3MB</p>
+                            <div class="upLoad upload_img_left">
+                                <span id="submit">上传头像</span>
+                                <form action="/xxxxxxx" method="get" enctype="multipart/form-data" name="form1">
+                                    <input id="fileSelect" type="file"  name="file" accept="image/jpg, image/jpeg, image/png" style="opacity:0;filter:alpha(opacity=0);" />
+                                    <input  id="position"  type="hidden" name="position">
+                                    <div style="border:1px solid #ccc;"><img id="picShow" alt="" name="pic" style="width:400px;height:auto; "></div>
+                                    <input type="submit" value="保存头像" class="submit_css">
+                                    <input type="button" value="取消" class="button_css">
+                                </form>
+                            </div>
+
+                        </div>
+                        <div class="fr js_cur_img">
+                            <div class="cur_img_text">
+                                <p>当前头像</p>
+                            </div>
+                            <div class="cur_img">
+                                <img src="http://172.16.0.135:8888/passport/0/img/user_cur_img.png" alt="当前头像">
+                            </div>
+                        </div>
+                        <div class="cur_img_right clearfix">
+                            <p>系统会根据 您上传的图片生成3种尺寸的头像，如图所示。</p>
+                            <div class="three_img clearfix">
+                                <div class="size_left clearfix">
+                                    <div class="size_120 clearfix"> <span><img src="http://172.16.0.135:8888/passport/0/img/change_img.png" alt=""></span></div>
+                                    <p>120*120px</p>
+                                </div>
+                                <div class="size_right clearfix">
+                                    <div class="size_div1">
+                                        <div class="size_30"><span><img src="http://172.16.0.135:8888/passport/0/img/change_img.png" alt=""></span></div>
+                                        <p>30*30px</p>
+                                    </div>
+                                    <div class="size_div2">
+                                        <div class="size_60"><span><img src="http://172.16.0.135:8888/passport/0/img/change_img.png" alt=""></span></div>
+                                        <p>60*60px</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="content_password tab" style="display: none" id="js_content_password">
+                        <div class="phone_identify tab_p" >
+                            <div class="sys_notice_send">
+                                <p>验证手机号，校验码将发送至目前绑定153****0867手机上，30分钟内有效</p>
+                            </div>
+                            <div class="form_div_msg">
+                                <ul>
+                                    <li class="input_msg_code">
+                                        <i>校验码：</i>
+                                        <input type="text" class="first msg_input">
+                                        <input type="button" value="获取验证码" class="second msg_get">
+                                    </li>
+                                    <!--<li class="send_voice voice_identify">-->
+                                        <!--<p>收不到短信？试试 <a href="#" id="find_voice">语音校验~</a></p>-->
+                                    <!--</li>-->
+                                    <!--点击语音校验后 提示模块-->
+                                    <!--<li class="wait_call" style="display: none">-->
+                                        <!--<p><a href="#">汽车大全</a> 将致电给您，请注意接听</p>-->
+                                        <!--<p><span class="timer_span">25S</span> 后才能再次获取哦！</p>-->
+                                    <!--</li>-->
+                                    <li class="next_step">
+                                        <input type="button" value="下一步">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="input_new tab_p" style="display: none">
+                            <div class="form_div_new_code_success">
+                                <ul>
+                                    <li class="input_new_code">
+                                        <i>新密码：</i>
+                                        <input type="password" name="password" class="first" minlength="6" placeholder="密码只可包含字母，数字或其组合，限6-16位">
+                                        <em class="hide"></em>
+                                    </li>
+                                    <li class="error_msg1">
+                                        <p><i></i>密码只可包含字母，数字或其组合，限6-16位</p>
+                                    </li>
+                                    <li class="confirm_password">
+                                        <i>确认密码：</i>
+                                        <input type="password" placeholder="请再次输入" class="second">
+                                        <em class="hide"></em>
+                                    </li>
+                                    <li class="error_msg1" id="error_msg">
+                                        <p><i></i>两次输入的密码不同，请确认后输入</p>
+                                    </li>
+                                    <li class="save_settings">
+                                        <input type="button" value="保存设置" id="js_save_settings">
+                                    </li>
+                                </ul>
+                                <div class="modify_password_success" id="js_modify_password_success">
+                                    <p>修改密码成功</p>
+                                    <div class="select_button" id="js_select_button">
+                                        <button><a href="#">留在当前界面(5s)</a></button>
+                                        <button class="go_home" id="js_go_home"><a href="personalCenter.html">去首页</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--底部结构-->
+    <!--底部结构-->
+<div class="footer clearfix">
+    <div class="footer_content clearfix">
+        <ul>
+            <li class="footer_message clearfix"><a href="#">关于我们</a></li>
+            <li class="footer_message clearfix"><a href="#">联系我们</a></li>
+            <li class="footer_message clearfix"><a href="#">招贤纳士</a></li>
+            <li class="website clearfix"><a href="#">@2004-2016 www.xingyuanauto.com All Rights Reserved. 行圆汽车所有</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        $('.account_tab li').on('click',function () {
+            $(this).addClass('cur').siblings().removeClass('cur');
+            $('.account_con .tab').eq($(this).index()).show().siblings().hide()
+        })
+        
+        var nextInputCode=(function () {
+            $('.next_step input').on('click',function () {
+                $('#js_content_password .tab_p').show();
+                $('#js_content_password .phone_identify').hide();
+            })
+        })();
+
+        var modifySuccess=function () {
+            $('#js_save_settings').on('click',function () {
+                $('#js_modify_password_success').show();
+            });
+            $('#js_select_button button').on('click',function () {
+                $('#js_modify_password_success').hide();
+            })
+        };
+        modifySuccess();
+    })
+
+
+
+
+</script>
+<script src="js/upload.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.upload_img_left span').on('click',function () {
+            $('form').show();
+            $('.cur_img_right').show();
+            $('.js_cur_img').hide();
+        })
+    })
+</script>
+</body>
+</html>

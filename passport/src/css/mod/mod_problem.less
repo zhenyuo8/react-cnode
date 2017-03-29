@@ -1,0 +1,129 @@
+/*****
+ *@author: jiann
+ *@from: Global style mod_problem  待解决的问题
+ *@description: 
+ *@date: name (2017.03.14)
+*/
+
+
+
+.w_question_list {
+	li {
+		border-bottom: 1px solid #eee;
+
+		.q_icon {
+			height:60px;
+			padding-top: 20px;
+			position: relative;
+
+			.photo {
+				display: inline-block;
+				width: 60px;
+				height: 60px;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+			}
+			.photo_mask {
+				display: inline-block;
+				width: 60px;
+				height: 60px;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				z-index: 2;
+			}
+			.info{
+                display: inline-block;
+                position: absolute;
+                left: 77px;
+    			top: 20px;
+                vertical-align: middle;
+                height: 60px;
+                font-size: 14px;
+                p{
+                    padding: 5px 0;
+                }
+                .gray {
+                	color: #999;
+                }
+            }
+            .zhuanjia {
+            	position: absolute;
+            	top: 20px;
+            	right: 0;
+            }
+		}
+		.q_content{
+            margin: 20px 0;
+            font-size: 14px;
+            line-height: 22px;
+            .red{
+                color: #fe0000;
+            }
+            .blue{
+                color: #398be4;
+            }
+        }
+        .q_image{
+            //width: 440px;
+            overflow: hidden;
+            //height: 290px;
+            div{
+                width: 200px;
+                height: 200px;
+                overflow: hidden;
+                float: left;
+                line-height: 200px;
+                margin-bottom:10px ;
+                margin-left: 10px;
+                background:url("../img/default_a.png")  center center no-repeat;
+                background-size: cover;
+                &:hover{
+                    cursor: pointer;
+                }
+                a{
+                    width: 200px;
+                    height: 200px;
+                    display: block;
+                }
+            }
+        }
+        .q_label{
+            margin:20px 0;
+            .label{
+                width: 440px;
+                a{
+                    border:1px solid #398be4;
+                    padding:2px 8px;
+                    margin-right: 8px;
+                    color: #398be4;
+                }
+            }
+            .reply{
+                right: 0px;
+                top:0px;
+                a{
+                    color: #999;
+                    font-size: 12px;
+                }
+            }
+        }
+	}
+}
+/*内容为空显示*/
+.zhj_empty {
+    width: 740px;
+    min-height: 307px;
+    position: relative;
+    display: none;
+    img {
+        display: block;
+        width: 240px;
+        height: 202px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -17px 0 0 -120px;
+    }
+}
